@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-1: #A249ED;
+  --color-primary-2: #836ceb;
+  --color-primary-3: #b062fd;
+  --color-secondary-1: #f28541;
+  --color-secondary-2: #9255CE;
+  
+  --font-gilroy: "Gilroy", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-gilroy text-gray-800 bg-white;
+  }
+}
+
+/* Custom styles */
+.stroke-text {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.brand-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
