@@ -56,7 +56,7 @@ export default function AboutUs() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#f8f4fc] overflow-hidden py-[15px]"
+      className="bg-[#f8f4fc] overflow-hidden h-[80vh]"
     >
 
       <div className="max-w-[1650px] mx-auto px-6">
