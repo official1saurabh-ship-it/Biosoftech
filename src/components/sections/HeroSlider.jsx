@@ -7,22 +7,22 @@ import bgImage from "../../assets/h4-bg-img-1.png";
 const slides = [
   {
     image: slider,
-    top: "Let's",
-    big: "Log",
-    outline: "ELITE",
-    bottom: "MARKETING",
+    top: "Where Ideas",
+    big: "Become",
+    outline: "Smart",
+    bottom: "SOLUTIONS",
     desc:
-      "Take your business to new heights with our super productive services.",
+      "For us, it's not just about building software. We understand your business and create solutions that are simple, efficient, and impactful.",
   },
 
   {
     image: slider1,
     top: "Where",
     big: "Ideas",
-    outline: "Into",
-    bottom: "IMPACT",
+    outline: "Become",
+    bottom: "SOLUTIONS",
     desc:
-      "We understand business goals and convert ideas into measurable growth.",
+      "For us, it's not just about building software. We understand your business and create smart digital solutions.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative h-screen overflow-hidden bg-[#050010]">
+    <section className="relative min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] pt-28 pb-12 lg:py-0">
 
       {/* BG */}
 
@@ -75,13 +75,34 @@ export default function HeroRevealSlider() {
         }}
         className="
           absolute
-          right-[18%]
-          top-[-20%]
-          w-[720px]
-          h-[130vh]
-          bg-orange-500
+          hidden
+          md:block
+          right-[-120px]
+          sm:right-[-90px]
+          md:right-[-20px]
+          lg:right-[12%]
+          xl:right-[15%]
+          top-[360px]
+          sm:top-[380px]
+          md:top-[-20px]
+          lg:top-[-15%]
+          w-[300px]
+          sm:w-[390px]
+          md:w-[510px]
+          lg:w-[620px]
+          xl:w-[720px]
+          h-[360px]
+          sm:h-[430px]
+          md:h-[830px]
+          lg:h-[125vh]
+          bg-orange-500/70
+          md:bg-orange-500
           rounded-[50%]
-          rotate-[22deg]
+          rotate-[16deg]
+          md:rotate-[20deg]
+          lg:rotate-[24deg]
+          blur-[1px]
+          md:blur-none
           z-10
         "
       />
@@ -94,11 +115,16 @@ export default function HeroRevealSlider() {
           className="
           max-w-[1700px]
           mx-auto
-          h-full
+          min-h-[560px]
+          lg:h-full
           grid
           lg:grid-cols-2
           items-center
-          px-12
+          gap-6
+          lg:gap-0
+          px-5
+          sm:px-8
+          lg:px-12
         "
         >
 
@@ -115,12 +141,32 @@ export default function HeroRevealSlider() {
               duration: 1.8,
               ease: [0.76, 0, 0.24, 1],
             }}
-            className="relative"
+            className="relative order-2 flex justify-center lg:block lg:order-1"
           >
+            <div
+              className="
+                absolute
+                top-0
+                bottom-0
+                right-[7%]
+                w-[62%]
+                rounded-full
+                bg-orange-500/75
+                rotate-[18deg]
+                blur-[1px]
+                z-10
+                md:hidden
+              "
+            />
+
             <img
               src={slide.image}
               className="
-                w-[90%]
+                w-[70%]
+                sm:w-[54%]
+                md:w-[54%]
+                lg:w-[96%]
+                xl:w-[90%]
                 relative
                 z-30
               "
@@ -140,16 +186,20 @@ export default function HeroRevealSlider() {
               duration: 1.8,
               ease: [0.76, 0, 0.24, 1],
             }}
-            className="relative z-30 text-white"
+            className="relative z-30 order-1 text-white lg:order-2 lg:pl-8 xl:pl-16"
           >
 
-            <h4 className="text-6xl font-bold">
+            <h4 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
               {slide.top}
             </h4>
 
             <h1
               className="
-                text-[150px]
+                text-[60px]
+                sm:text-[86px]
+                md:text-[112px]
+                lg:text-[128px]
+                xl:text-[150px]
                 font-black
                 leading-none
               "
@@ -159,11 +209,16 @@ export default function HeroRevealSlider() {
 
             <h2
               className="
-                text-[120px]
+                text-[52px]
+                sm:text-[76px]
+                md:text-[96px]
+                lg:text-[108px]
+                xl:text-[120px]
                 font-black
                 text-transparent
                 [-webkit-text-stroke:2px_white]
-                -mt-8
+                -mt-3
+                lg:-mt-8
               "
             >
               {slide.outline}
@@ -171,23 +226,30 @@ export default function HeroRevealSlider() {
 
             <h3
               className="
-                text-[72px]
+                text-[34px]
+                sm:text-[48px]
+                md:text-[60px]
+                lg:text-[72px]
                 font-black
-                -mt-4
+                -mt-2
+                lg:-mt-4
               "
             >
               {slide.bottom}
             </h3>
 
-            <p className="mt-8 max-w-xl text-lg">
+            <p className="mt-5 lg:mt-8 max-w-xl text-base sm:text-lg font-medium">
               {slide.desc}
             </p>
 
             <button
               className="
-                mt-10
-                px-10
-                py-5
+                mt-8
+                lg:mt-10
+                px-7
+                sm:px-10
+                py-4
+                sm:py-5
                 rounded-full
                 border
                 border-purple-500
@@ -209,12 +271,15 @@ export default function HeroRevealSlider() {
       <div
         className="
           absolute
-          right-10
+          right-4
+          lg:right-10
           top-1/2
           -translate-y-1/2
-          flex
+          hidden
+          sm:flex
           flex-col
-          gap-8
+          gap-4
+          lg:gap-8
           z-50
         "
       >
@@ -227,8 +292,10 @@ export default function HeroRevealSlider() {
             )
           }
           className="
-            w-20
-            h-20
+            w-14
+            h-14
+            lg:w-20
+            lg:h-20
             rounded-full
             border
             border-white/30
@@ -246,8 +313,10 @@ export default function HeroRevealSlider() {
             )
           }
           className="
-            w-20
-            h-20
+            w-14
+            h-14
+            lg:w-20
+            lg:h-20
             rounded-full
             border
             border-white/30

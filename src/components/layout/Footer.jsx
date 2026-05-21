@@ -1,6 +1,14 @@
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaTwitter, FaHome, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
+const socialLinks = [
+  { Icon: FaFacebookF, href: 'https://www.facebook.com/biosoftechsoftwaresolutions', label: 'Facebook' },
+  { Icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/biosoftechsoftwaresolutions/', label: 'LinkedIn' },
+  { Icon: FaInstagram, href: 'https://www.instagram.com/biosoftechsoftwaresolutions/', label: 'Instagram' },
+  { Icon: FaYoutube, href: 'https://www.biosoftech.com', label: 'Biosoftech Website' },
+  { Icon: FaTwitter, href: 'https://x.com/biosoftech', label: 'X' },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-gray-50 pt-20 overflow-hidden">
@@ -8,13 +16,27 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div>
-            <h2 className="text-3xl font-bold text-primary-1 mb-8">Logelite</h2>
+            <a
+              href="https://www.biosoftech.com"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block text-3xl font-bold text-primary-1 mb-8"
+            >
+              Logelite
+            </a>
             <p className="text-gray-600 mb-8 leading-relaxed">
               We are a team of 100+ professionals with more than 10 years of experience in delivering digital marketing and WordPress solutions. Don't believe it? See it for yourself!
             </p>
             <div className="flex gap-4">
-              {[FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaTwitter].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-primary-1 hover:bg-primary-1 hover:text-white transition-all transform hover:-translate-y-1">
+              {socialLinks.map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
+                  className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-primary-1 hover:bg-primary-1 hover:text-white transition-all transform hover:-translate-y-1"
+                >
                   <Icon size={14} />
                 </a>
               ))}
@@ -73,22 +95,22 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4">
                 <div className="text-primary-1"><FaEnvelope /></div>
-                <p className="text-gray-600 text-sm">contact@logelite.com</p>
+                <p className="text-gray-600 text-sm">info@biosoftech.com</p>
               </li>
               <li className="flex items-center gap-4">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
-                <p className="text-gray-600 text-sm">+91-962-175-8356</p>
+                <p className="text-gray-600 text-sm">+91-9044425858</p>
               </li>
               <li className="flex items-center gap-4">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
-                <p className="text-gray-600 text-sm">+91-907-660-6339</p>
+                <p className="text-gray-600 text-sm">+91-6209688930</p>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t py-8 text-center text-gray-500 text-sm">
-          <p>Copyright 2021-26 | Logelite Pvt. Ltd. All Right Reserved</p>
+          <p>Copyright 2021-26 | Biosoftech Pvt. Ltd. All Right Reserved</p>
         </div>
       </div>
     </footer>

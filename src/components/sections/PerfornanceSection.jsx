@@ -28,9 +28,9 @@ export default function PerformanceSection() {
         Book a Free Consultation
       </div>
 
-      <div className="max-w-[1500px] mx-auto px-20 py-24">
+      <div className="max-w-[1500px] mx-auto px-5 sm:px-8 lg:px-20 py-16 lg:py-24">
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
           {/* LEFT */}
 
@@ -42,60 +42,64 @@ export default function PerformanceSection() {
 
             <h2
               className="
-              text-[52px]
+              text-[34px]
+              sm:text-[42px]
+              lg:text-[52px]
               leading-[1.05]
               font-black
               max-w-[620px]
             "
             >
-              Digital Marketing means Digital Results
+              Smart Software Means Real Results
             </h2>
 
             <p
               className="
               mt-8
-              text-[20px]
+              text-base
+              sm:text-[20px]
               leading-[1.8]
               max-w-[620px]
               opacity-90
             "
             >
-              Start working with our digital marketing experts
-              that can provide measurable outcomes and
-              business growth.
+              Start working with our technology experts who deliver
+              measurable outcomes for your business. We focus on efficiency,
+              automation, and growth through digital solutions that truly make
+              an impact.
             </p>
 
             {/* Stats */}
 
-            <div className="flex gap-16 mt-16 flex-wrap">
+            <div className="flex gap-8 sm:gap-12 lg:gap-16 mt-10 lg:mt-16 flex-wrap">
 
               <div>
-                <h3 className="text-[56px] font-black">
+                <h3 className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
                   200+
                 </h3>
 
-                <p className="text-[22px]">
-                  Leads
+                <p className="text-base sm:text-[22px]">
+                  Projects Delivered
                 </p>
               </div>
 
               <div>
-                <h3 className="text-[56px] font-black">
-                  674+
+                <h3 className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                  500+
                 </h3>
 
-                <p className="text-[22px]">
-                  Likes
+                <p className="text-base sm:text-[22px]">
+                  Clients Served
                 </p>
               </div>
 
               <div>
-                <h3 className="text-[56px] font-black">
-                  76%
+                <h3 className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                  80%
                 </h3>
 
-                <p className="text-[22px]">
-                  Social Reach
+                <p className="text-base sm:text-[22px]">
+                  Productivity Boost
                 </p>
               </div>
 
@@ -110,7 +114,8 @@ export default function PerformanceSection() {
             flex
             justify-center
             items-center
-            py-10
+            py-4
+            lg:py-10
           "
           >
 

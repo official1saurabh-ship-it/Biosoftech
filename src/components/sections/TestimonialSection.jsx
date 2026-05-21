@@ -7,6 +7,8 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+const GOOGLE_REVIEWS_URL = "https://share.google/eUAIEuWfI9MPqGlXv";
+
 const reviews = [
     {
         name: "Sara Gupta",
@@ -56,7 +58,8 @@ export default function TestimonialSection() {
       via-[#020066]
       to-[#09001d]
 
-      py-28
+      py-16
+      lg:py-28
       "
         >
 
@@ -79,7 +82,7 @@ export default function TestimonialSection() {
       "
             />
 
-            <div className="max-w-[1700px] mx-auto px-12">
+            <div className="max-w-[1700px] mx-auto px-5 sm:px-8 lg:px-12">
 
                 {/* TOP */}
 
@@ -100,21 +103,24 @@ export default function TestimonialSection() {
                         className="
             text-white
 
-            text-[54px]
+            text-[34px]
+            sm:text-[44px]
+            lg:text-[54px]
 
             font-bold
 
             mb-8
           "
                     >
-                        What Saying Our Customers
+                        What Our Clients Say About Us
                     </h2>
 
                     <p
                         className="
             text-white/80
 
-            text-[18px]
+            text-base
+            lg:text-[18px]
 
             max-w-[1200px]
 
@@ -123,8 +129,16 @@ export default function TestimonialSection() {
             leading-[2]
           "
                     >
-                        Our clients directly praise us for their
-                        experience with Rank Digital Solution.
+                        Businesses across industries trust Biosoftech
+                        Solutions for delivering custom software, AI
+                        automation, and Mitra Suite products that drive
+                        measurable success. Our clients consistently highlight
+                        our ability to simplify operations, boost productivity,
+                        and provide long-term digital growth.
+                        <br />
+                        We are recognized as one of the most reliable
+                        technology partners, known for transparent processes,
+                        scalable solutions, and 24x7 support.
                     </p>
 
                 </div>
@@ -133,12 +147,14 @@ export default function TestimonialSection() {
 
                 <div
                     className="
-          mt-24
+          mt-12
+          lg:mt-24
 
           grid
           lg:grid-cols-[360px_1fr]
 
-          gap-16
+          gap-10
+          lg:gap-16
 
           items-center
         "
@@ -150,13 +166,15 @@ export default function TestimonialSection() {
                         className="
             text-center
             text-white
-            px-8
+            px-2
+            sm:px-8
           "
                     >
 
                         <h3
                             className="
-              text-[38px]
+              text-[30px]
+              lg:text-[38px]
               font-bold
             "
                         >
@@ -192,16 +210,21 @@ export default function TestimonialSection() {
                             Based on 26 reviews
                         </p>
 
-                        <h2
+                        <a
+                            href={GOOGLE_REVIEWS_URL}
+                            target="_blank"
+                            rel="noreferrer"
                             className="
+              block
               mt-6
 
-              text-[52px]
+              text-[42px]
+              lg:text-[52px]
               font-medium
             "
                         >
                             Google
-                        </h2>
+                        </a>
 
                     </div>
 
@@ -211,7 +234,8 @@ export default function TestimonialSection() {
                         className="
             relative
 
-            px-16
+            px-10
+            sm:px-16
             py-8
 
             overflow-hidden
@@ -339,7 +363,7 @@ p-7
 
 w-full
 
-h-[270px]
+min-h-[270px]
 
 shadow-xl
 
@@ -426,8 +450,12 @@ line-clamp-4
                                             {review.text}
                                         </p>
 
-                                        <button
+                                        <a
+                                            href={GOOGLE_REVIEWS_URL}
+                                            target="_blank"
+                                            rel="noreferrer"
                                             className="
+inline-block
 mt-5
 
 text-gray-400
@@ -438,7 +466,7 @@ transition
 "
                                         >
                                             Read more
-                                        </button>
+                                        </a>
 
                                     </div>
 

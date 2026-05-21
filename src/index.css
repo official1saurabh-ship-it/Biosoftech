@@ -15,6 +15,7 @@
 @layer base {
   body {
     @apply font-gilroy text-gray-800 bg-white;
+    overflow-x: hidden;
   }
 }
 

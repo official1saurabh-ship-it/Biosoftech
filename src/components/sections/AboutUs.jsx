@@ -9,7 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import teamwork from "../../assets/TeamWork.png";
 import R2 from "../../assets/R2.png";
@@ -17,6 +17,17 @@ import Innovtion from "../../assets/Innovation.png";
 
 export default function AboutUs() {
   const sectionRef = useRef(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+    const handleChange = () => setIsDesktop(mediaQuery.matches);
+
+    handleChange();
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -56,39 +67,40 @@ export default function AboutUs() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#f8f4fc] overflow-hidden h-[80vh]"
+      className="bg-[#f8f4fc] overflow-hidden min-h-[820px] lg:h-[80vh] py-16 lg:py-0"
     >
 
-      <div className="max-w-[1650px] mx-auto px-6">
+      <div className="max-w-[1650px] mx-auto px-5 sm:px-8 lg:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
           {/* LEFT */}
 
           <motion.div
             style={{
-              y: imageY,
+              y: isDesktop ? imageY : 0,
               willChange: "transform",
             }}
-            className="relative pr-[120px]"
+            className="relative pr-0 lg:pr-[120px] hidden md:block"
           >
 
             {/* FIXED */}
 
-            <div className="grid grid-cols-[1fr_320px] gap-10">
+            <div className="grid grid-cols-[1fr_220px] xl:grid-cols-[1fr_320px] gap-6 xl:gap-10">
 
               <div className="space-y-6">
 
                 <motion.div
                   style={{
-                    y: rightY,
+                    y: isDesktop ? rightY : 0,
                   }}
                   className="
     relative
     rounded-[26px]
     overflow-hidden
     bg-white
-    h-[300px]
+    h-[220px]
+    xl:h-[300px]
   "
                 >
 
@@ -107,9 +119,9 @@ export default function AboutUs() {
                 </motion.div>
                 <motion.div
                   style={{
-                    y: contentY,
+                    y: isDesktop ? contentY : 0,
                   }}
-                  className="relative h-[360px]"
+                  className="relative h-[260px] xl:h-[360px]"
                 >
 
                   <img
@@ -126,7 +138,7 @@ export default function AboutUs() {
 
               <motion.div
                 style={{
-                  y: titleY,
+                  y: isDesktop ? titleY : 0,
                 }}
                 className="relative"
               >
@@ -137,8 +149,10 @@ export default function AboutUs() {
                   className="
                   rounded-[30px]
                   overflow-hidden
-                  h-[700px]
-                  w-[320px]
+                  h-[520px]
+                  xl:h-[700px]
+                  w-[220px]
+                  xl:w-[320px]
                   relative
                 "
                 >
@@ -162,7 +176,8 @@ export default function AboutUs() {
                 <div
                   className="
                   absolute
-                  right-[-90px]
+                  right-[-55px]
+                  xl:right-[-90px]
                   top-1/2
                   -translate-y-1/2
                 "
@@ -172,8 +187,10 @@ export default function AboutUs() {
                     className="
                     bg-purple-500
                     rounded-full
-                    h-[460px]
-                    w-[90px]
+                    h-[340px]
+                    xl:h-[460px]
+                    w-[70px]
+                    xl:w-[90px]
                     text-white
                     flex
                     items-center
@@ -186,7 +203,8 @@ export default function AboutUs() {
                       rotate-90
                       whitespace-nowrap
                       font-bold
-                      text-2xl
+                      text-lg
+                      xl:text-2xl
                     "
                     >
                       10+ Years Of Excellence
@@ -206,7 +224,7 @@ export default function AboutUs() {
 
           <motion.div
             style={{
-              y: rightY,
+              y: isDesktop ? rightY : 0,
             }}
           >
 
@@ -216,35 +234,37 @@ export default function AboutUs() {
 
             <motion.h1
               style={{
-                y: titleY,
+                y: isDesktop ? titleY : 0,
               }}
-              className="mt-5 text-[75px] leading-[1.05] font-black text-[#06031b]"
+              className="mt-5 text-[40px] sm:text-[54px] xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
             >
-              Full-Service Digital
+              Full-Service Software
               <br />
-              Marketing Agency
+              Development Company
               <br />
-              For Online Success
+              For Digital Growth
             </motion.h1>
 
             <motion.p
               style={{
-                y: contentY,
+                y: isDesktop ? contentY : 0,
               }}
-              className="mt-6 text-[#5b5b69] text-[30px]"
+              className="mt-6 text-[#5b5b69] text-lg sm:text-2xl xl:text-[30px] leading-relaxed"
             >
-              We are a leading digital marketing agency known for innovation
-              and productivity for more than ten years.
+              We are a leading technology partner delivering innovation and
+              efficiency for more than a decade. Our team specializes in
+              custom software development, mobile apps, and AI-powered
+              solutions - offering everything under one roof.
             </motion.p>
 
             <motion.div
               style={{
-                y: phoneY,
+                y: isDesktop ? phoneY : 0,
               }}
-              className="mt-10 flex gap-5 items-center"
+              className="mt-10 flex gap-4 sm:gap-5 items-center"
             >
 
-              <div className="w-24 h-24 rounded-full border-2 border-orange-400 flex items-center justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 rounded-full border-2 border-orange-400 flex items-center justify-center shrink-0">
 
                 <Phone className="text-orange-500" />
 
@@ -252,8 +272,8 @@ export default function AboutUs() {
 
               <div>
 
-                <div className="text-6xl font-black">
-                  962-175-8356
+                <div className="text-2xl sm:text-4xl xl:text-6xl font-black">
+                  +91-9044425858 / +91-6209688930
                 </div>
 
                 <div className="text-purple-500 text-xl">

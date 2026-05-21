@@ -1,31 +1,36 @@
 import { ArrowUpRight } from "lucide-react";
 
+const WEBSITE_URL = "https://www.biosoftech.com";
+const TRUSTPILOT_URL = "https://www.trustpilot.com/review/biosoftech.com";
+
 export default function GrowthSection() {
     return (
-        <section className="bg-[#f5f5f5] h-[90vh]  overflow-hidden">
+        <section className="bg-[#f5f5f5] min-h-[90vh] overflow-hidden">
 
-            <div className="max-w-[1800px] h-full mx-auto px-8 py-8">
+            <div className="max-w-[1800px] h-full mx-auto px-5 sm:px-8 py-12 lg:py-8">
 
                 {/* Heading */}
 
                 <h2
                     className="
           text-center
-          text-[42px]
+          text-[28px]
+          sm:text-[34px]
+          lg:text-[42px]
           leading-[1.2]
           font-light
           text-black
           mb-8
         "
                 >
-                    RankON Technologies: The Digital Growth Engine
+                    AI-Driven Software Development Company
                     <br />
-                    for Ambitious Brands
+                    for Digital Growth
                 </h2>
 
                 {/* GRID */}
 
-                <div className="grid grid-cols-12 gap-5 h-[calc(100%-120px)]">
+                <div className="grid grid-cols-12 gap-5 lg:h-[calc(100%-120px)]">
 
                     {/* LEFT */}
 
@@ -34,56 +39,65 @@ export default function GrowthSection() {
             col-span-12
             lg:col-span-5
 
-            rounded-[40px]
+            rounded-[28px]
+            lg:rounded-[40px]
 
             bg-gradient-to-br
             from-[#ffb100]
             via-[#ffc600]
             to-[#ffe600]
 
-            p-8
+            p-6
+            lg:p-8
 
             relative
 
-            h-full
+            h-auto
+            lg:h-full
             "
                     >
 
                         <h3
                             className="
-              text-[48px]
+              text-[34px]
+              sm:text-[42px]
+              lg:text-[48px]
               font-medium
               leading-[1.05]
               mb-6
             "
                         >
-                            AI-Driven Digital
+                            AI-Driven Software
                             <br />
-                            Marketing Company
+                            Development Company
                         </h3>
 
                         <div
                             className="
               space-y-5
-              text-[18px]
+              text-base
+              lg:text-[18px]
               leading-[1.8]
             "
                         >
                             <p>
-                                We offer AI-powered digital marketing services
-                                to help businesses appear in Google AI,
-                                ChatGPT and recommendations.
+                                We deliver AI-powered software solutions that
+                                help businesses streamline operations, automate
+                                workflows, and achieve measurable digital growth.
                             </p>
 
                             <p>
-                                We help brands grow sustainably
-                                through ethical and data-backed
-                                marketing strategies.
+                                Our focus is on building sustainable technology
+                                through ethical practices, data-driven
+                                strategies, and user-friendly design.
                             </p>
 
                             <p>
-                                With 1,000+ successful projects,
-                                500+ verified reviews.
+                                With 1,000+ successful projects, 500+
+                                satisfied clients, and a proven track record of
+                                innovation, Biosoftech Solutions has established
+                                itself as a trusted digital transformation
+                                partner for organizations worldwide.
                             </p>
 
                             <p>
@@ -91,7 +105,10 @@ export default function GrowthSection() {
                             </p>
                         </div>
 
-                        <button
+                        <a
+                            href={WEBSITE_URL}
+                            target="_blank"
+                            rel="noreferrer"
                             className="
               mt-8
 
@@ -107,11 +124,14 @@ export default function GrowthSection() {
             "
                         >
                             Discover More
-                        </button>
+                        </a>
 
                         {/* ARROW */}
 
-                        <div
+                        <a
+                            href={WEBSITE_URL}
+                            target="_blank"
+                            rel="noreferrer"
                             className="
               group
 
@@ -122,8 +142,10 @@ export default function GrowthSection() {
               translate-x-[35%]
               translate-y-[-10%]
 
-              w-[100px]
-              h-[100px]
+              w-[72px]
+              h-[72px]
+              lg:w-[100px]
+              lg:h-[100px]
 
               rounded-[28px]
 
@@ -146,7 +168,7 @@ export default function GrowthSection() {
                 group-hover:rotate-45
                 "
                             />
-                        </div>
+                        </a>
 
                     </div>
 
@@ -161,43 +183,47 @@ export default function GrowthSection() {
             flex-col
             gap-5
 
-            h-full
+            h-auto
+            lg:h-full
             "
                     >
 
                         <div
                             className="
-              rounded-[40px]
+              rounded-[28px]
+              lg:rounded-[40px]
 
               bg-gradient-to-br
               from-[#c7f0ff]
               via-[#ececec]
               to-[#ffd5c8]
 
-              p-8
+              p-6
+              lg:p-8
 
               flex-1
             "
                         >
 
-                            <h3 className="text-[64px] leading-none">
+                            <h3 className="text-[46px] lg:text-[64px] leading-none">
                                 1,000+
                             </h3>
 
-                            <p className="mt-4 text-[18px] leading-[1.7]">
-                                Over 1,000 successful projects
-                                delivered across SEO,
-                                digital marketing,
-                                paid ads and web.
+                            <p className="mt-4 text-base lg:text-[18px] leading-[1.7]">
+                                Over 1,000 successful implementations across
+                                custom software, AI automation, and enterprise
+                                solutions.
                             </p>
 
                         </div>
 
                         <div
                             className="
-              rounded-[40px]
+              rounded-[28px]
+              lg:rounded-[40px]
 
-              p-8
+              p-6
+              lg:p-8
 
               text-white
 
@@ -210,14 +236,14 @@ export default function GrowthSection() {
             "
                         >
 
-                            <h3 className="text-[64px] leading-none">
+                            <h3 className="text-[46px] lg:text-[64px] leading-none">
                                 500+
                             </h3>
 
-                            <p className="mt-4 text-[18px] leading-[1.7]">
-                                Our reviews reflect
-                                consistent results
-                                and partnerships.
+                            <p className="mt-4 text-base lg:text-[18px] leading-[1.7]">
+                                Our clients trust us for consistent results,
+                                transparent processes, and long-term
+                                partnerships built on performance.
                             </p>
 
                         </div>
@@ -231,15 +257,18 @@ export default function GrowthSection() {
             col-span-12
             lg:col-span-3
 
-            rounded-[40px]
+            rounded-[28px]
+            lg:rounded-[40px]
 
             bg-[#dfdfdf]
 
-            p-8
+            p-6
+            lg:p-8
 
             relative
 
-            h-full
+            min-h-[460px]
+            lg:h-full
           "
                     >
 
@@ -279,27 +308,34 @@ export default function GrowthSection() {
 
                         <h3
                             className="
-              text-[42px]
+              text-[32px]
+              lg:text-[42px]
               leading-[1.1]
               mb-6
             "
                         >
-                            Trusted by
+                            Trusted
                             <br />
-                            Worldwide Clients
+                            Worldwide
                         </h3>
 
                         <p
                             className="
-              text-[18px]
+              text-base
+              lg:text-[18px]
               leading-[1.8]
             "
                         >
-                            Trusted globally for
-                            sustainable digital growth.
+                            Recognized globally for digital growth, with over a
+                            decade of expertise in competitive industries like
+                            healthcare, real estate, hospitality, and corporate
+                            offices.
                         </p>
 
-                        <button
+                        <a
+                            href={TRUSTPILOT_URL}
+                            target="_blank"
+                            rel="noreferrer"
                             className="
               absolute
               bottom-8
@@ -314,11 +350,14 @@ export default function GrowthSection() {
             "
                         >
                             Our Reviews
-                        </button>
+                        </a>
 
                         {/* ARROW */}
 
-                        <div
+                        <a
+                            href={TRUSTPILOT_URL}
+                            target="_blank"
+                            rel="noreferrer"
                             className="
               group
 
@@ -328,8 +367,10 @@ export default function GrowthSection() {
 
               translate-x-[25%]
 
-              w-[90px]
-              h-[90px]
+              w-[66px]
+              h-[66px]
+              lg:w-[90px]
+              lg:h-[90px]
 
               rounded-[24px]
 
@@ -352,7 +393,7 @@ export default function GrowthSection() {
                 group-hover:rotate-45
                 "
                             />
-                        </div>
+                        </a>
 
                     </div>
 

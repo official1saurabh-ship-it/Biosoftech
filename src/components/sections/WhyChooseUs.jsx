@@ -12,27 +12,27 @@ import { useRef } from "react";
 
 const features = [
   {
-    title: "Pocket-Friendly",
+    title: "Cost-Effective Technology",
     desc:
-      "We help our clients target with precision and invest only in what they need.",
+      "Invest only in the software features you need, ensuring maximum ROI and reduced overhead.",
   },
 
   {
-    title: "Team Of Experts",
+    title: "Experienced Development Team",
     desc:
-      "Connect with professionals having years of experience in the sector.",
+      "Work with professionals skilled in enterprise software, cloud integration, and industry-specific solutions.",
   },
 
   {
-    title: "24x7 Client Support",
+    title: "24x7 Technical Support",
     desc:
-      "We are always here to resolve queries and welcome your feedback.",
+      "Our dedicated team provides round-the-clock assistance, resolving queries quickly and keeping your systems running smoothly.",
   },
 
   {
-    title: "Customized Strategies",
+    title: "Tailored Digital Strategies",
     desc:
-      "We offer tailored marketing plans designed to align with goals.",
+      "We design customized solutions aligned with your business goals, whether in healthcare, real estate, or hospitality.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function WhyChooseUs() {
 
       bg-[#12003f]
 
-      min-h-[90vh]
+      min-h-[95vh]
 
       flex
       items-center
@@ -175,8 +175,11 @@ to-[#12003f]/40
 
         mx-auto
 
-        px-16
-py-8
+        px-5
+sm:px-8
+lg:px-16
+py-16
+lg:py-8
 
         w-full
         "
@@ -186,7 +189,10 @@ py-8
           className="
           grid
 
-        lg:grid-cols-[0.9fr_780px_1.15fr]
+        lg:grid-cols-[0.9fr_520px_1.15fr]
+        xl:grid-cols-[0.9fr_780px_1.15fr]
+        gap-10
+        lg:gap-0
 
           items-center
           "
@@ -225,12 +231,15 @@ py-8
 
               leading-[1]
 
-              text-[72px]
+              text-[38px]
+              sm:text-[54px]
+              lg:text-[64px]
+              xl:text-[72px]
               "
             >
-              Your Challenges
+              Your Challenges,
               <br />
-              Our Resolutions
+              Our Digital Solutions
             </h2>
 
             <p
@@ -239,22 +248,26 @@ py-8
 
               text-white/80
 
-              text-[26px]
+              text-lg
+              sm:text-[22px]
+              lg:text-[26px]
 
               leading-relaxed
 
               max-w-[620px]
               "
             >
-              We blend our expertise
-              with cutting-edge
-              business marketing
-              technologies.
+              We combine years of expertise with advanced software
+              development and AI automation to deliver innovative, secure,
+              and scalable technology. From custom apps to the Mitra Suite,
+              we help businesses worldwide achieve efficiency, growth, and
+              measurable success.
             </p>
 
             <div
               className="
-              mt-16
+              mt-8
+              lg:mt-16
 
               flex
               items-center
@@ -263,9 +276,13 @@ py-8
 
               <button
                 className="
-                h-[84px]
+                h-[58px]
+                sm:h-[70px]
+                lg:h-[84px]
 
-                px-14
+                px-8
+                sm:px-10
+                lg:px-14
 
                 rounded-full
 
@@ -275,7 +292,9 @@ py-8
 
                 text-white
 
-                text-[28px]
+                text-lg
+                sm:text-2xl
+                lg:text-[28px]
                 "
               >
                 Get Quote
@@ -285,8 +304,12 @@ py-8
                 className="
                 -ml-5
 
-                w-[84px]
-                h-[84px]
+                w-[58px]
+                h-[58px]
+                sm:w-[70px]
+                sm:h-[70px]
+                lg:w-[84px]
+                lg:h-[84px]
 
                 rounded-full
 
@@ -294,7 +317,8 @@ py-8
 
                 text-white
 
-                text-[36px]
+                text-[26px]
+                lg:text-[36px]
                 "
               >
                 ↗
@@ -323,7 +347,9 @@ items-end
 
 pt-20
 
-h-[700px]
+h-[420px]
+lg:h-[620px]
+xl:h-[700px]
 "
           >
 
@@ -336,7 +362,9 @@ relative
 
 z-20
 
-w-[760px]
+w-[420px]
+lg:w-[560px]
+xl:w-[760px]
 
 mt-auto
 
@@ -351,13 +379,16 @@ self-end
 
           <div
             className="
-pl-10
+pl-0
+lg:pl-10
 
-min-w-[420px]
+min-w-0
+lg:min-w-[420px]
 
 max-w-[520px]
 
-space-y-12
+space-y-8
+lg:space-y-12
 "
           >
 
@@ -398,11 +429,12 @@ text-white
 
 font-bold
 
-text-[26px]
+text-[22px]
+lg:text-[26px]
 
 leading-[1.2]
 
-whitespace-nowrap
+lg:whitespace-nowrap
 "
                   >
                     {item.title}
@@ -414,7 +446,8 @@ mt-3
 
 text-white/85
 
-text-[18px]
+text-base
+lg:text-[18px]
 
 leading-[1.8]
 

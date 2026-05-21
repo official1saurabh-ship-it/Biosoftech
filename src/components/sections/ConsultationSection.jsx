@@ -3,11 +3,11 @@ import { ChevronDown } from "lucide-react";
 
 export default function ConsultationSection() {
     return (
-        <section className="bg-[#f5f5f5]  py-16">
+        <section className="bg-[#f5f5f5] py-12 lg:py-16 overflow-hidden">
 
-            <div className="max-w-[1600px] mx-auto px-8">
+            <div className="max-w-[1600px] mx-auto px-5 sm:px-8">
 
-                <div className="grid lg:grid-cols-2 gap-20 items-stretch">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-stretch">
 
                     {/* LEFT IMAGE */}
 
@@ -17,7 +17,11 @@ relative
 flex
 justify-center
 items-center
-h-[700px]
+h-[430px]
+sm:h-[560px]
+lg:h-[700px]
+max-h-[520px]
+sm:max-h-none
 "
                     >
 
@@ -29,8 +33,12 @@ h-[700px]
               left-0
               top-10
 
-            w-[500px]
-h-[620px]
+            w-[280px]
+sm:w-[400px]
+lg:w-[500px]
+h-[360px]
+sm:h-[500px]
+lg:h-[620px]
 
               bg-[#78d9f7]
 
@@ -47,8 +55,12 @@ h-[620px]
               absolute
               left-6
               top-20
-w-[450px]
-h-[570px]
+w-[260px]
+sm:w-[360px]
+lg:w-[450px]
+h-[330px]
+sm:h-[460px]
+lg:h-[570px]
 
               bg-[#89d000]
 
@@ -64,8 +76,12 @@ h-[570px]
                             className="
               overflow-hidden
 
-             w-[500px]
-h-[620px]
+             w-[280px]
+sm:w-[400px]
+lg:w-[500px]
+h-[360px]
+sm:h-[500px]
+lg:h-[620px]
 
               rounded-[58%_42%_56%_44%/48%_34%_66%_52%]
             "
@@ -88,12 +104,17 @@ h-[620px]
               absolute
 
               bottom-4
-              right-10
+              right-0
+              sm:right-10
 
               overflow-hidden
 
-              w-[260px]
-              h-[220px]
+              w-[150px]
+              h-[130px]
+              sm:w-[220px]
+              sm:h-[190px]
+              lg:w-[260px]
+              lg:h-[220px]
 
               rounded-[50%]
               border-[10px]
@@ -119,7 +140,8 @@ h-[620px]
 flex
 flex-col
 justify-center
-h-[700px]
+h-auto
+lg:h-[700px]
 ">
 
                         <div className="flex items-center gap-4 mb-8">
@@ -128,13 +150,15 @@ h-[700px]
 
                             <h2
                                 className="
-                text-[42px]
+                text-[30px]
+                sm:text-[36px]
+                lg:text-[42px]
                 leading-[1.1]
                 font-bold
                 text-[#40356b]
               "
                             >
-                                Book a Free Digital Marketing Consultation
+                                Book a Free Software Consultation
                             </h2>
 
                         </div>
@@ -212,15 +236,31 @@ h-[700px]
                                     </option>
 
                                     <option>
-                                        SEO
+                                        Develop Custom Software Solutions
                                     </option>
 
                                     <option>
-                                        Social Media
+                                        Build Or Upgrade My Mobile App / Website
                                     </option>
 
                                     <option>
-                                        Branding
+                                        Integrate AI Automation Into My Workflow
+                                    </option>
+
+                                    <option>
+                                        Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)
+                                    </option>
+
+                                    <option>
+                                        Healthcare / Real Estate / Hospitality Software Needs
+                                    </option>
+
+                                    <option>
+                                        Cloud Integration & Data Security Services
+                                    </option>
+
+                                    <option>
+                                        Not Sure - Need Expert Guidance
                                     </option>
 
                                 </select>
@@ -240,9 +280,7 @@ h-[700px]
                             <textarea
                                 rows="4"
                                 placeholder="
-Share A Brief About Your Business
-And Requirement So We Can Suggest
-The Best Solution.*
+Share a Brief About Your Business and Requirement So We Can Suggest the Best Solution*
 "
                                 className="
                 w-full

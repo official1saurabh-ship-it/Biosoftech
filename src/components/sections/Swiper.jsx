@@ -13,33 +13,39 @@ import img5 from "../../assets/SMM1.png";
 
 const services = [
     {
-        title: "Social Media Marketing",
-        description: "We help clients run ad campaigns across various so…, and more, under our comprehensive SMM services.",
+        title: "Custom Software Development",
+        description: "We design and build mobile apps, websites, and office software tailored to your business. Our solutions are user-friendly, scalable, and crafted to meet your exact needs.",
         image: img1,
     },
 
     {
-        title: "Social Media Optimization",
-        description: "Our professionals optimize clients’ social media c…d connect effectively with their target audience.",
+        title: "AI-Powered Automation",
+        description: "We integrate Artificial Intelligence into your workflow to reduce repetitive tasks, improve accuracy, and help your team focus on growth.",
         image: img2,
     },
 
     {
-        title: "Search Engine Optimization",
-        description: "Engage with our top-notch SEO services to improve …rganic traffic, and grow your business long-term.",
+        title: "Mitra Suite Products",
+        description: "Ready-to-use solutions for everyday business: Billing Mitra for GST invoicing, Restro Mitra for restaurants, Hotel Mitra for hotels, Skola Mitra for schools, and Tentent Mitra for PG/hostels.",
         image: img3,
     },
 
     {
-        title: "Web Design and Development",
-        description: "Logelite creates attractive and easy-to-use WordPress websites that keep clients’ needs at heart and ensure smooth performance for a great user experience.",
+        title: "Healthcare Solutions",
+        description: "Smart healthcare software that simplifies patient records, appointment scheduling, and billing, helping hospitals and clinics run smoothly.",
         image: img4,
     },
 
     {
-        title: "Search Engine Marketing",
-        description: "Logelite specializes in paid search engine marketing through highly convertible ads. We help clients run super-engaging ads on Google, Bing, and YouTube.",
+        title: "Real Estate Tools",
+        description: "Digital solutions that help real estate businesses manage property listings, client interactions, and sales processes with efficiency and accuracy.",
         image: img5,
+    },
+
+    {
+        title: "Hospitality Management",
+        description: "Software designed for hotels and restaurants to manage rooms, staff, menus, and customer service effortlessly and reliably.",
+        image: img2,
     },
 
 
@@ -47,9 +53,9 @@ const services = [
 
 export default function ServicesSlider() {
     return (
-        <section className="bg-[#faf7fd] py-28 overflow-hidden">
+        <section className="bg-[#faf7fd] py-16 lg:py-28 overflow-hidden">
 
-            <div className="max-w-[1650px] mx-auto px-10">
+            <div className="max-w-[1650px] mx-auto px-5 sm:px-8 lg:px-10">
 
                 {/* Heading */}
 
@@ -71,18 +77,20 @@ export default function ServicesSlider() {
                     <h2
                         className="
             mt-8
-            text-[72px]
+            text-[34px]
+            sm:text-[48px]
+            lg:text-[72px]
             font-black
           "
                     >
-                        Our Range Of Web & Ad Solutions
+                        Our Range Of Digital Solutions
                     </h2>
 
                 </div>
 
                 {/* Slider */}
 
-                <div className="mt-24">
+                <div className="mt-12 lg:mt-24">
 
                     <Swiper
                         modules={[Autoplay]}
@@ -120,9 +128,13 @@ export default function ServicesSlider() {
                                             : "bg-[#f4eef8]"
                                         }
 
-                    rounded-[34px]
-                    p-10
-                    h-[620px]
+                    rounded-[24px]
+                    lg:rounded-[34px]
+                    p-6
+                    sm:p-8
+                    lg:p-10
+                    h-[560px]
+                    lg:h-[620px]
                     flex
                     flex-col
                     justify-between
@@ -134,7 +146,7 @@ export default function ServicesSlider() {
 
                                     <div>
 
-                                        <h3 className="text-[34px] font-black">
+                                        <h3 className="text-[26px] sm:text-[30px] lg:text-[34px] font-black">
 
                                             {item.title}
 
@@ -143,8 +155,11 @@ export default function ServicesSlider() {
                                         <p
                                             className="
                       mt-8
-                      text-[19px]
-                      leading-[2]
+                      text-base
+                      sm:text-[18px]
+                      lg:text-[19px]
+                      leading-[1.8]
+                      lg:leading-[2]
                     "
                                         >
                                             {item.description}
@@ -155,7 +170,7 @@ export default function ServicesSlider() {
                                     <img
                                         src={item.image}
                                         alt=""
-                                        className="w-full h-[260px] object-contain"
+                                        className="w-full h-[210px] lg:h-[260px] object-contain"
                                     />
 
                                 </div>

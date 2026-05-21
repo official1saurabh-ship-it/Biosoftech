@@ -4,25 +4,26 @@ import {
   useInView,
 } from "framer-motion";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import advertiser from "../../assets/Advertiser.png";
 import publisher from "../../assets/Publisher.png";
 import affiliate from "../../assets/Affliate.png";
 
+const WEBSITE_URL = "https://www.biosoftech.com";
+
 const cards = [
   {
-    title: "7SEARCHPPC ADVERTISER",
-    label: "Advertise:",
+    title: "Partner With Biosoftech",
+    label: "Grow:",
     description:
-      "Leverage our self-serve business advertising platform exactly the way you need!",
+      "Join our partner program and unlock new earning opportunities by promoting innovative software solutions. No prior setup is required - just share, connect, and start building revenue streams.",
 
     features: [
-      "Captivating Ad Formats",
-      "Multiple Bidding Models",
-      "Quick Campaign Approval",
-      "Complete Transparency",
-      "24×7 Client Support",
+      "Zero Setup Cost - Begin instantly without investment.",
+      "Recurring Rewards - Earn from every client you refer.",
+      "Transparent Dashboard - Track growth with clear analytics.",
+      "Dedicated Support Team - Get expert help whenever you need.",
     ],
 
     image: advertiser,
@@ -31,19 +32,18 @@ const cards = [
   },
 
   {
-    title: "7SEARCHPPC PUBLISHER",
+    title: "Biosoftech Affiliate Program",
 
-    label: "Monetize:",
+    label: "Earn:",
 
     description:
-      "Monetize effortlessly with publisher platform and start earning!",
+      "Our affiliate program helps you monetize your network by connecting businesses with our custom software and AI automation tools. Earn commissions while empowering companies to grow digitally.",
 
     features: [
-      "Captivating Ad Formats",
-      "Easy & On-time Payouts",
-      "Minimal Monetization Terms",
-      "Complete Transparency",
-      "24×7 Client Support",
+      "Instant Signup - Start earning right away.",
+      "High Commission Rates - Maximize profits with every referral.",
+      "Lifetime Earnings - Keep earning as long as clients stay.",
+      "Global Access - Promote solutions across industries worldwide.",
     ],
 
     image: publisher,
@@ -52,19 +52,18 @@ const cards = [
   },
 
   {
-    title: "7SEARCHPPC AFFILIATE PROGRAM",
+    title: "Biosoftech Rewards Network",
 
-    label: "Earn:",
+    label: "Share:",
 
     description:
-      "Earn with affiliate program. No website or business required!",
+      "With our rewards network, you can generate income by introducing businesses to our Mitra Suite and enterprise solutions. It's simple, transparent, and designed for long-term growth.",
 
     features: [
-      "Mutual Reward System",
-      "No Participation Fee",
-      "Lifetime Commissions",
-      "Complete Transparency",
-      "24×7 Client Support",
+      "Flexible Earnings - Choose how and when you earn.",
+      "Performance Bonuses - Extra rewards for top partners.",
+      "Seamless Integration - Easy tools to share and promote.",
+      "24x7 Assistance - Always-on support for smooth operations.",
     ],
 
     image: affiliate,
@@ -75,13 +74,13 @@ const cards = [
 
 export default function AdNetworkSection() {
   return (
-    <section className="bg-[#f7f4fb]">
+    <section className="bg-[#f7f4fb] overflow-hidden">
 
-      <div className="max-w-[1500px] mx-auto px-8 py-20">
+      <div className="max-w-[1500px] mx-auto px-5 sm:px-8 py-14 lg:py-20">
 
-        <div className="flex justify-between mb-20">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 mb-14 lg:mb-20">
 
-          <div>
+          <div className="max-w-4xl">
 
             <span
               className="
@@ -93,31 +92,38 @@ export default function AdNetworkSection() {
               text-sm
               "
             >
-              AD NETWORK
+              DIGITAL SOLUTIONS NETWORK
             </span>
 
             <h2
               className="
               mt-5
-              text-[72px]
+              text-[34px]
+              sm:text-[48px]
+              lg:text-[72px]
               font-black
-              leading-none
+              leading-[1.08]
+              lg:leading-none
               "
             >
-              Our Flagship Advertising
+              Our Flagship Digital Solutions
               <br />
-              network - 7SearchPPC
+              Network - Biosoftech
             </h2>
 
           </div>
 
-          <button
+          <a
+            href={WEBSITE_URL}
+            target="_blank"
+            rel="noreferrer"
             className="
   group
   mt-6
   relative
-  flex
+  inline-flex
   items-center
+  self-start
 "
           >
 
@@ -131,8 +137,10 @@ export default function AdNetworkSection() {
     border
     border-purple-400
 
-    px-10
-    py-5
+    px-7
+    sm:px-10
+    py-4
+    sm:py-5
 
     rounded-full
 
@@ -143,7 +151,7 @@ export default function AdNetworkSection() {
     duration-700
     ease-[cubic-bezier(0.22,1,0.36,1)]
 
-    group-hover:translate-x-[72px]
+    lg:group-hover:translate-x-[72px]
     "
             >
               Visit Now
@@ -159,8 +167,10 @@ export default function AdNetworkSection() {
 
     bg-[#a657ff]
 
-    w-16
-    h-16
+    w-12
+    h-12
+    sm:w-16
+    sm:h-16
 
     rounded-full
 
@@ -174,7 +184,7 @@ export default function AdNetworkSection() {
     duration-700
     ease-[cubic-bezier(0.22,1,0.36,1)]
 
-    group-hover:-translate-x-[170px]
+    lg:group-hover:-translate-x-[170px]
   "
             >
 
@@ -190,7 +200,7 @@ export default function AdNetworkSection() {
 
             </span>
 
-          </button>
+          </a>
 
         </div>
 
@@ -219,6 +229,17 @@ function Card({
 }) {
 
   const ref = useRef();
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+    const handleChange = () => setIsDesktop(mediaQuery.matches);
+
+    handleChange();
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   const visible = useInView(
     ref,
@@ -241,7 +262,7 @@ function Card({
       initial={false}
 
       animate={{
-        x: visible
+        x: !isDesktop || visible
           ? 0
           : offset,
       }}
@@ -254,8 +275,12 @@ function Card({
       className={`
 grid
 lg:grid-cols-2
-gap-16
-mb-36
+gap-8
+sm:gap-10
+lg:gap-16
+mb-16
+sm:mb-20
+lg:mb-36
 items-center
 
 ${reverse
@@ -267,20 +292,23 @@ ${reverse
 
       {/* LEFT */}
 
-      <div>
+      <div className="min-w-0">
 
         <h3
           className="
 text-center
-text-[54px]
+text-[28px]
+sm:text-[38px]
+lg:text-[54px]
 font-black
-mb-10
+mb-6
+lg:mb-10
 "
         >
           {title}
         </h3>
 
-        <div className="flex gap-8">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-8">
 
           <span className="text-gray-500">
             {label}
@@ -288,8 +316,11 @@ mb-10
 
           <p
             className="
-text-[24px]
+text-lg
+sm:text-xl
+lg:text-[24px]
 max-w-[650px]
+leading-relaxed
 "
           >
             {description}
@@ -297,9 +328,9 @@ max-w-[650px]
 
         </div>
 
-        <hr className="my-10" />
+        <hr className="my-8 lg:my-10" />
 
-        <div className="flex gap-8">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-8">
 
           <span className="text-gray-500">
             Features:
@@ -313,11 +344,14 @@ max-w-[650px]
                 className="
 flex
 gap-5
-text-[24px]
+text-lg
+sm:text-xl
+lg:text-[24px]
+leading-relaxed
 "
               >
 
-                <span className="text-purple-500">
+                <span className="text-purple-500 shrink-0">
                   •
                 </span>
 
@@ -339,6 +373,11 @@ text-[24px]
 group
 relative
 overflow-hidden
+rounded-[24px]
+lg:rounded-none
+max-w-[620px]
+mx-auto
+lg:max-w-none
 "
       >
 
@@ -355,6 +394,10 @@ overflow-hidden
 
           className="
 w-full
+max-h-[360px]
+sm:max-h-[460px]
+lg:max-h-none
+object-contain
 "
         />
 
@@ -367,9 +410,10 @@ flex
 justify-center
 items-center
 
-opacity-0
+opacity-100
+lg:opacity-0
 
-group-hover:opacity-100
+lg:group-hover:opacity-100
 
 transition
 
@@ -377,10 +421,15 @@ duration-500
 "
         >
 
-          <div
+          <a
+            href={WEBSITE_URL}
+            target="_blank"
+            rel="noreferrer"
             className="
-w-[170px]
-h-[170px]
+w-[120px]
+h-[120px]
+lg:w-[170px]
+lg:h-[170px]
 
 rounded-full
 
@@ -398,6 +447,9 @@ justify-center
 items-center
 
 rotate-[-18deg]
+scale-75
+sm:scale-90
+lg:scale-100
 "
           >
 
@@ -427,7 +479,7 @@ border-white
               Read more
             </p>
 
-          </div>
+          </a>
 
         </div>
 
