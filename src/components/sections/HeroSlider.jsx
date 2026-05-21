@@ -65,14 +65,40 @@ export default function HeroRevealSlider() {
       {/* ORANGE BLOB */}
 
       <motion.div
+        initial={{
+          y: 180
+        }}
+
         animate={{
-          y: cover ? "115%" : "0%",
-          scale: cover ? 1.25 : 1,
+          y:
+            cover
+              ? 180
+              : 0,
+
+          opacity:
+            cover
+              ? .7
+              : 1,
+
+          scale:
+            cover
+              ? 1.2
+              : 1,
         }}
+
         transition={{
-          duration: 1.8,
-          ease: [0.76, 0, 0.24, 1],
+          duration: 1.4,
+
+
+
+          ease: [
+            0.22,
+            1,
+            0.36,
+            1
+          ],
         }}
+
         className="
           absolute
           hidden
@@ -133,22 +159,46 @@ export default function HeroRevealSlider() {
           <motion.div
             key={`img-${index}`}
             animate={{
-              opacity: cover ? 0 : 1,
-              x: cover ? -120 : 0,
-              scale: cover ? 0.95 : 1,
+              opacity:
+                cover
+                  ? 0
+                  : 1,
+
+              y:
+                cover
+                  ? 140
+                  : 0,
+
+              scale:
+                cover
+                  ? .96
+                  : 1,
             }}
             transition={{
-              duration: 1.8,
-              ease: [0.76, 0, 0.24, 1],
+              duration: 1.7,
+
+              delay:
+                cover
+                  ? 0
+                  : 1.05,
+
+              ease: [
+                0.22,
+                1,
+                0.36,
+                1,
+              ],
             }}
             className="relative order-2 flex justify-center lg:block lg:order-1"
           >
             <div
               className="
                 absolute
-                top-0
+                top-[70px]
+
                 bottom-0
-                right-[7%]
+               right-[10%]
+               translate-y-[80px]
                 w-[62%]
                 rounded-full
                 bg-orange-500/75
@@ -162,7 +212,7 @@ export default function HeroRevealSlider() {
             <img
               src={slide.image}
               className="
-                w-[70%]
+                w-[78%]
                 sm:w-[54%]
                 md:w-[54%]
                 lg:w-[96%]
