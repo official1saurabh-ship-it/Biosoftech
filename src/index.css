@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=League+Spartan:wght@400;700;800;900&display=swap');
 
 @theme {
   --color-primary-1: #A249ED;
@@ -11,8 +11,8 @@
   --font-gilroy: "Gilroy", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --font-epilogue: "Epilogue", sans-serif;
-  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-spartan: "League Spartan", sans-serif;
 }
 
 @layer base {

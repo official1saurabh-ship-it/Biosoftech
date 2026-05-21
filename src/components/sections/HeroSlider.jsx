@@ -19,8 +19,8 @@ const slides = [
     image: slider1,
     top: "Where",
     big: "Ideas",
-    outline: "Become",
-    bottom: "SOLUTIONS",
+    outline: "Turn Into",
+    bottom: "Impact",
     desc:
       "For us, it's not just about building software. We understand your business and create smart digital solutions.",
   },
@@ -49,7 +49,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] pt-40 pb-12 lg:pt-20 lg:pb-0">
+    <section className="relative min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] pt-52 pb-12 lg:pt-32 lg:pb-0">
 
       {/* BG */}
 
@@ -226,7 +226,7 @@ export default function HeroRevealSlider() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="relative z-30 order-1 text-white lg:order-2 font-epilogue min-w-0"
+            className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0"
           >
 
             <h4 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-3 lg:mb-5">
@@ -241,9 +241,9 @@ export default function HeroRevealSlider() {
                 lg:text-[96px]
                 xl:text-[112px]
                 2xl:text-[124px]
-                font-extrabold
-                leading-none
-                tracking-tighter
+                font-black
+                leading-[0.88]
+                tracking-[-0.04em]
                 uppercase
                 break-words
               "
@@ -259,12 +259,12 @@ export default function HeroRevealSlider() {
                 lg:text-[82px]
                 xl:text-[96px]
                 2xl:text-[108px]
-                font-extrabold
+                font-black
                 text-transparent
-                [-webkit-text-stroke:1.5px_white]
+                [-webkit-text-stroke:2px_white]
                 -mt-2
                 lg:-mt-5
-                tracking-tighter
+                tracking-[-0.04em]
                 uppercase
                 break-words
               "
@@ -279,10 +279,11 @@ export default function HeroRevealSlider() {
                 md:text-[48px]
                 lg:text-[54px]
                 xl:text-[64px]
-                font-extrabold
+                font-black
                 -mt-1
                 lg:-mt-3
-                tracking-tight
+                tracking-[-0.04em]
+                leading-[0.88]
                 uppercase
               "
             >
