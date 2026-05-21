@@ -402,7 +402,7 @@ object-contain
         />
 
         <div
-          className="
+          className={`
 absolute
 inset-0
 
@@ -410,14 +410,19 @@ flex
 justify-center
 items-center
 
-opacity-0
-group-hover:opacity-100
-group-active:opacity-100
-
-transition
-
+transition-all
 duration-500
-"
+ease-in-out
+
+pointer-events-none
+group-hover:pointer-events-auto
+group-active:pointer-events-auto
+
+${!isDesktop && visible 
+    ? "opacity-100 scale-100" 
+    : "opacity-0 group-hover:opacity-100 group-active:opacity-100"
+}
+`}
         >
 
           <a

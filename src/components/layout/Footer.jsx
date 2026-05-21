@@ -90,7 +90,7 @@ const Footer = () => {
                 <div className="text-primary-1 mt-1"><FaHome /></div>
                 <div>
                   <p className="font-bold text-gray-900">Head Office</p>
-                  <p className="text-gray-600 text-sm">B-138, Sector-C, Mahanagar, Lucknow - 226006</p>
+                  <p className="text-gray-600 text-sm">3rd Floor, Office No-624/20A, Kotwali Rd, Matiyaari, Chinhat, Lucknow, Uttar Pradesh-226028</p>
                 </div>
               </li>
               <li className="flex items-center gap-4">

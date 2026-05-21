@@ -185,20 +185,15 @@ export default function HeroRevealSlider() {
 
               duration: 
                 cover 
-                  ? 1.25 
-                  : 2.2, // Slowed down arrival
+                  ? 1.5 // Slower fade out
+                  : 2.2, // Smooth fade in
 
               delay:
                 cover
-                  ? 0.95
+                  ? 0.4 // Start fading out slightly after cover starts
                   : 0.65,
 
-              ease: [
-                0.65,
-                0,
-                0.35,
-                1,
-              ],
+              ease: "easeInOut",
 
 
             }}
@@ -223,14 +218,13 @@ export default function HeroRevealSlider() {
 
           <motion.div
             key={`txt-${index}`}
+            initial={{ opacity: 0 }}
             animate={{
               opacity: cover ? 0 : 1,
-              x: cover ? 80 : 0,
-              scale: cover ? 0.98 : 1,
             }}
             transition={{
-              duration: 1.8,
-              ease: [0.76, 0, 0.24, 1],
+              duration: 0.8,
+              ease: "easeInOut",
             }}
             className="relative z-30 order-1 text-white lg:order-2 lg:pl-8 xl:pl-12 font-epilogue min-w-0 overflow-hidden"
           >
