@@ -145,18 +145,18 @@ export default function HeroRevealSlider() {
 
         <div
           className="
-          max-w-[1700px]
+          max-w-[1536px]
           mx-auto
           min-h-[560px]
           lg:h-full
           grid
           lg:grid-cols-2
           items-center
-          gap-6
-          lg:gap-0
-          px-5
-          sm:px-8
-          lg:px-12
+          gap-10
+          lg:gap-16
+          px-6
+          lg:px-16
+          2xl:px-24
         "
         >
 
@@ -185,12 +185,12 @@ export default function HeroRevealSlider() {
 
               duration: 
                 cover 
-                  ? 1.5 // Slower fade out
-                  : 2.2, // Smooth fade in
+                  ? 1.5 
+                  : 2.2, 
 
               delay:
                 cover
-                  ? 0.4 // Start fading out slightly after cover starts
+                  ? 0.4 
                   : 0.65,
 
               ease: "easeInOut",
@@ -203,11 +203,11 @@ export default function HeroRevealSlider() {
             <img
               src={slide.image}
               className="
-                w-[70%]
-                sm:w-[54%]
-                md:w-[54%]
-                lg:w-[96%]
-                xl:w-[90%]
+                w-[75%]
+                sm:w-[60%]
+                md:w-[50%]
+                lg:w-full
+                max-w-[650px]
                 relative
                 z-30
               "
@@ -226,20 +226,21 @@ export default function HeroRevealSlider() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="relative z-30 order-1 text-white lg:order-2 lg:pl-8 xl:pl-12 font-epilogue min-w-0 overflow-hidden"
+            className="relative z-30 order-1 text-white lg:order-2 font-epilogue min-w-0"
           >
 
-            <h4 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold opacity-90 mb-4 lg:mb-6">
+            <h4 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-3 lg:mb-5">
               {slide.top}
             </h4>
 
             <h1
               className="
-                text-[50px]
-                sm:text-[76px]
-                md:text-[100px]
-                lg:text-[110px]
-                xl:text-[130px]
+                text-[48px]
+                sm:text-[72px]
+                md:text-[88px]
+                lg:text-[96px]
+                xl:text-[112px]
+                2xl:text-[124px]
                 font-extrabold
                 leading-none
                 tracking-tighter
@@ -252,16 +253,17 @@ export default function HeroRevealSlider() {
 
             <h2
               className="
-                text-[42px]
-                sm:text-[66px]
-                md:text-[86px]
-                lg:text-[90px]
-                xl:text-[105px]
+                text-[40px]
+                sm:text-[60px]
+                md:text-[76px]
+                lg:text-[82px]
+                xl:text-[96px]
+                2xl:text-[108px]
                 font-extrabold
                 text-transparent
                 [-webkit-text-stroke:1.5px_white]
                 -mt-2
-                lg:-mt-6
+                lg:-mt-5
                 tracking-tighter
                 uppercase
                 break-words
@@ -272,10 +274,11 @@ export default function HeroRevealSlider() {
 
             <h3
               className="
-                text-[30px]
-                sm:text-[42px]
-                md:text-[54px]
-                lg:text-[60px]
+                text-[28px]
+                sm:text-[40px]
+                md:text-[48px]
+                lg:text-[54px]
+                xl:text-[64px]
                 font-extrabold
                 -mt-1
                 lg:-mt-3
@@ -286,7 +289,7 @@ export default function HeroRevealSlider() {
               {slide.bottom}
             </h3>
 
-            <p className="mt-5 lg:mt-8 max-w-xl text-base sm:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
+            <p className="mt-5 lg:mt-7 max-w-[550px] text-base sm:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
               {slide.desc}
             </p>
 
