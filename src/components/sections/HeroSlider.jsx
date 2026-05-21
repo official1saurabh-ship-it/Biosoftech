@@ -225,29 +225,32 @@ export default function HeroRevealSlider() {
             key={`txt-${index}`}
             animate={{
               opacity: cover ? 0 : 1,
-              x: cover ? 120 : 0,
+              x: cover ? 80 : 0,
               scale: cover ? 0.98 : 1,
             }}
             transition={{
               duration: 1.8,
               ease: [0.76, 0, 0.24, 1],
             }}
-            className="relative z-30 order-1 text-white lg:order-2 lg:pl-8 xl:pl-16"
+            className="relative z-30 order-1 text-white lg:order-2 lg:pl-8 xl:pl-12 font-epilogue min-w-0 overflow-hidden"
           >
 
-            <h4 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
+            <h4 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold opacity-90 mb-4 lg:mb-6">
               {slide.top}
             </h4>
 
             <h1
               className="
-                text-[60px]
-                sm:text-[86px]
-                md:text-[112px]
-                lg:text-[128px]
-                xl:text-[150px]
-                font-black
+                text-[50px]
+                sm:text-[76px]
+                md:text-[100px]
+                lg:text-[110px]
+                xl:text-[130px]
+                font-extrabold
                 leading-none
+                tracking-tighter
+                uppercase
+                break-words
               "
             >
               {slide.big}
@@ -255,16 +258,19 @@ export default function HeroRevealSlider() {
 
             <h2
               className="
-                text-[52px]
-                sm:text-[76px]
-                md:text-[96px]
-                lg:text-[108px]
-                xl:text-[120px]
-                font-black
+                text-[42px]
+                sm:text-[66px]
+                md:text-[86px]
+                lg:text-[90px]
+                xl:text-[105px]
+                font-extrabold
                 text-transparent
-                [-webkit-text-stroke:2px_white]
-                -mt-3
-                lg:-mt-8
+                [-webkit-text-stroke:1.5px_white]
+                -mt-2
+                lg:-mt-6
+                tracking-tighter
+                uppercase
+                break-words
               "
             >
               {slide.outline}
@@ -272,19 +278,21 @@ export default function HeroRevealSlider() {
 
             <h3
               className="
-                text-[34px]
-                sm:text-[48px]
-                md:text-[60px]
-                lg:text-[72px]
-                font-black
-                -mt-2
-                lg:-mt-4
+                text-[30px]
+                sm:text-[42px]
+                md:text-[54px]
+                lg:text-[60px]
+                font-extrabold
+                -mt-1
+                lg:-mt-3
+                tracking-tight
+                uppercase
               "
             >
               {slide.bottom}
             </h3>
 
-            <p className="mt-5 lg:mt-8 max-w-xl text-base sm:text-lg font-medium">
+            <p className="mt-5 lg:mt-8 max-w-xl text-base sm:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
               {slide.desc}
             </p>
 
@@ -292,15 +300,25 @@ export default function HeroRevealSlider() {
               className="
                 mt-8
                 lg:mt-10
-                px-7
-                sm:px-10
+                px-8
+                sm:px-12
                 py-4
                 sm:py-5
                 rounded-full
-                border
-                border-purple-500
+                bg-white
+                text-black
+                font-jakarta
+                font-bold
+                uppercase
+                tracking-widest
+                text-[13px]
                 hover:bg-purple-600
-                duration-300
+                hover:text-white
+                hover:border-purple-600
+                border border-transparent
+                transition-all
+                duration-500
+                shadow-lg
               "
             >
               Get Started →

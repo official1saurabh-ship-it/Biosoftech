@@ -344,13 +344,14 @@ export default function TestimonialSection() {
                                     slidesPerView: 3,
                                 },
                             }}
+                            className="!overflow-visible !items-stretch"
                         >
 
                             {reviews.map((review) => (
 
                                 <SwiperSlide
                                     key={review.name}
-                                    className="pb-4"
+                                    className="pb-12 flex  h-auto"
                                 >
 
                                     <div
@@ -363,7 +364,13 @@ p-7
 
 w-full
 
-min-h-[270px]
+h-full
+
+flex
+
+flex-col
+
+justify-between
 
 shadow-xl
 
@@ -438,17 +445,24 @@ justify-center
 
                                         </div>
 
-                                        <p
+                                        <div
                                             className="
+flex-1
+
+mb-6
+"
+                                        >
+                                            <p
+                                                className="
 text-[15px]
 leading-8
 
 text-gray-700
-line-clamp-4
 "
-                                        >
-                                            {review.text}
-                                        </p>
+                                            >
+                                                {review.text}
+                                            </p>
+                                        </div>
 
                                         <a
                                             href={GOOGLE_REVIEWS_URL}
@@ -456,7 +470,6 @@ line-clamp-4
                                             rel="noreferrer"
                                             className="
 inline-block
-mt-5
 
 text-gray-400
 

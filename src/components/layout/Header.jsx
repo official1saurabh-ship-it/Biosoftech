@@ -24,15 +24,31 @@ const Header = () => {
       name: 'Services',
       href: '#',
       dropdown: [
-        { name: 'Paid Advertising', href: '#' },
-        { name: 'SEO', href: '#' },
-        { name: 'Social Media Optimization', href: '#' },
-        { name: 'Web Design & Development', href: '#' },
+        { name: 'Web Development', href: '#' },
+        { name: 'App Development', href: '#' },
+        { name: 'Mobile Development', href: '#' },
+        { name: 'Desktop App', href: '#' },
+        { name: 'Cloud Services', href: '#' },
+        { name: 'AI Automation', href: '#' },
+        { name: 'Software Integration', href: '#' },
+        { name: 'Technical Support', href: '#' },
+      ]
+    },
+    {
+      name: 'Products',
+      href: '#',
+      dropdown: [
+        { name: 'Restaurant Management', href: 'https://restaurants.biosoftech.in/' },
+        { name: 'PG Management', href: 'https://pg.biosoftech.in/' },
+        { name: 'Billing Management', href: 'https://billing.biosoftech.in/' },
+        { name: 'Hotel Management', href: 'https://hotel.biosoftech.in/signin' },
+        { name: 'School Management', href: 'https://school.biosoftech.in/' },
+        { name: 'Staff Management', href: 'https://vms.biosoftech.in/' },
+        { name: 'Pathology Management', href: 'https://pytho.biosoftech.in/dashboard' },
       ]
     },
     { name: 'Blog', href: '#' },
-    { name: 'Our Teams', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Contact', href: '#' },
   ];
 
   // Framer Motion Variants for Hover Effect
@@ -73,7 +89,7 @@ const Header = () => {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-black text-lg leading-none tracking-tight uppercase">Logelite</span>
+                <span className="text-white font-black text-lg leading-none tracking-tight uppercase">Biosoftech</span>
                 <span className="text-white/60 text-[7px] font-bold uppercase tracking-[0.3em] mt-0.5 whitespace-nowrap">Launch and Grow</span>
               </div>
             </div>
@@ -114,7 +130,9 @@ const Header = () => {
                         <a
                           key={subItem.name}
                           href={subItem.href}
-                          className="block px-5 py-3 text-[11px] font-bold text-white/50 hover:bg-white/5 hover:text-[#9255CE] rounded-xl transition-all uppercase tracking-tighter"
+                          target={subItem.href.startsWith('http') ? '_blank' : '_self'}
+                          rel={subItem.href.startsWith('http') ? 'noreferrer' : ''}
+                          className="block px-5 py-3 text-[11px] font-bold text-white hover:bg-white/5 hover:text-[#9255CE] rounded-xl transition-all uppercase tracking-tighter"
                         >
                           {subItem.name}
                         </a>
@@ -132,9 +150,9 @@ const Header = () => {
               href={WEBSITE_URL}
               target="_blank"
               rel="noreferrer"
-              className="hidden xl:flex items-center gap-2 border border-white/10 bg-white/5 px-7 py-2 rounded-full font-bold text-[12px] text-white/90 hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
+              className="hidden xl:flex items-center gap-2 border border-white/10 bg-white px-7 py-2 rounded-full font-bold text-[12px] text-black hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
             >
-              <FaCalendarAlt className="text-[#9255CE] group-hover:text-white transition-colors" />
+              <FaCalendarAlt className="text-[#0e141d] group-hover:text-white transition-colors" />
               <span>Meeting</span>
             </a>
 
@@ -254,6 +272,8 @@ z-[999]
                             <a
                               key={subItem.name}
                               href={subItem.href}
+                              target={subItem.href.startsWith('http') ? '_blank' : '_self'}
+                              rel={subItem.href.startsWith('http') ? 'noreferrer' : ''}
                               className="block text-white/40 font-bold text-xs uppercase tracking-widest hover:text-white transition-colors"
                             >
                               {subItem.name}
