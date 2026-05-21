@@ -89,15 +89,15 @@ export default function WhyChooseUs() {
 
       bg-[#12003f]
 
-      min-h-[95vh]
+      min-h-screen
+      lg:h-screen
 
       flex
       items-center
 
-      px-10
-      sm:px-20
-      lg:px-32
-      xl:px-48
+      px-6
+      sm:px-10
+      lg:px-12
       "
     >
 
@@ -176,12 +176,12 @@ to-[#12003f]/40
         relative
         z-20
 
-        max-w-[1600px]
+        max-w-[1500px]
 
         mx-auto
 
-        py-16
-        lg:py-20
+        py-12
+        lg:py-0
 
         w-full
         "
@@ -190,10 +190,11 @@ to-[#12003f]/40
         <div
           className="
           grid
-
-        lg:grid-cols-[1.1fr_1fr_1fr]
-        gap-12
-        lg:gap-20
+          grid-cols-1
+          lg:grid-cols-2
+          xl:grid-cols-[1.1fr_0.8fr_1fr]
+          gap-12
+          xl:gap-16
 
           items-center
           "
@@ -207,8 +208,8 @@ to-[#12003f]/40
               className="
               inline-block
 
-              px-6
-              py-2
+              px-5
+              py-1.5
 
               rounded-full
 
@@ -217,6 +218,7 @@ to-[#12003f]/40
               text-[#8e3fff]
 
               font-semibold
+              text-sm
               "
             >
               WHY CHOOSE US
@@ -224,7 +226,7 @@ to-[#12003f]/40
 
             <h2
               className="
-             mt-5
+             mt-4
 
               text-white
 
@@ -232,9 +234,9 @@ to-[#12003f]/40
 
               leading-[1.1]
 
-              text-[34px]
-              sm:text-[48px]
-              lg:text-[54px]
+              text-[32px]
+              sm:text-[44px]
+              lg:text-[48px]
               xl:text-[64px]
               "
             >
@@ -245,28 +247,28 @@ to-[#12003f]/40
 
             <p
               className="
-              mt-8
+              mt-6
 
               text-white/80
 
-              text-lg
-              sm:text-[20px]
-              lg:text-[22px]
+              text-base
+              sm:text-[18px]
+              lg:text-[20px]
 
               leading-relaxed
+              max-w-[550px]
+              mx-auto
+              lg:mx-0
               "
             >
               We combine years of expertise with advanced software
               development and AI automation to deliver innovative, secure,
-              and scalable technology. From custom apps to the Mitra Suite,
-              we help businesses worldwide achieve efficiency, growth, and
-              measurable success.
+              and scalable technology.
             </p>
 
             <div
               className="
               mt-8
-              lg:mt-16
 
               flex
               items-center
@@ -277,13 +279,12 @@ to-[#12003f]/40
 
               <button
                 className="
-                h-[58px]
-                sm:h-[70px]
-                lg:h-[80px]
+                h-[54px]
+                sm:h-[64px]
+                lg:h-[72px]
 
                 px-8
                 sm:px-10
-                lg:px-12
 
                 rounded-full
 
@@ -294,8 +295,7 @@ to-[#12003f]/40
                 text-white
 
                 text-lg
-                sm:text-2xl
-                lg:text-[24px]
+                sm:text-xl
                 "
               >
                 Get Quote
@@ -305,12 +305,12 @@ to-[#12003f]/40
                 className="
                 -ml-5
 
-                w-[58px]
-                h-[58px]
-                sm:w-[70px]
-                sm:h-[70px]
-                lg:w-[80px]
-                lg:h-[80px]
+                w-[54px]
+                h-[54px]
+                sm:w-[64px]
+                sm:h-[64px]
+                lg:w-[72px]
+                lg:h-[72px]
 
                 rounded-full
 
@@ -318,8 +318,8 @@ to-[#12003f]/40
 
                 text-white
 
-                text-[26px]
-                lg:text-[32px]
+                text-[22px]
+                sm:text-[28px]
                 "
               >
                 ↗
@@ -329,7 +329,7 @@ to-[#12003f]/40
 
           </div>
 
-          {/* CENTER */}
+          {/* CENTER - Hidden on small laptops to save space, or kept on XL */}
 
           <motion.div
             style={{
@@ -341,18 +341,15 @@ to-[#12003f]/40
 relative
 min-w-0
 
-flex
+hidden
+xl:flex
 
 justify-center
 
 items-end
 
-pt-10
-lg:pt-20
-
-h-[380px]
-lg:h-[520px]
-xl:h-[650px]
+h-[500px]
+xl:h-[600px]
 "
           >
 
@@ -366,9 +363,7 @@ relative
 z-20
 
 w-full
-max-w-[380px]
-lg:max-w-[450px]
-xl:max-w-[600px]
+max-w-[450px]
 
 mt-auto
 
@@ -385,10 +380,9 @@ self-end
             className="
             w-full
             min-w-0
-            lg:pl-5
 
-            space-y-8
-            lg:space-y-12
+            space-y-6
+            lg:space-y-8
 "
           >
 
@@ -399,7 +393,7 @@ self-end
 
                 className="
 flex
-gap-5
+gap-4
 
 items-start
 "
@@ -407,15 +401,15 @@ items-start
 
                 <div
                   className="
-w-5
-h-5
+w-4
+h-4
 
 rounded-full
 
 border-2
 border-cyan-400
 
-mt-3
+mt-2
 
 shrink-0
 "
@@ -429,8 +423,8 @@ text-white
 
 font-bold
 
-text-[20px]
-lg:text-[24px]
+text-[18px]
+lg:text-[22px]
 
 leading-[1.2]
 "
@@ -440,14 +434,14 @@ leading-[1.2]
 
                   <p
                     className="
-mt-3
+mt-2
 
 text-white/85
 
-text-base
-lg:text-[17px]
+text-sm
+lg:text-[16px]
 
-leading-[1.8]
+leading-[1.6]
 "
                   >
                     {item.desc}
