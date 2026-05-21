@@ -319,13 +319,15 @@ export default function TestimonialSection() {
                                 pauseOnMouseEnter: true,
                             }}
 
-                            loop={true}
+                            loop
 
                             speed={1000}
 
                             spaceBetween={28}
 
                             slidesPerView={1}
+
+                            autoHeight={false}
 
                             breakpoints={{
                                 640: {
@@ -344,14 +346,24 @@ export default function TestimonialSection() {
                                     slidesPerView: 3,
                                 },
                             }}
-                            className="!overflow-visible !items-stretch"
+
+                            className="
+!overflow-visible
+
+[&_.swiper-wrapper]:items-stretch
+"
                         >
 
                             {reviews.map((review) => (
 
                                 <SwiperSlide
                                     key={review.name}
-                                    className="pb-12 flex  h-auto"
+
+                                    className="
+flex
+
+!h-auto
+"
                                 >
 
                                     <div
@@ -364,37 +376,42 @@ p-7
 
 w-full
 
+min-h-[360px]
+
 h-full
 
 flex
 
 flex-col
 
-justify-between
-
 shadow-xl
 
 transition-all
+
 duration-500
 
 hover:-translate-y-2
 "
                                     >
 
-                                        <div
-                                            className="
+                                        {/* TOP */}
+
+                                        <div>
+
+                                            <div
+                                                className="
 flex
 justify-between
 items-start
 
 mb-6
 "
-                                        >
+                                            >
 
-                                            <div className="flex gap-3">
+                                                <div className="flex gap-3">
 
-                                                <div
-                                                    className="
+                                                    <div
+                                                        className="
 w-14
 h-14
 
@@ -407,54 +424,58 @@ text-white
 flex
 items-center
 justify-center
+
+shrink-0
 "
-                                                >
-                                                    {review.name[0]}
+                                                    >
+                                                        {review.name[0]}
+                                                    </div>
+
+                                                    <div>
+
+                                                        <h4 className="text-lg font-bold">
+                                                            {review.name}
+                                                        </h4>
+
+                                                        <p className="text-gray-500 text-sm">
+                                                            {review.time}
+                                                        </p>
+
+                                                    </div>
+
                                                 </div>
 
-                                                <div>
-
-                                                    <h4 className="text-lg font-bold">
-                                                        {review.name}
-                                                    </h4>
-
-                                                    <p className="text-gray-500 text-sm">
-                                                        {review.time}
-                                                    </p>
-
-                                                </div>
+                                                <span className="text-2xl">
+                                                    G
+                                                </span>
 
                                             </div>
 
-                                            <span className="text-2xl">
-                                                G
-                                            </span>
+                                            <div className="flex gap-1 mb-5">
+
+                                                {[...Array(5)].map((_, i) => (
+
+                                                    <Star
+                                                        key={i}
+                                                        size={18}
+                                                        fill="#FFC107"
+                                                        color="#FFC107"
+                                                    />
+
+                                                ))}
+
+                                            </div>
 
                                         </div>
 
-                                        <div className="flex gap-1 mb-5">
+                                        {/* BODY */}
 
-                                            {[...Array(5)].map((_, i) => (
-                                                <Star
-                                                    key={i}
-                                                    size={18}
-                                                    fill="#FFC107"
-                                                    color="#FFC107"
-                                                />
-                                            ))}
+                                        <div className="flex-1">
 
-                                        </div>
-
-                                        <div
-                                            className="
-flex-1
-
-mb-6
-"
-                                        >
                                             <p
                                                 className="
 text-[15px]
+
 leading-8
 
 text-gray-700
@@ -462,13 +483,21 @@ text-gray-700
                                             >
                                                 {review.text}
                                             </p>
+
                                         </div>
 
-                                        <a
-                                            href={GOOGLE_REVIEWS_URL}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="
+                                        {/* FOOTER */}
+
+                                        <div className="pt-8">
+
+                                            <a
+                                                href={GOOGLE_REVIEWS_URL}
+
+                                                target="_blank"
+
+                                                rel="noreferrer"
+
+                                                className="
 inline-block
 
 text-gray-400
@@ -477,9 +506,11 @@ hover:text-black
 
 transition
 "
-                                        >
-                                            Read more
-                                        </a>
+                                            >
+                                                Read more
+                                            </a>
+
+                                        </div>
 
                                     </div>
 
@@ -488,7 +519,6 @@ transition
                             ))}
 
                         </Swiper>
-
                     </div>
 
                 </div>
