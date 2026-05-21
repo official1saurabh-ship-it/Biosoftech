@@ -93,6 +93,11 @@ export default function WhyChooseUs() {
 
       flex
       items-center
+
+      px-10
+      sm:px-20
+      lg:px-32
+      xl:px-48
       "
     >
 
@@ -171,15 +176,12 @@ to-[#12003f]/40
         relative
         z-20
 
-        max-w-[1650px]
+        max-w-[1600px]
 
         mx-auto
 
-        px-5
-sm:px-8
-lg:px-16
-py-16
-lg:py-8
+        py-16
+        lg:py-20
 
         w-full
         "
@@ -189,10 +191,9 @@ lg:py-8
           className="
           grid
 
-        lg:grid-cols-[0.9fr_520px_1.15fr]
-        xl:grid-cols-[0.9fr_780px_1.15fr]
-        gap-10
-        lg:gap-0
+        lg:grid-cols-[1.1fr_1fr_1fr]
+        gap-12
+        lg:gap-20
 
           items-center
           "
@@ -200,7 +201,7 @@ lg:py-8
 
           {/* LEFT */}
 
-          <div>
+          <div className="w-full min-w-0 text-center lg:text-left">
 
             <span
               className="
@@ -229,12 +230,12 @@ lg:py-8
 
               font-black
 
-              leading-[1]
+              leading-[1.1]
 
-              text-[38px]
-              sm:text-[54px]
-              lg:text-[64px]
-              xl:text-[72px]
+              text-[34px]
+              sm:text-[48px]
+              lg:text-[54px]
+              xl:text-[64px]
               "
             >
               Your Challenges,
@@ -249,12 +250,10 @@ lg:py-8
               text-white/80
 
               text-lg
-              sm:text-[22px]
-              lg:text-[26px]
+              sm:text-[20px]
+              lg:text-[22px]
 
               leading-relaxed
-
-              max-w-[620px]
               "
             >
               We combine years of expertise with advanced software
@@ -271,6 +270,8 @@ lg:py-8
 
               flex
               items-center
+              justify-center
+              lg:justify-start
               "
             >
 
@@ -278,11 +279,11 @@ lg:py-8
                 className="
                 h-[58px]
                 sm:h-[70px]
-                lg:h-[84px]
+                lg:h-[80px]
 
                 px-8
                 sm:px-10
-                lg:px-14
+                lg:px-12
 
                 rounded-full
 
@@ -294,7 +295,7 @@ lg:py-8
 
                 text-lg
                 sm:text-2xl
-                lg:text-[28px]
+                lg:text-[24px]
                 "
               >
                 Get Quote
@@ -308,8 +309,8 @@ lg:py-8
                 h-[58px]
                 sm:w-[70px]
                 sm:h-[70px]
-                lg:w-[84px]
-                lg:h-[84px]
+                lg:w-[80px]
+                lg:h-[80px]
 
                 rounded-full
 
@@ -318,7 +319,7 @@ lg:py-8
                 text-white
 
                 text-[26px]
-                lg:text-[36px]
+                lg:text-[32px]
                 "
               >
                 ↗
@@ -338,6 +339,7 @@ lg:py-8
 
             className="
 relative
+min-w-0
 
 flex
 
@@ -345,11 +347,12 @@ justify-center
 
 items-end
 
-pt-20
+pt-10
+lg:pt-20
 
-h-[420px]
-lg:h-[620px]
-xl:h-[700px]
+h-[380px]
+lg:h-[520px]
+xl:h-[650px]
 "
           >
 
@@ -362,9 +365,10 @@ relative
 
 z-20
 
-w-[420px]
-lg:w-[560px]
-xl:w-[760px]
+w-full
+max-w-[380px]
+lg:max-w-[450px]
+xl:max-w-[600px]
 
 mt-auto
 
@@ -379,16 +383,12 @@ self-end
 
           <div
             className="
-pl-0
-lg:pl-10
+            w-full
+            min-w-0
+            lg:pl-5
 
-min-w-0
-lg:min-w-[420px]
-
-max-w-[520px]
-
-space-y-8
-lg:space-y-12
+            space-y-8
+            lg:space-y-12
 "
           >
 
@@ -421,7 +421,7 @@ shrink-0
 "
                 />
 
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
 
                   <h3
                     className="
@@ -429,12 +429,10 @@ text-white
 
 font-bold
 
-text-[22px]
-lg:text-[26px]
+text-[20px]
+lg:text-[24px]
 
 leading-[1.2]
-
-lg:whitespace-nowrap
 "
                   >
                     {item.title}
@@ -447,11 +445,9 @@ mt-3
 text-white/85
 
 text-base
-lg:text-[18px]
+lg:text-[17px]
 
 leading-[1.8]
-
-max-w-[450px]
 "
                   >
                     {item.desc}
