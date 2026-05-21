@@ -245,30 +245,28 @@ function Card({
     ref,
     {
       once: false,
-      amount: 0.45,
+      amount: 0.2, // Trigger earlier for better mobile experience
     }
   );
 
-  const offset =
-    reverse
-      ? 220
-      : -220;
+  // Responsive offset to keep it within screen bounds
+  const offsetValue = isDesktop ? 220 : 50;
+  const offset = reverse ? offsetValue : -offsetValue;
 
   return (
 
     <motion.div
       ref={ref}
 
-      initial={false}
+      initial={{ x: offset, opacity: 0 }}
 
       animate={{
-        x: !isDesktop || visible
-          ? 0
-          : offset,
+        x: visible ? 0 : offset,
+        opacity: visible ? 1 : 0,
       }}
 
       transition={{
-        duration: 1.5,
+        duration: 1.2,
         ease: [0.22, 1, 0.36, 1],
       }}
 
@@ -282,6 +280,7 @@ mb-16
 sm:mb-20
 lg:mb-36
 items-center
+overflow-hidden
 
 ${reverse
           ? "lg:[&>*:first-child]:order-2"
@@ -378,6 +377,7 @@ lg:rounded-none
 max-w-[620px]
 mx-auto
 lg:max-w-none
+cursor-pointer
 "
       >
 
@@ -410,10 +410,9 @@ flex
 justify-center
 items-center
 
-opacity-100
-lg:opacity-0
-
-lg:group-hover:opacity-100
+opacity-0
+group-hover:opacity-100
+group-active:opacity-100
 
 transition
 

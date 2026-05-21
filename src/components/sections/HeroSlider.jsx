@@ -7,12 +7,12 @@ import bgImage from "../../assets/h4-bg-img-1.png";
 const slides = [
   {
     image: slider,
-    top: "Where Ideas",
-    big: "Become",
-    outline: "Smart",
-    bottom: "SOLUTIONS",
+    top: "Full-Service",
+    big: "Software",
+    outline: "Development",
+    bottom: "Company",
     desc:
-      "For us, it's not just about building software. We understand your business and create solutions that are simple, efficient, and impactful.",
+      "We are a leading technology partner delivering innovation and efficiency for more than a decade. Our team specializes in custom software development, mobile apps, and AI-powered solutions — offering everything under one roof.",
   },
 
   {
@@ -49,7 +49,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] pt-28 pb-12 lg:py-0">
+    <section className="relative min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] pt-40 pb-12 lg:pt-20 lg:pb-0">
 
       {/* BG */}
 
@@ -66,71 +66,77 @@ export default function HeroRevealSlider() {
 
       <motion.div
         initial={{
-          y: 180
+          y: 260,
+          opacity: 0,
         }}
 
         animate={{
+
           y:
             cover
-              ? 180
+              ? 260
               : 0,
-
-          opacity:
-            cover
-              ? .7
-              : 1,
 
           scale:
             cover
-              ? 1.2
+              ? 1.08
+              : 1,
+
+          opacity:
+            cover
+              ? 0
               : 1,
         }}
 
         transition={{
-          duration: 1.4,
+          duration: 1.15,
 
-
+          delay:
+            cover
+              ? 0
+              : 0,
 
           ease: [
-            0.22,
+            0.65,
+            0,
+            0.35,
             1,
-            0.36,
-            1
           ],
         }}
 
+
+
+
         className="
-          absolute
-          hidden
-          md:block
-          right-[-120px]
-          sm:right-[-90px]
-          md:right-[-20px]
-          lg:right-[12%]
-          xl:right-[15%]
-          top-[360px]
-          sm:top-[380px]
-          md:top-[-20px]
-          lg:top-[-15%]
-          w-[300px]
-          sm:w-[390px]
-          md:w-[510px]
-          lg:w-[620px]
-          xl:w-[720px]
-          h-[360px]
-          sm:h-[430px]
-          md:h-[830px]
-          lg:h-[125vh]
-          bg-orange-500/70
-          md:bg-orange-500
-          rounded-[50%]
-          rotate-[16deg]
-          md:rotate-[20deg]
-          lg:rotate-[24deg]
-          blur-[1px]
-          md:blur-none
-          z-10
-        "
+      absolute
+      right-[-120px]
+      sm:right-[-90px]
+      md:right-[-20px]
+      lg:right-[12%]
+      xl:right-[15%]
+      top-[360px]
+      sm:top-[380px]
+      md:top-[-20px]
+      lg:top-[-15%]
+      w-[300px]
+      sm:w-[390px]
+      md:w-[510px]
+      lg:w-[620px]
+      xl:w-[720px]
+      h-[360px]
+      sm:h-[430px]
+      md:h-[830px]
+      lg:h-[125vh]
+      bg-orange-500/70
+      md:bg-orange-500
+      rounded-[50%]
+      rotate-[16deg]
+      md:rotate-[20deg]
+      lg:rotate-[24deg]
+      blur-[1px]
+      md:blur-none
+      z-10
+      "
       />
 
       {/* CONTENT */}
@@ -159,60 +165,50 @@ export default function HeroRevealSlider() {
           <motion.div
             key={`img-${index}`}
             animate={{
+
+              y:
+                cover
+                  ? 260
+                  : 0,
+
               opacity:
                 cover
                   ? 0
                   : 1,
 
-              y:
-                cover
-                  ? 140
-                  : 0,
-
               scale:
                 cover
-                  ? .96
+                  ? .98
                   : 1,
             }}
             transition={{
-              duration: 1.7,
+
+              duration: 
+                cover 
+                  ? 1.25 
+                  : 2.2, // Slowed down arrival
 
               delay:
                 cover
-                  ? 0
-                  : 1.05,
+                  ? 0.95
+                  : 0.65,
 
               ease: [
-                0.22,
-                1,
-                0.36,
+                0.65,
+                0,
+                0.35,
                 1,
               ],
+
+
             }}
             className="relative order-2 flex justify-center lg:block lg:order-1"
           >
-            <div
-              className="
-                absolute
-                top-[70px]
-
-                bottom-0
-               right-[10%]
-               translate-y-[80px]
-                w-[62%]
-                rounded-full
-                bg-orange-500/75
-                rotate-[18deg]
-                blur-[1px]
-                z-10
-                md:hidden
-              "
-            />
 
             <img
               src={slide.image}
               className="
-                w-[78%]
+                w-[70%]
                 sm:w-[54%]
                 md:w-[54%]
                 lg:w-[96%]
