@@ -62,49 +62,51 @@ export default function HeroRevealSlider() {
       />
 
       {/* BLOB IMAGE - Now Starting from Center */}
+      {/* BLOB IMAGE - Return from Text Column Top Right */}
       <motion.img
         src={blobImage}
         initial={{
-          x: "0%",           // Changed to center
+          x: "-12%",
           y: "28%",
           rotate: 45,
           opacity: 0.85,
           scale: 0.85,
         }}
         animate={{
-          // Centered horizontal movement
-          x: ["-12%", "12%", "-12%"],
+          // reduced right movement → stays inside text column
+          x: ["-12%", "4%", "-12%"],
 
-          y: ["28%", "-55%", "28%"],
+          // keep same return point
+          y: ["28%", "-28%", "28%"],
 
           rotate: [45, 48, 45],
 
-          scale: [0.85, 1.05, 0.85],
+          scale: [0.85, 1.02, 0.85],
           opacity: [0.85, 1, 0.85],
         }}
         transition={{
           duration: 10,
           ease: "easeInOut",
-          times: [0, 0.6, 1],
+          times: [0, 0.5, 1],
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: "reverse", // ← return from same point
         }}
         style={{
           mixBlendMode: "screen",
         }}
         className="
-          absolute
-          top-[105%]
-          left-[38%]
-          w-[460%]
-          h-[155%]
-          object-contain
-          max-w-none
-          z-10
-          pointer-events-none
-          -translate-x-1/2
-          -translate-y-1/2
-        "
+    absolute
+    top-[105%]
+    left-[38%]
+    w-[460%]
+    h-[155%]
+    object-contain
+    max-w-none
+    z-10
+    pointer-events-none
+    -translate-x-1/2
+    -translate-y-1/2
+  "
       />
 
       {/* CONTENT - Unchanged */}
@@ -153,7 +155,7 @@ export default function HeroRevealSlider() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center"
           >
-            <div className="relative z-40 h-[60vh] flex flex-col justify-center">
+            <div className="relative z-40 h-[60vh] flex flex-col justify-center pt-30 sm:mt-45 sm:pt-2 lg:pt-0">
               <h4 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-3 lg:mb-5">
                 {slide.top}
               </h4>

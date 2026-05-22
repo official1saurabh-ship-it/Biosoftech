@@ -249,7 +249,7 @@ z-[999]
             >
               <div className="p-8 flex items-center justify-between border-b border-white/5">
                 <div className="flex flex-col">
-                  <span className="text-white font-black text-2xl tracking-tighter">LOGELITE</span>
+                  <span className="text-white font-black text-2xl tracking-tighter">BioSoftech</span>
                   <span className="text-[#9255CE] text-[8px] font-bold uppercase tracking-widest mt-1">Launch and Grow</span>
                 </div>
                 <button onClick={() => setIsMobileMenuOpen(false)} className="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-all">
