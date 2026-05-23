@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPhoneAlt, FaCalendarAlt, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const WEBSITE_URL = 'https://www.biosoftech.com';
 
@@ -18,14 +19,14 @@ const Header = () => {
   }, []);
 
   const menuItems = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     { name: 'About', href: '#' },
     {
       name: 'Services',
       href: '#',
       dropdown: [
         { name: 'Web Development', href: '#' },
-        { name: 'App Development', href: '#' },
+        { name: 'App Development', href: '/app-development' },
         { name: 'Mobile Development', href: '#' },
         { name: 'Desktop App', href: '#' },
         { name: 'Cloud Services', href: '#' },
@@ -86,7 +87,7 @@ const Header = () => {
           className={`relative pointer-events-auto w-[92%] max-w-[1280px] h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-all duration-500 ${isScrolled ? 'h-14 scale-98 opacity-95' : 'scale-100 opacity-100'}`}
         >
           {/* Logo Section */}
-          <div className="h-full py-1 shrink-0">
+          <Link to="/" className="h-full py-1 shrink-0">
             <div className="h-full bg-gradient-to-r from-[#9255CE] to-[#BE60FF] rounded-full px-6 flex items-center gap-3 shadow-[0_0_20px_rgba(146,85,206,0.3)] relative overflow-hidden group">
               <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="w-7 h-7 text-white">
@@ -100,7 +101,7 @@ const Header = () => {
                 <span className="text-white/60 text-[7px] font-bold uppercase tracking-[0.3em] mt-0.5 whitespace-nowrap">Launch and Grow</span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation Area with CORRECTED Hover Effect */}
           <nav className="hidden lg:flex items-center gap-8 px-4 h-full">
@@ -120,30 +121,48 @@ const Header = () => {
                 </div>
 
                 {/* 2. Text with Transition */}
-                <motion.a
-                  href={item.href}
-                  variants={textVariants}
-                  className="relative z-10 flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.1em] py-2 whitespace-nowrap"
-                >
-                  {item.name}
-                  {item.dropdown && <FaChevronDown size={8} className="opacity-40 group-hover:rotate-180 transition-transform duration-500" />}
-                </motion.a>
+                {item.href.startsWith('#') ? (
+                  <motion.a
+                    href={item.href}
+                    variants={textVariants}
+                    className="relative z-10 flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.1em] py-2 whitespace-nowrap"
+                  >
+                    {item.name}
+                    {item.dropdown && <FaChevronDown size={8} className="opacity-40 group-hover:rotate-180 transition-transform duration-500" />}
+                  </motion.a>
+                ) : (
+                  <Link to={item.href} className="relative z-10 flex items-center gap-1.5 py-2 whitespace-nowrap">
+                    <motion.span
+                      variants={textVariants}
+                      className="text-[13px] font-bold uppercase tracking-[0.1em]"
+                    >
+                      {item.name}
+                    </motion.span>
+                    {item.dropdown && <FaChevronDown size={8} className="text-white/40 group-hover:rotate-180 transition-transform duration-500" />}
+                  </Link>
+                )}
 
                 {/* Dropdown Menu */}
                 {item.dropdown && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100]">
                     <div className="bg-[#09090F]/98 backdrop-blur-3xl rounded-2xl border border-white/5 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden p-1.5">
-                      {item.dropdown.map((subItem) => (
-                        <a
-                          key={subItem.name}
-                          href={subItem.href}
-                          target={subItem.href.startsWith('http') ? '_blank' : '_self'}
-                          rel={subItem.href.startsWith('http') ? 'noreferrer' : ''}
-                          className="block px-5 py-3 text-[11px] font-bold text-white hover:bg-white/5 hover:text-[#9255CE] rounded-xl transition-all uppercase tracking-tighter"
-                        >
-                          {subItem.name}
-                        </a>
-                      ))}
+                      {item.dropdown.map((subItem) => {
+                        const isExternal = subItem.href.startsWith('http');
+                        const Component = isExternal ? 'a' : Link;
+                        const props = isExternal 
+                          ? { href: subItem.href, target: '_blank', rel: 'noreferrer' }
+                          : { to: subItem.href };
+
+                        return (
+                          <Component
+                            key={subItem.name}
+                            {...props}
+                            className="block px-5 py-3 text-[11px] font-bold text-white hover:bg-white/5 hover:text-[#9255CE] rounded-xl transition-all uppercase tracking-tighter"
+                          >
+                            {subItem.name}
+                          </Component>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
@@ -259,37 +278,51 @@ z-[999]
 
               <div className="flex-1 overflow-y-auto p-8">
                 <nav className="space-y-2">
-                  {menuItems.map((item) => (
-                    <div key={item.name} className="group/mob">
-                      <div
-                        className="flex items-center justify-between py-5 border-b border-white/5 cursor-pointer"
-                        onClick={() => item.dropdown && setActiveDropdown(activeDropdown === item.name ? null : item.name)}
-                      >
-                        <a href={item.href} className="text-lg font-bold text-white group-mob:text-[#9255CE] transition-colors uppercase tracking-[0.2em]">{item.name}</a>
-                        {item.dropdown && <FaChevronDown size={12} className={`text-[#9255CE] transition-transform duration-500 ${activeDropdown === item.name ? 'rotate-180' : ''}`} />}
-                      </div>
+                  {menuItems.map((item) => {
+                    const isExternal = item.href.startsWith('http') || item.href.startsWith('#');
+                    const Component = isExternal ? 'a' : Link;
+                    const props = isExternal ? { href: item.href } : { to: item.href, onClick: () => setIsMobileMenuOpen(false) };
 
-                      {item.dropdown && activeDropdown === item.name && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          className="pl-6 space-y-4 py-4 overflow-hidden border-l border-[#9255CE]/30"
+                    return (
+                      <div key={item.name} className="group/mob">
+                        <div
+                          className="flex items-center justify-between py-5 border-b border-white/5 cursor-pointer"
+                          onClick={() => item.dropdown && setActiveDropdown(activeDropdown === item.name ? null : item.name)}
                         >
-                          {item.dropdown.map((subItem) => (
-                            <a
-                              key={subItem.name}
-                              href={subItem.href}
-                              target={subItem.href.startsWith('http') ? '_blank' : '_self'}
-                              rel={subItem.href.startsWith('http') ? 'noreferrer' : ''}
-                              className="block text-white/40 font-bold text-xs uppercase tracking-widest hover:text-white transition-colors"
-                            >
-                              {subItem.name}
-                            </a>
-                          ))}
-                        </motion.div>
-                      )}
-                    </div>
-                  ))}
+                          <Component {...props} className="text-lg font-bold text-white group-mob:text-[#9255CE] transition-colors uppercase tracking-[0.2em]">
+                            {item.name}
+                          </Component>
+                          {item.dropdown && <FaChevronDown size={12} className={`text-[#9255CE] transition-transform duration-500 ${activeDropdown === item.name ? 'rotate-180' : ''}`} />}
+                        </div>
+
+                        {item.dropdown && activeDropdown === item.name && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            className="pl-6 space-y-4 py-4 overflow-hidden border-l border-[#9255CE]/30"
+                          >
+                            {item.dropdown.map((subItem) => {
+                              const isSubExternal = subItem.href.startsWith('http') || subItem.href.startsWith('#');
+                              const SubComponent = isSubExternal ? 'a' : Link;
+                              const subProps = isSubExternal 
+                                ? { href: subItem.href, target: isSubExternal && !subItem.href.startsWith('#') ? '_blank' : '_self', rel: isSubExternal && !subItem.href.startsWith('#') ? 'noreferrer' : '' }
+                                : { to: subItem.href, onClick: () => setIsMobileMenuOpen(false) };
+
+                              return (
+                                <SubComponent
+                                  key={subItem.name}
+                                  {...subProps}
+                                  className="block text-white/40 font-bold text-xs uppercase tracking-widest hover:text-white transition-colors"
+                                >
+                                  {subItem.name}
+                                </SubComponent>
+                              );
+                            })}
+                          </motion.div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </nav>
               </div>
 

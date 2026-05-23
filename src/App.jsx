@@ -1,44 +1,24 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/layout/Header'
-import HeroSlider from './components/sections/HeroSlider'
-
-
-import AboutUs from './components/sections/AboutUs'
-import PerformanceSection from './components/sections/PerfornanceSection'
-
-import WhyChooseUs from './components/sections/WhyChooseUs'
-import AdNetwork from './components/sections/AdNetwork'
-
-
 import Footer from './components/layout/Footer'
-import ServicesSlider from './components/sections/Swiper'
-import GrowthSection from './components/sections/GrowthSection'
-import ConsultationSection from './components/sections/ConsultationSection'
-import TestimonialSection from './components/sections/TestimonialSection'
-
+import Home from './Pages/Home'
+import AppDevelopment from './Pages/AppDevelopment'
+import ScrollToTop from './components/ui/ScrollToTop'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <HeroSlider />
-
-
-        <PerformanceSection />
-        <AboutUs />
-        <ServicesSlider />
-
-        <WhyChooseUs />
-        <AdNetwork />
-        <GrowthSection />
-        <ConsultationSection />
-        <TestimonialSection />
-
-
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen bg-white">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/app-development" element={<AppDevelopment />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
