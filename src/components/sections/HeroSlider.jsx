@@ -63,7 +63,7 @@ export default function HeroRevealSlider() {
 
       {/* BLOB IMAGE - Now Starting from Center */}
       {/* BLOB IMAGE - Return from Text Column Top Right */}
-      <motion.img
+      {/* <motion.img
         src={blobImage}
         initial={{
           x: "-12%",
@@ -107,7 +107,7 @@ export default function HeroRevealSlider() {
     -translate-x-1/2
     -translate-y-1/2
   "
-      />
+      /> */}
 
       {/* CONTENT - Unchanged */}
       <div className="relative z-30 h-full">
