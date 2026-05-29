@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <main>
       <HeroSlider />
-      <PerformanceSection />
       <AboutUs />
       <ServicesSlider />
-      <MitraSuite />
+      <PerformanceSection />
       <WhyChooseUs />
+
       <AdNetwork />
       <GrowthSection />
       <ConsultationSection />

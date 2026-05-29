@@ -12,6 +12,15 @@ import {
   ChartColumn,
 } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
+import {
+  Award,
+  Rocket,
+  Lightbulb,
+  BadgeCheck,
+  ArrowRight,
+} from "lucide-react";
+import about from "../assets/about-us.jpg";
 
 export default function About() {
   const text = "starts here";
@@ -24,10 +33,13 @@ export default function About() {
     offset: ["start end", "end start"],
   });
 
-  // Vertical parallax: moves up as you scroll
-  const yTranslate = useTransform(scrollYProgress, [0, 1], [100, -100]);
-  // Scale growth: grows as you scroll
-  const scaleGrow = useTransform(scrollYProgress, [0, 1], [0.9, 1.1]);
+  // Individual line transforms - each moves differently to create separation
+  const tagY = useTransform(scrollYProgress, [0, 1], [0, -80]);
+  const headingY = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const descY = useTransform(scrollYProgress, [0, 1], [0, 0]);
+  const featuresY = useTransform(scrollYProgress, [0, 1], [0, 40]);
+  const buttonY = useTransform(scrollYProgress, [0, 1], [0, 80]);
+  const lineScale = useTransform(scrollYProgress, [0, 1], [0.95, 1.05]);
 
   useEffect(() => {
     let i = 0;
@@ -89,6 +101,13 @@ export default function About() {
       color: "bg-gradient-to-br from-[#b071ef] to-[#d7c8ff]",
     },
   ];
+  const serviceList = [
+    "Social Media Marketing",
+    "Search Engine Marketing",
+    "Search Engine Optimization",
+    "Social Media Optimization",
+    "Web Design & Development",
+  ];
 
   const stats = [
     { icon: Star, value: "500", plus: "+", title: "Verified", sub: "Reviews" },
@@ -96,6 +115,7 @@ export default function About() {
     { icon: Handshake, value: "500", plus: "+", title: "Happy Clients", sub: "" },
     { icon: Users, value: "20", plus: "+", title: "Team", sub: "Members" },
   ];
+
 
   return (
     <div className="pt-0">
@@ -142,8 +162,8 @@ export default function About() {
               <span className="ml-2 sm:ml-3 bg-purple-600 text-white rounded-full px-2 sm:px-3 py-1 text-xs sm:text-sm font-bold shadow-lg">1k+</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 mt-6 sm:mt-8 md:mt-10 justify-center lg:justify-start">
-              <button className="bg-[#09090F] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl flex items-center justify-center gap-2 font-bold hover:bg-purple-600 transition-all shadow-xl text-sm sm:text-base min-h-[44px]"><Phone size={16} className="sm:w-[18px] sm:h-[18px]" />Book a Meeting</button>
-              <button className="border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold hover:border-purple-600 hover:text-purple-600 transition-all text-sm sm:text-base min-h-[44px]">📞 Talk To Us</button>
+              <Link to="/contact" className="bg-[#09090F] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold hover:bg-purple-600 transition-all shadow-xl text-sm sm:text-base min-h-[44px]"><Phone size={16} className="sm:w-[18px] sm:h-[18px]" />Book a Meeting</Link>
+              <Link to="/contact" className="border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center font-bold hover:border-purple-600 hover:text-purple-600 transition-all text-sm sm:text-base min-h-[44px]">📞 Talk To Us</Link>
             </div>
           </div>
           <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
@@ -186,7 +206,7 @@ export default function About() {
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses through data-driven digital marketing strategies that increase visibility and generate sustainable growth.</p>
               <button className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
-              <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
+            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
               {services.map((item) => (
                 <div key={item.title} className="group bg-white rounded-[18px] p-5 sm:p-6 md:p-6 lg:p-8 shadow-[0_18px_40px_rgba(0,0,0,.05)] hover:bg-[#3B3663] hover:-translate-y-2 duration-500">
                   <div className={`w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full mb-4 sm:mb-6 md:mb-8 transition-all duration-500 group-hover:scale-110 ${item.color}`} />
@@ -247,16 +267,16 @@ export default function About() {
               className="relative h-[820px] hidden lg:block duration-300"
             >
               {/* BACK CARD */}
-              <div className="absolute left-0 top-0 w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
+              <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
                 <h2 className="text-white text-[90px] font-black">235+</h2>
                 <p className="text-white text-[26px] font-bold">Websites Developed</p>
-                <div className="absolute left-[40px] bottom-[60px] w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">
+                <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">
                   🌐
                 </div>
               </div>
 
               {/* FRONT CARD */}
-              <div className="absolute left-[150px] top-[180px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
+              <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
                 <h2 className="text-white text-[82px] font-black">450+</h2>
                 <p className="text-white text-[24px] font-bold">SEO Projects Completed</p>
                 <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">
@@ -270,16 +290,19 @@ export default function About() {
             </div>
 
             {/* RIGHT SIDE - Scroll Animation with Framer Motion Hooks */}
-            <motion.div
-              style={{
-                y: yTranslate,
-                scale: scaleGrow,
-                transformOrigin: "top left"
-              }}
-            >
-              <p className="text-[#af60ff] font-semibold text-sm sm:text-base">✺ Who Are We?</p>
+            <motion.div style={{ scale: lineScale }}>
 
-              <h1 className="mt-2 text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] lg:text-[64px] lg:leading-[72px] font-black">
+              <motion.p
+                style={{ y: tagY }}
+                className="text-[#af60ff] font-semibold text-sm sm:text-base"
+              >
+                ✺ Who Are We?
+              </motion.p>
+
+              <motion.h1
+                style={{ y: headingY }}
+                className="mt-2 text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] lg:text-[64px] lg:leading-[72px] font-black"
+              >
                 We Transform<br />
                 <span
                   className="text-transparent border-text"
@@ -287,13 +310,19 @@ export default function About() {
                 >
                   Dreams Into Life
                 </span>
-              </h1>
+              </motion.h1>
 
-              <p className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#555]">
+              <motion.p
+                style={{ y: descY }}
+                className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#555]"
+              >
                 Logelite is a global leader in next-generation digital marketing, web design and development.
-              </p>
+              </motion.p>
 
-              <div className="space-y-4 sm:space-y-6 mt-6 sm:mt-10">
+              <motion.div
+                style={{ y: featuresY }}
+                className="space-y-4 sm:space-y-6 mt-6 sm:mt-10"
+              >
                 {[
                   { icon: Globe, title: "Easy", desc: "From project audits to strategy creation." },
                   { icon: CircleDollarSign, title: "Affordable", desc: "Cost effective services." },
@@ -312,15 +341,119 @@ export default function About() {
                     </div>
                   );
                 })}
-              </div>
+              </motion.div>
 
-              <button className="mt-6 sm:mt-10 rounded-full border border-[#a84dff] px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-3 sm:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">
+              <motion.button
+                style={{ y: buttonY }}
+                className="mt-6 sm:mt-10 rounded-full border border-[#a84dff] px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-3 sm:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]"
+              >
                 Contact Now! <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" />
-              </button>
+              </motion.button>
             </motion.div>
           </div>
         </div>
       </section>
+
+
+
+
+
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+            {/* LEFT IMAGE */}
+            <div className="relative">
+
+              <div className="overflow-hidden rounded-3xl shadow-xl">
+                <img
+                  src={about}
+                  alt="About"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Floating Icons */}
+
+              <div className="absolute top-8 left-8 w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                <Award className="w-8 h-8 text-orange-500" />
+              </div>
+
+              <div className="absolute top-12 right-6 w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                <Rocket className="w-8 h-8 text-blue-500" />
+              </div>
+
+              <div className="absolute bottom-8 left-12 w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                <Lightbulb className="w-8 h-8 text-purple-500" />
+              </div>
+            </div>
+
+            {/* RIGHT CONTENT */}
+
+            <div>
+
+              {/* Subtitle */}
+
+              <div className="inline-flex items-center gap-2 text-orange-500 font-semibold mb-5">
+                <BadgeCheck className="w-5 h-5" />
+                What We Do
+              </div>
+
+              {/* Heading */}
+
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                We Offer All You
+                <br />
+                <span className="text-orange-500">
+                  Need to Grow Online
+                </span>
+              </h2>
+
+              {/* Description */}
+
+              <p className="mt-6 text-gray-600 text-lg leading-relaxed">
+                Logelite ticks all the boxes for businesses to thrive online.
+                We don't just introduce businesses to the digital world with
+                our expert web design and development services; but also fuel
+                growth through strategically crafted paid advertising and
+                digital marketing solutions.
+              </p>
+
+              {/* Offer Title */}
+
+              <div className="mt-10 flex items-center gap-3">
+                <Lightbulb className="w-7 h-7 text-orange-500" />
+                <h3 className="text-2xl font-bold">
+                  We Offer
+                </h3>
+              </div>
+
+              {/* Services */}
+
+              <ul className="mt-6 space-y-4">
+                {serviceList.map((service) => (
+                  <li
+                    key={service}
+                    className="flex items-center gap-3 text-gray-700"
+                  >
+                    <BadgeCheck className="w-5 h-5 text-orange-500" />
+                    {service}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Button */}
+
+              <button className="mt-10 inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                Get Quote
+                <ArrowRight size={18} />
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 import {
   Star,
@@ -416,10 +417,10 @@ const HeroSection = () => {
     <>
       <section className="w-full min-h-0 lg:min-h-screen bg-[#f3f1eb] overflow-hidden">
         <div className="min-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
- 
+
           {/* Main Grid */}
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
- 
+
             {/* Left Content */}
             <div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-tight">
@@ -630,7 +631,7 @@ const HeroSection = () => {
                 <img
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
                   alt="AI"
-                    className="w-full h-[420px] md:h-[300px] lg:h-[420px] object-cover"
+                  className="w-full h-[420px] md:h-[300px] lg:h-[420px] object-cover"
                 />
               </div>
             </div>
@@ -1261,9 +1262,10 @@ const HeroSection = () => {
                 {/* BUTTONS */}
                 <div className="mt-12 flex flex-wrap gap-6">
 
-                  <button
+                  <Link
+                    to="/contact"
                     className="
-                  px-8 py-5
+                  inline-flex items-center justify-center px-8 py-5
                   bg-cyan-300
                   text-black
                   rounded-xl
@@ -1274,11 +1276,12 @@ const HeroSection = () => {
                 "
                   >
                     Request a Demo
-                  </button>
+                  </Link>
 
-                  <button
+                  <Link
+                    to="/contact"
                     className="
-                  flex items-center gap-3
+                  inline-flex items-center gap-3
                   text-cyan-300
                   text-xl
                   font-semibold
@@ -1293,19 +1296,19 @@ const HeroSection = () => {
                     group-hover:translate-x-2
                   "
                     />
-                  </button>
+                  </Link>
                 </div>
               </div>
 
               {/* RIGHT IMAGE */}
-              <div>
+              <div className="flex items-center justify-center">
 
                 <div
                   className="
                 relative overflow-hidden
                 rounded-[28px]
-                border border-white/10
                 group
+                w-full
               "
                 >
 
@@ -1313,8 +1316,8 @@ const HeroSection = () => {
                     src={processData[activeStep].image}
                     alt={processData[activeStep].title}
                     className="
-                  w-full h-[500px] md:h-[350px] lg:h-[500px]
-                  object-cover
+                  w-full max-h-[50vh]
+                  object-contain
                   transition-all duration-700
                   group-hover:scale-110
                 "
@@ -1390,8 +1393,10 @@ const HeroSection = () => {
               </p>
 
               {/* BUTTON */}
-              <button
+              <Link
+                to="/contact"
                 className="
+                inline-flex items-center justify-center
                 mt-10
                 px-10 py-4
                 rounded-lg
@@ -1405,7 +1410,7 @@ const HeroSection = () => {
               "
               >
                 Consult Now!
-              </button>
+              </Link>
             </div>
           </div>
         </div>

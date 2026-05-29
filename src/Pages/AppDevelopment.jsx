@@ -1,4 +1,5 @@
 import { useState } from "react";
+import laptopMockup from "../assets/laptop-screen-website-mockup.webp";
 import { ArrowUpRight } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import {
@@ -396,10 +397,8 @@ const AppDevelopment = () => {
                                 <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">WEBSITE PACKAGES ⊕</button>
                             </div>
                         </div>
-                        <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
-                            <div className="absolute bottom-0 right-0 w-[150px] sm:w-[200px] md:w-[320px] h-[100px] sm:h-[150px] md:h-[220px] opacity-20 bg-[radial-gradient(circle,#000_12%,transparent_13%)] bg-[length:18px_18px] sm:bg-[length:24px_24px] md:bg-[length:34px_34px]" />
-                            <img src="/mockup/window.png" alt="" className="absolute w-[140px] sm:w-[200px] md:w-[340px] lg:w-[420px] left-[2%] sm:left-[0%] md:left-[8%] top-[2%] sm:top-[0%] md:top-[5%] z-20 rotate-[-6deg]" />
-                            <img src="/mockup/laptop.png" alt="" className="relative w-full max-w-[500px] sm:max-w-[760px] object-contain z-10" />
+                        <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
+                            <img src={laptopMockup} alt="Website mockup on laptop" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
                         </div>
                     </div>
                 </div>

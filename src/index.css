@@ -54,3 +54,24 @@ input, select, textarea, button {
     scrollbar-width: none;
   }
 }
+
+.portfolioSwiper {
+  overflow: visible;
+}
+
+.portfolioSwiper .swiper-button-next,
+.portfolioSwiper .swiper-button-prev {
+  color: #d6d6d6;
+  transform: scale(0.7);
+}
+
+.portfolioSwiper .swiper-button-next:hover,
+.portfolioSwiper .swiper-button-prev:hover {
+  color: #999;
+}
+
+.portfolioSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

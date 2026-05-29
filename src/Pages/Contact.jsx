@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import {
   Headphones,
@@ -18,6 +19,7 @@ if (EMAILJS_PUBLIC_KEY) {
 }
 
 const Contact = () => {
+  const [searchParams] = useSearchParams();
   const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
@@ -26,11 +28,12 @@ const Contact = () => {
     lastName: "",
     phone: "",
     email: "",
-    service: "",
+    service: searchParams.get("service") || "",
     message: "",
   });
 
   const serviceOptions = [
+    "Cloud Service",
     "Visitor Management Platform",
     "Attendance Tracking Ecosystem",
     "Hospital Management Engine",

@@ -5,7 +5,8 @@ export default function PerformanceSection() {
     <section className="relative overflow-hidden bg-[#8a42db]">
 
       {/* Vertical CTA */}
-      <div
+      <a
+        href="/contact"
         className="
         absolute
         right-0
@@ -13,11 +14,9 @@ export default function PerformanceSection() {
         -translate-y-1/2
         rotate-180
         bg-[#7b14d4]
-        text-white
-        px-2
-        sm:px-3
-        py-3
+        py-4
         sm:py-5
+        px-3
         rounded-l-xl
         text-[10px]
         sm:text-xs
@@ -25,13 +24,15 @@ export default function PerformanceSection() {
         z-20
         hidden
         sm:block
+        hover:bg-[#6b11ba]
+        transition-colors
       "
         style={{
           writingMode: "vertical-rl",
         }}
       >
         Book a Free Consultation
-      </div>
+      </a>
 
       <div className="max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-20 py-12 sm:py-16 lg:py-24">
 

@@ -1,9 +1,122 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { FiArrowUpRight, FiArrowRightCircle } from "react-icons/fi";
 import { ArrowRight } from "lucide-react";
 import { RefreshCw } from "lucide-react";
+import {
+    Bot,
+    ShieldCheck,
+    CloudCog,
+    ArrowLeftRight,
+    ChevronLeft,
+    ChevronRight,
+} from "lucide-react";
+import {
+    HeartPulse,
+    TrendingUp,
+    ShoppingCart,
+    BookOpen,
+    Cpu,
+    Truck,
+    Monitor,
+    Home,
+    MapPin,
+    Globe,
+    Phone,
+    Sun,
+} from "lucide-react";
+
+import robotImage from "../assets/robot-ai.avif";
+import consultationImage from "../assets/consultation.png";
+import useEmblaCarousel from "embla-carousel-react";
+
+import caseStudy1 from "../assets/case3.jpg";
+import caseStudy2 from "../assets/case4.jpg";
+
 
 const CloudServices = () => {
+    const navigate = useNavigate();
+    const features = [
+        {
+            icon: "/icons/traffic.png",
+            title: "Traffic Management",
+            description:
+                "Cyfuture Cloud's API & Application Gateway efficiently handles incoming traffic, distributing it across multiple backend services to ensure optimal performance, prevent bottlenecks, and maintain high availability for applications.",
+        },
+        {
+            icon: "/icons/security.png",
+            title: "Security Measures",
+            description:
+                "These gateways implement robust security protocols, including authentication, authorization, and encryption, safeguarding APIs and applications against unauthorized access, data breaches, and other potential security threats.",
+        },
+        {
+            icon: "/icons/scalability.png",
+            title: "Scalability",
+            description:
+                "With scalable architecture, the gateways seamlessly adapt to varying workloads, accommodating increased traffic and demand. This ensures consistent performance and responsiveness as applications and API usage grow over time.",
+        },
+        {
+            icon: "/icons/load-balancing.png",
+            title: "Load Balancing",
+            description:
+                "The gateways offer intelligent load balancing, evenly distributing incoming requests among multiple servers. This enhances resource utilization, prevents server overload, and improves overall system reliability and responsiveness.",
+        },
+        {
+            icon: "/icons/protocol.png",
+            title: "Protocol Support:",
+            description:
+                "Supporting various communication protocols and data formats, Cyfuture Cloud's gateways facilitate interoperability between different services and systems. This flexibility ensures compatibility with a diverse range of applications and simplifies integration processes.",
+        },
+        {
+            icon: "/icons/analytics.png",
+            title: "Analytics and Monitoring",
+            description:
+                "Comprehensive analytics and monitoring tools provide valuable insights into API and application performance. Real-time metrics, logs, and reports enable proactive management, troubleshooting, and optimization, ensuring a smooth and efficient operation of digital services.",
+        },
+    ];
+
+    const leftFeatures = [
+        {
+            icon: Bot,
+            title: "AWS-Certified Engineers",
+            description:
+                "Our team holds certifications across Solutions Architecture, DevOps, and Security Specialty.",
+        },
+        {
+            icon: ShieldCheck,
+            title: "Outcome-Driven Approach",
+            description:
+                "Every AWS recommendation we make is tied to a measurable business outcome.",
+        },
+        {
+            icon: Bot,
+            title: "Security by Design",
+            description:
+                "Security is embedded into every layer of our work—IAM matrices, WAF rules, and KMS encryption.",
+        },
+    ];
+
+    const rightFeatures = [
+        {
+            icon: CloudCog,
+            title: "Full-Lifecycle Delivery",
+            description:
+                "From initial AWS consulting through migration and ongoing managed services.",
+        },
+        {
+            icon: ArrowLeftRight,
+            title: "FinOps-First Cost Governance",
+            description:
+                "Our FinOps practice typically reduces AWS spend by 25–40% through proactive infrastructure adjustments.",
+        },
+        {
+            icon: CloudCog,
+            title: "Global Delivery Capability",
+            description:
+                "With international offices, we provide robust follow-the-sun operational assistance.",
+        },
+    ];
+
     const stages = [
         {
             id: 1,
@@ -58,6 +171,94 @@ const CloudServices = () => {
         "Minimal-downtime migration planning",
     ];
 
+    const caseStudies = [
+        {
+            image: caseStudy1,
+            title:
+                "Strong SAP implementation for efficient ERP, plus Disaster Recovery for a major power utility provider",
+        },
+        {
+            image: caseStudy2,
+            title:
+                "Robust banking IT systems with 99.95% uptime, backed by an impeccable Tier-III data center",
+        },
+    ];
+
+    const industries = [
+        {
+            icon: HeartPulse,
+            title: "Healthcare & Life Sciences",
+            description:
+                "We build HIPAA-compliant Azure solutions for hospitals, clinics, and health tech companies.",
+        },
+        {
+            icon: TrendingUp,
+            title: "Banking & Financial Services",
+            description:
+                "Deploy secure financial systems on Azure with PCI-DSS compliance and fraud prevention.",
+        },
+        {
+            icon: ShoppingCart,
+            title: "E-commerce & Retail",
+            description:
+                "Build scalable retail architectures using Azure Cosmos DB and Azure Kubernetes Service.",
+        },
+        {
+            icon: BookOpen,
+            title: "Education & EdTech",
+            description:
+                "Power virtual classrooms and smart learning management systems with Azure services.",
+        },
+        {
+            icon: Cpu,
+            title: "Manufacturing & Industrial IoT",
+            description:
+                "Connect and monitor factory machinery globally using Azure IoT Hub and Digital Twins.",
+        },
+        {
+            icon: Truck,
+            title: "Automotive & Mobility",
+            description:
+                "Build intelligent fleet management and connected vehicle platforms on Azure.",
+        },
+        {
+            icon: Monitor,
+            title: "Gaming & Entertainment",
+            description:
+                "Host multiplayer backends and manage high-speed asset delivery using Azure PlayFab.",
+        },
+        {
+            icon: Home,
+            title: "Real Estate & PropTech",
+            description:
+                "Develop property management portals and advanced data analytics suites.",
+        },
+        {
+            icon: MapPin,
+            title: "Logistics & Supply Chain",
+            description:
+                "Optimize warehousing, automation, and shipment tracking systems using Azure.",
+        },
+        {
+            icon: Globe,
+            title: "Travel & Hospitality",
+            description:
+                "Power reservation systems, booking engines, and dynamic pricing algorithms.",
+        },
+        {
+            icon: Phone,
+            title: "Telecom & SaaS",
+            description:
+                "Accelerate software delivery pipelines and scalable SaaS architectures.",
+        },
+        {
+            icon: Sun,
+            title: "Agriculture & AgriTech",
+            description:
+                "Leverage satellite data and field sensor analytics to improve crop health.",
+        },
+    ];
+
 
     const sectionRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -98,6 +299,20 @@ const CloudServices = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [activeIndex, stages.length]);
+
+
+    const [emblaRef, emblaApi] = useEmblaCarousel({
+        loop: true,
+        align: "start",
+    });
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev();
+    }, [emblaApi]);
+
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext();
+    }, [emblaApi]);
 
     return (
         <main className="min-h-screen bg-white">
@@ -244,7 +459,6 @@ const CloudServices = () => {
                     </div>
                 </div>
             </section>
-
             {/* DEVELOPMENT PROCESS SECTION */}
             <section
                 ref={sectionRef}
@@ -291,12 +505,12 @@ const CloudServices = () => {
                                             </p>
 
                                             <div className="flex flex-wrap gap-4 pt-6">
-                                                <button className="bg-blue-600 hover:bg-blue-500 px-10 py-4 rounded-2xl font-semibold text-lg transition-all active:scale-95">
+                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-10 py-4 rounded-2xl font-semibold text-lg transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Get a Free Quote
-                                                </button>
-                                                <button className="border border-gray-600 hover:bg-gray-900 px-8 py-4 rounded-2xl font-semibold transition-all active:scale-95">
+                                                </a>
+                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-8 py-4 rounded-2xl font-semibold transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Free Technical Consultation →
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
 
@@ -321,15 +535,6 @@ const CloudServices = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
             <section className="bg-[#EEF3FB] py-12 md:py-20 overflow-hidden">
                 <div className="max-w-[1400px] mx-auto px-6">
                     <div className="grid lg:grid-cols-[1fr_0.8fr] xl:grid-cols-[1fr_700px] gap-10 items-stretch">
@@ -436,6 +641,435 @@ const CloudServices = () => {
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+            <section className="bg-[#020817] text-white py-20">
+                <div className="max-w-7xl mx-auto px-6">
+
+                    {/* Heading */}
+                    <h2 className="text-center text-[42px] font-bold mb-20">
+                        Why PerfectionGeeks – The Difference That Makes AWS Projects Succeed
+                    </h2>
+
+                    {/* Main Layout */}
+                    <div className="grid lg:grid-cols-[1fr_420px_1fr] gap-12 items-center">
+
+                        {/* Left */}
+                        <div className="space-y-20">
+                            {leftFeatures.map((item, i) => {
+                                const Icon = item.icon;
+
+                                return (
+                                    <div key={i}>
+                                        <Icon
+                                            size={46}
+                                            className="text-cyan-300 mb-5"
+                                            strokeWidth={1.5}
+                                        />
+
+                                        <h3 className="text-[24px] font-bold mb-3">
+                                            {item.title}
+                                        </h3>
+
+                                        <p className="text-[#8B95A7] text-[18px] leading-9">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Center Image */}
+                        <div>
+                            <div className="overflow-hidden rounded-2xl border border-white/10">
+                                <img
+                                    src={robotImage}
+                                    alt="AI Robot"
+                                    className="w-full h-[390px] object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Right */}
+                        <div className="space-y-20">
+                            {rightFeatures.map((item, i) => {
+                                const Icon = item.icon;
+
+                                return (
+                                    <div key={i}>
+                                        <Icon
+                                            size={46}
+                                            className="text-cyan-300 mb-5"
+                                            strokeWidth={1.5}
+                                        />
+
+                                        <h3 className="text-[24px] font-bold mb-3">
+                                            {item.title}
+                                        </h3>
+
+                                        <p className="text-[#8B95A7] text-[18px] leading-9">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section className="bg-[#f5f5f5] py-20 overflow-hidden">
+                <div className="max-w-[1800px] mx-auto px-6 lg:px-12">
+
+                    <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-center">
+
+                        {/* LEFT IMAGE */}
+                        <div className="flex justify-start">
+
+                            <div className="relative">
+
+                                {/* BLUE SHAPE */}
+                                <div
+                                    className="
+              absolute
+              -top-8
+              left-16
+              w-[92%]
+              h-[92%]
+              bg-[#7AD7F4]
+              rounded-[45%_55%_60%_40%/50%_40%_60%_50%]
+            "
+                                />
+
+                                {/* GREEN SHAPE */}
+                                <div
+                                    className="
+              absolute
+              top-10
+              -left-6
+              w-[90%]
+              h-[90%]
+              bg-[#9CD600]
+              rounded-[55%_45%_40%_60%/40%_60%_40%_60%]
+            "
+                                />
+
+                                {/* IMAGE */}
+                                <div
+                                    className="
+              relative z-10
+              overflow-hidden
+              w-[900px]
+              h-[700px]
+              rounded-[40%_60%_55%_45%/45%_35%_65%_55%]
+            "
+                                >
+                                    <img
+                                        src={consultationImage}
+                                        alt="Consultation"
+                                        className="
+                w-full
+                h-full
+                object-cover
+              "
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* FORM */}
+                        <div className="max-w-[700px]">
+
+                            <h2
+                                className="
+            text-5xl
+            lg:text-6xl
+            font-bold
+            text-[#403B75]
+            leading-tight
+            mb-10
+          "
+                            >
+                                Book a Free Digital Marketing
+                                <br />
+                                Consultation
+                            </h2>
+
+                            <button
+                                onClick={() => navigate("/contact?service=Cloud Service")}
+                                className="px-10 py-4 text-white font-bold rounded-md bg-gradient-to-r from-[#F6B000] to-[#FF7A1A] hover:opacity-90 transition-all"
+                            >
+                                Get Free Consultation
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section className="bg-[#f4f4f4] py-14 lg:py-20">
+                <div className="max-w-[1450px] mx-auto px-6">
+
+                    {/* Heading */}
+                    <div className="text-center mb-14">
+                        <h2 className="text-[52px] font-bold text-[#2f2f2f] leading-none">
+                            Key Features
+                        </h2>
+
+                        <p className="mt-6 text-[18px] text-[#555]">
+                            Here are some features that are offered by Cyfuture Cloud for API
+                            Gateway:
+                        </p>
+                    </div>
+
+                    {/* Cards */}
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+                        {features.map((feature, index) => (
+                            <div
+                                key={index}
+                                className="
+                bg-white
+                border
+                border-[#bfd6f4]
+                rounded-[4px]
+                p-10
+                min-h-[335px]
+                transition-all
+                duration-300
+                hover:border-[#1f73ff]
+                hover:shadow-[0_0_25px_rgba(31,115,255,0.12)]
+              "
+                            >
+                                {/* Icon */}
+                                <img
+                                    src={feature.icon}
+                                    alt={feature.title}
+                                    className="w-[64px] h-[64px] object-contain"
+                                />
+
+                                {/* Title */}
+                                <h3
+                                    className="
+                  mt-8
+                  text-[22px]
+                  font-bold
+                  text-[#0b376d]
+                "
+                                >
+                                    {feature.title}
+                                </h3>
+
+                                {/* Description */}
+                                <p
+                                    className="
+                  mt-5
+                  text-[16px]
+                  leading-[1.75]
+                  text-[#4d4d4d]
+                "
+                                >
+                                    {feature.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </section>
+            <section className="bg-[#f3f3f3] py-16 lg:py-20">
+                <div className="max-w-[1450px] mx-auto px-6">
+
+                    {/* Heading */}
+                    <h2 className="text-center text-[42px] lg:text-[52px] font-bold text-[#333] mb-14">
+                        Case Studies
+                    </h2>
+
+                    {/* Carousel */}
+                    <div className="overflow-hidden" ref={emblaRef}>
+                        <div className="flex gap-8">
+
+                            {caseStudies.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="
+                  flex-[0_0_100%]
+                  h-[60vh]
+                  flex flex-col
+                  bg-white
+                  shadow-sm
+                  border
+                  border-[#e4e4e4]
+                  overflow-hidden
+                "
+                                >
+                                    {/* Image */}
+                                    <div className="flex-1 overflow-hidden">
+                                        <img
+                                            src={item.image}
+                                            alt={item.title}
+                                            className="
+                      w-full
+                      h-full
+                      object-cover
+                      transition-transform
+                      duration-700
+                      hover:scale-110
+                    "
+                                        />
+                                    </div>
+
+                                    {/* Content */}
+                                    <div className="bg-white px-6 py-7 shrink-0">
+                                        <p
+                                            className="
+                      text-[18px]
+                      text-[#222]
+                      leading-9
+                      font-medium
+                    "
+                                        >
+                                            {item.title}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+
+                        </div>
+                    </div>
+
+                    {/* Navigation */}
+                    <div className="flex justify-center gap-2 mt-8">
+
+                        <button
+                            onClick={scrollPrev}
+                            className="
+              w-12
+              h-12
+              bg-[#145b90]
+              text-white
+              flex
+              items-center
+              justify-center
+              transition
+              hover:bg-[#0d4f7f]
+            "
+                        >
+                            <ChevronLeft size={30} />
+                        </button>
+
+                        <button
+                            onClick={scrollNext}
+                            className="
+              w-12
+              h-12
+              bg-[#145b90]
+              text-white
+              flex
+              items-center
+              justify-center
+              transition
+              hover:bg-[#0d4f7f]
+            "
+                        >
+                            <ChevronRight size={30} />
+                        </button>
+
+                    </div>
+
+                </div>
+            </section>
+            <section className="bg-black py-20">
+                <div className="max-w-7xl mx-auto px-6">
+
+                    {/* Heading */}
+                    <div className="text-center mb-14">
+                        <h2 className="text-white text-4xl lg:text-5xl font-bold">
+                            Industries We Serve
+                        </h2>
+
+                        <p className="mt-6 max-w-4xl mx-auto text-gray-300 text-lg leading-9">
+                            Azure Solutions Across Industries — We build scalable,
+                            secure, and high-performance cloud solutions tailored to
+                            the unique needs of diverse industries.
+                        </p>
+                    </div>
+
+                    {/* Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+                        {industries.map((item, index) => {
+                            const Icon = item.icon;
+
+                            return (
+                                <div
+                                    key={index}
+                                    className="
+                  group
+                  rounded-3xl
+                  border border-[#1f355a]
+                  bg-gradient-to-r
+                  from-[#0e1931]
+                  to-[#1a2740]
+                  p-8
+                  transition-all
+                  duration-500
+                  hover:border-[#2f81ff]
+                  hover:-translate-y-2
+                  hover:shadow-[0_0_30px_rgba(47,129,255,0.15)]
+                "
+                                >
+                                    {/* Icon Circle */}
+                                    <div
+                                        className="
+                    mx-auto
+                    w-16
+                    h-16
+                    rounded-full
+                    bg-[#2b2368]
+                    flex
+                    items-center
+                    justify-center
+                  "
+                                    >
+                                        <Icon
+                                            size={30}
+                                            className="text-[#4f9cff]"
+                                        />
+                                    </div>
+
+                                    {/* Title */}
+                                    <h3
+                                        className="
+                    mt-8
+                    text-center
+                    text-white
+                    text-3xl
+                    font-bold
+                    leading-snug
+                    transition-colors
+                    duration-300
+                    group-hover:text-[#4f9cff]
+                  "
+                                    >
+                                        {item.title}
+                                    </h3>
+
+                                    {/* Description */}
+                                    <p
+                                        className="
+                    mt-5
+                    text-center
+                    text-gray-300
+                    text-lg
+                    leading-8
+                  "
+                                    >
+                                        {item.description}
+                                    </p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
