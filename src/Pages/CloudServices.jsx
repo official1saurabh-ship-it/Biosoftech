@@ -271,7 +271,7 @@ const CloudServices = () => {
                                 {stages.map((stage, index) => (
                                     <div
                                         key={stage.id}
-                                        className="min-w-full bg-[#111] rounded-3xl p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-12 items-center"
+                                        className="min-w-full bg-[#111] rounded-3xl p-10 md:p-6 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-12 md:gap-8 lg:gap-12 items-center"
                                     >
                                         {/* Left Content */}
                                         <div className="lg:w-1/2 space-y-8">

@@ -96,14 +96,15 @@ const Blog = () => {
           absolute
           left-[15%]
           top-[-10%]
-          h-[900px]
-          w-[900px]
-          rounded-full
-          border
-          border-[#e8e8e8]
-        "
+                h-[900px]
+                w-[900px]
+                rounded-full
+                border
+                border-[#e8e8e8]
+                hidden lg:block
+              "
                 />
-
+              
                 <div className="relative max-w-[1400px] mx-auto px-6 pb-12 md:pb-0">
  
                     <div className="grid lg:grid-cols-2 items-center min-h-[500px] md:min-h-[700px] gap-12 lg:gap-0 pt-28 md:pt-32">
@@ -306,7 +307,7 @@ const Blog = () => {
                                         className="
                     mt-4
                     text-[#777]
-                    leading-[42px]
+                    leading-[42px] md:leading-[28px] lg:leading-[42px]
                     text-[15px]
                   "
                                     >

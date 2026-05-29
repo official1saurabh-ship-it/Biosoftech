@@ -628,7 +628,7 @@ const HeroSection = () => {
                 <img
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
                   alt="AI"
-                  className="w-full h-[420px] object-cover"
+                    className="w-full h-[420px] md:h-[300px] lg:h-[420px] object-cover"
                 />
               </div>
             </div>
@@ -791,7 +791,7 @@ const HeroSection = () => {
               {/* RIGHT DETAILS PANEL */}
               <div className="bg-[#f7f7f7] rounded-[24px] p-8 lg:p-12">
 
-                <h3 className="text-5xl font-bold text-[#111] leading-tight">
+                <h3 className="text-5xl md:text-[32px] lg:text-5xl font-bold text-[#111] leading-tight">
                   {activeService.heading}
                 </h3>
 
@@ -867,7 +867,7 @@ const HeroSection = () => {
                 bg-[#07122B]
                 rounded-[6px]
                 p-8 lg:p-10
-                min-h-[420px]
+                min-h-[420px] md:min-h-[320px] lg:min-h-[420px]
                 group
                 transition-all duration-500
                 hover:border-cyan-500/40
@@ -939,9 +939,9 @@ const HeroSection = () => {
                   relative z-10
                   mt-8
                   text-xl
-                  leading-10
-                  text-white/75
-                "
+                leading-10 md:leading-8 lg:leading-10
+                text-white/75
+              "
                 >
                   {item.description}
                 </p>
@@ -1018,7 +1018,7 @@ const HeroSection = () => {
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-5 text-white/70 text-xl leading-10">
+                  <p className="mt-5 text-white/70 text-xl leading-10 md:leading-8 lg:leading-10">
                     {item.description}
                   </p>
                 </div>
@@ -1043,7 +1043,7 @@ const HeroSection = () => {
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
                   alt="AI Robot"
                   className="
-                  w-full h-[540px]
+                  w-full h-[540px] md:h-[400px] lg:h-[540px]
                   object-cover
                   transition-transform duration-700
                   group-hover:scale-110
@@ -1094,7 +1094,7 @@ const HeroSection = () => {
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-5 text-white/70 text-xl leading-10">
+                  <p className="mt-5 text-white/70 text-xl leading-10 md:leading-8 lg:leading-10">
                     {item.description}
                   </p>
                 </div>
@@ -1156,7 +1156,7 @@ const HeroSection = () => {
                 </h2>
               </div>
 
-              <p className="mt-10 max-w-5xl mx-auto text-xl text-white/60 leading-10">
+              <p className="mt-10 max-w-5xl mx-auto text-xl text-white/60 leading-10 md:leading-8 lg:leading-10">
                 Our AI development process is designed to transform your
                 business ideas into intelligent solutions.
               </p>
@@ -1248,7 +1248,7 @@ const HeroSection = () => {
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="mt-8 text-xl text-white/55 leading-10 max-w-2xl">
+                <p className="mt-8 text-xl text-white/55 leading-10 md:leading-8 lg:leading-10 max-w-2xl">
                   {processData[activeStep].description}
                 </p>
 
@@ -1307,7 +1307,7 @@ const HeroSection = () => {
                     src={processData[activeStep].image}
                     alt={processData[activeStep].title}
                     className="
-                  w-full h-[500px]
+                  w-full h-[500px] md:h-[350px] lg:h-[500px]
                   object-cover
                   transition-all duration-700
                   group-hover:scale-110
@@ -1370,7 +1370,7 @@ const HeroSection = () => {
               <p
                 className="
                 text-xl
-                leading-10
+                leading-10 md:leading-8 lg:leading-10
                 text-white/90
               "
               >

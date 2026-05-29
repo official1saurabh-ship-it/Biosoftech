@@ -235,7 +235,10 @@ export default function TestimonialSection() {
             relative
 
             px-10
-            sm:px-16
+            sm:px-12
+            md:px-6
+            lg:px-10
+            xl:px-16
             py-8
 
             overflow-hidden

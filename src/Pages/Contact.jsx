@@ -149,7 +149,7 @@ const Contact = () => {
       <section className="relative bg-[#F3F3F3] pb-12 md:pb-28">
         {/* HERO */}
         <div
-          className="relative h-[400px] md:h-[580px] overflow-hidden"
+          className="relative min-h-[400px] md:h-[580px] overflow-hidden"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920')",

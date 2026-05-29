@@ -140,7 +140,9 @@ export default function GrowthSection() {
               right-0
 
               translate-x-[35%]
+              md:translate-x-[25%]
               translate-y-[-10%]
+              md:translate-y-[-5%]
 
               w-[72px]
               h-[72px]
@@ -268,6 +270,8 @@ export default function GrowthSection() {
             relative
 
             min-h-[460px]
+            sm:min-h-[300px]
+            md:min-h-[400px]
             lg:h-full
           "
                     >
@@ -366,6 +370,7 @@ export default function GrowthSection() {
               right-0
 
               translate-x-[25%]
+              md:translate-x-[15%]
 
               w-[66px]
               h-[66px]

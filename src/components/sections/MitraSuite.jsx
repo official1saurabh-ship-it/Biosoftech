@@ -58,7 +58,7 @@ const MitraSuite = () => {
               whileInview={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-10 bg-gray-50 rounded-[3rem] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-transparent transition-all"
+              className="group p-10 sm:p-6 md:p-8 lg:p-10 bg-gray-50 rounded-[3rem] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-transparent transition-all"
             >
               <div className="mb-8 transform group-hover:scale-110 transition-transform">
                 {product.icon}

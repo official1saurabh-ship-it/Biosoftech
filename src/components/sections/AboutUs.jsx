@@ -72,7 +72,7 @@ export default function AboutUs() {
 
       <div className="max-w-[1650px] mx-auto px-5 sm:px-8 lg:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-6 lg:gap-20 items-center">
 
           {/* LEFT */}
 
@@ -272,8 +272,8 @@ export default function AboutUs() {
 
               <div>
 
-                <div className="text-xl sm:text-2xl lg:text-3xl xl:text-6xl font-black">
-                  +91-9044425858 / +91-6209688930
+                <div className="text-xl sm:text-2xl lg:text-3xl xl:text-6xl font-black break-words">
+                  +91-9044425858<br className="hidden sm:inline" /> /<br className="sm:hidden" /> +91-6209688930
                 </div>
 
                 <div className="text-purple-500 text-lg sm:text-xl">

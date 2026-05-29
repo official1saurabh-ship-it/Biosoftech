@@ -30,7 +30,7 @@ export default function PerformanceSection() {
 
       <div className="max-w-[1500px] mx-auto px-5 sm:px-8 lg:px-20 py-16 lg:py-24">
 
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-6 lg:gap-20 items-center">
 
           {/* LEFT */}
 

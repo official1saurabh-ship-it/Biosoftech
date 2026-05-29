@@ -194,6 +194,8 @@ to-[#12003f]/40
           lg:grid-cols-2
           xl:grid-cols-[1.1fr_0.8fr_1fr]
           gap-12
+          md:gap-8
+          lg:gap-12
           xl:gap-16
 
           items-center
