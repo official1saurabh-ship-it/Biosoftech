@@ -30,7 +30,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -124,7 +124,7 @@ const Header = () => {
           </Link>
 
           {/* Navigation Area with CORRECTED Hover Effect */}
-          <nav className="hidden md:flex items-center gap-8 px-4 h-full">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 px-4 h-full">
             {menuItems.map((item) => (
               <motion.div
                 key={item.name}
@@ -227,7 +227,7 @@ border-white/5
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="
  flex
- md:hidden
+ lg:hidden
 
  w-12
  h-12
@@ -275,7 +275,7 @@ z-[999]
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/95 backdrop-blur-3xl z-[200] md:hidden flex justify-end mobile-menu-container"
+            className="fixed inset-0 bg-black/95 backdrop-blur-3xl z-[200] lg:hidden flex justify-end mobile-menu-container"
             onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }}
           >
             <motion.div
@@ -283,7 +283,7 @@ z-[999]
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 35, stiffness: 300 }}
-              className="h-full w-[80%] max-w-sm bg-[#09090F] border-l border-white/5 flex flex-col"
+              className="h-full w-[80%] max-w-sm md:max-w-md bg-[#09090F] border-l border-white/5 flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="p-8 flex items-center justify-between border-b border-white/5">
