@@ -64,6 +64,10 @@ export default function AboutUs() {
     [220, 60, -60, -220]
   );
 
+  const teamworkRotate = useTransform(scrollYProgress, [0, 1], [-4, 4]);
+  const r2Rotate = useTransform(scrollYProgress, [0, 1], [3, -3]);
+  const innovationRotate = useTransform(scrollYProgress, [0, 1], [-6, 6]);
+
   return (
     <section
       ref={sectionRef}
@@ -87,6 +91,7 @@ export default function AboutUs() {
                 <motion.div
                   style={{
                     y: isDesktop ? rightY : 0,
+                    rotate: isDesktop ? teamworkRotate : 0,
                   }}
                   className="relative rounded-[26px] overflow-hidden bg-white h-[220px] xl:h-[300px]"
                 >
@@ -95,6 +100,7 @@ export default function AboutUs() {
                 <motion.div
                   style={{
                     y: isDesktop ? contentY : 0,
+                    rotate: isDesktop ? r2Rotate : 0,
                   }}
                   className="relative h-[260px] xl:h-[360px]"
                 >
@@ -104,6 +110,7 @@ export default function AboutUs() {
               <motion.div
                 style={{
                   y: isDesktop ? titleY : 0,
+                  rotate: isDesktop ? innovationRotate : 0,
                 }}
                 className="relative"
               >

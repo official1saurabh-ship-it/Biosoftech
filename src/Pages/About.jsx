@@ -27,11 +27,20 @@ export default function About() {
   const [displayText, setDisplayText] = useState("");
   const [offset, setOffset] = useState(0);
   const containerRef = useRef(null);
+  const floatingRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
   });
+
+  const { scrollYProgress: floatingProgress } = useScroll({
+    target: floatingRef,
+    offset: ["start end", "end start"],
+  });
+
+  const orbitAngle = useTransform(floatingProgress, [0, 1], [0, 360]);
+  const counterOrbitAngle = useTransform(orbitAngle, (v) => -v);
 
   // Individual line transforms - each moves differently to create separation
   const tagY = useTransform(scrollYProgress, [0, 1], [0, -80]);
@@ -358,7 +367,7 @@ export default function About() {
 
 
 
-      <section className="py-24 bg-white overflow-hidden">
+      <section ref={floatingRef} className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -373,18 +382,40 @@ export default function About() {
                 />
               </div>
 
-              {/* Floating Icons */}
+              {/* Floating Icons - Orbiting */}
 
-              <div className="absolute top-8 left-8 w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
-                <Award className="w-8 h-8 text-orange-500" />
-              </div>
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <motion.div
+                  style={{ rotate: orbitAngle }}
+                  className="relative w-[520px] h-[520px]"
+                >
+                  <div className="absolute left-1/2 -ml-8 -top-8 w-16 h-16">
+                    <motion.div
+                      style={{ rotate: counterOrbitAngle }}
+                      className="w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center"
+                    >
+                      <Award className="w-8 h-8 text-orange-500" />
+                    </motion.div>
+                  </div>
 
-              <div className="absolute top-12 right-6 w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
-                <Rocket className="w-8 h-8 text-blue-500" />
-              </div>
+                  <div className="absolute left-[453px] top-[98px] w-16 h-16">
+                    <motion.div
+                      style={{ rotate: counterOrbitAngle }}
+                      className="w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center"
+                    >
+                      <Rocket className="w-8 h-8 text-blue-500" />
+                    </motion.div>
+                  </div>
 
-              <div className="absolute bottom-8 left-12 w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
-                <Lightbulb className="w-8 h-8 text-purple-500" />
+                  <div className="absolute left-[3px] top-[98px] w-16 h-16">
+                    <motion.div
+                      style={{ rotate: counterOrbitAngle }}
+                      className="w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center"
+                    >
+                      <Lightbulb className="w-8 h-8 text-purple-500" />
+                    </motion.div>
+                  </div>
+                </motion.div>
               </div>
             </div>
 
