@@ -79,12 +79,12 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed left-0 w-full z-50 transition-all duration-700 flex justify-center pointer-events-none ${isScrolled ? 'top-4' : 'top-8'}`}>
+      <header className={`fixed left-0 w-full z-50 transition-all duration-700 flex justify-center pointer-events-none ${isScrolled ? 'top-1 sm:top-4' : 'top-1 sm:top-8'}`}>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className={`relative pointer-events-auto w-[92%] max-w-[1280px] h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-all duration-500 ${isScrolled ? 'h-14 scale-98 opacity-95' : 'scale-100 opacity-100'}`}
+          className={`relative pointer-events-auto w-[96%] sm:w-[92%] max-w-[1280px] h-14 sm:h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-all duration-500 ${isScrolled ? 'h-12 sm:h-14 scale-98 opacity-95' : 'scale-100 opacity-100'}`}
         >
           {/* Logo Section */}
           <Link to="/" className="h-full py-1 shrink-0">
@@ -143,8 +143,16 @@ const Header = () => {
                 )}
 
                 {/* Dropdown Menu */}
+                {/* Dropdown Desktop hover + mobile click */}
                 {item.dropdown && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100]">
+                  <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}
+                    onClick={(e) => {
+                      if (window.innerWidth < 1024) {
+                        e.stopPropagation();
+                        setActiveDropdown(activeDropdown === item.name ? null : item.name);
+                      }
+                    }}
+                  >
                     <div className="bg-[#09090F]/98 backdrop-blur-3xl rounded-2xl border border-white/5 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden p-1.5">
                       {item.dropdown.map((subItem) => {
                         const isExternal = subItem.href.startsWith('http');
@@ -287,11 +295,24 @@ z-[999]
                       <div key={item.name} className="group/mob">
                         <div
                           className="flex items-center justify-between py-5 border-b border-white/5 cursor-pointer"
-                          onClick={() => item.dropdown && setActiveDropdown(activeDropdown === item.name ? null : item.name)}
+                          onClick={(e) => {
+                            if (item.dropdown) {
+                              setActiveDropdown(activeDropdown === item.name ? null : item.name);
+                            }
+                            if (!item.dropdown && !isExternal) {
+                              setIsMobileMenuOpen(false);
+                            }
+                          }}
                         >
-                          <Component {...props} className="text-lg font-bold text-white group-mob:text-[#9255CE] transition-colors uppercase tracking-[0.2em]">
-                            {item.name}
-                          </Component>
+                          {item.dropdown ? (
+                            <span className="text-lg font-bold text-white group-mob:text-[#9255CE] transition-colors uppercase tracking-[0.2em]">
+                              {item.name}
+                            </span>
+                          ) : (
+                            <Component {...props} className="text-lg font-bold text-white group-mob:text-[#9255CE] transition-colors uppercase tracking-[0.2em]">
+                              {item.name}
+                            </Component>
+                          )}
                           {item.dropdown && <FaChevronDown size={12} className={`text-[#9255CE] transition-transform duration-500 ${activeDropdown === item.name ? 'rotate-180' : ''}`} />}
                         </div>
 

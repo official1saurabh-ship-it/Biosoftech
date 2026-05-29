@@ -5,9 +5,9 @@ const TRUSTPILOT_URL = "https://www.trustpilot.com/review/biosoftech.com";
 
 export default function GrowthSection() {
     return (
-        <section className="bg-[#f5f5f5] min-h-0 lg:min-h-[90vh] overflow-hidden">
+    <section className="bg-[#f5f5f5] min-h-0 lg:min-h-[90vh] overflow-hidden">
 
-            <div className="max-w-[1800px] h-full mx-auto px-5 sm:px-8 py-12 lg:py-8">
+            <div className="max-w-[1800px] h-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-8">
 
                 {/* Heading */}
 

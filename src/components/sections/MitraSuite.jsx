@@ -31,23 +31,23 @@ const products = [
 
 const MitraSuite = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div className="max-w-[1500px] mx-auto px-6">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-12 md:mb-16 gap-6 md:gap-8">
+    <section className="py-12 sm:py-16 lg:py-24 bg-white overflow-hidden">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:gap-6 md:gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-black text-[#09090F] mb-4 md:mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-[#09090F] mb-3 sm:mb-4 md:mb-6 leading-tight">
               The <span className="text-purple-600">Mitra Suite</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               Industry-specific software solutions designed to simplify operations and boost productivity for your business.
             </p>
           </div>
-          <button className="px-8 md:px-10 py-3 md:py-4 bg-[#09090F] text-white rounded-full font-bold uppercase tracking-widest hover:bg-purple-600 transition-all text-xs md:text-sm">
+          <button className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-[#09090F] text-white rounded-full font-bold uppercase tracking-widest hover:bg-purple-600 transition-all text-[11px] sm:text-xs md:text-sm whitespace-nowrap self-start lg:self-auto">
             View All Products
           </button>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {products.map((product, index) => (
             <motion.a 
               href={product.link}
@@ -55,7 +55,7 @@ const MitraSuite = () => {
               rel="noreferrer"
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInview={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               className="group p-10 sm:p-6 md:p-8 lg:p-10 bg-gray-50 rounded-[3rem] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-transparent transition-all"

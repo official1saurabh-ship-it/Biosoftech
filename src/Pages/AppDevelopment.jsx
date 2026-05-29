@@ -369,67 +369,67 @@ const AppDevelopment = () => {
         <>
             {/* Section 1: Hero */}
             <section className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
-                <div className="max-w-[1500px] mx-auto px-6 lg:px-16">
-                    <div className="grid lg:grid-cols-2 items-center gap-12 lg:gap-20 min-h-screen pt-28 md:pt-32">
+                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
+                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
-                            <h1 className="text-4xl md:text-6xl lg:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
+                            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
                                 Best Website Development<br className="hidden md:block" />Company In India
                             </h1>
-                            <div className="mt-8 md:mt-10 text-[#1d1d1d] text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
+                            <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
                                 <p>
                                     Are you looking for website development services in India?
                                     RankON Technologies is a leading web development company in
                                     India, offering <span className="font-semibold">strategic website development services</span> designed to convert traffic into leads, support long-term SEO, and scale with your business.
                                 </p>
-                                <p className="mt-6 md:mt-10">
-                                    With <span className="font-semibold">14+ years of experience</span> and <span className="font-semibold">1,000+ digital projects delivered globally</span>, RankON creates websites that don’t just look professional, they perform.
+                                <p className="mt-4 sm:mt-6 md:mt-10">
+                                    With <span className="font-semibold">14+ years of experience</span> and <span className="font-semibold">1,000+ digital projects delivered globally</span>, RankON creates websites that don&apos;t just look professional, they perform.
                                 </p>
                             </div>
-                            <div className="mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-6 md:gap-12">
-                                <img src="/logos/clutch.png" alt="" className="h-12 md:h-20 object-contain" />
-                                <img src="/logos/upwork.png" alt="" className="h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-review.png" alt="" className="h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-partner.png" alt="" className="h-12 md:h-20 object-contain" />
+                            <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
+                                <img src="/logos/clutch.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/upwork.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/google-review.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/google-partner.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
                             </div>
-                            <div className="mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-0">
-                                <button className="px-8 md:px-10 py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition">REQUEST PROPOSAL →</button>
-                                <button className="px-8 md:px-10 py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition">WEBSITE PACKAGES ⊕</button>
+                            <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
+                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
+                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">WEBSITE PACKAGES ⊕</button>
                             </div>
                         </div>
-                        <div className="relative flex justify-center mt-12 lg:mt-0">
-                            <div className="absolute bottom-0 right-0 w-[200px] md:w-[320px] h-[150px] md:h-[220px] opacity-20 bg-[radial-gradient(circle,#000_12%,transparent_13%)] bg-[length:24px_24px] md:bg-[length:34px_34px]" />
-                            <img src="/mockup/window.png" alt="" className="absolute w-[200px] md:w-[340px] lg:w-[420px] left-[0%] md:left-[8%] top-[0%] md:top-[5%] z-20 rotate-[-6deg]" />
-                            <img src="/mockup/laptop.png" alt="" className="relative w-full max-w-[760px] object-contain z-10" />
+                        <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
+                            <div className="absolute bottom-0 right-0 w-[150px] sm:w-[200px] md:w-[320px] h-[100px] sm:h-[150px] md:h-[220px] opacity-20 bg-[radial-gradient(circle,#000_12%,transparent_13%)] bg-[length:18px_18px] sm:bg-[length:24px_24px] md:bg-[length:34px_34px]" />
+                            <img src="/mockup/window.png" alt="" className="absolute w-[140px] sm:w-[200px] md:w-[340px] lg:w-[420px] left-[2%] sm:left-[0%] md:left-[8%] top-[2%] sm:top-[0%] md:top-[5%] z-20 rotate-[-6deg]" />
+                            <img src="/mockup/laptop.png" alt="" className="relative w-full max-w-[500px] sm:max-w-[760px] object-contain z-10" />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Section 2: Lift Your Brand */}
-            <section className="bg-[#f7f7f7] overflow-hidden py-12 md:py-20">
-                <div className="max-w-[1500px] mx-auto px-6 lg:px-16">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <section className="bg-[#f7f7f7] overflow-hidden py-10 sm:py-12 md:py-20">
+                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[760px] mx-auto lg:mx-0">
+                            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[760px] mx-auto lg:mx-0">
                                 Lift Your Brand with Cutting-Edge<br className="hidden md:block" />Android Applications
                             </h2>
-                            <ul className="mt-10 md:mt-14 space-y-6 md:space-y-10 text-left">
+                            <ul className="mt-6 sm:mt-10 md:mt-14 space-y-4 sm:space-y-6 md:space-y-10 text-left">
                                 {brandPoints.map((item, i) => (
-                                    <li key={i} className="flex gap-4 md:gap-5 text-[#525b6a] text-base md:text-lg leading-relaxed md:leading-[2]">
-                                        <span className="mt-[8px] md:mt-[12px] text-black">•</span>
+                                    <li key={i} className="flex gap-3 sm:gap-4 md:gap-5 text-[#525b6a] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
+                                        <span className="mt-[6px] sm:mt-[8px] md:mt-[12px] text-black shrink-0">•</span>
                                         <span className="max-w-[720px]">{item}</span>
                                     </li>
                                 ))}
                             </ul>
-                            <button className="mt-12 md:mt-16 px-10 md:px-14 py-4 md:py-6 rounded-full bg-[#058989] text-white text-base md:text-lg font-semibold hover:brightness-95 transition shadow-lg">
-                                Shape your success story<br className="hidden md:block" />with Appdid today!
+                            <button className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-sm sm:text-base md:text-lg font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
+                                Shape your success story with Appdid today!
                             </button>
                         </div>
-                        <div className="relative flex justify-center min-h-[400px] md:min-h-[650px] mt-12 lg:mt-0">
-                            <img src="/apps/app1.png" alt="" className="absolute left-[0%] md:left-[5%] top-[20%] md:top-[26%] w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
-                            <img src="/apps/app2.png" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 w-[130px] md:w-[190px] lg:w-[220px] z-20 drop-shadow-2xl" />
-                            <img src="/apps/app3.png" alt="" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[130px] md:w-[190px] lg:w-[220px] z-10 drop-shadow-2xl" />
-                            <img src="/apps/app4.png" alt="" className="absolute right-[0%] md:right-[8%] top-[20%] md:top-[28%] w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
+                        <div className="relative flex justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[650px] mt-8 sm:mt-12 lg:mt-0">
+                            <img src="/apps/app1.png" alt="" className="absolute left-[2%] sm:left-[0%] md:left-[5%] top-[22%] sm:top-[20%] md:top-[26%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
+                            <img src="/apps/app2.png" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-20 drop-shadow-2xl" />
+                            <img src="/apps/app3.png" alt="" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-10 drop-shadow-2xl" />
+                            <img src="/apps/app4.png" alt="" className="absolute right-[2%] sm:right-[0%] md:right-[8%] top-[24%] sm:top-[20%] md:top-[28%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
                         </div>
                     </div>
                 </div>
@@ -495,12 +495,12 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 5: Our Process */}
-            <section className="bg-[#f7f5f0] py-16 md:py-24 overflow-hidden">
-                <div className="max-w-[1450px] mx-auto px-6">
-                    <h2 className="text-center text-3xl md:text-5xl font-bold mb-16 md:mb-20">
+            <section className="bg-[#f7f5f0] py-12 sm:py-16 md:py-24 overflow-hidden">
+                <div className="max-w-[1450px] mx-auto px-4 sm:px-6">
+                    <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-bold mb-10 sm:mb-16 md:mb-20">
                         Our Process to <span className="text-orange-500">Success</span>
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 md:gap-y-28 gap-x-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-y-16 md:gap-y-28 gap-x-6 sm:gap-x-10">
                         {process.map((item) => (
                             <div key={item.id} className="relative flex flex-col items-center text-center">
                                 <div className="absolute top-[-16px] left-1/2 -translate-x-1/2 lg:left-[25%] lg:translate-x-0 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10">
@@ -521,33 +521,33 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 6: Stats */}
-            <section className="bg-[#f8f8f8] py-16 md:py-20">
-                <div className="max-w-[1450px] mx-auto px-6 lg:px-16">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <section className="bg-[#f8f8f8] py-12 sm:py-16 md:py-20">
+                <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-16">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
                         <div className="max-w-[760px] text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-[#171212]">
+                            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-[#171212]">
                                 Get Scalable Android App<br className="hidden md:block" />Development Services
                             </h2>
-                            <div className="mt-8 md:mt-10 space-y-6 md:space-y-8">
-                                <p className="text-[#343434] text-base md:text-lg leading-relaxed md:leading-[2]">
+                            <div className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-6 md:space-y-8">
+                                <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
                                     Got an idea? We help turn it into a real Android app. As a trusted Android app development company, OrangeMantra builds smart apps to match your business needs.
                                 </p>
-                                <p className="text-[#343434] text-base md:text-lg leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
                                     We've spent years creating Android app development solutions for all kinds of clients; startups, big brands, and everything in between. Our team understands how Android works and we design apps that connect well with your users.
                                 </p>
-                                <p className="text-[#343434] text-base md:text-lg leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
                                     Let's build something that stands out. Reach out to our Android mobile app development company and explore what we can create together.
                                 </p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 lg:mt-0">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12 lg:mt-0">
                             {stats.map((item, index) => (
-                                <div key={index} className="bg-white border border-gray-200 rounded-[22px] p-6 md:p-8 min-h-[220px] md:min-h-[270px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left">
-                                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-[#4f1d91] flex items-center justify-center">
-                                        <img src={item.icon} alt="" className="w-6 h-6 md:w-8 md:h-8 object-contain" />
+                                <div key={index} className="bg-white border border-gray-200 rounded-[22px] p-5 sm:p-6 md:p-8 min-h-[180px] sm:min-h-[220px] md:min-h-[270px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left">
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-2xl bg-[#4f1d91] flex items-center justify-center">
+                                        <img src={item.icon} alt="" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain" />
                                     </div>
-                                    <h3 className="mt-6 md:mt-8 text-4xl md:text-[56px] font-bold text-[#4f1d91]">{item.value}</h3>
-                                    <p className="mt-3 md:mt-4 text-base md:text-[18px] font-semibold leading-snug md:leading-[1.5] text-[#171212] max-w-[220px]">{item.title}</p>
+                                    <h3 className="mt-4 sm:mt-6 md:mt-8 text-3xl sm:text-4xl md:text-[56px] font-bold text-[#4f1d91]">{item.value}</h3>
+                                    <p className="mt-2 sm:mt-3 md:mt-4 text-sm sm:text-base md:text-[18px] font-semibold leading-snug md:leading-[1.5] text-[#171212] max-w-[220px]">{item.title}</p>
                                 </div>
                             ))}
                         </div>
@@ -675,16 +675,17 @@ const AppDevelopment = () => {
                 <div className="max-w-[1600px] mx-auto px-4 md:px-0">
                     <div className="grid lg:grid-cols-[1.6fr_0.8fr] gap-0">
                         {/* LEFT GRID */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 p-4 md:p-5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 p-3 sm:p-4 md:p-5">
                             {services.map((item, index) => (
                                 <div
                                     key={index}
                                     onMouseEnter={() => setActive(index)}
+                                    onClick={() => setActive(index)}
                                     className="
                   relative
                   overflow-hidden
-                  rounded-[22px]
-                  h-[220px] md:h-[270px]
+                  rounded-[18px] sm:rounded-[22px]
+                  h-[180px] sm:h-[220px] md:h-[270px]
                   group
                   cursor-pointer
                 "
@@ -704,16 +705,16 @@ const AppDevelopment = () => {
                   "
                                     />
                                     <div className="absolute inset-0 bg-black/45" />
-                                    <div className="absolute bottom-6 md:bottom-8 left-5 md:left-6 text-white z-10">
-                                        <h3 className="text-xl md:text-[22px] font-bold">
+                                    <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-3 sm:left-5 md:left-6 text-white z-10">
+                                        <h3 className="text-lg sm:text-xl md:text-[22px] font-bold">
                                             {item.title}
                                         </h3>
-                                        <p className="text-xs md:text-sm mt-1 md:mt-2 tracking-widest">
+                                        <p className="text-[11px] sm:text-xs md:text-sm mt-1 md:mt-2 tracking-widest">
                                             {item.sub}
                                         </p>
                                     </div>
                                     {active === index && (
-                                        <div className="absolute right-5 md:right-6 bottom-5 md:bottom-6 text-white text-3xl md:text-4xl z-10 hidden md:block">
+                                        <div className="absolute right-3 sm:right-5 md:right-6 bottom-3 sm:bottom-5 md:bottom-6 text-white text-2xl sm:text-3xl md:text-4xl z-10">
                                             →
                                         </div>
                                     )}
@@ -722,7 +723,7 @@ const AppDevelopment = () => {
                         </div>
 
                         {/* RIGHT PANEL */}
-                        <div className="bg-[#f8f8f8] px-8 md:px-12 py-12 md:py-16 flex flex-col justify-center text-center lg:text-left">
+                        <div className="bg-[#f8f8f8] px-6 sm:px-8 md:px-12 py-10 sm:py-12 md:py-16 flex flex-col justify-center text-center lg:text-left">
                             <h2 className="text-3xl md:text-[42px] font-semibold">
                                 {services[active].title}
                             </h2>
@@ -965,57 +966,53 @@ const AppDevelopment = () => {
                 </div>
             </section>
 
-            <section className="w-full bg-[#efefef] py-16 md:py-24">
-                <div className="max-w-[1320px] mx-auto px-6 md:px-8">
-                    {/* Heading */}
-                    <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold text-[#181818] leading-tight text-center md:text-left">
+            <section className="w-full bg-[#efefef] py-12 sm:py-16 md:py-24">
+                <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-8">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] font-bold text-[#181818] leading-tight text-center md:text-left">
                         App Development FAQs
                     </h2>
 
-                    <p className="mt-6 md:mt-8 max-w-[900px] text-base md:text-[18px] leading-relaxed md:leading-[2] text-[#444] text-center md:text-left mx-auto md:mx-0">
+                    <p className="mt-4 sm:mt-6 md:mt-8 max-w-[900px] text-sm sm:text-base md:text-[18px] leading-relaxed md:leading-[2] text-[#444] text-center md:text-left mx-auto md:mx-0">
                         Our skilled Android developers have answered some frequently asked
                         questions about Android development, and we have compiled them into a
                         list for your convenience.
                     </p>
 
-                    {/* FAQ */}
-                    <div className="mt-12 md:mt-20">
+                    <div className="mt-8 sm:mt-12 md:mt-20">
                         {faqData.map((faq) => (
                             <div key={faq.id} className="border-b border-[#e5e5e5]">
                                 <button
                                     onClick={() => setOpen(open === faq.id ? null : faq.id)}
-                                    className="w-full text-left py-6 md:py-10 group"
+                                    className="w-full text-left py-4 sm:py-6 md:py-10 group"
                                 >
-                                    <div className="flex flex-col md:flex-row gap-4 md:gap-10">
-                                        {/* Number */}
+                                    <div className="flex flex-col md:flex-row gap-3 sm:gap-4 md:gap-10">
                                         <div className="md:min-w-[90px]">
-                                            <span className="text-3xl md:text-[58px] font-bold text-[#181818]">
+                                            <span className="text-2xl sm:text-3xl md:text-[58px] font-bold text-[#181818]">
                                                 {faq.id}
                                             </span>
                                         </div>
 
-                                        {/* Content */}
                                         <div className="flex-1">
-                                            <div className="flex justify-between items-start gap-4 md:gap-10">
-                                                <h3 className="text-xl md:text-[28px] leading-tight md:leading-[1.5] font-medium text-[#222]">
+                                            <div className="flex justify-between items-start gap-3 sm:gap-4 md:gap-10">
+                                                <h3 className="text-base sm:text-xl md:text-[28px] leading-tight md:leading-[1.5] font-medium text-[#222]">
                                                     {faq.title}
                                                 </h3>
                                                 <div className={`
-                          min-w-[40px] h-[40px] md:min-w-[56px] md:h-[56px]
+                          min-w-[32px] h-[32px] sm:min-w-[40px] sm:h-[40px] md:min-w-[56px] md:h-[56px]
                           rounded-full border border-[#666]
                           flex items-center justify-center
                           transition-all duration-300 shrink-0
                           ${open === faq.id ? "rotate-45 bg-black text-white" : ""}
                         `}>
-                                                    <ArrowUpRight size={20} className="md:w-[28px] md:h-[28px]" />
+                                                    <ArrowUpRight size={16} className="sm:w-[20px] sm:h-[20px] md:w-[28px] md:h-[28px]" />
                                                 </div>
                                             </div>
 
                                             <div className={`
                         overflow-hidden transition-all duration-500
-                        ${open === faq.id ? "max-h-[400px] mt-6 md:mt-8" : "max-h-0"}
+                        ${open === faq.id ? "max-h-[600px] sm:max-h-[400px] mt-4 sm:mt-6 md:mt-8" : "max-h-0"}
                       `}>
-                                                <p className="text-sm md:text-[18px] leading-relaxed md:leading-[2] text-[#444]">
+                                                <p className="text-sm sm:text-base md:text-[18px] leading-relaxed md:leading-[2] text-[#444]">
                                                     {faq.answer}
                                                 </p>
                                             </div>
@@ -1029,39 +1026,32 @@ const AppDevelopment = () => {
             </section>
 
             <section className="w-full bg-[#0d0d0d]">
-                <div className="relative max-w-[1900px] mx-auto min-h-[450px] md:h-[560px] overflow-hidden">
-                    {/* Background */}
+                <div className="relative max-w-[1900px] mx-auto min-h-[350px] sm:min-h-[450px] md:h-[560px] overflow-hidden">
                     <img src="/hero-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/45 to-black/20" />
 
-                    {/* Content */}
-                    <div className="relative z-10 h-full flex items-center py-16 md:py-0">
-                        <div className="px-6 md:px-8 lg:px-16 text-center md:text-left w-full">
-                            {/* Badge */}
-                            <div className="inline-flex items-center bg-white rounded-full px-4 md:px-5 py-2 md:py-3 text-base md:text-[22px] font-medium text-[#232323]">
+                    <div className="relative z-10 h-full flex items-center py-12 sm:py-16 md:py-0">
+                        <div className="px-4 sm:px-6 md:px-8 lg:px-16 text-center md:text-left w-full">
+                            <div className="inline-flex items-center bg-white rounded-full px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-3 text-sm sm:text-base md:text-[22px] font-medium text-[#232323]">
                                 2000+ businesses
                             </div>
 
-                            {/* Heading */}
-                            <h2 className="mt-8 md:mt-10 text-white text-3xl md:text-6xl lg:text-[86px] leading-tight lg:leading-[1.05] font-bold max-w-[1000px] mx-auto md:mx-0">
+                            <h2 className="mt-6 sm:mt-8 md:mt-10 text-white text-2xl sm:text-3xl md:text-6xl lg:text-[86px] leading-tight lg:leading-[1.05] font-bold max-w-[1000px] mx-auto md:mx-0">
                                 Let&apos;s Create Big Stories Together
                             </h2>
 
-                            {/* Line */}
-                            <div className="mt-6 md:mt-10 w-[60px] md:w-[90px] h-[2px] bg-white mx-auto md:mx-0" />
+                            <div className="mt-4 sm:mt-6 md:mt-10 w-[50px] sm:w-[60px] md:w-[90px] h-[2px] bg-white mx-auto md:mx-0" />
 
-                            {/* Subtitle */}
-                            <p className="mt-6 md:mt-10 text-white text-lg md:text-[24px] max-w-[900px] mx-auto md:mx-0">
+                            <p className="mt-4 sm:mt-6 md:mt-10 text-white text-base sm:text-lg md:text-[24px] max-w-[900px] mx-auto md:mx-0">
                                 Share your project details to build your path toward success
                             </p>
 
-                            {/* CTA */}
-                            <button className="group relative mt-10 md:mt-16 flex items-center justify-center md:justify-start gap-4 md:gap-6 mx-auto md:mx-0">
-                                <span className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 md:w-[60px] md:h-[60px] border border-white rounded-full transition-all duration-700 ease-out group-hover:w-full group-hover:rounded-[999px]" />
-                                <span className="relative z-10 w-12 h-12 md:w-[60px] md:h-[60px] flex items-center justify-center text-white shrink-0">
-                                    <ArrowRight size={24} className="md:w-[28px] md:h-[28px]" />
+                            <button className="group relative mt-8 sm:mt-10 md:mt-16 flex items-center justify-center md:justify-start gap-3 sm:gap-4 md:gap-6 mx-auto md:mx-0">
+                                <span className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] border border-white rounded-full transition-all duration-700 ease-out group-hover:w-full group-hover:rounded-[999px]" />
+                                <span className="relative z-10 w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] flex items-center justify-center text-white shrink-0">
+                                    <ArrowRight size={20} className="sm:w-[24px] sm:h-[24px] md:w-[28px] md:h-[28px]" />
                                 </span>
-                                <span className="relative z-10 text-white text-xl md:text-[34px] font-medium pr-6 md:pr-10">
+                                <span className="relative z-10 text-white text-lg sm:text-xl md:text-[34px] font-medium pr-4 sm:pr-6 md:pr-10">
                                     Get A Quote
                                 </span>
                             </button>

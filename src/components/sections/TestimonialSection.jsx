@@ -259,8 +259,10 @@ export default function TestimonialSection() {
 
               z-20
 
-              w-12
-              h-12
+              w-10
+              h-10
+              sm:w-12
+              sm:h-12
 
               rounded-full
 
@@ -273,7 +275,7 @@ export default function TestimonialSection() {
               justify-center
               "
                         >
-                            <ChevronLeft />
+                            <ChevronLeft size={20} />
                         </button>
 
                         {/* RIGHT */}
@@ -290,8 +292,10 @@ export default function TestimonialSection() {
 
               z-20
 
-              w-12
-              h-12
+              w-10
+              h-10
+              sm:w-12
+              sm:h-12
 
               rounded-full
 
@@ -304,7 +308,7 @@ export default function TestimonialSection() {
               justify-center
               "
                         >
-                            <ChevronRight />
+                            <ChevronRight size={20} />
                         </button>
 
 

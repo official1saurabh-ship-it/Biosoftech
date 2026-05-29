@@ -130,10 +130,11 @@ export default function ServicesSlider() {
 
                     rounded-[24px]
                     lg:rounded-[34px]
-                    p-6
+                    p-5
                     sm:p-8
                     lg:p-10
-                    h-[560px]
+                    min-h-[480px]
+                    sm:min-h-[520px]
                     lg:h-[620px]
                     flex
                     flex-col

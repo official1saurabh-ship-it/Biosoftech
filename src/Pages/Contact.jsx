@@ -149,7 +149,7 @@ const Contact = () => {
       <section className="relative bg-[#F3F3F3] pb-12 md:pb-28">
         {/* HERO */}
         <div
-          className="relative min-h-[400px] md:h-[580px] overflow-hidden"
+          className="relative min-h-[320px] sm:min-h-[400px] md:h-[580px] overflow-hidden"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920')",
@@ -160,11 +160,12 @@ const Contact = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-[#02162F]/70" />
 
-          <div className="relative z-10 max-w-[900px] mx-auto px-6 text-center pt-24 md:pt-28">
+          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-24 md:pt-28">
             <h1
               className="
             text-white
-            text-[32px]
+            text-2xl
+            sm:text-[32px]
             md:text-[42px]
             lg:text-[64px]
             font-bold
@@ -178,9 +179,11 @@ const Contact = () => {
             <p
               className="
             text-white/85
-            text-base
+            text-sm
+            sm:text-base
             md:text-lg
-            mt-6
+            mt-4
+            sm:mt-6
             md:mt-8
             leading-[1.8]
             md:leading-[2]
@@ -196,16 +199,20 @@ const Contact = () => {
 
             <button
               className="
-            mt-8
+            mt-6
+            sm:mt-8
             md:mt-12
             bg-[#2E57FF]
             text-white
-            h-[60px]
+            h-[50px]
+            sm:h-[60px]
             md:h-[72px]
-            px-8
+            px-6
+            sm:px-8
             md:px-12
             rounded-lg
-            text-base
+            text-sm
+            sm:text-base
             md:text-lg
             font-semibold
             hover:scale-[1.03]
@@ -224,9 +231,11 @@ const Contact = () => {
         z-20
         max-w-[1180px]
         mx-auto
-        -mt-[60px]
+        -mt-[40px]
+        sm:-mt-[60px]
         md:-mt-[120px]
-        px-4
+        px-3
+        sm:px-4
         md:px-6
       "
         >
@@ -240,10 +249,11 @@ const Contact = () => {
         "
           >
             {/* LEFT */}
-            <div className="p-6 md:p-10 lg:p-14">
+            <div className="p-4 sm:p-6 md:p-10 lg:p-14">
               <h2
                 className="
-              text-[28px]
+              text-2xl
+              sm:text-[28px]
               md:text-[34px]
               lg:text-[48px]
               font-bold
@@ -254,10 +264,12 @@ const Contact = () => {
 
               <p
                 className="
-              mt-4
+              mt-3
+              sm:mt-4
               md:mt-5
               text-[#777]
-              text-base
+              text-sm
+              sm:text-base
               md:text-lg
               leading-[1.7]
               md:leading-[1.9]
@@ -269,8 +281,8 @@ const Contact = () => {
                 back to you shortly.
               </p>
 
-              <form ref={formRef} onSubmit={handleSubmit} className="mt-8 md:mt-10 space-y-5 md:space-y-6">
-                <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-5 md:space-y-6">
+                <div className="grid md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-1.5">
                       First Name <span className="text-red-500">*</span>
@@ -285,13 +297,13 @@ const Contact = () => {
                       autoComplete="given-name"
                       required
                       className="
-                    w-full h-[52px] px-4
+                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200
+                    transition-all duration-200 text-sm sm:text-base
                   "
                     />
                   </div>
@@ -309,13 +321,13 @@ const Contact = () => {
                       autoComplete="family-name"
                       required
                       className="
-                    w-full h-[52px] px-4
+                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200
+                    transition-all duration-200 text-sm sm:text-base
                   "
                     />
                   </div>
@@ -333,13 +345,13 @@ const Contact = () => {
                       autoComplete="tel"
                       required
                       className="
-                    w-full h-[52px] px-4
+                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200
+                    transition-all duration-200 text-sm sm:text-base
                   "
                     />
                   </div>
@@ -357,13 +369,13 @@ const Contact = () => {
                       autoComplete="email"
                       required
                       className="
-                    w-full h-[52px] px-4
+                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200
+                    transition-all duration-200 text-sm sm:text-base
                   "
                     />
                   </div>
@@ -381,13 +393,13 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="
-                    w-full h-[52px] px-4 pr-10
+                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4 pr-8 sm:pr-10
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900
                     outline-none appearance-none cursor-pointer
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200
+                    transition-all duration-200 text-sm sm:text-base
                   "
                     >
                       <option value="" disabled>Select Service</option>
@@ -396,7 +408,7 @@ const Contact = () => {
                       ))}
                     </select>
                     <svg
-                      className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none"
+                      className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-3 h-3 sm:w-4 sm:h-4 text-gray-500 pointer-events-none"
                       fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -416,15 +428,15 @@ const Contact = () => {
                     placeholder="Message"
                     required
                     className="
-                  w-full px-4 py-4
+                  w-full px-3 sm:px-4 py-3 sm:py-4
                   bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
                     outline-none resize-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200
+                    transition-all duration-200 text-sm sm:text-base
                   "
-                    style={{ minHeight: "150px" }}
+                    style={{ minHeight: "120px" }}
                   />
                 </div>
 
@@ -432,9 +444,9 @@ const Contact = () => {
                   type="submit"
                   disabled={isSubmitting}
                   className="
-                w-full h-[54px]
+                w-full h-[48px] sm:h-[54px]
                 rounded-xl
-                font-bold text-base
+                font-bold text-sm sm:text-base
                 text-white
                 bg-gradient-to-r from-[#06b6d4] to-[#3b82f6]
                 hover:brightness-110
@@ -463,7 +475,7 @@ const Contact = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="min-h-[400px] lg:min-h-[800px]">
+            <div className="min-h-[300px] sm:min-h-[400px] lg:min-h-[800px]">
               <iframe
                 title="map"
                 className="w-full h-full"
@@ -476,8 +488,8 @@ const Contact = () => {
       </section>
 
       <section className="bg-[#F5F5F5] py-10 md:py-20">
-        <div className="max-w-[1100px] mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
+        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
             {/* LEFT */}
             <div>
               <h1

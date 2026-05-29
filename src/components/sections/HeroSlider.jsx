@@ -51,7 +51,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] flex items-center">
+    <section className="relative min-h-[600px] sm:min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] flex items-center">
 
       {/* BG IMAGE */}
       <div
@@ -109,8 +109,8 @@ export default function HeroRevealSlider() {
   "
       /> */}
 
-      {/* CONTENT - Unchanged */}
-      <div className="relative z-30 h-full">
+      {/* CONTENT */}
+      <div className="relative z-30 h-full w-full">
         <div
           className="
             max-w-[1536px]
@@ -120,9 +120,10 @@ export default function HeroRevealSlider() {
             grid
             lg:grid-cols-2
             items-center
-            gap-6
+            gap-4
             lg:gap-16
-            px-6
+            px-4
+            sm:px-6
             lg:px-16
             2xl:px-24
           "
@@ -142,7 +143,7 @@ export default function HeroRevealSlider() {
             >
               <img
                 src={slide.image}
-                className="w-[75%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[650px] object-contain self-end relative z-30"
+                className="w-[65%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[650px] object-contain self-end relative z-30"
               />
             </motion.div>
           </AnimatePresence>
@@ -155,28 +156,28 @@ export default function HeroRevealSlider() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center"
           >
-            <div className="relative z-40 h-auto lg:h-[60vh] flex flex-col justify-center pt-28 sm:pt-28 lg:pt-28">
-              <h4 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-3 lg:mb-5">
+            <div className="relative z-40 h-auto lg:h-[60vh] flex flex-col justify-center pt-24 sm:pt-28 lg:pt-28">
+              <h4 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h4>
 
-              <h1 className="text-[32px] sm:text-[56px] md:text-[72px] lg:text-[96px] xl:text-[112px] 2xl:text-[124px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-[28px] sm:text-[56px] md:text-[72px] lg:text-[96px] xl:text-[112px] 2xl:text-[124px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
 
-              <h2 className="text-[28px] sm:text-[48px] md:text-[64px] lg:text-[82px] xl:text-[96px] 2xl:text-[108px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-[24px] sm:text-[48px] md:text-[64px] lg:text-[82px] xl:text-[96px] 2xl:text-[108px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
 
-              <h3 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[54px] xl:text-[64px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h3 className="text-[18px] sm:text-[32px] md:text-[40px] lg:text-[54px] xl:text-[64px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
               </h3>
 
-              <p className="mt-5 lg:mt-7 max-w-[550px] text-base sm:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
+              <p className="mt-4 lg:mt-7 max-w-[550px] text-sm sm:text-base lg:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
                 {slide.desc}
               </p>
 
-              <button className="mt-8 lg:mt-10 px-8 sm:px-12 py-4 sm:py-5 rounded-full bg-white text-black font-jakarta font-bold uppercase tracking-widest text-[13px] hover:bg-purple-600 hover:text-white hover:border-purple-600 border border-transparent transition-all duration-500 shadow-lg">
+              <button className="mt-6 lg:mt-10 px-6 sm:px-12 py-3 sm:py-5 rounded-full bg-white text-black font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 hover:text-white hover:border-purple-600 border border-transparent transition-all duration-500 shadow-lg min-h-[44px]">
                 Get Started &rarr;
               </button>
             </div>
@@ -185,17 +186,17 @@ export default function HeroRevealSlider() {
       </div>
 
       {/* CONTROLS */}
-      <div className="absolute right-4 lg:right-10 top-1/2 -translate-y-1/2 hidden sm:flex flex-col gap-4 lg:gap-8 z-50">
+      <div className="absolute right-2 sm:right-4 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 lg:gap-8 z-50">
         <button
           onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
-          className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors"
+          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
         >
           &larr;
         </button>
 
         <button
           onClick={() => setIndex((index + 1) % slides.length)}
-          className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors"
+          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
         >
           &rarr;
         </button>

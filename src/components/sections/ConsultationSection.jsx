@@ -3,18 +3,19 @@ import { ChevronDown } from "lucide-react";
 
 export default function ConsultationSection() {
     return (
-        <section className="bg-[#f5f5f5] py-12 lg:py-16 overflow-hidden">
+    <section className="bg-[#f5f5f5] py-10 sm:py-12 lg:py-16 overflow-hidden">
 
-            <div className="max-w-[1600px] mx-auto px-5 sm:px-8">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="grid lg:grid-cols-2 gap-10 md:gap-6 lg:gap-20 items-stretch">
+                <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-6 lg:gap-20 items-stretch">
 
-                    {/* LEFT IMAGE */}
+                    {/* LEFT IMAGE - hidden on very small screens */}
 
                     <div
                         className="
 relative
-flex
+hidden
+sm:flex
 justify-center
 items-center
 h-[430px]
@@ -34,11 +35,11 @@ sm:max-h-none
               top-10
 
             w-[280px]
-sm:w-[400px]
-lg:w-[500px]
-h-[360px]
-sm:h-[500px]
-lg:h-[620px]
+            sm:w-[400px]
+            lg:w-[500px]
+            h-[360px]
+            sm:h-[500px]
+            lg:h-[620px]
 
               bg-[#78d9f7]
 
@@ -55,12 +56,12 @@ lg:h-[620px]
               absolute
               left-6
               top-20
-w-[260px]
-sm:w-[360px]
-lg:w-[450px]
-h-[330px]
-sm:h-[460px]
-lg:h-[570px]
+            w-[260px]
+            sm:w-[360px]
+            lg:w-[450px]
+            h-[330px]
+            sm:h-[460px]
+            lg:h-[570px]
 
               bg-[#89d000]
 
@@ -77,11 +78,11 @@ lg:h-[570px]
               overflow-hidden
 
              w-[280px]
-sm:w-[400px]
-lg:w-[500px]
-h-[360px]
-sm:h-[500px]
-lg:h-[620px]
+            sm:w-[400px]
+            lg:w-[500px]
+            h-[360px]
+            sm:h-[500px]
+            lg:h-[620px]
 
               rounded-[58%_42%_56%_44%/48%_34%_66%_52%]
             "
@@ -144,13 +145,14 @@ h-auto
 lg:h-[700px]
 ">
 
-                        <div className="flex items-center gap-4 mb-8">
+                        <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
 
-                            <span className="w-2 h-2 rounded-full bg-blue-600" />
+                            <span className="w-2 h-2 rounded-full bg-blue-600 shrink-0" />
 
                             <h2
                                 className="
-                text-[30px]
+                text-2xl
+                sm:text-[30px]
                 sm:text-[36px]
                 lg:text-[42px]
                 leading-[1.1]
@@ -163,7 +165,7 @@ lg:h-[700px]
 
                         </div>
 
-                        <form className="space-y-6">
+                        <form className="space-y-4 sm:space-y-6">
 
                             <input
                                 placeholder="Enter Your Full Name*"

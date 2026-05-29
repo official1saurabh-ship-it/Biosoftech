@@ -103,52 +103,52 @@ const CloudServices = () => {
         <main className="min-h-screen bg-white">
             {/* HERO SECTION */}
             <section className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
-                <div className="max-w-[1750px] mx-auto px-6 lg:px-20">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen pt-28 md:pt-32">
+                <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black leading-tight">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-black leading-tight">
                                 Best Website Development <br />
                                 Company In India
                             </h1>
-                            <div className="mt-8 lg:mt-10 text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
                                 <p>
                                     Are you looking for website development services in India? RankON Technologies is a leading web development company in India, offering <span className="font-bold">strategic website development services</span> designed to convert traffic into leads, support long-term SEO, and scale with your business.
                                 </p>
-                                <p className="mt-6 lg:mt-10">
+                                <p className="mt-4 sm:mt-6 lg:mt-10">
                                     With <span className="font-bold">14+ years of experience</span> and <span className="font-bold">1,000+ digital projects delivered globally</span>, RankON creates websites that don&apos;t just look professional, they perform.
                                 </p>
                             </div>
 
-                            <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-8 lg:gap-12">
+                            <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-3xl md:text-[52px] font-bold">Clutch</h3>
-                                    <div className="text-[#f4a300] text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-sm md:text-base">Rated 5/5 Stars</p>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Clutch</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 5/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-3xl md:text-[52px] font-bold"><span className="text-[#69D24A]">up</span>work</h3>
-                                    <p className="border-t border-black text-sm md:text-[20px] font-semibold mt-2 pt-2">Top Rated Plus</p>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold"><span className="text-[#69D24A]">up</span>work</h3>
+                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Top Rated Plus</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-3xl md:text-[52px] font-medium"><span className="text-[#4285F4]">G</span><span className="text-[#EA4335]">o</span><span className="text-[#FBBC05]">o</span><span className="text-[#4285F4]">g</span><span className="text-[#34A853]">l</span><span className="text-[#EA4335]">e</span></h3>
-                                    <div className="text-[#f4a300] text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-medium"><span className="text-[#4285F4]">G</span><span className="text-[#EA4335]">o</span><span className="text-[#FBBC05]">o</span><span className="text-[#4285F4]">g</span><span className="text-[#34A853]">l</span><span className="text-[#EA4335]">e</span></h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
                                 </div>
                             </div>
 
-                            <div className="mt-10 flex flex-col sm:flex-row gap-4 lg:gap-0 justify-center lg:justify-start">
-                                <button className="group bg-[#F7B700] px-6 lg:px-10 h-[60px] lg:h-[74px] text-lg lg:text-[22px] font-medium flex items-center justify-center gap-4 hover:bg-[#e4aa00] transition cursor-pointer">
+                            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
+                                <button className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
-                                <button className="group bg-black text-white px-6 lg:px-10 h-[60px] lg:h-[74px] text-lg lg:text-[22px] font-medium flex items-center justify-center gap-4 hover:bg-[#151515] transition cursor-pointer">
+                                <button className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
                                     WEBSITE PACKAGES <FiArrowRightCircle className="transition group-hover:translate-x-1" />
                                 </button>
                             </div>
                         </div>
 
-                        <div className="relative mt-12 lg:mt-0">
-                            <div className="absolute left-[8%] top-[5%] z-20 w-[200px] md:w-[420px] rotate-[-6deg] bg-white rounded-xl shadow-xl p-2 md:p-4">
-                                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" className="w-full h-[100px] md:h-[220px] object-cover rounded" alt="" />
+                        <div className="relative mt-8 sm:mt-12 lg:mt-0">
+                            <div className="absolute left-[5%] sm:left-[8%] top-[5%] z-20 w-[140px] sm:w-[200px] md:w-[420px] rotate-[-6deg] bg-white rounded-xl shadow-xl p-2 md:p-4">
+                                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" className="w-full h-[70px] sm:h-[100px] md:h-[220px] object-cover rounded" alt="" />
                             </div>
                             <img src="https://pngimg.com/d/laptop_PNG101816.png" alt="" className="relative z-10 w-full" />
                         </div>
@@ -248,9 +248,9 @@ const CloudServices = () => {
             {/* DEVELOPMENT PROCESS SECTION */}
             <section
                 ref={sectionRef}
-                className="bg-[#0a0a0a] relative h-[600vh]"
+                className="bg-[#0a0a0a] relative h-auto lg:h-[600vh]"
             >
-                <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+                <div className="lg:sticky lg:top-0 lg:h-screen flex items-center overflow-hidden">
                     <div className="max-w-[1750px] mx-auto px-6 lg:px-20 w-full">
 
                         <div className="text-center mb-12">

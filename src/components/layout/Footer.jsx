@@ -11,9 +11,9 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 pt-20 overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-12 mb-16">
+    <footer className="bg-gray-50 pt-12 sm:pt-20 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 lg:gap-12 mb-12 sm:mb-16">
           {/* Company Info */}
           <div>
             <a

@@ -79,14 +79,15 @@ const Blog = () => {
         <>
 
             <section className="relative overflow-hidden bg-[#f7f7fb]">
- 
+  
                 {/* dotted background */}
                 <div
                     className="
           absolute inset-0
           opacity-40
           bg-[radial-gradient(circle,#d7d7d7_2px,transparent_2px)]
-          bg-[length:32px_32px]
+          bg-[length:24px_24px]
+          sm:bg-[length:32px_32px]
         "
                 />
 
@@ -105,19 +106,19 @@ const Blog = () => {
               "
                 />
               
-                <div className="relative max-w-[1400px] mx-auto px-6 pb-12 md:pb-0">
- 
-                    <div className="grid lg:grid-cols-2 items-center min-h-[500px] md:min-h-[700px] gap-12 lg:gap-0 pt-28 md:pt-32">
- 
+                <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 pb-8 sm:pb-12 md:pb-0">
+  
+                    <div className="grid lg:grid-cols-2 items-center min-h-0 lg:min-h-[500px] md:min-h-[700px] gap-8 sm:gap-12 lg:gap-0 pt-24 sm:pt-28 md:pt-32">
+  
                         {/* LEFT */}
- 
+
                         <div className="z-10 text-center lg:text-left">
 
-                            <h1 className="text-6xl md:text-7xl lg:text-[90px] leading-none font-light">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] leading-none font-light">
                                 Blogs
                             </h1>
 
-                            <h2 className="mt-8 md:mt-28 text-4xl md:text-5xl lg:text-[62px] lg:leading-[72px] font-black">
+                            <h2 className="mt-4 sm:mt-6 md:mt-8 lg:mt-28 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[62px] lg:leading-[72px] font-black">
                                 Discover,
                                 <br />
                                 Learn, Grow
@@ -125,13 +126,14 @@ const Blog = () => {
 
                             <button
                                 className="
-                mt-8 md:mt-10
+                mt-6 sm:mt-8 md:mt-10
                 bg-[#F7D64A]
-                px-8 md:px-10
-                py-3 md:py-4
-                text-lg md:text-[24px]
+                px-6 sm:px-8 md:px-10
+                py-2 sm:py-3 md:py-4
+                text-base sm:text-lg md:text-[24px]
                 font-medium
                 rounded-full lg:rounded-none
+                min-h-[44px]
               "
                             >
                                 The CssFounder Blog Hub Awaits!
@@ -141,7 +143,7 @@ const Blog = () => {
 
                         {/* RIGHT */}
 
-                        <div className="relative flex justify-center scale-75 md:scale-90 lg:scale-100">
+                        <div className="relative flex justify-center scale-[0.55] sm:scale-[0.65] md:scale-75 lg:scale-90 xl:scale-100 origin-center">
 
                             {/* purple background */}
                             <div
@@ -231,11 +233,11 @@ const Blog = () => {
 
 
 
-            <section className="bg-[#fafafa] py-14">
+            <section className="bg-[#fafafa] py-10 sm:py-14">
 
-                <div className="max-w-[1220px] mx-auto px-5">
+                <div className="max-w-[1220px] mx-auto px-4 sm:px-5">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 lg:gap-x-12 gap-y-6 sm:gap-y-6">
 
                         {blogs.map((blog) => (
                             <article

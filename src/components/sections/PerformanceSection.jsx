@@ -14,12 +14,17 @@ export default function PerformanceSection() {
         rotate-180
         bg-[#7b14d4]
         text-white
-        px-3
-        py-5
+        px-2
+        sm:px-3
+        py-3
+        sm:py-5
         rounded-l-xl
-        text-xs
+        text-[10px]
+        sm:text-xs
         font-medium
         z-20
+        hidden
+        sm:block
       "
         style={{
           writingMode: "vertical-rl",
@@ -28,7 +33,7 @@ export default function PerformanceSection() {
         Book a Free Consultation
       </div>
 
-      <div className="max-w-[1500px] mx-auto px-5 sm:px-8 lg:px-20 py-16 lg:py-24">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-20 py-12 sm:py-16 lg:py-24">
 
         <div className="grid lg:grid-cols-2 gap-10 md:gap-6 lg:gap-20 items-center">
 

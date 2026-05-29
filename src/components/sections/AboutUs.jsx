@@ -67,55 +67,30 @@ export default function AboutUs() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#f8f4fc] overflow-hidden min-h-[820px] lg:h-[80vh] py-16 lg:py-0"
+      className="bg-[#f8f4fc] overflow-hidden min-h-0 lg:min-h-[80vh] py-12 sm:py-16 lg:py-0"
     >
 
-      <div className="max-w-[1650px] mx-auto px-5 sm:px-8 lg:px-6">
+      <div className="max-w-[1650px] mx-auto px-4 sm:px-6 lg:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-6 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-6 lg:gap-20 items-center">
 
-          {/* LEFT */}
-
+          {/* LEFT - hidden on small screens */}
           <motion.div
             style={{
               y: isDesktop ? imageY : 0,
               willChange: "transform",
             }}
-            className="relative pr-0 lg:pr-[120px] hidden md:block"
+            className="relative pr-0 lg:pr-[120px] hidden lg:block"
           >
-
-            {/* FIXED */}
-
             <div className="grid grid-cols-[1fr_220px] xl:grid-cols-[1fr_320px] gap-6 xl:gap-10">
-
               <div className="space-y-6">
-
                 <motion.div
                   style={{
                     y: isDesktop ? rightY : 0,
                   }}
-                  className="
-    relative
-    rounded-[26px]
-    overflow-hidden
-    bg-white
-    h-[220px]
-    xl:h-[300px]
-  "
+                  className="relative rounded-[26px] overflow-hidden bg-white h-[220px] xl:h-[300px]"
                 >
-
-                  <img
-                    src={teamwork}
-                    alt=""
-                    className="
-      absolute
-      inset-0
-      w-full
-      h-full
-      object-cover
-    "
-                  />
-
+                  <img src={teamwork} alt="" className="absolute inset-0 w-full h-full object-cover" />
                 </motion.div>
                 <motion.div
                   style={{
@@ -123,105 +98,30 @@ export default function AboutUs() {
                   }}
                   className="relative h-[260px] xl:h-[360px]"
                 >
-
-                  <img
-                    src={R2}
-                    alt=""
-                    className="w-full h-full object-contain"
-                  />
-
+                  <img src={R2} alt="" className="w-full h-full object-contain" />
                 </motion.div>
-
               </div>
-
-              {/* BULB */}
-
               <motion.div
                 style={{
                   y: isDesktop ? titleY : 0,
                 }}
                 className="relative"
               >
-
-                {/* FIX */}
-
-                <div
-                  className="
-                  rounded-[30px]
-                  overflow-hidden
-                  h-[520px]
-                  xl:h-[700px]
-                  w-[220px]
-                  xl:w-[320px]
-                  relative
-                "
-                >
-
-                  <img
-                    src={Innovation}
-                    alt=""
-                    className="
-                    absolute
-                    inset-0
-                    w-full
-                    h-full
-                    object-contain
-                  "
-                  />
-
+                <div className="rounded-[30px] overflow-hidden h-[520px] xl:h-[700px] w-[220px] xl:w-[320px] relative">
+                  <img src={Innovation} alt="" className="absolute inset-0 w-full h-full object-contain" />
                 </div>
-
-                {/* BADGE */}
-
-                <div
-                  className="
-                  absolute
-                  right-[-55px]
-                  xl:right-[-90px]
-                  top-1/2
-                  -translate-y-1/2
-                "
-                >
-
-                  <div
-                    className="
-                    bg-purple-500
-                    rounded-full
-                    h-[340px]
-                    xl:h-[460px]
-                    w-[70px]
-                    xl:w-[90px]
-                    text-white
-                    flex
-                    items-center
-                    justify-center
-                  "
-                  >
-
-                    <div
-                      className="
-                      rotate-90
-                      whitespace-nowrap
-                      font-bold
-                      text-lg
-                      xl:text-2xl
-                    "
-                    >
+                <div className="absolute right-[-55px] xl:right-[-90px] top-1/2 -translate-y-1/2">
+                  <div className="bg-purple-500 rounded-full h-[340px] xl:h-[460px] w-[70px] xl:w-[90px] text-white flex items-center justify-center">
+                    <div className="rotate-90 whitespace-nowrap font-bold text-lg xl:text-2xl">
                       10+ Years Of Excellence
                     </div>
-
                   </div>
-
                 </div>
-
               </motion.div>
-
             </div>
-
           </motion.div>
 
           {/* RIGHT */}
-
           <motion.div
             style={{
               y: isDesktop ? rightY : 0,
@@ -236,7 +136,7 @@ export default function AboutUs() {
               style={{
                 y: isDesktop ? titleY : 0,
               }}
-              className="mt-5 text-[32px] sm:text-[48px] lg:text-[54px] xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
+              className="mt-4 sm:mt-5 text-[28px] sm:text-[48px] lg:text-[54px] xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
             >
               Full-Service Software
               <br />
@@ -249,7 +149,7 @@ export default function AboutUs() {
               style={{
                 y: isDesktop ? contentY : 0,
               }}
-              className="mt-6 text-[#5b5b69] text-lg sm:text-xl xl:text-[30px] leading-relaxed"
+              className="mt-4 sm:mt-6 text-[#5b5b69] text-base sm:text-xl xl:text-[30px] leading-relaxed"
             >
               We are a leading technology partner delivering innovation and
               efficiency for more than a decade. Our team specializes in
@@ -261,7 +161,7 @@ export default function AboutUs() {
               style={{
                 y: isDesktop ? phoneY : 0,
               }}
-              className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center"
+              className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center"
             >
 
               <div className="w-12 h-12 sm:w-16 sm:h-16 xl:w-24 xl:h-24 rounded-full border-2 border-orange-400 flex items-center justify-center shrink-0">
@@ -272,11 +172,11 @@ export default function AboutUs() {
 
               <div>
 
-                <div className="text-xl sm:text-2xl lg:text-3xl xl:text-6xl font-black break-words">
-                  +91-9044425858<br className="hidden sm:inline" /> /<br className="sm:hidden" /> +91-6209688930
+                <div className="text-lg sm:text-2xl lg:text-3xl xl:text-6xl font-black break-all sm:break-words">
+                  +91-9044425858 / +91-6209688930
                 </div>
 
-                <div className="text-purple-500 text-lg sm:text-xl">
+                <div className="text-purple-500 text-base sm:text-xl">
                   Have Any Query?
                 </div>
 

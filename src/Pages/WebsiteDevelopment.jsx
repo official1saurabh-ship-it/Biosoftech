@@ -31,43 +31,43 @@ const WebsiteDevelopment = () => {
     ];
     return (
         <>
-            <section className="bg-[#f8f8f8] py-24">
-                <div className="max-w-[1300px] mx-auto px-6">
+            <section className="bg-[#f8f8f8] py-16 sm:py-20 md:py-24">
+                <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
 
                     {/* Heading */}
                     <div className="text-center max-w-[1000px] mx-auto">
-                        <h2 className="text-3xl md:text-[52px] leading-tight font-semibold text-[#1d2430]">
+                        <h2 className="text-2xl sm:text-3xl md:text-[52px] leading-tight font-semibold text-[#1d2430]">
                             Why You Should Choose OrangeMantra As Your Preferred
-                            <br />
+                            <br className="hidden md:block" />
                             Website Development Company?
                         </h2>
 
-                        <p className="mt-6 md:mt-8 text-[#687387] text-base md:text-lg leading-relaxed md:leading-9 max-w-[900px] mx-auto">
+                        <p className="mt-4 sm:mt-6 md:mt-8 text-[#687387] text-sm sm:text-base md:text-lg leading-relaxed md:leading-9 max-w-[900px] mx-auto">
                             Experience plays an important role in the web design
                             process which makes us a seasoned web development company.
                         </p>
                     </div>
 
                     {/* Content */}
-                    <div className="mt-16 md:mt-24 grid lg:grid-cols-2 gap-x-12 xl:gap-x-28 gap-y-12 md:gap-y-20">
+                    <div className="mt-12 sm:mt-16 md:mt-24 grid lg:grid-cols-2 gap-x-8 sm:gap-x-12 xl:gap-x-28 gap-y-8 sm:gap-y-12 md:gap-y-20">
 
                         {reasons.map((item) => (
                             <div
                                 key={item.id}
-                                className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 md:gap-8"
+                                className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 md:gap-8"
                             >
                                 {/* Number Circle */}
                                 <div
                                     className="
-                  min-w-[60px] md:min-w-[72px]
-                  h-[60px] md:h-[72px]
+                  min-w-[50px] sm:min-w-[60px] md:min-w-[72px]
+                  h-[50px] sm:h-[60px] md:h-[72px]
                   rounded-full
                   bg-[#ff5a1f]
                   text-white
                   flex
                   items-center
                   justify-center
-                  text-2xl md:text-[34px]
+                  text-xl sm:text-2xl md:text-[34px]
                   font-semibold
                   shrink-0
                 "
@@ -77,11 +77,11 @@ const WebsiteDevelopment = () => {
 
                                 {/* Text */}
                                 <div>
-                                    <h3 className="text-2xl lg:text-[30px] font-semibold text-[#1d2430]">
+                                    <h3 className="text-xl sm:text-2xl lg:text-[30px] font-semibold text-[#1d2430]">
                                         {item.title}
                                     </h3>
 
-                                    <p className="mt-4 md:mt-5 text-[#687387] text-base md:text-lg leading-relaxed md:leading-[2] max-w-[500px]">
+                                    <p className="mt-3 sm:mt-4 md:mt-5 text-[#687387] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2] max-w-[500px]">
                                         {item.desc}
                                     </p>
                                 </div>

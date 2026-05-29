@@ -245,12 +245,11 @@ function Card({
     ref,
     {
       once: false,
-      amount: 0.2, // Trigger earlier for better mobile experience
+      amount: 0.1,
     }
   );
 
-  // Responsive offset to keep it within screen bounds
-  const offsetValue = isDesktop ? 220 : 50;
+  const offsetValue = isDesktop ? 220 : 30;
   const offset = reverse ? offsetValue : -offsetValue;
 
   return (
@@ -414,13 +413,9 @@ transition-all
 duration-500
 ease-in-out
 
-pointer-events-none
-group-hover:pointer-events-auto
-group-active:pointer-events-auto
-
-${!isDesktop && visible 
-    ? "opacity-100 scale-100" 
-    : "opacity-0 group-hover:opacity-100 group-active:opacity-100"
+${!isDesktop
+    ? "opacity-100 pointer-events-auto"
+    : "opacity-0 group-hover:opacity-100 group-active:opacity-100 pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto"
 }
 `}
         >

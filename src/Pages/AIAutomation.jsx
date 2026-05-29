@@ -414,21 +414,21 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="w-full min-h-screen bg-[#f3f1eb] overflow-hidden">
-        <div className="min-w-7xl mx-auto px-6 lg:px-12 pb-16 lg:pb-32">
+      <section className="w-full min-h-0 lg:min-h-screen bg-[#f3f1eb] overflow-hidden">
+        <div className="min-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
  
           {/* Main Grid */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center min-h-screen pt-28 md:pt-32">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
  
             {/* Left Content */}
             <div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-black leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-tight">
                 Best Website Development
                 <br />
                 Company In India
               </h1>
 
-              <p className="mt-8 text-[#333] text-lg leading-9 max-w-2xl">
+              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-base sm:text-lg leading-7 sm:leading-9 max-w-2xl">
                 Are you looking for website development services in India?
                 RankON Technologies is a leading web development company in
                 India, offering{" "}
@@ -439,7 +439,7 @@ const HeroSection = () => {
                 and scale with your business.
               </p>
 
-              <p className="mt-8 text-[#333] text-lg leading-9 max-w-2xl">
+              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-base sm:text-lg leading-7 sm:leading-9 max-w-2xl">
                 With{" "}
                 <span className="font-semibold">
                   14+ years of experience
@@ -448,49 +448,50 @@ const HeroSection = () => {
                 <span className="font-semibold">
                   1,000+ digital projects delivered globally
                 </span>
-                , RankON creates websites that don’t just look professional,
+                , RankON creates websites that don&apos;t just look professional,
                 they perform.
               </p>
 
               {/* Rating Section */}
-              <div className="flex flex-wrap gap-8 mt-12">
+              <div className="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 mt-6 sm:mt-8 lg:mt-12">
 
                 {/* Clutch */}
                 <div>
-                  <h3 className="text-5xl font-bold text-[#1d2b36]">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1d2b36]">
                     Clutch
                   </h3>
 
-                  <div className="flex mt-2 text-[#f7b500]">
+                  <div className="flex mt-1 sm:mt-2 text-[#f7b500]">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        size={22}
+                        size={16}
+                        className="sm:w-[22px] sm:h-[22px]"
                         fill="currentColor"
                       />
                     ))}
                   </div>
 
-                  <p className="mt-1 font-semibold text-sm">
+                  <p className="mt-1 font-semibold text-xs sm:text-sm">
                     Rated 5/5 Stars
                   </p>
                 </div>
 
                 {/* Upwork */}
                 <div>
-                  <h3 className="text-5xl font-bold">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
                     <span className="text-[#6fda44]">Up</span>
                     <span className="text-black">work</span>
                   </h3>
 
-                  <p className="mt-6 font-semibold text-2xl">
+                  <p className="mt-4 sm:mt-6 font-semibold text-lg sm:text-xl lg:text-2xl">
                     Top Rated Plus
                   </p>
                 </div>
 
                 {/* Google */}
                 <div>
-                  <h3 className="text-5xl font-bold">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
                     <span className="text-[#4285F4]">G</span>
                     <span className="text-[#EA4335]">o</span>
                     <span className="text-[#FBBC05]">o</span>
@@ -499,24 +500,25 @@ const HeroSection = () => {
                     <span className="text-[#EA4335]">e</span>
                   </h3>
 
-                  <div className="flex mt-2 text-[#f7b500]">
+                  <div className="flex mt-1 sm:mt-2 text-[#f7b500]">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        size={22}
+                        size={16}
+                        className="sm:w-[22px] sm:h-[22px]"
                         fill="currentColor"
                       />
                     ))}
                   </div>
 
-                  <p className="mt-1 font-semibold text-sm">
+                  <p className="mt-1 font-semibold text-xs sm:text-sm">
                     Rated 4.9/5 Stars
                   </p>
                 </div>
 
                 {/* Google Partner */}
                 <div>
-                  <h3 className="text-5xl font-bold">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
                     <span className="text-[#4285F4]">G</span>
                     <span className="text-[#EA4335]">o</span>
                     <span className="text-[#FBBC05]">o</span>
@@ -525,21 +527,21 @@ const HeroSection = () => {
                     <span className="text-[#EA4335]">e</span>
                   </h3>
 
-                  <p className="text-2xl mt-2">Partner</p>
+                  <p className="text-lg sm:text-xl lg:text-2xl mt-1 sm:mt-2">Partner</p>
                 </div>
               </div>
 
               {/* Buttons */}
-              <div className="flex flex-wrap gap-4 mt-12">
+              <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8 lg:mt-12">
 
-                <button className="bg-[#f4b400] hover:bg-[#e3a600] transition-all px-8 py-4 text-black font-semibold flex items-center gap-3">
+                <button className="bg-[#f4b400] hover:bg-[#e3a600] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-black font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
                   REQUEST PROPOSAL
-                  <ArrowRight size={18} />
+                  <ArrowRight size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
 
-                <button className="bg-black hover:bg-[#222] transition-all px-8 py-4 text-white font-semibold flex items-center gap-3">
+                <button className="bg-black hover:bg-[#222] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-white font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
                   WEBSITE PACKAGES
-                  <PlusCircle size={18} />
+                  <PlusCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
               </div>
             </div>
@@ -548,37 +550,37 @@ const HeroSection = () => {
             <div className="relative flex justify-center lg:justify-end">
 
               {/* Background Dots */}
-              <div className="absolute bottom-0 right-0 grid grid-cols-6 gap-4 opacity-20">
+              <div className="absolute bottom-0 right-0 grid grid-cols-6 gap-2 sm:gap-4 opacity-20">
                 {[...Array(36)].map((_, i) => (
                   <div
                     key={i}
-                    className="w-4 h-4 rounded-full bg-[#d8d2c8]"
+                    className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-[#d8d2c8]"
                   />
                 ))}
               </div>
 
               {/* Floating Card */}
-              <div className="absolute top-10 left-0 lg:left-10 w-[300px] bg-white shadow-2xl rounded-md rotate-[-6deg] p-4 z-20">
+              <div className="absolute top-6 sm:top-10 left-0 lg:left-10 w-[200px] sm:w-[260px] lg:w-[300px] bg-white shadow-2xl rounded-md rotate-[-6deg] p-3 sm:p-4 z-20">
                 <img
                   src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
                   alt="website mockup"
-                  className="rounded-md h-40 w-full object-cover"
+                  className="rounded-md h-24 sm:h-32 lg:h-40 w-full object-cover"
                 />
 
-                <div className="grid grid-cols-3 gap-2 mt-4">
+                <div className="grid grid-cols-3 gap-1 sm:gap-2 mt-2 sm:mt-4">
                   <img
                     src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=600&auto=format&fit=crop"
-                    className="rounded-md h-16 object-cover"
+                    className="rounded-md h-10 sm:h-12 lg:h-16 object-cover"
                   />
 
                   <img
                     src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600&auto=format&fit=crop"
-                    className="rounded-md h-16 object-cover"
+                    className="rounded-md h-10 sm:h-12 lg:h-16 object-cover"
                   />
 
                   <img
                     src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=600&auto=format&fit=crop"
-                    className="rounded-md h-16 object-cover"
+                    className="rounded-md h-10 sm:h-12 lg:h-16 object-cover"
                   />
                 </div>
               </div>
@@ -587,7 +589,7 @@ const HeroSection = () => {
               <img
                 src="https://pngimg.com/d/laptop_PNG101816.png"
                 alt="laptop"
-                className="relative z-10 w-full max-w-2xl object-contain"
+                className="relative z-10 w-full max-w-xl lg:max-w-2xl object-contain"
               />
             </div>
           </div>
@@ -1111,7 +1113,8 @@ const HeroSection = () => {
     relative
     bg-[#030712]
     text-white
-    h-[600vh]
+    h-auto
+    lg:h-[600vh]
   "
       >
 
@@ -1124,13 +1127,16 @@ const HeroSection = () => {
 
         <div
           className="
-    sticky top-0
-    h-screen
+    lg:sticky lg:top-0
+    h-auto
+    lg:h-screen
     flex flex-col justify-center
     relative z-10
+    py-12
+    lg:py-0
   "
         >
-          <div className="min-w-7xl mx-auto px-6 lg:px-10 w-full">
+          <div className="min-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
 
             {/* TITLE */}
             <div className="text-center">
