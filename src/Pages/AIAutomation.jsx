@@ -618,7 +618,7 @@ const HeroSection = () => {
                 Expertise
               </h2>
 
-              <p className="mt-8 text-white/80 text-lg leading-10">
+              <p className="mt-8 text-white/80 text-lg leading-8 lg:leading-10">
                 We deliver full-cycle engineering and deployment of custom AI
                 agents using a modern tech stack and best-in-class frameworks.
               </p>
@@ -704,7 +704,7 @@ const HeroSection = () => {
 
             {/* RIGHT */}
             <div>
-              <p className="text-xl text-[#444] leading-10 max-w-2xl">
+              <p className="text-xl text-[#444] leading-8 lg:leading-10 max-w-2xl">
                 Obtain robust software solutions, modernize systems,
                 and leverage futuristic technologies for growth opportunities.
               </p>
@@ -797,7 +797,7 @@ const HeroSection = () => {
 
                 <div className="w-16 h-[2px] bg-black mt-8" />
 
-                <p className="mt-10 text-[#444] text-xl leading-10">
+                <p className="mt-10 text-[#444] text-xl leading-8 lg:leading-10">
                   {activeService.description}
                 </p>
 
@@ -848,7 +848,7 @@ const HeroSection = () => {
               Our Generative AI & LLM Capabilities
             </h2>
 
-            <p className="mt-8 text-xl leading-10 text-white/75">
+            <p className="mt-8 text-xl leading-8 lg:leading-10 text-white/75">
               We build production-ready generative AI systems — from
               LLM-powered applications and RAG pipelines to autonomous
               agents and fine-tuned models.

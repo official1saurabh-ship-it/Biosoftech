@@ -153,7 +153,7 @@ export default function TestimonialSection() {
           grid
           lg:grid-cols-[360px_1fr]
 
-          gap-10
+          gap-6
           lg:gap-16
 
           items-center

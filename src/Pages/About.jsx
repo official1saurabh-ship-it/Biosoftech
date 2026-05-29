@@ -114,7 +114,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#f5f5f5]">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="max-w-[1600px] mx-auto min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16">
+        <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16">
           <div className="z-10 text-center lg:text-left pt-28 md:pt-28">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Digital<br />Marketing Partner

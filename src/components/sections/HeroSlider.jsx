@@ -115,12 +115,12 @@ export default function HeroRevealSlider() {
           className="
             max-w-[1536px]
             mx-auto
-            min-h-[560px]
-            lg:h-full
+            min-h-0
+            lg:min-h-[560px] lg:h-full
             grid
             lg:grid-cols-2
             items-center
-            gap-10
+            gap-6
             lg:gap-16
             px-6
             lg:px-16
@@ -155,7 +155,7 @@ export default function HeroRevealSlider() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center"
           >
-            <div className="relative z-40 h-[60vh] md:min-h-[auto] lg:min-h-[60vh] flex flex-col justify-center pt-28 sm:pt-28 lg:pt-28">
+            <div className="relative z-40 h-auto lg:h-[60vh] flex flex-col justify-center pt-28 sm:pt-28 lg:pt-28">
               <h4 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-3 lg:mb-5">
                 {slide.top}
               </h4>
