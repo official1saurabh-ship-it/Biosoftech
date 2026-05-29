@@ -21,10 +21,10 @@ const slides = [
     image: slider1,
     top: "Where",
     big: "Ideas",
-    outline: "Turn Into",
-    bottom: "Impact",
+    outline: "Become",
+    bottom: "Smart Solutions",
     desc:
-      "For us, it's not just about building software. We understand your business and create smart digital solutions.",
+      "For us, it's not just about building software. We understand your business and create smart digital solutions tailored to your growth.",
   },
 ];
 
@@ -155,20 +155,20 @@ export default function HeroRevealSlider() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center"
           >
-            <div className="relative z-40 h-[60vh] flex flex-col justify-center pt-30 sm:mt-45 sm:pt-2 lg:pt-0">
+            <div className="relative z-40 h-[60vh] flex flex-col justify-center pt-28 sm:pt-28 lg:pt-28">
               <h4 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-3 lg:mb-5">
                 {slide.top}
               </h4>
 
-              <h1 className="text-[48px] sm:text-[72px] md:text-[88px] lg:text-[96px] xl:text-[112px] 2xl:text-[124px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-[32px] sm:text-[56px] md:text-[72px] lg:text-[96px] xl:text-[112px] 2xl:text-[124px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
 
-              <h2 className="text-[40px] sm:text-[60px] md:text-[76px] lg:text-[82px] xl:text-[96px] 2xl:text-[108px] font-black text-transparent [-webkit-text-stroke:2px_white] -mt-2 lg:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-[28px] sm:text-[48px] md:text-[64px] lg:text-[82px] xl:text-[96px] 2xl:text-[108px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
 
-              <h3 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[54px] xl:text-[64px] font-black -mt-1 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h3 className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[54px] xl:text-[64px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
               </h3>
 

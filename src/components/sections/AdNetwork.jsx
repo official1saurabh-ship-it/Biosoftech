@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 import advertiser from "../../assets/Advertiser.png";
 import publisher from "../../assets/Publisher.png";
-import affiliate from "../../assets/Affliate.png";
+import affiliate from "../../assets/Affiliate.png";
 
 const WEBSITE_URL = "https://www.biosoftech.com";
 

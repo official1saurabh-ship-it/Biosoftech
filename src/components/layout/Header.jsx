@@ -20,17 +20,17 @@ const Header = () => {
 
   const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/about' },
     {
       name: 'Services',
       href: '#',
       dropdown: [
-        { name: 'Web Development', href: '#' },
+        { name: 'Web Development', href: '/web-development' },
         { name: 'App Development', href: '/app-development' },
         { name: 'Mobile Development', href: '#' },
         { name: 'Desktop App', href: '#' },
-        { name: 'Cloud Services', href: '#' },
-        { name: 'AI Automation', href: '#' },
+        { name: 'Cloud Services', href: '/cloud-services' },
+        { name: 'AI Automation', href: '/ai-automation' },
         { name: 'Software Integration', href: '#' },
         { name: 'Technical Support', href: '#' },
       ]
@@ -55,8 +55,8 @@ const Header = () => {
         { name: 'Hospital Management System', href: '#' },
       ]
     },
-    { name: 'Blog', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   // Framer Motion Variants for Hover Effect

@@ -1,4 +1,4 @@
-import performanceImg from "../../assets/preformance.webp";
+import performanceImg from "../../assets/performance.webp";
 
 export default function PerformanceSection() {
   return (

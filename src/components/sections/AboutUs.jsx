@@ -13,7 +13,7 @@ import { useEffect, useRef, useState } from "react";
 
 import teamwork from "../../assets/TeamWork.png";
 import R2 from "../../assets/R2.png";
-import Innovtion from "../../assets/Innovation.png";
+import Innovation from "../../assets/Innovation.png";
 
 export default function AboutUs() {
   const sectionRef = useRef(null);
@@ -158,7 +158,7 @@ export default function AboutUs() {
                 >
 
                   <img
-                    src={Innovtion}
+                    src={Innovation}
                     alt=""
                     className="
                     absolute
@@ -236,7 +236,7 @@ export default function AboutUs() {
               style={{
                 y: isDesktop ? titleY : 0,
               }}
-              className="mt-5 text-[40px] sm:text-[54px] xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
+              className="mt-5 text-[32px] sm:text-[48px] lg:text-[54px] xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
             >
               Full-Service Software
               <br />
@@ -249,7 +249,7 @@ export default function AboutUs() {
               style={{
                 y: isDesktop ? contentY : 0,
               }}
-              className="mt-6 text-[#5b5b69] text-lg sm:text-2xl xl:text-[30px] leading-relaxed"
+              className="mt-6 text-[#5b5b69] text-lg sm:text-xl xl:text-[30px] leading-relaxed"
             >
               We are a leading technology partner delivering innovation and
               efficiency for more than a decade. Our team specializes in
@@ -261,22 +261,22 @@ export default function AboutUs() {
               style={{
                 y: isDesktop ? phoneY : 0,
               }}
-              className="mt-10 flex gap-4 sm:gap-5 items-center"
+              className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center"
             >
 
-              <div className="w-16 h-16 sm:w-20 sm:h-20 xl:w-24 xl:h-24 rounded-full border-2 border-orange-400 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 xl:w-24 xl:h-24 rounded-full border-2 border-orange-400 flex items-center justify-center shrink-0">
 
-                <Phone className="text-orange-500" />
+                <Phone className="text-orange-500 w-5 h-5 sm:w-6 sm:h-6" />
 
               </div>
 
               <div>
 
-                <div className="text-2xl sm:text-4xl xl:text-6xl font-black">
+                <div className="text-xl sm:text-2xl lg:text-3xl xl:text-6xl font-black">
                   +91-9044425858 / +91-6209688930
                 </div>
 
-                <div className="text-purple-500 text-xl">
+                <div className="text-purple-500 text-lg sm:text-xl">
                   Have Any Query?
                 </div>
 
