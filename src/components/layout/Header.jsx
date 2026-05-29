@@ -18,6 +18,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (activeDropdown && !e.target.closest('nav') && !e.target.closest('.mobile-menu-container')) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [activeDropdown]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const menuItems = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
@@ -104,13 +124,19 @@ const Header = () => {
           </Link>
 
           {/* Navigation Area with CORRECTED Hover Effect */}
-          <nav className="hidden lg:flex items-center gap-8 px-4 h-full">
+          <nav className="hidden md:flex items-center gap-8 px-4 h-full">
             {menuItems.map((item) => (
               <motion.div
                 key={item.name}
                 className="relative h-full flex items-center cursor-pointer group"
                 initial="initial"
                 whileHover="hover"
+                onClick={(e) => {
+                  if (item.dropdown) {
+                    e.preventDefault();
+                    setActiveDropdown(activeDropdown === item.name ? null : item.name);
+                  }
+                }}
               >
                 {/* 1. Vertical Orange Glow Line - Triggered by Parent Hover */}
                 <div className="absolute inset-0 flex justify-center pointer-events-none overflow-hidden">
@@ -121,45 +147,31 @@ const Header = () => {
                 </div>
 
                 {/* 2. Text with Transition */}
-                {item.href.startsWith('#') ? (
-                  <motion.a
-                    href={item.href}
-                    variants={textVariants}
-                    className="relative z-10 flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.1em] py-2 whitespace-nowrap"
-                  >
-                    {item.name}
-                    {item.dropdown && <FaChevronDown size={8} className="opacity-40 group-hover:rotate-180 transition-transform duration-500" />}
-                  </motion.a>
+                {item.dropdown ? (
+                  <span className="relative z-10 flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.1em] py-2 whitespace-nowrap cursor-pointer">
+                    <span className={`transition-colors duration-300 ${activeDropdown === item.name ? 'text-[#9255CE]' : 'text-white/70 group-hover:text-[#9255CE]'}`}>
+                      {item.name}
+                    </span>
+                    <FaChevronDown size={8} className={`transition-all duration-500 ${activeDropdown === item.name ? 'rotate-180 text-[#9255CE]' : 'text-white/40'}`} />
+                  </span>
                 ) : (
                   <Link to={item.href} className="relative z-10 flex items-center gap-1.5 py-2 whitespace-nowrap">
-                    <motion.span
-                      variants={textVariants}
-                      className="text-[13px] font-bold uppercase tracking-[0.1em]"
-                    >
+                    <span className="text-[13px] font-bold uppercase tracking-[0.1em] text-white/70 group-hover:text-[#9255CE] transition-colors duration-300">
                       {item.name}
-                    </motion.span>
-                    {item.dropdown && <FaChevronDown size={8} className="text-white/40 group-hover:rotate-180 transition-transform duration-500" />}
+                    </span>
                   </Link>
                 )}
 
                 {/* Dropdown Menu */}
-                {/* Dropdown Desktop hover + mobile click */}
                 {item.dropdown && (
-                  <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}
-                    onClick={(e) => {
-                      if (window.innerWidth < 1024) {
-                        e.stopPropagation();
-                        setActiveDropdown(activeDropdown === item.name ? null : item.name);
-                      }
-                    }}
-                  >
+                  <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}>
                     <div className="bg-[#09090F]/98 backdrop-blur-3xl rounded-2xl border border-white/5 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden p-1.5">
                       {item.dropdown.map((subItem) => {
                         const isExternal = subItem.href.startsWith('http');
                         const Component = isExternal ? 'a' : Link;
                         const props = isExternal 
                           ? { href: subItem.href, target: '_blank', rel: 'noreferrer' }
-                          : { to: subItem.href };
+                          : { to: subItem.href, onClick: () => setActiveDropdown(null) };
 
                         return (
                           <Component
@@ -214,11 +226,11 @@ border-white/5
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="
-flex
-lg:hidden
+ flex
+ md:hidden
 
-w-12
-h-12
+ w-12
+ h-12
 
 min-w-[48px]
 
@@ -263,8 +275,8 @@ z-[999]
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/95 backdrop-blur-3xl z-[200] lg:hidden flex justify-end"
-            onClick={() => setIsMobileMenuOpen(false)}
+            className="fixed inset-0 bg-black/95 backdrop-blur-3xl z-[200] md:hidden flex justify-end mobile-menu-container"
+            onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }}
           >
             <motion.div
               initial={{ x: '100%' }}
@@ -279,7 +291,7 @@ z-[999]
                   <span className="text-white font-black text-2xl tracking-tighter">BioSoftech</span>
                   <span className="text-[#9255CE] text-[8px] font-bold uppercase tracking-widest mt-1">Launch and Grow</span>
                 </div>
-                <button onClick={() => setIsMobileMenuOpen(false)} className="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-all">
+                <button onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }} className="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-all">
                   <FaTimes />
                 </button>
               </div>
@@ -301,6 +313,7 @@ z-[999]
                             }
                             if (!item.dropdown && !isExternal) {
                               setIsMobileMenuOpen(false);
+                              setActiveDropdown(null);
                             }
                           }}
                         >
@@ -327,7 +340,7 @@ z-[999]
                               const SubComponent = isSubExternal ? 'a' : Link;
                               const subProps = isSubExternal 
                                 ? { href: subItem.href, target: isSubExternal && !subItem.href.startsWith('#') ? '_blank' : '_self', rel: isSubExternal && !subItem.href.startsWith('#') ? 'noreferrer' : '' }
-                                : { to: subItem.href, onClick: () => setIsMobileMenuOpen(false) };
+                                : { to: subItem.href, onClick: () => { setIsMobileMenuOpen(false); setActiveDropdown(null); } };
 
                               return (
                                 <SubComponent
