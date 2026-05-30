@@ -47,6 +47,8 @@ const Header = () => {
       dropdown: [
         { name: 'Web Development', href: '/web-development' },
         { name: 'App Development', href: '/app-development' },
+        { name: 'Mobile Development', href: '/app-development' },
+        { name: 'Desktop App', href: '/web-development' },
         { name: 'Cloud Services', href: '/cloud-services' },
         { name: 'AI Automation', href: '/ai-automation' },
       ]
@@ -55,20 +57,13 @@ const Header = () => {
       name: 'Products',
       href: '#',
       dropdown: [
-        { name: 'Sales and Billing System', href: 'https://billing.biosoftech.in/signin' },
-        { name: 'Restaurant Management System', href: 'https://restaurants.biosoftech.in/' },
-        { name: 'Hotel Management System', href: 'https://hotel.biosoftech.in/' },
-        { name: 'Parking Management System', href: 'https://vms.biosoftech.in/' },
-        { name: 'Attendance Management System', href: 'https://att.biosoftech.in/' },
-        { name: 'Visitor Management System', href: 'https://vms.biosoftech.in/' },
-        { name: 'CRM Platform', href: 'https://crm.biosoftech.in/' },
-
-        { name: 'PG Management System', href: 'https://pg.biosoftech.in/' },
-        { name: 'Canteen Management System', href: 'https://www.foodieexpress.biosoftech.in/' },
-        { name: 'Pathology Management', href: 'https://pytho.biosoftech.in/' },
+        { name: 'Restaurant Management', href: 'https://restaurants.biosoftech.in/' },
+        { name: 'PG Management', href: 'https://pg.biosoftech.in/' },
+        { name: 'Billing Management', href: 'https://billing.biosoftech.in/signin' },
+        { name: 'Hotel Management', href: 'https://hotel.biosoftech.in/' },
         { name: 'School Management', href: 'https://school.biosoftech.in/' },
-        { name: 'Payroll Management', href: 'https://payrollmitra.biosoftech.in/' },
-
+        { name: 'Staff Management', href: 'https://payrollmitra.biosoftech.in/' },
+        { name: 'Pathology Management', href: 'https://pytho.biosoftech.in/' },
       ]
     },
     { name: 'Blog', href: '/blog' },

@@ -7,71 +7,32 @@ const Blog = () => {
             image: "/blog1.jpg",
             tags: ["Blog"],
             title:
-                "How Will AI Change Web Development in the Future?",
+                "Future of AI in Business Software",
             desc:
-                "Artificial Intelligence (AI) is no longer a futuristic concept — it’s already transforming industries across the globe. From healthcare to...",
-            date: "September 18, 2025",
+                "Discover how AI-driven automation is reshaping industries with smarter workflows, predictive analytics, and intelligent decision-making.",
+            date: "May 13, 2026",
         },
 
         {
             id: 2,
             image: "/blog2.jpg",
-            tags: ["Blog", "Web Designing"],
+            tags: ["Blog"],
             title:
-                "The Hidden Costs of ‘Cheap’ Web Design in Dubai: What You Need to Know Before You Build",
+                "Signs Your Software Needs an Upgrade",
             desc:
-                "Dubai’s business landscape moves at lightning speed and in this digital-first economy...",
-            date: "September 11, 2025",
+                "Outdated systems slow growth. Learn the key indicators that it's time to modernize your web, mobile, or desktop solutions.",
+            date: "May 11, 2026",
         },
 
         {
             id: 3,
             image: "/blog3.jpg",
-            tags: [
-                "Blog",
-                "Web Designing",
-                "Website Designing and Development Company",
-            ],
-            title:
-                "The Hidden Costs of ‘Cheap’ Web Design in Dubai",
-            desc:
-                "In Dubai’s digital economy, a cheap website isn’t a bargain...",
-            date: "September 10, 2025",
-        },
-
-        {
-            id: 4,
-            image: "/blog4.jpg",
             tags: ["Blog"],
             title:
-                "Are Web Designing Companies Still Relevant in the Age of AI",
+                "Cloud Solutions for SMEs: A Beginner's Guide",
             desc:
-                "The short answer: Yes — absolutely. But the role of web design companies...",
-            date: "September 9, 2025",
-        },
-
-        {
-            id: 5,
-            image: "/blog5.jpg",
-            tags: ["Blog"],
-            title:
-                "Top 5 Website Designing Companies in Delhi to Watch",
-            desc:
-                "In today’s digital-first world, your website is more than an online address...",
-            date: "August 22, 2025",
-        },
-
-        {
-            id: 6,
-            image: "/blog6.jpg",
-            tags: [
-                "Website Designing and Development Company",
-            ],
-            title:
-                "Why Businesses Still Need Web Designing Companies",
-            desc:
-                "Artificial Intelligence (AI) has become a game changer across industries...",
-            date: "August 20, 2025",
+                "Understand how cloud platforms help small and medium businesses scale securely, reduce costs, and stay competitive.",
+            date: "May 7, 2026",
         },
     ];
     return (
@@ -136,7 +97,7 @@ const Blog = () => {
                 min-h-[44px]
               "
                             >
-                                The CssFounder Blog Hub Awaits!
+                                The Biosoftech Blog Hub Awaits!
                             </button>
 
                         </div>
@@ -330,7 +291,7 @@ const Blog = () => {
                                         />
 
                                         <span className="text-[#666]">
-                                            cssfounder
+                                            Biosoftech
                                         </span>
 
                                         <span className="text-[#999]">

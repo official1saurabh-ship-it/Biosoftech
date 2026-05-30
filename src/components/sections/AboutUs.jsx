@@ -161,8 +161,24 @@ export default function AboutUs() {
               We are a leading technology partner delivering innovation and
               efficiency for more than a decade. Our team specializes in
               custom software development, mobile apps, and AI-powered
-              solutions - offering everything under one roof.
+              solutions — offering everything under one roof.
             </motion.p>
+
+            <motion.div
+              style={{
+                y: isDesktop ? phoneY : 0,
+              }}
+              className="mt-4 sm:mt-6 space-y-2"
+            >
+              <div className="flex items-center gap-3 text-lg sm:text-2xl font-bold text-purple-600">
+                <CircleCheckBig size={24} className="text-green-500" />
+                Fast Results, Smart Solutions!
+              </div>
+              <div className="flex items-center gap-3 text-lg sm:text-2xl font-bold text-purple-600">
+                <CircleCheckBig size={24} className="text-green-500" />
+                Achieve Your Business Goals!
+              </div>
+            </motion.div>
 
             <motion.div
               style={{
@@ -180,7 +196,7 @@ export default function AboutUs() {
               <div>
 
                 <div className="text-lg sm:text-2xl lg:text-3xl xl:text-6xl font-black break-all sm:break-words">
-                  +91-9044425858 / +91-6209688930
+                  +91-9044425858 / +91-9044425959
                 </div>
 
                 <div className="text-purple-500 text-base sm:text-xl">

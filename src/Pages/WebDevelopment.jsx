@@ -108,64 +108,64 @@ const WebDevelopment = () => {
             icon: MonitorSmartphone,
             title: "Web Development Solutions",
             description:
-                "As a custom web application development company, we deliver tailored solutions that include visually stunning websites, seamless accessibility, and smooth customer engagement.",
+                "We deliver visually stunning, scalable websites and portals with seamless accessibility and smooth customer engagement.",
         },
         {
             icon: Smartphone,
             title: "Mobile Application Development",
             description:
-                "Discover the true potential of mobile technology with our custom mobile application development solutions. We create user-friendly apps packed with features, ensuring your audience stays captivated and delighted.",
+                "Unlock the potential of mobile technology with user-friendly apps packed with features, ensuring your audience stays engaged and delighted.",
             active: true,
         },
         {
             icon: BarChart3,
             title: "Business Analytics Services",
             description:
-                "Get valuable insights from your data with our business analytics services. We go beyond just numbers, offering you advanced data analysis, visualizations, and comprehensive reports to drive informed decision-making in business.",
+                "Gain valuable insights from your data with advanced analytics, visualizations, and reports that drive informed decision-making.",
         },
         {
             icon: Boxes,
             title: "Product Engineering Services",
             description:
-                "Our tailored product engineering services encompass the entire product development lifecycle, from conceptualization to testing & deployment. We focus on innovation, scalability, & usability to create high-quality, market-ready products.",
+                "From concept to deployment, we design innovative, scalable, and market-ready products that meet the highest standards of usability.",
         },
         {
             icon: FileBarChart,
             title: "Corporate Application Development",
             description:
-                "Enhance your business operations with our custom web app development services, meticulously crafted to align with your business goals, providing scalable solutions to drive your business forward.",
+                "Enhance operations with tailored corporate applications that align with your business goals and deliver scalable growth.",
         },
         {
             icon: Users,
             title: "Dedicated Development Team",
             description:
-                "We provide a dedicated group of talented professionals who exclusively focus on your projects, offering the flexibility and scalability you need in your business. Collaborate with us to achieve optimal results and timely delivery.",
+                "Work with a dedicated team of professionals focused exclusively on your projects, ensuring flexibility, scalability, and timely delivery.",
         },
     ];
     const benefits = [
         {
             title: "Tailored Solutions",
-            desc: "As a trusted custom web application development company, we design and develop solutions that are specifically designed to meet your industry-specific business targets.",
-        },
-        {
-            title: "High-Performance Delivery",
-            desc: "High-performance and responsive applications that are incorporated with functions, custom themes, and feature-rich plug-ins.",
+            desc: "Applications designed specifically to meet your industry-specific goals and business targets.",
         },
         {
             title: "Improved UX",
-            desc: "Upgrading user experience by providing intuitive interfaces and smooth navigation to enhance customer satisfaction.",
-        },
-        {
-            title: "Robust Security",
-            desc: "Prioritizing the security of web applications by taking robust measures to protect data and sensitive information from potential threats.",
+            desc: "Intuitive interfaces and smooth navigation that enhance customer satisfaction and engagement.",
         },
         {
             title: "Seamless Integration",
-            desc: "Our custom app development services allow applications to seamlessly integrate with your existing systems and third-party platforms.",
+            desc: "Custom apps that integrate effortlessly with your existing systems and third-party platforms for smooth data flow.",
+        },
+        {
+            title: "High-Performance Delivery",
+            desc: "Responsive, feature-rich applications with custom themes and plug-ins to maximize efficiency.",
+        },
+        {
+            title: "Robust Security",
+            desc: "Strong security measures to protect sensitive data and ensure compliance with industry standards.",
         },
         {
             title: "Scalability and Flexibility",
-            desc: "We build scalable and adaptive applications that fit your growing business needs.",
+            desc: "Applications built to grow with your business, offering adaptability for evolving needs.",
         },
     ];
 
@@ -216,25 +216,25 @@ const WebDevelopment = () => {
             number: "01",
             title: "Tailored Solutions",
             description:
-                "We design business-specific websites that will not only meet your business objectives but also help you stand out online.",
+                "We design business-specific websites and applications that meet your objectives while helping you stand out online.",
         },
         {
             number: "02",
             title: "Expert Team of Developers",
             description:
-                "Being a reputed full stack development company, we have excellent developers who apply the right technology to create quality, flexible, and strong websites.",
+                "Our skilled developers apply the right technology to create flexible, scalable, and high-quality solutions.",
         },
         {
             number: "03",
             title: "Commitment to Timely Delivery",
             description:
-                "We respect time, to ensure your site is developed within the shortest time possible but with the highest quality.",
+                "We respect your time and ensure projects are completed quickly without compromising quality.",
         },
         {
             number: "04",
-            title: "SEO-Friendly Development",
+            title: "Future-Ready Development",
             description:
-                "We develop sites with SEO considerations in mind, so our designs have the site architecture and elements necessary for immediate indexing on search engines.",
+                "Our websites are built with advanced architecture, multilingual support, and adaptability to keep your business ahead.",
         },
     ];
 
@@ -247,16 +247,14 @@ const WebDevelopment = () => {
                     <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
                             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
-                                Best Website Development<br className="hidden md:block" />Company In India
+                                Build Websites That<br className="hidden md:block" />Drive Growth
                             </h1>
                             <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
                                 <p>
-                                    Are you looking for website development services in India?
-                                    RankON Technologies is a leading web development company in
-                                    India, offering <span className="font-semibold">strategic website development services</span> designed to convert traffic into leads, support long-term SEO, and scale with your business.
+                                    At Biosoftech Solutions, we don&apos;t just create websites &mdash; we build powerful digital platforms that help businesses scale, engage customers, and achieve measurable success.
                                 </p>
                                 <p className="mt-4 sm:mt-6 md:mt-10">
-                                    With <span className="font-semibold">14+ years of experience</span> and <span className="font-semibold">1,000+ digital projects delivered globally</span>, RankON creates websites that don&apos;t just look professional, they perform.
+                                    With years of expertise and <span className="font-semibold">500+ projects delivered</span>, our team specializes in designing websites that are modern, responsive, and performance-driven. Whether you need a corporate site, an e-commerce store, or a custom industry portal, we ensure your website becomes a true growth engine.
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
@@ -267,7 +265,7 @@ const WebDevelopment = () => {
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
                                 <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
-                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">WEBSITE PACKAGES ⊕</button>
+                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">OUR SERVICES ⊕</button>
                             </div>
                         </div>
                         <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
@@ -284,7 +282,7 @@ const WebDevelopment = () => {
                         <span className="w-14 h-[2px] bg-[#a855f7]" />
 
                         <p className="text-[#8b5cf6] uppercase font-semibold text-sm tracking-wide">
-                            Wordpress Services
+                            Multilingual Website Development
                         </p>
 
                         <span className="w-14 h-[2px] bg-[#a855f7]" />
@@ -292,9 +290,9 @@ const WebDevelopment = () => {
 
                     {/* HEADING */}
                     <h2 className="text-center text-[#101126] font-bold leading-tight text-5xl lg:text-[64px]">
-                        Best Website
+                        Websites That Speak
                         <br />
-                        Design and Development Company
+                        Your Customer&apos;s Language
                     </h2>
 
                     {/* CONTENT */}
@@ -304,7 +302,7 @@ const WebDevelopment = () => {
                         <div>
                             <img
                                 src={wordpressDevelopment}
-                                alt="Wordpress Development"
+                                alt="Multilingual Development"
                                 className="w-full object-contain"
                             />
                         </div>
@@ -313,10 +311,10 @@ const WebDevelopment = () => {
                         <div>
 
                             <p className="text-[#5d6070] text-[18px] leading-8">
-                                Want to take your business online with an eye-catching
-                                WordPress website or revamp your existing site? Let
-                                Logelite help you achieve all your website design and
-                                development goals effortlessly!
+                                At Biosoftech Solutions, we specialize in building websites
+                                that go beyond borders. Our team designs and develops platforms
+                                in multiple languages, ensuring your business connects with
+                                audiences across India and around the world.
                             </p>
 
                             {/* FEATURE 1 */}
@@ -329,11 +327,11 @@ const WebDevelopment = () => {
 
                                 <div>
                                     <h3 className="font-bold text-[#111827] text-[24px]">
-                                        Dedicated Manager
+                                        Easy
                                     </h3>
 
                                     <p className="text-[#5f6270] text-[18px] mt-1">
-                                        Helps You Find the Best Solutions!
+                                        Seamless integration of multiple languages.
                                     </p>
                                 </div>
                             </div>
@@ -348,11 +346,11 @@ const WebDevelopment = () => {
 
                                 <div>
                                     <h3 className="font-bold text-[#111827] text-[24px]">
-                                        Custom Packages
+                                        Affordable
                                     </h3>
 
                                     <p className="text-[#5f6270] text-[18px] mt-1">
-                                        Pay Only for What You Look For!
+                                        Pay only for the languages you need.
                                     </p>
                                 </div>
                             </div>
@@ -367,11 +365,11 @@ const WebDevelopment = () => {
 
                                 <div>
                                     <h3 className="font-bold text-[#111827] text-[24px]">
-                                        AI-Driven Solutions
+                                        Advanced
                                     </h3>
 
                                     <p className="text-[#5f6270] text-[18px] mt-1">
-                                        Embrace New-Age Technologies!
+                                        Future-ready technology with translation support and localization features.
                                     </p>
                                 </div>
                             </div>
@@ -695,9 +693,10 @@ const WebDevelopment = () => {
                             </h2>
 
                             <p className="text-[#222] text-lg md:text-xl leading-relaxed mb-10">
-                                Are you in search of a top-notch web development company in
-                                Lucknow? Look no further! At Digital Marketing Robo, we're
-                                dedicated to transforming your digital dreams into reality.
+                                Are you in search of a top-notch software and website development company in
+                                Lucknow? Look no further! At Biosoftech Solutions, we're
+                                dedicated to transforming your ideas into reality with powerful,
+                                future-ready technology.
                             </p>
 
 
@@ -734,19 +733,14 @@ const WebDevelopment = () => {
                         </span>
 
                         <h2 className="mt-4 text-4xl lg:text-[56px] font-semibold leading-tight text-black">
-                            Tailored Solutions for Your Unique Custom Application Needs
+                            Tailored Solutions for Your Unique Business Needs
                         </h2>
 
                         <p className="mt-5 text-[18px] leading-9 text-[#666] max-w-[1300px]">
-                            As a reliable custom application development company, we design,
-                            create, and deploy tailor-made software applications made from
-                            top-tier technologies. Many ready-made applications miss out on the
-                            specific functionalities that businesses need to meet their
-                            targets. However, we offer custom application development services
-                            that can be used for multiple purposes like customer relationship
-                            management, data analysis, business workflows, etc. The following
-                            are the tailored custom app development services offered by our
-                            experts:
+                            At Biosoftech Solutions, we specialize in building custom
+                            applications that empower businesses to scale, innovate, and
+                            succeed. Our solutions are designed to be flexible, future-ready,
+                            and aligned with your goals.
                         </p>
                     </div>
 
@@ -819,12 +813,12 @@ const WebDevelopment = () => {
                         </h2>
 
                         <p className="text-gray-600 text-lg leading-8 mb-10">
-                            Custom application development services can very well adapt to the
-                            specific needs and challenges of any business. These tailor-made
-                            applications offer unique features that automate business
-                            operations, enhance customer experience, maintain compliance with
-                            regulatory standards & add to the competitive advantage of the
-                            business.
+                            At Biosoftech Solutions, we design tailor-made applications that
+                            adapt to the specific needs and challenges of your business. Our
+                            solutions automate operations, enhance customer experience, maintain
+                            compliance, and give you a competitive edge. No matter the size of
+                            your organization, we focus on delivering services that match your
+                            immediate requirements while preparing you for future growth.
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
@@ -928,12 +922,12 @@ const WebDevelopment = () => {
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     {/* Heading */}
                     <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
-                        Ready to Transform Your Digital Presence?
+                        Let&apos;s Build Your Digital Future
                     </h2>
 
                     {/* Description */}
                     <p className="mt-6 text-white/90 text-lg md:text-xl font-normal">
-                        Let's discuss your project and explore how we can help you achieve your goals.
+                        Your website is more than just code — it&apos;s your business engine, brand identity, and customer gateway. At Biosoftech Solutions, we are the strategic partner you need to build it right with web, mobile, desktop, cloud, AI automation, and industry-specific software solutions.
                     </p>
 
                     {/* Button */}
@@ -956,7 +950,7 @@ const WebDevelopment = () => {
               hover:scale-105
             "
                         >
-                            Start Your Project Today
+                            Contact Us
                             <ArrowRight size={24} />
                         </button>
                     </div>
@@ -968,14 +962,13 @@ const WebDevelopment = () => {
                     {/* Heading */}
                     <div className="text-center max-w-5xl mx-auto">
                         <h2 className="text-[#1d2b42] text-4xl md:text-5xl font-bold leading-tight">
-                            Why You Should Choose OrangeMantra As Your Preferred
+                            Why Choose Biosoftech Solutions As Your Preferred
                             <br />
                             Website Development Company?
                         </h2>
 
                         <p className="mt-8 text-[#5f6c80] text-xl leading-relaxed">
-                            Experience plays an important role in the web design process which
-                            makes us a seasoned web development company.
+                            Experience plays a vital role in the web design and development process — and at Biosoftech Solutions, we bring proven expertise with 500+ projects delivered across 35+ industries.
                         </p>
                     </div>
 

@@ -90,10 +90,10 @@ const AppDevelopment = () => {
     ];
 
     const stats = [
-        { icon: "/stats/experience.png", value: "25+", title: "Years of Experience" },
-        { icon: "/stats/project.png", value: "250+", title: "Successful Project Delivered" },
-        { icon: "/stats/team.png", value: "200+", title: "Development Specialists" },
-        { icon: "/stats/rating.png", value: "98%", title: "Client Retention Rate" },
+        { icon: "/stats/experience.png", value: "10+", title: "Years of Experience" },
+        { icon: "/stats/project.png", value: "500+", title: "Successful Projects Delivered" },
+        { icon: "/stats/team.png", value: "50+", title: "Development Specialists" },
+        { icon: "/stats/rating.png", value: "99%", title: "Client Satisfaction Rate" },
     ];
 
     // 2. Rename first techData to 'techCategoryData'
@@ -281,7 +281,7 @@ const AppDevelopment = () => {
             title:
                 "How can I find the best Android app development team for my development project requirements?",
             answer:
-                "You can reach out to one of the top Android app development companies like Hyperlink InfoSystem and share your development requirements with them. Finalize the best one, based on their Android app development expertise, development knowledge, years of experience, and advanced skills to develop digital solutions based on your project requirements.",
+                "You can reach out to Biosoftech Solutions and share your development requirements with us. We bring Android app development expertise, deep technical knowledge, years of experience, and advanced skills to build digital solutions tailored to your project requirements.",
         },
 
         {
@@ -374,16 +374,18 @@ const AppDevelopment = () => {
                     <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
                             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
-                                Best Website Development<br className="hidden md:block" />Company In India
+                                App Development<br className="hidden md:block" />That Drives Results
                             </h1>
                             <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
                                 <p>
-                                    Are you looking for website development services in India?
-                                    RankON Technologies is a leading web development company in
-                                    India, offering <span className="font-semibold">strategic website development services</span> designed to convert traffic into leads, support long-term SEO, and scale with your business.
+                                    At Biosoftech Solutions, we build high-performance mobile
+                                    applications for iOS, Android, and cross-platform ecosystems.
+                                    Our expert team combines modern frameworks, intuitive UI/UX,
+                                    and scalable architecture to deliver apps that engage users
+                                    and accelerate business growth.
                                 </p>
                                 <p className="mt-4 sm:mt-6 md:mt-10">
-                                    With <span className="font-semibold">14+ years of experience</span> and <span className="font-semibold">1,000+ digital projects delivered globally</span>, RankON creates websites that don&apos;t just look professional, they perform.
+                                    With <span className="font-semibold">500+ projects delivered</span> and <span className="font-semibold">10+ years of experience</span>, Biosoftech Solutions is your trusted partner for end-to-end app development.
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
@@ -394,7 +396,7 @@ const AppDevelopment = () => {
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
                                 <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
-                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">WEBSITE PACKAGES ⊕</button>
+                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">EXPLORE APPS ⊕</button>
                             </div>
                         </div>
                         <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
@@ -421,7 +423,7 @@ const AppDevelopment = () => {
                                 ))}
                             </ul>
                             <button className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-sm sm:text-base md:text-lg font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
-                                Shape your success story with Appdid today!
+                                Shape your success story with Biosoftech Solutions today!
                             </button>
                         </div>
                         <div className="relative flex justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[650px] mt-8 sm:mt-12 lg:mt-0">
@@ -529,7 +531,7 @@ const AppDevelopment = () => {
                             </h2>
                             <div className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-6 md:space-y-8">
                                 <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
-                                    Got an idea? We help turn it into a real Android app. As a trusted Android app development company, OrangeMantra builds smart apps to match your business needs.
+                                    Got an idea? We help turn it into a real Android app. As a trusted app development company, Biosoftech Solutions builds smart apps to match your business needs.
                                 </p>
                                 <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
                                     We've spent years creating Android app development solutions for all kinds of clients; startups, big brands, and everything in between. Our team understands how Android works and we design apps that connect well with your users.
@@ -879,7 +881,7 @@ const AppDevelopment = () => {
                                     software that maximises the desired value.
                                 </p>
                                 <p>
-                                    Appsinvo develops digital applications for
+                                    Biosoftech Solutions develops digital applications for
                                     mobile, web and online platforms using
                                     user-centred design and scalable software.
                                 </p>
@@ -920,7 +922,7 @@ const AppDevelopment = () => {
                                     <span className="absolute left-0 bottom-[4px] md:bottom-[10px] w-full h-[8px] md:h-[12px] bg-[#FFC928] z-0"></span>
                                     <span className="relative z-10">Why Choose</span>
                                 </span>
-                                {" "}Hyperlink InfoSystem As Your App Development Company?
+                                {" "}Biosoftech Solutions As Your App Development Company?
                             </h2>
 
                             {/* Paragraph */}
@@ -941,16 +943,16 @@ const AppDevelopment = () => {
                     <div className="bg-black text-white flex items-center justify-center py-16 md:py-24">
                         <div className="w-full max-w-[820px] px-8 md:px-12 lg:px-16">
                             <h2 className="text-4xl md:text-6xl lg:text-[72px] leading-tight font-light">
-                                <span className="font-bold">12+ Years</span> of App Development Experience
+                                <span className="font-bold">10+ Years</span> of App Development Experience
                             </h2>
 
                             <ul className="mt-10 md:mt-14 space-y-4 md:space-y-6 text-base md:text-[18px]">
                                 {[
-                                    "1200+ Developers",
-                                    "500+ App Developers",
+                                    "50+ Skilled Developers",
+                                    "500+ Projects Delivered",
                                     "97% Success Ratio",
-                                    "4500+ Mobile Applications Developed",
-                                    "110 Million App Downloads",
+                                    "10+ Years of Experience",
+                                    "99% Client Satisfaction",
                                     "End-to-end App Development Support",
                                     "Multiple Hiring Models",
                                 ].map((item, index) => (
@@ -1032,7 +1034,7 @@ const AppDevelopment = () => {
                     <div className="relative z-10 h-full flex items-center py-12 sm:py-16 md:py-0">
                         <div className="px-4 sm:px-6 md:px-8 lg:px-16 text-center md:text-left w-full">
                             <div className="inline-flex items-center bg-white rounded-full px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-3 text-sm sm:text-base md:text-[22px] font-medium text-[#232323]">
-                                2000+ businesses
+                                500+ businesses
                             </div>
 
                             <h2 className="mt-6 sm:mt-8 md:mt-10 text-white text-2xl sm:text-3xl md:text-6xl lg:text-[86px] leading-tight lg:leading-[1.05] font-bold max-w-[1000px] mx-auto md:mx-0">

@@ -10,21 +10,21 @@ import bgImage from "../../assets/h4-bg-img-1.png";
 const slides = [
   {
     image: slider,
+    top: "Where",
+    big: "Ideas",
+    outline: "Become",
+    bottom: "Smart Solutions",
+    desc:
+      "For us, it's not just about building software. We understand your business goals, capture your vision, and deliver technology that makes everyday work simple, efficient, and impactful.",
+  },
+  {
+    image: slider1,
     top: "Full-Service",
     big: "Software",
     outline: "Development",
     bottom: "Company",
     desc:
       "We are a leading technology partner delivering innovation and efficiency for more than a decade. Our team specializes in custom software development, mobile apps, and AI-powered solutions — offering everything under one roof.",
-  },
-  {
-    image: slider1,
-    top: "Where",
-    big: "Ideas",
-    outline: "Become",
-    bottom: "Smart Solutions",
-    desc:
-      "For us, it's not just about building software. We understand your business and create smart digital solutions tailored to your growth.",
   },
 ];
 

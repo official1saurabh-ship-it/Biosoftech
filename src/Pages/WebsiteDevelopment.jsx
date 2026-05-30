@@ -5,28 +5,26 @@ const WebsiteDevelopment = () => {
         {
             id: "01",
             title: "Tailored Solutions",
-            desc: `We design business-specific websites that will not only
-    meet your business objectives but also help you stand out online.`,
+            desc: `We design business-specific websites and applications
+    that meet your objectives while helping you stand out online.`,
         },
         {
             id: "02",
             title: "Expert Team of Developers",
-            desc: `Being a reputed full stack development company,
-    we have excellent developers who apply the right technology
-    to create quality, flexible, and strong websites.`,
+            desc: `Our skilled developers apply the right technology
+    to create flexible, scalable, and high-quality solutions.`,
         },
         {
             id: "03",
             title: "Commitment to Timely Delivery",
-            desc: `We respect time, to ensure your site is developed
-    within the shortest time possible but with the highest quality.`,
+            desc: `We respect your time and ensure projects are completed
+    quickly without compromising quality.`,
         },
         {
             id: "04",
-            title: "SEO-Friendly Development",
-            desc: `We develop sites with SEO considerations in mind,
-    so our designs have the site architecture and elements
-    necessary for immediate indexing on search engines.`,
+            title: "Future-Ready Development",
+            desc: `Our websites are built with advanced architecture,
+    multilingual support, and adaptability to keep your business ahead.`,
         },
     ];
     return (
@@ -37,14 +35,15 @@ const WebsiteDevelopment = () => {
                     {/* Heading */}
                     <div className="text-center max-w-[1000px] mx-auto">
                         <h2 className="text-2xl sm:text-3xl md:text-[52px] leading-tight font-semibold text-[#1d2430]">
-                            Why You Should Choose OrangeMantra As Your Preferred
+                            Why Choose Biosoftech Solutions As Your Preferred
                             <br className="hidden md:block" />
                             Website Development Company?
                         </h2>
 
                         <p className="mt-4 sm:mt-6 md:mt-8 text-[#687387] text-sm sm:text-base md:text-lg leading-relaxed md:leading-9 max-w-[900px] mx-auto">
-                            Experience plays an important role in the web design
-                            process which makes us a seasoned web development company.
+                            Experience plays a vital role in the web design process
+                            — and at Biosoftech Solutions, we bring proven expertise
+                            with 500+ projects delivered across 35+ industries.
                         </p>
                     </div>
 

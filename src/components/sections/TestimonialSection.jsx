@@ -14,7 +14,7 @@ const reviews = [
         name: "Sara Gupta",
         time: "8 months ago",
         text:
-            "The team at Rank Digital Solution is very creative with social media. They managed campaigns and delivered excellent growth.",
+            "The team at Biosoftech Solutions is very creative and professional. They delivered excellent results on our project.",
     },
 
     {
@@ -28,7 +28,7 @@ const reviews = [
         name: "Pooja Yadav",
         time: "8 months ago",
         text:
-            "Rank Digital Solution is among the best digital marketing companies.",
+            "Biosoftech Solutions is among the best software development companies I have worked with.",
     },
 
     {

@@ -92,62 +92,62 @@ export default function About() {
 
   const services = [
     {
-      title: "Performance Marketing",
-      desc: "DRIVING MEASURABLE RESULTS WITH DATA-DRIVEN, ROI-FOCUSED STRATEGIES",
+      title: "Mobile Development",
+      desc: "ANDROID & IOS APPS DESIGNED FOR SPEED, SECURITY, AND USABILITY",
       color: "bg-gradient-to-br from-[#ff6e4d] to-[#f5d267]",
     },
     {
-      title: "Social Media Marketing",
-      desc: "BUILDING STRONG BRAND PRESENCE WITH ENGAGING, TARGETED CONTENT",
+      title: "Desktop Apps",
+      desc: "BUSINESS DESKTOP SOLUTIONS BUILT FOR POWER, SPEED, AND RELIABILITY",
       color: "bg-gradient-to-br from-[#6bd5e4] to-[#3579ff]",
     },
     {
-      title: "SEO Services",
-      desc: "BOOSTING ONLINE VISIBILITY THROUGH STRATEGIC, RESULTS-DRIVEN SEO",
+      title: "Cloud Services",
+      desc: "FUTURE-READY CLOUD INTEGRATION WITH SECURE AND SCALABLE SYSTEMS",
       color: "bg-gradient-to-br from-[#b9ec69] to-[#68c21b]",
     },
     {
-      title: "Website Design",
-      desc: "CRAFTING VISUALLY APPEALING, USER-FRIENDLY WEBSITES",
+      title: "Web Development",
+      desc: "RESPONSIVE WEBSITES BUILT TO SCALE WITH USER-FRIENDLY DESIGN",
       color: "bg-gradient-to-br from-[#b071ef] to-[#d7c8ff]",
     },
   ];
   const serviceList = [
-    "Social Media Marketing",
-    "Search Engine Marketing",
-    "Search Engine Optimization",
-    "Social Media Optimization",
-    "Web Design & Development",
+    "Education – Schools, colleges, and training institutes",
+    "Healthcare – Hospitals, labs, and pathology centers",
+    "Hospitality – Hotels, restaurants, and cafés",
+    "Retail – Shops, e-commerce, and billing systems",
+    "Real Estate – PGs, hostels, and property management",
   ];
 
   const stats = [
-    { icon: Star, value: "500", plus: "+", title: "Verified", sub: "Reviews" },
-    { icon: Calendar, value: "14", plus: "+", title: "Years of", sub: "Experience" },
+    { icon: Star, value: "500", plus: "+", title: "Verified", sub: "Projects" },
+    { icon: Calendar, value: "10", plus: "+", title: "Years of", sub: "Experience" },
     { icon: Handshake, value: "500", plus: "+", title: "Happy Clients", sub: "" },
-    { icon: Users, value: "20", plus: "+", title: "Team", sub: "Members" },
+    { icon: Users, value: "50", plus: "+", title: "Skilled Team", sub: "Members" },
   ];
 
   const services1 = [
     {
       percentage: "90%",
       color: "#7065F0",
-      title: "Web Analysis",
+      title: "Web Development",
       description:
-        "Unlock your website's potential with our comprehensive web analysis. Discover strengths, uncover weaknesses, and gain actionable insights to enhance your online presence. Start your free analysis today!",
+        "Unlock your business potential with our modern web solutions. We design scalable, user-friendly websites and portals that strengthen your online presence and streamline operations.",
     },
     {
       percentage: "89%",
       color: "#F59E0B",
-      title: "SEO & SMO",
+      title: "Mobile Applications",
       description:
-        "Boost your website's visibility with our expert SEO services. Increase organic traffic, improve rankings, and enhance user experience. Start optimizing your site today for better search engine performance!",
+        "Boost engagement with powerful Android and iOS apps. Our mobile solutions improve accessibility, enhance customer experience, and drive growth for businesses of all sizes.",
     },
     {
       percentage: "95%",
       color: "#4ADE80",
-      title: "Online Marketing",
+      title: "Industry Software Solutions",
       description:
-        "Maximize your online reach with our cutting-edge marketing strategies. Drive engagement, increase conversions, and grow your brand's digital footprint. Start your tailored online marketing plan today!",
+        "Maximize efficiency with tailored systems for restaurants, hotels, schools, billing, pathology labs, and staff management. Our industry-specific platforms simplify workflows and deliver measurable results.",
     },
   ];
 
@@ -158,39 +158,55 @@ export default function About() {
       color: "#42C97A",
       title: "Our Beginning",
       description:
-        "Founded with the mission to provide affordable and effective digital marketing in Lucknow.",
+        "Founded with the mission to deliver affordable and effective software solutions in India.",
     },
     {
       year: "2019",
       side: "left",
       color: "#F59E0B",
-      title: "Expansion in Strategy",
+      title: "Expansion in Services",
       description:
-        "Introduced advanced SEO, social media marketing, and web analytics tools for better results.",
+        "Introduced advanced web development, mobile applications, and desktop solutions to support diverse industries.",
     },
     {
       year: "2020",
       side: "right",
       color: "#6C63FF",
-      title: "Performance Marketing Launch",
+      title: "Industry Solutions Launch",
       description:
-        "Established ourselves as the best performance marketing agency in Lucknow with ROI-focused campaigns.",
+        "Rolled out specialized platforms for restaurants, hotels, schools, billing, pathology labs, and staff management, becoming a trusted partner for SMEs.",
     },
     {
       year: "2022",
       side: "left",
       color: "#FF2BBF",
-      title: "Leveraging AI for Digital Success",
+      title: "Leveraging AI & Cloud",
       description:
-        "Integrated AI tools for smart targeting, audience segmentation, and predictive analysis.",
+        "Integrated AI automation and cloud services to help businesses streamline operations and achieve smarter growth.",
     },
     {
       year: "2024",
       side: "right",
       color: "#00BFFF",
-      title: "Global Recognition",
+      title: "Recognition Across Industries",
       description:
-        "Launched Digital Mart Lab LLC in the USA, expanding our services beyond India.",
+        "Served clients in 35+ industries, completing 500+ projects, and building long-term partnerships across India.",
+    },
+    {
+      year: "2025",
+      side: "left",
+      color: "#FF6B35",
+      title: "Scaling Enterprise Solutions",
+      description:
+        "Expanded offerings with enterprise-grade analytics platforms, ERP systems, and advanced cloud integrations, strengthening our role as a trusted technology partner for large organizations.",
+    },
+    {
+      year: "2026",
+      side: "right",
+      color: "#E63946",
+      title: "Future Expansion & Innovation",
+      description:
+        "Strengthened our presence in India with next-generation AI-driven automation, industry-specific software, and advanced enterprise solutions. Preparing for global expansion, we continue to innovate with technology that keeps businesses ahead of the curve.",
     },
   ];
 
@@ -214,15 +230,12 @@ export default function About() {
         <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16">
           <div className="z-10 text-center lg:text-left pt-24 sm:pt-28 md:pt-28">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
-              Your <span className="text-orange-500">AI-Powered</span> Digital<br />Marketing Partner
-            </h1>
-            <span className="text-blue-600 block mt-2 sm:mt-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
-              {displayText}
+              Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
               <span className="inline-block w-1 md:w-2 h-6 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
-            </span>
+            </h1>
             <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-[18px] leading-relaxed md:leading-[38px] text-gray-600 max-w-[650px] mx-auto lg:mx-0">
-              Join <span className="font-bold text-gray-900">500+ businesses in Lucknow</span> who transformed their brands with
-              <span className="font-bold text-gray-900"> Rank Digital Solution's</span> Best digital marketing in lucknow.
+              Join <span className="font-bold text-gray-900">500+ businesses worldwide</span> who transformed their operations with
+              <span className="font-bold text-gray-900"> Biosoftech Solutions'</span> best software development and automation services.
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6 md:mt-8 text-xs sm:text-sm md:text-[18px] font-semibold">
               <CheckCircle size={16} className="sm:w-[20px] sm:h-[20px] text-purple-600 shrink-0" />
@@ -260,11 +273,11 @@ export default function About() {
             </div>
             <div className="absolute left-2 sm:left-4 md:left-10 bottom-8 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-2 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-2 sm:gap-3">
               <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-base sm:text-xl">⭐</span></div>
-              <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">5+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years Of Experience</p></div>
+              <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">10+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
             </div>
             <div className="absolute right-2 sm:right-4 md:right-10 bottom-8 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-2 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-2 sm:gap-3">
               <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-base sm:text-xl">🌐</span></div>
-              <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">100+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Websites Developed</p></div>
+              <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">500+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
             </div>
           </div>
         </div>
@@ -276,11 +289,11 @@ export default function About() {
         <div className="relative max-w-[1220px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
-              <h1 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[50px] lg:leading-[66px] font-black text-black">Best Digital Marketing Agency in Lucknow for SEO, Performance Marketing, Social Media & Website Designing</h1>
-              <p className="mt-4 sm:mt-6 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Digital Mart Lab, the best digital marketing agency in Lucknow trusted by startups, local businesses, and growing brands. We specialize in SEO, performance marketing, social media marketing, and website designing.</p>
-              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded by Mr. Victor Singh, Digital Mart Lab is a certified digital marketing agency headquartered in Lucknow.</p>
+              <h1 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[50px] lg:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h1>
+              <p className="mt-4 sm:mt-6 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
+              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries.</p>
               <h2 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[38px] font-black text-[#433d70]">Our Mission</h2>
-              <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses through data-driven digital marketing strategies that increase visibility and generate sustainable growth.</p>
+              <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
               <button className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
@@ -302,12 +315,12 @@ export default function About() {
         <div className="relative max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
           <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-12 lg:gap-24 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[62px] lg:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">RankON Technologies&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[62px] lg:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
               <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[32px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
-                <p>In our 14+ years of experience as a progressive digital marketing agency, we have witnessed the digital landscape evolve before our eyes.</p>
-                <p>Even after algorithm shifts and AI results began to dominate the SERPs, we have helped businesses navigate these changes.</p>
-                <p>We continuously observed evolving dynamics and adjusted our growth strategy.</p>
-                <p>By implementing timely changes to our search strategy, we ensured businesses remain visible.</p>
+                <p>In our 10+ years of experience as a progressive software development company, we have witnessed the digital landscape evolve rapidly.</p>
+                <p>Even as AI automation, cloud integration, and new technologies reshaped industries, we have consistently helped businesses adapt and thrive.</p>
+                <p>We observed changing dynamics and refined our growth strategies to cut through complexity, competition, and digital noise.</p>
+                <p>By implementing timely innovations, we ensured our clients&apos; businesses remain efficient, scalable, and future-ready without compromising stability. That&apos;s sustainability in progress and conviction in action!</p>
               </div>
               <button className="mt-6 sm:mt-10 border border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-white flex items-center gap-2 sm:gap-3 hover:bg-[#3B3663] duration-500 text-sm sm:text-base min-h-[44px]">Let&apos;s Accelerate Your Growth <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" /></button>
             </div>
@@ -345,8 +358,8 @@ export default function About() {
             >
               {/* BACK CARD */}
               <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
-                <h2 className="text-white text-[90px] font-black">235+</h2>
-                <p className="text-white text-[26px] font-bold">Websites Developed</p>
+                <h2 className="text-white text-[90px] font-black">500+</h2>
+                <p className="text-white text-[26px] font-bold">Projects Delivered</p>
                 <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">
                   🌐
                 </div>
@@ -354,13 +367,13 @@ export default function About() {
 
               {/* FRONT CARD */}
               <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
-                <h2 className="text-white text-[82px] font-black">450+</h2>
-                <p className="text-white text-[24px] font-bold">SEO Projects Completed</p>
+                <h2 className="text-white text-[82px] font-black">300+</h2>
+                <p className="text-white text-[24px] font-bold">Satisfied Clients</p>
                 <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">
-                  ✈️
+                  ⚡
                 </div>
                 <div className="absolute right-10 bottom-10 z-30">
-                  <h2 className="text-white text-[76px] font-black">35+</h2>
+                  <h2 className="text-white text-[76px] font-black">40+</h2>
                   <p className="text-white text-[22px]">Industries Served</p>
                 </div>
               </div>
@@ -385,7 +398,7 @@ export default function About() {
                   className="text-transparent border-text"
                   style={{ WebkitTextStroke: '2px black' }}
                 >
-                  Dreams Into Life
+                  Ideas Into Reality
                 </span>
               </motion.h1>
 
@@ -393,7 +406,7 @@ export default function About() {
                 style={{ y: descY }}
                 className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#555]"
               >
-                Logelite is a global leader in next-generation digital marketing, web design and development.
+                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology.
               </motion.p>
 
               <motion.div
@@ -401,9 +414,9 @@ export default function About() {
                 className="space-y-4 sm:space-y-6 mt-6 sm:mt-10"
               >
                 {[
-                  { icon: Globe, title: "Easy", desc: "From project audits to strategy creation." },
-                  { icon: CircleDollarSign, title: "Affordable", desc: "Cost effective services." },
-                  { icon: ChartColumn, title: "Advanced", desc: "Future focused solutions." },
+                  { icon: Globe, title: "Easy", desc: "From project audits to strategy creation, we simplify every step." },
+                  { icon: CircleDollarSign, title: "Affordable", desc: "Cost-effective solutions tailored to client needs." },
+                  { icon: ChartColumn, title: "Advanced", desc: "Future-focused technology that keeps businesses ahead." },
                 ].map((item, i) => {
                   const Icon = item.icon;
                   return (
@@ -511,11 +524,11 @@ export default function About() {
               {/* Description */}
 
               <p className="mt-6 text-gray-600 text-lg leading-relaxed">
-                Logelite ticks all the boxes for businesses to thrive online.
-                We don't just introduce businesses to the digital world with
-                our expert web design and development services; but also fuel
-                growth through strategically crafted paid advertising and
-                digital marketing solutions.
+                At Biosoftech Solutions, we deliver complete digital and software
+                solutions that help businesses across multiple industries grow
+                online. From web design and development to advanced automation
+                and analytics, our expertise spans diverse sectors — ensuring
+                every business finds the right technology to thrive.
               </p>
 
               {/* Offer Title */}
@@ -523,7 +536,7 @@ export default function About() {
               <div className="mt-10 flex items-center gap-3">
                 <Lightbulb className="w-7 h-7 text-orange-500" />
                 <h3 className="text-2xl font-bold">
-                  We Offer
+                  We Work Across 35+ Industries
                 </h3>
               </div>
 
@@ -562,11 +575,11 @@ export default function About() {
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl md:text-[42px] leading-tight font-light text-black">
               <span className="font-semibold">
-                The Digital Growth Engine
+                The Technology Growth Engine
               </span>{" "}
-              For Ambitious Brands
+              For Ambitious Businesses
               <br />
-              Across Different Industries
+              Across Industries
             </h2>
           </div>
 
@@ -577,35 +590,34 @@ export default function About() {
             <div className="max-w-[620px]">
 
               <p className="text-[17px] leading-[2] text-[#333] mb-8">
-                RankON Technologies designs and builds a digital ecosystem
-                for ambitious businesses that want to scale, drive leads,
-                increase conversions, and gain a competitive edge. With us,
-                breakthrough growth is not accidental; it is the result of
-                a clear master plan, a strong narrative, and precise execution.
+                Biosoftech Solutions designs and builds complete software
+                ecosystems for ambitious organizations that want to scale,
+                streamline operations, and gain a competitive edge. With us,
+                breakthrough growth is never accidental — it's the result of
+                a clear plan, strong execution, and future-ready technology.
               </p>
 
               <p className="text-[17px] leading-[2] text-[#333] mb-8">
-                For over 14 years, we've partnered with growth-focused brands
-                across the US, UK, Canada, India, Singapore, UAE, Australia,
-                and more, helping them achieve measurable results through
-                full-spectrum performance-focused digital marketing services.
+                For years, we've partnered with businesses across India,
+                delivering measurable results through web development, mobile
+                applications, desktop solutions, cloud services, AI automation,
+                and industry-specific management systems.
               </p>
 
               <p className="text-[17px] leading-[2] text-[#333] mb-8">
-                We excel at making brands visible through results-focused SEO
-                and PPC, building a digital footprint through website
-                development, and establishing lasting trust through content
-                marketing and social media management.
+                We excel at: Web Development, Mobile Applications, Desktop
+                Solutions, Cloud Services, AI Automation, and Industry
+                Management Systems — restaurant, hotel, school, billing,
+                pathology, and staff management software.
               </p>
 
               <p className="text-[17px] leading-[2] text-[#333]">
                 So, whether you're a startup, a small-to-medium business,
-                a large business, or an entrepreneur who refuses to settle
-                for less and dreams big, you're already incredible, and
-                we're here to make you even more incredible. Don't look any
-                further, as together, we can become a rare mix of ambition
+                a large enterprise, or an entrepreneur with big ambitions,
+                you're already incredible, and we're here to make you even
+                more incredible. Together, we create a rare mix of ambition
                 and strategy, creativity and performance, vision and
-                execution. Get started today!
+                execution.
               </p>
 
             </div>
@@ -716,7 +728,7 @@ export default function About() {
             </p>
 
             <h2 className="text-5xl font-bold text-[#3d3a72] mt-4">
-              The Story of Process Of Digital Mart Lab
+              The Story of Biosoftech Solutions
             </h2>
           </div>
 
@@ -820,20 +832,23 @@ export default function About() {
               </p>
 
               <h2 className="text-white text-3xl sm:text-4xl md:text-6xl leading-tight font-light">
-                Book An Appointment With
+                Book an Appointment With
                 <br />
-                Our Top Rated{" "}
+                Our Top-Rated{" "}
                 <span className="text-yellow-400 font-semibold">
-                  Digital
+                  Software
                   <br />
-                  Marketing Experts.
+                  Experts.
                 </span>
               </h2>
 
               <p className="text-white/90 text-base sm:text-lg md:text-2xl leading-relaxed mt-8">
-                Hope you have seen a lot of good things about RankON
-                Technologies. Now, it's time to talk with a real person
-                about your project. So, don't delay!
+                You've seen what Biosoftech Solutions can deliver — now it's
+                time to talk directly with our team about your project.
+                Whether you need web development, mobile apps, desktop
+                solutions, cloud services, AI automation, or industry-specific
+                software, we're here to guide you every step of the way.
+                Don't delay — let's build your future together.
               </p>
 
               {/* Logos */}
@@ -858,51 +873,31 @@ export default function About() {
 
                 <div className="bg-[#FFB800] rounded-xl py-4 text-center">
                   <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-                    1000+
-                  </h3>
-
-                  <p className="text-white text-sm sm:text-base md:text-xl">
-                    Projects
-                  </p>
-                </div>
-
-                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-                    98%
-                  </h3>
-
-                  <p className="text-white text-sm sm:text-base md:text-xl">
-                    Satisfaction
-                  </p>
-                </div>
-
-                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-                    600+
-                  </h3>
-
-                  <p className="text-white text-sm sm:text-base md:text-xl">
-                    Happy Clients
-                  </p>
-                </div>
-
-                <div className="bg-[#18C73E] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-4xl font-bold">
-                    99%
-                  </h3>
-
-                  <p className="text-white text-xl">
-                    Job Success
-                  </p>
-                </div>
-
-                <div className="bg-[#FF1D1D] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-4xl font-bold">
                     500+
                   </h3>
 
-                  <p className="text-white text-xl">
-                    Trusted Clients
+                  <p className="text-white text-sm sm:text-base md:text-xl">
+                    Projects Delivered
+                  </p>
+                </div>
+
+                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                    99%
+                  </h3>
+
+                  <p className="text-white text-sm sm:text-base md:text-xl">
+                    Client Satisfaction
+                  </p>
+                </div>
+
+                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                    500+
+                  </h3>
+
+                  <p className="text-white text-sm sm:text-base md:text-xl">
+                    Long-Term Clients
                   </p>
                 </div>
 

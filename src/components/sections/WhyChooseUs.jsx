@@ -266,7 +266,9 @@ to-[#12003f]/40
             >
               We combine years of expertise with advanced software
               development and AI automation to deliver innovative, secure,
-              and scalable technology.
+              and scalable technology. From custom apps to the Mitra Suite,
+              we help businesses worldwide achieve efficiency, growth, and
+              measurable success.
             </p>
 
             <div

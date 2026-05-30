@@ -25,10 +25,10 @@ const Footer = () => {
               rel="noreferrer"
               className="inline-block text-3xl font-bold text-primary-1 mb-8"
             >
-              Logelite
+              Biosoftech
             </a>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              We are a team of 100+ professionals with more than 10 years of experience in delivering digital marketing and WordPress solutions. Don't believe it? See it for yourself!
+              We are a team of 50+ professionals with more than 10 years of experience in delivering custom software development, mobile apps, AI automation, and industry-specific solutions. Don't believe it? See it for yourself!
             </p>
             <div className="flex gap-4">
               {socialLinks.map(({ Icon, href, label }) => (
@@ -84,7 +84,7 @@ const Footer = () => {
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
             <ul className="space-y-4">
-              {['Enquiry', 'Paid Advertising', 'SEO', 'SMO', 'Web Development', 'Privacy Policy', 'Terms & Conditions'].map((item) => (
+              {['Enquiry', 'Web Development', 'App Development', 'Cloud Services', 'AI Automation', 'Privacy Policy', 'Terms & Conditions'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
                     <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />

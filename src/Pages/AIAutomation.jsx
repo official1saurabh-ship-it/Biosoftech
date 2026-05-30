@@ -100,44 +100,44 @@ const HeroSection = () => {
   const capabilities = [
     {
       number: "01",
-      title: "LLM Application Development",
+      title: "Intelligent LLM Applications",
       description:
-        "Custom applications built on GPT-4o, Claude 3.5 Sonnet, Llama 3.1, and Gemini — tailored to your workflows, data, and compliance requirements.",
+        "Custom AI applications built on GPT-4o, Claude, Llama, and Gemini, tailored to your workflows and compliance needs. We manage model selection, prompt engineering, API integration, and deployment for production reliability.",
     },
 
     {
       number: "02",
-      title: "RAG Pipeline Development",
+      title: "Knowledge-Driven RAG Pipelines",
       description:
-        "Retrieval-Augmented Generation systems that connect your LLM to internal knowledge bases, documents, and databases.",
+        "Connect LLMs to your internal knowledge bases, documents, and databases with Retrieval-Augmented Generation pipelines. Deliver accurate, source-grounded responses with smooth integration into enterprise data systems.",
     },
 
     {
       number: "03",
-      title: "AI Agents & Workflow Automation",
+      title: "Autonomous AI Agents",
       description:
-        "Autonomous multi-step agents built with LangChain, LangGraph, and AutoGen that execute tasks and integrate with tools.",
+        "We engineer multi-step AI agents using LangChain, LangGraph, and AutoGen that automate workflows, make decisions, and integrate with CRM, ERP, and cloud platforms to reduce manual effort.",
     },
 
     {
       number: "04",
-      title: "LLM Fine-Tuning on Proprietary Data",
+      title: "Domain-Specific Fine-Tuning",
       description:
-        "Fine-tune open-source and proprietary models on your business data for domain-specific intelligence.",
+        "Fine-tune models on your proprietary datasets to improve accuracy and relevance. Integrated pipelines ensure deployment across industries like healthcare, finance, legal, and retail.",
     },
 
     {
       number: "05",
-      title: "Enterprise AI Chatbot & Copilot Development",
+      title: "Enterprise Copilot Solutions",
       description:
-        "Production-grade chatbots and copilots for customer support, internal operations, and enterprise workflows.",
+        "Production-grade chatbots and copilots for customer support, HR, sales, and operations. Built with multi-system integration for scalability, compliance, and enterprise security.",
     },
 
     {
       number: "06",
-      title: "Multimodal AI",
+      title: "Multimodal AI Integration",
       description:
-        "AI systems that understand and generate across text, image, audio, and video for advanced automation.",
+        "AI systems that understand and generate across text, image, audio, and video. Use cases include document intelligence, visual search, voice automation, and video analysis, all integrated into your workflows.",
     },
   ];
 
@@ -145,30 +145,30 @@ const HeroSection = () => {
   const features = [
     {
       image: why_icon_1_ai,
-      title: "Advanced AI Expertise",
+      title: "Expert AI Knowledge",
       description:
-        "Our team specializes in modern AI frameworks, machine learning models, and data-driven solutions.",
+        "Our team specializes in modern AI frameworks, machine learning models, and data-driven solutions, ensuring innovation and reliability in every project.",
     },
 
     {
       image: why_icon_2_ai,
-      title: "Security & Compliance",
+      title: "Secure & Compliant Systems",
       description:
-        "We ensure your data is protected with secure and compliant AI implementations.",
+        "We prioritize data protection and compliance, embedding advanced security protocols into every AI implementation to safeguard your business.",
     },
 
     {
       image: why_icon_3_ai,
-      title: "Scalable Solutions",
+      title: "Scalable AI Solutions",
       description:
-        "Our AI systems are designed to scale with your business growth.",
+        "Our AI systems are designed to grow with your business, supporting scalability and performance as your operations expand.",
     },
 
     {
       image: why_icon_4_ai,
-      title: "Custom Approach",
+      title: "Tailored AI Approach",
       description:
-        "We build solutions tailored to your business challenges and goals.",
+        "We deliver custom AI solutions aligned with your unique challenges and goals, ensuring maximum impact and measurable outcomes.",
     },
   ];
 
@@ -176,33 +176,33 @@ const HeroSection = () => {
   const expertiseData = [
     {
       icon: BrainCircuit,
-      title: "AI Strategy & Technical Consulting",
+      title: "Custom AI Engineering",
       description:
-        "We begin with use-case analysis, system architecture design, LLM selection, and prompt engineering strategy.",
+        "Using advanced frameworks, we build AI agents and automation systems capable of autonomous decision-making, planning, and execution across enterprise workflows.",
     },
     {
       icon: Bot,
-      title: "Custom AI Agent Engineering",
+      title: "Workflow Orchestration",
       description:
-        "Using advanced tools like AutoGen Studio, LangChain, and vector memory systems, we craft intelligent agents.",
+        "Our automation solutions integrate controllers that decompose tasks, schedule execution, and handle conditional logic, optimizing processes that traditionally require human effort.",
     },
     {
       icon: Workflow,
-      title: "AI Automation & Workflow Orchestration",
+      title: "System Integration",
       description:
-        "AI agents automate workflows by integrating controllers and execution systems.",
+        "We connect AI automation with your CRM, ERP, data pipelines, and enterprise tools via secure APIs and containerized services for seamless real-time coordination.",
     },
     {
       icon: Cpu,
-      title: "AI Agent Integration",
+      title: "Predictive Analytics & Insights",
       description:
-        "We integrate agents with CRM, ERP, APIs, and enterprise systems securely.",
+        "Leverage machine learning and predictive models to forecast trends, detect anomalies, and make proactive business decisions with confidence.",
     },
     {
       icon: Sparkles,
-      title: "Memory, Learning & Continuous Improvement",
+      title: "Continuous Monitoring & Optimization",
       description:
-        "Agents continuously improve using memory modules, feedback loops, and adaptive learning.",
+        "We provide ongoing support with performance tuning, model retraining, and security updates, ensuring your AI automation remains reliable and future-ready.",
     },
   ];
 
@@ -216,10 +216,10 @@ const HeroSection = () => {
         "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
       heading: "Mobile App Development",
       description:
-        "We specialize in augmenting the mobile experience for users of different niches, industries, products, and more that can help businesses enhance their value with futuristic mobile applications.",
+        "We specialize in enhancing mobile experiences across industries, helping businesses deliver value-driven applications that stand out in competitive markets.",
       technologies: [
-        "Android App",
-        "iPhone App",
+        "Android",
+        "iPhone",
         "Flutter",
         "Swift",
         "React Native",
@@ -277,7 +277,7 @@ const HeroSection = () => {
       icon: Bitcoin,
       image:
         "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=1200&auto=format&fit=crop",
-      heading: "Blockchain Development",
+      heading: "Blockchain Solutions",
       description:
         "Build secure blockchain applications, crypto platforms, and decentralized ecosystems.",
       technologies: [
@@ -314,9 +314,30 @@ const HeroSection = () => {
     },
 
     {
-      title: "AI & ML",
+      title: "Salesforce",
       category: "SOLUTIONS",
       icon: BrainCircuit,
+      image:
+        "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+      heading: "Salesforce Solutions",
+      description:
+        "Enterprise-grade Salesforce implementations, customizations, and integrations to streamline sales, service, and marketing operations.",
+      technologies: [
+        "Salesforce",
+        "Apex",
+        "Lightning",
+        "SOQL",
+        "LWC",
+        "Process Builder",
+        "Flow",
+        "Einstein AI",
+      ],
+    },
+
+    {
+      title: "AI & ML",
+      category: "SOLUTIONS",
+      icon: Cpu,
       image:
         "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
       heading: "AI & ML Solutions",
@@ -361,7 +382,7 @@ const HeroSection = () => {
       stage: "STAGE 01",
       title: "Requirement Analysis",
       description:
-        "We begin by understanding your business challenges, goals, and technical requirements. This phase helps us define the right AI strategy and roadmap.",
+        "We begin by understanding your business challenges, goals, and technical requirements. This stage defines the right AI strategy, identifies opportunities, and creates a roadmap tailored to your needs.",
       image: process_1,
       icon: FiSearch,
     },
@@ -370,7 +391,7 @@ const HeroSection = () => {
       stage: "STAGE 02",
       title: "Data Collection & Preparation",
       description:
-        "High-quality data is the foundation of successful AI systems. We gather, clean, and structure relevant data for model training.",
+        "High-quality data is the foundation of successful AI systems. We gather, clean, and structure relevant data to ensure accuracy, consistency, and readiness for model training and analysis.",
       image: process_2,
       icon: IoGitNetwork,
     },
@@ -379,7 +400,7 @@ const HeroSection = () => {
       stage: "STAGE 03",
       title: "Model Development",
       description:
-        "Our experts design and build advanced AI models using the latest algorithms and technologies for intelligent automation.",
+        "Our experts design and build advanced AI models using the latest algorithms and technologies. Models are trained on prepared data to deliver reliable predictions and intelligent automation.",
       image: process_3,
       icon: HiOutlineCube,
     },
@@ -388,7 +409,7 @@ const HeroSection = () => {
       stage: "STAGE 04",
       title: "Testing & Optimization",
       description:
-        "We rigorously test AI models to evaluate performance, accuracy, and reliability while continuously optimizing results.",
+        "We rigorously test AI models for performance, accuracy, and reliability. Continuous optimization ensures adaptability to real-world scenarios and consistent results.",
       image: process_4,
       icon: FiSettings,
     },
@@ -397,16 +418,16 @@ const HeroSection = () => {
       stage: "STAGE 05",
       title: "Deployment",
       description:
-        "Once validated, we seamlessly deploy AI solutions into your existing systems across platforms and infrastructures.",
+        "Once validated, AI solutions are seamlessly integrated into existing systems, ensuring smooth functionality across platforms without disrupting operations.",
       image: process_5,
       icon: IoGitNetwork,
     },
 
     {
       stage: "STAGE 06",
-      title: "Maintenance",
+      title: "Maintenance & Support",
       description:
-        "AI systems require continuous monitoring and improvement. We provide ongoing support, updates, and optimization.",
+        "AI systems require continuous monitoring and improvement. We provide ongoing support, updates, and optimization to ensure solutions evolve with changing data and business needs.",
       image: process_6,
       icon: FiMonitor,
     },
@@ -424,33 +445,18 @@ const HeroSection = () => {
             {/* Left Content */}
             <div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-tight">
-                Best Website Development
+                Transforming Businesses
                 <br />
-                Company In India
+                with Intelligent Automation
               </h1>
 
               <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-base sm:text-lg leading-7 sm:leading-9 max-w-2xl">
-                Are you looking for website development services in India?
-                RankON Technologies is a leading web development company in
-                India, offering{" "}
-                <span className="font-semibold">
-                  strategic website development services
-                </span>{" "}
-                designed to convert traffic into leads, support long-term SEO,
-                and scale with your business.
-              </p>
-
-              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-base sm:text-lg leading-7 sm:leading-9 max-w-2xl">
-                With{" "}
-                <span className="font-semibold">
-                  14+ years of experience
-                </span>{" "}
-                and{" "}
-                <span className="font-semibold">
-                  1,000+ digital projects delivered globally
-                </span>
-                , RankON creates websites that don&apos;t just look professional,
-                they perform.
+                At Biosoftech Solutions, we deliver AI automation services that
+                help businesses streamline operations, reduce costs, and unlock
+                new opportunities for growth. Our intelligent solutions combine
+                machine learning, natural language processing, robotic process
+                automation, and predictive analytics to create smarter workflows
+                and future-ready enterprises.
               </p>
 
               {/* Rating Section */}
@@ -541,7 +547,7 @@ const HeroSection = () => {
                 </button>
 
                 <button className="bg-black hover:bg-[#222] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-white font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
-                  WEBSITE PACKAGES
+                  AI SOLUTIONS
                   <PlusCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
               </div>
@@ -614,16 +620,15 @@ const HeroSection = () => {
             <div className="lg:sticky lg:top-0 h-fit border-r border-white/10 p-8 lg:p-12 self-start">
 
               <h2 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Our AI Agent
+                AI Strategy
                 <br />
-                Development
-                <br />
-                Expertise
+                &amp; Consulting
               </h2>
 
               <p className="mt-8 text-white/80 text-lg leading-8 lg:leading-10">
-                We deliver full-cycle engineering and deployment of custom AI
-                agents using a modern tech stack and best-in-class frameworks.
+                We begin with use-case analysis, architecture design, and AI
+                model selection to ensure automation aligns with your business
+                goals and delivers measurable impact.
               </p>
 
               {/* IMAGE */}
@@ -697,9 +702,9 @@ const HeroSection = () => {
             {/* LEFT */}
             <div>
               <h2 className="text-5xl lg:text-6xl font-bold leading-tight text-[#111]">
-                Amplifying Business Progress
+                Driving Business Growth
                 <br />
-                Through Smart Solutions
+                Through Smart Digital Solutions
               </h2>
 
               <div className="w-24 h-[2px] bg-black mt-8" />
@@ -708,8 +713,9 @@ const HeroSection = () => {
             {/* RIGHT */}
             <div>
               <p className="text-xl text-[#444] leading-8 lg:leading-10 max-w-2xl">
-                Obtain robust software solutions, modernize systems,
-                and leverage futuristic technologies for growth opportunities.
+                Unlock robust software solutions, modernize legacy systems,
+                and leverage next-gen technologies to accelerate your business
+                growth with Biosoftech Solutions.
               </p>
 
               <button className="mt-10 flex items-center gap-5 group">
@@ -848,13 +854,14 @@ const HeroSection = () => {
             </p>
 
             <h2 className="mt-5 text-5xl lg:text-6xl font-bold leading-tight">
-              Our Generative AI & LLM Capabilities
+              Biosoftech Generative AI & LLM Capabilities
             </h2>
 
             <p className="mt-8 text-xl leading-8 lg:leading-10 text-white/75">
-              We build production-ready generative AI systems — from
-              LLM-powered applications and RAG pipelines to autonomous
-              agents and fine-tuned models.
+              We deliver enterprise-ready generative AI systems — from custom
+              LLM applications and RAG pipelines to autonomous agents and
+              multimodal AI — all designed with seamless integration into your
+              existing workflows.
             </p>
           </div>
 
@@ -976,7 +983,7 @@ const HeroSection = () => {
 
           {/* TITLE */}
           <h2 className="text-center text-4xl lg:text-6xl font-bold leading-tight">
-            Why Choose PerfectionGeeks For AI Solutions
+            Why Choose Biosoftech for AI Solutions
           </h2>
 
           {/* MAIN GRID */}
@@ -1165,8 +1172,9 @@ const HeroSection = () => {
               </div>
 
               <p className="mt-6 md:mt-10 max-w-5xl mx-auto text-lg md:text-xl text-white/60 leading-8 md:leading-8 lg:leading-10">
-                Our AI development process is designed to transform your
-                business ideas into intelligent solutions.
+                We follow a structured, data-driven approach to transform
+                business ideas into intelligent AI solutions. Each stage
+                ensures accuracy, scalability, and long-term success.
               </p>
             </div>
 
@@ -1369,9 +1377,9 @@ const HeroSection = () => {
               >
                 Artificial Intelligence:
                 <br />
-                All What
+                Everything Your
                 <br />
-                You Need
+                Business Needs
               </h2>
             </div>
 
@@ -1384,13 +1392,11 @@ const HeroSection = () => {
                 text-white/90
               "
               >
-                When it comes to Artificial Intelligence, it has the
-                capability to completely transform your business results
-                and that too without costing you a lot of time. Here at
-                Perfection Geeks, we understand your business approach
-                and will help you with all kinds of AI solutions that
-                include: natural language processing, deep learning,
-                and machine learning.
+                Artificial Intelligence has the power to transform your business
+                outcomes without consuming excessive time or resources. At
+                Biosoftech Solutions, we understand your business approach and
+                deliver end-to-end AI solutions that accelerate growth and
+                efficiency.
               </p>
 
               {/* BUTTON */}
@@ -1410,13 +1416,79 @@ const HeroSection = () => {
                 hover:scale-105
               "
               >
-                Consult Now!
+                Let&apos;s Talk AI
               </Link>
             </div>
           </div>
         </div>
       </section>
 
+      <section className="relative overflow-hidden bg-white py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <p className="text-cyan-500 uppercase tracking-[5px] text-sm font-semibold">
+              Why AI
+            </p>
+            <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-[#111] leading-tight">
+              Benefits of AI Development
+            </h2>
+            <p className="mt-6 text-lg lg:text-xl text-gray-600 leading-relaxed">
+              Unlock transformative advantages that drive measurable business
+              outcomes with Biosoftech&apos;s cutting-edge AI solutions.
+            </p>
+          </div>
+
+          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                number: "01",
+                title: "Intelligent Task Automation",
+                desc: "Eliminate repetitive, manual workflows with AI-powered automation that operates 24/7, boosting efficiency without fatigue.",
+              },
+              {
+                number: "02",
+                title: "Smarter Decision-Making",
+                desc: "Leverage predictive analytics and data-driven insights to make faster, more accurate business decisions.",
+              },
+              {
+                number: "03",
+                title: "Enhanced Customer Experience",
+                desc: "Deliver personalized, real-time interactions through AI chatbots, recommendation engines, and intelligent support systems.",
+              },
+              {
+                number: "04",
+                title: "Reduced Operational Costs",
+                desc: "Cut overheads by replacing error-prone manual processes with precise, scalable AI solutions.",
+              },
+              {
+                number: "05",
+                title: "Increased Efficiency & Productivity",
+                desc: "Empower teams to focus on high-value work while AI handles routine tasks at unprecedented speed.",
+              },
+              {
+                number: "06",
+                title: "Scalable Growth Enablement",
+                desc: "Easily scale operations with AI systems that adapt to growing workloads, enabling business expansion without compromising performance.",
+              },
+            ].map((item) => (
+              <div
+                key={item.number}
+                className="group relative bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+              >
+                <div className="w-14 h-14 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-500 font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-white transition-all duration-500">
+                  {item.number}
+                </div>
+                <h3 className="mt-6 text-2xl font-bold text-[#111]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
     </>
   );

@@ -41,7 +41,7 @@ const CloudServices = () => {
             icon: "/icons/traffic.png",
             title: "Traffic Management",
             description:
-                "Cyfuture Cloud's API & Application Gateway efficiently handles incoming traffic, distributing it across multiple backend services to ensure optimal performance, prevent bottlenecks, and maintain high availability for applications.",
+                "Biosoftech's API & Application Gateway efficiently handles incoming traffic, distributing it across multiple backend services to ensure optimal performance, prevent bottlenecks, and maintain high availability for applications.",
         },
         {
             icon: "/icons/security.png",
@@ -65,7 +65,7 @@ const CloudServices = () => {
             icon: "/icons/protocol.png",
             title: "Protocol Support:",
             description:
-                "Supporting various communication protocols and data formats, Cyfuture Cloud's gateways facilitate interoperability between different services and systems. This flexibility ensures compatibility with a diverse range of applications and simplifies integration processes.",
+                "Supporting various communication protocols and data formats, our gateways facilitate interoperability between different services and systems. This flexibility ensures compatibility with a diverse range of applications and simplifies integration processes.",
         },
         {
             icon: "/icons/analytics.png",
@@ -322,32 +322,33 @@ const CloudServices = () => {
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-black leading-tight">
-                                Best Website Development <br />
-                                Company In India
+                                Best Cloud Services
+                                <br />
+                                Company in India
                             </h1>
                             <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
                                 <p>
-                                    Are you looking for website development services in India? RankON Technologies is a leading web development company in India, offering <span className="font-bold">strategic website development services</span> designed to convert traffic into leads, support long-term SEO, and scale with your business.
+                                    At Biosoftech Solutions, we provide strategic cloud services designed to scale with your business, reduce costs, and ensure long-term security. Our expertise helps transform your operations into efficient, future-ready systems that support growth and innovation.
                                 </p>
                                 <p className="mt-4 sm:mt-6 lg:mt-10">
-                                    With <span className="font-bold">14+ years of experience</span> and <span className="font-bold">1,000+ digital projects delivered globally</span>, RankON creates websites that don&apos;t just look professional, they perform.
+                                    With <span className="font-bold">10+ years of experience</span> and <span className="font-bold">500+ projects delivered globally</span>, we are trusted by businesses across <span className="font-bold">35+ industries</span>. Our cloud solutions are built to convert challenges into opportunities, support compliance, and deliver measurable results.
                                 </p>
                             </div>
 
                             <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Clutch</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 5/5 Stars</p>
-                                </div>
-                                <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold"><span className="text-[#69D24A]">up</span>work</h3>
-                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Top Rated Plus</p>
-                                </div>
-                                <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-medium"><span className="text-[#4285F4]">G</span><span className="text-[#EA4335]">o</span><span className="text-[#FBBC05]">o</span><span className="text-[#4285F4]">g</span><span className="text-[#34A853]">l</span><span className="text-[#EA4335]">e</span></h3>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
                                     <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
                                     <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                </div>
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                </div>
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
 
@@ -356,7 +357,7 @@ const CloudServices = () => {
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
                                 <button className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
-                                    WEBSITE PACKAGES <FiArrowRightCircle className="transition group-hover:translate-x-1" />
+                                    CLOUD SOLUTIONS <FiArrowRightCircle className="transition group-hover:translate-x-1" />
                                 </button>
                             </div>
                         </div>
@@ -649,7 +650,7 @@ const CloudServices = () => {
 
                     {/* Heading */}
                     <h2 className="text-center text-3xl sm:text-4xl md:text-[42px] font-bold mb-20">
-                        Why PerfectionGeeks – The Difference That Makes AWS Projects Succeed
+                        Why Biosoftech – The Difference That Makes Cloud Projects Succeed
                     </h2>
 
                     {/* Main Layout */}
@@ -791,7 +792,7 @@ const CloudServices = () => {
             mb-10
           "
                             >
-                                Book a Free Digital Marketing
+                                Book a Free Cloud
                                 <br />
                                 Consultation
                             </h2>
@@ -818,7 +819,7 @@ const CloudServices = () => {
                         </h2>
 
                         <p className="mt-6 text-[18px] text-[#555]">
-                            Here are some features that are offered by Cyfuture Cloud for API
+                            Here are some features that are offered by Biosoftech Solutions for API
                             Gateway:
                         </p>
                     </div>

@@ -32,20 +32,15 @@ const Contact = () => {
     message: "",
   });
 
-  const serviceOptions = [
-    "Cloud Service",
-    "Visitor Management Platform",
-    "Attendance Tracking Ecosystem",
-    "Hospital Management Engine",
-    "Smart Parking Solution",
-    "Hotel Operations Platform",
-    "Enterprise CRM Platform",
-    "Custom ERP Architecture",
-    "Sales & Billing Engine",
-    "Restaurant Management Ecosystem",
-    "PG Operations Platform",
-    "Canteen Management Solution",
-  ];
+    const serviceOptions = [
+        "Develop Custom Software Solutions",
+        "Build Or Upgrade My Mobile App / Website",
+        "Integrate AI Automation Into My Workflow",
+        "Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)",
+        "Healthcare / Real Estate / Hospitality Software Needs",
+        "Cloud Integration & Data Security Services",
+        "Not Sure – Need Expert Guidance",
+    ];
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -124,26 +119,21 @@ const Contact = () => {
     }
   };
 
-  const cards = [
+    const cards = [
     {
       title: "We will be in touch shortly.",
       desc:
-        "Connect with Rank Digital Solution — the Best Digital Marketing Company in Lucknow for SEO, Ads & Website Development.",
+        "Connect with Biosoftech Solutions — your trusted technology partner in India for web, mobile, desktop, cloud, AI automation, and industry-specific software systems.",
     },
     {
       title: "Customer Support",
       desc:
-        "Need help with your project or have queries about our services? We're just a message away — get expert assistance today!",
-    },
-    {
-      title: "Sales & Marketing Support",
-      desc:
-        "Looking to grow your business online? Our marketing experts will guide you with tailored SEO and Ads strategies.",
+        "Need help with your project or have queries about our solutions? Our support team is always ready to assist you with expert guidance.",
     },
     {
       title: "Project Consultation",
       desc:
-        "Planning a new digital campaign or website? Discuss your goals with our experts and get a personalized strategy.",
+        "Planning a new system or software upgrade? Discuss your goals with our experts and get a personalized strategy tailored to your industry.",
     },
   ];
 
@@ -175,8 +165,7 @@ const Contact = () => {
             leading-[1.15]
           "
             >
-              Ready to transform your digital presence?
-              Contact us today!
+              Ready to Transform Your Business?
             </h1>
 
             <p
@@ -194,17 +183,41 @@ const Contact = () => {
             mx-auto
           "
             >
-              At Rank Digital Solution, we help businesses unlock
-              their full online potential through powerful digital
-              marketing strategies, expert SEO, and high-performing
-              ad campaigns.
+              At Biosoftech Solutions, we help businesses unlock their full
+              potential through powerful software development, automation,
+              and industry-specific solutions. Whether you're building your
+              system from scratch or scaling to new heights, our team ensures
+              measurable results and lasting growth.
+            </p>
+            <p
+              className="
+            text-white/85
+            text-sm
+            sm:text-base
+            md:text-lg
+            mt-4
+            leading-[1.8]
+            md:leading-[2]
+            max-w-[850px]
+            mx-auto
+          "
+            >
+              From web development and mobile applications to desktop software,
+              cloud services, AI automation, and management systems for schools,
+              hotels, restaurants, billing, and pathology labs — we deliver
+              technology that drives efficiency and success.
             </p>
 
+            <div className="flex flex-wrap justify-center gap-3 mt-6 sm:mt-8 md:mt-10">
+              <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-medium">Free Consultation</span>
+              <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-medium">After-Sales Services</span>
+              <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-medium">24/7 Support</span>
+            </div>
             <button
               className="
-            mt-6
-            sm:mt-8
-            md:mt-12
+            mt-4
+            sm:mt-6
+            md:mt-8
             bg-[#2E57FF]
             text-white
             h-[50px]
@@ -520,8 +533,9 @@ const Contact = () => {
               max-w-[820px]
             "
               >
-                Connect With The Best Digital Marketing Company in Lucknow
-                for SEO, Ads & Website Development
+                Connect with Biosoftech Solutions — your trusted technology
+                partner in India for web, mobile, desktop, cloud, AI automation,
+                and industry-specific software systems.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-5 mt-10 md:mt-12">
@@ -640,7 +654,7 @@ const Contact = () => {
                       icon: Phone,
                       title: "Click Us",
                       value:
-                        "+91 62096 88930\n+91 90444 25858",
+                        "+91 9369655052\n+91 9369656052",
                     },
                     {
                       icon: Globe,
