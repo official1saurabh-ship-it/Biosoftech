@@ -1133,7 +1133,8 @@ const HeroSection = () => {
     lg:h-screen
     flex flex-col justify-center
     relative z-10
-    py-12
+    py-8
+    md:py-12
     lg:py-0
   "
         >
@@ -1154,7 +1155,7 @@ const HeroSection = () => {
 
                 <div className="absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <h2 className="text-4xl lg:text-6xl font-bold">
+                <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold">
                   Our AI{" "}
                   <span className="text-cyan-400">
                     Development
@@ -1163,21 +1164,21 @@ const HeroSection = () => {
                 </h2>
               </div>
 
-              <p className="mt-10 max-w-5xl mx-auto text-xl text-white/60 leading-10 md:leading-8 lg:leading-10">
+              <p className="mt-6 md:mt-10 max-w-5xl mx-auto text-lg md:text-xl text-white/60 leading-8 md:leading-8 lg:leading-10">
                 Our AI development process is designed to transform your
                 business ideas into intelligent solutions.
               </p>
             </div>
 
             {/* TIMELINE */}
-            <div className="relative mt-24">
+            <div className="relative mt-12 md:mt-24">
 
               {/* LINE */}
-              <div className="absolute top-8 left-0 w-full h-[2px] bg-white/10" />
+              <div className="absolute top-6 md:top-8 left-0 w-full h-[2px] bg-white/10" />
 
               {/* ACTIVE LINE */}
               <div
-                className="absolute top-8 left-0 h-[2px] bg-cyan-400 transition-all duration-700"
+                className="absolute top-6 md:top-8 left-0 h-[2px] bg-cyan-400 transition-all duration-700"
                 style={{
                   width: `${(activeStep / 5) * 100}%`,
                 }}
@@ -1200,7 +1201,7 @@ const HeroSection = () => {
 
                       <div
                         className={`
-                      w-16 h-16 rounded-full
+                      w-12 h-12 md:w-16 md:h-16 rounded-full
                       border-2
                       flex items-center justify-center
                       transition-all duration-500
@@ -1227,7 +1228,7 @@ const HeroSection = () => {
             </div>
 
             {/* CONTENT */}
-            <div className="mt-20 grid lg:grid-cols-2 gap-16 items-center">
+            <div className="mt-10 md:mt-20 grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
 
               {/* LEFT */}
               <div>
@@ -1250,17 +1251,17 @@ const HeroSection = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-8 text-4xl lg:text-5xl font-bold leading-tight">
+                <h3 className="mt-6 md:mt-8 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                   {processData[activeStep].title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="mt-8 text-xl text-white/55 leading-10 md:leading-8 lg:leading-10 max-w-2xl">
+                <p className="mt-6 md:mt-8 text-lg md:text-xl text-white/55 leading-8 md:leading-8 lg:leading-10 max-w-2xl">
                   {processData[activeStep].description}
                 </p>
 
                 {/* BUTTONS */}
-                <div className="mt-12 flex flex-wrap gap-6">
+                <div className="mt-8 md:mt-12 flex flex-wrap gap-6">
 
                   <Link
                     to="/contact"
@@ -1316,7 +1317,7 @@ const HeroSection = () => {
                     src={processData[activeStep].image}
                     alt={processData[activeStep].title}
                     className="
-                  w-full max-h-[50vh]
+                  w-full max-h-[30vh] md:max-h-[50vh]
                   object-contain
                   transition-all duration-700
                   group-hover:scale-110

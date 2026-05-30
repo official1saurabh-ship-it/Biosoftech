@@ -61,14 +61,14 @@ const Header = () => {
         { name: 'Parking Management System', href: 'https://vms.biosoftech.in/' },
         { name: 'Attendance Management System', href: 'https://att.biosoftech.in/' },
         { name: 'Visitor Management System', href: 'https://vms.biosoftech.in/' },
-        { name: 'CRM Platform', href: '#' },
-        { name: 'ERP Solution', href: '#' },
+        { name: 'CRM Platform', href: 'https://crm.biosoftech.in/' },
+
         { name: 'PG Management System', href: 'https://pg.biosoftech.in/' },
-        { name: 'Canteen Management System', href: '#' },
+        { name: 'Canteen Management System', href: 'https://www.foodieexpress.biosoftech.in/' },
         { name: 'Pathology Management', href: 'https://pytho.biosoftech.in/' },
         { name: 'School Management', href: 'https://school.biosoftech.in/' },
-        { name: 'Payroll Management', href: '#' },
-        { name: 'Hospital Management System', href: '#' },
+        { name: 'Payroll Management', href: 'https://payrollmitra.biosoftech.in/' },
+
       ]
     },
     { name: 'Blog', href: '/blog' },
@@ -165,7 +165,7 @@ const Header = () => {
                       {item.dropdown.map((subItem) => {
                         const isExternal = subItem.href.startsWith('http');
                         const Component = isExternal ? 'a' : Link;
-                        const props = isExternal 
+                        const props = isExternal
                           ? { href: subItem.href, target: '_blank', rel: 'noreferrer' }
                           : { to: subItem.href, onClick: () => setActiveDropdown(null) };
 
@@ -334,7 +334,7 @@ z-[999]
                             {item.dropdown.map((subItem) => {
                               const isSubExternal = subItem.href.startsWith('http') || subItem.href.startsWith('#');
                               const SubComponent = isSubExternal ? 'a' : Link;
-                              const subProps = isSubExternal 
+                              const subProps = isSubExternal
                                 ? { href: subItem.href, target: isSubExternal && !subItem.href.startsWith('#') ? '_blank' : '_self', rel: isSubExternal && !subItem.href.startsWith('#') ? 'noreferrer' : '' }
                                 : { to: subItem.href, onClick: () => { setIsMobileMenuOpen(false); setActiveDropdown(null); } };
 
