@@ -186,7 +186,7 @@ export default function HeroRevealSlider() {
       </div>
 
       {/* CONTROLS */}
-      <div className="absolute right-2 sm:right-4 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 lg:gap-8 z-50">
+      <div className="absolute right-4 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 lg:gap-8 z-50">
         <button
           onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
           className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"

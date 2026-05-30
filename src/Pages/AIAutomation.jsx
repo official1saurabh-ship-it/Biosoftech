@@ -416,7 +416,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="w-full min-h-0 lg:min-h-screen bg-[#f3f1eb] overflow-hidden">
-        <div className="min-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
 
           {/* Main Grid */}
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
@@ -605,7 +605,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-700/30 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 min-w-7xl mx-auto px-6 lg:px-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
 
           {/* MAIN GRID */}
           <div className="grid lg:grid-cols-[420px_1fr] border border-white/10">
@@ -689,7 +689,7 @@ const HeroSection = () => {
 
 
       <section className="bg-[#f3f3f3] py-20">
-        <div className="min-w-7xl mx-auto px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
           {/* TOP SECTION */}
           <div className="grid lg:grid-cols-2 gap-10 items-start">
@@ -838,7 +838,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 min-w-7xl mx-auto">
+        <div className="relative z-10 max-w-7xl mx-auto">
 
           {/* TOP CONTENT */}
           <div className="text-center max-w-5xl mx-auto px-6">
@@ -972,7 +972,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 min-w-7xl mx-auto px-6 lg:px-10">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
 
           {/* TITLE */}
           <h2 className="text-center text-4xl lg:text-6xl font-bold leading-tight">
@@ -1137,7 +1137,7 @@ const HeroSection = () => {
     lg:py-0
   "
         >
-          <div className="min-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
 
             {/* TITLE */}
             <div className="text-center">

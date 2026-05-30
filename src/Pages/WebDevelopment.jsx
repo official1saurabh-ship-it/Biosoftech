@@ -406,7 +406,7 @@ const WebDevelopment = () => {
                             <img
                                 src={manImage}
                                 alt="Consultant"
-                                className="w-[330px] object-contain"
+                                className="w-full max-w-[330px] object-contain"
                             />
                         </div>
 
@@ -498,7 +498,7 @@ const WebDevelopment = () => {
 
                     {/* Heading */}
 
-                    <h2 className="text-center text-[#080B1D] font-black text-5xl md:text-9xl mt-8">
+                        <h2 className="text-center text-[#080B1D] font-black text-4xl sm:text-5xl md:text-7xl lg:text-9xl mt-8">
                         How We Execute Success
                     </h2>
 
@@ -992,7 +992,7 @@ const WebDevelopment = () => {
 
                                 {/* Content */}
                                 <div>
-                                    <h3 className="text-[#1d2b42] text-[42px] font-bold leading-tight">
+                                    <h3 className="text-[#1d2b42] text-2xl sm:text-3xl md:text-[42px] font-bold leading-tight">
                                         {item.title}
                                     </h3>
 

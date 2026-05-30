@@ -659,7 +659,7 @@ const AppDevelopment = () => {
                             </button>
                         ))}
                     </div>
-                    <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-12 md:gap-y-16">
+                    <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-8 sm:gap-y-12 md:gap-y-16">
                         {techTabsData[activeTechTab].map((item, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
                                 <img src={item.icon} alt="" className="w-10 h-10 md:w-[60px] md:h-[60px] object-contain" />

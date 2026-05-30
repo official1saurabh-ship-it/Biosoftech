@@ -544,9 +544,8 @@ const Contact = () => {
                   >
                     <Headphones
                       size={56}
-                      md:size={72}
                       strokeWidth={2.4}
-                      className="mb-6 md:mb-8 text-black"
+                      className="md:w-[72px] md:h-[72px] mb-6 md:mb-8 text-black"
                     />
 
                     <h3
@@ -656,9 +655,8 @@ const Contact = () => {
                     >
                       <info.icon
                         size={32}
-                        md:size={42}
                         strokeWidth={2}
-                        className="shrink-0"
+                        className="md:w-[42px] md:h-[42px] shrink-0"
                       />
 
                       <div>

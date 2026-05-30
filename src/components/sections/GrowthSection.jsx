@@ -139,7 +139,7 @@ export default function GrowthSection() {
               bottom-0
               right-0
 
-              translate-x-[35%]
+              translate-x-[15%]
               md:translate-x-[25%]
               translate-y-[-10%]
               md:translate-y-[-5%]
@@ -369,7 +369,7 @@ export default function GrowthSection() {
               top-0
               right-0
 
-              translate-x-[25%]
+              translate-x-[10%]
               md:translate-x-[15%]
 
               w-[66px]

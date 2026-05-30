@@ -20,7 +20,9 @@ import {
   BadgeCheck,
   ArrowRight,
 } from "lucide-react";
-import about from "../assets/about-us.jpg";
+import about from "../assets/about-us.png";
+import growthImage from "../assets/digital-growth.png";
+import freshIdeasImage from "../assets/fresh-ideas.webp";
 
 export default function About() {
   const text = "starts here";
@@ -125,6 +127,72 @@ export default function About() {
     { icon: Users, value: "20", plus: "+", title: "Team", sub: "Members" },
   ];
 
+  const services1 = [
+    {
+      percentage: "90%",
+      color: "#7065F0",
+      title: "Web Analysis",
+      description:
+        "Unlock your website's potential with our comprehensive web analysis. Discover strengths, uncover weaknesses, and gain actionable insights to enhance your online presence. Start your free analysis today!",
+    },
+    {
+      percentage: "89%",
+      color: "#F59E0B",
+      title: "SEO & SMO",
+      description:
+        "Boost your website's visibility with our expert SEO services. Increase organic traffic, improve rankings, and enhance user experience. Start optimizing your site today for better search engine performance!",
+    },
+    {
+      percentage: "95%",
+      color: "#4ADE80",
+      title: "Online Marketing",
+      description:
+        "Maximize your online reach with our cutting-edge marketing strategies. Drive engagement, increase conversions, and grow your brand's digital footprint. Start your tailored online marketing plan today!",
+    },
+  ];
+
+  const timelineData = [
+    {
+      year: "2017",
+      side: "right",
+      color: "#42C97A",
+      title: "Our Beginning",
+      description:
+        "Founded with the mission to provide affordable and effective digital marketing in Lucknow.",
+    },
+    {
+      year: "2019",
+      side: "left",
+      color: "#F59E0B",
+      title: "Expansion in Strategy",
+      description:
+        "Introduced advanced SEO, social media marketing, and web analytics tools for better results.",
+    },
+    {
+      year: "2020",
+      side: "right",
+      color: "#6C63FF",
+      title: "Performance Marketing Launch",
+      description:
+        "Established ourselves as the best performance marketing agency in Lucknow with ROI-focused campaigns.",
+    },
+    {
+      year: "2022",
+      side: "left",
+      color: "#FF2BBF",
+      title: "Leveraging AI for Digital Success",
+      description:
+        "Integrated AI tools for smart targeting, audience segmentation, and predictive analysis.",
+    },
+    {
+      year: "2024",
+      side: "right",
+      color: "#00BFFF",
+      title: "Global Recognition",
+      description:
+        "Launched Digital Mart Lab LLC in the USA, expanding our services beyond India.",
+    },
+  ];
 
   return (
     <div className="pt-0">
@@ -215,7 +283,7 @@ export default function About() {
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses through data-driven digital marketing strategies that increase visibility and generate sustainable growth.</p>
               <button className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
-            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
               {services.map((item) => (
                 <div key={item.title} className="group bg-white rounded-[18px] p-5 sm:p-6 md:p-6 lg:p-8 shadow-[0_18px_40px_rgba(0,0,0,.05)] hover:bg-[#3B3663] hover:-translate-y-2 duration-500">
                   <div className={`w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full mb-4 sm:mb-6 md:mb-8 transition-all duration-500 group-hover:scale-110 ${item.color}`} />
@@ -367,18 +435,18 @@ export default function About() {
 
 
 
-      <section ref={floatingRef} className="py-24 bg-white overflow-hidden">
+      <section ref={floatingRef} className="py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* LEFT IMAGE */}
             <div className="relative">
 
-              <div className="overflow-hidden rounded-3xl shadow-xl">
+              <div className="overflow-hidden">
                 <img
                   src={about}
                   alt="About"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                 />
               </div>
 
@@ -387,30 +455,30 @@ export default function About() {
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <motion.div
                   style={{ rotate: orbitAngle }}
-                  className="relative w-[520px] h-[520px]"
+                  className="relative w-[700px] h-[700px]"
                 >
                   <div className="absolute left-1/2 -ml-8 -top-8 w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
-                      className="w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center"
+                      className="w-full h-full rounded-full flex items-center justify-center"
                     >
                       <Award className="w-8 h-8 text-orange-500" />
                     </motion.div>
                   </div>
 
-                  <div className="absolute left-[453px] top-[98px] w-16 h-16">
+                  <div className="absolute left-[438px] top-[647px] w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
-                      className="w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center"
+                      className="w-full h-full rounded-full flex items-center justify-center"
                     >
                       <Rocket className="w-8 h-8 text-blue-500" />
                     </motion.div>
                   </div>
 
-                  <div className="absolute left-[3px] top-[98px] w-16 h-16">
+                  <div className="absolute left-[-11px] top-[438px] w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
-                      className="w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center"
+                      className="w-full h-full rounded-full flex items-center justify-center"
                     >
                       <Lightbulb className="w-8 h-8 text-purple-500" />
                     </motion.div>
@@ -481,6 +549,431 @@ export default function About() {
               </button>
 
             </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="bg-white py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Heading */}
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl md:text-[42px] leading-tight font-light text-black">
+              <span className="font-semibold">
+                The Digital Growth Engine
+              </span>{" "}
+              For Ambitious Brands
+              <br />
+              Across Different Industries
+            </h2>
+          </div>
+
+          {/* Content */}
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+
+            {/* Left Content */}
+            <div className="max-w-[620px]">
+
+              <p className="text-[17px] leading-[2] text-[#333] mb-8">
+                RankON Technologies designs and builds a digital ecosystem
+                for ambitious businesses that want to scale, drive leads,
+                increase conversions, and gain a competitive edge. With us,
+                breakthrough growth is not accidental; it is the result of
+                a clear master plan, a strong narrative, and precise execution.
+              </p>
+
+              <p className="text-[17px] leading-[2] text-[#333] mb-8">
+                For over 14 years, we've partnered with growth-focused brands
+                across the US, UK, Canada, India, Singapore, UAE, Australia,
+                and more, helping them achieve measurable results through
+                full-spectrum performance-focused digital marketing services.
+              </p>
+
+              <p className="text-[17px] leading-[2] text-[#333] mb-8">
+                We excel at making brands visible through results-focused SEO
+                and PPC, building a digital footprint through website
+                development, and establishing lasting trust through content
+                marketing and social media management.
+              </p>
+
+              <p className="text-[17px] leading-[2] text-[#333]">
+                So, whether you're a startup, a small-to-medium business,
+                a large business, or an entrepreneur who refuses to settle
+                for less and dreams big, you're already incredible, and
+                we're here to make you even more incredible. Don't look any
+                further, as together, we can become a rare mix of ambition
+                and strategy, creativity and performance, vision and
+                execution. Get started today!
+              </p>
+
+            </div>
+
+            {/* Right Illustration */}
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src={growthImage}
+                alt="Digital Growth"
+                className="w-full max-w-[620px] object-contain"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section className="bg-[#f8f8f8] py-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Heading */}
+          <div className="text-center mb-14">
+            <p className="uppercase text-[#3F3D73] font-bold tracking-wide text-sm">
+              WHAT WE DO
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3F3D73] mt-2">
+              Fresh Ideas for Every Business
+            </h2>
+          </div>
+
+          {/* Content */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            {/* Left Image */}
+            <div className="flex justify-center">
+              <img
+                src={freshIdeasImage}
+                alt="Fresh Ideas"
+                className="w-full max-w-[700px] object-contain"
+              />
+            </div>
+
+            {/* Right Services */}
+            <div className="space-y-12">
+
+              {services1.map((item, index) => (
+                <div key={index} className="flex gap-8">
+
+                  {/* Circle */}
+                  <div
+                    className="w-[120px] h-[120px] rounded-full border-[5px] flex items-center justify-center flex-shrink-0"
+                    style={{ borderColor: item.color }}
+                  >
+                    <span
+                      className="font-bold text-4xl"
+                      style={{ color: item.color }}
+                    >
+                      {item.percentage}
+                    </span>
+                  </div>
+
+                  {/* Text */}
+                  <div>
+                    <h3
+                      className="text-3xl font-bold mb-3"
+                      style={{ color: item.color }}
+                    >
+                      {item.title}
+                    </h3>
+
+                    <p className="text-[#222] text-xl leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="relative overflow-hidden bg-[#f8f7ff] py-24">
+
+        {/* Decorative Background */}
+        <div className="absolute top-0 right-0 w-[450px] h-[450px] rounded-full border border-[#ede9ff] opacity-50" />
+
+        <div className="absolute bottom-0 left-0 w-[450px] h-[450px] rounded-full border border-[#ede9ff] opacity-50" />
+
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[250px] bg-[#f1efff] rounded-t-full opacity-70" />
+        <div className="absolute bottom-0 right-0 w-[450px] h-[200px] bg-[#f1efff] rounded-t-full opacity-70" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+
+          {/* Heading */}
+          <div className="text-center mb-24">
+            <p className="uppercase font-bold text-[#3d3a72] tracking-wide text-sm">
+              OUR GROWTH STORY
+            </p>
+
+            <h2 className="text-5xl font-bold text-[#3d3a72] mt-4">
+              The Story of Process Of Digital Mart Lab
+            </h2>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+
+            {/* Center Line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
+
+            {timelineData.map((item, index) => (
+              <div
+                key={item.year}
+                className="relative grid grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-16 sm:mb-20 md:mb-28"
+              >
+                {/* Left Side */}
+                <div
+                  className={`${item.side === "left"
+                    ? "flex justify-end"
+                    : "invisible"
+                    }`}
+                >
+                  <div
+                    className="w-full max-w-[330px] bg-white rounded-2xl p-8 shadow-sm border-r-4"
+                    style={{ borderColor: item.color }}
+                  >
+                    <h3 className="font-bold text-3xl text-[#3d3a72] mb-3">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-xl text-[#66668a] leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Right Side */}
+                <div
+                  className={`${item.side === "right"
+                    ? "flex justify-start"
+                    : "invisible"
+                    }`}
+                >
+                  <div
+                    className="w-full max-w-[330px] bg-white rounded-2xl p-8 shadow-sm border-l-4"
+                    style={{ borderColor: item.color }}
+                  >
+                    <h3 className="font-bold text-3xl text-[#3d3a72] mb-3">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-xl text-[#66668a] leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Year */}
+                <div
+                  className="absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
+                  style={{
+                    color: item.color,
+                    top: "50%",
+                    transform: item.year === "2019" || item.year === "2022" ? "translate(120%, -50%)" : "translate(-140%, -50%)",
+                  }}
+                >
+                  {item.year}
+                </div>
+
+                {/* Dot */}
+                <div
+                  className="absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
+                  style={{
+                    backgroundColor: item.color,
+                    top: "50%",
+                    boxShadow: `0 0 20px ${item.color}`,
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section
+        className="relative py-20 bg-cover bg-center bg-gray-900"
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/70"></div>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-8">
+
+            {/* LEFT SIDE */}
+            <div className="border border-yellow-500 rounded-md p-8 bg-black/30">
+
+              <p className="text-yellow-400 text-xl sm:text-2xl md:text-3xl mb-4">
+                Request a Call Back!
+              </p>
+
+              <h2 className="text-white text-3xl sm:text-4xl md:text-6xl leading-tight font-light">
+                Book An Appointment With
+                <br />
+                Our Top Rated{" "}
+                <span className="text-yellow-400 font-semibold">
+                  Digital
+                  <br />
+                  Marketing Experts.
+                </span>
+              </h2>
+
+              <p className="text-white/90 text-base sm:text-lg md:text-2xl leading-relaxed mt-8">
+                Hope you have seen a lot of good things about RankON
+                Technologies. Now, it's time to talk with a real person
+                about your project. So, don't delay!
+              </p>
+
+              {/* Logos */}
+              <div className="grid grid-cols-3 gap-6 mt-12">
+
+                <div className="text-center">
+                  <div className="h-20 mx-auto flex items-center justify-center text-white/80 font-bold text-lg">Clutch</div>
+                </div>
+
+                <div className="text-center">
+                  <div className="h-20 mx-auto flex items-center justify-center text-white/80 font-bold text-lg">Upwork</div>
+                </div>
+
+                <div className="text-center">
+                  <div className="h-20 mx-auto flex items-center justify-center text-white/80 font-bold text-lg">Google</div>
+                </div>
+
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-4 mt-8">
+
+                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                    1000+
+                  </h3>
+
+                  <p className="text-white text-sm sm:text-base md:text-xl">
+                    Projects
+                  </p>
+                </div>
+
+                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                    98%
+                  </h3>
+
+                  <p className="text-white text-sm sm:text-base md:text-xl">
+                    Satisfaction
+                  </p>
+                </div>
+
+                <div className="bg-[#FFB800] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                    600+
+                  </h3>
+
+                  <p className="text-white text-sm sm:text-base md:text-xl">
+                    Happy Clients
+                  </p>
+                </div>
+
+                <div className="bg-[#18C73E] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-4xl font-bold">
+                    99%
+                  </h3>
+
+                  <p className="text-white text-xl">
+                    Job Success
+                  </p>
+                </div>
+
+                <div className="bg-[#FF1D1D] rounded-xl py-4 text-center">
+                  <h3 className="text-white text-4xl font-bold">
+                    500+
+                  </h3>
+
+                  <p className="text-white text-xl">
+                    Trusted Clients
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            {/* RIGHT SIDE */}
+            <div className="border border-yellow-500 rounded-md p-8 bg-black/30">
+
+              <form className="space-y-6">
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="h-14 px-4 bg-white rounded outline-none"
+                  />
+
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="h-14 px-4 bg-white rounded outline-none"
+                  />
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Whatsapp Mobile Number"
+                    className="h-14 px-4 bg-white rounded outline-none"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="City"
+                    className="h-14 px-4 bg-white rounded outline-none"
+                  />
+                </div>
+
+                <select className="h-14 px-4 bg-white rounded w-full outline-none">
+                  <option>- Select Service -</option>
+                </select>
+
+                <textarea
+                  rows="5"
+                  placeholder="Please type atleast 20 characters about your Inquiry"
+                  className="w-full p-4 rounded outline-none"
+                />
+
+                {/* Fake Captcha */}
+                <div className="bg-white w-[300px] h-[78px] rounded flex items-center justify-between px-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 border-2 border-gray-500"></div>
+                    <span>I'm not a robot</span>
+                  </div>
+
+                  <div className="text-xs text-gray-500">
+                    reCAPTCHA
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all px-14 py-4 rounded-full text-black text-xl font-medium"
+                >
+                  Submit Now
+                </button>
+
+              </form>
+            </div>
+
           </div>
         </div>
       </section>

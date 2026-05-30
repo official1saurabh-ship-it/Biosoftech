@@ -648,7 +648,7 @@ const CloudServices = () => {
                 <div className="max-w-7xl mx-auto px-6">
 
                     {/* Heading */}
-                    <h2 className="text-center text-[42px] font-bold mb-20">
+                    <h2 className="text-center text-3xl sm:text-4xl md:text-[42px] font-bold mb-20">
                         Why PerfectionGeeks – The Difference That Makes AWS Projects Succeed
                     </h2>
 
@@ -760,8 +760,8 @@ const CloudServices = () => {
                                     className="
               relative z-10
               overflow-hidden
-              w-[900px]
-              h-[700px]
+              w-full max-w-[900px]
+              h-[400px] sm:h-[500px] md:h-[700px]
               rounded-[40%_60%_55%_45%/45%_35%_65%_55%]
             "
                                 >
@@ -813,7 +813,7 @@ const CloudServices = () => {
 
                     {/* Heading */}
                     <div className="text-center mb-14">
-                        <h2 className="text-[52px] font-bold text-[#2f2f2f] leading-none">
+                        <h2 className="text-3xl sm:text-4xl md:text-[52px] font-bold text-[#2f2f2f] leading-none">
                             Key Features
                         </h2>
 
