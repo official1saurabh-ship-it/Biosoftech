@@ -47,12 +47,8 @@ const Header = () => {
       dropdown: [
         { name: 'Web Development', href: '/web-development' },
         { name: 'App Development', href: '/app-development' },
-        { name: 'Mobile Development', href: '#' },
-        { name: 'Desktop App', href: '#' },
         { name: 'Cloud Services', href: '/cloud-services' },
         { name: 'AI Automation', href: '/ai-automation' },
-        { name: 'Software Integration', href: '#' },
-        { name: 'Technical Support', href: '#' },
       ]
     },
     {
