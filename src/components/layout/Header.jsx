@@ -124,15 +124,9 @@ const Header = () => {
             {menuItems.map((item) => (
               <motion.div
                 key={item.name}
-                className="relative h-full flex items-center cursor-pointer group"
+                className="relative h-full flex items-center group"
                 initial="initial"
                 whileHover="hover"
-                onClick={(e) => {
-                  if (item.dropdown) {
-                    e.preventDefault();
-                    setActiveDropdown(activeDropdown === item.name ? null : item.name);
-                  }
-                }}
               >
                 {/* 1. Vertical Orange Glow Line - Triggered by Parent Hover */}
                 <div className="absolute inset-0 flex justify-center pointer-events-none overflow-hidden">
@@ -144,12 +138,18 @@ const Header = () => {
 
                 {/* 2. Text with Transition */}
                 {item.dropdown ? (
-                  <span className="relative z-10 flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.1em] py-2 whitespace-nowrap cursor-pointer">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveDropdown(activeDropdown === item.name ? null : item.name);
+                    }}
+                    className="relative z-10 flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-[0.1em] py-2 whitespace-nowrap cursor-pointer bg-transparent border-none"
+                  >
                     <span className={`transition-colors duration-300 ${activeDropdown === item.name ? 'text-[#9255CE]' : 'text-white/70 group-hover:text-[#9255CE]'}`}>
                       {item.name}
                     </span>
                     <FaChevronDown size={8} className={`transition-all duration-500 ${activeDropdown === item.name ? 'rotate-180 text-[#9255CE]' : 'text-white/40'}`} />
-                  </span>
+                  </button>
                 ) : (
                   <Link to={item.href} className="relative z-10 flex items-center gap-1.5 py-2 whitespace-nowrap">
                     <span className="text-[13px] font-bold uppercase tracking-[0.1em] text-white/70 group-hover:text-[#9255CE] transition-colors duration-300">
@@ -342,6 +342,13 @@ z-[999]
                                 <SubComponent
                                   key={subItem.name}
                                   {...subProps}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    if (!isSubExternal) {
+                                      setIsMobileMenuOpen(false);
+                                      setActiveDropdown(null);
+                                    }
+                                  }}
                                   className="block text-white/40 font-bold text-xs uppercase tracking-widest hover:text-white transition-colors"
                                 >
                                   {subItem.name}
