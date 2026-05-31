@@ -1,7 +1,103 @@
 import consultationImg from "../../assets/consultation-form.webp";
 import { ChevronDown } from "lucide-react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID_ORG = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_ORG;
+const EMAILJS_TEMPLATE_ID_USER = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_USER;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+if (EMAILJS_PUBLIC_KEY) {
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+}
 
 export default function ConsultationSection() {
+  const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: "", message: "" });
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    const now = new Date().toLocaleString("en-IN", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+
+    const ownerParams = {
+      to_email: "ansh@biosoftech.com",
+      cc_email: "kishan@biosoftech.com",
+      owner_name: formData.fullName,
+      user_email: formData.email,
+      phone: formData.phone,
+      service: formData.service,
+      message: formData.message,
+      date_time: now,
+      site_name: "Biosoftech",
+    };
+
+    const userParams = {
+      owner_name: formData.fullName,
+      user_email: formData.email,
+      site_name: "Biosoftech",
+      company_name: "Biosoftech Solutions",
+      support_email: "info@biosoftech.com",
+      to_email: formData.email,
+    };
+
+    try {
+      if (EMAILJS_TEMPLATE_ID_ORG) {
+        await emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID_ORG,
+          ownerParams,
+          EMAILJS_PUBLIC_KEY
+        );
+      }
+
+      if (EMAILJS_TEMPLATE_ID_USER) {
+        await emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID_USER,
+          userParams,
+          EMAILJS_PUBLIC_KEY
+        );
+      }
+
+      setStatus({
+        type: "success",
+        message: "Thank you! Your message has been sent successfully.",
+      });
+      setFormData({ fullName: "", phone: "", email: "", service: "", message: "" });
+      setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setStatus({
+        type: "error",
+        message: "Something went wrong. Please try again or contact us directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
     return (
     <section className="bg-[#f5f5f5] py-10 sm:py-12 lg:py-16 overflow-hidden">
 
@@ -169,10 +265,14 @@ lg:h-[700px]
 
                         </div>
 
-                        <form className="space-y-4 sm:space-y-6">
+                        <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
 
                             <input
+                                name="fullName"
+                                value={formData.fullName}
+                                onChange={handleChange}
                                 placeholder="Enter Your Full Name*"
+                                required
                                 className="
                 w-full
 
@@ -191,7 +291,12 @@ lg:h-[700px]
                             />
 
                             <input
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
                                 placeholder="Enter Your Phone Number*"
+                                type="tel"
+                                required
                                 className="
                 w-full
 
@@ -206,7 +311,12 @@ lg:h-[700px]
                             />
 
                             <input
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 placeholder="Enter Your Email Address*"
+                                type="email"
+                                required
                                 className="
                 w-full
 
@@ -225,6 +335,10 @@ lg:h-[700px]
                                 <label htmlFor="consultation-service" className="sr-only">How Can We Help You?</label>
                                 <select
                                     id="consultation-service"
+                                    name="service"
+                                    value={formData.service}
+                                    onChange={handleChange}
+                                    required
                                     className="
                   w-full
 
@@ -239,35 +353,35 @@ lg:h-[700px]
                   appearance-none
                 "
                                 >
-                                    <option>
+                                    <option value="">
                                         How Can We Help You?*
                                     </option>
 
-                                    <option>
+                                    <option value="Develop Custom Software Solutions">
                                         Develop Custom Software Solutions
                                     </option>
 
-                                    <option>
+                                    <option value="Build Or Upgrade My Mobile App / Website">
                                         Build Or Upgrade My Mobile App / Website
                                     </option>
 
-                                    <option>
+                                    <option value="Integrate AI Automation Into My Workflow">
                                         Integrate AI Automation Into My Workflow
                                     </option>
 
-                                    <option>
+                                    <option value="Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)">
                                         Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)
                                     </option>
 
-                                    <option>
+                                    <option value="Healthcare / Real Estate / Hospitality Software Needs">
                                         Healthcare / Real Estate / Hospitality Software Needs
                                     </option>
 
-                                    <option>
+                                    <option value="Cloud Integration & Data Security Services">
                                         Cloud Integration & Data Security Services
                                     </option>
 
-                                    <option>
+                                    <option value="Not Sure - Need Expert Guidance">
                                         Not Sure - Need Expert Guidance
                                     </option>
 
@@ -286,10 +400,14 @@ lg:h-[700px]
                             </div>
 
                             <textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 rows="4"
                                 placeholder="
 Share a Brief About Your Business and Requirement So We Can Suggest the Best Solution*
 "
+                                required
                                 className="
                 w-full
 
@@ -305,6 +423,8 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
                             />
 
                             <button
+                                type="submit"
+                                disabled={isSubmitting}
                                 className="
                 px-10
                 py-5
@@ -316,10 +436,21 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
                 font-bold
 
                 rounded
+                disabled:opacity-60 disabled:cursor-not-allowed
               "
                             >
-                                SEND MESSAGE
+                                {isSubmitting
+                                    ? "SENDING..."
+                                    : status.type === "success"
+                                      ? "MESSAGE SENT!"
+                                      : "SEND MESSAGE"}
                             </button>
+
+                            {status.message && (
+                              <p className={`text-sm font-medium text-center ${status.type === "success" ? "text-green-600" : "text-red-600"}`}>
+                                {status.message}
+                              </p>
+                            )}
 
                         </form>
 

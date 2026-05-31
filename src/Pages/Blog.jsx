@@ -1,11 +1,14 @@
 import SEO from "../components/seo/SEO";
 import React from 'react'
+import blogAi from "../assets/ai-business-software-automation.webp"
+import blogUpgrade from "../assets/software-upgrade-signs-indicators.webp"
+import blogCloud from "../assets/cloud-solutions-sme-beginners-guide.webp"
 
 const Blog = () => {
     const blogs = [
         {
             id: 1,
-            image: "/blog1.jpg",
+            image: blogAi,
             tags: ["Blog"],
             title:
                 "Future of AI in Business Software",
@@ -16,7 +19,7 @@ const Blog = () => {
 
         {
             id: 2,
-            image: "/blog2.jpg",
+            image: blogUpgrade,
             tags: ["Blog"],
             title:
                 "Signs Your Software Needs an Upgrade",
@@ -27,7 +30,7 @@ const Blog = () => {
 
         {
             id: 3,
-            image: "/blog3.jpg",
+            image: blogCloud,
             tags: ["Blog"],
             title:
                 "Cloud Solutions for SMEs: A Beginner's Guide",

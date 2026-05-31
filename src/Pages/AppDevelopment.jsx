@@ -514,9 +514,9 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 2: Lift Your Brand */}
-            <section className="bg-[#f7f7f7] overflow-hidden py-10 sm:py-12 md:py-20">
+            <section className="overflow-hidden py-10 sm:py-12 md:py-20">
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
-                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+                    <div className="grid lg:grid-cols-2 items-center">
                         <div className="text-center lg:text-left">
                             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[760px] mx-auto lg:mx-0">
                                 Lift Your Brand with Cutting-Edge<br className="hidden md:block" />Android Applications
@@ -533,12 +533,8 @@ const AppDevelopment = () => {
                                 Shape your success story with Biosoftech Solutions today!
                             </button>
                         </div>
-                        <div className="relative flex justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[650px] mt-8 sm:mt-12 lg:mt-0">
-                            <img src="/apps/app1.png" alt="Android app screenshot 1" loading="lazy" width="210" height="375" className="absolute left-[2%] sm:left-[0%] md:left-[5%] top-[22%] sm:top-[20%] md:top-[26%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
-                            <img src="/apps/app2.png" alt="Android app screenshot 2" loading="lazy" width="220" height="390" className="absolute top-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-20 drop-shadow-2xl" />
-                            <img src="/apps/app3.png" alt="Android app screenshot 3" loading="lazy" width="220" height="390" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-10 drop-shadow-2xl" />
-                            <img src={thirdImageAad} alt="App dashboard preview" loading="lazy" width="400" height="640" className="absolute left-[28%] sm:left-[25%] md:left-[28%] top-[8%] w-[120px] sm:w-[180px] md:w-[250px] lg:w-[50vh] h-[200px] sm:h-[300px] md:h-[420px] lg:h-[80vh] drop-shadow-2xl z-10" />
-                            <img src="/apps/app4.png" alt="Android app screenshot 4" loading="lazy" width="210" height="375" className="absolute right-[2%] sm:right-[0%] md:right-[8%] top-[24%] sm:top-[20%] md:top-[28%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
+                        <div className="relative flex justify-center items-center min-h-[300px] sm:min-h-[400px] md:min-h-[650px] mt-8 sm:mt-12 lg:mt-0">
+                            <img src={thirdImageAad} alt="App dashboard preview" loading="lazy" width="800" height="800" className="w-full max-w-[500px] md:max-w-[650px] object-contain drop-shadow-2xl" />
                         </div>
                     </div>
                 </div>
@@ -548,11 +544,8 @@ const AppDevelopment = () => {
             <section className="bg-[#f7f7f7] overflow-hidden py-16 md:py-24">
                 <div className="max-w-[1450px] mx-auto px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                        <div className="relative flex justify-center min-h-[350px] md:min-h-[520px] order-2 lg:order-1">
-                            <div className="absolute bottom-[10px] md:bottom-[15px] w-[250px] md:w-[380px] h-[30px] md:h-[50px] bg-black/15 blur-2xl rounded-full" />
-                            <img src="/android/phone-back.png" alt="Android phone back view" loading="lazy" width="250" height="500" className="absolute left-[45%] md:left-[48%] top-[8%] w-[150px] md:w-[250px] rotate-[12deg] z-10 drop-shadow-2xl" />
-                            <img src="/android/phone-front.png" alt="Android phone front view" loading="lazy" width="260" height="520" className="absolute left-[15%] md:left-[18%] top-[3%] w-[160px] md:w-[260px] z-20 drop-shadow-2xl" />
-                            <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="400" height="640" className="absolute left-[30%] md:left-[32%] top-[8%] w-[120px] sm:w-[180px] md:w-[250px] lg:w-[50vh] h-[200px] sm:h-[300px] md:h-[420px] lg:h-[80vh] drop-shadow-2xl z-10" />
+                            <div className="flex justify-center items-center min-h-[350px] md:min-h-[520px] order-2 lg:order-1">
+                            <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="800" height="800" className="w-full max-w-[450px] md:max-w-[550px] object-contain drop-shadow-2xl" />
                         </div>
                         <div className="order-1 lg:order-2 text-center lg:text-left">
                             <h2 className="text-3xl md:text-5xl lg:text-[60px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[820px] mx-auto lg:mx-0">

@@ -497,17 +497,31 @@ const Contact = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="min-h-[300px] sm:min-h-[400px] lg:min-h-[800px]">
-              <iframe
-                title="Biosoftech Location"
-                className="w-full h-full rounded-xl"
-                width="600"
-                height="450"
-                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7117.5648133672075!2d81.03473064306043!3d26.87865350666976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d26.8772223!2d81.0423422!4m5!1s0x399be36e7a0d7deb%3A0x1191d021e952b938!2sBiosoftech%20Software%20Solutions%2C%203rd%20Floor%2C%20Office%20No%2C%20624F%2F20A%2C%20Kotwali%20Rd%2C%20opp.%20Om%20Saran%20Private%20ITI%2C%20Matiyari%2C%20Chinhat%2C%20Lucknow%2C%20Uttar%20Pradesh%20226028!3m2!1d26.8797931!2d81.0391113!5e0!3m2!1sen!2sin!4v1780137029081!5m2!1sen!2sin"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+            <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[700px] flex flex-col">
+              <div className="relative flex-1 overflow-hidden rounded-xl">
+                <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+                <iframe
+                  title="Biosoftech Location"
+                  className="absolute inset-0 w-full h-full z-10"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14235.129626734415!2d81.0391113!3d26.8797931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be36e7a0d7deb%3A0x1191d021e952b938!2sBiosoftech%20Software%20Solutions!5e0!3m2!1sen!2sin!4v1700000000000"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/70 to-transparent p-4 sm:p-5 md:p-6 pt-12">
+                  <p className="text-white text-sm sm:text-base font-medium leading-relaxed">
+                    3rd Floor, Office No-624F/20A, Kotwali Rd, Matiyari, Chinhat, Lucknow, Uttar Pradesh-226028
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/dir//Biosoftech+Software+Solutions,+3rd+Floor,+Office+No,+624F%2F20A,+Kotwali+Rd,+opp.+Om+Saran+Private+ITI,+Matiyari,+Chinhat,+Lucknow,+Uttar+Pradesh+226028"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-2 sm:mt-3 text-white/90 hover:text-white text-sm font-semibold underline underline-offset-2 transition"
+                  >
+                    Get Directions ↗
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

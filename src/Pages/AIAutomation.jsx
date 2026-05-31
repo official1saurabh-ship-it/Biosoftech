@@ -75,13 +75,15 @@ const HeroSection = () => {
       if (!sectionRef.current) return;
 
       const section = sectionRef.current;
-
       const rect = section.getBoundingClientRect();
+      const sectionHeight = section.offsetHeight;
+      const viewHeight = window.innerHeight;
+      const offset = viewHeight * 0.15;
 
       const scrollProgress =
         Math.min(
           Math.max(
-            (-rect.top / (section.offsetHeight - window.innerHeight)),
+            ((-rect.top - offset) / (sectionHeight - viewHeight - offset)),
             0
           ),
           1
@@ -96,7 +98,6 @@ const HeroSection = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () =>
       window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -1114,7 +1115,8 @@ const HeroSection = () => {
     bg-[#030712]
     text-white
     h-auto
-    lg:h-[600vh]
+    lg:h-[500vh]
+    pb-8 md:pb-16 lg:pb-24
   "
       >
 
@@ -1127,14 +1129,13 @@ const HeroSection = () => {
 
         <div
           className="
-    lg:sticky lg:top-0
+    lg:sticky lg:top-24
     h-auto
     lg:h-screen
     flex flex-col justify-center
     relative z-10
-    py-8
-    md:py-12
-    lg:py-0
+    pt-8 md:pt-12
+    pb-16 md:pb-20 lg:pb-28
   "
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">

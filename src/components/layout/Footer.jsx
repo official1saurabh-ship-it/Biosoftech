@@ -82,12 +82,20 @@ const Footer = () => {
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
             <ul className="space-y-4">
-              {['Enquiry', 'Web Development', 'App Development', 'Cloud Services', 'AI Automation', 'Privacy Policy', 'Terms & Conditions'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
+              {[
+                { name: 'Enquiry', to: '/contact' },
+                { name: 'Web Development', to: '/web-development' },
+                { name: 'App Development', to: '/app-development' },
+                { name: 'Cloud Services', to: '/cloud-services' },
+                { name: 'AI Automation', to: '/ai-automation' },
+                { name: 'Privacy Policy', to: '#' },
+                { name: 'Terms & Conditions', to: '#' },
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
                     <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
