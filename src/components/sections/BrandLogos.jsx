@@ -19,7 +19,7 @@ const BrandLogos = () => {
   return (
     <div className="py-10 bg-gray-50 border-y overflow-hidden">
       <div className="container mx-auto px-4">
-        <Swiper
+          <Swiper
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={2}
@@ -34,24 +34,17 @@ const BrandLogos = () => {
             768: { slidesPerView: 4 },
             1024: { slidesPerView: 6 },
           }}
-          className="brand-swiper"
+          className="brand-swiper min-h-[48px]"
         >
           {brands.map((brand, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                <img src={brand.logo} alt={brand.name} className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all" />
+                <img src={brand.logo} alt={brand.name} width="150" height="48" className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all" />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      
-      {/* Custom styles for seamless scrolling */}
-      <style dangerouslySetInnerHTML={{ __html: `
-        .brand-swiper .swiper-wrapper {
-          transition-timing-function: linear !important;
-        }
-      `}} />
     </div>
   );
 };

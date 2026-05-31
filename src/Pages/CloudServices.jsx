@@ -1,3 +1,5 @@
+import SEO from "../components/seo/SEO";
+import StructuredData from "../components/seo/StructuredData";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiArrowUpRight, FiArrowRightCircle } from "react-icons/fi";
@@ -26,12 +28,122 @@ import {
     Sun,
 } from "lucide-react";
 
-import robotImage from "../assets/robot-ai.avif";
-import consultationImage from "../assets/consultation.png";
+import {
+    FaHeartbeat,
+    FaChartLine,
+    FaShoppingCart,
+    FaBookOpen,
+    FaMicrochip,
+    FaTruck,
+    FaDesktop,
+    FaHome,
+    FaMapMarkerAlt,
+    FaGlobe,
+    FaPhoneAlt,
+    FaBolt,
+    FaShieldAlt,
+    FaFileAlt,
+} from "react-icons/fa";
+const industries = [
+    {
+        icon: FaHeartbeat,
+        title: "Healthcare & Life Sciences",
+        description:
+            "Build HIPAA-compliant Azure solutions for hospitals, clinics, patient portals, EHR systems, and AI-powered healthcare platforms.",
+    },
+    {
+        icon: FaChartLine,
+        title: "Banking & Financial Services",
+        description:
+            "Deploy secure financial systems with Azure cloud, analytics, fraud prevention, compliance, and transaction processing.",
+    },
+    {
+        icon: FaShoppingCart,
+        title: "E-commerce & Retail",
+        description:
+            "Scalable retail architectures with Azure Kubernetes Service, recommendation engines, and cloud-native commerce solutions.",
+    },
+    {
+        icon: FaBookOpen,
+        title: "Education & EdTech",
+        description:
+            "Virtual classrooms, LMS platforms, AI learning systems, student analytics, and secure online assessments.",
+    },
+    {
+        icon: FaMicrochip,
+        title: "Manufacturing & Industrial IoT",
+        description:
+            "Industrial automation, predictive maintenance, digital twins, telemetry systems, and smart factory solutions.",
+    },
+    {
+        icon: FaTruck,
+        title: "Automotive & Mobility",
+        description:
+            "Connected vehicles, route optimization, fleet management systems, IoT integrations, and mobility platforms.",
+    },
+    {
+        icon: FaDesktop,
+        title: "Gaming & Entertainment",
+        description:
+            "Cloud gaming infrastructure, multiplayer backends, real-time asset delivery, and scalable gaming ecosystems.",
+    },
+    {
+        icon: FaHome,
+        title: "Real Estate & PropTech",
+        description:
+            "Property portals, CRM systems, virtual tours, real estate analytics, and cloud-based management platforms.",
+    },
+    {
+        icon: FaMapMarkerAlt,
+        title: "Logistics & Supply Chain",
+        description:
+            "Shipment tracking, warehouse automation, route intelligence, inventory management, and cloud logistics.",
+    },
+    {
+        icon: FaGlobe,
+        title: "Travel & Hospitality",
+        description:
+            "Booking engines, reservation systems, pricing automation, traveler analytics, and hospitality platforms.",
+    },
+    {
+        icon: FaPhoneAlt,
+        title: "Telecom & SaaS",
+        description:
+            "Multi-tenant SaaS applications, API management, enterprise SSO, DevOps automation, and telecom platforms.",
+    },
+    {
+        icon: FaBolt,
+        title: "Energy & Utilities",
+        description:
+            "Smart grid monitoring, energy analytics, compliance management, and cloud infrastructure solutions.",
+    },
+    {
+        icon: FaShieldAlt,
+        title: "Government & Public Sector",
+        description:
+            "Citizen portals, identity verification systems, document repositories, and secure government services.",
+    },
+    {
+        icon: FaFileAlt,
+        title: "Media & Digital Publishing",
+        description:
+            "Content management systems, video streaming infrastructure, CDN integration, and media delivery platforms.",
+    },
+];
+
+import robotImage from "../assets/cloud-why-biosoftech-robot.avif";
+import consultationImage from "../assets/consultation-form.webp";
+import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import processImg1 from "../assets/digital_ocean_proccess_1.webp";
+import processImg2 from "../assets/digital_ocean_proccess_2.webp";
+import processImg3 from "../assets/digital_ocean_proccess_3.webp";
+import processImg4 from "../assets/digital_ocean_proccess_4.webp";
+import processImg5 from "../assets/digital_ocean_proccess_5.webp";
+import processImg6 from "../assets/digital_ocean_proccess_6.webp";
 import useEmblaCarousel from "embla-carousel-react";
 
-import caseStudy1 from "../assets/case3.jpg";
-import caseStudy2 from "../assets/case4.jpg";
+import caseStudy1 from "../assets/cloud-case-study-sap.jpg";
+import caseStudy2 from "../assets/cloud-case-study-banking.jpg";
 
 
 const CloudServices = () => {
@@ -78,42 +190,42 @@ const CloudServices = () => {
     const leftFeatures = [
         {
             icon: Bot,
-            title: "AWS-Certified Engineers",
+            title: "Certified AWS Specialists",
             description:
-                "Our team holds certifications across Solutions Architecture, DevOps, and Security Specialty.",
+                "Our engineers are certified in Solutions Architecture, DevOps, Security, and Networking, bringing deep expertise to every AWS project.",
         },
         {
             icon: ShieldCheck,
-            title: "Outcome-Driven Approach",
+            title: "Business-Focused Cloud Strategy",
             description:
-                "Every AWS recommendation we make is tied to a measurable business outcome.",
+                "Every solution we design is tied to measurable outcomes — lower costs, faster deployments, improved uptime, and compliance assurance.",
         },
         {
             icon: Bot,
-            title: "Security by Design",
+            title: "Security-First Framework",
             description:
-                "Security is embedded into every layer of our work—IAM matrices, WAF rules, and KMS encryption.",
+                "We embed security at every stage: IAM policies, VPC segmentation, GuardDuty monitoring, encrypted pipelines, and continuous compliance.",
         },
     ];
 
     const rightFeatures = [
         {
             icon: CloudCog,
-            title: "Full-Lifecycle Delivery",
+            title: "End-to-End Cloud Journey",
             description:
-                "From initial AWS consulting through migration and ongoing managed services.",
+                "From consulting and architecture design to migration, app development, and managed services, we deliver the complete AWS lifecycle.",
         },
         {
             icon: ArrowLeftRight,
-            title: "FinOps-First Cost Governance",
+            title: "Smart Cost Optimization",
             description:
-                "Our FinOps practice typically reduces AWS spend by 25–40% through proactive infrastructure adjustments.",
+                "Our FinOps practice reduces AWS spend by 25–40% through rightsizing, Reserved Instances, autoscaling, and Savings Plans.",
         },
         {
             icon: CloudCog,
-            title: "Global Delivery Capability",
+            title: "Global Service Reach",
             description:
-                "With international offices, we provide robust follow-the-sun operational assistance.",
+                "With delivery expertise across India and international markets, we provide round-the-clock support and regional compliance knowledge.",
         },
     ];
 
@@ -122,45 +234,47 @@ const CloudServices = () => {
             id: 1,
             stage: "STAGE 01",
             title: "Requirement Analysis",
-            desc: "We start by understanding your business objectives, technical needs, and application requirements in detail.",
+            desc: "We begin by understanding your business objectives, technical needs, and application requirements. Our team analyzes current systems to identify gaps, challenges, and optimization opportunities, ensuring a clear roadmap before design and development.",
             icon: "🔍",
         },
         {
             id: 2,
             stage: "STAGE 02",
             title: "Cloud Architecture Design",
-            desc: "We design a secure and scalable DigitalOcean architecture tailored to your business needs.",
+            desc: "We design a secure and scalable cloud architecture tailored to your business. This includes defining compute resources, networking setup, storage structure, and deployment strategy — building a future-ready system that supports growth, performance, and cost efficiency.",
             icon: "☁️",
         },
         {
             id: 3,
             stage: "STAGE 03",
             title: "Deployment & Development",
-            desc: "We set up your DigitalOcean environment and deploy infrastructure using best practices.",
+            desc: "We set up your cloud environment and deploy infrastructure using industry best practices. Alongside deployment, we develop cloud applications, APIs, or backend systems with automation, version control, and optimized configuration for smooth operations.",
             icon: "🚀",
         },
         {
             id: 4,
             stage: "STAGE 04",
             title: "Testing & Optimization",
-            desc: "We thoroughly test your system for performance, security, and scalability.",
+            desc: "We thoroughly test your system for performance, security, and scalability. Real-world simulations identify bottlenecks, and optimization ensures your application runs efficiently under different traffic conditions.",
             icon: "✅",
         },
         {
             id: 5,
             stage: "STAGE 05",
             title: "Test & Quality Assurance",
-            desc: "Rigorous testing including security validation and performance benchmarking.",
+            desc: "We conduct rigorous testing including security validation, performance benchmarking, resilience testing, and cost efficiency analysis to guarantee a stable and reliable cloud environment.",
             icon: "🛡️",
         },
         {
             id: 6,
             stage: "STAGE 06",
             title: "Monitoring & Managed Services",
-            desc: "Continuous monitoring, updates, and optimization to ensure long-term stability.",
+            desc: "After deployment, we provide continuous monitoring to ensure system stability and uptime. Our team handles updates, backups, security patches, and performance tuning to keep your environment secure, optimized, and fully operational.",
             icon: "📊",
         }
     ];
+
+    const processImages = [processImg1, processImg2, processImg3, processImg4, processImg5, processImg6];
 
     const roadmap = [
         "Legacy system to AWS migration",
@@ -316,8 +430,15 @@ const CloudServices = () => {
 
     return (
         <main className="min-h-screen bg-white">
+            <SEO
+                title="Cloud Services Company – AWS, Cloud Migration & Managed Services | Biosoftech"
+                description="Biosoftech Solutions provides strategic cloud services including AWS migration, cloud architecture, Kubernetes, and managed cloud infrastructure. 10+ years, 500+ projects."
+                keywords="cloud services company, AWS migration, cloud architecture, managed cloud services, Kubernetes, cloud consulting, India"
+                ogUrl="https://www.biosoftech.com/cloud-services"
+            />
+            <StructuredData type="LocalBusiness" />
             {/* HERO SECTION */}
-            <section className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
+            <section aria-label="Cloud services hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
                 <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
@@ -353,7 +474,7 @@ const CloudServices = () => {
                             </div>
 
                             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
-                                <button className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
+                                <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
                                 <button className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
@@ -363,10 +484,7 @@ const CloudServices = () => {
                         </div>
 
                         <div className="relative mt-8 sm:mt-12 lg:mt-0">
-                            <div className="absolute left-[5%] sm:left-[8%] top-[5%] z-20 w-[140px] sm:w-[200px] md:w-[420px] rotate-[-6deg] bg-white rounded-xl shadow-xl p-2 md:p-4">
-                                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" className="w-full h-[70px] sm:h-[100px] md:h-[220px] object-cover rounded" alt="" />
-                            </div>
-                            <img src="https://pngimg.com/d/laptop_PNG101816.png" alt="" className="relative z-10 w-full" />
+                            <img src={laptopMockup} alt="Laptop mockup showcasing cloud services platform interface" fetchpriority="high" width="800" height="500" className="relative z-10 w-full" />
                         </div>
                     </div>
                 </div>
@@ -377,50 +495,119 @@ const CloudServices = () => {
                 <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white to-transparent" aria-hidden="true"></div>
                 <div className="relative mx-auto max-w-[1750px] px-6 lg:px-20">
                     <div className="text-center mb-12">
-                        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">Startup-ready cloud infrastructure</p>
+                        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">Cloud infrastructure for growing businesses</p>
                         <h2 className="max-w-4xl mx-auto text-2xl font-semibold leading-tight text-slate-950 md:text-3xl lg:text-4xl">
-                            Why Choose DigitalOcean for <span className="bg-gradient-to-r from-[#01abfb] to-[#0176f2] bg-clip-text text-transparent">Startups and Scaleups?</span>
+                            Why Choose Biosoftech Cloud Services for <span className="bg-gradient-to-r from-[#01abfb] to-[#0176f2] bg-clip-text text-transparent">Startups and Enterprises</span>
                         </h2>
                         <p className="mt-6 text-base leading-7 font-normal text-slate-600 md:text-lg max-w-3xl mx-auto">
-                            DigitalOcean is a preferred cloud platform for startups, growing SaaS companies, and digital agencies looking for simple, scalable, and cost-effective infrastructure.
+                            At Biosoftech Solutions, we are the preferred cloud partner for startups, SaaS companies, and growing enterprises seeking simple, scalable, and cost-effective infrastructure. Our cloud services ensure predictable pricing, easy deployment, and future-ready solutions that help you scale without complexity.
                         </p>
                     </div>
 
                     <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] items-start">
                         <div>
-                            <h3 className="text-2xl font-semibold text-slate-950 mb-6">Key Benefits of DigitalOcean</h3>
+                            <h3 className="text-2xl font-semibold text-slate-950 mb-6">Key Benefits of Biosoftech Cloud Services</h3>
                             <div className="grid gap-6 sm:grid-cols-2">
                                 <article className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-50 via-white to-cyan-50 p-6 shadow-[0_10px_34px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.14)]">
                                     <div className="relative mb-6 flex items-center justify-between">
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
-                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
                                         </div>
                                         <span className="text-4xl font-black text-emerald-600/10">01</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">60-80% Lower Infrastructure Cost</h3>
-                                    <p className="mt-3 text-slate-600">Reduce infrastructure spend compared with similar AWS or Azure setups.</p>
+                                    <p className="mt-3 text-slate-600">Reduce spend compared to traditional hosting while maintaining reliable compute, storage, and database options.</p>
                                 </article>
                                 <article className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 via-white to-sky-50 p-6 shadow-[0_10px_34px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.14)]">
                                     <div className="relative mb-6 flex items-center justify-between">
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
-                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect></svg>
+                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M8 10h8M8 14h4" /></svg>
                                         </div>
                                         <span className="text-4xl font-black text-blue-600/10">02</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">Flexible Hosting and Storage</h3>
-                                    <p className="mt-3 text-slate-600">Use Droplets, Managed Databases, and Spaces with a simpler control layer.</p>
+                                    <p className="mt-3 text-slate-600">Host applications, APIs, files, and workloads with seamless control and scalability.</p>
+                                </article>
+                                <article className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-purple-50 via-white to-pink-50 p-6 shadow-[0_10px_34px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.14)]">
+                                    <div className="relative mb-6 flex items-center justify-between">
+                                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-600 text-white shadow-lg shadow-purple-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
+                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><circle cx="12" cy="12" r="3" /><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" /></svg>
+                                        </div>
+                                        <span className="text-4xl font-black text-purple-600/10">03</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-slate-950">Simpler Kubernetes Management</h3>
+                                    <p className="mt-3 text-slate-600">Managed container orchestration without the complexity of traditional platforms.</p>
+                                </article>
+                                <article className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-orange-50 via-white to-amber-50 p-6 shadow-[0_10px_34px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.14)]">
+                                    <div className="relative mb-6 flex items-center justify-between">
+                                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-600 text-white shadow-lg shadow-orange-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
+                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
+                                        </div>
+                                        <span className="text-4xl font-black text-orange-600/10">04</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-slate-950">Streamlined App Deployments</h3>
+                                    <p className="mt-3 text-slate-600">Faster containerized deployments for web apps, APIs, and services with reduced DevOps overhead.</p>
+                                </article>
+                                <article className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-rose-50 via-white to-red-50 p-6 shadow-[0_10px_34px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.14)]">
+                                    <div className="relative mb-6 flex items-center justify-between">
+                                        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-600 text-white shadow-lg shadow-rose-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
+                                            <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><path d="M9 12l2 2 4-4" /><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" /></svg>
+                                        </div>
+                                        <span className="text-4xl font-black text-rose-600/10">05</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-slate-950">Predictable Flat-Rate Pricing</h3>
+                                    <p className="mt-3 text-slate-600">Transparent monthly pricing with no hidden costs or surprise billing.</p>
                                 </article>
                             </div>
                         </div>
-                        <aside className="lg:sticky lg:top-8">
+                        <aside className="lg:sticky lg:top-8 space-y-6">
                             <div className="overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-900/8">
                                 <div className="bg-slate-950 p-6 text-white">
-                                    <p className="text-lg font-semibold text-blue-200">DigitalOcean Platform Stack</p>
+                                    <p className="text-lg font-semibold text-blue-200">Biosoftech Cloud Platform Stack</p>
+                                        <p className="mt-2 text-sm text-slate-400 leading-relaxed">
+                                        A complete toolkit for product teams needing production-grade infrastructure without heavy complexity.
+                                    </p>
                                 </div>
-                                <div className="grid grid-cols-2 gap-px bg-slate-200">
-                                    <div className="bg-white p-5"><p className="font-semibold text-slate-950">Droplets</p></div>
-                                    <div className="bg-white p-5"><p className="font-semibold text-slate-950">Managed DBs</p></div>
+                                <div className="divide-y divide-slate-100">
+                                    <div className="p-5">
+                                        <p className="font-semibold text-slate-950">Virtual Machines</p>
+                                        <p className="mt-1 text-sm text-slate-500">Reliable compute for apps, APIs, workers, and services.</p>
+                                    </div>
+                                    <div className="p-5">
+                                        <p className="font-semibold text-slate-950">Cloud Storage</p>
+                                        <p className="mt-1 text-sm text-slate-500">Secure object storage for media, static assets, and backups.</p>
+                                    </div>
+                                    <div className="p-5">
+                                        <p className="font-semibold text-slate-950">Managed Databases</p>
+                                        <p className="mt-1 text-sm text-slate-500">Automated backups, updates, and scaling support.</p>
+                                    </div>
+                                    <div className="p-5">
+                                        <p className="font-semibold text-slate-950">Kubernetes Services</p>
+                                        <p className="mt-1 text-sm text-slate-500">Simplified orchestration for containerized workloads.</p>
+                                    </div>
                                 </div>
+                            </div>
+
+                            <div className="overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-900/8 p-6">
+                                <h4 className="text-lg font-semibold text-slate-950 mb-4">Ideal For</h4>
+                                <ul className="space-y-3">
+                                    <li className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-bold text-blue-600">1</span>
+                                        <span className="text-sm text-slate-600">Startups and MVP development</span>
+                                    </li>
+                                    <li className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-bold text-blue-600">2</span>
+                                        <span className="text-sm text-slate-600">SaaS platforms and digital agencies</span>
+                                    </li>
+                                    <li className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-bold text-blue-600">3</span>
+                                        <span className="text-sm text-slate-600">Growing businesses scaling operations</span>
+                                    </li>
+                                    <li className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-bold text-blue-600">4</span>
+                                        <span className="text-sm text-slate-600">Development teams seeking simplified infrastructure management</span>
+                                    </li>
+                                </ul>
                             </div>
                         </aside>
                     </div>
@@ -428,52 +615,56 @@ const CloudServices = () => {
             </section>
 
             {/* WHY CHOOSE SECTION */}
-            <section className="relative py-16 bg-white overflow-hidden">
-                <div className="max-w-[1750px] mx-auto px-6 lg:px-20">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-                        <div className="space-y-10">
-                            <div>
-                                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">DigitalOcean Cloud</span> Services</h2>
-                                <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
-                            </div>
-                            <p className="text-lg text-slate-600 leading-relaxed">
-                                DigitalOcean is a developer-friendly cloud platform designed for simplicity, performance, and affordability.
-                            </p>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="flex items-center gap-3 bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-6 transition-all hover:shadow-md group">
-                                    <div className="w-11 h-11 flex items-center justify-center rounded-full border border-blue-200 text-blue-600 text-2xl group-hover:scale-110 transition-transform">🙂</div>
-                                    <p className="font-medium text-slate-800 leading-tight">Simple & Developer-Friendly Platform</p>
-                                </div>
-                                <div className="flex items-center gap-3 bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-5 transition-all hover:shadow-md group">
-                                    <div className="w-11 h-11 flex items-center justify-center rounded-full border border-blue-200 text-blue-600 text-2xl group-hover:scale-110 transition-transform">💰</div>
-                                    <p className="font-medium text-slate-800 leading-tight">Cost-Effective Cloud Hosting</p>
-                                </div>
-                            </div>
-                            <div className="bg-blue-600 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 text-white">
-                                <div className="flex-1"><p className="text-lg leading-snug">Ready to scale your business? Let's build your cloud strategy together.</p></div>
-                                <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center">Request a Free Consultation</a>
-                            </div>
+            <section className="relative py-16 md:py-24 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop" alt="Business professionals collaborating on digital transformation strategy" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover object-right" loading="lazy" />
+                <div className="absolute inset-0 bg-white/30" />
+                <div className="relative z-10 max-w-[1750px] mx-auto px-6 lg:px-20">
+                        <div>
+                            <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
+                            <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
                         </div>
-                        <div className="relative hidden lg:block pt-8">
-                            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop" alt="DigitalOcean Cloud" className="w-full h-auto rounded-3xl shadow-2xl object-cover" />
+                        <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                            Biosoftech Solutions offers a developer-friendly cloud platform designed for simplicity, performance, and affordability. Our services provide a streamlined alternative to complex enterprise systems, making them ideal for startups, SaaS platforms, and fast-growing businesses. With powerful infrastructure and easy-to-use tools, we enable teams to deploy applications quickly without unnecessary complexity.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {[
+                                "Simple & Developer-Friendly Platform",
+                                "Cost-Effective Cloud Hosting",
+                                "High-Performance Infrastructure",
+                                "Scalable Cloud Resources",
+                                "Fast Deployment & Time-to-Market",
+                                "Strong Open-Source Ecosystem",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-center gap-3 bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-5 md:p-6 transition-all hover:shadow-md group">
+                                    <div className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-blue-600 text-white shrink-0 group-hover:scale-110 transition-transform">
+                                        <svg stroke="currentColor" fill="none" strokeWidth="2.5" viewBox="0 0 24 24" className="w-5 h-5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <p className="font-medium text-slate-800 leading-tight text-sm md:text-base">{item}</p>
+                                </div>
+                            ))}
                         </div>
-                    </div>
+                        <div className="bg-blue-600 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5 md:gap-6 text-white">
+                            <div className="flex-1">
+                                <p className="text-base md:text-lg leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
+                            </div>
+                            <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-sm md:text-base shrink-0">Request a Free Consultation</a>
+                        </div>
                 </div>
             </section>
             {/* DEVELOPMENT PROCESS SECTION */}
             <section
                 ref={sectionRef}
-                className="bg-[#0a0a0a] relative h-auto lg:h-[600vh]"
+                className="bg-[#0a0a0a] relative z-20 h-auto lg:h-[600vh]"
             >
                 <div className="lg:sticky lg:top-0 lg:h-screen flex items-center overflow-hidden">
                     <div className="max-w-[1750px] mx-auto px-6 lg:px-20 w-full">
 
                         <div className="text-center mb-12">
                             <h2 className="text-4xl lg:text-5xl font-bold text-white">
-                                DigitalOcean <span className="text-blue-500">Development Process</span>
+                                Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
-                            <p className="mt-4 text-gray-400 text-lg">
-                                We follow a simple, agile, and efficient process to deliver high-quality solutions.
+                            <p className="mt-4 text-gray-500 text-lg">
+                                We follow a simple, agile, and efficient process to deliver high-quality cloud solutions tailored to your business needs.
                             </p>
                         </div>
 
@@ -501,7 +692,7 @@ const CloudServices = () => {
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-300 text-xl leading-relaxed">
+                                            <p className="text-gray-400 text-xl leading-relaxed">
                                                 {stage.desc}
                                             </p>
 
@@ -509,15 +700,15 @@ const CloudServices = () => {
                                                 <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-10 py-4 rounded-2xl font-semibold text-lg transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Get a Free Quote
                                                 </a>
-                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-8 py-4 rounded-2xl font-semibold transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-8 py-4 rounded-2xl font-semibold text-white transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Free Technical Consultation →
                                                 </a>
                                             </div>
                                         </div>
 
                                         {/* Right Side */}
-                                        <div className="lg:w-1/2 bg-gray-900 rounded-2xl aspect-video flex items-center justify-center border border-gray-700 text-gray-400 text-5xl">
-                                            Stage {index + 1}
+                                        <div className="lg:w-1/2 rounded-2xl overflow-hidden">
+                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover" loading="lazy" />
                                         </div>
                                     </div>
                                 ))}
@@ -545,18 +736,17 @@ const CloudServices = () => {
                             <p className="uppercase tracking-[4px] text-[#2455FF] font-medium mb-5">
                                 AWS Migration
                             </p>
-                            <h1 className="text-4xl md:text-5xl lg:text-[58px] leading-tight font-semibold mb-8">
+                            <h2 className="text-4xl md:text-5xl lg:text-[58px] leading-tight font-semibold mb-8">
                                 AWS Cloud Migration Services
-                            </h1>
+                            </h2>
                             <p className="text-[#36507A] text-lg md:text-[20px] leading-relaxed md:leading-[2] max-w-[700px]">
-                                We help businesses migrate smoothly from legacy systems and
-                                other cloud platforms to AWS with minimal downtime.
-                                Our approach includes legacy system to AWS migration,
-                                lift-and-shift vs re-architecture assessment,
-                                and multi-cloud to AWS consolidation based on business needs.
-                                We also provide AWS cost optimisation audits and disaster
-                                recovery setup on AWS to ensure better performance,
-                                scalability, and reliability.
+                                At Biosoftech Solutions, we help businesses migrate seamlessly from legacy systems
+                                or other cloud platforms to AWS with minimal downtime.
+                                Our approach ensures optimized performance, and cost-efficient scalability.
+                                Whether it's lift-and-shift, re-architecture, or multi-cloud consolidation,
+                                we design migration strategies that fit your business needs.
+                                We also provide AWS cost optimization audits and disaster
+                                recovery setups to guarantee reliability and resilience.
                             </p>
 
                             {/* Dashboard */}
@@ -571,19 +761,19 @@ const CloudServices = () => {
                                                 Assessment, consolidation, optimization
                                             </p>
                                         </div>
-                                        <button className="w-12 h-12 md:w-16 md:h-16 rounded-2xl md:rounded-3xl bg-[#0F2446] flex items-center justify-center border border-[#24426E] hover:rotate-180 duration-700">
+                                        <button aria-label="Refresh" className="w-12 h-12 md:w-16 md:h-16 rounded-2xl md:rounded-3xl bg-[#0F2446] flex items-center justify-center border border-[#24426E] hover:rotate-180 duration-700">
                                             <RefreshCw color="white" size={24} className="md:w-[28px] md:h-[28px]" />
                                         </button>
                                     </div>
                                     <div className="mt-8 border-t border-[#21375E]" />
-                                    <div className="grid sm:grid-cols-3 gap-5 mt-8">
+                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8">
                                         {[
                                             ["Low", "Downtime risk"],
                                             ["20–35%", "Cost saving focus"],
                                             ["DR", "Ready setup"],
                                         ].map((item, i) => (
                                             <div key={i} className="rounded-[20px] md:rounded-[28px] bg-white/10 border border-white/10 p-5 md:p-7 backdrop-blur">
-                                                <h2 className="text-white text-3xl md:text-[48px] font-bold">{item[0]}</h2>
+                                                <h3 className="text-white text-3xl md:text-[48px] font-bold">{item[0]}</h3>
                                                 <p className="text-[#C4D2E8] mt-2 md:mt-3 text-sm md:text-base">{item[1]}</p>
                                             </div>
                                         ))}
@@ -598,7 +788,7 @@ const CloudServices = () => {
                                 <div className="flex justify-between items-start gap-4">
                                     <div>
                                         <p className="text-[#2455FF] font-semibold text-sm md:text-base">Migration Roadmap</p>
-                                        <h2 className="mt-2 md:mt-3 text-2xl md:text-[44px] font-semibold leading-tight">From legacy stack to AWS</h2>
+                                        <h3 className="mt-2 md:mt-3 text-2xl md:text-[44px] font-semibold leading-tight">From legacy stack to AWS</h3>
                                     </div>
                                     <div className="px-3 md:px-5 h-[32px] md:h-[42px] rounded-full bg-[#EEF4FF] flex items-center text-[#2455FF] font-medium text-xs md:text-sm">
                                         AWS
@@ -650,7 +840,7 @@ const CloudServices = () => {
 
                     {/* Heading */}
                     <h2 className="text-center text-3xl sm:text-4xl md:text-[42px] font-bold mb-20">
-                        Why Biosoftech – The Difference That Makes Cloud Projects Succeed
+                        Why Biosoftech Solutions – Your Trusted AWS Partner
                     </h2>
 
                     {/* Main Layout */}
@@ -687,7 +877,10 @@ const CloudServices = () => {
                                 <img
                                     src={robotImage}
                                     alt="AI Robot"
+                                    width="1920"
+                                    height="1080"
                                     className="w-full h-[390px] object-cover"
+                                    loading="lazy"
                                 />
                             </div>
                         </div>
@@ -769,11 +962,14 @@ const CloudServices = () => {
                                     <img
                                         src={consultationImage}
                                         alt="Consultation"
+                                        width="800"
+                                        height="600"
                                         className="
                 w-full
                 h-full
                 object-cover
               "
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -792,10 +988,14 @@ const CloudServices = () => {
             mb-10
           "
                             >
-                                Book a Free Cloud
+                                Partner with
                                 <br />
-                                Consultation
+                                Biosoftech Solutions
                             </h2>
+
+                            <p className="text-lg text-[#555] mb-8 max-w-lg">
+                                Secure, scalable, and innovative — our cloud services are designed to transform your digital future.
+                            </p>
 
                             <button
                                 onClick={() => navigate("/contact?service=Cloud Service")}
@@ -846,7 +1046,10 @@ const CloudServices = () => {
                                 <img
                                     src={feature.icon}
                                     alt={feature.title}
+                                    width="64"
+                                    height="64"
                                     className="w-[64px] h-[64px] object-contain"
+                                    loading="lazy"
                                 />
 
                                 {/* Title */}
@@ -895,7 +1098,7 @@ const CloudServices = () => {
                                     key={index}
                                     className="
                   flex-[0_0_100%]
-                  h-[60vh]
+                  h-[300px] sm:h-[40vh] lg:h-[60vh]
                   flex flex-col
                   bg-white
                   shadow-sm
@@ -909,6 +1112,8 @@ const CloudServices = () => {
                                         <img
                                             src={item.image}
                                             alt={item.title}
+                                            width="1920"
+                                            height="1080"
                                             className="
                       w-full
                       h-full
@@ -917,6 +1122,7 @@ const CloudServices = () => {
                       duration-700
                       hover:scale-110
                     "
+                                            loading="lazy"
                                         />
                                     </div>
 
@@ -944,6 +1150,7 @@ const CloudServices = () => {
 
                         <button
                             onClick={scrollPrev}
+                            aria-label="Previous slide"
                             className="
               w-12
               h-12
@@ -961,6 +1168,7 @@ const CloudServices = () => {
 
                         <button
                             onClick={scrollNext}
+                            aria-label="Next slide"
                             className="
               w-12
               h-12
@@ -989,7 +1197,7 @@ const CloudServices = () => {
                             Industries We Serve
                         </h2>
 
-                        <p className="mt-6 max-w-4xl mx-auto text-gray-300 text-lg leading-9">
+                        <p className="mt-6 max-w-4xl mx-auto text-gray-400 text-lg leading-9">
                             Azure Solutions Across Industries — We build scalable,
                             secure, and high-performance cloud solutions tailored to
                             the unique needs of diverse industries.
@@ -1061,7 +1269,7 @@ const CloudServices = () => {
                                         className="
                     mt-5
                     text-center
-                    text-gray-300
+                    text-gray-400
                     text-lg
                     leading-8
                   "
@@ -1074,8 +1282,6 @@ const CloudServices = () => {
                     </div>
                 </div>
             </section>
-
-
         </main>
     );
 };

@@ -1,4 +1,4 @@
-import consultationImg from "../../assets/consultation.png";
+import consultationImg from "../../assets/consultation-form.webp";
 import { ChevronDown } from "lucide-react";
 
 export default function ConsultationSection() {
@@ -89,7 +89,9 @@ sm:max-h-none
                         >
                             <img
                                 src={consultationImg}
-                                alt=""
+                                alt="Biosoftech free software consultation booking form illustration"
+                                width="500"
+                                height="620"
                                 className="
                 w-full
                 h-full
@@ -124,7 +126,9 @@ sm:max-h-none
                         >
                             <img
                                 src={consultationImg}
-                                alt=""
+                                alt="Biosoftech consultation decorative thumbnail for booking"
+                                width="260"
+                                height="220"
                                 className="
                 w-full
                 h-full
@@ -218,7 +222,9 @@ lg:h-[700px]
 
                             <div className="relative">
 
+                                <label htmlFor="consultation-service" className="sr-only">How Can We Help You?</label>
                                 <select
+                                    id="consultation-service"
                                     className="
                   w-full
 

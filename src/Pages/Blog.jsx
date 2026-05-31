@@ -1,3 +1,4 @@
+import SEO from "../components/seo/SEO";
 import React from 'react'
 
 const Blog = () => {
@@ -36,9 +37,13 @@ const Blog = () => {
         },
     ];
     return (
-
         <>
-
+            <SEO
+                title="Blog – Software Development Insights | Biosoftech Solutions"
+                description="Read the latest articles on AI automation, software development, cloud computing, and digital transformation from Biosoftech Solutions."
+                keywords="software development blog, AI automation, cloud computing, web development, technology insights"
+                ogUrl="https://www.biosoftech.com/blog"
+            />
             <section className="relative overflow-hidden bg-[#f7f7fb]">
   
                 {/* dotted background */}
@@ -125,6 +130,8 @@ const Blog = () => {
 
                             <img
                                 src="/news-card.png"
+                                width="170"
+                                height="120"
                                 className="
                 absolute
                 left-[10%]
@@ -138,6 +145,8 @@ const Blog = () => {
 
                             <img
                                 src="/browser-card.png"
+                                width="190"
+                                height="140"
                                 className="
                 absolute
                 left-[5%]
@@ -151,6 +160,8 @@ const Blog = () => {
 
                             <img
                                 src="/megaphone.png"
+                                width="180"
+                                height="140"
                                 className="
                 absolute
                 right-[5%]
@@ -164,6 +175,8 @@ const Blog = () => {
 
                             <img
                                 src="/search.png"
+                                width="170"
+                                height="120"
                                 className="
                 absolute
                 right-[0]
@@ -177,6 +190,8 @@ const Blog = () => {
 
                             <img
                                 src="/girl.png"
+                                width="650"
+                                height="800"
                                 className="
                 relative
                 z-30
@@ -217,6 +232,8 @@ const Blog = () => {
 
                                     <img
                                         src={blog.image}
+                                        width="400"
+                                        height="210"
                                         className="
                     w-full
                     h-[210px]
@@ -269,8 +286,8 @@ const Blog = () => {
                                     <p
                                         className="
                     mt-4
-                    text-[#777]
-                    leading-[42px] md:leading-[28px] lg:leading-[42px]
+                    text-[#555]
+                    leading-[24px] sm:leading-[28px] md:leading-[28px] lg:leading-[42px]
                     text-[15px]
                   "
                                     >
@@ -283,6 +300,8 @@ const Blog = () => {
 
                                         <img
                                             src="/logo-small.png"
+                                            width="36"
+                                            height="36"
                                             className="
                       w-[36px]
                       h-[36px]
@@ -290,11 +309,11 @@ const Blog = () => {
                     "
                                         />
 
-                                        <span className="text-[#666]">
+                                        <span className="text-[#444]">
                                             Biosoftech
                                         </span>
 
-                                        <span className="text-[#999]">
+                                        <span className="text-[#666]">
                                             {blog.date}
                                         </span>
 

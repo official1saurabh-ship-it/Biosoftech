@@ -1,19 +1,21 @@
-import wordpressDevelopment from "../assets/WordPress-Services2.png";
-import laptopMockup from "../assets/laptop-screen-website-mockup.webp";
-import manImage from "../assets/Website-Design-development.jpg";
+import SEO from "../components/seo/SEO";
+import wordpressDevelopment from "../assets/webdev-multilingual-services.webp";
+import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import manImage from "../assets/webdev-consultant.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import solar from "../assets/solar.webp";
-import max from "../assets/max.webp";
-import intime from "../assets/intime.webp";
-import sigma from "../assets/sigma.webp";
-import mothers from "../assets/Mothers-care.webp";
-import happyIndia from "../assets/happy-India.webp";
-import hospitality from "../assets/Designer-Hospitality.webp";
+import solar from "../assets/webdev-portfolio-solar.webp";
+import max from "../assets/webdev-portfolio-max.webp";
+import intime from "../assets/webdev-portfolio-intime.webp";
+import sigma from "../assets/webdev-portfolio-sigma.webp";
+import mothers from "../assets/webdev-portfolio-mothers-care.webp";
+import happyIndia from "../assets/webdev-portfolio-happy-india.webp";
+import hospitality from "../assets/webdev-portfolio-designer-hospitality.webp";
 import {
     Users,
     PackageSearch,
@@ -52,10 +54,10 @@ import {
     Factory,
 } from "lucide-react";
 
-import analysisImg from "../assets/icon1.png";
-import strategyImg from "../assets/icon2.png";
-import clientImg from "../assets/icon3.png";
-import executionImg from "../assets/icon4.png";
+import analysisImg from "../assets/webdev-process-analysis.png";
+import strategyImg from "../assets/webdev-process-strategy.png";
+import clientImg from "../assets/webdev-process-client-input.png";
+import executionImg from "../assets/webdev-process-execution.png";
 
 
 
@@ -63,13 +65,14 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 
-import customAppImage from "../assets/custom-app.png";
+import customAppImage from "../assets/webdev-custom-app-benefits.webp";
 
-import dreamWebsite from "../assets/best-web-development-in-lucknow.webp";
+import dreamWebsite from "../assets/webdev-dream-website.webp";
 
 
 
 const WebDevelopment = () => {
+    const navigate = useNavigate();
     const [active, setActive] = useState(1);
 
     const steps = [
@@ -242,7 +245,13 @@ const WebDevelopment = () => {
 
     return (
         <>
-            <section className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
+            <SEO
+                title="Web Development Company – Custom Website Development | Biosoftech"
+                description="Biosoftech Solutions builds modern, responsive websites and web applications. Corporate sites, e-commerce stores, and custom portals with 500+ projects delivered."
+                keywords="web development company, website development, custom web applications, e-commerce development, responsive websites, India"
+                ogUrl="https://www.biosoftech.com/web-development"
+            />
+            <section aria-label="Web development hero banner" className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
@@ -258,18 +267,18 @@ const WebDevelopment = () => {
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
-                                <img src="/logos/clutch.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/upwork.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-review.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-partner.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/clutch.png" alt="Clutch" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/upwork.png" alt="Upwork" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/google-review.png" alt="Google Reviews" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/google-partner.png" alt="Google Partner" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
-                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
+                                <button onClick={() => navigate("/contact")} className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
                                 <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">OUR SERVICES ⊕</button>
                             </div>
                         </div>
                         <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="Website mockup on laptop" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
+                            <img src={laptopMockup} alt="Website mockup on laptop" fetchpriority="high" width="800" height="500" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
                         </div>
                     </div>
                 </div>
@@ -303,6 +312,9 @@ const WebDevelopment = () => {
                             <img
                                 src={wordpressDevelopment}
                                 alt="Multilingual Development"
+                                loading="lazy"
+                                width="400"
+                                height="500"
                                 className="w-full object-contain"
                             />
                         </div>
@@ -376,6 +388,7 @@ const WebDevelopment = () => {
 
                             {/* BUTTON */}
                             <button
+                                onClick={() => navigate("/contact")}
                                 className="
                 mt-8
                 flex
@@ -404,6 +417,9 @@ const WebDevelopment = () => {
                             <img
                                 src={manImage}
                                 alt="Consultant"
+                                loading="lazy"
+                                width="330"
+                                height="400"
                                 className="w-full max-w-[330px] object-contain"
                             />
                         </div>
@@ -461,6 +477,9 @@ const WebDevelopment = () => {
                                         <img
                                             src={image}
                                             alt={`portfolio-${index}`}
+                                            loading="lazy"
+                                            width="1200"
+                                            height="800"
                                             className="
                       w-full
                       max-w-[1200px]
@@ -502,7 +521,7 @@ const WebDevelopment = () => {
 
                     {/* Top Row */}
 
-                    <div className="grid md:grid-cols-2 gap-16 mt-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
 
                         {/* Step 2 */}
 
@@ -510,7 +529,10 @@ const WebDevelopment = () => {
 
                             <img
                                 src={steps[1].image}
-                                alt=""
+                                alt={steps[1].title}
+                                loading="lazy"
+                                width="224"
+                                height="224"
                                 className={`
                 w-56 h-56 object-contain
                 transition-all duration-500
@@ -519,11 +541,11 @@ const WebDevelopment = () => {
                             />
 
                             <div className="text-center">
-                                <h3 className="text-4xl font-bold text-[#0D1023] mb-5">
+                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mb-5">
                                     {steps[1].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-xl leading-10 max-w-md">
+                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
                                     {steps[1].desc}
                                 </p>
 
@@ -548,7 +570,10 @@ const WebDevelopment = () => {
 
                             <img
                                 src={steps[3].image}
-                                alt=""
+                                alt={steps[3].title}
+                                loading="lazy"
+                                width="224"
+                                height="224"
                                 className={`
                 w-56 h-56 object-contain
                 transition-all duration-500
@@ -557,11 +582,11 @@ const WebDevelopment = () => {
                             />
 
                             <div className="text-center">
-                                <h3 className="text-4xl font-bold text-[#0D1023] mb-5">
+                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mb-5">
                                     {steps[3].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-xl leading-10 max-w-md">
+                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
                                     {steps[3].desc}
                                 </p>
 
@@ -587,7 +612,7 @@ const WebDevelopment = () => {
 
                     {/* Bottom Row */}
 
-                    <div className="grid md:grid-cols-2 gap-16 mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
 
                         {/* Step 1 */}
 
@@ -608,18 +633,21 @@ const WebDevelopment = () => {
                                     01
                                 </button>
 
-                                <h3 className="text-4xl font-bold text-[#0D1023] mt-5 mb-5">
+                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mt-5 mb-5">
                                     {steps[0].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-xl leading-10 max-w-md">
+                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
                                     {steps[0].desc}
                                 </p>
                             </div>
 
                             <img
                                 src={steps[0].image}
-                                alt=""
+                                alt={steps[0].title}
+                                loading="lazy"
+                                width="224"
+                                height="224"
                                 className={`
                 w-56 h-56 object-contain
                 transition-all duration-500
@@ -647,18 +675,21 @@ const WebDevelopment = () => {
                                     03
                                 </button>
 
-                                <h3 className="text-4xl font-bold text-[#0D1023] mt-5 mb-5">
+                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mt-5 mb-5">
                                     {steps[2].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-xl leading-10 max-w-md">
+                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
                                     {steps[2].desc}
                                 </p>
                             </div>
 
                             <img
                                 src={steps[2].image}
-                                alt=""
+                                alt={steps[2].title}
+                                loading="lazy"
+                                width="224"
+                                height="224"
                                 className={`
                 w-56 h-56 object-contain
                 transition-all duration-500
@@ -681,6 +712,9 @@ const WebDevelopment = () => {
                             <img
                                 src={dreamWebsite}
                                 alt="Dream Website"
+                                loading="lazy"
+                                width="900"
+                                height="600"
                                 className="w-full max-w-[900px] object-contain"
                             />
                         </div>
@@ -692,14 +726,20 @@ const WebDevelopment = () => {
                                 Get Started With Building Your Dream Website
                             </h2>
 
-                            <p className="text-[#222] text-lg md:text-xl leading-relaxed mb-10">
+                            <p className="text-[#222] text-lg md:text-xl leading-relaxed mb-6">
                                 Are you in search of a top-notch software and website development company in
                                 Lucknow? Look no further! At Biosoftech Solutions, we're
                                 dedicated to transforming your ideas into reality with powerful,
                                 future-ready technology.
                             </p>
 
+                            <p className="text-[#222] text-lg md:text-xl leading-relaxed mb-10">
+                                From websites and mobile apps to desktop software, cloud platforms, AI automation, and industry-specific systems (schools, hotels, restaurants, billing, pathology labs, staff management), we deliver solutions that help businesses scale and succeed.
+                            </p>
 
+                            <button onClick={() => navigate("/contact")} className="px-8 py-4 bg-[#ffba00] text-black font-semibold uppercase hover:brightness-95 transition text-sm sm:text-base">
+                                Book a Free Consultation Today!
+                            </button>
 
                         </div>
 
@@ -713,7 +753,7 @@ const WebDevelopment = () => {
             <section className="relative bg-[#f8f8f8] py-20 overflow-hidden">
                 {/* Vertical Text */}
                 <div className="hidden xl:block absolute left-8 top-32 h-full">
-                    <h2
+                    <h3
                         className="text-[78px] font-light tracking-[8px] text-transparent uppercase"
                         style={{
                             WebkitTextStroke: "1px #d9d9d9",
@@ -722,7 +762,7 @@ const WebDevelopment = () => {
                         }}
                     >
                         CUSTOM APPLICATION
-                    </h2>
+                    </h3>
                 </div>
 
                 <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
@@ -745,7 +785,7 @@ const WebDevelopment = () => {
                     </div>
 
                     {/* Cards */}
-                    <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                         {services.map((service, index) => {
                             const Icon = service.icon;
 
@@ -802,6 +842,9 @@ const WebDevelopment = () => {
                         <img
                             src={customAppImage}
                             alt="Custom Application"
+                            loading="lazy"
+                            width="1920"
+                            height="1080"
                             className="w-full h-full object-cover"
                         />
                     </motion.div>
@@ -821,7 +864,7 @@ const WebDevelopment = () => {
                             immediate requirements while preparing you for future growth.
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
                             {benefits.map((item, index) => (
                                 <div key={index}>
                                     <div className="flex items-center gap-3 mb-3">
@@ -846,6 +889,23 @@ const WebDevelopment = () => {
                 </div>
             </section>
 
+
+            <section className="bg-[#1d2b42] py-16 md:py-20">
+                <div className="max-w-4xl mx-auto px-6 text-center">
+                    <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
+                        Ready to Transform Your Business?
+                    </h2>
+                    <p className="mt-6 text-white/80 text-lg md:text-xl leading-relaxed">
+                        Let&apos;s discuss your project and explore how Biosoftech Solutions can help you achieve your goals with powerful web, mobile, desktop, cloud, AI automation, and industry-specific software solutions.
+                    </p>
+                    <div className="mt-8">
+                        <button onClick={() => navigate("/contact")} className="inline-flex items-center gap-3 bg-[#ffba00] hover:brightness-95 text-black text-xl font-semibold px-10 py-5 rounded-full transition-all duration-300 hover:scale-105">
+                            Start Your Project Today
+                            <ArrowRight size={24} />
+                        </button>
+                    </div>
+                </div>
+            </section>
 
             <section className="bg-white py-8 md:py-10">
                 <div className="max-w-[1880px] mx-auto px-7">
@@ -933,6 +993,7 @@ const WebDevelopment = () => {
                     {/* Button */}
                     <div className="mt-8">
                         <button
+                            onClick={() => navigate("/contact")}
                             className="
               inline-flex
               items-center

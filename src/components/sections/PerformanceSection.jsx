@@ -1,4 +1,4 @@
-import performanceImg from "../../assets/performance.webp";
+import performanceImg from "../../assets/home-performance-stats.webp";
 
 export default function PerformanceSection() {
   return (
@@ -80,9 +80,9 @@ export default function PerformanceSection() {
             <div className="flex gap-8 sm:gap-12 lg:gap-16 mt-10 lg:mt-16 flex-wrap">
 
               <div>
-                <h3 className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
                   200+
-                </h3>
+                </span>
 
                 <p className="text-base sm:text-[22px]">
                   Projects Delivered
@@ -90,9 +90,9 @@ export default function PerformanceSection() {
               </div>
 
               <div>
-                <h3 className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
                   500+
-                </h3>
+                </span>
 
                 <p className="text-base sm:text-[22px]">
                   Clients Served
@@ -100,9 +100,9 @@ export default function PerformanceSection() {
               </div>
 
               <div>
-                <h3 className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
                   80%
-                </h3>
+                </span>
 
                 <p className="text-base sm:text-[22px]">
                   Productivity Boost
@@ -127,7 +127,9 @@ export default function PerformanceSection() {
 
             <img
               src={performanceImg}
-              alt="Performance"
+              alt="Biosoftech performance metrics and dashboard analytics visualization"
+              width="650"
+              height="400"
               className="
               w-[650px]
               max-w-full

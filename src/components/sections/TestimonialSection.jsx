@@ -234,7 +234,7 @@ export default function TestimonialSection() {
                         className="
             relative
 
-            px-10
+            px-5
             sm:px-12
             md:px-6
             lg:px-10
@@ -248,6 +248,7 @@ export default function TestimonialSection() {
                         {/* LEFT */}
 
                         <button
+                            aria-label="Previous testimonial"
                             className="
               prev
 
@@ -281,6 +282,7 @@ export default function TestimonialSection() {
                         {/* RIGHT */}
 
                         <button
+                            aria-label="Next testimonial"
                             className="
               next
 
@@ -356,6 +358,7 @@ export default function TestimonialSection() {
 
                             className="
 !overflow-visible
+min-h-[360px]
 
 [&_.swiper-wrapper]:items-stretch
 "
@@ -497,25 +500,27 @@ text-gray-700
 
                                         <div className="pt-8">
 
-                                            <a
-                                                href={GOOGLE_REVIEWS_URL}
+                        <a
+                            href={GOOGLE_REVIEWS_URL}
 
-                                                target="_blank"
+                            target="_blank"
 
-                                                rel="noreferrer"
+                            rel="noreferrer"
 
-                                                className="
-inline-block
+                            aria-label="Read more Google reviews about Biosoftech Solutions"
 
-text-gray-400
+                            className="
+              inline-block
 
-hover:text-black
+              text-gray-600
 
-transition
-"
-                                            >
-                                                Read more
-                                            </a>
+              hover:text-black
+
+              transition
+            "
+                        >
+                            Read more reviews
+                        </a>
 
                                         </div>
 

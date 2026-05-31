@@ -1,14 +1,16 @@
-import woman from "../../assets/bg-img1-2.png";
-import bg from "../../assets/GR_21-BG.png";
-import f4 from "../../assets/f4-bg-img-1.png";
+import woman from "../../assets/whychooseus-woman.webp";
+import bg from "../../assets/whychooseus-bg-pattern.webp";
+import f4 from "../../assets/whychooseus-floating-element.webp";
 
 import {
   motion,
   useScroll,
   useTransform,
+  useReducedMotion,
 } from "framer-motion";
 
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const features = [
   {
@@ -37,8 +39,9 @@ const features = [
 ];
 
 export default function WhyChooseUs() {
-
+  const navigate = useNavigate();
   const sectionRef = useRef(null);
+  const prefersReducedMotion = useReducedMotion();
 
   const { scrollYProgress } =
     useScroll({
@@ -50,9 +53,7 @@ export default function WhyChooseUs() {
       ],
     });
 
-  /* BACKGROUND */
-
-  /* stable until section center */
+  const shouldAnimate = !prefersReducedMotion;
 
   const bgTopScaleY =
     useTransform(
@@ -61,16 +62,12 @@ export default function WhyChooseUs() {
       [1, 0]
     );
 
-  /* image drop later */
-
   const womanY =
     useTransform(
       scrollYProgress,
       [0.68, 0.84],
       [0, 700]
     );
-
-  /* quick disappear */
 
   const womanOpacity =
     useTransform(
@@ -114,10 +111,12 @@ export default function WhyChooseUs() {
 
         <motion.img
           src={bg}
-          alt=""
+          alt="Decorative background pattern for why choose us section"
+          width="1920"
+          height="1080"
 
           style={{
-            scaleY: bgTopScaleY,
+            scaleY: shouldAnimate ? bgTopScaleY : 1,
           }}
 
           className="
@@ -137,7 +136,9 @@ export default function WhyChooseUs() {
 
         <img
           src={f4}
-          alt=""
+          alt="Decorative floating element overlay for why choose us background"
+          width="1920"
+          height="1080"
 
           className="
           absolute
@@ -283,6 +284,7 @@ to-[#12003f]/40
             >
 
               <button
+                onClick={() => navigate("/contact")}
                 className="
                 h-[54px]
                 sm:h-[64px]
@@ -307,6 +309,7 @@ to-[#12003f]/40
               </button>
 
               <button
+                aria-label="Get Quote"
                 className="
                 -ml-5
 
@@ -338,8 +341,8 @@ to-[#12003f]/40
 
           <motion.div
             style={{
-              y: womanY,
-              opacity: womanOpacity,
+              y: shouldAnimate ? womanY : 0,
+              opacity: shouldAnimate ? womanOpacity : 1,
             }}
 
             className="
@@ -360,7 +363,9 @@ xl:h-[600px]
 
             <img
               src={woman}
-              alt=""
+              alt="Biosoftech professional woman illustration representing a valued customer"
+              width="450"
+              height="600"
 
               className="
 relative

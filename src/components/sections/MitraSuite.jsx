@@ -1,30 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaStore, FaHotel, FaSchool, FaHospital, FaBuilding } from 'react-icons/fa';
+import { Store, Hotel, School, Building2 } from 'lucide-react';
 
 const products = [
   {
     name: "Restro Mitra",
     desc: "Complete Restaurant Management System with POS, Inventory, and Table Management.",
-    icon: <FaStore className="text-4xl text-orange-500" />,
+    icon: <Store className="text-4xl text-orange-500" />,
     link: "https://restaurants.biosoftech.in/"
   },
   {
     name: "Hotel Mitra",
     desc: "Seamless Hotel Booking and Management System for properties of all sizes.",
-    icon: <FaHotel className="text-4xl text-blue-500" />,
+    icon: <Hotel className="text-4xl text-blue-500" />,
     link: "https://hotel.biosoftech.in/"
   },
   {
     name: "Skola Mitra",
     desc: "All-in-one School Management System for administrators, teachers, and parents.",
-    icon: <FaSchool className="text-4xl text-purple-500" />,
+    icon: <School className="text-4xl text-purple-500" />,
     link: "https://school.biosoftech.in/"
   },
   {
     name: "Billing Mitra",
     desc: "GST-compliant Sales and Billing System for retail and wholesale businesses.",
-    icon: <FaBuilding className="text-4xl text-green-500" />,
+    icon: <Building2 className="text-4xl text-green-500" />,
     link: "https://billing.biosoftech.in/signin"
   }
 ];
@@ -42,7 +42,7 @@ const MitraSuite = () => {
               Industry-specific software solutions designed to simplify operations and boost productivity for your business.
             </p>
           </div>
-          <button className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-[#09090F] text-white rounded-full font-bold uppercase tracking-widest hover:bg-purple-600 transition-all text-[11px] sm:text-xs md:text-sm whitespace-nowrap self-start lg:self-auto">
+          <button className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-[#09090F] text-white rounded-full font-bold uppercase tracking-widest hover:bg-purple-600 transition-all text-[11px] sm:text-xs md:text-sm whitespace-nowrap self-start lg:self-auto min-h-[44px]">
             View All Products
           </button>
         </div>
@@ -58,7 +58,7 @@ const MitraSuite = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-10 sm:p-6 md:p-8 lg:p-10 bg-gray-50 rounded-[3rem] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-transparent transition-all"
+              className="group p-6 sm:p-6 md:p-8 lg:p-10 bg-gray-50 rounded-[3rem] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-transparent transition-all"
             >
               <div className="mb-8 transform group-hover:scale-110 transition-transform">
                 {product.icon}

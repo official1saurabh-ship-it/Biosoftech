@@ -1,3 +1,4 @@
+import SEO from "../components/seo/SEO";
 import React from 'react'
 
 const WebsiteDevelopment = () => {
@@ -29,6 +30,12 @@ const WebsiteDevelopment = () => {
     ];
     return (
         <>
+            <SEO
+                title="Website Development Services – Responsive Web Design | Biosoftech"
+                description="Get a modern, responsive website built by Biosoftech Solutions. Tailored corporate sites, e-commerce platforms, and multilingual websites."
+                keywords="website development services, responsive web design, corporate website, e-commerce website, multilingual website, Lucknow"
+                ogUrl="https://www.biosoftech.com/website-development"
+            />
             <section className="bg-[#f8f8f8] py-16 sm:py-20 md:py-24">
                 <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
 

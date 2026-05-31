@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=League+Spartan:wght@400;700;800;900&display=swap');
 
 @theme {
   --color-primary-1: #A249ED;
@@ -32,6 +31,10 @@
   transition-timing-function: linear !important;
 }
 
+.swiper:not(.brand-swiper) .swiper-wrapper {
+  transition-timing-function: ease-in-out;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -39,6 +42,7 @@
 img {
   max-width: 100%;
   height: auto;
+  aspect-ratio: auto;
 }
 
 input, select, textarea, button {
@@ -75,3 +79,5 @@ input, select, textarea, button {
   justify-content: center;
   align-items: center;
 }
+
+/* font */

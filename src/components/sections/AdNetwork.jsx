@@ -5,10 +5,11 @@ import {
 } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import advertiser from "../../assets/Advertiser.png";
-import publisher from "../../assets/Publisher.png";
-import affiliate from "../../assets/Affiliate.png";
+import advertiser from "../../assets/adnetwork-partner.png";
+import publisher from "../../assets/adnetwork-publisher.webp";
+import affiliate from "../../assets/adnetwork-affiliate.webp";
 
 const WEBSITE_URL = "https://www.biosoftech.com";
 
@@ -73,6 +74,7 @@ const cards = [
 ];
 
 export default function AdNetworkSection() {
+  const navigate = useNavigate();
   return (
     <section className="bg-[#f7f4fb] overflow-hidden">
 
@@ -114,9 +116,8 @@ export default function AdNetworkSection() {
           </div>
 
           <a
-            href={WEBSITE_URL}
-            target="_blank"
-            rel="noreferrer"
+            href="/contact"
+            aria-label="Visit our flagship solutions page"
             className="
   group
   mt-6
@@ -382,6 +383,9 @@ cursor-pointer
 
         <motion.img
           src={image}
+          alt={title}
+          width="620"
+          height="460"
 
           whileHover={{
             scale: 1.05,
@@ -421,9 +425,8 @@ ${!isDesktop
         >
 
           <a
-            href={WEBSITE_URL}
-            target="_blank"
-            rel="noreferrer"
+            href="/contact"
+            aria-label="Learn more about this digital solution"
             className="
 w-[120px]
 h-[120px]
@@ -467,7 +470,7 @@ border-white
             />
 
             <p>
-              Read more
+              Learn More
             </p>
 
             <ArrowRight
@@ -475,7 +478,7 @@ border-white
             />
 
             <p>
-              Read more
+              Learn More
             </p>
 
           </a>

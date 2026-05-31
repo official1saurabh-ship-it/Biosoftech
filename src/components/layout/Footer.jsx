@@ -6,7 +6,7 @@ const socialLinks = [
   { Icon: FaFacebookF, href: 'https://www.facebook.com/biosoftechsoftwaresolutions', label: 'Facebook' },
   { Icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/biosoftechsoftwaresolutions/', label: 'LinkedIn' },
   { Icon: FaInstagram, href: 'https://www.instagram.com/biosoftechsoftwaresolutions/', label: 'Instagram' },
-  { Icon: FaYoutube, href: 'https://www.biosoftech.com', label: 'Biosoftech Website' },
+  { Icon: FaYoutube, href: '/contact', label: 'Biosoftech Website' },
   { Icon: FaTwitter, href: 'https://x.com/biosoftech', label: 'X' },
 ];
 
@@ -19,14 +19,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 lg:gap-12 mb-12 sm:mb-16">
           {/* Company Info */}
           <div>
-            <a
-              href="https://www.biosoftech.com"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/contact"
               className="inline-block text-3xl font-bold text-primary-1 mb-8"
             >
               Biosoftech
-            </a>
+            </Link>
             <p className="text-gray-600 mb-8 leading-relaxed">
               We are a team of 50+ professionals with more than 10 years of experience in delivering custom software development, mobile apps, AI automation, and industry-specific solutions. Don't believe it? See it for yourself!
             </p>
@@ -156,6 +154,7 @@ const Footer = () => {
             >
               <button
                 onClick={() => setCallPopup({ visible: false, number: '' })}
+                aria-label="Close popup"
                 className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors text-gray-500"
               >
                 <FaTimes size={14} />

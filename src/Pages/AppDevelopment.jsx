@@ -1,5 +1,89 @@
+import SEO from "../components/seo/SEO";
 import { useState } from "react";
-import laptopMockup from "../assets/laptop-screen-website-mockup.webp";
+import { useNavigate } from "react-router-dom";
+import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import thirdImageAad from "../assets/app-lift-brand.webp";
+import fourthImageAad from "../assets/app-user-centric.png";
+import sixthImageAad from "../assets/app-unleash-power.webp";
+import step1Img from "../assets/process-step-1.png";
+import step2Img from "../assets/process-step-2.png";
+import step3Img from "../assets/process-step-3.png";
+import step4Img from "../assets/process-step-4.png";
+import step5Img from "../assets/process-step-5.png";
+import step6Img from "../assets/process-step-6.png";
+import step7Img from "../assets/process-step-7.png";
+import step8Img from "../assets/process-step-8.png";
+import scalable1 from "../assets/scalable1.png";
+import scalable2 from "../assets/scalable2.png";
+import scalable3 from "../assets/scalable3.png";
+import scalable4 from "../assets/scalable4.png";
+import techJava from "../assets/technology/java logo.png";
+import techCpp from "../assets/technology/c++logo.webp";
+import techKotlin from "../assets/technology/kotlinlogo.png";
+import techC from "../assets/technology/clogo.png";
+import techAndroidStudio from "../assets/technology/androidstudio.webp";
+import techAndroidIde from "../assets/technology/androidide.webp";
+import techIntellij from "../assets/technology/intellijlogo.webp";
+import techVs from "../assets/technology/visualstudio logo.png";
+import techCorona from "../assets/technology/coronasdk logo.png";
+import techXamarin from "../assets/technology/xamarian.png";
+import techPhonegap from "../assets/technology/phonegap logo.png";
+import techIonic from "../assets/technology/ioniclogo.png";
+import techAndroidSdk from "../assets/technology/androidsdk.jpg";
+import techTitanium from "../assets/technology/titanium mobile sdk.png";
+import techReactNative from "../assets/technology/reactnative.png";
+import stepIconBusinessAnalysis from "../assets/step-icon-business-analysis.png";
+import stepIconDiscovery from "../assets/step-icon-discovery.webp";
+import stepIconUxDesign from "../assets/step-icon-ux-design.png";
+import stepIconDevelopment from "../assets/step-icon-development.png";
+import stepIconTesting from "../assets/step-icon-testing.png";
+import stepIconMaintenance from "../assets/step-icon-maintenance.png";
+import appTechJavascript from "../assets/app-tech-stack/app-tech-javascript.svg";
+import appTechTypescript from "../assets/app-tech-stack/app-tech-typescript.svg";
+import appTechVuejs from "../assets/app-tech-stack/app-tech-vuejs.svg";
+import appTechAngular from "../assets/app-tech-stack/app-tech-angular.svg";
+import appTechFlutter from "../assets/app-tech-stack/app-tech-flutter.svg";
+import appTechKotlin from "../assets/app-tech-stack/app-tech-kotlin.svg";
+import appTechSwift from "../assets/app-tech-stack/app-tech-swift.svg";
+import appTechReact from "../assets/app-tech-stack/app-tech-react.svg";
+import appTechHtml from "../assets/app-tech-stack/app-tech-html.svg";
+import appTechCss from "../assets/app-tech-stack/app-tech-css.svg";
+import appTechNodejs from "../assets/app-tech-stack/app-tech-nodejs.svg";
+import appTechExpress from "../assets/app-tech-stack/app-tech-express.svg";
+import appTechPhp from "../assets/app-tech-stack/app-tech-php.svg";
+import appTechPython from "../assets/app-tech-stack/app-tech-python.svg";
+import appTechRubyOnRails from "../assets/app-tech-stack/app-tech-ruby-on-rails.svg";
+import appTechDjango from "../assets/app-tech-stack/app-tech-django.svg";
+import appTechJava from "../assets/app-tech-stack/app-tech-java.svg";
+import appTechSpring from "../assets/app-tech-stack/app-tech-spring.svg";
+import appTechMongodb from "../assets/app-tech-stack/app-tech-mongodb.png";
+import appTechMysql from "../assets/app-tech-stack/app-tech-mysql.png";
+import appTechPostgresql from "../assets/app-tech-stack/app-tech-postgresql.svg";
+import appTechFirebase from "../assets/app-tech-stack/app-tech-firebase.png";
+import appTechDocker from "../assets/app-tech-stack/app-tech-docker.svg";
+import appTechKubernetes from "../assets/app-tech-stack/app-tech-kubernetes.svg";
+import appTechJenkins from "../assets/app-tech-stack/app-tech-jenkins.svg";
+import appTechAnsible from "../assets/app-tech-stack/app-tech-ansible.svg";
+import appTechGitlab from "../assets/app-tech-stack/app-tech-gitlab.svg";
+import appTechTerraform from "../assets/app-tech-stack/app-tech-terraform.svg";
+import appTechCircleci from "../assets/app-tech-stack/app-tech-circleci.svg";
+import appTechChef from "../assets/app-tech-stack/app-tech-chef.svg";
+import appTechSelenium from "../assets/app-tech-stack/app-tech-selenium.svg";
+import appTechAppium from "../assets/app-tech-stack/app-tech-appium.svg";
+import appTechTestng from "../assets/app-tech-stack/app-tech-testng.svg";
+import appTechCucumber from "../assets/app-tech-stack/app-tech-cucumber.svg";
+import appTechPostman from "../assets/app-tech-stack/app-tech-postman.svg";
+import appTechJmeter from "../assets/app-tech-stack/app-tech-jmeter.svg";
+import appTechLoadrunner from "../assets/app-tech-stack/app-tech-loadrunner.svg";
+import appTechTestrail from "../assets/app-tech-stack/app-tech-testrail.svg";
+import androidIc1 from "../assets/android-ic1.svg";
+import androidIc2 from "../assets/android-ic2.svg";
+import androidIc3 from "../assets/android-ic3.svg";
+import androidIc4 from "../assets/android-ic4.svg";
+import androidIc5 from "../assets/android-ic5.svg";
+import androidIc6 from "../assets/android-ic6.svg";
+import img3 from "../assets/img3.webp";
+import letsCreateBigStories from "../assets/lets-create-big-stories.webp";
 import { ArrowUpRight } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import {
@@ -41,8 +125,11 @@ const ImageCard = ({ src, className = "" }) => {
             {/* Image */}
             <img
                 src={src}
-                alt=""
+                alt="Project showcase"
                 onLoad={() => setLoaded(true)}
+                loading="lazy"
+                width="800"
+                height="600"
                 className={`
           w-full
           h-full
@@ -60,12 +147,14 @@ const ImageCard = ({ src, className = "" }) => {
 };
 
 const AppDevelopment = () => {
+    const navigate = useNavigate();
     // 1. Rename 'active' states to be unique
     const [activeStep, setActiveStep] = useState(0);
     const [activeTechTab, setActiveTechTab] = useState("FRONTEND");
     const [active, setActive] = useState(0);
     const [open, setOpen] = useState("01");
 
+    const stepImages = [null, step1Img, step2Img, step3Img, step4Img, step5Img, step6Img, step7Img, step8Img];
     const process = [
         { id: 1, title: "CLIENT IDEA", desc: "We build a user story by asking questions.", img: "/process/client.png" },
         { id: 2, title: "BUSINESS ANALYSIS", desc: "We refer to the pieces as code development guidelines.", img: "/process/analysis.png" },
@@ -90,10 +179,10 @@ const AppDevelopment = () => {
     ];
 
     const stats = [
-        { icon: "/stats/experience.png", value: "10+", title: "Years of Experience" },
-        { icon: "/stats/project.png", value: "500+", title: "Successful Projects Delivered" },
-        { icon: "/stats/team.png", value: "50+", title: "Development Specialists" },
-        { icon: "/stats/rating.png", value: "99%", title: "Client Satisfaction Rate" },
+        { img: scalable1, value: "10+", title: "Years of Experience" },
+        { img: scalable2, value: "500+", title: "Successful Projects Delivered" },
+        { img: scalable3, value: "50+", title: "Development Specialists" },
+        { img: scalable4, value: "99%", title: "Client Satisfaction Rate" },
     ];
 
     // 2. Rename first techData to 'techCategoryData'
@@ -101,82 +190,99 @@ const AppDevelopment = () => {
         {
             title: "Languages",
             items: [
-                { icon: "/tech/java.png", name: "Java" },
-                { icon: "/tech/cpp.png", name: "C++" },
-                { icon: "/tech/kotlin.png", name: "Kotlin" },
-                { icon: "/tech/c.png", name: "C" },
+                { icon: techJava, name: "Java" },
+                { icon: techCpp, name: "C++" },
+                { icon: techKotlin, name: "Kotlin" },
+                { icon: techC, name: "C" },
             ],
         },
         {
             title: "Development Tools",
             items: [
-                { icon: "/tech/android-studio.png", name: "Android Studio" },
-                { icon: "/tech/android-ide.png", name: "Android-IDE" },
-                { icon: "/tech/intellij.png", name: "IntelliJ IDEA" },
-                { icon: "/tech/vs.png", name: "Visual Studio" },
+                { icon: techAndroidStudio, name: "Android Studio" },
+                { icon: techAndroidIde, name: "Android-IDE" },
+                { icon: techIntellij, name: "IntelliJ IDEA" },
+                { icon: techVs, name: "Visual Studio" },
             ],
         },
         {
             title: "Frameworks",
             items: [
-                { icon: "/tech/corona.png", name: "Corona SDK" },
-                { icon: "/tech/xamarin.png", name: "Xamarin" },
-                { icon: "/tech/phonegap.png", name: "PhoneGap" },
-                { icon: "/tech/ionic.png", name: "Ionic" },
+                { icon: techCorona, name: "Corona SDK" },
+                { icon: techXamarin, name: "Xamarin" },
+                { icon: techPhonegap, name: "PhoneGap" },
+                { icon: techIonic, name: "Ionic" },
             ],
         },
         {
             title: "Platforms",
             items: [
-                { icon: "/tech/android.png", name: "Android SDK" },
-                { icon: "/tech/titanium.png", name: "Titanium Mobile SDK" },
-                { icon: "/tech/xamarin.png", name: "Xamarin" },
-                { icon: "/tech/react.png", name: "React Native" },
+                { icon: techAndroidSdk, name: "Android SDK" },
+                { icon: techTitanium, name: "Titanium Mobile SDK" },
+                { icon: techXamarin, name: "Xamarin" },
+                { icon: techReactNative, name: "React Native" },
             ],
         },
     ];
 
     const steps = [
-        { title: "Planning", desc: "Firstly, we always begin by going in depth to understand the requirements and demands clients have.", icon: "/process/planning.svg" },
-        { title: "App Discovery", desc: "Then focusing on visions and goals, we create a functionality-loaded model.", icon: "/process/discovery.svg" },
-        { title: "UI/UX Designing", desc: "We devise layouts compelling enough to retain users and convert visitors.", icon: "/process/design.svg" },
-        { title: "App Development", desc: "Frontend and backend are integrated with database and APIs.", icon: "/process/development.svg" },
-        { title: "Testing & Launch", desc: "Testing is done thoroughly before deployment.", icon: "/process/testing.svg" },
-        { title: "Support & Maintenance", desc: "Performance-centric support after deployment.", icon: "/process/support.svg" },
+        { title: "Planning", desc: "Firstly, we always begin by going in depth to understand the requirements and demands clients have.", icon: stepIconBusinessAnalysis },
+        { title: "App Discovery", desc: "Then focusing on visions and goals, we create a functionality-loaded model.", icon: stepIconDiscovery },
+        { title: "UI/UX Designing", desc: "We devise layouts compelling enough to retain users and convert visitors.", icon: stepIconUxDesign },
+        { title: "App Development", desc: "Frontend and backend are integrated with database and APIs.", icon: stepIconDevelopment },
+        { title: "Testing & Launch", desc: "Testing is done thoroughly before deployment.", icon: stepIconTesting },
+        { title: "Support & Maintenance", desc: "Performance-centric support after deployment.", icon: stepIconMaintenance },
     ];
 
     // 3. Rename second techData to 'techTabsData'
     const techTabsData = {
         FRONTEND: [
-            { icon: "/tech/js.png", name: "Java Script" },
-            { icon: "/tech/ts.png", name: "Type Script" },
-            { icon: "/tech/vue.png", name: "Vue Js" },
-            { icon: "/tech/angular.png", name: "Angular" },
-            { icon: "/tech/flutter.png", name: "Flutter" },
-            { icon: "/tech/kotlin.png", name: "Kotlin" },
-            { icon: "/tech/swift.png", name: "Swift" },
-            { icon: "/tech/react.png", name: "React Js" },
-            { icon: "/tech/html.png", name: "Html 5" },
-            { icon: "/tech/css.png", name: "Css 3" },
+            { icon: appTechJavascript, name: "JavaScript" },
+            { icon: appTechTypescript, name: "TypeScript" },
+            { icon: appTechVuejs, name: "Vue.js" },
+            { icon: appTechAngular, name: "Angular" },
+            { icon: appTechFlutter, name: "Flutter" },
+            { icon: appTechKotlin, name: "Kotlin" },
+            { icon: appTechSwift, name: "Swift" },
+            { icon: appTechReact, name: "React" },
+            { icon: appTechHtml, name: "HTML5" },
+            { icon: appTechCss, name: "CSS3" },
         ],
         BACKEND: [
-            { icon: "/tech/node.png", name: "Node Js" },
-            { icon: "/tech/express.png", name: "Express" },
-            { icon: "/tech/php.png", name: "PHP" },
-            { icon: "/tech/laravel.png", name: "Laravel" },
+            { icon: appTechNodejs, name: "Node.js" },
+            { icon: appTechExpress, name: "Express" },
+            { icon: appTechPhp, name: "PHP" },
+            { icon: appTechPython, name: "Python" },
+            { icon: appTechRubyOnRails, name: "Ruby on Rails" },
+            { icon: appTechDjango, name: "Django" },
+            { icon: appTechJava, name: "Java" },
+            { icon: appTechSpring, name: "Spring" },
         ],
         DATABASE: [
-            { icon: "/tech/mongo.png", name: "MongoDB" },
-            { icon: "/tech/mysql.png", name: "MySQL" },
-            { icon: "/tech/postgres.png", name: "PostgreSQL" },
+            { icon: appTechMongodb, name: "MongoDB" },
+            { icon: appTechMysql, name: "MySQL" },
+            { icon: appTechPostgresql, name: "PostgreSQL" },
+            { icon: appTechFirebase, name: "Firebase" },
         ],
         DEVOPS: [
-            { icon: "/tech/docker.png", name: "Docker" },
-            { icon: "/tech/aws.png", name: "AWS" },
+            { icon: appTechDocker, name: "Docker" },
+            { icon: appTechKubernetes, name: "Kubernetes" },
+            { icon: appTechJenkins, name: "Jenkins" },
+            { icon: appTechAnsible, name: "Ansible" },
+            { icon: appTechGitlab, name: "GitLab" },
+            { icon: appTechTerraform, name: "Terraform" },
+            { icon: appTechCircleci, name: "CircleCI" },
+            { icon: appTechChef, name: "Chef" },
         ],
         "QUALITY ASSURANCE": [
-            { icon: "/tech/jest.png", name: "Jest" },
-            { icon: "/tech/cypress.png", name: "Cypress" },
+            { icon: appTechSelenium, name: "Selenium" },
+            { icon: appTechAppium, name: "Appium" },
+            { icon: appTechTestng, name: "TestNG" },
+            { icon: appTechCucumber, name: "Cucumber" },
+            { icon: appTechPostman, name: "Postman" },
+            { icon: appTechJmeter, name: "JMeter" },
+            { icon: appTechLoadrunner, name: "LoadRunner" },
+            { icon: appTechTestrail, name: "TestRail" },
         ],
     };
 
@@ -184,95 +290,90 @@ const AppDevelopment = () => {
         {
             title: "Mobile App",
             sub: "DEVELOPMENT",
-            image: "/services/mobile.jpg",
+            image: "/assets/mobile.jpg",
         },
 
         {
             title: "Website",
             sub: "DEVELOPMENT",
-            image: "/services/website.jpg",
+            image: "/assets/website.jpg",
         },
 
         {
             title: "E-commerce",
             sub: "DEVELOPMENT",
-            image: "/services/ecommerce.jpg",
+            image: "/assets/ecommerce.jpg",
         },
 
         {
             title: "Blockchain",
             sub: "DEVELOPMENT",
-            image: "/services/blockchain.jpg",
+            image: "/assets/blockchain.jpg",
         },
 
         {
             title: "Game",
             sub: "DEVELOPMENT",
-            image: "/services/game.jpg",
+            image: "/assets/game.jpg",
         },
 
         {
             title: "Salesforce",
             sub: "SOLUTIONS",
-            image: "/services/salesforce.jpg",
+            image: "/assets/salesforce.jpg",
         },
 
         {
             title: "AI & ML",
             sub: "SOLUTIONS",
-            image: "/services/ai.jpg",
+            image: "/assets/ai.jpg",
         },
 
         {
             title: "IoT & Embedded",
             sub: "SOLUTIONS",
-            image: "/services/iot.jpg",
+            image: "/assets/iot.jpg",
         },
     ];
 
     const platforms = [
         {
-            icon: "/platform/mobile.svg",
+            icon: androidIc1,
             title: "Mobile &",
             subtitle: "Tablets",
         },
 
         {
-            icon: "/platform/tv.svg",
+            icon: androidIc2,
             title: "Smart TV",
         },
 
         {
-            icon: "/platform/watch.svg",
+            icon: androidIc3,
             title: "Wearable",
             subtitle: "Devices",
         },
 
         {
-            icon: "/platform/xr.svg",
+            icon: androidIc4,
             title: "Android",
             subtitle: "XR",
         },
 
         {
-            icon: "/platform/speaker.svg",
+            icon: androidIc5,
             title: "Smart",
             subtitle: "Speaker",
         },
 
         {
-            icon: "/platform/car.svg",
+            icon: androidIc6,
             title: "Android",
             subtitle: "Automotive",
         },
     ];
 
-    const images = [
-        "/company/img1.jpg",
-        "/company/img2.jpg",
-        "/company/img3.jpg",
-        "/company/img4.jpg",
-    ];
+
 
 
     const faqData = [
@@ -368,8 +469,14 @@ const AppDevelopment = () => {
 
     return (
         <>
+            <SEO
+                title="App Development Company – iOS & Android App Developers | Biosoftech"
+                description="Biosoftech Solutions builds high-performance iOS, Android, and cross-platform apps. 500+ projects delivered. Expert UI/UX, scalable architecture, and end-to-end app development."
+                keywords="app development company, Android app development, iOS app development, cross-platform apps, mobile app developers Mumbai, Flutter, React Native"
+                ogUrl="https://www.biosoftech.com/app-development"
+            />
             {/* Section 1: Hero */}
-            <section className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
+            <section aria-label="App development hero banner" className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
@@ -389,18 +496,18 @@ const AppDevelopment = () => {
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
-                                <img src="/logos/clutch.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/upwork.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-review.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-partner.png" alt="" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/clutch.png" alt="Clutch review badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/upwork.png" alt="Upwork badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/google-review.png" alt="Google Reviews badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                                <img src="/logos/google-partner.png" alt="Google Partner badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
                             </div>
                             <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
-                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
+                                <button onClick={() => navigate("/contact")} className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
                                 <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">EXPLORE APPS ⊕</button>
                             </div>
                         </div>
                         <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="Website mockup on laptop" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
+                            <img src={laptopMockup} alt="Website mockup on laptop" fetchpriority="high" width="800" height="500" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
                         </div>
                     </div>
                 </div>
@@ -427,10 +534,11 @@ const AppDevelopment = () => {
                             </button>
                         </div>
                         <div className="relative flex justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[650px] mt-8 sm:mt-12 lg:mt-0">
-                            <img src="/apps/app1.png" alt="" className="absolute left-[2%] sm:left-[0%] md:left-[5%] top-[22%] sm:top-[20%] md:top-[26%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
-                            <img src="/apps/app2.png" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-20 drop-shadow-2xl" />
-                            <img src="/apps/app3.png" alt="" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-10 drop-shadow-2xl" />
-                            <img src="/apps/app4.png" alt="" className="absolute right-[2%] sm:right-[0%] md:right-[8%] top-[24%] sm:top-[20%] md:top-[28%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
+                            <img src="/apps/app1.png" alt="Android app screenshot 1" loading="lazy" width="210" height="375" className="absolute left-[2%] sm:left-[0%] md:left-[5%] top-[22%] sm:top-[20%] md:top-[26%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
+                            <img src="/apps/app2.png" alt="Android app screenshot 2" loading="lazy" width="220" height="390" className="absolute top-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-20 drop-shadow-2xl" />
+                            <img src="/apps/app3.png" alt="Android app screenshot 3" loading="lazy" width="220" height="390" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] md:w-[190px] lg:w-[220px] z-10 drop-shadow-2xl" />
+                            <img src={thirdImageAad} alt="App dashboard preview" loading="lazy" width="400" height="640" className="absolute left-[28%] sm:left-[25%] md:left-[28%] top-[8%] w-[120px] sm:w-[180px] md:w-[250px] lg:w-[50vh] h-[200px] sm:h-[300px] md:h-[420px] lg:h-[80vh] drop-shadow-2xl z-10" />
+                            <img src="/apps/app4.png" alt="Android app screenshot 4" loading="lazy" width="210" height="375" className="absolute right-[2%] sm:right-[0%] md:right-[8%] top-[24%] sm:top-[20%] md:top-[28%] w-[80px] sm:w-[120px] md:w-[180px] lg:w-[210px] drop-shadow-2xl z-10" />
                         </div>
                     </div>
                 </div>
@@ -442,8 +550,9 @@ const AppDevelopment = () => {
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="relative flex justify-center min-h-[350px] md:min-h-[520px] order-2 lg:order-1">
                             <div className="absolute bottom-[10px] md:bottom-[15px] w-[250px] md:w-[380px] h-[30px] md:h-[50px] bg-black/15 blur-2xl rounded-full" />
-                            <img src="/android/phone-back.png" alt="" className="absolute left-[45%] md:left-[48%] top-[8%] w-[150px] md:w-[250px] rotate-[12deg] z-10 drop-shadow-2xl" />
-                            <img src="/android/phone-front.png" alt="" className="absolute left-[15%] md:left-[18%] top-[3%] w-[160px] md:w-[260px] z-20 drop-shadow-2xl" />
+                            <img src="/android/phone-back.png" alt="Android phone back view" loading="lazy" width="250" height="500" className="absolute left-[45%] md:left-[48%] top-[8%] w-[150px] md:w-[250px] rotate-[12deg] z-10 drop-shadow-2xl" />
+                            <img src="/android/phone-front.png" alt="Android phone front view" loading="lazy" width="260" height="520" className="absolute left-[15%] md:left-[18%] top-[3%] w-[160px] md:w-[260px] z-20 drop-shadow-2xl" />
+                            <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="400" height="640" className="absolute left-[30%] md:left-[32%] top-[8%] w-[120px] sm:w-[180px] md:w-[250px] lg:w-[50vh] h-[200px] sm:h-[300px] md:h-[420px] lg:h-[80vh] drop-shadow-2xl z-10" />
                         </div>
                         <div className="order-1 lg:order-2 text-center lg:text-left">
                             <h2 className="text-3xl md:text-5xl lg:text-[60px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[820px] mx-auto lg:mx-0">
@@ -488,15 +597,16 @@ const AppDevelopment = () => {
                             </p>
                         </div>
                         <div className="relative flex justify-center mt-12 lg:mt-0">
-                            <img src="/tablet.png" alt="" className="w-[300px] md:w-[520px] rotate-[-20deg] drop-shadow-[0_20px_25px_rgba(0,0,0,0.2)] md:drop-shadow-[0_35px_40px_rgba(0,0,0,0.25)]" />
-                            <img src="/phone.png" alt="" className="absolute w-[100px] md:w-[180px] top-[-10px] left-[30%] md:left-[35%] rotate-[8deg] drop-shadow-[0_15px_15px_rgba(0,0,0,0.25)] md:drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]" />
+                            <img src="/tablet.png" alt="Tablet mockup" loading="lazy" width="520" height="400" className="w-[300px] md:w-[520px] rotate-[-20deg] drop-shadow-[0_20px_25px_rgba(0,0,0,0.2)] md:drop-shadow-[0_35px_40px_rgba(0,0,0,0.25)]" />
+                            <img src="/phone.png" alt="Phone mockup" loading="lazy" width="180" height="360" className="absolute w-[100px] md:w-[180px] top-[-10px] left-[30%] md:left-[35%] rotate-[8deg] drop-shadow-[0_15px_15px_rgba(0,0,0,0.25)] md:drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]" />
+                            <img src={sixthImageAad} alt="App display preview" loading="lazy" width="520" height="760" className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] md:w-[360px] lg:w-[65vh] h-[240px] sm:h-[380px] md:h-[520px] lg:h-[95vh] drop-shadow-2xl z-10" />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Section 5: Our Process */}
-            <section className="bg-[#f7f5f0] py-12 sm:py-16 md:py-24 overflow-hidden">
+            <section className="bg-[#fbfbfb] py-12 sm:py-16 md:py-24 overflow-hidden">
                 <div className="max-w-[1450px] mx-auto px-4 sm:px-6">
                     <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-bold mb-10 sm:mb-16 md:mb-20">
                         Our Process to <span className="text-orange-500">Success</span>
@@ -507,13 +617,26 @@ const AppDevelopment = () => {
                                 <div className="absolute top-[-16px] left-1/2 -translate-x-1/2 lg:left-[25%] lg:translate-x-0 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10">
                                     {item.id}
                                 </div>
-                                <div className="h-[100px] w-[100px] md:h-[120px] md:w-[120px] bg-gray-200 rounded-full mb-6 flex items-center justify-center">
-                                    <span className="text-gray-400 text-[10px] md:text-xs text-center px-2">{item.title}</span>
+                                <div className="h-[80px] w-[80px] md:h-[100px] md:w-[100px] mb-10 flex items-center justify-center">
+                                    <img src={stepImages[item.id]} alt={item.title} loading="lazy" width="100" height="100" className="w-full h-full object-contain" />
                                 </div>
                                 <h3 className="font-bold text-xl md:text-[20px] mb-3">{item.title}</h3>
                                 <p className="text-gray-700 text-sm md:text-lg leading-relaxed max-w-[300px]">{item.desc}</p>
                                 {item.id !== 8 && (
-                                    <div className="hidden lg:block absolute top-[80px] -right-[90px] w-[180px] border-t-[4px] border-dashed border-orange-500 rounded-full rotate-[8deg]" />
+                                    <div className={`hidden lg:block absolute -right-[100px] w-[200px] h-[100px] ${item.id % 2 === 1 ? 'top-[25px]' : 'top-[30px]'}`}>
+                                        <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <marker id={`arrow-${item.id}`} markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+                                                    <polygon points="0 0, 10 4, 0 8" fill="#f97316" />
+                                                </marker>
+                                            </defs>
+                                            {item.id % 2 === 1 ? (
+                                                <path d="M 0 20 Q 100 100 200 20" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
+                                            ) : (
+                                                <path d="M 0 80 Q 100 0 200 80" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
+                                            )}
+                                        </svg>
+                                    </div>
                                 )}
                             </div>
                         ))}
@@ -543,10 +666,8 @@ const AppDevelopment = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12 lg:mt-0">
                             {stats.map((item, index) => (
-                                <div key={index} className="bg-white border border-gray-200 rounded-[22px] p-5 sm:p-6 md:p-8 min-h-[180px] sm:min-h-[220px] md:min-h-[270px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left">
-                                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-2xl bg-[#4f1d91] flex items-center justify-center">
-                                        <img src={item.icon} alt="" className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain" />
-                                    </div>
+                                <div key={index} className="bg-gray-500 border border-gray-200 rounded-[22px] p-5 sm:p-6 md:p-8 min-h-[180px] sm:min-h-[220px] md:min-h-[270px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left">
+                                    <img src={item.img} alt={item.title} loading="lazy" width="800" height="160" className="w-full h-[100px] sm:h-[140px] md:h-[160px] lg:h-[160px] object-contain" />
                                     <h3 className="mt-4 sm:mt-6 md:mt-8 text-3xl sm:text-4xl md:text-[56px] font-bold text-[#4f1d91]">{item.value}</h3>
                                     <p className="mt-2 sm:mt-3 md:mt-4 text-sm sm:text-base md:text-[18px] font-semibold leading-snug md:leading-[1.5] text-[#171212] max-w-[220px]">{item.title}</p>
                                 </div>
@@ -568,7 +689,7 @@ const AppDevelopment = () => {
                             Being an acclaimed Android app development company, we possess comprehensive technology expertise that makes us capable of delivering high-end apps to match the client's business needs.
                         </p>
                     </div>
-                    <div className="mt-12 md:mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div className="mt-12 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {techCategoryData.map((card, index) => (
                             <div key={index} className="bg-white rounded-[24px] overflow-hidden shadow-md border border-gray-200">
                                 <div className="bg-[#4f1d91] px-6 py-4 md:py-5">
@@ -577,7 +698,7 @@ const AppDevelopment = () => {
                                 <div className="px-4">
                                     {card.items.map((item, i) => (
                                         <div key={i} className="flex items-center gap-4 py-4 md:py-5 border-b last:border-0">
-                                            <img src={item.icon} alt="" className="w-6 h-6 md:w-8 md:h-8 object-contain" />
+                                            <img src={item.icon} alt={item.name} loading="lazy" width="32" height="32" className="w-6 h-6 md:w-8 md:h-8 object-contain" />
                                             <span className="text-base md:text-[18px] text-[#1d2333]">{item.name}</span>
                                         </div>
                                     ))}
@@ -614,7 +735,7 @@ const AppDevelopment = () => {
                         <div>
                             <div className="bg-white rounded-[24px] md:rounded-[30px] p-6 md:p-10 min-h-[350px] md:min-h-[450px] border shadow-lg flex flex-col justify-center transition-all">
                                 <div className="w-[70px] h-[70px] md:w-[90px] md:h-[90px] rounded-[20px] md:rounded-[24px] bg-[#4f1d91] flex items-center justify-center mx-auto lg:mx-0">
-                                    <img src={steps[activeStep].icon} alt="" className="w-10 md:w-12" />
+                                    <img src={steps[activeStep].icon} alt={steps[activeStep].title} loading="lazy" width="48" height="48" className="w-10 md:w-12" />
                                 </div>
                                 <span className="mt-6 md:mt-8 text-[#4f1d91] font-bold text-center lg:text-left block">STEP {activeStep + 1}</span>
                                 <h3 className="mt-2 md:mt-3 text-2xl md:text-[42px] font-bold text-center lg:text-left">{steps[activeStep].title}</h3>
@@ -622,12 +743,14 @@ const AppDevelopment = () => {
                                 <div className="mt-8 md:mt-12 flex justify-center lg:justify-start gap-4">
                                     <button
                                         onClick={() => setActiveStep((prev) => (prev === 0 ? steps.length - 1 : prev - 1))}
+                                        aria-label="Previous step"
                                         className="w-12 h-12 md:w-14 md:h-14 rounded-full border flex items-center justify-center hover:bg-gray-50 transition"
                                     >
                                         ←
                                     </button>
                                     <button
                                         onClick={() => setActiveStep((prev) => (prev === steps.length - 1 ? 0 : prev + 1))}
+                                        aria-label="Next step"
                                         className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#4f1d91] text-white flex items-center justify-center hover:brightness-110 transition"
                                     >
                                         →
@@ -664,7 +787,7 @@ const AppDevelopment = () => {
                     <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-8 sm:gap-y-12 md:gap-y-16">
                         {techTabsData[activeTechTab].map((item, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
-                                <img src={item.icon} alt="" className="w-10 h-10 md:w-[60px] md:h-[60px] object-contain" />
+                                <img src={item.icon} alt={item.name} loading="lazy" width="60" height="60" className="w-10 h-10 md:w-[60px] md:h-[60px] object-contain" />
                                 <h3 className="mt-4 md:mt-5 text-sm md:text-[18px]">{item.name}</h3>
                             </div>
                         ))}
@@ -693,7 +816,10 @@ const AppDevelopment = () => {
                                 >
                                     <img
                                         src={item.image}
-                                        alt=""
+                                        alt={item.title}
+                                        loading="lazy"
+                                        width="1920"
+                                        height="1080"
                                         className="
                     absolute
                     inset-0
@@ -775,10 +901,10 @@ const AppDevelopment = () => {
                                             {card.icon}
                                         </div>
                                         <div>
-                                            <h4 className="text-base md:text-[18px] font-semibold text-[#232B3A]">
+                                            <h3 className="text-base md:text-[18px] font-semibold text-[#232B3A]">
                                                 {card.title}
-                                            </h4>
-                                            <p className="mt-1 md:mt-2 text-sm md:text-[16px] text-[#98A2B3]">
+                                            </h3>
+                                            <p className="mt-1 md:mt-2 text-sm md:text-[16px] text-[#667085]">
                                                 {card.desc}
                                             </p>
                                         </div>
@@ -839,7 +965,7 @@ const AppDevelopment = () => {
                     <div className="mt-12 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                         {platforms.map((item, index) => (
                             <div key={index} className="bg-white min-h-[120px] md:min-h-[150px] rounded-xl px-6 md:px-8 py-8 md:py-10 flex items-center gap-5 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-gray-100">
-                                <img src={item.icon} alt="" className="w-10 h-10 md:w-[42px] md:h-[42px] object-contain shrink-0" />
+                                <img src={item.icon} alt={item.title} loading="lazy" width="42" height="42" className="w-10 h-10 md:w-[42px] md:h-[42px] object-contain shrink-0" />
                                 <div>
                                     <h3 className="text-base md:text-[18px] font-semibold text-[#161c2d]">
                                         {item.title}
@@ -887,12 +1013,9 @@ const AppDevelopment = () => {
                                 </p>
                             </div>
                         </div>
-                        {/* RIGHT IMAGE GRID */}
-                        <div className="grid grid-cols-2 gap-4 md:gap-6 px-4 md:px-0">
-                            <ImageCard src={images[0]} className="h-[180px] md:h-[260px]" />
-                            <ImageCard src={images[1]} className="h-[220px] md:h-[350px]" />
-                            <ImageCard src={images[2]} className="h-[150px] md:h-[220px] mt-8 md:mt-12" />
-                            <ImageCard src={images[3]} className="h-[200px] md:h-[290px]" />
+                        {/* RIGHT IMAGE */}
+                        <div className="flex justify-center items-center">
+                            <ImageCard src={img3} className="w-full max-w-[500px] h-[400px] md:h-[550px]" />
                         </div>
                     </div>
                 </div>
@@ -1028,7 +1151,7 @@ const AppDevelopment = () => {
 
             <section className="w-full bg-[#0d0d0d]">
                 <div className="relative max-w-[1900px] mx-auto min-h-[350px] sm:min-h-[450px] md:h-[560px] overflow-hidden">
-                    <img src="/hero-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={letsCreateBigStories} alt="Let's create big stories background" loading="lazy" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/45 to-black/20" />
 
                     <div className="relative z-10 h-full flex items-center py-12 sm:py-16 md:py-0">

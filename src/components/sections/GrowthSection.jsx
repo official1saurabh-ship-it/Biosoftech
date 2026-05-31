@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WEBSITE_URL = "https://www.biosoftech.com";
 const TRUSTPILOT_URL = "https://www.trustpilot.com/review/biosoftech.com";
@@ -105,10 +106,8 @@ export default function GrowthSection() {
                             </p>
                         </div>
 
-                        <a
-                            href={WEBSITE_URL}
-                            target="_blank"
-                            rel="noreferrer"
+                        <Link
+                            to="/contact"
                             className="
               mt-8
 
@@ -124,14 +123,13 @@ export default function GrowthSection() {
             "
                         >
                             Discover More
-                        </a>
+                        </Link>
 
                         {/* ARROW */}
 
-                        <a
-                            href={WEBSITE_URL}
-                            target="_blank"
-                            rel="noreferrer"
+                        <Link
+                            to="/contact"
+                            aria-label="Discover more about Biosoftech"
                             className="
               group
 
@@ -170,7 +168,7 @@ export default function GrowthSection() {
                 group-hover:rotate-45
                 "
                             />
-                        </a>
+                        </Link>
 
                     </div>
 
@@ -362,6 +360,7 @@ export default function GrowthSection() {
                             href={TRUSTPILOT_URL}
                             target="_blank"
                             rel="noreferrer"
+                            aria-label="Read our reviews on Trustpilot"
                             className="
               group
 

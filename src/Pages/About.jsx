@@ -1,3 +1,5 @@
+import SEO from "../components/seo/SEO";
+import StructuredData from "../components/seo/StructuredData";
 import { useEffect, useState, useRef } from "react";
 import {
   Phone,
@@ -12,7 +14,7 @@ import {
   ChartColumn,
 } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Award,
   Rocket,
@@ -20,11 +22,12 @@ import {
   BadgeCheck,
   ArrowRight,
 } from "lucide-react";
-import about from "../assets/about-us.png";
-import growthImage from "../assets/digital-growth.png";
-import freshIdeasImage from "../assets/fresh-ideas.webp";
+import about from "../assets/about-hero-illustration.webp";
+import growthImage from "../assets/about-growth-engine.png";
+import freshIdeasImage from "../assets/about-fresh-ideas.webp";
 
 export default function About() {
+  const navigate = useNavigate();
   const text = "starts here";
   const [displayText, setDisplayText] = useState("");
   const [offset, setOffset] = useState(0);
@@ -212,6 +215,17 @@ export default function About() {
 
   return (
     <div className="pt-0">
+      <SEO
+        title="About Us – Software Development Company | Biosoftech Solutions"
+        description="Learn about Biosoftech Solutions – 10+ years, 500+ projects, 500+ happy clients. We deliver web, mobile, desktop, cloud, and AI-powered software solutions from Lucknow, India."
+        keywords="about Biosoftech, software company Lucknow, web development company India, mobile app development, cloud services"
+        ogUrl="https://www.biosoftech.com/about"
+      />
+      <StructuredData type="LocalBusiness" />
+      <StructuredData type="Breadcrumb" data={[
+        { name: "Home", url: "https://www.biosoftech.com" },
+        { name: "About", url: "https://www.biosoftech.com/about" },
+      ]} />
       <style>
         {`
           @keyframes blink {
@@ -225,13 +239,13 @@ export default function About() {
       </style>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#f5f5f5]">
+      <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5]">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16">
+        <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden">
           <div className="z-10 text-center lg:text-left pt-24 sm:pt-28 md:pt-28">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
-              <span className="inline-block w-1 md:w-2 h-6 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
+              <span className="inline-block w-1 md:w-2 h-5 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
             </h1>
             <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-[18px] leading-relaxed md:leading-[38px] text-gray-600 max-w-[650px] mx-auto lg:mx-0">
               Join <span className="font-bold text-gray-900">500+ businesses worldwide</span> who transformed their operations with
@@ -257,8 +271,8 @@ export default function About() {
             </div>
           </div>
           <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
-            <div className="absolute w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[20px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10" />
-            <img src="/girl.png" alt="Digital Marketing Expert" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
+            <div className="absolute w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[20px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10 max-w-full" />
+            <img src="/girl.png" alt="Digital Marketing Expert" fetchpriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
             <div className="absolute top-4 right-4 sm:top-8 sm:right-8 md:top-12 md:right-12 z-30">
               <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-base sm:text-xl font-bold border">G</div>
             </div>
@@ -289,10 +303,10 @@ export default function About() {
         <div className="relative max-w-[1220px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
-              <h1 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[50px] lg:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h1>
+              <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[50px] lg:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
               <p className="mt-4 sm:mt-6 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
-              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries.</p>
-              <h2 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[38px] font-black text-[#433d70]">Our Mission</h2>
+              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
+              <h3 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[38px] font-black text-[#433d70]">Our Mission</h3>
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
               <button className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
@@ -316,13 +330,13 @@ export default function About() {
           <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-12 lg:gap-24 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[62px] lg:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
-              <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[32px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
+              <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[28px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
                 <p>In our 10+ years of experience as a progressive software development company, we have witnessed the digital landscape evolve rapidly.</p>
                 <p>Even as AI automation, cloud integration, and new technologies reshaped industries, we have consistently helped businesses adapt and thrive.</p>
                 <p>We observed changing dynamics and refined our growth strategies to cut through complexity, competition, and digital noise.</p>
                 <p>By implementing timely innovations, we ensured our clients&apos; businesses remain efficient, scalable, and future-ready without compromising stability. That&apos;s sustainability in progress and conviction in action!</p>
               </div>
-              <button className="mt-6 sm:mt-10 border border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-white flex items-center gap-2 sm:gap-3 hover:bg-[#3B3663] duration-500 text-sm sm:text-base min-h-[44px]">Let&apos;s Accelerate Your Growth <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" /></button>
+              <button onClick={() => navigate("/contact")} className="mt-6 sm:mt-10 border border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-white flex items-center gap-2 sm:gap-3 hover:bg-[#3B3663] duration-500 text-sm sm:text-base min-h-[44px]">Let&apos;s Accelerate Your Growth with a Tailored Solution <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" /></button>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:gap-5 self-center">
               {stats.map((item) => {
@@ -358,7 +372,7 @@ export default function About() {
             >
               {/* BACK CARD */}
               <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
-                <h2 className="text-white text-[90px] font-black">500+</h2>
+                <h3 className="text-white text-[90px] font-black">500+</h3>
                 <p className="text-white text-[26px] font-bold">Projects Delivered</p>
                 <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">
                   🌐
@@ -367,13 +381,13 @@ export default function About() {
 
               {/* FRONT CARD */}
               <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
-                <h2 className="text-white text-[82px] font-black">300+</h2>
+                <h3 className="text-white text-[82px] font-black">300+</h3>
                 <p className="text-white text-[24px] font-bold">Satisfied Clients</p>
                 <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">
                   ⚡
                 </div>
                 <div className="absolute right-10 bottom-10 z-30">
-                  <h2 className="text-white text-[76px] font-black">40+</h2>
+                  <h3 className="text-white text-[76px] font-black">40+</h3>
                   <p className="text-white text-[22px]">Industries Served</p>
                 </div>
               </div>
@@ -389,7 +403,7 @@ export default function About() {
                 ✺ Who Are We?
               </motion.p>
 
-              <motion.h1
+              <motion.h2
                 style={{ y: headingY }}
                 className="mt-2 text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] lg:text-[64px] lg:leading-[72px] font-black"
               >
@@ -400,13 +414,13 @@ export default function About() {
                 >
                   Ideas Into Reality
                 </span>
-              </motion.h1>
+              </motion.h2>
 
               <motion.p
                 style={{ y: descY }}
-                className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#555]"
+                className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#444]"
               >
-                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology.
+                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology. With 500+ projects delivered, 300+ satisfied clients, and 40+ industries served, we combine innovation with reliability to help organizations thrive in the digital era.
               </motion.p>
 
               <motion.div
@@ -426,7 +440,7 @@ export default function About() {
                       </div>
                       <div>
                         <h3 className="text-2xl sm:text-3xl md:text-[24px] lg:text-[32px] font-black leading-tight">{item.title}</h3>
-                        <p className="text-sm sm:text-[16px] mt-1 text-[#666]">{item.desc}</p>
+                        <p className="text-sm sm:text-[16px] mt-1 text-[#444]">{item.desc}</p>
                       </div>
                     </div>
                   );
@@ -434,6 +448,7 @@ export default function About() {
               </motion.div>
 
               <motion.button
+                onClick={() => navigate("/contact")}
                 style={{ y: buttonY }}
                 className="mt-6 sm:mt-10 rounded-full border border-[#a84dff] px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-3 sm:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]"
               >
@@ -448,8 +463,8 @@ export default function About() {
 
 
 
-      <section ref={floatingRef} className="py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
+      <section ref={floatingRef} className="py-12 sm:py-16 md:py-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* LEFT IMAGE */}
@@ -458,7 +473,10 @@ export default function About() {
               <div className="overflow-hidden">
                 <img
                   src={about}
-                  alt="About"
+                  alt="About Biosoftech Solutions - software development company illustration"
+                  loading="lazy"
+                  width="800"
+                  height="600"
                   className="w-full h-full object-cover "
                 />
               </div>
@@ -468,7 +486,7 @@ export default function About() {
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <motion.div
                   style={{ rotate: orbitAngle }}
-                  className="relative w-[700px] h-[700px]"
+                  className="relative w-[700px] h-[700px] hidden sm:block"
                 >
                   <div className="absolute left-1/2 -ml-8 -top-8 w-16 h-16">
                     <motion.div
@@ -556,7 +574,7 @@ export default function About() {
 
               {/* Button */}
 
-              <button className="mt-10 inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
+              <button onClick={() => navigate("/contact")} className="mt-10 inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300">
                 Get Quote
                 <ArrowRight size={18} />
               </button>
@@ -568,8 +586,8 @@ export default function About() {
 
 
 
-      <section className="bg-white py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
           {/* Heading */}
           <div className="text-center mb-14">
@@ -589,7 +607,7 @@ export default function About() {
             {/* Left Content */}
             <div className="max-w-[620px]">
 
-              <p className="text-[17px] leading-[2] text-[#333] mb-8">
+              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333] mb-8">
                 Biosoftech Solutions designs and builds complete software
                 ecosystems for ambitious organizations that want to scale,
                 streamline operations, and gain a competitive edge. With us,
@@ -597,21 +615,21 @@ export default function About() {
                 a clear plan, strong execution, and future-ready technology.
               </p>
 
-              <p className="text-[17px] leading-[2] text-[#333] mb-8">
+              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333] mb-8">
                 For years, we've partnered with businesses across India,
                 delivering measurable results through web development, mobile
                 applications, desktop solutions, cloud services, AI automation,
                 and industry-specific management systems.
               </p>
 
-              <p className="text-[17px] leading-[2] text-[#333] mb-8">
+              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333] mb-8">
                 We excel at: Web Development, Mobile Applications, Desktop
                 Solutions, Cloud Services, AI Automation, and Industry
                 Management Systems — restaurant, hotel, school, billing,
                 pathology, and staff management software.
               </p>
 
-              <p className="text-[17px] leading-[2] text-[#333]">
+              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333]">
                 So, whether you're a startup, a small-to-medium business,
                 a large enterprise, or an entrepreneur with big ambitions,
                 you're already incredible, and we're here to make you even
@@ -627,6 +645,9 @@ export default function About() {
               <img
                 src={growthImage}
                 alt="Digital Growth"
+                loading="lazy"
+                width="620"
+                height="500"
                 className="w-full max-w-[620px] object-contain"
               />
             </div>
@@ -648,7 +669,7 @@ export default function About() {
               WHAT WE DO
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3F3D73] mt-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3F3D73] mt-2">
               Fresh Ideas for Every Business
             </h2>
           </div>
@@ -661,6 +682,9 @@ export default function About() {
               <img
                 src={freshIdeasImage}
                 alt="Fresh Ideas"
+                loading="lazy"
+                width="700"
+                height="500"
                 className="w-full max-w-[700px] object-contain"
               />
             </div>
@@ -669,15 +693,15 @@ export default function About() {
             <div className="space-y-12">
 
               {services1.map((item, index) => (
-                <div key={index} className="flex gap-8">
+                <div key={index} className="flex gap-4 sm:gap-8">
 
                   {/* Circle */}
                   <div
-                    className="w-[120px] h-[120px] rounded-full border-[5px] flex items-center justify-center flex-shrink-0"
+                    className="w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] rounded-full border-[3px] sm:border-[5px] flex items-center justify-center flex-shrink-0"
                     style={{ borderColor: item.color }}
                   >
                     <span
-                      className="font-bold text-4xl"
+                      className="font-bold text-xl sm:text-4xl"
                       style={{ color: item.color }}
                     >
                       {item.percentage}
@@ -687,13 +711,13 @@ export default function About() {
                   {/* Text */}
                   <div>
                     <h3
-                      className="text-3xl font-bold mb-3"
+                      className="text-2xl sm:text-3xl font-bold mb-3"
                       style={{ color: item.color }}
                     >
                       {item.title}
                     </h3>
 
-                    <p className="text-[#222] text-xl leading-relaxed">
+                    <p className="text-[#222] text-base sm:text-xl leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -727,7 +751,7 @@ export default function About() {
               OUR GROWTH STORY
             </p>
 
-            <h2 className="text-5xl font-bold text-[#3d3a72] mt-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3d3a72] mt-4">
               The Story of Biosoftech Solutions
             </h2>
           </div>
@@ -736,12 +760,12 @@ export default function About() {
           <div className="relative">
 
             {/* Center Line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
 
             {timelineData.map((item, index) => (
               <div
                 key={item.year}
-                className="relative grid grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-16 sm:mb-20 md:mb-28"
+                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-16 sm:mb-20 md:mb-28"
               >
                 {/* Left Side */}
                 <div
@@ -751,14 +775,14 @@ export default function About() {
                     }`}
                 >
                   <div
-                    className="w-full max-w-[330px] bg-white rounded-2xl p-8 shadow-sm border-r-4"
+                    className="w-full max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4"
                     style={{ borderColor: item.color }}
                   >
-                    <h3 className="font-bold text-3xl text-[#3d3a72] mb-3">
+                    <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
 
-                    <p className="text-xl text-[#66668a] leading-relaxed">
+                    <p className="text-base sm:text-xl text-[#66668a] leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -772,14 +796,14 @@ export default function About() {
                     }`}
                 >
                   <div
-                    className="w-full max-w-[330px] bg-white rounded-2xl p-8 shadow-sm border-l-4"
+                    className="w-full max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4"
                     style={{ borderColor: item.color }}
                   >
-                    <h3 className="font-bold text-3xl text-[#3d3a72] mb-3">
+                    <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
 
-                    <p className="text-xl text-[#66668a] leading-relaxed">
+                    <p className="text-base sm:text-xl text-[#66668a] leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -787,7 +811,7 @@ export default function About() {
 
                 {/* Year */}
                 <div
-                  className="absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
+                  className="hidden lg:block absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
                   style={{
                     color: item.color,
                     top: "50%",
@@ -799,7 +823,7 @@ export default function About() {
 
                 {/* Dot */}
                 <div
-                  className="absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
+                  className="hidden lg:block absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
                   style={{
                     backgroundColor: item.color,
                     top: "50%",
@@ -831,7 +855,7 @@ export default function About() {
                 Request a Call Back!
               </p>
 
-              <h2 className="text-white text-3xl sm:text-4xl md:text-6xl leading-tight font-light">
+              <h2 className="text-white text-2xl sm:text-4xl md:text-6xl leading-tight font-light">
                 Book an Appointment With
                 <br />
                 Our Top-Rated{" "}
@@ -873,7 +897,7 @@ export default function About() {
 
                 <div className="bg-[#FFB800] rounded-xl py-4 text-center">
                   <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-                    500+
+                    1000+
                   </h3>
 
                   <p className="text-white text-sm sm:text-base md:text-xl">
@@ -937,7 +961,8 @@ export default function About() {
                   />
                 </div>
 
-                <select className="h-14 px-4 bg-white rounded w-full outline-none">
+                <label htmlFor="about-service" className="sr-only">Select Service</label>
+                <select id="about-service" className="h-14 px-4 bg-white rounded w-full outline-none">
                   <option>- Select Service -</option>
                 </select>
 
@@ -948,7 +973,7 @@ export default function About() {
                 />
 
                 {/* Fake Captcha */}
-                <div className="bg-white w-[300px] h-[78px] rounded flex items-center justify-between px-4">
+                <div className="bg-white w-full max-w-[300px] h-[78px] rounded flex items-center justify-between px-4">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 border-2 border-gray-500"></div>
                     <span>I'm not a robot</span>

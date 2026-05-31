@@ -3,11 +3,11 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-import img1 from "../../assets/SEM1.png";
-import img2 from "../../assets/SMO.png";
-import img3 from "../../assets/SEO1.png";
-import img4 from "../../assets/WEB1.png";
-import img5 from "../../assets/SMM1.png";
+import img1 from "../../assets/service-swiper-sem.webp";
+import img2 from "../../assets/service-swiper-smo.webp";
+import img3 from "../../assets/service-swiper-seo.webp";
+import img4 from "../../assets/service-swiper-web.webp";
+import img5 from "../../assets/service-swiper-smm.webp";
 
 
 
@@ -95,6 +95,7 @@ export default function ServicesSlider() {
                     <Swiper
                         modules={[Autoplay]}
                         spaceBetween={30}
+                        className="min-h-[480px] sm:min-h-[520px] lg:min-h-[620px]"
                         slidesPerView={3}
                         loop
                         speed={1200}
@@ -170,7 +171,9 @@ export default function ServicesSlider() {
 
                                     <img
                                         src={item.image}
-                                        alt=""
+                                        alt={item.title}
+                                        width="800"
+                                        height="260"
                                         className="w-full h-[210px] lg:h-[260px] object-contain"
                                     />
 

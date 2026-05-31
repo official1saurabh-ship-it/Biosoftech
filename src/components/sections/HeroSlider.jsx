@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
-import blobImage from "../../assets/hero1.png";
-import slider from "../../assets/slider.png";
-import slider1 from "../../assets/slider1-1.png";
-import bgImage from "../../assets/h4-bg-img-1.png";
+import slider from "../../assets/hero-slider-slide-1.webp";
+import slider1 from "../../assets/hero-slider-slide-2.webp";
+import bgImage from "../../assets/hero-slider-bg-pattern.webp";
 
 const slides = [
   {
@@ -30,19 +29,10 @@ const slides = [
 
 export default function HeroRevealSlider() {
   const [index, setIndex] = useState(0);
-  const [cover, setCover] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCover(true);
-
-      setTimeout(() => {
-        setIndex((prev) => (prev + 1) % slides.length);
-      }, 1800);
-
-      setTimeout(() => {
-        setCover(false);
-      }, 2200);
+      setIndex((prev) => (prev + 1) % slides.length);
     }, 6500);
 
     return () => clearInterval(interval);
@@ -60,54 +50,6 @@ export default function HeroRevealSlider() {
           backgroundImage: `url(${bgImage})`,
         }}
       />
-
-      {/* BLOB IMAGE - Now Starting from Center */}
-      {/* BLOB IMAGE - Return from Text Column Top Right */}
-      {/* <motion.img
-        src={blobImage}
-        initial={{
-          x: "-12%",
-          y: "28%",
-          rotate: 45,
-          opacity: 0.85,
-          scale: 0.85,
-        }}
-        animate={{
-          // reduced right movement → stays inside text column
-          x: ["-12%", "4%", "-12%"],
-
-          // keep same return point
-          y: ["28%", "-28%", "28%"],
-
-          rotate: [45, 48, 45],
-
-          scale: [0.85, 1.02, 0.85],
-          opacity: [0.85, 1, 0.85],
-        }}
-        transition={{
-          duration: 10,
-          ease: "easeInOut",
-          times: [0, 0.5, 1],
-          repeat: Infinity,
-          repeatType: "reverse", // ← return from same point
-        }}
-        style={{
-          mixBlendMode: "screen",
-        }}
-        className="
-    absolute
-    top-[105%]
-    left-[38%]
-    w-[460%]
-    h-[155%]
-    object-contain
-    max-w-none
-    z-10
-    pointer-events-none
-    -translate-x-1/2
-    -translate-y-1/2
-  "
-      /> */}
 
       {/* CONTENT */}
       <div className="relative z-30 h-full w-full">
@@ -129,37 +71,44 @@ export default function HeroRevealSlider() {
           "
         >
           {/* IMAGE COLUMN */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`img-${index}`}
-              initial={{ opacity: 0, y: 140 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -60 }}
-              transition={{
-                duration: 1.9,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20"
-            >
-              <img
-                src={slide.image}
-                className="w-[65%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[650px] object-contain self-end relative z-30"
-              />
-            </motion.div>
-          </AnimatePresence>
+          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[250px] sm:min-h-[320px]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={`img-${index}`}
+                initial={{ opacity: 0, y: 140 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -60 }}
+                transition={{
+                  duration: 0.6,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="absolute inset-0 flex items-end justify-center"
+              >
+                <img
+                  src={slide.image}
+                  alt="Biosoftech hero slide showcasing software development solutions"
+                  fetchpriority="high"
+                  loading="eager"
+                  width="650"
+                  height="500"
+                  className="w-[65%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[650px] object-contain self-end"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
           {/* TEXT COLUMN */}
-          <motion.div
-            key={`txt-${index}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: cover ? 0 : 1 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
-            className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center"
-          >
-            <div className="relative z-40 h-auto lg:h-[60vh] flex flex-col justify-center pt-24 sm:pt-28 lg:pt-28">
-              <h4 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-2 lg:mb-5">
+          <div className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center">
+            <motion.div
+              key={`txt-${index}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              className="min-h-[420px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-16 sm:pt-20 lg:pt-28"
+            >
+              <h2 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
-              </h4>
+              </h2>
 
               <h1 className="text-[28px] sm:text-[56px] md:text-[72px] lg:text-[96px] xl:text-[112px] 2xl:text-[124px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
@@ -169,9 +118,9 @@ export default function HeroRevealSlider() {
                 {slide.outline}
               </h2>
 
-              <h3 className="text-[18px] sm:text-[32px] md:text-[40px] lg:text-[54px] xl:text-[64px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h2 className="text-[18px] sm:text-[32px] md:text-[40px] lg:text-[54px] xl:text-[64px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
-              </h3>
+              </h2>
 
               <p className="mt-4 lg:mt-7 max-w-[550px] text-sm sm:text-base lg:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
                 {slide.desc}
@@ -180,8 +129,8 @@ export default function HeroRevealSlider() {
               <button className="mt-6 lg:mt-10 px-6 sm:px-12 py-3 sm:py-5 rounded-full bg-white text-black font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 hover:text-white hover:border-purple-600 border border-transparent transition-all duration-500 shadow-lg min-h-[44px]">
                 Get Started &rarr;
               </button>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
@@ -189,14 +138,16 @@ export default function HeroRevealSlider() {
       <div className="absolute right-4 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 lg:gap-8 z-50">
         <button
           onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
-          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
+          aria-label="Previous slide"
+          className="w-11 h-11 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
         >
           &larr;
         </button>
 
         <button
           onClick={() => setIndex((index + 1) % slides.length)}
-          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
+          aria-label="Next slide"
+          className="w-11 h-11 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
         >
           &rarr;
         </button>

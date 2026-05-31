@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPhoneAlt, FaCalendarAlt, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { Phone, Calendar, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const WEBSITE_URL = 'https://www.biosoftech.com';
@@ -47,8 +47,6 @@ const Header = () => {
       dropdown: [
         { name: 'Web Development', href: '/web-development' },
         { name: 'App Development', href: '/app-development' },
-        { name: 'Mobile Development', href: '/app-development' },
-        { name: 'Desktop App', href: '/web-development' },
         { name: 'Cloud Services', href: '/cloud-services' },
         { name: 'AI Automation', href: '/ai-automation' },
       ]
@@ -57,13 +55,18 @@ const Header = () => {
       name: 'Products',
       href: '#',
       dropdown: [
-        { name: 'Restaurant Management', href: 'https://restaurants.biosoftech.in/' },
-        { name: 'PG Management', href: 'https://pg.biosoftech.in/' },
-        { name: 'Billing Management', href: 'https://billing.biosoftech.in/signin' },
+        { name: 'Sales & Billing', href: 'https://billing.biosoftech.in/signin' },
+        { name: 'Restaurant Management', href: 'https://restronmitra.biosoftech.in/' },
         { name: 'Hotel Management', href: 'https://hotel.biosoftech.in/' },
-        { name: 'School Management', href: 'https://school.biosoftech.in/' },
-        { name: 'Staff Management', href: 'https://payrollmitra.biosoftech.in/' },
+        { name: 'Parking Management', href: 'https://vms.biosoftech.in/' },
+        { name: 'Attendance Management', href: 'https://att.biosoftech.in/' },
+        { name: 'Visitor Management', href: 'https://vms.biosoftech.in/' },
+        { name: 'CRM Platform', href: 'https://crm.biosoftech.com' },
+        { name: 'PG Management', href: 'https://tenantmitra.biosoftech.in/' },
+        { name: 'Canteen Management', href: 'http://www.foodieexpress.biosoftech.in' },
         { name: 'Pathology Management', href: 'https://pytho.biosoftech.in/' },
+        { name: 'School Management', href: 'https://school.biosoftech.in/' },
+        { name: 'Payroll Management', href: 'https://payrollmitra.biosoftech.in/' },
       ]
     },
     { name: 'Blog', href: '/blog' },
@@ -80,22 +83,14 @@ const Header = () => {
     }
   };
 
-  const textVariants = {
-    initial: { color: "rgba(255, 255, 255, 0.7)" },
-    hover: {
-      color: "#9255CE",
-      transition: { duration: 0.3 }
-    }
-  };
-
   return (
     <>
-      <header className={`fixed left-0 w-full z-50 transition-all duration-700 flex justify-center pointer-events-none ${isScrolled ? 'top-1 sm:top-4' : 'top-1 sm:top-8'}`}>
+      <header className={`fixed left-0 w-full z-50 transition-[top,opacity,transform] duration-700 flex justify-center pointer-events-none ${isScrolled ? 'top-1 sm:top-4' : 'top-1 sm:top-8'}`}>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className={`relative pointer-events-auto w-[96%] sm:w-[92%] max-w-[1280px] h-14 sm:h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-all duration-500 ${isScrolled ? 'h-12 sm:h-14 scale-98 opacity-95' : 'scale-100 opacity-100'}`}
+          className={`relative pointer-events-auto w-[96%] sm:w-[92%] max-w-[1280px] h-14 sm:h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-[height,opacity,transform,scale] duration-500 ${isScrolled ? 'h-12 sm:h-14 scale-98 opacity-95' : 'scale-100 opacity-100'}`}
         >
           {/* Logo Section */}
           <Link to="/" className="h-full py-1 shrink-0">
@@ -143,7 +138,7 @@ const Header = () => {
                     <span className={`transition-colors duration-300 ${activeDropdown === item.name ? 'text-[#9255CE]' : 'text-white/70 group-hover:text-[#9255CE]'}`}>
                       {item.name}
                     </span>
-                    <FaChevronDown size={8} className={`transition-all duration-500 ${activeDropdown === item.name ? 'rotate-180 text-[#9255CE]' : 'text-white/40'}`} />
+                    <ChevronDown size={8} className={`transition-all duration-500 ${activeDropdown === item.name ? 'rotate-180 text-[#9255CE]' : 'text-white/40'}`} />
                   </button>
                 ) : (
                   <Link to={item.href} className="relative z-10 flex items-center gap-1.5 py-2 whitespace-nowrap">
@@ -155,7 +150,7 @@ const Header = () => {
 
                 {/* Dropdown Menu */}
                 {item.dropdown && (
-                  <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}>
+                   <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}>
                     <div className="bg-[#09090F]/98 backdrop-blur-3xl rounded-2xl border border-white/5 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden p-1.5">
                       {item.dropdown.map((subItem) => {
                         const isExternal = subItem.href.startsWith('http');
@@ -183,15 +178,13 @@ const Header = () => {
 
           {/* Action Area */}
           <div className="flex items-center gap-2 pr-2 min-w-fit shrink-0">
-            <a
-              href={WEBSITE_URL}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/contact"
               className="hidden xl:flex items-center gap-2 border border-white/10 bg-white px-7 py-2 rounded-full font-bold text-[12px] text-black hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
             >
-              <FaCalendarAlt className="text-[#0e141d] group-hover:text-white transition-colors" />
+               <Calendar className="text-[#0e141d] group-hover:text-white transition-colors" size={14} />
               <span>Meeting</span>
-            </a>
+            </Link>
 
             <div
               className="
@@ -206,7 +199,7 @@ border-white/5
             >
               <a href="tel:+919044425858" className="flex items-center gap-3 group/phone">
                 <div className="bg-[#9255CE] w-9 h-9 rounded-full flex items-center justify-center text-white shadow-[0_0_15px_rgba(146,85,206,0.5)] group-hover/phone:scale-110 transition-transform duration-500 ring-4 ring-[#9255CE]/10">
-                  <FaPhoneAlt size={10} />
+                  <Phone size={10} />
                 </div>
                 <div className="hidden lg:flex flex-col">
                   <span className="text-[7px] text-white/30 font-bold uppercase tracking-[0.2em] leading-none">Connect</span>
@@ -216,6 +209,7 @@ border-white/5
 
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
+                aria-label="Open menu"
                 className="
  flex
  lg:hidden
@@ -282,8 +276,8 @@ z-[999]
                   <span className="text-white font-black text-2xl tracking-tighter">BioSoftech</span>
                   <span className="text-[#9255CE] text-[8px] font-bold uppercase tracking-widest mt-1">Launch and Grow</span>
                 </div>
-                <button onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }} className="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-all">
-                  <FaTimes />
+                <button onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }} aria-label="Close menu" className="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-all">
+                  <X />
                 </button>
               </div>
 
@@ -317,7 +311,7 @@ z-[999]
                               {item.name}
                             </Component>
                           )}
-                          {item.dropdown && <FaChevronDown size={12} className={`text-[#9255CE] transition-transform duration-500 ${activeDropdown === item.name ? 'rotate-180' : ''}`} />}
+                          {item.dropdown && <ChevronDown size={12} className={`text-[#9255CE] transition-transform duration-500 ${activeDropdown === item.name ? 'rotate-180' : ''}`} />}
                         </div>
 
                         {item.dropdown && activeDropdown === item.name && (
@@ -359,12 +353,12 @@ z-[999]
               </div>
 
               <div className="p-8 bg-black/40 border-t border-white/5 space-y-6">
-                <a href={WEBSITE_URL} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)]">
-                  <FaCalendarAlt /> Meeting
-                </a>
+                <Link to="/contact" className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)]">
+                  <Calendar /> Meeting
+                </Link>
                 <a href="tel:+919044425858" className="flex items-center gap-5 p-6 bg-white/5 rounded-3xl border border-white/5 group">
                   <div className="bg-[#9255CE] w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg">
-                    <FaPhoneAlt />
+                    <Phone />
                   </div>
                   <div>
                     <div className="text-[9px] text-white/30 font-bold uppercase tracking-widest">Global Support</div>

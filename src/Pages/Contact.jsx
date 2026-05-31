@@ -1,3 +1,4 @@
+import SEO from "../components/seo/SEO";
 import React, { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -32,15 +33,15 @@ const Contact = () => {
     message: "",
   });
 
-    const serviceOptions = [
-        "Develop Custom Software Solutions",
-        "Build Or Upgrade My Mobile App / Website",
-        "Integrate AI Automation Into My Workflow",
-        "Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)",
-        "Healthcare / Real Estate / Hospitality Software Needs",
-        "Cloud Integration & Data Security Services",
-        "Not Sure – Need Expert Guidance",
-    ];
+  const serviceOptions = [
+    "Develop Custom Software Solutions",
+    "Build Or Upgrade My Mobile App / Website",
+    "Integrate AI Automation Into My Workflow",
+    "Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)",
+    "Healthcare / Real Estate / Hospitality Software Needs",
+    "Cloud Integration & Data Security Services",
+    "Not Sure – Need Expert Guidance",
+  ];
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -119,7 +120,7 @@ const Contact = () => {
     }
   };
 
-    const cards = [
+  const cards = [
     {
       title: "We will be in touch shortly.",
       desc:
@@ -139,7 +140,13 @@ const Contact = () => {
 
   return (
     <>
-      <section className="relative bg-[#F3F3F3] pb-12 md:pb-28">
+      <SEO
+        title="Contact Us – Software Development Company | Biosoftech Solutions"
+        description="Get in touch with Biosoftech Solutions. Call +91 9369655052 or email info@biosoftech.com. Head office in Lucknow, India."
+        keywords="contact Biosoftech, software company Lucknow, software development inquiry, India"
+        ogUrl="https://www.biosoftech.com/contact"
+      />
+      <section aria-label="Contact us hero banner" className="relative bg-[#F3F3F3] pb-12 md:pb-28">
         {/* HERO */}
         <div
           className="relative min-h-[320px] sm:min-h-[400px] md:h-[580px] overflow-hidden"
@@ -283,7 +290,7 @@ const Contact = () => {
               mt-3
               sm:mt-4
               md:mt-5
-              text-[#777]
+              text-[#555]
               text-sm
               sm:text-base
               md:text-lg
@@ -480,9 +487,8 @@ const Contact = () => {
 
                 {status.message && (
                   <p
-                    className={`text-sm font-medium text-center ${
-                      status.type === "success" ? "text-green-600" : "text-red-600"
-                    }`}
+                    className={`text-sm font-medium text-center ${status.type === "success" ? "text-green-600" : "text-red-600"
+                      }`}
                   >
                     {status.message}
                   </p>
@@ -493,10 +499,14 @@ const Contact = () => {
             {/* RIGHT */}
             <div className="min-h-[300px] sm:min-h-[400px] lg:min-h-[800px]">
               <iframe
-                title="map"
-                className="w-full h-full"
+                title="Biosoftech Location"
+                className="w-full h-full rounded-xl"
+                width="600"
+                height="450"
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7117.5648133672075!2d81.03473064306043!3d26.87865350666976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d26.8772223!2d81.0423422!4m5!1s0x399be36e7a0d7deb%3A0x1191d021e952b938!2sBiosoftech%20Software%20Solutions%2C%203rd%20Floor%2C%20Office%20No%2C%20624F%2F20A%2C%20Kotwali%20Rd%2C%20opp.%20Om%20Saran%20Private%20ITI%2C%20Matiyari%2C%20Chinhat%2C%20Lucknow%2C%20Uttar%20Pradesh%20226028!3m2!1d26.8797931!2d81.0391113!5e0!3m2!1sen!2sin!4v1780137029081!5m2!1sen!2sin"
                 loading="lazy"
-                src="https://maps.google.com/maps?q=Lucknow&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </div>
@@ -504,13 +514,14 @@ const Contact = () => {
       </section>
 
       <section className="bg-[#F5F5F5] py-10 md:py-20">
-        <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-6">
+        <div className="mx-auto px-4 sm:px-6 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
             {/* LEFT */}
             <div>
-              <h1
+              <h2
                 className="
-              text-[36px]
+              text-[28px]
+              sm:text-[36px]
               md:text-[48px]
               lg:text-[58px]
               leading-[1.1]
@@ -519,7 +530,7 @@ const Contact = () => {
             "
               >
                 We will be in touch shortly.
-              </h1>
+              </h2>
 
               <p
                 className="
@@ -538,18 +549,20 @@ const Contact = () => {
                 and industry-specific software systems.
               </p>
 
-              <div className="grid sm:grid-cols-2 gap-5 mt-10 md:mt-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 md:mt-12">
                 {cards.map((item, index) => (
                   <div
                     key={index}
                     className="
                   bg-[#ECECF6]
-                  px-6
+                  px-4
+                  sm:px-6
                   md:px-10
                   py-8
                   md:py-12
                   text-center
-                  min-h-[350px]
+                  min-h-[300px]
+                  sm:min-h-[350px]
                   md:min-h-[420px]
                   flex
                   flex-col
@@ -588,23 +601,7 @@ const Contact = () => {
                       {item.desc}
                     </p>
 
-                    <button
-                      className="
-                    mt-6
-                    md:mt-8
-                    w-[130px]
-                    md:w-[150px]
-                    h-[48px]
-                    md:h-[54px]
-                    bg-[#261F58]
-                    text-white
-                    font-semibold
-                    text-[18px]
-                    md:text-[22px]
-                  "
-                    >
-                      Chat Now
-                    </button>
+
                   </div>
                 ))}
               </div>
@@ -620,15 +617,18 @@ const Contact = () => {
             >
               <img
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400"
-                className="w-full h-[250px] md:h-[320px] object-cover"
+                width="1400"
+                height="160"
+                className="w-full h-[140px] md:h-[160px] object-cover"
                 alt="building"
               />
 
-              <div className="px-6 py-6 md:px-8 md:py-8">
+              <div className="px-5 py-3 md:px-6 md:py-4">
                 <h2
                   className="
-                text-[48px]
-                md:text-[66px]
+                text-[24px]
+                sm:text-[28px]
+                md:text-[36px]
                 font-bold
                 leading-none
               "
@@ -636,7 +636,7 @@ const Contact = () => {
                   Get in touch
                 </h2>
 
-                <div className="space-y-8 md:space-y-10 mt-8 md:mt-10">
+                <div className="space-y-3 md:space-y-4 mt-3 md:mt-4">
                   {[
                     {
                       icon: Home,
@@ -668,9 +668,9 @@ const Contact = () => {
                       className="flex gap-4 md:gap-5"
                     >
                       <info.icon
-                        size={32}
+                        size={24}
                         strokeWidth={2}
-                        className="md:w-[42px] md:h-[42px] shrink-0"
+                        className="sm:w-[32px] sm:h-[32px] md:w-[42px] md:h-[42px] shrink-0"
                       />
 
                       <div>
@@ -688,7 +688,7 @@ const Contact = () => {
                           className="
                         mt-3
                         md:mt-4
-                        text-[#8B8B8B]
+                        text-[#5B5B5B]
                         text-[16px]
                         md:text-[18px]
                         leading-[1.6]

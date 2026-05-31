@@ -1,5 +1,7 @@
+import SEO from "../components/seo/SEO";
+import StructuredData from "../components/seo/StructuredData";
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import {
   Star,
@@ -40,22 +42,24 @@ import {
 import {
   HiOutlineCube,
 } from "react-icons/hi";
+import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import aiStrategyConsulting from "../assets/ai-strategy-consulting.webp";
 
 
-import why_icon_1_ai from "../assets/why_icon_1_ai.avif";
-import why_icon_2_ai from "../assets/why_icon_2_ai.avif";
-import why_icon_3_ai from "../assets/why_icon_3_ai.avif";
-import why_icon_4_ai from "../assets/why_icon_4_ai.avif";
+import why_icon_1_ai from "../assets/ai-why-expert-knowledge.avif";
+import why_icon_2_ai from "../assets/ai-why-secure-compliant.avif";
+import why_icon_3_ai from "../assets/ai-why-scalable.avif";
+import why_icon_4_ai from "../assets/ai-why-tailored.avif";
 
 
-import process_1 from "../assets/process_1_ai.webp";
-import process_2 from "../assets/process_2_ai.webp";
-import process_3 from "../assets/process_3_ai.webp";
-import process_4 from "../assets/process_4_ai.webp";
-import process_5 from "../assets/process_5_ai.webp";
-import process_6 from "../assets/process_6_ai.webp";
+import process_1 from "../assets/ai-process-requirement-analysis.webp";
+import process_2 from "../assets/ai-process-data-preparation.webp";
+import process_3 from "../assets/ai-process-model-development.webp";
+import process_4 from "../assets/ai-process-testing-optimization.webp";
+import process_5 from "../assets/ai-process-deployment.webp";
+import process_6 from "../assets/ai-process-maintenance-support.webp";
 
-import ai_bg from "../assets/bg_ai_cta_banner.webp";
+import ai_bg from "../assets/ai-cta-banner.webp";
 
 
 
@@ -63,6 +67,7 @@ import ai_bg from "../assets/bg_ai_cta_banner.webp";
 
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const sectionRef = useRef(null);
   const [activeStep, setActiveStep] = useState(0);
   useEffect(() => {
@@ -203,6 +208,12 @@ const HeroSection = () => {
       title: "Continuous Monitoring & Optimization",
       description:
         "We provide ongoing support with performance tuning, model retraining, and security updates, ensuring your AI automation remains reliable and future-ready.",
+    },
+    {
+      icon: Star,
+      title: "Start Your AI Automation Journey",
+      description:
+        "Partner with Biosoftech Solutions to unlock intelligent automation that drives efficiency, scalability, and innovation.",
     },
   ];
 
@@ -436,7 +447,14 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="w-full min-h-0 lg:min-h-screen bg-[#f3f1eb] overflow-hidden">
+      <SEO
+        title="AI Automation Services – Intelligent Automation Solutions | Biosoftech"
+        description="Biosoftech Solutions delivers AI automation services including machine learning, NLP, RPA, and generative AI. Transform your business with intelligent automation."
+        keywords="AI automation services, machine learning, NLP, RPA, generative AI, intelligent automation, AI consulting, India"
+        ogUrl="https://www.biosoftech.com/ai-automation"
+      />
+      <StructuredData type="LocalBusiness" />
+      <section aria-label="AI automation hero banner" className="w-full min-h-0 lg:min-h-screen bg-[#f3f1eb] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
 
           {/* Main Grid */}
@@ -541,7 +559,7 @@ const HeroSection = () => {
               {/* Buttons */}
               <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8 lg:mt-12">
 
-                <button className="bg-[#f4b400] hover:bg-[#e3a600] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-black font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
+                <button onClick={() => navigate("/contact")} className="bg-[#f4b400] hover:bg-[#e3a600] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-black font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
                   REQUEST PROPOSAL
                   <ArrowRight size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
@@ -556,46 +574,13 @@ const HeroSection = () => {
             {/* Right Side */}
             <div className="relative flex justify-center lg:justify-end">
 
-              {/* Background Dots */}
-              <div className="absolute bottom-0 right-0 grid grid-cols-6 gap-2 sm:gap-4 opacity-20">
-                {[...Array(36)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-[#d8d2c8]"
-                  />
-                ))}
-              </div>
-
-              {/* Floating Card */}
-              <div className="absolute top-6 sm:top-10 left-0 lg:left-10 w-[200px] sm:w-[260px] lg:w-[300px] bg-white shadow-2xl rounded-md rotate-[-6deg] p-3 sm:p-4 z-20">
-                <img
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
-                  alt="website mockup"
-                  className="rounded-md h-24 sm:h-32 lg:h-40 w-full object-cover"
-                />
-
-                <div className="grid grid-cols-3 gap-1 sm:gap-2 mt-2 sm:mt-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=600&auto=format&fit=crop"
-                    className="rounded-md h-10 sm:h-12 lg:h-16 object-cover"
-                  />
-
-                  <img
-                    src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600&auto=format&fit=crop"
-                    className="rounded-md h-10 sm:h-12 lg:h-16 object-cover"
-                  />
-
-                  <img
-                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=600&auto=format&fit=crop"
-                    className="rounded-md h-10 sm:h-12 lg:h-16 object-cover"
-                  />
-                </div>
-              </div>
-
               {/* Laptop Image */}
               <img
-                src="https://pngimg.com/d/laptop_PNG101816.png"
-                alt="laptop"
+                src={laptopMockup}
+                alt="Laptop mockup showcasing AI automation dashboard"
+                fetchpriority="high"
+                width="800"
+                height="500"
                 className="relative z-10 w-full max-w-xl lg:max-w-2xl object-contain"
               />
             </div>
@@ -632,18 +617,21 @@ const HeroSection = () => {
               </p>
 
               {/* IMAGE */}
-              <div className="mt-10 rounded-3xl overflow-hidden border border-cyan-500/20">
+              <div className="mt-10">
                 <img
-                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
-                  alt="AI"
-                  className="w-full h-[420px] md:h-[300px] lg:h-[420px] object-cover"
+                  src={aiStrategyConsulting}
+                  alt="AI Strategy Consulting"
+                  loading="lazy"
+                  width="1920"
+                  height="550"
+                  className="w-full h-[500px] md:h-[400px] lg:h-[550px] object-cover"
                 />
               </div>
             </div>
 
 
             {/* RIGHT SIDE */}
-            <div className="grid md:grid-cols-2 p-3 md:p-6 lg:p-12 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 p-3 md:p-6 lg:p-12 gap-8 md:gap-12 lg:gap-16">
 
               {expertiseData.map((item, index) => {
                 const Icon = item.icon;
@@ -694,7 +682,7 @@ const HeroSection = () => {
 
 
       <section className="bg-[#f3f3f3] py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="mx-auto px-6 lg:px-10 max-w-[1600px]">
 
           {/* TOP SECTION */}
           <div className="grid lg:grid-cols-2 gap-10 items-start">
@@ -718,7 +706,7 @@ const HeroSection = () => {
                 growth with Biosoftech Solutions.
               </p>
 
-              <button className="mt-10 flex items-center gap-5 group">
+              <button onClick={() => navigate("/contact")} className="mt-10 flex items-center gap-5 group">
                 <div className="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center transition-all duration-300 group-hover:bg-black">
                   <ArrowUpRight className="group-hover:text-white transition-all duration-300" />
                 </div>
@@ -733,7 +721,7 @@ const HeroSection = () => {
           {/* MAIN CONTENT */}
           <div className="mt-20 bg-[#efefef] p-6 lg:p-10 rounded-[20px]">
 
-            <div className="grid lg:grid-cols-[1fr_450px] gap-10">
+            <div className="grid lg:grid-cols-[1fr_500px] gap-10">
 
               {/* LEFT CARDS */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -747,18 +735,13 @@ const HeroSection = () => {
                     <button
                       key={index}
                       onClick={() => setActiveService(service)}
-                      className="relative h-[280px] rounded-[24px] overflow-hidden group text-left"
+                      className="relative h-[350px] rounded-[24px] overflow-hidden group text-left"
                     >
 
                       {/* IMAGE */}
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="
-                        absolute inset-0 w-full h-full object-cover
-                        transition-transform duration-700
-                        group-hover:scale-110
-                      "
+                      <div
+                        className="absolute inset-0 transition-transform duration-700 group-hover:scale-110 bg-cover bg-center"
+                        style={{ backgroundImage: `url(${service.image})` }}
                       />
 
                       {/* OVERLAY */}
@@ -866,7 +849,7 @@ const HeroSection = () => {
           </div>
 
           {/* CARDS */}
-          <div className="mt-20 grid md:grid-cols-2 xl:grid-cols-3 gap-5 px-6">
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 px-6">
 
             {capabilities.map((item, index) => (
               <div
@@ -1013,12 +996,15 @@ const HeroSection = () => {
                     <img
                       src={item.image}
                       alt={item.title}
+                      loading="lazy"
                       className="
                       w-10 h-10
                       object-contain
                       transition-all duration-500
                       group-hover:scale-110
                     "
+                    width="40"
+                    height="40"
                     />
                   </div>
 
@@ -1052,6 +1038,9 @@ const HeroSection = () => {
                 <img
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
                   alt="AI Robot"
+                  loading="lazy"
+                  width="1920"
+                  height="540"
                   className="
                   w-full h-[540px] md:h-[400px] lg:h-[540px]
                   object-cover
@@ -1089,12 +1078,15 @@ const HeroSection = () => {
                     <img
                       src={item.image}
                       alt={item.title}
+                      loading="lazy"
                       className="
                       w-10 h-10
                       object-contain
                       transition-all duration-500
                       group-hover:scale-110
                     "
+                    width="40"
+                    height="40"
                     />
                   </div>
 
@@ -1204,6 +1196,7 @@ const HeroSection = () => {
                     <button
                       key={index}
                       onClick={() => setActiveStep(index)}
+                      aria-label={`${item.stage}: ${item.title}`}
                       className="relative z-10 group"
                     >
 
@@ -1321,16 +1314,19 @@ const HeroSection = () => {
               "
                 >
 
-                  <img
-                    src={processData[activeStep].image}
-                    alt={processData[activeStep].title}
-                    className="
-                  w-full max-h-[30vh] md:max-h-[50vh]
-                  object-contain
-                  transition-all duration-700
-                  group-hover:scale-110
-                "
-                  />
+                    <img
+                      src={processData[activeStep].image}
+                      alt={processData[activeStep].title}
+                      loading="lazy"
+                      width="800"
+                      height="600"
+                      className="
+                    w-full max-h-[30vh] md:max-h-[50vh]
+                    object-contain
+                    transition-all duration-700
+                    group-hover:scale-110
+                  "
+                    />
 
                   <div className="absolute inset-0 bg-black/10" />
                 </div>
@@ -1353,6 +1349,9 @@ const HeroSection = () => {
           <img
             src={ai_bg}
             alt="AI Background"
+            loading="lazy"
+            width="1920"
+            height="1080"
             className="w-full h-full object-cover"
           />
 
