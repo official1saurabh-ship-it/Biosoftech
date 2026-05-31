@@ -463,7 +463,7 @@ const HeroSection = () => {
 
             {/* Left Content */}
             <div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-black leading-tight">
                 Transforming Businesses
                 <br />
                 with Intelligent Automation
@@ -483,7 +483,7 @@ const HeroSection = () => {
 
                 {/* Clutch */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1d2b36]">
+                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-[#1d2b36]">
                     Clutch
                   </h3>
 
@@ -505,7 +505,7 @@ const HeroSection = () => {
 
                 {/* Upwork */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold">
                     <span className="text-[#6fda44]">Up</span>
                     <span className="text-black">work</span>
                   </h3>
@@ -517,7 +517,7 @@ const HeroSection = () => {
 
                 {/* Google */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold">
                     <span className="text-[#4285F4]">G</span>
                     <span className="text-[#EA4335]">o</span>
                     <span className="text-[#FBBC05]">o</span>
@@ -544,7 +544,7 @@ const HeroSection = () => {
 
                 {/* Google Partner */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold">
                     <span className="text-[#4285F4]">G</span>
                     <span className="text-[#EA4335]">o</span>
                     <span className="text-[#FBBC05]">o</span>
@@ -605,7 +605,7 @@ const HeroSection = () => {
             {/* LEFT SIDE STICKY */}
             <div className="lg:sticky lg:top-0 h-fit border-r border-white/10 p-8 lg:p-12 self-start">
 
-              <h2 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 AI Strategy
                 <br />
                 &amp; Consulting
@@ -690,7 +690,7 @@ const HeroSection = () => {
 
             {/* LEFT */}
             <div>
-              <h2 className="text-5xl lg:text-6xl font-bold leading-tight text-[#111]">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-[#111]">
                 Driving Business Growth
                 <br />
                 Through Smart Digital Solutions
@@ -784,7 +784,7 @@ const HeroSection = () => {
               {/* RIGHT DETAILS PANEL */}
               <div className="bg-[#f7f7f7] rounded-[24px] p-8 lg:p-12">
 
-                <h3 className="text-5xl md:text-[32px] lg:text-5xl font-bold text-[#111] leading-tight">
+                <h3 className="text-4xl md:text-[32px] lg:text-5xl font-bold text-[#111] leading-tight">
                   {activeService.heading}
                 </h3>
 
@@ -837,7 +837,7 @@ const HeroSection = () => {
               Generative AI & LLM
             </p>
 
-            <h2 className="mt-5 text-5xl lg:text-6xl font-bold leading-tight">
+            <h2 className="mt-5 text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
               Biosoftech Generative AI & LLM Capabilities
             </h2>
 
@@ -966,7 +966,7 @@ const HeroSection = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
 
           {/* TITLE */}
-          <h2 className="text-center text-4xl lg:text-6xl font-bold leading-tight">
+          <h2 className="text-center text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
             Why Choose Biosoftech for AI Solutions
           </h2>
 
@@ -1155,7 +1155,7 @@ const HeroSection = () => {
 
                 <div className="absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                   Our AI{" "}
                   <span className="text-cyan-400">
                     Development
@@ -1253,7 +1253,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-6 md:mt-8 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                <h3 className="mt-6 md:mt-8 text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                   {processData[activeStep].title}
                 </h3>
 
@@ -1369,7 +1369,7 @@ const HeroSection = () => {
             <div>
               <h2
                 className="
-                text-5xl lg:text-6xl
+                text-4xl lg:text-5xl xl:text-6xl
                 font-bold
                 text-white
                 leading-tight

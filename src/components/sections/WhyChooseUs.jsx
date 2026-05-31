@@ -241,7 +241,8 @@ to-[#12003f]/40
               text-[32px]
               sm:text-[44px]
               lg:text-[48px]
-              xl:text-[64px]
+              xl:text-[56px]
+              2xl:text-[64px]
               "
             >
               Your Challenges,

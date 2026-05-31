@@ -35,7 +35,7 @@ const MitraSuite = () => {
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:gap-6 md:gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black text-[#09090F] mb-3 sm:mb-4 md:mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-[#09090F] mb-3 sm:mb-4 md:mb-6 leading-tight">
               The <span className="text-purple-600">Mitra Suite</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600">

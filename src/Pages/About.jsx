@@ -228,15 +228,15 @@ export default function About() {
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
         <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden">
           <div className="z-10 text-center lg:text-left pt-24 sm:pt-28 md:pt-28">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
               <span className="inline-block w-1 md:w-2 h-5 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
             </h1>
-            <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-[18px] leading-relaxed md:leading-[38px] text-gray-600 max-w-[650px] mx-auto lg:mx-0">
+            <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-[16px] lg:text-[18px] leading-relaxed md:leading-[30px] lg:leading-[38px] text-gray-600 max-w-[650px] mx-auto lg:mx-0">
               Join <span className="font-bold text-gray-900">500+ businesses worldwide</span> who transformed their operations with
               <span className="font-bold text-gray-900"> Biosoftech Solutions'</span> best software development and automation services.
             </p>
-            <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6 md:mt-8 text-xs sm:text-sm md:text-[18px] font-semibold">
+            <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6 md:mt-8 text-xs sm:text-sm md:text-base lg:text-[18px] font-semibold">
               <CheckCircle size={16} className="sm:w-[20px] sm:h-[20px] text-purple-600 shrink-0" />
               <span>Rated</span>
               <span className="text-orange-500">★★★★★</span>
@@ -343,10 +343,10 @@ export default function About() {
         <div className="relative max-w-[1220px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[50px] lg:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[42px] lg:leading-[54px] xl:text-[50px] xl:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
               <p className="mt-4 sm:mt-6 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
               <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
-              <h3 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[38px] font-black text-[#433d70]">Our Mission</h3>
+              <h3 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[32px] xl:text-[38px] font-black text-[#433d70]">Our Mission</h3>
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
               <button className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
@@ -369,7 +369,7 @@ export default function About() {
         <div className="relative max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
           <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-12 lg:gap-24 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[62px] lg:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[52px] lg:leading-[62px] xl:text-[62px] xl:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
               <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[28px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
                 <p>In our 10+ years of experience as a progressive software development company, we have witnessed the digital landscape evolve rapidly.</p>
                 <p>Even as AI automation, cloud integration, and new technologies reshaped industries, we have consistently helped businesses adapt and thrive.</p>
@@ -445,7 +445,7 @@ export default function About() {
 
               <motion.h2
                 style={{ y: headingY }}
-                className="mt-2 text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] lg:text-[64px] lg:leading-[72px] font-black"
+                className="mt-2 text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] lg:text-[54px] lg:leading-[62px] xl:text-[64px] xl:leading-[72px] font-black"
               >
                 We Transform<br />
                 <span
@@ -571,7 +571,7 @@ export default function About() {
 
               {/* Heading */}
 
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+              <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                 We Offer All You
                 <br />
                 <span className="text-orange-500">
@@ -631,7 +631,7 @@ export default function About() {
 
           {/* Heading */}
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl md:text-[42px] leading-tight font-light text-black">
+            <h2 className="text-3xl sm:text-4xl md:text-[36px] lg:text-[42px] leading-tight font-light text-black">
               <span className="font-semibold">
                 The Technology Growth Engine
               </span>{" "}
@@ -709,7 +709,7 @@ export default function About() {
               WHAT WE DO
             </p>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3F3D73] mt-2">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-[#3F3D73] mt-2">
               Fresh Ideas for Every Business
             </h2>
           </div>
@@ -791,7 +791,7 @@ export default function About() {
               OUR GROWTH STORY
             </p>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3d3a72] mt-4">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-[#3d3a72] mt-4">
               The Story of Biosoftech Solutions
             </h2>
           </div>
@@ -897,7 +897,7 @@ export default function About() {
                 Request a Call Back!
               </p>
 
-              <h2 className="text-white text-2xl sm:text-4xl md:text-6xl leading-tight font-light">
+              <h2 className="text-white text-2xl sm:text-4xl lg:text-6xl leading-tight font-light">
                 Book an Appointment With
                 <br />
                 Our Top-Rated{" "}

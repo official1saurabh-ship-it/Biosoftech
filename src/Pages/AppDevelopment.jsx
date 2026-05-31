@@ -480,7 +480,7 @@ const AppDevelopment = () => {
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
                                 App Development<br className="hidden md:block" />That Drives Results
                             </h1>
                             <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
@@ -518,7 +518,7 @@ const AppDevelopment = () => {
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[760px] mx-auto lg:mx-0">
+                            <h2 className="        text-2xl sm:text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[760px] mx-auto lg:mx-0">
                                 Lift Your Brand with Cutting-Edge<br className="hidden md:block" />Android Applications
                             </h2>
                             <ul className="mt-6 sm:mt-10 md:mt-14 space-y-4 sm:space-y-6 md:space-y-10 text-left">
@@ -548,7 +548,7 @@ const AppDevelopment = () => {
                             <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="800" height="800" className="w-full max-w-[450px] md:max-w-[550px] object-contain drop-shadow-2xl" />
                         </div>
                         <div className="order-1 lg:order-2 text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl lg:text-[60px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[820px] mx-auto lg:mx-0">
+                            <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[820px] mx-auto lg:mx-0">
                                 Crafting User-Centric Android<br className="hidden md:block" />Experiences through Innovative<br className="hidden md:block" />Development
                             </h2>
                             <ul className="mt-10 md:mt-14 space-y-8 md:space-y-12 text-left">
@@ -571,7 +571,7 @@ const AppDevelopment = () => {
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-12">
                         <div className="max-w-[620px] text-center lg:text-left mx-auto lg:mx-0">
-                            <h2 className="text-3xl lg:text-[56px] leading-tight lg:leading-[1.15] font-bold text-black">
+                            <h2 className="text-3xl lg:text-[46px] xl:text-[56px] leading-tight lg:leading-[1.15] font-bold text-black">
                                 Unleash the Power of Android App<br className="hidden lg:block" />Development for Business Growth
                             </h2>
                             <p className="mt-6 md:mt-8 text-[#45526a] text-base md:text-[18px] leading-relaxed md:leading-[2]">
@@ -601,7 +601,7 @@ const AppDevelopment = () => {
             {/* Section 5: Our Process */}
             <section className="bg-[#fbfbfb] py-12 sm:py-16 md:py-24 overflow-hidden">
                 <div className="max-w-[1450px] mx-auto px-4 sm:px-6">
-                    <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-bold mb-10 sm:mb-16 md:mb-20">
+                    <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10 sm:mb-16 md:mb-20">
                         Our Process to <span className="text-orange-500">Success</span>
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-y-16 md:gap-y-28 gap-x-6 sm:gap-x-10">
@@ -642,7 +642,7 @@ const AppDevelopment = () => {
                 <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
                         <div className="max-w-[760px] text-center lg:text-left">
-                            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-[1.15] font-semibold text-[#171212]">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] leading-tight md:leading-[1.15] font-semibold text-[#171212]">
                                 Get Scalable Android App<br className="hidden md:block" />Development Services
                             </h2>
                             <div className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-6 md:space-y-8">
@@ -675,7 +675,7 @@ const AppDevelopment = () => {
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] md:w-[900px] h-[300px] md:h-[500px] bg-white/40 blur-[80px] md:blur-[140px] rounded-full" />
                 <div className="relative max-w-[1450px] mx-auto px-6">
                     <div className="text-center max-w-[1200px] mx-auto">
-                        <h2 className="text-3xl md:text-5xl lg:text-[60px] font-bold leading-tight md:leading-[1.15] text-[#1c1717]">
+                        <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight md:leading-[1.15] text-[#1c1717]">
                             Technology & Frameworks We Use for Android App Development Services
                         </h2>
                         <p className="mt-6 md:mt-8 text-[#393939] text-base md:text-lg leading-relaxed md:leading-[2] max-w-[1100px] mx-auto">
@@ -707,7 +707,7 @@ const AppDevelopment = () => {
                 <div className="max-w-[1500px] mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl lg:text-[60px] font-bold leading-tight lg:leading-[1.15]">
+                            <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight lg:leading-[1.15]">
                                 Steps We Take To Impart Our Android App Development Services
                             </h2>
                             <p className="mt-6 md:mt-10 text-base md:text-lg leading-relaxed md:leading-[2] text-gray-600">
@@ -759,7 +759,7 @@ const AppDevelopment = () => {
             <section className="bg-[#f8f8f8] py-16 md:py-24">
                 <div className="max-w-[1400px] mx-auto px-6">
                     <div className="text-center">
-                        <h2 className="text-3xl md:text-5xl lg:text-[64px] font-semibold leading-tight md:leading-[1.15]">
+                        <h2 className="text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] font-semibold leading-tight md:leading-[1.15]">
                             App Development<br className="hidden md:block" />Technologies <span className="text-[#34d058]">We Work On</span>
                         </h2>
                         <p className="mt-6 md:mt-8 text-[#333] text-base md:text-lg leading-relaxed md:leading-[2] max-w-[900px] mx-auto">

@@ -103,9 +103,11 @@ export default function TestimonialSection() {
                         className="
             text-white
 
-            text-[34px]
-            sm:text-[44px]
-            lg:text-[54px]
+            text-[28px]
+            sm:text-[34px]
+            md:text-[44px]
+            lg:text-[48px]
+            xl:text-[54px]
 
             font-bold
 
@@ -173,8 +175,9 @@ export default function TestimonialSection() {
 
                         <h3
                             className="
-              text-[30px]
-              lg:text-[38px]
+              text-[26px]
+              lg:text-[32px]
+              xl:text-[38px]
               font-bold
             "
                         >
@@ -218,8 +221,9 @@ export default function TestimonialSection() {
               block
               mt-6
 
-              text-[42px]
-              lg:text-[52px]
+              text-[36px]
+              lg:text-[44px]
+              xl:text-[52px]
               font-medium
             "
                         >

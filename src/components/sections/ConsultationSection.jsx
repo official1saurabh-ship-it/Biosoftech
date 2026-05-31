@@ -252,8 +252,9 @@ lg:h-[700px]
                             <h2
                                 className="
                 text-2xl
-                sm:text-[36px]
-                lg:text-[42px]
+                sm:text-[30px]
+                lg:text-[36px]
+                xl:text-[42px]
                 leading-[1.1]
                 font-bold
                 text-[#40356b]

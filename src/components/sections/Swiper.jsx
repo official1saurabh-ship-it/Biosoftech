@@ -78,8 +78,10 @@ export default function ServicesSlider() {
                         className="
             mt-8
             text-[34px]
-            sm:text-[48px]
-            lg:text-[72px]
+            sm:text-[42px]
+            md:text-[52px]
+            lg:text-[62px]
+            xl:text-[72px]
             font-black
           "
                     >

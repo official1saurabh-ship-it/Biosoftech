@@ -41,7 +41,7 @@ const WebsiteDevelopment = () => {
 
                     {/* Heading */}
                     <div className="text-center max-w-[1000px] mx-auto">
-                        <h2 className="text-2xl sm:text-3xl md:text-[52px] leading-tight font-semibold text-[#1d2430]">
+                        <h2 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] leading-tight font-semibold text-[#1d2430]">
                             Why Choose Biosoftech Solutions As Your Preferred
                             <br className="hidden md:block" />
                             Website Development Company?

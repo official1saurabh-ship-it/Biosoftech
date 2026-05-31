@@ -100,9 +100,11 @@ export default function AdNetworkSection() {
             <h2
               className="
               mt-5
-              text-[34px]
-              sm:text-[48px]
-              lg:text-[72px]
+              text-[28px]
+              sm:text-[34px]
+              md:text-[48px]
+              lg:text-[62px]
+              xl:text-[72px]
               font-black
               leading-[1.08]
               lg:leading-none
@@ -296,9 +298,11 @@ ${reverse
         <h3
           className="
 text-center
-text-[28px]
-sm:text-[38px]
-lg:text-[54px]
+text-[24px]
+sm:text-[28px]
+md:text-[38px]
+lg:text-[48px]
+xl:text-[54px]
 font-black
 mb-6
 lg:mb-10
@@ -315,8 +319,8 @@ lg:mb-10
 
           <p
             className="
-text-lg
-sm:text-xl
+text-base
+sm:text-lg
 lg:text-[24px]
 max-w-[650px]
 leading-relaxed
@@ -343,8 +347,8 @@ leading-relaxed
                 className="
 flex
 gap-5
-text-lg
-sm:text-xl
+text-base
+sm:text-lg
 lg:text-[24px]
 leading-relaxed
 "

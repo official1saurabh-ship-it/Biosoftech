@@ -48,9 +48,11 @@ export default function PerformanceSection() {
 
             <h2
               className="
-              text-[34px]
-              sm:text-[42px]
-              lg:text-[52px]
+              text-[28px]
+              sm:text-[34px]
+              md:text-[42px]
+              lg:text-[48px]
+              xl:text-[52px]
               leading-[1.05]
               font-black
               max-w-[620px]
@@ -80,31 +82,31 @@ export default function PerformanceSection() {
             <div className="flex gap-8 sm:gap-12 lg:gap-16 mt-10 lg:mt-16 flex-wrap">
 
               <div>
-                <span className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
                   200+
                 </span>
 
-                <p className="text-base sm:text-[22px]">
+                <p className="text-base sm:text-lg lg:text-[22px]">
                   Projects Delivered
                 </p>
               </div>
 
               <div>
-                <span className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
                   500+
                 </span>
 
-                <p className="text-base sm:text-[22px]">
+                <p className="text-base sm:text-lg lg:text-[22px]">
                   Clients Served
                 </p>
               </div>
 
               <div>
-                <span className="text-[38px] sm:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
                   80%
                 </span>
 
-                <p className="text-base sm:text-[22px]">
+                <p className="text-base sm:text-lg lg:text-[22px]">
                   Productivity Boost
                 </p>
               </div>

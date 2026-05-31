@@ -17,7 +17,8 @@ export default function GrowthSection() {
           text-center
           text-[28px]
           sm:text-[34px]
-          lg:text-[42px]
+          lg:text-[38px]
+          xl:text-[42px]
           leading-[1.2]
           font-light
           text-black
@@ -61,8 +62,9 @@ export default function GrowthSection() {
                         <h3
                             className="
               text-[34px]
-              sm:text-[42px]
-              lg:text-[48px]
+              sm:text-[38px]
+              lg:text-[42px]
+              xl:text-[48px]
               font-medium
               leading-[1.05]
               mb-6
@@ -205,7 +207,7 @@ export default function GrowthSection() {
             "
                         >
 
-                            <h3 className="text-[46px] lg:text-[64px] leading-none">
+                            <h3 className="text-[36px] sm:text-[46px] lg:text-[54px] xl:text-[64px] leading-none">
                                 1,000+
                             </h3>
 
@@ -236,7 +238,7 @@ export default function GrowthSection() {
             "
                         >
 
-                            <h3 className="text-[46px] lg:text-[64px] leading-none">
+                            <h3 className="text-[36px] sm:text-[46px] lg:text-[54px] xl:text-[64px] leading-none">
                                 500+
                             </h3>
 
@@ -310,8 +312,10 @@ export default function GrowthSection() {
 
                         <h3
                             className="
-              text-[32px]
-              lg:text-[42px]
+              text-[28px]
+              sm:text-[32px]
+              lg:text-[38px]
+              xl:text-[42px]
               leading-[1.1]
               mb-6
             "

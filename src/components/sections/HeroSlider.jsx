@@ -111,19 +111,19 @@ export default function HeroRevealSlider() {
                 {slide.top}
               </h2>
 
-              <h1 className="text-[28px] sm:text-[56px] md:text-[72px] lg:text-[96px] xl:text-[112px] 2xl:text-[124px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[78px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
 
-              <h2 className="text-[20px] sm:text-[40px] md:text-[52px] lg:text-[68px] xl:text-[78px] 2xl:text-[86px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[58px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
 
-              <h2 className="text-[18px] sm:text-[32px] md:text-[40px] lg:text-[54px] xl:text-[64px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[46px] xl:text-[58px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
               </h2>
 
-              <p className="mt-4 lg:mt-7 max-w-[550px] text-sm sm:text-base lg:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
+              <p className="mt-4 lg:mt-7 max-w-[550px] w-full text-sm sm:text-base lg:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
                 {slide.desc}
               </p>
 

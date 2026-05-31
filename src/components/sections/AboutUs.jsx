@@ -130,7 +130,7 @@ export default function AboutUs() {
               style={{
                 y: shouldAnimate ? titleY : 0,
               }}
-              className="mt-4 sm:mt-5 text-[28px] sm:text-[48px] lg:text-[54px] xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
+              className="mt-4 sm:mt-5 text-[28px] sm:text-[48px] lg:text-[54px] xl:text-[64px] 2xl:text-[75px] leading-[1.05] font-black text-[#06031b]"
             >
               Full-Service Software
               <br />
@@ -143,7 +143,7 @@ export default function AboutUs() {
               style={{
                 y: shouldAnimate ? contentY : 0,
               }}
-              className="mt-4 sm:mt-6 text-[#5b5b69] text-base sm:text-xl xl:text-[30px] leading-relaxed"
+              className="mt-4 sm:mt-6 text-[#5b5b69] text-base sm:text-xl lg:text-[22px] xl:text-[30px] leading-relaxed"
             >
               We are a leading technology partner delivering innovation and
               efficiency for more than a decade. Our team specializes in
@@ -157,11 +157,11 @@ export default function AboutUs() {
               }}
               className="mt-4 sm:mt-6 space-y-2"
             >
-              <div className="flex items-center gap-3 text-lg sm:text-2xl font-bold text-purple-600">
+              <div className="flex items-center gap-3 text-base sm:text-lg lg:text-2xl font-bold text-purple-600">
                 <CircleCheckBig size={24} className="text-green-500" />
                 Fast Results, Smart Solutions!
               </div>
-              <div className="flex items-center gap-3 text-lg sm:text-2xl font-bold text-purple-600">
+              <div className="flex items-center gap-3 text-base sm:text-lg lg:text-2xl font-bold text-purple-600">
                 <CircleCheckBig size={24} className="text-green-500" />
                 Achieve Your Business Goals!
               </div>
@@ -182,10 +182,10 @@ export default function AboutUs() {
 
               <div>
 
-                <div className="text-base sm:text-xl lg:text-2xl xl:text-3xl font-black leading-tight">
+                <div className="text-base sm:text-lg lg:text-2xl xl:text-3xl font-black leading-tight">
                   +91-9044425858
                 </div>
-                <div className="text-base sm:text-xl lg:text-2xl xl:text-3xl font-black leading-tight">
+                <div className="text-base sm:text-lg lg:text-2xl xl:text-3xl font-black leading-tight">
                   +91-9044425959
                 </div>
 

@@ -442,7 +442,7 @@ const CloudServices = () => {
                 <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-black leading-tight">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight">
                                 Best Cloud Services
                                 <br />
                                 Company in India
@@ -736,7 +736,7 @@ const CloudServices = () => {
                             <p className="uppercase tracking-[4px] text-[#2455FF] font-medium mb-5">
                                 AWS Migration
                             </p>
-                            <h2 className="text-4xl md:text-5xl lg:text-[58px] leading-tight font-semibold mb-8">
+                            <h2 className="text-4xl md:text-5xl lg:text-[50px] xl:text-[58px] leading-tight font-semibold mb-8">
                                 AWS Cloud Migration Services
                             </h2>
                             <p className="text-[#36507A] text-lg md:text-[20px] leading-relaxed md:leading-[2] max-w-[700px]">
@@ -980,8 +980,9 @@ const CloudServices = () => {
 
                             <h2
                                 className="
-            text-5xl
-            lg:text-6xl
+            text-4xl
+            lg:text-5xl
+            xl:text-6xl
             font-bold
             text-[#403B75]
             leading-tight

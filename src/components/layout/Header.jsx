@@ -103,7 +103,7 @@ const Header = () => {
           </Link>
 
           {/* Navigation Area with CORRECTED Hover Effect */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 px-4 h-full">
+          <nav className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-8 px-4 h-full">
             {menuItems.map((item) => (
               <motion.div
                 key={item.name}

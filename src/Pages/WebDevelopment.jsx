@@ -255,7 +255,7 @@ const WebDevelopment = () => {
                 <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
                                 Build Websites That<br className="hidden md:block" />Drive Growth
                             </h1>
                             <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
@@ -298,7 +298,7 @@ const WebDevelopment = () => {
                     </div>
 
                     {/* HEADING */}
-                    <h2 className="text-center text-[#101126] font-bold leading-tight text-5xl lg:text-[64px]">
+                    <h2 className="text-center text-[#101126] font-bold leading-tight text-4xl md:text-5xl lg:text-[54px] xl:text-[64px]">
                         Websites That Speak
                         <br />
                         Your Customer&apos;s Language
@@ -441,7 +441,7 @@ const WebDevelopment = () => {
                     {/* Heading */}
 
                     <div className="text-center mb-16">
-                        <h2 className="text-black font-bold text-4xl lg:text-6xl leading-tight">
+                        <h2 className="text-black font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
                             Our Inspiring Web
                             <br />
                             Development Portfolio
@@ -515,7 +515,7 @@ const WebDevelopment = () => {
 
                     {/* Heading */}
 
-                        <h2 className="text-center text-[#080B1D] font-black text-4xl sm:text-5xl md:text-7xl lg:text-9xl mt-8">
+                        <h2 className="text-center text-[#080B1D] font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-9xl mt-8">
                         How We Execute Success
                     </h2>
 
@@ -722,7 +722,7 @@ const WebDevelopment = () => {
                         {/* Right Content */}
                         <div className="w-full">
 
-                            <h2 className="text-[#10002b] text-4xl md:text-5xl lg:text-[64px] font-bold leading-tight mb-8">
+                            <h2 className="text-[#10002b] text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] font-bold leading-tight mb-8">
                                 Get Started With Building Your Dream Website
                             </h2>
 
@@ -772,7 +772,7 @@ const WebDevelopment = () => {
                             Custom Application Development Services
                         </span>
 
-                        <h2 className="mt-4 text-4xl lg:text-[56px] font-semibold leading-tight text-black">
+                        <h2 className="mt-4 text-3xl md:text-4xl lg:text-[48px] xl:text-[56px] font-semibold leading-tight text-black">
                             Tailored Solutions for Your Unique Business Needs
                         </h2>
 
@@ -851,7 +851,7 @@ const WebDevelopment = () => {
 
                     {/* RIGHT CONTENT */}
                     <div className="px-8 lg:px-12 py-8">
-                        <h2 className="text-4xl lg:text-[54px] font-serif font-semibold text-black mb-4">
+                        <h2 className="text-3xl md:text-4xl lg:text-[44px] xl:text-[54px] font-serif font-semibold text-black mb-4">
                             Benefits of Custom Application Development
                         </h2>
 
@@ -1046,11 +1046,11 @@ const WebDevelopment = () => {
 
                                 {/* Content */}
                                 <div>
-                                    <h3 className="text-[#1d2b42] text-2xl sm:text-3xl md:text-[42px] font-bold leading-tight">
+                                    <h3 className="text-[#1d2b42] text-2xl sm:text-3xl md:text-[32px] lg:text-[42px] font-bold leading-tight">
                                         {item.title}
                                     </h3>
 
-                                    <p className="mt-6 text-[#5f6c80] text-[22px] leading-[1.8] max-w-xl">
+                                    <p className="mt-6 text-[#5f6c80] text-[18px] lg:text-[22px] leading-[1.8] max-w-xl">
                                         {item.description}
                                     </p>
                                 </div>
