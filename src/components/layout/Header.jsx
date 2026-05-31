@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Calendar, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import biosoftechLogo from "../../assets/download.png";
 
 const WEBSITE_URL = 'https://www.biosoftech.com';
 
@@ -91,22 +92,13 @@ const Header = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className={`relative pointer-events-auto w-[96%] sm:w-[92%] max-w-[1280px] h-14 sm:h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-[height,opacity,transform] duration-500 ${isScrolled ? 'h-12 sm:h-14 opacity-95' : 'scale-100 opacity-100'}`}
-style={isScrolled ? { transform: 'scale(0.98)' } : {}}
+          style={isScrolled ? { transform: 'scale(0.98)' } : {}}
         >
           {/* Logo Section */}
           <Link to="/" className="h-full py-1 shrink-0">
-            <div className="h-full bg-gradient-to-r from-[#9255CE] to-[#BE60FF] rounded-full px-6 flex items-center gap-3 shadow-[0_0_20px_rgba(146,85,206,0.3)] relative overflow-hidden group">
-              <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="w-7 h-7 text-white">
-                <svg viewBox="0 0 100 100" className="w-full h-full fill-current">
-                  <path d="M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z" fill="none" stroke="currentColor" strokeWidth="8" />
-                  <path d="M50 25 L75 40 L75 60 L50 75 L25 60 L25 40 Z" fill="currentColor" />
-                </svg>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-white font-black text-lg leading-none tracking-tight uppercase">Biosoftech</span>
-                <span className="text-white/60 text-[7px] font-bold uppercase tracking-[0.3em] mt-0.5 whitespace-nowrap">Launch and Grow</span>
-              </div>
+            <div className="h-full bg-white rounded-full px-3 flex items-center shadow-[0_0_20px_rgba(146,85,206,0.3)] relative overflow-hidden group">
+              <div className="absolute inset-0 bg-white/10 opacity-0 " />
+              <img src={biosoftechLogo} alt="Biosoftech" className="h-7 w-52 object-contain" />
             </div>
           </Link>
 
@@ -151,7 +143,7 @@ style={isScrolled ? { transform: 'scale(0.98)' } : {}}
 
                 {/* Dropdown Menu */}
                 {item.dropdown && (
-                   <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}>
+                  <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-4 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-[100] ${activeDropdown === item.name ? '!opacity-100 !visible' : ''}`}>
                     <div className="bg-[#09090F]/98 backdrop-blur-3xl rounded-2xl border border-white/5 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden p-1.5">
                       {item.dropdown.map((subItem) => {
                         const isExternal = subItem.href.startsWith('http');
@@ -183,7 +175,7 @@ style={isScrolled ? { transform: 'scale(0.98)' } : {}}
               to="/contact"
               className="hidden xl:flex items-center gap-2 border border-white/10 bg-white px-7 py-2 rounded-full font-bold text-[12px] text-black hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
             >
-               <Calendar className="text-[#0e141d] group-hover:text-white transition-colors" size={14} />
+              <Calendar className="text-[#0e141d] group-hover:text-white transition-colors" size={14} />
               <span>Meeting</span>
             </Link>
 
