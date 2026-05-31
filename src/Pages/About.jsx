@@ -157,28 +157,12 @@ export default function About() {
 
   const timelineData = [
     {
-      year: "2017",
+      year: "2021",
       side: "right",
       color: "#42C97A",
       title: "Our Beginning",
       description:
         "Founded with the mission to deliver affordable and effective software solutions in India.",
-    },
-    {
-      year: "2019",
-      side: "left",
-      color: "#F59E0B",
-      title: "Expansion in Services",
-      description:
-        "Introduced advanced web development, mobile applications, and desktop solutions to support diverse industries.",
-    },
-    {
-      year: "2020",
-      side: "right",
-      color: "#6C63FF",
-      title: "Industry Solutions Launch",
-      description:
-        "Rolled out specialized platforms for restaurants, hotels, schools, billing, pathology labs, and staff management, becoming a trusted partner for SMEs.",
     },
     {
       year: "2022",
@@ -187,6 +171,14 @@ export default function About() {
       title: "Leveraging AI & Cloud",
       description:
         "Integrated AI automation and cloud services to help businesses streamline operations and achieve smarter growth.",
+    },
+    {
+      year: "2023",
+      side: "right",
+      color: "#E63946",
+      title: "Future Expansion & Innovation",
+      description:
+        "Strengthened our presence in India with next-generation AI-driven automation, industry-specific software, and advanced enterprise solutions. Preparing for global expansion, we continue to innovate with technology that keeps businesses ahead of the curve.",
     },
     {
       year: "2024",
@@ -198,19 +190,11 @@ export default function About() {
     },
     {
       year: "2025",
-      side: "left",
+      side: "right",
       color: "#FF6B35",
       title: "Scaling Enterprise Solutions",
       description:
         "Expanded offerings with enterprise-grade analytics platforms, ERP systems, and advanced cloud integrations, strengthening our role as a trusted technology partner for large organizations.",
-    },
-    {
-      year: "2026",
-      side: "right",
-      color: "#E63946",
-      title: "Future Expansion & Innovation",
-      description:
-        "Strengthened our presence in India with next-generation AI-driven automation, industry-specific software, and advanced enterprise solutions. Preparing for global expansion, we continue to innovate with technology that keeps businesses ahead of the curve.",
     },
   ];
 

@@ -115,7 +115,7 @@ export default function HeroRevealSlider() {
                 {slide.big}
               </h1>
 
-              <h2 className="text-[24px] sm:text-[48px] md:text-[64px] lg:text-[82px] xl:text-[96px] 2xl:text-[108px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-[20px] sm:text-[40px] md:text-[52px] lg:text-[68px] xl:text-[78px] 2xl:text-[86px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
 
