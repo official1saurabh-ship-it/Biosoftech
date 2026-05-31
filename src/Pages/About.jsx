@@ -25,6 +25,7 @@ import {
 import about from "../assets/about-hero-illustration.webp";
 import growthImage from "../assets/about-growth-engine.png";
 import freshIdeasImage from "../assets/about-fresh-ideas.webp";
+import aboutHero from "../assets/about-us-hero-software-solutions.avif";
 
 export default function About() {
   const navigate = useNavigate();
@@ -272,7 +273,7 @@ export default function About() {
           </div>
           <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
             <div className="absolute w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[20px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10 max-w-full" />
-            <img src="/girl.png" alt="Digital Marketing Expert" fetchpriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
+            <img src={aboutHero} alt="Biosoftech Solutions - Software Development Company" fetchpriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
             <div className="absolute top-4 right-4 sm:top-8 sm:right-8 md:top-12 md:right-12 z-30">
               <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-base sm:text-xl font-bold border">G</div>
             </div>
@@ -293,6 +294,61 @@ export default function About() {
               <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-base sm:text-xl">🌐</span></div>
               <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">500+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Marquee Section */}
+      <section className="w-full overflow-hidden bg-[#09090F] py-4">
+        <style>{`
+          @keyframes dm-marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .dm-marquee-track {
+            display: flex;
+            gap: 2.5rem;
+            animation: dm-marquee 30s linear infinite;
+            width: max-content;
+          }
+          .dm-marquee-track:hover {
+            animation-play-state: paused;
+          }
+          .dm-marquee-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 500;
+          }
+        `}</style>
+        <div className="dm-marquee-wrap w-full">
+          <div className="dm-marquee-track">
+            {(() => {
+              const items = [
+                "Best Digital Marketing Company In Lucknow",
+                "Social Media Ads",
+                "Content Strategy",
+                "Brand Identity",
+                "Email Marketing",
+                "SEO Optimization",
+                "WordPress Development",
+                "Video Marketing",
+                "Creative Strategy",
+                "Web Design",
+                "PPC Campaigns",
+              ];
+              return [...items, ...items].map((text, i) => (
+                <div key={i} className="dm-marquee-item">
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-yellow-400 shrink-0" fill="currentColor">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  {text}
+                </div>
+              ));
+            })()}
           </div>
         </div>
       </section>
@@ -778,6 +834,7 @@ export default function About() {
                     className="w-full max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4"
                     style={{ borderColor: item.color }}
                   >
+                    <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
@@ -799,6 +856,7 @@ export default function About() {
                     className="w-full max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4"
                     style={{ borderColor: item.color }}
                   >
+                    <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>

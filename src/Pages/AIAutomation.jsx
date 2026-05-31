@@ -625,7 +625,7 @@ const HeroSection = () => {
                   loading="lazy"
                   width="1920"
                   height="550"
-                  className="w-full h-[500px] md:h-[400px] lg:h-[550px] object-cover"
+                  className="w-full h-[300px] md:h-[400px] lg:h-[550px] object-cover"
                 />
               </div>
             </div>
@@ -736,7 +736,7 @@ const HeroSection = () => {
                     <button
                       key={index}
                       onClick={() => setActiveService(service)}
-                      className="relative h-[350px] rounded-[24px] overflow-hidden group text-left"
+                      className="relative h-[280px] md:h-[350px] rounded-[24px] overflow-hidden group text-left"
                     >
 
                       {/* IMAGE */}
@@ -933,7 +933,7 @@ const HeroSection = () => {
                   relative z-10
                   mt-8
                   text-xl
-                leading-10 md:leading-8 lg:leading-10
+                leading-8 md:leading-8 lg:leading-10
                 text-white/75
               "
                 >
@@ -1015,7 +1015,7 @@ const HeroSection = () => {
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-5 text-white/70 text-xl leading-10 md:leading-8 lg:leading-10">
+                  <p className="mt-5 text-white/70 text-xl leading-8 md:leading-8 lg:leading-10">
                     {item.description}
                   </p>
                 </div>
@@ -1043,7 +1043,7 @@ const HeroSection = () => {
                   width="1920"
                   height="540"
                   className="
-                  w-full h-[540px] md:h-[400px] lg:h-[540px]
+                  w-full h-[280px] md:h-[400px] lg:h-[540px]
                   object-cover
                   transition-transform duration-700
                   group-hover:scale-110
@@ -1097,7 +1097,7 @@ const HeroSection = () => {
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-5 text-white/70 text-xl leading-10 md:leading-8 lg:leading-10">
+                  <p className="mt-5 text-white/70 text-xl leading-8 md:leading-8 lg:leading-10">
                     {item.description}
                   </p>
                 </div>
@@ -1388,7 +1388,7 @@ const HeroSection = () => {
               <p
                 className="
                 text-xl
-                leading-10 md:leading-8 lg:leading-10
+                leading-8 md:leading-8 lg:leading-10
                 text-white/90
               "
               >

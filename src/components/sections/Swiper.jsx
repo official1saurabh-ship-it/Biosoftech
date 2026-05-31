@@ -95,7 +95,7 @@ export default function ServicesSlider() {
                     <Swiper
                         modules={[Autoplay]}
                         spaceBetween={30}
-                        className="min-h-[480px] sm:min-h-[520px] lg:min-h-[620px]"
+                        className="min-h-[400px] sm:min-h-[520px] lg:min-h-[620px]"
                         slidesPerView={3}
                         loop
                         speed={1200}
@@ -134,7 +134,7 @@ export default function ServicesSlider() {
                     p-5
                     sm:p-8
                     lg:p-10
-                    min-h-[480px]
+                    min-h-[400px]
                     sm:min-h-[520px]
                     lg:h-[620px]
                     flex

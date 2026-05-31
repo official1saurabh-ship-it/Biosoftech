@@ -87,7 +87,7 @@ export default function WhyChooseUs() {
       bg-[#12003f]
 
       min-h-screen
-      lg:h-screen
+      lg:min-h-screen
 
       flex
       items-center

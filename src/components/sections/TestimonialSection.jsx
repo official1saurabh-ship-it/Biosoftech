@@ -358,7 +358,7 @@ export default function TestimonialSection() {
 
                             className="
 !overflow-visible
-min-h-[360px]
+min-h-[280px] sm:min-h-[360px]
 
 [&_.swiper-wrapper]:items-stretch
 "
@@ -386,7 +386,7 @@ p-7
 
 w-full
 
-min-h-[360px]
+min-h-[280px] sm:min-h-[360px]
 
 h-full
 

@@ -90,7 +90,8 @@ const Header = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className={`relative pointer-events-auto w-[96%] sm:w-[92%] max-w-[1280px] h-14 sm:h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-[height,opacity,transform,scale] duration-500 ${isScrolled ? 'h-12 sm:h-14 scale-98 opacity-95' : 'scale-100 opacity-100'}`}
+          className={`relative pointer-events-auto w-[96%] sm:w-[92%] max-w-[1280px] h-14 sm:h-16 flex items-center justify-between bg-gradient-to-r from-[#09090F] via-[#111827] to-[#09090F] backdrop-blur-2xl rounded-full border border-white/10 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5),0_0_30px_-10px_rgba(146,85,206,0.2)] px-1.5 transition-[height,opacity,transform] duration-500 ${isScrolled ? 'h-12 sm:h-14 opacity-95' : 'scale-100 opacity-100'}`}
+style={isScrolled ? { transform: 'scale(0.98)' } : {}}
         >
           {/* Logo Section */}
           <Link to="/" className="h-full py-1 shrink-0">

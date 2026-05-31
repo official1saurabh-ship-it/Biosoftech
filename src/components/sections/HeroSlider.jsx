@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import slider from "../../assets/hero-slider-slide-1.webp";
 import slider1 from "../../assets/hero-slider-slide-2.webp";
@@ -41,7 +42,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-[600px] sm:min-h-[720px] lg:h-screen overflow-hidden bg-[#050010] flex items-center">
+    <section className="relative min-h-[600px] sm:min-h-[720px] lg:min-h-screen overflow-hidden bg-[#050010] flex items-center">
 
       {/* BG IMAGE */}
       <div
@@ -126,9 +127,9 @@ export default function HeroRevealSlider() {
                 {slide.desc}
               </p>
 
-              <button className="mt-6 lg:mt-10 px-6 sm:px-12 py-3 sm:py-5 rounded-full bg-white text-black font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 hover:text-white hover:border-purple-600 border border-transparent transition-all duration-500 shadow-lg min-h-[44px]">
+              <Link to="/contact" className="inline-block mt-6 lg:mt-10 px-6 sm:px-12 py-3 sm:py-5 rounded-full bg-white text-black font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 hover:text-white hover:border-purple-600 border border-transparent transition-all duration-500 shadow-lg min-h-[44px]">
                 Get Started &rarr;
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>
