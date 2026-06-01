@@ -88,7 +88,7 @@ const Footer = () => {
                 { name: 'App Development', to: '/app-development' },
                 { name: 'Cloud Services', to: '/cloud-services' },
                 { name: 'AI Automation', to: '/ai-automation' },
-                { name: 'Privacy Policy', to: '#' },
+                { name: 'Privacy Policy', to: '/privacy-policy' },
                 { name: 'Terms & Conditions', to: '#' },
               ].map((item) => (
                 <li key={item.name}>

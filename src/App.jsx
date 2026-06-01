@@ -13,6 +13,7 @@ const AIAutomation = lazy(() => import('./Pages/AIAutomation'))
 const Contact = lazy(() => import('./Pages/Contact'))
 const About = lazy(() => import('./Pages/About'))
 const Blog = lazy(() => import('./Pages/Blog'))
+const PrivacyPolicy = lazy(() => import('./Pages/PrivacyPolicy'))
 
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-[60vh]">
@@ -37,6 +38,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </Suspense>
         <Footer />

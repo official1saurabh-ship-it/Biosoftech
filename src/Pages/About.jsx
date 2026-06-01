@@ -1,6 +1,7 @@
 import SEO from "../components/seo/SEO";
 import StructuredData from "../components/seo/StructuredData";
 import { useEffect, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   Phone,
   CheckCircle,
@@ -33,8 +34,34 @@ export default function About() {
   const [displayText, setDisplayText] = useState("");
   const [offset, setOffset] = useState(0);
   const [isDesktop, setIsDesktop] = useState(true);
+  const formRef = useRef();
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    service: "",
+    city: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: "", message: "" });
   const containerRef = useRef(null);
   const floatingRef = useRef(null);
+  const [captchaA, setCaptchaA] = useState(0);
+  const [captchaB, setCaptchaB] = useState(0);
+  const [captchaUser, setCaptchaUser] = useState("");
+  const [captchaError, setCaptchaError] = useState(false);
+
+  useEffect(() => {
+    const a = Math.floor(Math.random() * 10) + 1;
+    const b = Math.floor(Math.random() * 10) + 1;
+    setCaptchaA(a);
+    setCaptchaB(b);
+  }, []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -206,6 +233,82 @@ export default function About() {
         "Expanded offerings with enterprise-grade analytics platforms, ERP systems, and advanced cloud integrations, strengthening our role as a trusted technology partner for large organizations.",
     },
   ];
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (parseInt(captchaUser) !== captchaA + captchaB) {
+      setCaptchaError(true);
+      const a = Math.floor(Math.random() * 10) + 1;
+      const b = Math.floor(Math.random() * 10) + 1;
+      setCaptchaA(a);
+      setCaptchaB(b);
+      setCaptchaUser("");
+      return;
+    }
+    setCaptchaError(false);
+
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    const now = new Date().toLocaleString("en-IN", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateIdOrg = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_ORG;
+      const templateIdUser = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_USER;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !publicKey) {
+        throw new Error("Email service not configured properly. Please contact support.");
+      }
+
+      const ownerParams = {
+        to_email: "ansh@biosoftech.com",
+        owner_name: formData.fullName,
+        user_email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        date_time: now,
+        site_name: "Biosoftech",
+      };
+
+      const userParams = {
+        owner_name: formData.fullName,
+        user_email: formData.email,
+        site_name: "Biosoftech",
+        company_name: "Biosoftech Solutions",
+        support_email: "info@biosoftech.com",
+        to_email: formData.email,
+      };
+
+      if (templateIdOrg) {
+        await emailjs.send(serviceId, templateIdOrg, ownerParams, { publicKey });
+      }
+
+      if (templateIdUser) {
+        await emailjs.send(serviceId, templateIdUser, userParams, { publicKey });
+      }
+
+      setStatus({ type: "success", message: "Thank you! Your message has been sent successfully." });
+      setFormData({ fullName: "", phone: "", email: "", service: "", city: "", message: "" });
+      setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      const errorMsg = error?.text || error?.message || "Something went wrong. Please try again or contact us directly.";
+      setStatus({ type: "error", message: errorMsg });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="pt-0">
@@ -998,65 +1101,102 @@ export default function About() {
             {/* RIGHT SIDE */}
             <div className="border border-yellow-500 rounded-md p-4 sm:p-6 md:p-8 bg-black/30">
 
-              <form className="space-y-4 sm:space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <input
                     type="text"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
                     placeholder="Your Name"
+                    required
                     className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
 
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="Your Email"
+                    required
                     className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <input
-                    type="text"
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="Whatsapp Mobile Number"
+                    required
                     className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
 
                   <input
                     type="text"
+                    name="city"
+                    value={formData.city}
+                    onChange={handleChange}
                     placeholder="City"
                     className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
                 </div>
 
                 <label htmlFor="about-service" className="sr-only">Select Service</label>
-                <select id="about-service" className="h-14 px-4 bg-white rounded w-full outline-none text-sm sm:text-base">
-                  <option>- Select Service -</option>
+                <select id="about-service" name="service" value={formData.service} onChange={handleChange} className="h-14 px-4 bg-white rounded w-full outline-none text-sm sm:text-base">
+                  <option value="">- Select Service -</option>
+                  <option value="Develop Custom Software Solutions">Develop Custom Software Solutions</option>
+                  <option value="Build Or Upgrade My Mobile App / Website">Build Or Upgrade My Mobile App / Website</option>
+                  <option value="Integrate AI Automation Into My Workflow">Integrate AI Automation Into My Workflow</option>
+                  <option value="Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)">Mitra Suite (Billing, Restro, Hotel, Skola, Tentent)</option>
+                  <option value="Healthcare / Real Estate / Hospitality Software Needs">Healthcare / Real Estate / Hospitality</option>
+                  <option value="Cloud Integration & Data Security Services">Cloud Integration & Data Security Services</option>
+                  <option value="Not Sure - Need Expert Guidance">Not Sure - Need Expert Guidance</option>
                 </select>
 
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows="5"
                   placeholder="Please type atleast 20 characters about your Inquiry"
-                  className="w-full p-4 rounded outline-none text-sm sm:text-base"
+                  required
+                  className="w-full p-4 bg-white rounded outline-none text-sm sm:text-base"
                 />
 
-                {/* Fake Captcha */}
-                <div className="bg-white w-full sm:max-w-[300px] h-[78px] rounded flex items-center justify-between px-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 border-2 border-gray-500 shrink-0"></div>
-                    <span className="text-sm sm:text-base">I'm not a robot</span>
-                  </div>
-
-                  <div className="text-xs text-gray-500 shrink-0">
-                    reCAPTCHA
-                  </div>
+                <div className="bg-white rounded p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                  <label className="text-sm sm:text-base font-medium text-gray-700 whitespace-nowrap">
+                    What is {captchaA} + {captchaB}?
+                  </label>
+                  <input
+                    type="number"
+                    value={captchaUser}
+                    onChange={(e) => setCaptchaUser(e.target.value)}
+                    placeholder="Answer"
+                    className="h-10 w-24 px-3 border border-gray-300 rounded outline-none text-sm"
+                  />
+                  {captchaError && (
+                    <span className="text-red-500 text-sm">Wrong answer, try again</span>
+                  )}
                 </div>
 
                 <button
                   type="submit"
-                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all w-full sm:w-auto px-8 sm:px-14 py-4 rounded-full text-black text-lg sm:text-xl font-medium"
+                  disabled={isSubmitting}
+                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all disabled:opacity-60 disabled:cursor-not-allowed w-full sm:w-auto px-8 sm:px-14 py-4 rounded-full text-black text-lg sm:text-xl font-medium"
                 >
-                  Submit Now
+                  {isSubmitting ? "SENDING..." : status.type === "success" ? "MESSAGE SENT!" : "Submit Now"}
                 </button>
+
+                {status.message && (
+                  <p className={`text-sm font-medium text-center sm:text-left ${status.type === "success" ? "text-green-400" : "text-red-400"}`}>
+                    {status.message}
+                  </p>
+                )}
 
               </form>
             </div>
