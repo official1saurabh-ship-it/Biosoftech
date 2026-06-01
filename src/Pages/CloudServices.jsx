@@ -615,7 +615,7 @@ const CloudServices = () => {
             </section>
 
             {/* WHY CHOOSE SECTION */}
-            <section className="relative py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
+            <section className="relative overflow-hidden py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
                 <div className="absolute inset-0 bg-white/30" />
                 <div className="relative z-10 max-w-[1750px] mx-auto px-6 lg:px-20">
                         <div>
