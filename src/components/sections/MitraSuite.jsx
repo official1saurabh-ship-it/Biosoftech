@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Store, Hotel, School, Building2 } from 'lucide-react';
 
 const products = [
@@ -30,6 +31,7 @@ const products = [
 ];
 
 const MitraSuite = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-12 sm:py-16 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6">
@@ -42,7 +44,7 @@ const MitraSuite = () => {
               Industry-specific software solutions designed to simplify operations and boost productivity for your business.
             </p>
           </div>
-          <button className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-[#09090F] text-white rounded-full font-bold uppercase tracking-widest hover:bg-purple-600 transition-all text-[11px] sm:text-xs md:text-sm whitespace-nowrap self-start lg:self-auto min-h-[44px]">
+          <button onClick={() => navigate("/contact")} className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-[#09090F] text-white rounded-full font-bold uppercase tracking-widest hover:bg-purple-600 transition-all text-[11px] sm:text-xs md:text-sm whitespace-nowrap self-start lg:self-auto min-h-[44px]">
             View All Products
           </button>
         </div>

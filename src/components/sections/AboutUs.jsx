@@ -183,10 +183,10 @@ export default function AboutUs() {
               <div>
 
                 <div className="text-base sm:text-lg lg:text-2xl xl:text-3xl font-black leading-tight">
-                  +91-9044425858
+                  +91-7858063047
                 </div>
                 <div className="text-base sm:text-lg lg:text-2xl xl:text-3xl font-black leading-tight">
-                  +91-9044425959
+                  +91-6209688930
                 </div>
 
                 <div className="text-purple-500 text-base sm:text-xl">

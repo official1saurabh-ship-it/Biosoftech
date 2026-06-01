@@ -8,10 +8,6 @@ const EMAILJS_TEMPLATE_ID_ORG = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_ORG;
 const EMAILJS_TEMPLATE_ID_USER = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_USER;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-if (EMAILJS_PUBLIC_KEY) {
-  emailjs.init(EMAILJS_PUBLIC_KEY);
-}
-
 export default function ConsultationSection() {
   const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,44 +38,37 @@ export default function ConsultationSection() {
       hour12: true,
     });
 
-    const ownerParams = {
-      to_email: "ansh@biosoftech.com",
-      cc_email: "kishan@biosoftech.com",
-      owner_name: formData.fullName,
-      user_email: formData.email,
-      phone: formData.phone,
-      service: formData.service,
-      message: formData.message,
-      date_time: now,
-      site_name: "Biosoftech",
-    };
-
-    const userParams = {
-      owner_name: formData.fullName,
-      user_email: formData.email,
-      site_name: "Biosoftech",
-      company_name: "Biosoftech Solutions",
-      support_email: "info@biosoftech.com",
-      to_email: formData.email,
-    };
-
     try {
+      if (!EMAILJS_SERVICE_ID || !EMAILJS_PUBLIC_KEY) {
+        throw new Error("Email service not configured properly. Please contact support.");
+      }
+
+      const ownerParams = {
+        to_email: "ansh@biosoftech.com",
+        owner_name: formData.fullName,
+        user_email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        date_time: now,
+        site_name: "Biosoftech",
+      };
+
+      const userParams = {
+        owner_name: formData.fullName,
+        user_email: formData.email,
+        site_name: "Biosoftech",
+        company_name: "Biosoftech Solutions",
+        support_email: "info@biosoftech.com",
+        to_email: formData.email,
+      };
+
       if (EMAILJS_TEMPLATE_ID_ORG) {
-        await emailjs.send(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID_ORG,
-          ownerParams,
-          EMAILJS_PUBLIC_KEY
-        );
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_ORG, ownerParams, { publicKey: EMAILJS_PUBLIC_KEY });
       }
 
       if (EMAILJS_TEMPLATE_ID_USER) {
-        await emailjs.send(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID_USER,
-          userParams,
-          EMAILJS_PUBLIC_KEY
-        );
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_USER, userParams, { publicKey: EMAILJS_PUBLIC_KEY });
       }
 
       setStatus({
@@ -90,9 +79,10 @@ export default function ConsultationSection() {
       setTimeout(() => setStatus({ type: "", message: "" }), 5000);
     } catch (error) {
       console.error("EmailJS Error:", error);
+      const errorMsg = error?.text || error?.message || "Something went wrong. Please try again or contact us directly.";
       setStatus({
         type: "error",
-        message: "Something went wrong. Please try again or contact us directly.",
+        message: errorMsg,
       });
     } finally {
       setIsSubmitting(false);

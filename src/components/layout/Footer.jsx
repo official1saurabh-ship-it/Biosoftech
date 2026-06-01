@@ -131,10 +131,10 @@ const Footer = () => {
               <li className="flex items-center gap-4">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
                 <button
-                  onClick={() => setCallPopup({ visible: true, number: '+919044425858' })}
+                  onClick={() => setCallPopup({ visible: true, number: '+917858063047' })}
                   className="text-gray-600 text-sm hover:text-primary-1 transition-colors text-left"
                 >
-                  +91-9044425858
+                  +91-7858063047
                 </button>
               </li>
               <li className="flex items-center gap-4">

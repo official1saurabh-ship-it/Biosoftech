@@ -477,7 +477,7 @@ const CloudServices = () => {
                                 <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
-                                <button className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
+                                <button onClick={() => navigate("/contact")} className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
                                     CLOUD SOLUTIONS <FiArrowRightCircle className="transition group-hover:translate-x-1" />
                                 </button>
                             </div>
@@ -615,8 +615,7 @@ const CloudServices = () => {
             </section>
 
             {/* WHY CHOOSE SECTION */}
-            <section className="relative py-16 md:py-24 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop" alt="Business professionals collaborating on digital transformation strategy" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover object-right" loading="lazy" />
+            <section className="relative py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
                 <div className="absolute inset-0 bg-white/30" />
                 <div className="relative z-10 max-w-[1750px] mx-auto px-6 lg:px-20">
                         <div>
@@ -643,7 +642,7 @@ const CloudServices = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="bg-blue-600 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5 md:gap-6 text-white">
+                        <div className="bg-blue-600 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5 md:gap-6 text-white mt-8 md:mt-10">
                             <div className="flex-1">
                                 <p className="text-base md:text-lg leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
                             </div>
@@ -654,16 +653,16 @@ const CloudServices = () => {
             {/* DEVELOPMENT PROCESS SECTION */}
             <section
                 ref={sectionRef}
-                className="bg-[#0a0a0a] relative z-20 h-auto lg:h-[600vh]"
+                className="bg-[#0a0a0a] relative z-20 h-[500vh] pt-20 sm:pt-24 lg:pt-0"
             >
-                <div className="lg:sticky lg:top-0 lg:h-screen flex items-center overflow-hidden">
+                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-center overflow-hidden">
                     <div className="max-w-[1750px] mx-auto px-6 lg:px-20 w-full">
 
-                        <div className="text-center mb-12">
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white">
+                        <div className="text-center mb-8 lg:mb-12">
+                            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
-                            <p className="mt-4 text-gray-500 text-lg">
+                            <p className="mt-3 lg:mt-4 text-gray-500 text-sm lg:text-lg">
                                 We follow a simple, agile, and efficient process to deliver high-quality cloud solutions tailored to your business needs.
                             </p>
                         </div>
@@ -677,10 +676,10 @@ const CloudServices = () => {
                                 {stages.map((stage, index) => (
                                     <div
                                         key={stage.id}
-                                        className="min-w-full bg-[#111] rounded-3xl p-10 md:p-6 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-12 md:gap-8 lg:gap-12 items-center"
+                                        className="min-w-full bg-[#111] rounded-3xl p-6 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center"
                                     >
                                         {/* Left Content */}
-                                        <div className="lg:w-1/2 space-y-8">
+                                        <div className="lg:w-1/2 space-y-4 lg:space-y-8">
                                             <div className="inline-flex items-center gap-3">
                                                 <span className="text-6xl">{stage.icon}</span>
                                                 <div className="px-5 py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-sm font-semibold rounded-full">
@@ -688,19 +687,19 @@ const CloudServices = () => {
                                                 </div>
                                             </div>
 
-                                            <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                                            <h3 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-400 text-xl leading-relaxed">
+                                            <p className="text-gray-400 text-base lg:text-xl leading-relaxed">
                                                 {stage.desc}
                                             </p>
 
-                                            <div className="flex flex-wrap gap-4 pt-6">
-                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-10 py-4 rounded-2xl font-semibold text-lg transition-all active:scale-95 inline-flex items-center justify-center">
+                                            <div className="flex flex-wrap gap-3 pt-4 lg:pt-6">
+                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-6 lg:px-10 py-3 lg:py-4 rounded-2xl font-semibold text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Get a Free Quote
                                                 </a>
-                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-8 py-4 rounded-2xl font-semibold text-white transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-5 lg:px-8 py-3 lg:py-4 rounded-2xl font-semibold text-white text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Free Technical Consultation →
                                                 </a>
                                             </div>
@@ -716,7 +715,7 @@ const CloudServices = () => {
                         </div>
 
                         {/* Progress Indicator */}
-                        <div className="flex justify-center gap-3 mt-16">
+                        <div className="flex justify-center gap-3 mt-8 lg:mt-16">
                             {stages.map((_, i) => (
                                 <div
                                     key={i}

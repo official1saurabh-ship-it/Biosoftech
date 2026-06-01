@@ -15,10 +15,6 @@ const EMAILJS_TEMPLATE_ID_ORG = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_ORG;
 const EMAILJS_TEMPLATE_ID_USER = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_USER;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-if (EMAILJS_PUBLIC_KEY) {
-  emailjs.init(EMAILJS_PUBLIC_KEY);
-}
-
 const Contact = () => {
   const [searchParams] = useSearchParams();
   const formRef = useRef();
@@ -61,46 +57,39 @@ const Contact = () => {
       hour12: true,
     });
 
-    const ownerParams = {
-      to_email: "ansh@biosoftech.com",
-      cc_email: "kishan@biosoftech.com",
-      owner_name: `${formData.firstName} ${formData.lastName}`,
-      first_name: formData.firstName,
-      last_name: formData.lastName,
-      user_email: formData.email,
-      phone: formData.phone,
-      service: formData.service,
-      message: formData.message,
-      date_time: now,
-      site_name: "Biosoftech",
-    };
-
-    const userParams = {
-      owner_name: formData.firstName,
-      user_email: formData.email,
-      site_name: "Biosoftech",
-      company_name: "Biosoftech Solutions",
-      support_email: "info@biosoftech.com",
-      to_email: formData.email,
-    };
-
     try {
+      if (!EMAILJS_SERVICE_ID || !EMAILJS_PUBLIC_KEY) {
+        throw new Error("Email service not configured properly. Please contact support.");
+      }
+
+      const ownerParams = {
+        to_email: "ansh@biosoftech.com",
+        owner_name: `${formData.firstName} ${formData.lastName}`,
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        user_email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        date_time: now,
+        site_name: "Biosoftech",
+      };
+
+      const userParams = {
+        owner_name: formData.firstName,
+        user_email: formData.email,
+        site_name: "Biosoftech",
+        company_name: "Biosoftech Solutions",
+        support_email: "info@biosoftech.com",
+        to_email: formData.email,
+      };
+
       if (EMAILJS_TEMPLATE_ID_ORG) {
-        await emailjs.send(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID_ORG,
-          ownerParams,
-          EMAILJS_PUBLIC_KEY
-        );
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_ORG, ownerParams, { publicKey: EMAILJS_PUBLIC_KEY });
       }
 
       if (EMAILJS_TEMPLATE_ID_USER) {
-        await emailjs.send(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID_USER,
-          userParams,
-          EMAILJS_PUBLIC_KEY
-        );
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_USER, userParams, { publicKey: EMAILJS_PUBLIC_KEY });
       }
 
       setStatus({
@@ -111,9 +100,10 @@ const Contact = () => {
       setTimeout(() => setStatus({ type: "", message: "" }), 5000);
     } catch (error) {
       console.error("EmailJS Error:", error);
+      const errorMsg = error?.text || error?.message || "Something went wrong. Please try again or contact us directly.";
       setStatus({
         type: "error",
-        message: "Something went wrong. Please try again or contact us directly.",
+        message: errorMsg,
       });
     } finally {
       setIsSubmitting(false);
@@ -142,7 +132,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us – Software Development Company | Biosoftech Solutions"
-        description="Get in touch with Biosoftech Solutions. Call +91 9369655052 or email info@biosoftech.com. Head office in Lucknow, India."
+        description="Get in touch with Biosoftech Solutions. Call +91-7858063047 or email info@biosoftech.com. Head office in Lucknow, India."
         keywords="contact Biosoftech, software company Lucknow, software development inquiry, India"
         ogUrl="https://www.biosoftech.com/contact"
       />
@@ -221,6 +211,7 @@ const Contact = () => {
               <span className="bg-white/15 text-white px-4 py-2 rounded-full text-sm font-medium">24/7 Support</span>
             </div>
             <button
+              onClick={() => formRef.current?.scrollIntoView({ behavior: "smooth" })}
               className="
             mt-4
             sm:mt-6
@@ -668,7 +659,7 @@ const Contact = () => {
                       icon: Phone,
                       title: "Click Us",
                       value:
-                        "+91 9369655052\n+91 9369656052",
+                        "+91-7858063047\n+91-6209688930",
                     },
                     {
                       icon: Globe,

@@ -86,6 +86,15 @@ import img3 from "../assets/img3.webp";
 import letsCreateBigStories from "../assets/lets-create-big-stories.webp";
 import { ArrowUpRight } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { FiArrowUpRight, FiArrowRightCircle } from "react-icons/fi";
+import screenshot1 from "../assets/mobile-app-development.png";
+import screenshot2 from "../assets/website-development.png";
+import screenshot3 from "../assets/ecommerce-development.png";
+import screenshot4 from "../assets/blockchain-development.png";
+import screenshot5 from "../assets/game-development.png";
+import screenshot6 from "../assets/salesforce-solutions.png";
+import screenshot7 from "../assets/ai-ml-solutions.png";
+import screenshot8 from "../assets/iot-embedded-solutions.png";
 import {
     BadgeCheck,
     LayoutPanelLeft,
@@ -290,49 +299,49 @@ const AppDevelopment = () => {
         {
             title: "Mobile App",
             sub: "DEVELOPMENT",
-            image: "/assets/mobile.jpg",
+            image: screenshot1,
         },
 
         {
             title: "Website",
             sub: "DEVELOPMENT",
-            image: "/assets/website.jpg",
+            image: screenshot2,
         },
 
         {
             title: "E-commerce",
             sub: "DEVELOPMENT",
-            image: "/assets/ecommerce.jpg",
+            image: screenshot3,
         },
 
         {
             title: "Blockchain",
             sub: "DEVELOPMENT",
-            image: "/assets/blockchain.jpg",
+            image: screenshot4,
         },
 
         {
             title: "Game",
             sub: "DEVELOPMENT",
-            image: "/assets/game.jpg",
+            image: screenshot5,
         },
 
         {
             title: "Salesforce",
             sub: "SOLUTIONS",
-            image: "/assets/salesforce.jpg",
+            image: screenshot6,
         },
 
         {
             title: "AI & ML",
             sub: "SOLUTIONS",
-            image: "/assets/ai.jpg",
+            image: screenshot7,
         },
 
         {
             title: "IoT & Embedded",
             sub: "SOLUTIONS",
-            image: "/assets/iot.jpg",
+            image: screenshot8,
         },
     ];
 
@@ -476,14 +485,16 @@ const AppDevelopment = () => {
                 ogUrl="https://www.biosoftech.com/app-development"
             />
             {/* Section 1: Hero */}
-            <section aria-label="App development hero banner" className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
-                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
-                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
-                        <div className="text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
-                                App Development<br className="hidden md:block" />That Drives Results
+            <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
+                <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
+                        <div className="flex flex-col text-center lg:text-left">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight">
+                                App Development
+                                <br />
+                                That Drives Results
                             </h1>
-                            <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we build high-performance mobile
                                     applications for iOS, Android, and cross-platform ecosystems.
@@ -491,23 +502,37 @@ const AppDevelopment = () => {
                                     and scalable architecture to deliver apps that engage users
                                     and accelerate business growth.
                                 </p>
-                                <p className="mt-4 sm:mt-6 md:mt-10">
-                                    With <span className="font-semibold">500+ projects delivered</span> and <span className="font-semibold">10+ years of experience</span>, Biosoftech Solutions is your trusted partner for end-to-end app development.
+                                <p className="mt-4 sm:mt-6 lg:mt-10">
+                                    With <span className="font-bold">500+ projects delivered</span> and <span className="font-bold">10+ years of experience</span>, Biosoftech Solutions is your trusted partner for end-to-end app development.
                                 </p>
                             </div>
-                            <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
-                                <img src="/logos/clutch.png" alt="Clutch review badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/upwork.png" alt="Upwork badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-review.png" alt="Google Reviews badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-partner.png" alt="Google Partner badge" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                            <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                </div>
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                </div>
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.8/5 Stars</p>
+                                </div>
                             </div>
-                            <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
-                                <button onClick={() => navigate("/contact")} className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
-                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">EXPLORE APPS ⊕</button>
+                            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
+                                <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
+                                    REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
+                                </button>
+                                <button onClick={() => navigate("/contact")} className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
+                                    EXPLORE APPS <FiArrowRightCircle className="transition group-hover:translate-x-1" />
+                                </button>
                             </div>
                         </div>
-                        <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="Website mockup on laptop" fetchPriority="high" width="800" height="500" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
+                        <div className="relative mt-8 sm:mt-12 lg:mt-0">
+                            <img src={laptopMockup} alt="App development laptop mockup showcasing mobile app platform" fetchPriority="high" width="800" height="500" className="relative z-10 w-full" />
                         </div>
                     </div>
                 </div>
@@ -529,7 +554,7 @@ const AppDevelopment = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-sm sm:text-base md:text-lg font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
+                            <button onClick={() => navigate("/contact")} className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-sm sm:text-base md:text-lg font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
                                 Shape your success story with Biosoftech Solutions today!
                             </button>
                         </div>
@@ -566,8 +591,6 @@ const AppDevelopment = () => {
 
             {/* Section 4: Unleash Power */}
             <section id="app-development" className="relative overflow-hidden bg-[#f4f4f4] py-16 md:py-20">
-                <div className="hidden md:block absolute top-0 right-0 w-[55%] h-[420px] border-[4px] border-dashed border-cyan-300 rounded-full opacity-80 translate-x-32 -translate-y-16" />
-                <div className="hidden md:block absolute bottom-[-180px] right-[-120px] w-[60%] h-[420px] border-[4px] border-dashed border-cyan-300 rounded-full opacity-80" />
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-12">
                         <div className="max-w-[620px] text-center lg:text-left mx-auto lg:mx-0">
@@ -590,9 +613,9 @@ const AppDevelopment = () => {
                             </p>
                         </div>
                         <div className="relative flex justify-center mt-12 lg:mt-0">
-                            <img src="/tablet.png" alt="Tablet mockup" loading="lazy" width="520" height="400" className="w-[300px] md:w-[520px] rotate-[-20deg] drop-shadow-[0_20px_25px_rgba(0,0,0,0.2)] md:drop-shadow-[0_35px_40px_rgba(0,0,0,0.25)]" />
-                            <img src="/phone.png" alt="Phone mockup" loading="lazy" width="180" height="360" className="absolute w-[100px] md:w-[180px] top-[-10px] left-[30%] md:left-[35%] rotate-[8deg] drop-shadow-[0_15px_15px_rgba(0,0,0,0.25)] md:drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]" />
-                            <img src={sixthImageAad} alt="App display preview" loading="lazy" width="520" height="760" className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] md:w-[360px] lg:w-[65vh] h-[240px] sm:h-[380px] md:h-[520px] lg:h-[95vh] drop-shadow-2xl z-10" />
+                            <img src="/tablet.png" alt="Tablet mockup" loading="lazy" width="520" height="400" className="w-[300px] md:w-[520px] rotate-[-20deg]" />
+                            <img src="/phone.png" alt="Phone mockup" loading="lazy" width="180" height="360" className="absolute w-[100px] md:w-[180px] top-[-10px] left-[30%] md:left-[35%] rotate-[8deg]" />
+                            <img src={sixthImageAad} alt="App display preview" loading="lazy" width="520" height="760" className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] md:w-[360px] lg:w-[65vh] h-[240px] sm:h-[380px] md:h-[520px] lg:h-[95vh] z-10" />
                         </div>
                     </div>
                 </div>
@@ -927,7 +950,7 @@ const AppDevelopment = () => {
                                     Higher upfront cost, but better monetization
                                     and user value.
                                 </p>
-                                <button className="mt-8 w-full h-14 md:h-[64px] rounded-[14px] bg-white text-[#182033] text-lg md:text-[20px] font-semibold transition hover:scale-[1.02] active:scale-95">
+                                <button onClick={() => navigate("/contact")} className="mt-8 w-full h-14 md:h-[64px] rounded-[14px] bg-white text-[#182033] text-lg md:text-[20px] font-semibold transition hover:scale-[1.02] active:scale-95">
                                     Get Your Project Scoped
                                 </button>
                             </div>
@@ -1163,7 +1186,7 @@ const AppDevelopment = () => {
                                 Share your project details to build your path toward success
                             </p>
 
-                            <button className="group relative mt-8 sm:mt-10 md:mt-16 flex items-center justify-center md:justify-start gap-3 sm:gap-4 md:gap-6 mx-auto md:mx-0">
+                            <button onClick={() => navigate("/contact")} className="group relative mt-8 sm:mt-10 md:mt-16 flex items-center justify-center md:justify-start gap-3 sm:gap-4 md:gap-6 mx-auto md:mx-0">
                                 <span className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] border border-white rounded-full transition-all duration-700 ease-out group-hover:w-full group-hover:rounded-[999px]" />
                                 <span className="relative z-10 w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] flex items-center justify-center text-white shrink-0">
                                     <ArrowRight size={20} className="sm:w-[24px] sm:h-[24px] md:w-[28px] md:h-[28px]" />

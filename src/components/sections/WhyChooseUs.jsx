@@ -310,6 +310,7 @@ to-[#12003f]/40
               </button>
 
               <button
+                onClick={() => navigate("/contact")}
                 aria-label="Get Quote"
                 className="
                 -ml-5

@@ -1,10 +1,12 @@
 import SEO from "../components/seo/SEO";
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import blogAi from "../assets/ai-business-software-automation.webp"
 import blogUpgrade from "../assets/software-upgrade-signs-indicators.webp"
 import blogCloud from "../assets/cloud-solutions-sme-beginners-guide.webp"
 
 const Blog = () => {
+    const navigate = useNavigate();
     const blogs = [
         {
             id: 1,
@@ -94,6 +96,7 @@ const Blog = () => {
                             </h2>
 
                             <button
+                                onClick={() => navigate("/contact")}
                                 className="
                 mt-6 sm:mt-8 md:mt-10
                 bg-[#F7D64A]

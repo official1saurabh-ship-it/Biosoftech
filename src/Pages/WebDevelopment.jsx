@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FiArrowUpRight, FiArrowRightCircle } from "react-icons/fi";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -251,34 +252,50 @@ const WebDevelopment = () => {
                 keywords="web development company, website development, custom web applications, e-commerce development, responsive websites, India"
                 ogUrl="https://www.biosoftech.com/web-development"
             />
-            <section aria-label="Web development hero banner" className="bg-[#f7f6f1] overflow-hidden pb-12 md:pb-20">
-                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
-                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-20 min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
-                        <div className="text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[68px] leading-tight md:leading-[1.1] font-medium text-black max-w-[720px] mx-auto lg:mx-0">
-                                Build Websites That<br className="hidden md:block" />Drive Growth
+            <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
+                <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
+                        <div className="flex flex-col text-center lg:text-left">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight">
+                                Build Websites That
+                                <br />
+                                Drive Growth
                             </h1>
-                            <div className="mt-6 sm:mt-8 md:mt-10 text-[#1d1d1d] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2.1] max-w-[760px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we don&apos;t just create websites &mdash; we build powerful digital platforms that help businesses scale, engage customers, and achieve measurable success.
                                 </p>
-                                <p className="mt-4 sm:mt-6 md:mt-10">
-                                    With years of expertise and <span className="font-semibold">500+ projects delivered</span>, our team specializes in designing websites that are modern, responsive, and performance-driven. Whether you need a corporate site, an e-commerce store, or a custom industry portal, we ensure your website becomes a true growth engine.
+                                <p className="mt-4 sm:mt-6 lg:mt-10">
+                                    With years of expertise and <span className="font-bold">500+ projects delivered</span>, our team specializes in designing websites that are modern, responsive, and performance-driven. Whether you need a corporate site, an e-commerce store, or a custom industry portal, we ensure your website becomes a true growth engine.
                                 </p>
                             </div>
-                            <div className="mt-6 sm:mt-10 md:mt-14 flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-6 md:gap-12">
-                                <img src="/logos/clutch.png" alt="Clutch" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/upwork.png" alt="Upwork" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-review.png" alt="Google Reviews" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
-                                <img src="/logos/google-partner.png" alt="Google Partner" width="120" height="48" className="h-10 sm:h-12 md:h-20 object-contain" />
+                            <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                </div>
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                </div>
+                                <div className="text-center lg:text-left">
+                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.8/5 Stars</p>
+                                </div>
                             </div>
-                            <div className="mt-6 sm:mt-10 md:mt-14 flex flex-col sm:flex-row justify-center lg:justify-start gap-2 sm:gap-0">
-                                <button onClick={() => navigate("/contact")} className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-[#ffba00] text-black font-medium uppercase hover:brightness-95 transition text-sm sm:text-base min-h-[44px]">REQUEST PROPOSAL →</button>
-                                <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white uppercase hover:bg-neutral-900 transition text-sm sm:text-base min-h-[44px]">OUR SERVICES ⊕</button>
+                            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
+                                <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
+                                    REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
+                                </button>
+                                <button onClick={() => navigate("/contact")} className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
+                                    OUR SERVICES <FiArrowRightCircle className="transition group-hover:translate-x-1" />
+                                </button>
                             </div>
                         </div>
-                        <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="Website mockup on laptop" fetchPriority="high" width="800" height="500" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
+                        <div className="relative mt-8 sm:mt-12 lg:mt-0">
+                            <img src={laptopMockup} alt="Web development laptop mockup showcasing website platform" fetchPriority="high" width="800" height="500" className="relative z-10 w-full" />
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const localBusinessSchema = {
   image: "https://www.biosoftech.com/og-image.jpg",
   "@id": "https://www.biosoftech.com",
   url: "https://www.biosoftech.com",
-  telephone: "+91 9369655052",
+  telephone: "+91-7858063047",
   email: "info@biosoftech.com",
   address: {
     "@type": "PostalAddress",

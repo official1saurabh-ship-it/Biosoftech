@@ -565,7 +565,7 @@ const HeroSection = () => {
                   <ArrowRight size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
 
-                <button className="bg-black hover:bg-[#222] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-white font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
+                <button onClick={() => navigate("/contact")} className="bg-black hover:bg-[#222] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-white font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
                   AI SOLUTIONS
                   <PlusCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
@@ -1114,8 +1114,7 @@ const HeroSection = () => {
     relative
     bg-[#030712]
     text-white
-    h-auto
-    lg:h-[500vh]
+    h-[500vh]
     pb-8 md:pb-16 lg:pb-24
   "
       >
@@ -1129,13 +1128,12 @@ const HeroSection = () => {
 
         <div
           className="
-    lg:sticky lg:top-24
-    h-auto
-    lg:h-screen
+    sticky top-20 lg:top-24
+    min-h-screen
     flex flex-col justify-center
     relative z-10
-    pt-8 md:pt-12
-    pb-16 md:pb-20 lg:pb-28
+    pt-4 sm:pt-8 md:pt-12
+    pb-8 sm:pb-16 md:pb-20 lg:pb-28
   "
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
@@ -1146,16 +1144,16 @@ const HeroSection = () => {
               <div className="inline-block relative">
 
                 {/* BORDER DESIGN */}
-                <div className="absolute -top-4 -left-4 w-20 h-20 border-l border-t border-cyan-500/40" />
+                <div className="hidden sm:block absolute -top-4 -left-4 w-20 h-20 border-l border-t border-cyan-500/40" />
 
-                <div className="absolute -bottom-4 -right-4 w-20 h-20 border-r border-b border-cyan-500/40" />
+                <div className="hidden sm:block absolute -bottom-4 -right-4 w-20 h-20 border-r border-b border-cyan-500/40" />
 
                 {/* DIAMONDS */}
-                <div className="absolute -top-5 left-0 w-4 h-4 bg-blue-500 rotate-45" />
+                <div className="hidden sm:block absolute -top-5 left-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <div className="absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
+                <div className="hidden sm:block absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
+                <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                   Our AI{" "}
                   <span className="text-cyan-400">
                     Development
@@ -1164,7 +1162,7 @@ const HeroSection = () => {
                 </h2>
               </div>
 
-              <p className="mt-6 md:mt-10 max-w-5xl mx-auto text-lg md:text-xl text-white/60 leading-8 md:leading-8 lg:leading-10">
+              <p className="mt-2 sm:mt-6 md:mt-10 max-w-5xl mx-auto text-sm sm:text-lg md:text-xl text-white/60 leading-6 sm:leading-8 md:leading-8 lg:leading-10">
                 We follow a structured, data-driven approach to transform
                 business ideas into intelligent AI solutions. Each stage
                 ensures accuracy, scalability, and long-term success.
@@ -1172,21 +1170,21 @@ const HeroSection = () => {
             </div>
 
             {/* TIMELINE */}
-            <div className="relative mt-12 md:mt-24">
+            <div className="relative mt-4 sm:mt-12 md:mt-24">
 
               {/* LINE */}
-              <div className="absolute top-6 md:top-8 left-0 w-full h-[2px] bg-white/10" />
+              <div className="absolute top-[18px] sm:top-6 md:top-8 left-0 w-full h-[2px] bg-white/10" />
 
               {/* ACTIVE LINE */}
               <div
-                className="absolute top-6 md:top-8 left-0 h-[2px] bg-cyan-400 transition-all duration-700"
+                className="absolute top-[18px] sm:top-6 md:top-8 left-0 h-[2px] bg-cyan-400 transition-all duration-700"
                 style={{
                   width: `${(activeStep / 5) * 100}%`,
                 }}
               />
 
               {/* STEPS */}
-              <div className="relative flex justify-between">
+              <div className="relative flex justify-between gap-1 sm:gap-0 overflow-x-auto hide-scrollbar">
 
                 {processData.map((item, index) => {
                   const Icon = item.icon;
@@ -1198,12 +1196,12 @@ const HeroSection = () => {
                       key={index}
                       onClick={() => setActiveStep(index)}
                       aria-label={`${item.stage}: ${item.title}`}
-                      className="relative z-10 group"
+                      className="relative z-10 group shrink-0"
                     >
 
                       <div
                         className={`
-                      w-12 h-12 md:w-16 md:h-16 rounded-full
+                      w-9 h-9 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full
                       border-2
                       flex items-center justify-center
                       transition-all duration-500
@@ -1215,12 +1213,12 @@ const HeroSection = () => {
                     `}
                       >
                         <Icon
+                          size={16}
+                          className="sm:hidden"
+                        />
+                        <Icon
                           size={22}
-                          className={
-                            isActive
-                              ? "text-cyan-400"
-                              : "text-white/40"
-                          }
+                          className="hidden sm:block"
                         />
                       </div>
                     </button>
@@ -1230,7 +1228,7 @@ const HeroSection = () => {
             </div>
 
             {/* CONTENT */}
-            <div className="mt-10 md:mt-20 grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="mt-4 sm:mt-10 md:mt-20 grid lg:grid-cols-2 gap-4 sm:gap-8 md:gap-16 items-center">
 
               {/* LEFT */}
               <div>
@@ -1239,12 +1237,12 @@ const HeroSection = () => {
                 <div
                   className="
                 inline-flex items-center
-                px-5 py-2
+                px-3 sm:px-5 py-1 sm:py-2
                 rounded-full
                 bg-cyan-500/10
                 border border-cyan-500/20
                 text-cyan-300
-                text-sm
+                text-xs sm:text-sm
                 tracking-[2px]
                 font-semibold
               "
@@ -1253,26 +1251,26 @@ const HeroSection = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-6 md:mt-8 text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+                <h3 className="mt-3 sm:mt-6 md:mt-8 text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                   {processData[activeStep].title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="mt-6 md:mt-8 text-lg md:text-xl text-white/55 leading-8 md:leading-8 lg:leading-10 max-w-2xl">
+                <p className="mt-3 sm:mt-6 md:mt-8 text-sm sm:text-lg md:text-xl text-white/55 leading-6 sm:leading-8 md:leading-8 lg:leading-10 max-w-2xl">
                   {processData[activeStep].description}
                 </p>
 
                 {/* BUTTONS */}
-                <div className="mt-8 md:mt-12 flex flex-wrap gap-6">
+                <div className="mt-4 sm:mt-8 md:mt-12 flex flex-wrap gap-3 sm:gap-6">
 
                   <Link
                     to="/contact"
                     className="
-                  inline-flex items-center justify-center px-8 py-5
+                  inline-flex items-center justify-center px-5 sm:px-8 py-3 sm:py-5
                   bg-cyan-300
                   text-black
                   rounded-xl
-                  text-lg
+                  text-sm sm:text-lg
                   font-semibold
                   hover:bg-cyan-200
                   transition-all duration-300
@@ -1284,9 +1282,9 @@ const HeroSection = () => {
                   <Link
                     to="/contact"
                     className="
-                  inline-flex items-center gap-3
+                  inline-flex items-center gap-2 sm:gap-3
                   text-cyan-300
-                  text-xl
+                  text-base sm:text-xl
                   font-semibold
                   group
                 "
@@ -1322,7 +1320,7 @@ const HeroSection = () => {
                       width="800"
                       height="600"
                       className="
-                    w-full max-h-[30vh] md:max-h-[50vh]
+                    w-full max-h-[20vh] sm:max-h-[30vh] md:max-h-[50vh]
                     object-contain
                     transition-all duration-700
                     group-hover:scale-110
@@ -1343,33 +1341,26 @@ const HeroSection = () => {
 
 
 
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden min-h-screen sm:min-h-[70vh] flex items-center">
 
         {/* BACKGROUND IMAGE */}
-        <div className="absolute inset-0">
-          <img
-            src={ai_bg}
-            alt="AI Background"
-            loading="lazy"
-            width="1920"
-            height="1080"
-            className="w-full h-full object-cover"
-          />
-
-          {/* DARK OVERLAY */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${ai_bg})` }}
+        >
           <div className="absolute inset-0 bg-[#001B66]/75" />
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-24">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 py-16 sm:py-20 lg:py-24">
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
 
             {/* LEFT SIDE */}
             <div>
               <h2
                 className="
-                text-4xl lg:text-5xl xl:text-6xl
+                text-2xl sm:text-4xl lg:text-5xl xl:text-6xl
                 font-bold
                 text-white
                 leading-tight
@@ -1387,8 +1378,8 @@ const HeroSection = () => {
             <div>
               <p
                 className="
-                text-xl
-                leading-8 md:leading-8 lg:leading-10
+                text-base sm:text-xl
+                leading-7 sm:leading-8 md:leading-8 lg:leading-10
                 text-white/90
               "
               >
@@ -1404,13 +1395,13 @@ const HeroSection = () => {
                 to="/contact"
                 className="
                 inline-flex items-center justify-center
-                mt-10
-                px-10 py-4
+                mt-6 sm:mt-10
+                px-6 sm:px-10 py-3 sm:py-4
                 rounded-lg
                 bg-cyan-300
                 text-black
                 font-semibold
-                text-lg
+                text-sm sm:text-lg
                 transition-all duration-300
                 hover:bg-cyan-200
                 hover:scale-105
