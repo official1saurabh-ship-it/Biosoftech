@@ -930,25 +930,25 @@ export default function About() {
           <div className="relative">
 
             {/* Center Line */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
 
             {timelineData.map((item, index) => (
               <div
                 key={item.year}
-                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-6 sm:mb-10 md:mb-20 lg:mb-28"
+                className="relative grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-6 sm:mb-10 md:mb-20 lg:mb-28"
               >
                 {/* Left Side */}
                 <div
                   className={item.side === "left"
-                    ? "flex justify-start lg:justify-end"
-                    : "hidden lg:block lg:invisible"
+                    ? "flex justify-start md:justify-end"
+                    : "hidden md:block md:invisible"
                   }
                 >
                   <div
-                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4 lg:border-r-4"
+                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4 md:border-r-4"
                     style={{ borderColor: item.color }}
                   >
-                    <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
+                    <div className="md:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
@@ -961,15 +961,15 @@ export default function About() {
                 {/* Right Side */}
                 <div
                   className={item.side === "right"
-                    ? "flex justify-end lg:justify-start"
-                    : "hidden lg:block lg:invisible"
+                    ? "flex justify-end md:justify-start"
+                    : "hidden md:block md:invisible"
                   }
                 >
                   <div
-                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4 lg:border-l-4"
+                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4 md:border-l-4"
                     style={{ borderColor: item.color }}
                   >
-                    <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
+                    <div className="md:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
@@ -981,7 +981,7 @@ export default function About() {
 
                 {/* Year */}
                 <div
-                  className="hidden lg:block absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
+                  className="hidden md:block absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
                   style={{
                     color: item.color,
                     top: "50%",
@@ -993,7 +993,7 @@ export default function About() {
 
                 {/* Dot */}
                 <div
-                  className="hidden lg:block absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
+                  className="hidden md:block absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
                   style={{
                     backgroundColor: item.color,
                     top: "50%",
