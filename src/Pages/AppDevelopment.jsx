@@ -507,7 +507,7 @@ const AppDevelopment = () => {
                             </div>
                         </div>
                         <div className="flex justify-center mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="Website mockup on laptop" fetchpriority="high" width="800" height="500" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
+                            <img src={laptopMockup} alt="Website mockup on laptop" fetchPriority="high" width="800" height="500" className="w-full max-w-[600px] sm:max-w-[800px] object-contain" />
                         </div>
                     </div>
                 </div>

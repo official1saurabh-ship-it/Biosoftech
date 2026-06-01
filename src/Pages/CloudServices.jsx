@@ -484,7 +484,7 @@ const CloudServices = () => {
                         </div>
 
                         <div className="relative mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="Laptop mockup showcasing cloud services platform interface" fetchpriority="high" width="800" height="500" className="relative z-10 w-full" />
+                            <img src={laptopMockup} alt="Laptop mockup showcasing cloud services platform interface" fetchPriority="high" width="800" height="500" className="relative z-10 w-full" />
                         </div>
                     </div>
                 </div>

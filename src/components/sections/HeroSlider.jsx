@@ -83,12 +83,12 @@ export default function HeroRevealSlider() {
                   duration: 0.6,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="absolute inset-0 flex items-end justify-center"
+                className="flex items-end justify-center w-full h-full"
               >
                 <img
                   src={slide.image}
                   alt="Biosoftech hero slide showcasing software development solutions"
-                  fetchpriority="high"
+                  fetchPriority="high"
                   loading="eager"
                   width="650"
                   height="500"
@@ -105,7 +105,7 @@ export default function HeroRevealSlider() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="min-h-[420px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-16 sm:pt-20 lg:pt-28"
+              className="min-h-[420px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-36 sm:pt-40 lg:pt-48"
             >
               <h2 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}

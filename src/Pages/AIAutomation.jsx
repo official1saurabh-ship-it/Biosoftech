@@ -579,7 +579,7 @@ const HeroSection = () => {
               <img
                 src={laptopMockup}
                 alt="Laptop mockup showcasing AI automation dashboard"
-                fetchpriority="high"
+                fetchPriority="high"
                 width="800"
                 height="500"
                 className="relative z-10 w-full max-w-xl lg:max-w-2xl object-contain"

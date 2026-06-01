@@ -77,10 +77,12 @@ export default function GrowthSection() {
 
                         <div
                             className="
-              space-y-5
+              space-y-6
+              sm:space-y-5
               text-base
               lg:text-[18px]
               leading-[1.8]
+              sm:leading-[1.8]
             "
                         >
                             <p>
@@ -111,10 +113,19 @@ export default function GrowthSection() {
                         <Link
                             to="/contact"
                             className="
-              mt-8
+              group
 
-              px-6
-              py-3
+              mt-10
+              sm:mt-8
+
+              inline-flex
+              items-center
+              gap-2
+
+              px-8
+              sm:px-6
+              py-4
+              sm:py-3
 
               border-2
               border-black
@@ -122,9 +133,23 @@ export default function GrowthSection() {
               rounded-full
 
               text-lg
+              font-semibold
+
+              hover:bg-black
+              hover:text-white
+              transition-all
+              duration-300
             "
                         >
                             Discover More
+                            <ArrowUpRight
+                                size={20}
+                                className="
+                  transition-transform
+                  duration-300
+                  group-hover:rotate-45
+                "
+                            />
                         </Link>
 
                         {/* ARROW */}

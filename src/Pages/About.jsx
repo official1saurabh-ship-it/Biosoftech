@@ -257,7 +257,7 @@ export default function About() {
           </div>
           <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
             <div className="absolute w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[20px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10 max-w-full" />
-            <img src={aboutHero} alt="Biosoftech Solutions - Software Development Company" fetchpriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
+            <img src={aboutHero} alt="Biosoftech Solutions - Software Development Company" fetchPriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
             <div className="absolute top-4 right-4 sm:top-8 sm:right-8 md:top-12 md:right-12 z-30">
               <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-base sm:text-xl font-bold border">G</div>
             </div>

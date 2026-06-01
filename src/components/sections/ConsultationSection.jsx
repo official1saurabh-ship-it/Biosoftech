@@ -280,16 +280,17 @@ lg:h-[700px]
 
                 rounded-md
 
-                border
+                border border-gray-300
 
                 px-8
 
                 outline-none
 
                 bg-white
+                focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
                             />
-
+                            
                             <input
                                 name="phone"
                                 value={formData.phone}
@@ -304,12 +305,15 @@ lg:h-[700px]
 
                 rounded-md
 
-                border
+                border border-gray-300
 
                 px-8
+
+                outline-none
+                focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
                             />
-
+                            
                             <input
                                 name="email"
                                 value={formData.email}
@@ -324,12 +328,15 @@ lg:h-[700px]
 
                 rounded-md
 
-                border
+                border border-gray-300
 
                 px-8
+
+                outline-none
+                focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
                             />
-
+                            
                             <div className="relative">
 
                                 <label htmlFor="consultation-service" className="sr-only">How Can We Help You?</label>
@@ -340,17 +347,21 @@ lg:h-[700px]
                                     onChange={handleChange}
                                     required
                                     className="
-                  w-full
+                   w-full
 
                   h-[58px]
 
                   rounded-md
 
-                  border
+                  border border-gray-300
 
                   px-8
 
+                  truncate
+
                   appearance-none
+                  outline-none
+                  focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
                 "
                                 >
                                     <option value="">
@@ -369,12 +380,12 @@ lg:h-[700px]
                                         Integrate AI Automation Into My Workflow
                                     </option>
 
-                                    <option value="Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)">
-                                        Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)
+                                     <option value="Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)">
+                                        Mitra Suite (Billing, Restro, Hotel, Skola, Tentent)
                                     </option>
 
                                     <option value="Healthcare / Real Estate / Hospitality Software Needs">
-                                        Healthcare / Real Estate / Hospitality Software Needs
+                                        Healthcare / Real Estate / Hospitality
                                     </option>
 
                                     <option value="Cloud Integration & Data Security Services">
@@ -413,12 +424,14 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
 
                 rounded-md
 
-                border
+                border border-gray-300
 
                 px-8
                 py-6
 
                 resize-none
+                outline-none
+                focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
                             />
 
@@ -426,6 +439,7 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
                                 type="submit"
                                 disabled={isSubmitting}
                                 className="
+                w-full
                 px-10
                 py-5
 
@@ -435,7 +449,7 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
 
                 font-bold
 
-                rounded
+                rounded-md
                 disabled:opacity-60 disabled:cursor-not-allowed
               "
                             >
