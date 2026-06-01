@@ -98,7 +98,7 @@ const Header = () => {
           <Link to="/" className="h-full py-1 shrink-0">
             <div className="h-full bg-white rounded-full px-3 flex items-center shadow-[0_0_20px_rgba(146,85,206,0.3)] relative overflow-hidden group">
               <div className="absolute inset-0 bg-white/10 opacity-0 " />
-              <img src={biosoftechLogo} alt="Biosoftech" className="h-7 w-52 object-contain" />
+              <img src={biosoftechLogo} alt="Biosoftech" className="h-6 sm:h-7 w-36 sm:w-52 object-contain" />
             </div>
           </Link>
 
@@ -230,13 +230,13 @@ z-[999]
 "
               >
 
-                <div className="space-y-1">
+                <div className="space-y-[5px]">
 
-                  <div className="w-5 h-[2px] bg-white rounded" />
+                  <div className="w-6 h-[2.5px] bg-white rounded-full" />
 
-                  <div className="w-5 h-[2px] bg-white rounded" />
+                  <div className="w-6 h-[2.5px] bg-white rounded-full" />
 
-                  <div className="w-5 h-[2px] bg-white rounded" />
+                  <div className="w-6 h-[2.5px] bg-white rounded-full" />
 
                 </div>
 
@@ -346,7 +346,7 @@ z-[999]
               </div>
 
               <div className="p-8 bg-black/40 border-t border-white/5 space-y-6">
-                <Link to="/contact" className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)]">
+                <Link to="/contact" onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }} className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)]">
                   <Calendar /> Meeting
                 </Link>
                 <a href="tel:+919044425858" className="flex items-center gap-5 p-6 bg-white/5 rounded-3xl border border-white/5 group">
