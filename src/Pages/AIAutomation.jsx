@@ -542,19 +542,6 @@ const HeroSection = () => {
                   </p>
                 </div>
 
-                {/* Google Partner */}
-                <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold">
-                    <span className="text-[#4285F4]">G</span>
-                    <span className="text-[#EA4335]">o</span>
-                    <span className="text-[#FBBC05]">o</span>
-                    <span className="text-[#4285F4]">g</span>
-                    <span className="text-[#34A853]">l</span>
-                    <span className="text-[#EA4335]">e</span>
-                  </h3>
-
-                  <p className="text-lg sm:text-xl lg:text-2xl mt-1 sm:mt-2">Partner</p>
-                </div>
               </div>
 
               {/* Buttons */}

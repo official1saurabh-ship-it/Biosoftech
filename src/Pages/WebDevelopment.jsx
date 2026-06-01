@@ -538,11 +538,11 @@ const WebDevelopment = () => {
 
                     {/* Top Row */}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mt-20">
 
                         {/* Step 2 */}
 
-                        <div className="flex items-center justify-center gap-10">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
 
                             <img
                                 src={steps[1].image}
@@ -551,25 +551,25 @@ const WebDevelopment = () => {
                                 width="224"
                                 height="224"
                                 className={`
-                w-56 h-56 object-contain
+                w-36 h-36 sm:w-56 sm:h-56 object-contain
                 transition-all duration-500
                 ${active === 2 ? "scale-110" : "scale-100"}
               `}
                             />
 
                             <div className="text-center">
-                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mb-5">
+                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mb-3 md:mb-5">
                                     {steps[1].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[1].desc}
                                 </p>
 
                                 <button
                                     onMouseEnter={() => setActive(2)}
                                     className={`
-                  mt-8 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  mt-6 md:mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 2
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -583,7 +583,7 @@ const WebDevelopment = () => {
 
                         {/* Step 4 */}
 
-                        <div className="flex items-center justify-center gap-10">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
 
                             <img
                                 src={steps[3].image}
@@ -592,25 +592,25 @@ const WebDevelopment = () => {
                                 width="224"
                                 height="224"
                                 className={`
-                w-56 h-56 object-contain
+                w-36 h-36 sm:w-56 sm:h-56 object-contain
                 transition-all duration-500
                 ${active === 4 ? "scale-110" : "scale-100"}
               `}
                             />
 
                             <div className="text-center">
-                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mb-5">
+                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mb-3 md:mb-5">
                                     {steps[3].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[3].desc}
                                 </p>
 
                                 <button
                                     onMouseEnter={() => setActive(4)}
                                     className={`
-                  mt-8 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  mt-6 md:mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 4
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -629,18 +629,18 @@ const WebDevelopment = () => {
 
                     {/* Bottom Row */}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mt-12">
 
                         {/* Step 1 */}
 
-                        <div className="flex items-center justify-center gap-10">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
 
                             <div className="text-center">
 
                                 <button
                                     onMouseEnter={() => setActive(1)}
                                     className={`
-                  text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 1
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -650,11 +650,11 @@ const WebDevelopment = () => {
                                     01
                                 </button>
 
-                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mt-5 mb-5">
+                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
                                     {steps[0].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[0].desc}
                                 </p>
                             </div>
@@ -666,7 +666,7 @@ const WebDevelopment = () => {
                                 width="224"
                                 height="224"
                                 className={`
-                w-56 h-56 object-contain
+                w-36 h-36 sm:w-56 sm:h-56 object-contain
                 transition-all duration-500
                 ${active === 1 ? "scale-110" : "scale-100"}
               `}
@@ -675,14 +675,14 @@ const WebDevelopment = () => {
 
                         {/* Step 3 */}
 
-                        <div className="flex items-center justify-center gap-10">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
 
                             <div className="text-center">
 
                                 <button
                                     onMouseEnter={() => setActive(3)}
                                     className={`
-                  text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 3
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -692,11 +692,11 @@ const WebDevelopment = () => {
                                     03
                                 </button>
 
-                                <h3 className="text-2xl sm:text-4xl font-bold text-[#0D1023] mt-5 mb-5">
+                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
                                     {steps[2].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-base sm:text-xl leading-7 sm:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[2].desc}
                                 </p>
                             </div>
@@ -708,7 +708,7 @@ const WebDevelopment = () => {
                                 width="224"
                                 height="224"
                                 className={`
-                w-56 h-56 object-contain
+                w-36 h-36 sm:w-56 sm:h-56 object-contain
                 transition-all duration-500
                 ${active === 3 ? "scale-110" : "scale-100"}
               `}
