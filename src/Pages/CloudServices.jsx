@@ -655,71 +655,91 @@ const CloudServices = () => {
                 ref={sectionRef}
                 className="bg-[#0a0a0a] relative z-20 h-[500vh] pt-20 sm:pt-24 lg:pt-0"
             >
-                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-center overflow-hidden">
-                    <div className="max-w-[1750px] mx-auto px-6 lg:px-20 w-full">
+                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-y-auto lg:overflow-hidden pt-4 lg:pt-0 pb-4 lg:pb-0">
+                    <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20 w-full">
 
-                        <div className="text-center mb-8 mt-28 lg:mb-12">
+                        <div className="text-center mb-6 sm:mb-8 mt-8 sm:mt-24 lg:mb-12">
                             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
-                            <p className="mt-3 lg:mt-4 text-gray-500 text-sm lg:text-lg">
+                            <p className="mt-1 sm:mt-3 lg:mt-4 text-gray-500 text-xs sm:text-sm lg:text-lg">
                                 We follow a simple, agile, and efficient process to deliver high-quality cloud solutions tailored to your business needs.
                             </p>
                         </div>
 
                         {/* Horizontal Cards Container */}
-                        <div className="relative overflow-hidden">
+                        <div className="relative overflow-hidden group/cards">
                             <div
-                                className="flex gap-8 transition-transform duration-700 ease-out"
+                                className="flex gap-4 sm:gap-8 transition-transform duration-700 ease-out"
                                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                             >
                                 {stages.map((stage, index) => (
                                     <div
                                         key={stage.id}
-                                        className="min-w-full bg-[#111] rounded-3xl p-6 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center"
+                                        className="min-w-full bg-[#111] rounded-3xl p-5 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-4 sm:gap-8 lg:gap-12 items-center"
                                     >
                                         {/* Left Content */}
-                                        <div className="lg:w-1/2 space-y-4 lg:space-y-8">
+                                        <div className="lg:w-1/2 space-y-3 sm:space-y-4 lg:space-y-8">
                                             <div className="inline-flex items-center gap-3">
-                                                <span className="text-6xl">{stage.icon}</span>
-                                                <div className="px-5 py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-sm font-semibold rounded-full">
+                                                <span className="text-4xl sm:text-6xl">{stage.icon}</span>
+                                                <div className="px-4 sm:px-5 py-1 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-xs sm:text-sm font-semibold rounded-full">
                                                     {stage.stage}
                                                 </div>
                                             </div>
 
-                                            <h3 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                                            <h3 className="text-xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-400 text-base lg:text-xl leading-relaxed">
+                                            <p className="text-gray-400 text-sm sm:text-base lg:text-xl leading-relaxed">
                                                 {stage.desc}
                                             </p>
 
-                                            <div className="flex flex-wrap gap-3 pt-4 lg:pt-6">
-                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-6 lg:px-10 py-3 lg:py-4 rounded-2xl font-semibold text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
+                                            <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 sm:pt-4 lg:pt-6">
+                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-xs sm:text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Get a Free Quote
                                                 </a>
-                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-5 lg:px-8 py-3 lg:py-4 rounded-2xl font-semibold text-white text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-xs sm:text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Free Technical Consultation →
                                                 </a>
                                             </div>
                                         </div>
 
                                         {/* Right Side */}
-                                        <div className="lg:w-1/2 rounded-2xl overflow-hidden">
-                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover" loading="lazy" />
+                                        <div className="hidden sm:block lg:w-1/2 rounded-2xl overflow-hidden w-full shrink-0">
+                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover max-h-48 sm:max-h-64 lg:max-h-none" loading="lazy" />
                                         </div>
                                     </div>
                                 ))}
                             </div>
+
+                            {/* Mobile Navigation Arrows */}
+                            <button
+                                onClick={() => setActiveIndex(prev => Math.max(0, prev - 1))}
+                                disabled={activeIndex === 0}
+                                className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100"
+                                aria-label="Previous stage"
+                            >
+                                <ChevronLeft size={18} className="sm:w-5 sm:h-5" />
+                            </button>
+                            <button
+                                onClick={() => setActiveIndex(prev => Math.min(stages.length - 1, prev + 1))}
+                                disabled={activeIndex === stages.length - 1}
+                                className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100"
+                                aria-label="Next stage"
+                            >
+                                <ChevronRight size={18} className="sm:w-5 sm:h-5" />
+                            </button>
                         </div>
 
                         {/* Progress Indicator */}
-                        <div className="flex justify-center gap-3 mt-8 lg:mt-16">
+                        <div className="flex justify-center gap-2 sm:gap-3 mt-4 sm:mt-8 lg:mt-16 pb-2 sm:pb-0">
                             {stages.map((_, i) => (
-                                <div
+                                <button
                                     key={i}
-                                    className={`h-3 rounded-full transition-all duration-300 ${i === activeIndex ? 'bg-blue-500 w-12' : 'bg-gray-700 w-8'}`}
+                                    onClick={() => setActiveIndex(i)}
+                                    aria-label={`Go to stage ${i + 1}`}
+                                    className={`h-3 sm:h-3 rounded-full transition-all duration-300 cursor-pointer ${i === activeIndex ? 'bg-blue-500 w-8 sm:w-12' : 'bg-gray-700 w-6 sm:w-8'}`}
                                 />
                             ))}
                         </div>
