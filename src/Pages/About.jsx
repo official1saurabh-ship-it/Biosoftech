@@ -32,6 +32,7 @@ export default function About() {
   const text = "starts here";
   const [displayText, setDisplayText] = useState("");
   const [offset, setOffset] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(true);
   const containerRef = useRef(null);
   const floatingRef = useRef(null);
 
@@ -53,7 +54,7 @@ export default function About() {
   const headingY = useTransform(scrollYProgress, [0, 1], [0, -40]);
   const descY = useTransform(scrollYProgress, [0, 1], [0, 0]);
   const featuresY = useTransform(scrollYProgress, [0, 1], [0, 40]);
-  const buttonY = useTransform(scrollYProgress, [0, 1], [0, 80]);
+  const buttonY = useTransform(scrollYProgress, [0, 1], [0, 40]);
   const lineScale = useTransform(scrollYProgress, [0, 1], [0.95, 1.05]);
 
   useEffect(() => {
@@ -83,6 +84,14 @@ export default function About() {
 
     const timeout = setTimeout(type, 500);
     return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const handleChange = (e) => setIsDesktop(e.matches);
+    handleChange(mq);
+    mq.addEventListener("change", handleChange);
+    return () => mq.removeEventListener("change", handleChange);
   }, []);
 
   useEffect(() => {
@@ -182,7 +191,7 @@ export default function About() {
     },
     {
       year: "2024",
-      side: "right",
+      side: "left",
       color: "#00BFFF",
       title: "Recognition Across Industries",
       description:
@@ -399,36 +408,54 @@ export default function About() {
       </section>
 
       {/* Who Are We Section */}
-      <section className="relative overflow-hidden bg-[#F7F7F1] min-h-0 lg:min-h-screen py-12 sm:py-16 lg:py-20" ref={containerRef}>
+      <section className="relative overflow-hidden bg-[#F7F7F1] min-h-0 lg:min-h-screen py-12 sm:py-16 lg:py-20 pb-20 sm:pb-24 lg:pb-28" ref={containerRef}>
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-[620px_1fr] gap-10 sm:gap-12 lg:gap-24 items-center">
 
             {/* LEFT SIDE - Static Cards with slight parallax */}
             <div
               style={{
-                transform: `translateY(${offset * 0.4}px)`,
+                transform: isDesktop ? `translateY(${offset * 0.4}px)` : "none",
               }}
-              className="relative h-[820px] hidden lg:block duration-300"
+              className="relative duration-300"
             >
-              {/* BACK CARD */}
-              <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
-                <h3 className="text-white text-[90px] font-black">500+</h3>
-                <p className="text-white text-[26px] font-bold">Projects Delivered</p>
-                <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">
-                  🌐
+              {/* Desktop overlapping cards */}
+              <div className="hidden lg:block h-[820px]">
+                <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
+                  <h3 className="text-white text-[90px] font-black">500+</h3>
+                  <p className="text-white text-[26px] font-bold">Projects Delivered</p>
+                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">🌐</div>
+                </div>
+                <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
+                  <h3 className="text-white text-[82px] font-black">300+</h3>
+                  <p className="text-white text-[24px] font-bold">Satisfied Clients</p>
+                  <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">⚡</div>
+                  <div className="absolute right-10 bottom-10 z-30">
+                    <h3 className="text-white text-[76px] font-black">40+</h3>
+                    <p className="text-white text-[22px]">Industries Served</p>
+                  </div>
                 </div>
               </div>
 
-              {/* FRONT CARD */}
-              <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
-                <h3 className="text-white text-[82px] font-black">300+</h3>
-                <p className="text-white text-[24px] font-bold">Satisfied Clients</p>
-                <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">
-                  ⚡
+              {/* Mobile stacked cards */}
+              <div className="lg:hidden space-y-4">
+                <div className="rounded-tr-[60px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-6 sm:p-8">
+                  <h3 className="text-white text-[48px] sm:text-[64px] font-black">500+</h3>
+                  <p className="text-white text-lg sm:text-xl font-bold">Projects Delivered</p>
+                  <div className="mt-4 w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-[#C839D8] flex items-center justify-center text-4xl sm:text-5xl">🌐</div>
                 </div>
-                <div className="absolute right-10 bottom-10 z-30">
-                  <h3 className="text-white text-[76px] font-black">40+</h3>
-                  <p className="text-white text-[22px]">Industries Served</p>
+                <div className="rounded-tr-[60px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-6 sm:p-8">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h3 className="text-white text-[48px] sm:text-[64px] font-black">300+</h3>
+                      <p className="text-white text-lg sm:text-xl font-bold">Satisfied Clients</p>
+                    </div>
+                    <div className="text-6xl sm:text-7xl opacity-90">⚡</div>
+                  </div>
+                  <div className="mt-6">
+                    <h3 className="text-white text-[44px] sm:text-[56px] font-black">40+</h3>
+                    <p className="text-white text-base sm:text-lg font-bold">Industries Served</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -805,24 +832,23 @@ export default function About() {
             {timelineData.map((item, index) => (
               <div
                 key={item.year}
-                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-16 sm:mb-20 md:mb-28"
+                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-6 sm:mb-10 md:mb-20 lg:mb-28"
               >
                 {/* Left Side */}
                 <div
-                  className={`${item.side === "left"
-                    ? "flex justify-end"
-                    : "invisible"
-                    }`}
+                  className={item.side === "left"
+                    ? "flex justify-start lg:justify-end"
+                    : "hidden lg:block lg:invisible"
+                  }
                 >
                   <div
-                    className="w-full max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4"
+                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4 lg:border-r-4"
                     style={{ borderColor: item.color }}
                   >
                     <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
-
                     <p className="text-base sm:text-xl text-[#66668a] leading-relaxed">
                       {item.description}
                     </p>
@@ -831,20 +857,19 @@ export default function About() {
 
                 {/* Right Side */}
                 <div
-                  className={`${item.side === "right"
-                    ? "flex justify-start"
-                    : "invisible"
-                    }`}
+                  className={item.side === "right"
+                    ? "flex justify-end lg:justify-start"
+                    : "hidden lg:block lg:invisible"
+                  }
                 >
                   <div
-                    className="w-full max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4"
+                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4 lg:border-l-4"
                     style={{ borderColor: item.color }}
                   >
                     <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
-
                     <p className="text-base sm:text-xl text-[#66668a] leading-relaxed">
                       {item.description}
                     </p>
@@ -857,7 +882,7 @@ export default function About() {
                   style={{
                     color: item.color,
                     top: "50%",
-                    transform: item.year === "2019" || item.year === "2022" ? "translate(120%, -50%)" : "translate(-140%, -50%)",
+                    transform: item.side === "left" ? "translate(120%, -50%)" : "translate(-140%, -50%)",
                   }}
                 >
                   {item.year}
@@ -891,7 +916,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* LEFT SIDE */}
-            <div className="border border-yellow-500 rounded-md p-8 bg-black/30">
+            <div className="border border-yellow-500 rounded-md p-4 sm:p-6 md:p-8 bg-black/30">
 
               <p className="text-yellow-400 text-xl sm:text-2xl md:text-3xl mb-4">
                 Request a Call Back!
@@ -971,64 +996,64 @@ export default function About() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="border border-yellow-500 rounded-md p-8 bg-black/30">
+            <div className="border border-yellow-500 rounded-md p-4 sm:p-6 md:p-8 bg-black/30">
 
-              <form className="space-y-6">
+              <form className="space-y-4 sm:space-y-6">
 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="h-14 px-4 bg-white rounded outline-none"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
 
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className="h-14 px-4 bg-white rounded outline-none"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     placeholder="Whatsapp Mobile Number"
-                    className="h-14 px-4 bg-white rounded outline-none"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
 
                   <input
                     type="text"
                     placeholder="City"
-                    className="h-14 px-4 bg-white rounded outline-none"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
                   />
                 </div>
 
                 <label htmlFor="about-service" className="sr-only">Select Service</label>
-                <select id="about-service" className="h-14 px-4 bg-white rounded w-full outline-none">
+                <select id="about-service" className="h-14 px-4 bg-white rounded w-full outline-none text-sm sm:text-base">
                   <option>- Select Service -</option>
                 </select>
 
                 <textarea
                   rows="5"
                   placeholder="Please type atleast 20 characters about your Inquiry"
-                  className="w-full p-4 rounded outline-none"
+                  className="w-full p-4 rounded outline-none text-sm sm:text-base"
                 />
 
                 {/* Fake Captcha */}
-                <div className="bg-white w-full max-w-[300px] h-[78px] rounded flex items-center justify-between px-4">
+                <div className="bg-white w-full sm:max-w-[300px] h-[78px] rounded flex items-center justify-between px-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 border-2 border-gray-500"></div>
-                    <span>I'm not a robot</span>
+                    <div className="w-8 h-8 border-2 border-gray-500 shrink-0"></div>
+                    <span className="text-sm sm:text-base">I'm not a robot</span>
                   </div>
 
-                  <div className="text-xs text-gray-500">
+                  <div className="text-xs text-gray-500 shrink-0">
                     reCAPTCHA
                   </div>
                 </div>
 
                 <button
                   type="submit"
-                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all px-14 py-4 rounded-full text-black text-xl font-medium"
+                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all w-full sm:w-auto px-8 sm:px-14 py-4 rounded-full text-black text-lg sm:text-xl font-medium"
                 >
                   Submit Now
                 </button>

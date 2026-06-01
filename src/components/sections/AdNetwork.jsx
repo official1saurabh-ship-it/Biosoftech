@@ -1,11 +1,8 @@
 import { ArrowRight } from "lucide-react";
-import {
-  motion,
-  useInView,
-} from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import advertiser from "../../assets/adnetwork-partner.png";
 import publisher from "../../assets/adnetwork-publisher.webp";
@@ -74,7 +71,6 @@ const cards = [
 ];
 
 export default function AdNetworkSection() {
-  const navigate = useNavigate();
   return (
     <section className="bg-[#f7f4fb] overflow-hidden">
 
@@ -117,8 +113,8 @@ export default function AdNetworkSection() {
 
           </div>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             aria-label="Visit our flagship solutions page"
             className="
   group
@@ -129,8 +125,6 @@ export default function AdNetworkSection() {
   self-start
 "
           >
-
-            {/* TEXT */}
 
             <span
               className="
@@ -159,8 +153,6 @@ export default function AdNetworkSection() {
             >
               Visit Now
             </span>
-
-            {/* ICON */}
 
             <span
               className="
@@ -203,7 +195,7 @@ export default function AdNetworkSection() {
 
             </span>
 
-          </a>
+          </Link>
 
         </div>
 
@@ -428,8 +420,8 @@ ${!isDesktop
 `}
         >
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             aria-label="Learn more about this digital solution"
             className="
 w-[120px]
@@ -485,7 +477,7 @@ border-white
               Learn More
             </p>
 
-          </a>
+          </Link>
 
         </div>
 
