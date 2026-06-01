@@ -564,7 +564,7 @@ const CloudServices = () => {
                             <div className="overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-900/8">
                                 <div className="bg-slate-950 p-6 text-white">
                                     <p className="text-lg font-semibold text-blue-200">Biosoftech Cloud Platform Stack</p>
-                                        <p className="mt-2 text-sm text-slate-400 leading-relaxed">
+                                    <p className="mt-2 text-sm text-slate-400 leading-relaxed">
                                         A complete toolkit for product teams needing production-grade infrastructure without heavy complexity.
                                     </p>
                                 </div>
@@ -615,39 +615,39 @@ const CloudServices = () => {
             </section>
 
             {/* WHY CHOOSE SECTION */}
-            <section className="relative overflow-hidden py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
+            <section className="relative z-30 min-h-screen overflow-hidden py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
                 <div className="absolute inset-0 bg-white/30" />
                 <div className="relative z-10 max-w-[1750px] mx-auto px-6 lg:px-20">
-                        <div>
-                            <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
-                            <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
-                        </div>
-                        <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                            Biosoftech Solutions offers a developer-friendly cloud platform designed for simplicity, performance, and affordability. Our services provide a streamlined alternative to complex enterprise systems, making them ideal for startups, SaaS platforms, and fast-growing businesses. With powerful infrastructure and easy-to-use tools, we enable teams to deploy applications quickly without unnecessary complexity.
-                        </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {[
-                                "Simple & Developer-Friendly Platform",
-                                "Cost-Effective Cloud Hosting",
-                                "High-Performance Infrastructure",
-                                "Scalable Cloud Resources",
-                                "Fast Deployment & Time-to-Market",
-                                "Strong Open-Source Ecosystem",
-                            ].map((item, i) => (
-                                <div key={i} className="flex items-center gap-3 bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-5 md:p-6 transition-all hover:shadow-md group">
-                                    <div className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-blue-600 text-white shrink-0 group-hover:scale-110 transition-transform">
-                                        <svg stroke="currentColor" fill="none" strokeWidth="2.5" viewBox="0 0 24 24" className="w-5 h-5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                    </div>
-                                    <p className="font-medium text-slate-800 leading-tight text-sm md:text-base">{item}</p>
+                    <div>
+                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
+                        <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
+                    </div>
+                    <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                        Biosoftech Solutions offers a developer-friendly cloud platform designed for simplicity, performance, and affordability. Our services provide a streamlined alternative to complex enterprise systems, making them ideal for startups, SaaS platforms, and fast-growing businesses. With powerful infrastructure and easy-to-use tools, we enable teams to deploy applications quickly without unnecessary complexity.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {[
+                            "Simple & Developer-Friendly Platform",
+                            "Cost-Effective Cloud Hosting",
+                            "High-Performance Infrastructure",
+                            "Scalable Cloud Resources",
+                            "Fast Deployment & Time-to-Market",
+                            "Strong Open-Source Ecosystem",
+                        ].map((item, i) => (
+                            <div key={i} className="flex items-center gap-3 bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-5 md:p-6 transition-all hover:shadow-md group">
+                                <div className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-blue-600 text-white shrink-0 group-hover:scale-110 transition-transform">
+                                    <svg stroke="currentColor" fill="none" strokeWidth="2.5" viewBox="0 0 24 24" className="w-5 h-5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 </div>
-                            ))}
-                        </div>
-                        <div className="bg-blue-600 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5 md:gap-6 text-white mt-8 md:mt-10">
-                            <div className="flex-1">
-                                <p className="text-base md:text-lg leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
+                                <p className="font-medium text-slate-800 leading-tight text-sm md:text-base">{item}</p>
                             </div>
-                            <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-sm md:text-base shrink-0">Request a Free Consultation</a>
+                        ))}
+                    </div>
+                    <div className="bg-blue-600 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5 md:gap-6 text-white mt-8 md:mt-10">
+                        <div className="flex-1">
+                            <p className="text-base md:text-lg leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
                         </div>
+                        <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-sm md:text-base shrink-0">Request a Free Consultation</a>
+                    </div>
                 </div>
             </section>
             {/* DEVELOPMENT PROCESS SECTION */}
@@ -658,7 +658,7 @@ const CloudServices = () => {
                 <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-center overflow-hidden">
                     <div className="max-w-[1750px] mx-auto px-6 lg:px-20 w-full">
 
-                        <div className="text-center mb-8 lg:mb-12">
+                        <div className="text-center mb-8 mt-28 lg:mb-12">
                             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
