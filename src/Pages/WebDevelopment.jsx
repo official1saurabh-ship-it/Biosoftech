@@ -256,7 +256,7 @@ const WebDevelopment = () => {
                 <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight">
+                            <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 Build Websites That
                                 <br />
                                 Drive Growth
@@ -273,7 +273,7 @@ const WebDevelopment = () => {
                                 <div className="text-center lg:text-left">
                                     <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
                                     <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                    <p className="font-semibold text-fluid-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
                                     <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
@@ -282,7 +282,7 @@ const WebDevelopment = () => {
                                 <div className="text-center lg:text-left">
                                     <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
                                     <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.8/5 Stars</p>
+                                    <p className="font-semibold text-fluid-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
                             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
@@ -458,7 +458,7 @@ const WebDevelopment = () => {
                     {/* Heading */}
 
                     <div className="text-center mb-16">
-                        <h2 className="text-black font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+                        <h2 className="text-black font-bold text-fluid-5xl leading-tight">
                             Our Inspiring Web
                             <br />
                             Development Portfolio
@@ -532,7 +532,7 @@ const WebDevelopment = () => {
 
                     {/* Heading */}
 
-                        <h2 className="text-center text-[#080B1D] font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-9xl mt-8">
+                    <h2 className="text-center text-[#080B1D] font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-9xl mt-8">
                         How We Execute Success
                     </h2>
 
@@ -558,11 +558,11 @@ const WebDevelopment = () => {
                             />
 
                             <div className="text-center">
-                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mb-3 md:mb-5">
                                     {steps[1].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[1].desc}
                                 </p>
 
@@ -599,11 +599,11 @@ const WebDevelopment = () => {
                             />
 
                             <div className="text-center">
-                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mb-3 md:mb-5">
                                     {steps[3].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[3].desc}
                                 </p>
 
@@ -650,11 +650,11 @@ const WebDevelopment = () => {
                                     01
                                 </button>
 
-                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
                                     {steps[0].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[0].desc}
                                 </p>
                             </div>
@@ -692,11 +692,11 @@ const WebDevelopment = () => {
                                     03
                                 </button>
 
-                                <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
                                     {steps[2].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-sm sm:text-base md:text-xl leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
                                     {steps[2].desc}
                                 </p>
                             </div>
@@ -743,18 +743,18 @@ const WebDevelopment = () => {
                                 Get Started With Building Your Dream Website
                             </h2>
 
-                            <p className="text-[#222] text-lg md:text-xl leading-relaxed mb-6">
+                            <p className="text-[#222] text-fluid-lg leading-relaxed mb-6">
                                 Are you in search of a top-notch software and website development company in
                                 Lucknow? Look no further! At Biosoftech Solutions, we're
                                 dedicated to transforming your ideas into reality with powerful,
                                 future-ready technology.
                             </p>
 
-                            <p className="text-[#222] text-lg md:text-xl leading-relaxed mb-10">
+                            <p className="text-[#222] text-fluid-lg leading-relaxed mb-10">
                                 From websites and mobile apps to desktop software, cloud platforms, AI automation, and industry-specific systems (schools, hotels, restaurants, billing, pathology labs, staff management), we deliver solutions that help businesses scale and succeed.
                             </p>
 
-                            <button onClick={() => navigate("/contact")} className="px-8 py-4 bg-[#ffba00] text-black font-semibold uppercase hover:brightness-95 transition text-sm sm:text-base">
+                            <button onClick={() => navigate("/contact")} className="px-8 py-4 bg-[#ffba00] text-black font-semibold uppercase hover:brightness-95 transition text-fluid-base">
                                 Book a Free Consultation Today!
                             </button>
 
@@ -912,7 +912,7 @@ const WebDevelopment = () => {
                     <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
                         Ready to Transform Your Business?
                     </h2>
-                    <p className="mt-6 text-white/80 text-lg md:text-xl leading-relaxed">
+                    <p className="mt-6 text-white/80 text-fluid-lg leading-relaxed">
                         Let&apos;s discuss your project and explore how Biosoftech Solutions can help you achieve your goals with powerful web, mobile, desktop, cloud, AI automation, and industry-specific software solutions.
                     </p>
                     <div className="mt-8">
@@ -956,7 +956,7 @@ const WebDevelopment = () => {
                                     className="
                   h-[155px]
                   rounded-[22px]
-                  bg-[#2f2f2f]
+                  bg-[#0821ff]
                   flex
                   flex-col
                   items-center
@@ -964,7 +964,7 @@ const WebDevelopment = () => {
                   text-center
                   transition-all
                   duration-300
-                  hover:bg-[#353535]
+                  hover:bg-[#122e9b]
                 "
                                 >
                                     <Icon
@@ -1003,7 +1003,7 @@ const WebDevelopment = () => {
                     </h2>
 
                     {/* Description */}
-                    <p className="mt-6 text-white/90 text-lg md:text-xl font-normal">
+                    <p className="mt-6 text-white/90 text-fluid-lg font-normal">
                         Your website is more than just code — it&apos;s your business engine, brand identity, and customer gateway. At Biosoftech Solutions, we are the strategic partner you need to build it right with web, mobile, desktop, cloud, AI automation, and industry-specific software solutions.
                     </p>
 
@@ -1039,7 +1039,7 @@ const WebDevelopment = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     {/* Heading */}
                     <div className="text-center max-w-5xl mx-auto">
-                        <h2 className="text-[#1d2b42] text-4xl md:text-5xl font-bold leading-tight">
+                        <h2 className="text-[#1d2b42] text-fluid-4xl font-bold leading-tight">
                             Why Choose Biosoftech Solutions As Your Preferred
                             <br />
                             Website Development Company?

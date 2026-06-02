@@ -463,13 +463,13 @@ const HeroSection = () => {
 
             {/* Left Content */}
             <div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-black leading-tight">
+              <h1 className="text-fluid-5xl font-semibold text-black leading-tight">
                 Transforming Businesses
                 <br />
                 with Intelligent Automation
               </h1>
 
-              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-base sm:text-lg leading-7 sm:leading-9 max-w-2xl">
+              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-fluid-base leading-7 sm:leading-9 max-w-2xl">
                 At Biosoftech Solutions, we deliver AI automation services that
                 help businesses streamline operations, reduce costs, and unlock
                 new opportunities for growth. Our intelligent solutions combine
@@ -483,7 +483,7 @@ const HeroSection = () => {
 
                 {/* Clutch */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-[#1d2b36]">
+                  <h3 className="text-fluid-4xl font-bold text-[#1d2b36]">
                     Clutch
                   </h3>
 
@@ -498,26 +498,25 @@ const HeroSection = () => {
                     ))}
                   </div>
 
-                  <p className="mt-1 font-semibold text-xs sm:text-sm">
+                  <p className="mt-1 font-semibold text-fluid-sm">
                     Rated 5/5 Stars
                   </p>
                 </div>
 
                 {/* Upwork */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold">
-                    <span className="text-[#6fda44]">Up</span>
+                  <h3 className="text-fluid-4xl font-bold">
                     <span className="text-black">work</span>
                   </h3>
 
-                  <p className="mt-4 sm:mt-6 font-semibold text-lg sm:text-xl lg:text-2xl">
+                  <p className="mt-4 sm:mt-6 font-semibold text-fluid-xl">
                     Top Rated Plus
                   </p>
                 </div>
 
                 {/* Google */}
                 <div>
-                  <h3 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold">
+                  <h3 className="text-fluid-4xl font-bold">
                     <span className="text-[#4285F4]">G</span>
                     <span className="text-[#EA4335]">o</span>
                     <span className="text-[#FBBC05]">o</span>
@@ -537,7 +536,7 @@ const HeroSection = () => {
                     ))}
                   </div>
 
-                  <p className="mt-1 font-semibold text-xs sm:text-sm">
+                  <p className="mt-1 font-semibold text-fluid-sm">
                     Rated 4.9/5 Stars
                   </p>
                 </div>
@@ -547,12 +546,12 @@ const HeroSection = () => {
               {/* Buttons */}
               <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8 lg:mt-12">
 
-                <button onClick={() => navigate("/contact")} className="bg-[#f4b400] hover:bg-[#e3a600] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-black font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
+                <button onClick={() => navigate("/contact")} className="bg-[#f4b400] hover:bg-[#e3a600] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-black font-semibold flex items-center gap-2 sm:gap-3 text-fluid-base min-h-[44px]">
                   REQUEST PROPOSAL
                   <ArrowRight size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
 
-                <button onClick={() => navigate("/contact")} className="bg-black hover:bg-[#222] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-white font-semibold flex items-center gap-2 sm:gap-3 text-sm sm:text-base min-h-[44px]">
+                <button onClick={() => navigate("/contact")} className="bg-black hover:bg-[#222] transition-all px-5 sm:px-6 lg:px-8 py-3 sm:py-4 text-white font-semibold flex items-center gap-2 sm:gap-3 text-fluid-base min-h-[44px]">
                   AI SOLUTIONS
                   <PlusCircle size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </button>
@@ -592,7 +591,7 @@ const HeroSection = () => {
             {/* LEFT SIDE STICKY */}
             <div className="lg:sticky lg:top-0 h-fit border-r border-white/10 p-8 lg:p-12 self-start">
 
-              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              <h2 className="text-fluid-5xl font-bold leading-tight">
                 AI Strategy
                 <br />
                 &amp; Consulting
@@ -646,7 +645,7 @@ const HeroSection = () => {
                       </div>
 
                       {/* TITLE */}
-                      <h3 className="mt-8 text-3xl lg:text-4xl font-bold leading-tight">
+                      <h3 className="mt-8 text-fluid-3xl font-bold leading-tight">
                         {item.title}
                       </h3>
 
@@ -677,7 +676,7 @@ const HeroSection = () => {
 
             {/* LEFT */}
             <div>
-              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-[#111]">
+              <h2 className="text-fluid-5xl font-bold leading-tight text-[#111]">
                 Driving Business Growth
                 <br />
                 Through Smart Digital Solutions
@@ -824,7 +823,7 @@ const HeroSection = () => {
               Generative AI & LLM
             </p>
 
-            <h2 className="mt-5 text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+            <h2 className="mt-5 text-fluid-5xl font-bold leading-tight">
               Biosoftech Generative AI & LLM Capabilities
             </h2>
 
@@ -953,7 +952,7 @@ const HeroSection = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
 
           {/* TITLE */}
-          <h2 className="text-center text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+          <h2 className="text-center text-fluid-5xl font-bold leading-tight">
             Why Choose Biosoftech for AI Solutions
           </h2>
 
@@ -1140,7 +1139,7 @@ const HeroSection = () => {
 
                 <div className="hidden sm:block absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
+                <h2 className="text-fluid-5xl font-bold">
                   Our AI{" "}
                   <span className="text-cyan-400">
                     Development
@@ -1149,7 +1148,7 @@ const HeroSection = () => {
                 </h2>
               </div>
 
-              <p className="mt-2 sm:mt-6 md:mt-10 max-w-5xl mx-auto text-sm sm:text-lg md:text-xl text-white/60 leading-6 sm:leading-8 md:leading-8 lg:leading-10">
+              <p className="mt-2 sm:mt-6 md:mt-10 max-w-5xl mx-auto text-fluid-lg text-white/60 leading-6 sm:leading-8 md:leading-8 lg:leading-10">
                 We follow a structured, data-driven approach to transform
                 business ideas into intelligent AI solutions. Each stage
                 ensures accuracy, scalability, and long-term success.
@@ -1229,7 +1228,7 @@ const HeroSection = () => {
                 bg-cyan-500/10
                 border border-cyan-500/20
                 text-cyan-300
-                text-xs sm:text-sm
+                text-fluid-sm
                 tracking-[2px]
                 font-semibold
               "
@@ -1238,12 +1237,12 @@ const HeroSection = () => {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-3 sm:mt-6 md:mt-8 text-xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+                <h3 className="mt-3 sm:mt-6 md:mt-8 text-fluid-4xl font-bold leading-tight">
                   {processData[activeStep].title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="mt-3 sm:mt-6 md:mt-8 text-sm sm:text-lg md:text-xl text-white/55 leading-6 sm:leading-8 md:leading-8 lg:leading-10 max-w-2xl">
+                <p className="mt-3 sm:mt-6 md:mt-8 text-fluid-lg text-white/55 leading-6 sm:leading-8 md:leading-8 lg:leading-10 max-w-2xl">
                   {processData[activeStep].description}
                 </p>
 
@@ -1257,7 +1256,7 @@ const HeroSection = () => {
                   bg-cyan-300
                   text-black
                   rounded-xl
-                  text-sm sm:text-lg
+                  text-fluid-base
                   font-semibold
                   hover:bg-cyan-200
                   transition-all duration-300
@@ -1271,7 +1270,7 @@ const HeroSection = () => {
                     className="
                   inline-flex items-center gap-2 sm:gap-3
                   text-cyan-300
-                  text-base sm:text-xl
+                  text-fluid-lg
                   font-semibold
                   group
                 "
@@ -1347,7 +1346,7 @@ const HeroSection = () => {
             <div>
               <h2
                 className="
-                text-2xl sm:text-4xl lg:text-5xl xl:text-6xl
+                text-fluid-5xl
                 font-bold
                 text-white
                 leading-tight
@@ -1365,7 +1364,7 @@ const HeroSection = () => {
             <div>
               <p
                 className="
-                text-base sm:text-xl
+                text-fluid-lg
                 leading-7 sm:leading-8 md:leading-8 lg:leading-10
                 text-white/90
               "
@@ -1388,7 +1387,7 @@ const HeroSection = () => {
                 bg-cyan-300
                 text-black
                 font-semibold
-                text-sm sm:text-lg
+                text-fluid-base
                 transition-all duration-300
                 hover:bg-cyan-200
                 hover:scale-105
@@ -1407,10 +1406,10 @@ const HeroSection = () => {
             <p className="text-cyan-500 uppercase tracking-[5px] text-sm font-semibold">
               Why AI
             </p>
-            <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-[#111] leading-tight">
+            <h2 className="mt-4 text-fluid-4xl font-bold text-[#111] leading-tight">
               Benefits of AI Development
             </h2>
-            <p className="mt-6 text-lg lg:text-xl text-gray-600 leading-relaxed">
+            <p className="mt-6 text-fluid-lg text-gray-600 leading-relaxed">
               Unlock transformative advantages that drive measurable business
               outcomes with Biosoftech&apos;s cutting-edge AI solutions.
             </p>

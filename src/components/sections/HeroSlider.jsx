@@ -107,7 +107,7 @@ export default function HeroRevealSlider() {
               transition={{ duration: 0.7, ease: "easeInOut" }}
               className="min-h-[420px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-36 sm:pt-40 lg:pt-48"
             >
-              <h2 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold opacity-90 mb-2 lg:mb-5">
+              <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h2>
 
@@ -123,7 +123,7 @@ export default function HeroRevealSlider() {
                 {slide.bottom}
               </h2>
 
-              <p className="mt-4 lg:mt-7 max-w-[550px] w-full text-sm sm:text-base lg:text-lg font-jakarta font-medium opacity-80 leading-relaxed">
+              <p className="mt-4 lg:mt-7 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">
                 {slide.desc}
               </p>
 

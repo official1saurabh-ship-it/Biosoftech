@@ -27,6 +27,13 @@ import about from "../assets/about-hero-illustration.webp";
 import growthImage from "../assets/about-growth-engine.png";
 import freshIdeasImage from "../assets/about-fresh-ideas.webp";
 import aboutHero from "../assets/about-us-hero-software-solutions.avif";
+import blogImg1 from "../assets/ai-seo-case-study-rankon.webp";
+import blogImg2 from "../assets/ai-website-builders-review.webp";
+import blogImg3 from "../assets/google-ads-campaign-types.webp";
+
+import missionImage from "../assets/mission.png";
+import missionVideo from "../assets/mission-video.mp4";
+
 
 export default function About() {
   const navigate = useNavigate();
@@ -161,9 +168,9 @@ export default function About() {
   ];
 
   const stats = [
-    { icon: Star, value: "500", plus: "+", title: "Verified", sub: "Projects" },
-    { icon: Calendar, value: "10", plus: "+", title: "Years of", sub: "Experience" },
-    { icon: Handshake, value: "500", plus: "+", title: "Happy Clients", sub: "" },
+    { icon: Star, value: "30", plus: "+", title: "Projects", sub: "Delivered" },
+    { icon: Calendar, value: "7", plus: "+", title: "Years of", sub: "Experience" },
+    { icon: Handshake, value: "50", plus: "+", title: "Satisfied", sub: "Clients" },
     { icon: Users, value: "50", plus: "+", title: "Skilled Team", sub: "Members" },
   ];
 
@@ -231,6 +238,33 @@ export default function About() {
       title: "Scaling Enterprise Solutions",
       description:
         "Expanded offerings with enterprise-grade analytics platforms, ERP systems, and advanced cloud integrations, strengthening our role as a trusted technology partner for large organizations.",
+    },
+  ];
+
+  const blogs = [
+    {
+      image: blogImg1,
+      day: "28",
+      month: "May",
+      title: "RankON Technologies Journey to Successful AI SEO: Know How We Improved Its Presence in AIO, AI Mode and ChatGPT",
+      description:
+        "Artificial Intelligence is changing how people search online. Users are no longer just clicking blue links.",
+    },
+    {
+      image: blogImg2,
+      day: "13",
+      month: "May",
+      title: "AI Website Builders Review: Features, Benefits, Costs and Considerations",
+      description:
+        "Building websites with AI has become a game-changer for entrepreneurs, freelancers, and businesses.",
+    },
+    {
+      image: blogImg3,
+      day: "30",
+      month: "May",
+      title: "Google Ads Campaign Types and Their Benefits",
+      description:
+        "In this guide, we'll explore different Google Ads campaign types, how they work, when businesses should use them.",
     },
   ];
 
@@ -345,14 +379,14 @@ export default function About() {
               <span className="inline-block w-1 md:w-2 h-5 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
             </h1>
             <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-[16px] lg:text-[18px] leading-relaxed md:leading-[30px] lg:leading-[38px] text-gray-600 max-w-[650px] mx-auto lg:mx-0">
-              Join <span className="font-bold text-gray-900">500+ businesses worldwide</span> who transformed their operations with
+              Join <span className="font-bold text-gray-900">50+ businesses worldwide</span> who transformed their operations with
               <span className="font-bold text-gray-900"> Biosoftech Solutions'</span> best software development and automation services.
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6 md:mt-8 text-xs sm:text-sm md:text-base lg:text-[18px] font-semibold">
               <CheckCircle size={16} className="sm:w-[20px] sm:h-[20px] text-purple-600 shrink-0" />
               <span>Rated</span>
               <span className="text-orange-500">★★★★★</span>
-              <span>by 200+ happy clients</span>
+              <span>by 30+ happy clients</span>
             </div>
             <div className="flex items-center justify-center lg:justify-start mt-6 sm:mt-8">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -360,35 +394,35 @@ export default function About() {
                   <div className="w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-white font-bold text-xs">{i}</div>
                 </div>
               ))}
-              <span className="ml-2 sm:ml-3 bg-purple-600 text-white rounded-full px-2 sm:px-3 py-1 text-xs sm:text-sm font-bold shadow-lg">1k+</span>
+              <span className="ml-2 sm:ml-3 bg-purple-600 text-white rounded-full px-2 sm:px-3 py-1 text-fluid-sm font-bold shadow-lg">1k+</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 mt-6 sm:mt-8 md:mt-10 justify-center lg:justify-start">
-              <Link to="/contact" className="bg-[#09090F] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold hover:bg-purple-600 transition-all shadow-xl text-sm sm:text-base min-h-[44px]"><Phone size={16} className="sm:w-[18px] sm:h-[18px]" />Book a Meeting</Link>
-              <Link to="/contact" className="border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center font-bold hover:border-purple-600 hover:text-purple-600 transition-all text-sm sm:text-base min-h-[44px]">📞 Talk To Us</Link>
+              <Link to="/contact" className="bg-[#09090F] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold hover:bg-purple-600 transition-all shadow-xl text-fluid-base min-h-[44px]"><Phone size={16} className="sm:w-[18px] sm:h-[18px]" />Book a Meeting</Link>
+              <Link to="/contact" className="border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center font-bold hover:border-purple-600 hover:text-purple-600 transition-all text-fluid-base min-h-[44px]">📞 Talk To Us</Link>
             </div>
           </div>
           <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
             <div className="absolute w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[20px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10 max-w-full" />
             <img src={aboutHero} alt="Biosoftech Solutions - Software Development Company" fetchPriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
             <div className="absolute top-4 right-4 sm:top-8 sm:right-8 md:top-12 md:right-12 z-30">
-              <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-base sm:text-xl font-bold border">G</div>
+              <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-fluid-lg font-bold border">G</div>
             </div>
             <div className="absolute top-16 right-0 sm:top-24 sm:right-0 md:top-32 md:right-[-10px] z-30">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-blue-600 text-lg sm:text-2xl font-bold border">f</div>
+              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-blue-600 text-fluid-xl font-bold border">f</div>
             </div>
             <div className="absolute top-2 right-20 sm:top-4 sm:right-28 md:top-12 md:right-40 z-30">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-500 text-base sm:text-xl border">♻</div>
+              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-500 text-fluid-lg border">♻</div>
             </div>
             <div className="absolute bottom-28 left-4 sm:bottom-36 sm:left-8 md:bottom-44 md:left-12 z-30">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-600 text-lg sm:text-2xl border">▶</div>
+              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-600 text-fluid-xl border">▶</div>
             </div>
             <div className="absolute left-2 sm:left-4 md:left-10 bottom-8 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-2 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-2 sm:gap-3">
-              <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-base sm:text-xl">⭐</span></div>
-              <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">10+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
+              <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-fluid-lg">⭐</span></div>
+              <div><h3 className="text-fluid-4xl font-black text-blue-600">7+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
             </div>
             <div className="absolute right-2 sm:right-4 md:right-10 bottom-8 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-2 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-2 sm:gap-3">
-              <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-base sm:text-xl">🌐</span></div>
-              <div><h3 className="text-xl sm:text-3xl md:text-5xl font-black text-blue-600">500+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
+              <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-fluid-lg">🌐</span></div>
+              <div><h3 className="text-fluid-4xl font-black text-blue-600">30+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
             </div>
           </div>
         </div>
@@ -460,7 +494,7 @@ export default function About() {
               <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
               <h3 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[32px] xl:text-[38px] font-black text-[#433d70]">Our Mission</h3>
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
-              <button onClick={() => navigate("/contact")} className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
+              <button onClick={() => navigate("/contact")} className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-fluid-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
               {services.map((item) => (
@@ -488,7 +522,7 @@ export default function About() {
                 <p>We observed changing dynamics and refined our growth strategies to cut through complexity, competition, and digital noise.</p>
                 <p>By implementing timely innovations, we ensured our clients&apos; businesses remain efficient, scalable, and future-ready without compromising stability. That&apos;s sustainability in progress and conviction in action!</p>
               </div>
-              <button onClick={() => navigate("/contact")} className="mt-6 sm:mt-10 border border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-white flex items-center gap-2 sm:gap-3 hover:bg-[#3B3663] duration-500 text-sm sm:text-base min-h-[44px]">Let&apos;s Accelerate Your Growth with a Tailored Solution <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" /></button>
+              <button onClick={() => navigate("/contact")} className="mt-6 sm:mt-10 border border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-white flex items-center gap-2 sm:gap-3 hover:bg-[#3B3663] duration-500 text-fluid-base min-h-[44px]">Let&apos;s Accelerate Your Growth with a Tailored Solution <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" /></button>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:gap-5 self-center">
               {stats.map((item) => {
@@ -525,16 +559,16 @@ export default function About() {
               {/* Desktop overlapping cards */}
               <div className="hidden lg:block h-[820px]">
                 <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
-                  <h3 className="text-white text-[90px] font-black">500+</h3>
+                  <h3 className="text-white text-[90px] font-black">30+</h3>
                   <p className="text-white text-[26px] font-bold">Projects Delivered</p>
                   <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">🌐</div>
                 </div>
                 <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
-                  <h3 className="text-white text-[82px] font-black">300+</h3>
+                  <h3 className="text-white text-[82px] font-black">50+</h3>
                   <p className="text-white text-[24px] font-bold">Satisfied Clients</p>
                   <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">⚡</div>
                   <div className="absolute right-10 bottom-10 z-30">
-                    <h3 className="text-white text-[76px] font-black">40+</h3>
+                    <h3 className="text-white text-[76px] font-black">15+</h3>
                     <p className="text-white text-[22px]">Industries Served</p>
                   </div>
                 </div>
@@ -543,21 +577,21 @@ export default function About() {
               {/* Mobile stacked cards */}
               <div className="lg:hidden space-y-4">
                 <div className="rounded-tr-[60px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-6 sm:p-8">
-                  <h3 className="text-white text-[48px] sm:text-[64px] font-black">500+</h3>
-                  <p className="text-white text-lg sm:text-xl font-bold">Projects Delivered</p>
-                  <div className="mt-4 w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-[#C839D8] flex items-center justify-center text-4xl sm:text-5xl">🌐</div>
+                  <h3 className="text-white text-[48px] sm:text-[64px] font-black">30+</h3>
+                  <p className="text-white text-fluid-lg font-bold">Projects Delivered</p>
+                  <div className="mt-4 w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-[#C839D8] flex items-center justify-center text-fluid-4xl">🌐</div>
                 </div>
                 <div className="rounded-tr-[60px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-6 sm:p-8">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-white text-[48px] sm:text-[64px] font-black">300+</h3>
-                      <p className="text-white text-lg sm:text-xl font-bold">Satisfied Clients</p>
+                      <h3 className="text-white text-[48px] sm:text-[64px] font-black">50+</h3>
+                      <p className="text-white text-fluid-lg font-bold">Satisfied Clients</p>
                     </div>
-                    <div className="text-6xl sm:text-7xl opacity-90">⚡</div>
+                    <div className="text-fluid-6xl opacity-90">⚡</div>
                   </div>
                   <div className="mt-6">
-                    <h3 className="text-white text-[44px] sm:text-[56px] font-black">40+</h3>
-                    <p className="text-white text-base sm:text-lg font-bold">Industries Served</p>
+                    <h3 className="text-white text-[44px] sm:text-[56px] font-black">15+</h3>
+                    <p className="text-white text-fluid-base font-bold">Industries Served</p>
                   </div>
                 </div>
               </div>
@@ -568,7 +602,7 @@ export default function About() {
 
               <motion.p
                 style={{ y: tagY }}
-                className="text-[#af60ff] font-semibold text-sm sm:text-base"
+                className="text-[#af60ff] font-semibold text-fluid-base"
               >
                 ✺ Who Are We?
               </motion.p>
@@ -590,7 +624,7 @@ export default function About() {
                 style={{ y: descY }}
                 className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#444]"
               >
-                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology. With 500+ projects delivered, 300+ satisfied clients, and 40+ industries served, we combine innovation with reliability to help organizations thrive in the digital era.
+                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology.                 With 30+ projects delivered, 50+ satisfied clients, and 15+ industries served, we combine innovation with reliability to help organizations thrive in the digital era.
               </motion.p>
 
               <motion.div
@@ -620,7 +654,7 @@ export default function About() {
               <motion.button
                 onClick={() => navigate("/contact")}
                 style={{ y: buttonY }}
-                className="mt-6 sm:mt-10 rounded-full border border-[#a84dff] px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-3 sm:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-sm sm:text-base min-h-[44px]"
+                className="mt-6 sm:mt-10 rounded-full border border-[#a84dff] px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-3 sm:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-fluid-base min-h-[44px]"
               >
                 Contact Now! <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" />
               </motion.button>
@@ -628,10 +662,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-
-
-
 
       <section ref={floatingRef} className="py-12 sm:py-16 md:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -701,7 +731,7 @@ export default function About() {
 
               {/* Heading */}
 
-              <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+              <h2 className="text-fluid-4xl font-bold text-slate-900 leading-tight">
                 We Offer All You
                 <br />
                 <span className="text-orange-500">
@@ -724,7 +754,7 @@ export default function About() {
               <div className="mt-10 flex items-center gap-3">
                 <Lightbulb className="w-7 h-7 text-orange-500" />
                 <h3 className="text-2xl font-bold">
-                  We Work Across 35+ Industries
+                  We Work Across 15+ Industries
                 </h3>
               </div>
 
@@ -748,6 +778,133 @@ export default function About() {
                 Get Quote
                 <ArrowRight size={18} />
               </button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section className="bg-[#f8f8f8] py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+            {/* LEFT SIDE */}
+            <div className="flex flex-col md:flex-row gap-6">
+
+              {/* Large Image */}
+              <div className="relative">
+                <img
+                  src={missionImage}
+                  alt="Mission"
+                  className="w-[340px] h-[620px] object-cover rounded-[90px]"
+                />
+
+                {/* Retention Rate */}
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white rounded-t-[70px] px-12 py-8 shadow-lg">
+                  <h3 className="text-6xl font-bold text-[#2F2F39] text-center">
+                    91%
+                  </h3>
+                  <p className="text-xl text-center mt-2 text-[#2F2F39]">
+                    Retention Rate
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Cards */}
+              <div className="flex flex-col gap-6">
+
+                {/* Growth Card */}
+                <div className="bg-[#C8E768] rounded-[70px] px-12 py-10 w-[280px]">
+                  <h3 className="text-7xl font-bold text-[#2F2F39]">
+                    85%
+                  </h3>
+
+                  <p className="text-2xl text-[#2F2F39] mt-3">
+                    Growth Rate
+                  </p>
+                </div>
+
+                {/* Video Card */}
+                <div className="bg-[#2837F3] rounded-[70px] p-6 w-[280px] h-[400px] overflow-hidden">
+
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover rounded-[35px]"
+                  >
+                    <source src={missionVideo} type="video/mp4" />
+                  </video>
+
+                </div>
+
+              </div>
+            </div>
+
+            {/* RIGHT SIDE CONTENT */}
+            <div>
+
+              <div className="flex items-center gap-2 text-purple-500 font-medium mb-3">
+                <span>✦</span>
+                <span>Our Mission & Vision</span>
+              </div>
+
+              <h2 className="text-5xl lg:text-7xl font-bold text-[#2F2F39] leading-tight">
+                Smart-Thinking
+              </h2>
+
+              <h2
+                className="text-5xl lg:text-7xl font-bold leading-tight"
+                style={{
+                  WebkitTextStroke: "2px #2F2F39",
+                  color: "transparent",
+                }}
+              >
+                Innovative Results
+              </h2>
+
+              <p className="mt-8 text-xl text-[#555] leading-relaxed max-w-3xl">
+                Biosoftech Solutions is more than just a technology provider
+                &mdash; we are a partner in growth. Our mission and vision are
+                built around delivering lasting value and measurable success for
+                every client we serve.
+              </p>
+
+              {/* Mission Vision */}
+              <div className="grid md:grid-cols-2 gap-8 mt-16">
+
+                <div className="pr-6 md:border-r border-gray-300">
+                  <h3 className="text-4xl font-bold text-[#2F2F39] mb-4">
+                    Mission
+                  </h3>
+
+                  <p className="text-lg text-[#555] leading-relaxed">
+                    We are on a mission to revolutionize businesses with
+                    next-generation digital solutions. Every day, our team
+                    focuses on crafting innovative strategies and software that
+                    transform industries, accelerate growth, and empower
+                    organizations to achieve more.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-4xl font-bold text-[#2F2F39] mb-4">
+                    Vision
+                  </h3>
+
+                  <p className="text-lg text-[#555] leading-relaxed">
+                    Our vision is clear: to empower businesses of all sizes with
+                    cutting-edge technology. We don&rsquo;t just aim to lead in
+                    our sector &mdash; we strive to help our clients become
+                    leaders in theirs.
+                  </p>
+                </div>
+
+              </div>
 
             </div>
           </div>
@@ -839,7 +996,7 @@ export default function About() {
               WHAT WE DO
             </p>
 
-            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-[#3F3D73] mt-2">
+            <h2 className="text-fluid-4xl font-bold text-[#3F3D73] mt-2">
               Fresh Ideas for Every Business
             </h2>
           </div>
@@ -871,7 +1028,7 @@ export default function About() {
                     style={{ borderColor: item.color }}
                   >
                     <span
-                      className="font-bold text-xl sm:text-4xl"
+                      className="font-bold text-fluid-3xl"
                       style={{ color: item.color }}
                     >
                       {item.percentage}
@@ -881,13 +1038,13 @@ export default function About() {
                   {/* Text */}
                   <div>
                     <h3
-                      className="text-2xl sm:text-3xl font-bold mb-3"
+                      className="text-fluid-2xl font-bold mb-3"
                       style={{ color: item.color }}
                     >
                       {item.title}
                     </h3>
 
-                    <p className="text-[#222] text-base sm:text-xl leading-relaxed">
+                    <p className="text-[#222] text-fluid-lg leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -921,7 +1078,7 @@ export default function About() {
               OUR GROWTH STORY
             </p>
 
-            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-[#3d3a72] mt-4">
+            <h2 className="text-fluid-4xl font-bold text-[#3d3a72] mt-4">
               The Story of Biosoftech Solutions
             </h2>
           </div>
@@ -949,10 +1106,10 @@ export default function About() {
                     style={{ borderColor: item.color }}
                   >
                     <div className="md:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
-                    <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
+                    <h3 className="font-bold text-fluid-2xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
-                    <p className="text-base sm:text-xl text-[#66668a] leading-relaxed">
+                    <p className="text-fluid-lg text-[#66668a] leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -970,10 +1127,10 @@ export default function About() {
                     style={{ borderColor: item.color }}
                   >
                     <div className="md:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
-                    <h3 className="font-bold text-2xl sm:text-3xl text-[#3d3a72] mb-3">
+                    <h3 className="font-bold text-fluid-2xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
-                    <p className="text-base sm:text-xl text-[#66668a] leading-relaxed">
+                    <p className="text-fluid-lg text-[#66668a] leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -1021,11 +1178,11 @@ export default function About() {
             {/* LEFT SIDE */}
             <div className="border border-yellow-500 rounded-md p-4 sm:p-6 md:p-8 bg-black/30">
 
-              <p className="text-yellow-400 text-xl sm:text-2xl md:text-3xl mb-4">
+              <p className="text-yellow-400 text-fluid-2xl mb-4">
                 Request a Call Back!
               </p>
 
-              <h2 className="text-white text-2xl sm:text-4xl lg:text-6xl leading-tight font-light">
+              <h2 className="text-white text-fluid-5xl leading-tight font-light">
                 Book an Appointment With
                 <br />
                 Our Top-Rated{" "}
@@ -1036,7 +1193,7 @@ export default function About() {
                 </span>
               </h2>
 
-              <p className="text-white/90 text-base sm:text-lg md:text-2xl leading-relaxed mt-8">
+              <p className="text-white/90 text-fluid-xl leading-relaxed mt-8">
                 You've seen what Biosoftech Solutions can deliver — now it's
                 time to talk directly with our team about your project.
                 Whether you need web development, mobile apps, desktop
@@ -1066,31 +1223,31 @@ export default function About() {
               <div className="grid grid-cols-3 gap-4 mt-8">
 
                 <div className="bg-[#FFB800] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-                    1000+
+                  <h3 className="text-white text-fluid-3xl font-bold">
+                    30+
                   </h3>
 
-                  <p className="text-white text-sm sm:text-base md:text-xl">
+                  <p className="text-white text-fluid-lg">
                     Projects Delivered
                   </p>
                 </div>
 
                 <div className="bg-[#FFB800] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                  <h3 className="text-white text-fluid-3xl font-bold">
                     99%
                   </h3>
 
-                  <p className="text-white text-sm sm:text-base md:text-xl">
+                  <p className="text-white text-fluid-lg">
                     Client Satisfaction
                   </p>
                 </div>
 
                 <div className="bg-[#FFB800] rounded-xl py-4 text-center">
-                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+                  <h3 className="text-white text-fluid-3xl font-bold">
                     500+
                   </h3>
 
-                  <p className="text-white text-sm sm:text-base md:text-xl">
+                  <p className="text-white text-fluid-lg">
                     Long-Term Clients
                   </p>
                 </div>
@@ -1111,7 +1268,7 @@ export default function About() {
                     onChange={handleChange}
                     placeholder="Your Name"
                     required
-                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-fluid-base"
                   />
 
                   <input
@@ -1121,7 +1278,7 @@ export default function About() {
                     onChange={handleChange}
                     placeholder="Your Email"
                     required
-                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-fluid-base"
                   />
                 </div>
 
@@ -1133,7 +1290,7 @@ export default function About() {
                     onChange={handleChange}
                     placeholder="Whatsapp Mobile Number"
                     required
-                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-fluid-base"
                   />
 
                   <input
@@ -1142,12 +1299,12 @@ export default function About() {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="City"
-                    className="h-14 w-full px-4 bg-white rounded outline-none text-sm sm:text-base"
+                    className="h-14 w-full px-4 bg-white rounded outline-none text-fluid-base"
                   />
                 </div>
 
                 <label htmlFor="about-service" className="sr-only">Select Service</label>
-                <select id="about-service" name="service" value={formData.service} onChange={handleChange} className="h-14 px-4 bg-white rounded w-full outline-none text-sm sm:text-base">
+                <select id="about-service" name="service" value={formData.service} onChange={handleChange} className="h-14 px-4 bg-white rounded w-full outline-none text-fluid-base">
                   <option value="">- Select Service -</option>
                   <option value="Develop Custom Software Solutions">Develop Custom Software Solutions</option>
                   <option value="Build Or Upgrade My Mobile App / Website">Build Or Upgrade My Mobile App / Website</option>
@@ -1165,11 +1322,11 @@ export default function About() {
                   rows="5"
                   placeholder="Please type atleast 20 characters about your Inquiry"
                   required
-                  className="w-full p-4 bg-white rounded outline-none text-sm sm:text-base"
+                  className="w-full p-4 bg-white rounded outline-none text-fluid-base"
                 />
 
                 <div className="bg-white rounded p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-                  <label className="text-sm sm:text-base font-medium text-gray-700 whitespace-nowrap">
+                  <label className="text-fluid-base font-medium text-gray-700 whitespace-nowrap">
                     What is {captchaA} + {captchaB}?
                   </label>
                   <input
@@ -1187,7 +1344,7 @@ export default function About() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all disabled:opacity-60 disabled:cursor-not-allowed w-full sm:w-auto px-8 sm:px-14 py-4 rounded-full text-black text-lg sm:text-xl font-medium"
+                  className="bg-[#FFB800] hover:bg-[#e6a500] transition-all disabled:opacity-60 disabled:cursor-not-allowed w-full sm:w-auto px-8 sm:px-14 py-4 rounded-full text-black text-fluid-lg font-medium"
                 >
                   {isSubmitting ? "SENDING..." : status.type === "success" ? "MESSAGE SENT!" : "Submit Now"}
                 </button>
@@ -1201,6 +1358,49 @@ export default function About() {
               </form>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f5f5f5] py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-black text-xl mb-2">Blogs</p>
+            <h2 className="text-5xl font-light text-black">
+              Read Latest{" "}
+              <span className="font-bold">
+                Articles & Post
+              </span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {blogs.map((blog) => (
+              <Link to="/blog" key={blog.title}>
+                <article className="group cursor-pointer">
+                  <div className="relative overflow-hidden rounded-t-2xl">
+                    <img
+                      src={blog.image}
+                      alt={blog.title}
+                      className="w-full h-[300px] object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="bg-white rounded-2xl shadow-md -mt-14 mx-4 relative z-10 p-6 min-h-[420px]">
+                    <div className="absolute -top-8 left-6 bg-[#f4bc28] rounded-md px-5 py-3 text-center leading-none">
+                      <p className="text-3xl font-medium">{blog.day}</p>
+                      <p className="text-2xl">{blog.month}</p>
+                    </div>
+                    <div className="pt-10">
+                      <h3 className="text-[22px] leading-snug font-medium text-black mb-6">
+                        {blog.title}
+                      </h3>
+                      <p className="text-gray-700 text-lg leading-9">
+                        {blog.description}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

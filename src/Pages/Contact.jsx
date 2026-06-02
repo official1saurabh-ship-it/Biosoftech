@@ -168,9 +168,7 @@ const Contact = () => {
             <p
               className="
             text-white/85
-            text-sm
-            sm:text-base
-            md:text-lg
+            text-fluid-base
             mt-4
             sm:mt-6
             md:mt-8
@@ -189,9 +187,7 @@ const Contact = () => {
             <p
               className="
             text-white/85
-            text-sm
-            sm:text-base
-            md:text-lg
+            text-fluid-base
             mt-4
             leading-[1.8]
             md:leading-[2]
@@ -317,7 +313,7 @@ const Contact = () => {
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200 text-sm sm:text-base
+                    transition-all duration-200 text-fluid-base
                   "
                     />
                   </div>
@@ -341,7 +337,7 @@ const Contact = () => {
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200 text-sm sm:text-base
+                    transition-all duration-200 text-fluid-base
                   "
                     />
                   </div>
@@ -365,7 +361,7 @@ const Contact = () => {
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200 text-sm sm:text-base
+                    transition-all duration-200 text-fluid-base
                   "
                     />
                   </div>
@@ -389,7 +385,7 @@ const Contact = () => {
                     text-gray-900 placeholder-gray-400
                     outline-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200 text-sm sm:text-base
+                    transition-all duration-200 text-fluid-base
                   "
                     />
                   </div>
@@ -413,7 +409,7 @@ const Contact = () => {
                     text-gray-900
                     outline-none appearance-none cursor-pointer
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200 text-sm sm:text-base
+                    transition-all duration-200 text-fluid-base
                   "
                     >
                       <option value="" disabled>Select Service</option>
@@ -448,7 +444,7 @@ const Contact = () => {
                     text-gray-900 placeholder-gray-400
                     outline-none resize-none
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
-                    transition-all duration-200 text-sm sm:text-base
+                    transition-all duration-200 text-fluid-base
                   "
                     style={{ minHeight: "120px" }}
                   />
@@ -460,7 +456,7 @@ const Contact = () => {
                   className="
                 w-full h-[48px] sm:h-[54px]
                 rounded-xl
-                font-bold text-sm sm:text-base
+                font-bold text-fluid-base
                 text-white
                 bg-gradient-to-r from-[#06b6d4] to-[#3b82f6]
                 hover:brightness-110
@@ -500,7 +496,7 @@ const Contact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/70 to-transparent p-4 sm:p-5 md:p-6 pt-12">
-                  <p className="text-white text-sm sm:text-base font-medium leading-relaxed">
+                  <p className="text-white text-fluid-base font-medium leading-relaxed">
                     3rd Floor, Office No-624F/20A, Kotwali Rd, Matiyari, Chinhat, Lucknow, Uttar Pradesh-226028
                   </p>
                   <a

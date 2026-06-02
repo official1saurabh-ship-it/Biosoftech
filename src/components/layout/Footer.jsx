@@ -26,7 +26,7 @@ const Footer = () => {
               Biosoftech
             </Link>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              We are a team of 50+ professionals with more than 10 years of experience in delivering custom software development, mobile apps, AI automation, and industry-specific solutions. Don't believe it? See it for yourself!
+              We are a team of 25+ professionals with more than 7 years of experience in delivering custom software development, mobile apps, AI automation, and industry-specific solutions. Don't believe it? See it for yourself!
             </p>
             <div className="flex gap-4">
               {socialLinks.map(({ Icon, href, label }) => (

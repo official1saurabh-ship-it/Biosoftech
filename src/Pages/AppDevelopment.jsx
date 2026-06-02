@@ -489,7 +489,7 @@ const AppDevelopment = () => {
                 <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight">
+                            <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 App Development
                                 <br />
                                 That Drives Results
@@ -510,7 +510,7 @@ const AppDevelopment = () => {
                                 <div className="text-center lg:text-left">
                                     <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
                                     <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                    <p className="font-semibold text-fluid-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
                                     <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
@@ -519,7 +519,7 @@ const AppDevelopment = () => {
                                 <div className="text-center lg:text-left">
                                     <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
                                     <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.8/5 Stars</p>
+                                    <p className="font-semibold text-fluid-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
                             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
@@ -548,13 +548,13 @@ const AppDevelopment = () => {
                             </h2>
                             <ul className="mt-6 sm:mt-10 md:mt-14 space-y-4 sm:space-y-6 md:space-y-10 text-left">
                                 {brandPoints.map((item, i) => (
-                                    <li key={i} className="flex gap-3 sm:gap-4 md:gap-5 text-[#525b6a] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
+                                    <li key={i} className="flex gap-3 sm:gap-4 md:gap-5 text-[#525b6a] text-fluid-base leading-relaxed md:leading-[2]">
                                         <span className="mt-[6px] sm:mt-[8px] md:mt-[12px] text-black shrink-0">•</span>
                                         <span className="max-w-[720px]">{item}</span>
                                     </li>
                                 ))}
                             </ul>
-                            <button onClick={() => navigate("/contact")} className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-sm sm:text-base md:text-lg font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
+                            <button onClick={() => navigate("/contact")} className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-fluid-base font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
                                 Shape your success story with Biosoftech Solutions today!
                             </button>
                         </div>
@@ -578,7 +578,7 @@ const AppDevelopment = () => {
                             </h2>
                             <ul className="mt-10 md:mt-14 space-y-8 md:space-y-12 text-left">
                                 {userCentricPoints.map((point, index) => (
-                                    <li key={index} className="flex gap-4 md:gap-5 text-[#50596b] text-base md:text-lg leading-relaxed md:leading-[2]">
+                                    <li key={index} className="flex gap-4 md:gap-5 text-[#50596b] text-fluid-base leading-relaxed md:leading-[2]">
                                         <span className="mt-[8px] md:mt-[12px] text-black">•</span>
                                         <span className="max-w-[720px]">{point}</span>
                                     </li>
@@ -624,7 +624,7 @@ const AppDevelopment = () => {
             {/* Section 5: Our Process */}
             <section className="bg-[#fbfbfb] py-12 sm:py-16 md:py-24 overflow-hidden">
                 <div className="max-w-[1450px] mx-auto px-4 sm:px-6">
-                    <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10 sm:mb-16 md:mb-20">
+                    <h2 className="text-center text-fluid-4xl font-bold mb-10 sm:mb-16 md:mb-20">
                         Our Process to <span className="text-orange-500">Success</span>
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-y-16 md:gap-y-28 gap-x-6 sm:gap-x-10">
@@ -637,7 +637,7 @@ const AppDevelopment = () => {
                                     <img src={stepImages[item.id]} alt={item.title} loading="lazy" width="100" height="100" className="w-full h-full object-contain" />
                                 </div>
                                 <h3 className="font-bold text-xl md:text-[20px] mb-3">{item.title}</h3>
-                                <p className="text-gray-700 text-sm md:text-lg leading-relaxed max-w-[300px]">{item.desc}</p>
+                                <p className="text-gray-700 text-fluid-base leading-relaxed max-w-[300px]">{item.desc}</p>
                                 {item.id !== 8 && (
                                     <div className={`hidden lg:block absolute -right-[100px] w-[200px] h-[100px] ${item.id % 2 === 1 ? 'top-[25px]' : 'top-[30px]'}`}>
                                         <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -669,13 +669,13 @@ const AppDevelopment = () => {
                                 Get Scalable Android App<br className="hidden md:block" />Development Services
                             </h2>
                             <div className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-6 md:space-y-8">
-                                <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-fluid-base leading-relaxed md:leading-[2]">
                                     Got an idea? We help turn it into a real Android app. As a trusted app development company, Biosoftech Solutions builds smart apps to match your business needs.
                                 </p>
-                                <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-fluid-base leading-relaxed md:leading-[2]">
                                     We've spent years creating Android app development solutions for all kinds of clients; startups, big brands, and everything in between. Our team understands how Android works and we design apps that connect well with your users.
                                 </p>
-                                <p className="text-[#343434] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-fluid-base leading-relaxed md:leading-[2]">
                                     Let's build something that stands out. Reach out to our Android mobile app development company and explore what we can create together.
                                 </p>
                             </div>
@@ -701,7 +701,7 @@ const AppDevelopment = () => {
                         <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight md:leading-[1.15] text-[#1c1717]">
                             Technology & Frameworks We Use for Android App Development Services
                         </h2>
-                        <p className="mt-6 md:mt-8 text-[#393939] text-base md:text-lg leading-relaxed md:leading-[2] max-w-[1100px] mx-auto">
+                        <p className="mt-6 md:mt-8 text-[#393939] text-fluid-base leading-relaxed md:leading-[2] max-w-[1100px] mx-auto">
                             Being an acclaimed Android app development company, we possess comprehensive technology expertise that makes us capable of delivering high-end apps to match the client's business needs.
                         </p>
                     </div>
@@ -733,7 +733,7 @@ const AppDevelopment = () => {
                             <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight lg:leading-[1.15]">
                                 Steps We Take To Impart Our Android App Development Services
                             </h2>
-                            <p className="mt-6 md:mt-10 text-base md:text-lg leading-relaxed md:leading-[2] text-gray-600">
+                            <p className="mt-6 md:mt-10 text-fluid-base leading-relaxed md:leading-[2] text-gray-600">
                                 We follow a structured Android development process while leaving room for improvements and feedback.
                             </p>
                             <div className="mt-8 md:mt-12 flex flex-wrap justify-center lg:justify-start gap-3">
@@ -741,7 +741,7 @@ const AppDevelopment = () => {
                                     <button
                                         key={i}
                                         onClick={() => setActiveStep(i)}
-                                        className={`w-12 h-12 md:w-14 md:h-14 rounded-full font-bold transition text-sm md:text-base ${activeStep === i ? "bg-[#4f1d91] text-white" : "bg-white border"}`}
+                                        className={`w-12 h-12 md:w-14 md:h-14 rounded-full font-bold transition text-fluid-base ${activeStep === i ? "bg-[#4f1d91] text-white" : "bg-white border"}`}
                                     >
                                         {i + 1}
                                     </button>
@@ -755,7 +755,7 @@ const AppDevelopment = () => {
                                 </div>
                                 <span className="mt-6 md:mt-8 text-[#4f1d91] font-bold text-center lg:text-left block">STEP {activeStep + 1}</span>
                                 <h3 className="mt-2 md:mt-3 text-2xl md:text-[42px] font-bold text-center lg:text-left">{steps[activeStep].title}</h3>
-                                <p className="mt-4 md:mt-8 text-base md:text-lg leading-relaxed md:leading-[2] text-gray-600 text-center lg:text-left">{steps[activeStep].desc}</p>
+                                <p className="mt-4 md:mt-8 text-fluid-base leading-relaxed md:leading-[2] text-gray-600 text-center lg:text-left">{steps[activeStep].desc}</p>
                                 <div className="mt-8 md:mt-12 flex justify-center lg:justify-start gap-4">
                                     <button
                                         onClick={() => setActiveStep((prev) => (prev === 0 ? steps.length - 1 : prev - 1))}
@@ -785,7 +785,7 @@ const AppDevelopment = () => {
                         <h2 className="text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] font-semibold leading-tight md:leading-[1.15]">
                             App Development<br className="hidden md:block" />Technologies <span className="text-[#34d058]">We Work On</span>
                         </h2>
-                        <p className="mt-6 md:mt-8 text-[#333] text-base md:text-lg leading-relaxed md:leading-[2] max-w-[900px] mx-auto">
+                        <p className="mt-6 md:mt-8 text-[#333] text-fluid-base leading-relaxed md:leading-[2] max-w-[900px] mx-auto">
                             Leverage the Technical Expertise of A Top Custom App Development Company to Own Feature-rich Mobile Applications
                         </p>
                     </div>
@@ -794,7 +794,7 @@ const AppDevelopment = () => {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTechTab(tab)}
-                                className={`px-4 md:px-10 py-3 md:py-5 text-sm md:text-base font-medium transition border-b-2 ${activeTechTab === tab ? "border-black" : "border-transparent"}`}
+                                className={`px-4 md:px-10 py-3 md:py-5 text-fluid-base font-medium transition border-b-2 ${activeTechTab === tab ? "border-black" : "border-transparent"}`}
                             >
                                 {tab}
                             </button>
@@ -871,7 +871,7 @@ const AppDevelopment = () => {
                                 {services[active].title}
                             </h2>
                             <div className="w-[50px] md:w-[70px] h-[2px] bg-black mt-6 md:mt-8 mx-auto lg:mx-0" />
-                            <p className="mt-8 md:mt-10 text-base md:text-lg text-gray-700 leading-relaxed md:leading-[2]">
+                            <p className="mt-8 md:mt-10 text-fluid-base text-gray-700 leading-relaxed md:leading-[2]">
                                 We specialize in augmenting the mobile experience
                                 for users of different niches, industries,
                                 products and more that can help businesses
@@ -969,7 +969,7 @@ const AppDevelopment = () => {
                             <br className="hidden md:block" />
                             Can Target
                         </h2>
-                        <p className="mt-6 md:mt-8 text-base md:text-lg leading-relaxed md:leading-[2] text-[#404040] max-w-[1200px] mx-auto">
+                        <p className="mt-6 md:mt-8 text-fluid-base leading-relaxed md:leading-[2] text-[#404040] max-w-[1200px] mx-auto">
                             Segregated by mediums but unified by our
                             platform-compatible Android Apps.
                             As a reputed Android app development company,
@@ -1009,7 +1009,7 @@ const AppDevelopment = () => {
                     <div className="mt-12 md:mt-20 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* LEFT */}
                         <div className="text-center lg:text-left">
-                            <div className="text-[#3d3d3d] text-base md:text-lg leading-relaxed md:leading-[2] space-y-6 md:space-y-10 max-w-[760px] mx-auto lg:mx-0">
+                            <div className="text-[#3d3d3d] text-fluid-base leading-relaxed md:leading-[2] space-y-6 md:space-y-10 max-w-[760px] mx-auto lg:mx-0">
                                 <p>
                                     We work with businesses that want to profit
                                     from digital technology, supporting them in

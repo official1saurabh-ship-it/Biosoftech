@@ -6,7 +6,7 @@ const TRUSTPILOT_URL = "https://www.trustpilot.com/review/biosoftech.com";
 
 export default function GrowthSection() {
     return (
-    <section className="bg-[#f5f5f5] min-h-0 lg:min-h-[90vh] overflow-hidden">
+        <section className="bg-[#f5f5f5] min-h-0 lg:min-h-[90vh] overflow-hidden">
 
             <div className="max-w-[1800px] h-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-8">
 
@@ -98,7 +98,7 @@ export default function GrowthSection() {
                             </p>
 
                             <p>
-                                With 1,000+ successful projects, 500+
+                                With 50+ successful projects, 25+
                                 satisfied clients, and a proven track record of
                                 innovation, Biosoftech Solutions has established
                                 itself as a trusted digital transformation
@@ -233,11 +233,11 @@ export default function GrowthSection() {
                         >
 
                             <h3 className="text-[36px] sm:text-[46px] lg:text-[54px] xl:text-[64px] leading-none">
-                                1,000+
+                                50+
                             </h3>
 
                             <p className="mt-4 text-base lg:text-[18px] leading-[1.7]">
-                                Over 1,000 successful implementations across
+                                Over 50 successful implementations across
                                 custom software, AI automation, and enterprise
                                 solutions.
                             </p>
@@ -264,7 +264,7 @@ export default function GrowthSection() {
                         >
 
                             <h3 className="text-[36px] sm:text-[46px] lg:text-[54px] xl:text-[64px] leading-none">
-                                500+
+                                25+
                             </h3>
 
                             <p className="mt-4 text-base lg:text-[18px] leading-[1.7]">

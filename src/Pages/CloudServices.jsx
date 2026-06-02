@@ -442,12 +442,12 @@ const CloudServices = () => {
                 <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight">
+                            <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 Best Cloud Services
                                 <br />
                                 Company in India
                             </h1>
-                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-fluid-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we provide strategic cloud services designed to scale with your business, reduce costs, and ensure long-term security. Our expertise helps transform your operations into efficient, future-ready systems that support growth and innovation.
                                 </p>
@@ -458,18 +458,18 @@ const CloudServices = () => {
 
                             <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.9/5 Stars</p>
+                                    <h3 className="text-fluid-2xl md:text-[52px] font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-fluid-lg md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-fluid-sm md:text-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
-                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                    <h3 className="text-fluid-2xl md:text-[52px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-fluid-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-xs sm:text-sm md:text-base">Rated 4.8/5 Stars</p>
+                                    <h3 className="text-fluid-2xl md:text-[52px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-fluid-lg md:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-fluid-sm md:text-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
 
@@ -496,10 +496,10 @@ const CloudServices = () => {
                 <div className="relative mx-auto max-w-[1750px] px-6 lg:px-20">
                     <div className="text-center mb-12">
                         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">Cloud infrastructure for growing businesses</p>
-                        <h2 className="max-w-4xl mx-auto text-2xl font-semibold leading-tight text-slate-950 md:text-3xl lg:text-4xl">
+                        <h2 className="max-w-4xl mx-auto text-fluid-3xl font-semibold leading-tight text-slate-950">
                             Why Choose Biosoftech Cloud Services for <span className="bg-gradient-to-r from-[#01abfb] to-[#0176f2] bg-clip-text text-transparent">Startups and Enterprises</span>
                         </h2>
-                        <p className="mt-6 text-base leading-7 font-normal text-slate-600 md:text-lg max-w-3xl mx-auto">
+                        <p className="mt-6 text-fluid-base leading-7 font-normal text-slate-600 max-w-3xl mx-auto">
                             At Biosoftech Solutions, we are the preferred cloud partner for startups, SaaS companies, and growing enterprises seeking simple, scalable, and cost-effective infrastructure. Our cloud services ensure predictable pricing, easy deployment, and future-ready solutions that help you scale without complexity.
                         </p>
                     </div>
@@ -619,10 +619,10 @@ const CloudServices = () => {
                 <div className="absolute inset-0 bg-white/30" />
                 <div className="relative z-10 max-w-[1750px] mx-auto px-6 lg:px-20">
                     <div>
-                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
+                        <h2 className="text-fluid-4xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
                         <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
                     </div>
-                    <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                    <p className="text-fluid-base text-slate-600 leading-relaxed">
                         Biosoftech Solutions offers a developer-friendly cloud platform designed for simplicity, performance, and affordability. Our services provide a streamlined alternative to complex enterprise systems, making them ideal for startups, SaaS platforms, and fast-growing businesses. With powerful infrastructure and easy-to-use tools, we enable teams to deploy applications quickly without unnecessary complexity.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -638,15 +638,15 @@ const CloudServices = () => {
                                 <div className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-blue-600 text-white shrink-0 group-hover:scale-110 transition-transform">
                                     <svg stroke="currentColor" fill="none" strokeWidth="2.5" viewBox="0 0 24 24" className="w-5 h-5"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 </div>
-                                <p className="font-medium text-slate-800 leading-tight text-sm md:text-base">{item}</p>
+                                <p className="font-medium text-slate-800 leading-tight text-fluid-base">{item}</p>
                             </div>
                         ))}
                     </div>
                     <div className="bg-blue-600 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5 md:gap-6 text-white mt-8 md:mt-10">
                         <div className="flex-1">
-                            <p className="text-base md:text-lg leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
+                            <p className="text-fluid-base leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
                         </div>
-                        <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-sm md:text-base shrink-0">Request a Free Consultation</a>
+                        <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-fluid-base shrink-0">Request a Free Consultation</a>
                     </div>
                 </div>
             </section>
@@ -659,10 +659,10 @@ const CloudServices = () => {
                     <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20 w-full">
 
                         <div className="text-center mb-6 sm:mb-8 mt-8 sm:mt-24 lg:mb-12">
-                            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white">
+                            <h2 className="text-fluid-4xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
-                            <p className="mt-1 sm:mt-3 lg:mt-4 text-gray-500 text-xs sm:text-sm lg:text-lg">
+                            <p className="mt-1 sm:mt-3 lg:mt-4 text-gray-500 text-fluid-base">
                                 We follow a simple, agile, and efficient process to deliver high-quality cloud solutions tailored to your business needs.
                             </p>
                         </div>
@@ -681,25 +681,25 @@ const CloudServices = () => {
                                         {/* Left Content */}
                                         <div className="lg:w-1/2 space-y-3 sm:space-y-4 lg:space-y-8">
                                             <div className="inline-flex items-center gap-3">
-                                                <span className="text-4xl sm:text-6xl">{stage.icon}</span>
-                                                <div className="px-4 sm:px-5 py-1 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-xs sm:text-sm font-semibold rounded-full">
+                                                <span className="text-fluid-5xl">{stage.icon}</span>
+                                                <div className="px-4 sm:px-5 py-1 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-fluid-sm font-semibold rounded-full">
                                                     {stage.stage}
                                                 </div>
                                             </div>
 
-                                            <h3 className="text-xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                                            <h3 className="text-fluid-4xl font-bold text-white leading-tight">
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-400 text-sm sm:text-base lg:text-xl leading-relaxed">
+                                            <p className="text-gray-400 text-fluid-lg leading-relaxed">
                                                 {stage.desc}
                                             </p>
 
                                             <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 sm:pt-4 lg:pt-6">
-                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-xs sm:text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Get a Free Quote
                                                 </a>
-                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-xs sm:text-sm lg:text-lg transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Free Technical Consultation →
                                                 </a>
                                             </div>
@@ -773,10 +773,10 @@ const CloudServices = () => {
                                 <div className="bg-[#061227] rounded-[24px] md:rounded-[34px] p-6 md:p-8 shadow-2xl flex-1">
                                     <div className="flex flex-col sm:flex-row justify-between items-start gap-6">
                                         <div>
-                                            <h3 className="text-white text-xl md:text-2xl font-semibold">
+                                            <h3 className="text-white text-fluid-xl font-semibold">
                                                 Migration Control
                                             </h3>
-                                            <p className="text-[#7FA2D5] mt-2 text-sm md:text-base">
+                                            <p className="text-[#7FA2D5] mt-2 text-fluid-base">
                                                 Assessment, consolidation, optimization
                                             </p>
                                         </div>
@@ -793,7 +793,7 @@ const CloudServices = () => {
                                         ].map((item, i) => (
                                             <div key={i} className="rounded-[20px] md:rounded-[28px] bg-white/10 border border-white/10 p-5 md:p-7 backdrop-blur">
                                                 <h3 className="text-white text-3xl md:text-[48px] font-bold">{item[0]}</h3>
-                                                <p className="text-[#C4D2E8] mt-2 md:mt-3 text-sm md:text-base">{item[1]}</p>
+                                                <p className="text-[#C4D2E8] mt-2 md:mt-3 text-fluid-base">{item[1]}</p>
                                             </div>
                                         ))}
                                     </div>
@@ -806,10 +806,10 @@ const CloudServices = () => {
                             <div className="bg-white rounded-[24px] md:rounded-[34px] p-6 md:p-8 shadow-[0_20px_80px_rgba(0,0,0,.08)] border border-[#D8E6FF] flex-1 flex flex-col">
                                 <div className="flex justify-between items-start gap-4">
                                     <div>
-                                        <p className="text-[#2455FF] font-semibold text-sm md:text-base">Migration Roadmap</p>
+                                        <p className="text-[#2455FF] font-semibold text-fluid-base">Migration Roadmap</p>
                                         <h3 className="mt-2 md:mt-3 text-2xl md:text-[44px] font-semibold leading-tight">From legacy stack to AWS</h3>
                                     </div>
-                                    <div className="px-3 md:px-5 h-[32px] md:h-[42px] rounded-full bg-[#EEF4FF] flex items-center text-[#2455FF] font-medium text-xs md:text-sm">
+                                    <div className="px-3 md:px-5 h-[32px] md:h-[42px] rounded-full bg-[#EEF4FF] flex items-center text-[#2455FF] font-medium text-fluid-sm">
                                         AWS
                                     </div>
                                 </div>
@@ -822,7 +822,7 @@ const CloudServices = () => {
                                                 <div className="flex flex-col items-center">
                                                     <button
                                                         onMouseEnter={() => setActive(index)}
-                                                        className={`w-[40px] h-[40px] md:w-[48px] md:h-[48px] rounded-full text-xs md:text-sm font-bold transition shrink-0
+                                                        className={`w-[40px] h-[40px] md:w-[48px] md:h-[48px] rounded-full text-fluid-sm font-bold transition shrink-0
                                                 ${activeItem
                                                                 ? "bg-[#2455FF] text-white shadow-xl scale-110"
                                                                 : "bg-white text-[#2455FF] border"
@@ -999,9 +999,7 @@ const CloudServices = () => {
 
                             <h2
                                 className="
-            text-4xl
-            lg:text-5xl
-            xl:text-6xl
+            text-fluid-5xl
             font-bold
             text-[#403B75]
             leading-tight
@@ -1213,7 +1211,7 @@ const CloudServices = () => {
 
                     {/* Heading */}
                     <div className="text-center mb-14">
-                        <h2 className="text-white text-4xl lg:text-5xl font-bold">
+                        <h2 className="text-white text-fluid-4xl font-bold">
                             Industries We Serve
                         </h2>
 

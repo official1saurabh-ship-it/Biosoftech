@@ -241,13 +241,13 @@ export default function PrivacyPolicy() {
       <section className="bg-[#f8faff] py-16 md:py-24 border-b border-gray-100">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-gray-500 mb-4">Last Updated: December 01, 2025</p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#09090F] mb-6">
+          <h1 className="text-fluid-5xl font-bold text-[#09090F] mb-6">
             Privacy Policy
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-fluid-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
             This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
           </p>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mt-4">
+          <p className="text-fluid-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mt-4">
             We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
           </p>
         </div>
@@ -292,7 +292,7 @@ export default function PrivacyPolicy() {
             <div className="lg:w-3/4 space-y-20">
               {sections.map((section) => (
                 <div key={section.id} id={section.id} className="scroll-mt-32">
-                  <h2 className="text-3xl sm:text-4xl font-bold text-[#3793DB] mb-8">
+                  <h2 className="text-fluid-3xl font-bold text-[#3793DB] mb-8">
                     {section.title}
                   </h2>
                   <div className="content">

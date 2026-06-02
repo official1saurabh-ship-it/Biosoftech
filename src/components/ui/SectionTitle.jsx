@@ -15,7 +15,7 @@ const SectionTitle = ({ subtitle, title, description, align = "left", className 
         <span className="text-primary-1 font-bold tracking-widest uppercase text-sm mb-2">{subtitle}</span>
       )}
       {title && (
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">{title}</h2>
+        <h2 className="text-fluid-4xl font-bold text-gray-900 leading-tight mb-4">{title}</h2>
       )}
       {description && (
         <p className="text-gray-600 max-w-2xl text-lg">{description}</p>

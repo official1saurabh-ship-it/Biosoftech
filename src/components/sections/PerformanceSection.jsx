@@ -83,7 +83,7 @@ export default function PerformanceSection() {
 
               <div>
                 <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
-                  200+
+                  30+
                 </span>
 
                 <p className="text-base sm:text-lg lg:text-[22px]">
@@ -93,7 +93,7 @@ export default function PerformanceSection() {
 
               <div>
                 <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
-                  500+
+                  50+
                 </span>
 
                 <p className="text-base sm:text-lg lg:text-[22px]">

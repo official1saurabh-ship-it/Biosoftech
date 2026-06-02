@@ -47,7 +47,7 @@ const WebsiteDevelopment = () => {
                             Website Development Company?
                         </h2>
 
-                        <p className="mt-4 sm:mt-6 md:mt-8 text-[#687387] text-sm sm:text-base md:text-lg leading-relaxed md:leading-9 max-w-[900px] mx-auto">
+                        <p className="mt-4 sm:mt-6 md:mt-8 text-[#687387] text-fluid-base leading-relaxed md:leading-9 max-w-[900px] mx-auto">
                             Experience plays a vital role in the web design process
                             — and at Biosoftech Solutions, we bring proven expertise
                             with 500+ projects delivered across 35+ industries.
@@ -87,7 +87,7 @@ const WebsiteDevelopment = () => {
                                         {item.title}
                                     </h3>
 
-                                    <p className="mt-3 sm:mt-4 md:mt-5 text-[#687387] text-sm sm:text-base md:text-lg leading-relaxed md:leading-[2] max-w-[500px]">
+                                    <p className="mt-3 sm:mt-4 md:mt-5 text-[#687387] text-fluid-base leading-relaxed md:leading-[2] max-w-[500px]">
                                         {item.desc}
                                     </p>
                                 </div>

@@ -302,8 +302,7 @@ to-[#12003f]/40
 
                 text-white
 
-                text-lg
-                sm:text-xl
+                text-fluid-lg
                 "
               >
                 Get Quote

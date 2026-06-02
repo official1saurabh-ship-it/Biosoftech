@@ -107,7 +107,7 @@ export default function AboutUs() {
                 <div className="absolute right-[-55px] xl:right-[-90px] top-1/2 -translate-y-1/2">
                   <div className="bg-purple-500 rounded-full h-[340px] xl:h-[460px] w-[70px] xl:w-[90px] text-white flex items-center justify-center">
                     <div className="rotate-90 whitespace-nowrap font-bold text-lg xl:text-2xl">
-                      10+ Years Of Excellence
+                      2+ Years Of Excellence
                     </div>
                   </div>
                 </div>
@@ -157,11 +157,11 @@ export default function AboutUs() {
               }}
               className="mt-4 sm:mt-6 space-y-2"
             >
-              <div className="flex items-center gap-3 text-base sm:text-lg lg:text-2xl font-bold text-purple-600">
+              <div className="flex items-center gap-3 text-fluid-xl font-bold text-purple-600">
                 <CircleCheckBig size={24} className="text-green-500" />
                 Fast Results, Smart Solutions!
               </div>
-              <div className="flex items-center gap-3 text-base sm:text-lg lg:text-2xl font-bold text-purple-600">
+              <div className="flex items-center gap-3 text-fluid-xl font-bold text-purple-600">
                 <CircleCheckBig size={24} className="text-green-500" />
                 Achieve Your Business Goals!
               </div>
@@ -182,14 +182,14 @@ export default function AboutUs() {
 
               <div>
 
-                <div className="text-base sm:text-lg lg:text-2xl xl:text-3xl font-black leading-tight">
+                <div className="text-fluid-2xl font-black leading-tight">
                   +91-7858063047
                 </div>
-                <div className="text-base sm:text-lg lg:text-2xl xl:text-3xl font-black leading-tight">
+                <div className="text-fluid-2xl font-black leading-tight">
                   +91-6209688930
                 </div>
 
-                <div className="text-purple-500 text-base sm:text-xl">
+                <div className="text-purple-500 text-fluid-lg">
                   Have Any Query?
                 </div>
 
