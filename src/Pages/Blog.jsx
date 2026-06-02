@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import blogAi from "../assets/ai-business-software-automation.webp"
 import blogUpgrade from "../assets/software-upgrade-signs-indicators.webp"
 import blogCloud from "../assets/cloud-solutions-sme-beginners-guide.webp"
+import blogImage from "../assets/blog-image.png"
+import blogHeroBg from "../assets/blog-hero-bg.png"
 
 const Blog = () => {
     const navigate = useNavigate();
@@ -50,37 +52,22 @@ const Blog = () => {
                 ogUrl="https://www.biosoftech.com/blog"
             />
             <section className="relative overflow-hidden bg-[#f7f7fb]">
-  
-                {/* dotted background */}
-                <div
+
+                {/* background image */}
+                <img
+                    src={blogHeroBg}
+                    alt=""
                     className="
-          absolute inset-0
-          opacity-40
-          bg-[radial-gradient(circle,#d7d7d7_2px,transparent_2px)]
-          bg-[length:24px_24px]
-          sm:bg-[length:32px_32px]
+          absolute top-0 left-1/2 -translate-x-1/2
+          w-full max-w-5xl h-full
+          object-contain
         "
                 />
 
-                {/* big circle */}
-                <div
-                    className="
-          absolute
-          left-[15%]
-          top-[-10%]
-                h-[900px]
-                w-[900px]
-                rounded-full
-                border
-                border-[#e8e8e8]
-                hidden lg:block
-              "
-                />
-              
                 <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 pb-8 sm:pb-12 md:pb-0">
-  
+
                     <div className="grid lg:grid-cols-2 items-center min-h-0 lg:min-h-[500px] md:min-h-[700px] gap-8 sm:gap-12 lg:gap-0 pt-24 sm:pt-28 md:pt-32">
-  
+
                         {/* LEFT */}
 
                         <div className="z-10 text-center lg:text-left">
@@ -115,93 +102,18 @@ const Blog = () => {
 
                         {/* RIGHT */}
 
-                        <div className="relative flex justify-center scale-[0.55] sm:scale-[0.65] md:scale-75 lg:scale-90 xl:scale-100 origin-center">
-
-                            {/* purple background */}
-                            <div
-                                className="
-                absolute
-                right-[10%]
-                top-[70px]
-                h-[520px]
-                w-[360px]
-                rounded-b-[180px]
-                bg-gradient-to-b
-                from-[#dde9ff]
-                to-[#7436ff]
-              "
-                            />
-
-                            {/* floating top card */}
+                        <div className="relative flex justify-center items-center">
 
                             <img
-                                src="/news-card.png"
-                                width="170"
-                                height="120"
+                                src={blogImage}
+                                width="500"
+                                height="500"
                                 className="
-                absolute
-                left-[10%]
-                top-[120px]
-                w-[170px]
-                z-20
-              "
-                            />
-
-                            {/* floating browser */}
-
-                            <img
-                                src="/browser-card.png"
-                                width="190"
-                                height="140"
-                                className="
-                absolute
-                left-[5%]
-                bottom-[200px]
-                w-[190px]
-                z-20
-              "
-                            />
-
-                            {/* megaphone */}
-
-                            <img
-                                src="/megaphone.png"
-                                width="180"
-                                height="140"
-                                className="
-                absolute
-                right-[5%]
-                top-[110px]
-                w-[180px]
-                z-20
-              "
-                            />
-
-                            {/* search */}
-
-                            <img
-                                src="/search.png"
-                                width="170"
-                                height="120"
-                                className="
-                absolute
-                right-[0]
-                bottom-[120px]
-                w-[170px]
-                z-20
-              "
-                            />
-
-                            {/* woman */}
-
-                            <img
-                                src="/girl.png"
-                                width="650"
-                                height="800"
-                                className="
-                relative
-                z-30
-                w-[650px]
+                w-full
+                max-w-[500px]
+                h-auto
+                object-contain
+                z-10
               "
                             />
 

@@ -166,8 +166,11 @@ export default function HeroRevealSlider() {
                 {slide.desc}
               </p>
 
-              <Link to="/contact" className="inline-block mt-6 lg:mt-10 px-6 sm:px-12 py-3 sm:py-5 rounded-full bg-[#9810dc] text-white font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 hover:text-white hover:border-purple-600 border border-transparent transition-all duration-500 shadow-lg min-h-[44px]">
-                Get Started &rarr;
+              <Link
+                to="/contact"
+                className="inline-flex w-fit self-start mt-6 lg:mt-10 px-3 py-3 rounded-full bg-[#9810dc] text-white font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 transition-all duration-500 shadow-lg"
+              >
+                Get Started →
               </Link>
             </motion.div>
           </div>

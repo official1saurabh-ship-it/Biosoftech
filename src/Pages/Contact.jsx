@@ -133,7 +133,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us – Software Development Company | Biosoftech Solutions"
-        description="Get in touch with Biosoftech Solutions. Call +91-7858063047 or email info@biosoftech.com. Head office in Lucknow, India."
+        description="Get in touch with Biosoftech Solutions. Call +91-9044425858 or email info@biosoftech.com. Head office in Lucknow, India."
         keywords="contact Biosoftech, software company Lucknow, software development inquiry, India"
         ogUrl="https://www.biosoftech.com/contact"
       />
@@ -656,7 +656,7 @@ const Contact = () => {
                       icon: Phone,
                       title: "Click Us",
                       value:
-                        "+91-7858063047\n+91-6209688930",
+                        "+91-9044425858\n+91-6209688930",
                     },
                     {
                       icon: Globe,

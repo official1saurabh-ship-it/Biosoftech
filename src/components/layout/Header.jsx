@@ -190,13 +190,13 @@ border-l
 border-white/5
 "
             >
-              <a href="tel:+917858063047" className="flex items-center gap-3 group/phone">
+              <a href="tel:+91-9044425858" className="flex items-center gap-3 group/phone">
                 <div className="bg-[#9255CE] w-9 h-9 rounded-full flex items-center justify-center text-white shadow-[0_0_15px_rgba(146,85,206,0.5)] group-hover/phone:scale-110 transition-transform duration-500 ring-4 ring-[#9255CE]/10">
                   <Phone size={10} />
                 </div>
                 <div className="hidden lg:flex flex-col">
                   <span className="text-[7px] text-white/30 font-bold uppercase tracking-[0.2em] leading-none">Connect</span>
-                  <span className="text-[13px] text-white font-black mt-0.5 leading-none tracking-tight">+91-7858063047</span>
+                  <span className="text-[13px] text-white font-black mt-0.5 leading-none tracking-tight">+91-9044425858</span>
                 </div>
               </a>
 
@@ -349,13 +349,13 @@ z-[999]
                 <Link to="/contact" onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }} className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)]">
                   <Calendar /> Meeting
                 </Link>
-                <a href="tel:+917858063047" className="flex items-center gap-5 p-6 bg-white/5 rounded-3xl border border-white/5 group">
+                <a href="tel:+91-9044425858" className="flex items-center gap-5 p-6 bg-white/5 rounded-3xl border border-white/5 group">
                   <div className="bg-[#9255CE] w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg">
                     <Phone />
                   </div>
                   <div>
                     <div className="text-[9px] text-white/30 font-bold uppercase tracking-widest">Global Support</div>
-                    <div className="font-black text-white text-lg tracking-tight">+91-7858063047</div>
+                    <div className="font-black text-white text-lg tracking-tight">+91-9044425858</div>
                   </div>
                 </a>
               </div>
