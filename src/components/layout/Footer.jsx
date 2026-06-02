@@ -6,7 +6,7 @@ const socialLinks = [
   { Icon: FaFacebookF, href: 'https://www.facebook.com/biosoftechsoftwaresolutions', label: 'Facebook' },
   { Icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/biosoftechsoftwaresolutions/', label: 'LinkedIn' },
   { Icon: FaInstagram, href: 'https://www.instagram.com/biosoftechsoftwaresolutions/', label: 'Instagram' },
-  { Icon: FaYoutube, href: '/contact', label: 'Biosoftech Website' },
+  { Icon: FaYoutube, href: 'https://youtube.com/@biosoftech?si=ODz3hODFqF5AmkT0', label: 'Biosoftech Website' },
   { Icon: FaTwitter, href: 'https://x.com/biosoftech', label: 'X' },
 ];
 
