@@ -28,6 +28,13 @@ const slides = [
   },
 ];
 
+const balls = [
+  { size: 120, border: 2, color: "rgba(255,255,255,0.25)", anim: "floatA", duration: 8, delay: 0, x: "10%", y: "15%" },
+  { size: 90, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatB", duration: 11, delay: 1, x: "75%", y: "10%" },
+  { size: 150, border: 2.5, color: "rgba(255,255,255,0.15)", anim: "floatC", duration: 9, delay: 3, x: "85%", y: "70%" },
+  { size: 100, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatD", duration: 12, delay: 2, x: "5%", y: "75%" },
+];
+
 export default function HeroRevealSlider() {
   const [index, setIndex] = useState(0);
 
@@ -51,6 +58,38 @@ export default function HeroRevealSlider() {
           backgroundImage: `url(${bgImage})`,
         }}
       />
+
+      {/* FLOATING BALLS */}
+      {balls.map((b, i) => (
+        <div
+          key={i}
+          className="absolute pointer-events-none z-10 rounded-full overflow-hidden"
+          style={{
+            width: b.size,
+            height: b.size,
+            left: b.x,
+            top: b.y,
+            animation: `${b.anim} ${b.duration}s ${b.delay}s ease-in-out infinite alternate`,
+          }}
+        >
+          {/* Hollow circle */}
+          <div
+            className="absolute inset-0 rounded-full"
+            style={{
+              border: `${b.border}px solid ${b.color}`,
+            }}
+          />
+          {/* Glittering sparkle ring */}
+          <div
+            className="absolute inset-0 rounded-full"
+            style={{
+              border: `${b.border}px solid transparent`,
+              background: `linear-gradient(#050010,#050010) padding-box, conic-gradient(from 0deg, ${b.color}, rgba(255,255,255,0.8), ${b.color}) border-box`,
+              animation: `sparkle 2.5s ${b.delay}s linear infinite`,
+            }}
+          />
+        </div>
+      ))}
 
       {/* CONTENT */}
       <div className="relative z-30 h-full w-full">
@@ -134,6 +173,41 @@ export default function HeroRevealSlider() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes floatA {
+          0% { transform: translate(0, 0) scale(1); box-shadow: 0 0 4px rgba(255,255,255,0.15); }
+          25% { transform: translate(40px, -60px) scale(1.1); box-shadow: 0 0 20px rgba(255,255,255,0.5); }
+          50% { transform: translate(-30px, 50px) scale(0.9); box-shadow: 0 0 6px rgba(255,255,255,0.2); }
+          75% { transform: translate(50px, 30px) scale(1.05); box-shadow: 0 0 25px rgba(255,255,255,0.6); }
+          100% { transform: translate(-20px, -40px) scale(1); box-shadow: 0 0 8px rgba(255,255,255,0.3); }
+        }
+        @keyframes floatB {
+          0% { transform: translate(0, 0); box-shadow: 0 0 5px rgba(255,255,255,0.1); }
+          33% { transform: translate(-50px, 40px); box-shadow: 0 0 18px rgba(255,255,255,0.5); }
+          66% { transform: translate(35px, -55px); box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+          100% { transform: translate(-25px, 30px); box-shadow: 0 0 22px rgba(255,255,255,0.55); }
+        }
+        @keyframes floatC {
+          0% { transform: translate(0, 0) rotate(0deg); box-shadow: 0 0 6px rgba(255,255,255,0.15); }
+          25% { transform: translate(55px, 25px) rotate(90deg); box-shadow: 0 0 24px rgba(255,255,255,0.5); }
+          50% { transform: translate(-40px, -45px) rotate(180deg); box-shadow: 0 0 10px rgba(255,255,255,0.2); }
+          75% { transform: translate(30px, 50px) rotate(270deg); box-shadow: 0 0 28px rgba(255,255,255,0.6); }
+          100% { transform: translate(-35px, -20px) rotate(360deg); box-shadow: 0 0 12px rgba(255,255,255,0.35); }
+        }
+        @keyframes floatD {
+          0% { transform: translate(0, 0) scale(1); box-shadow: 0 0 4px rgba(255,255,255,0.1); }
+          50% { transform: translate(45px, -50px) scale(0.85); box-shadow: 0 0 20px rgba(255,255,255,0.55); }
+          100% { transform: translate(-40px, 40px) scale(1.15); box-shadow: 0 0 15px rgba(255,255,255,0.4); }
+        }
+        @keyframes sparkle {
+          0% { transform: rotate(0deg); opacity: 0.3; }
+          25% { opacity: 1; }
+          50% { transform: rotate(180deg); opacity: 0.4; }
+          75% { opacity: 0.9; }
+          100% { transform: rotate(360deg); opacity: 0.3; }
+        }
+      `}</style>
 
       {/* CONTROLS */}
       <div className="absolute right-4 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 lg:gap-8 z-50">
