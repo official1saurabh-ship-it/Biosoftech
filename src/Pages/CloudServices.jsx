@@ -144,43 +144,48 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import caseStudy1 from "../assets/cloud-case-study-sap.jpg";
 import caseStudy2 from "../assets/cloud-case-study-banking.jpg";
+import reusability from "../assets/reusability.webp";
+import scalability from "../assets/scalability.webp";
+import flexibility from "../assets/flexibility.webp";
+import consistent from "../assets/consistent-configuration.webp";
+import timesaving from "../assets/time-saving.webp";
 
 
 const CloudServices = () => {
     const navigate = useNavigate();
     const features = [
         {
-            icon: "/icons/traffic.png",
+            icon: reusability,
             title: "Traffic Management",
             description:
                 "Biosoftech's API & Application Gateway efficiently handles incoming traffic, distributing it across multiple backend services to ensure optimal performance, prevent bottlenecks, and maintain high availability for applications.",
         },
         {
-            icon: "/icons/security.png",
+            icon: flexibility,
             title: "Security Measures",
             description:
                 "These gateways implement robust security protocols, including authentication, authorization, and encryption, safeguarding APIs and applications against unauthorized access, data breaches, and other potential security threats.",
         },
         {
-            icon: "/icons/scalability.png",
+            icon: scalability,
             title: "Scalability",
             description:
                 "With scalable architecture, the gateways seamlessly adapt to varying workloads, accommodating increased traffic and demand. This ensures consistent performance and responsiveness as applications and API usage grow over time.",
         },
         {
-            icon: "/icons/load-balancing.png",
+            icon: timesaving,
             title: "Load Balancing",
             description:
                 "The gateways offer intelligent load balancing, evenly distributing incoming requests among multiple servers. This enhances resource utilization, prevents server overload, and improves overall system reliability and responsiveness.",
         },
         {
-            icon: "/icons/protocol.png",
+            icon: consistent,
             title: "Protocol Support:",
             description:
                 "Supporting various communication protocols and data formats, our gateways facilitate interoperability between different services and systems. This flexibility ensures compatibility with a diverse range of applications and simplifies integration processes.",
         },
         {
-            icon: "/icons/analytics.png",
+            icon: reusability,
             title: "Analytics and Monitoring",
             description:
                 "Comprehensive analytics and monitoring tools provide valuable insights into API and application performance. Real-time metrics, logs, and reports enable proactive management, troubleshooting, and optimization, ensuring a smooth and efficient operation of digital services.",
@@ -452,7 +457,7 @@ const CloudServices = () => {
                                     At Biosoftech Solutions, we provide strategic cloud services designed to scale with your business, reduce costs, and ensure long-term security. Our expertise helps transform your operations into efficient, future-ready systems that support growth and innovation.
                                 </p>
                                 <p className="mt-4 sm:mt-6 lg:mt-10">
-                                    With <span className="font-bold">10+ years of experience</span> and <span className="font-bold">500+ projects delivered globally</span>, we are trusted by businesses across <span className="font-bold">35+ industries</span>. Our cloud solutions are built to convert challenges into opportunities, support compliance, and deliver measurable results.
+                                    With <span className="font-bold">7+ years of experience</span> and <span className="font-bold">30+ projects delivered globally</span>, we are trusted by businesses across <span className="font-bold">15+ industries</span>. Our cloud solutions are built to convert challenges into opportunities, support compliance, and deliver measurable results.
                                 </p>
                             </div>
 
@@ -513,7 +518,7 @@ const CloudServices = () => {
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
                                             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
                                         </div>
-                                        <span className="text-4xl font-black text-emerald-600/10">01</span>
+                                        <span className="text-4xl font-black text-rose-600">01</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">60-80% Lower Infrastructure Cost</h3>
                                     <p className="mt-3 text-slate-600">Reduce spend compared to traditional hosting while maintaining reliable compute, storage, and database options.</p>
@@ -523,7 +528,7 @@ const CloudServices = () => {
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
                                             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M8 10h8M8 14h4" /></svg>
                                         </div>
-                                        <span className="text-4xl font-black text-blue-600/10">02</span>
+                                        <span className="text-4xl font-black text-rose-600">02</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">Flexible Hosting and Storage</h3>
                                     <p className="mt-3 text-slate-600">Host applications, APIs, files, and workloads with seamless control and scalability.</p>
@@ -533,7 +538,7 @@ const CloudServices = () => {
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-600 text-white shadow-lg shadow-purple-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
                                             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><circle cx="12" cy="12" r="3" /><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" /></svg>
                                         </div>
-                                        <span className="text-4xl font-black text-purple-600/10">03</span>
+                                        <span className="text-4xl font-black text-rose-600">03</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">Simpler Kubernetes Management</h3>
                                     <p className="mt-3 text-slate-600">Managed container orchestration without the complexity of traditional platforms.</p>
@@ -543,7 +548,7 @@ const CloudServices = () => {
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-600 text-white shadow-lg shadow-orange-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
                                             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
                                         </div>
-                                        <span className="text-4xl font-black text-orange-600/10">04</span>
+                                        <span className="text-4xl font-black text-rose-600">04</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">Streamlined App Deployments</h3>
                                     <p className="mt-3 text-slate-600">Faster containerized deployments for web apps, APIs, and services with reduced DevOps overhead.</p>
@@ -553,7 +558,7 @@ const CloudServices = () => {
                                         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-600 text-white shadow-lg shadow-rose-500/30 transition-transform group-hover:rotate-6 group-hover:scale-110 z-10">
                                             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className="h-7 w-7"><path d="M9 12l2 2 4-4" /><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" /></svg>
                                         </div>
-                                        <span className="text-4xl font-black text-rose-600/10">05</span>
+                                        <span className="text-4xl font-black text-rose-600">05</span>
                                     </div>
                                     <h3 className="text-xl font-semibold text-slate-950">Predictable Flat-Rate Pricing</h3>
                                     <p className="mt-3 text-slate-600">Transparent monthly pricing with no hidden costs or surprise billing.</p>
@@ -622,7 +627,7 @@ const CloudServices = () => {
                         <h2 className="text-fluid-4xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
                         <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
                     </div>
-                    <p className="text-fluid-base text-slate-600 leading-relaxed">
+                    <p className="text-fluid-base text-slate-600 leading-relaxed mt-6 mb-6">
                         Biosoftech Solutions offers a developer-friendly cloud platform designed for simplicity, performance, and affordability. Our services provide a streamlined alternative to complex enterprise systems, making them ideal for startups, SaaS platforms, and fast-growing businesses. With powerful infrastructure and easy-to-use tools, we enable teams to deploy applications quickly without unnecessary complexity.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -658,7 +663,7 @@ const CloudServices = () => {
                 <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-y-auto lg:overflow-hidden pt-4 lg:pt-0 pb-4 lg:pb-0">
                     <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20 w-full">
 
-                        <div className="text-center mb-6 sm:mb-8 mt-8 sm:mt-24 lg:mb-12">
+                        <div className="text-center mb-6 sm:mb-8 mt-14 sm:mt-24 lg:mt-48 lg:mb-12">
                             <h2 className="text-fluid-4xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>

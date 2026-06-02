@@ -61,6 +61,14 @@ import process_6 from "../assets/ai-process-maintenance-support.webp";
 
 import ai_bg from "../assets/ai-cta-banner.webp";
 
+import mobiledevelopment from "../assets/mobiledevelopment.avif";
+import websitedevelopment from "../assets/websitedevelopment.avif";
+import ecommerce from "../assets/ecommerce.avif";
+import salesforce from "../assets/salesforce.webp";
+import ai from "../assets/ai.avif";
+import iot from "../assets/iot.avif";
+import blockchaindevelopment from "../assets/blockchaindevelopment.avif";
+import gamedevelopment from "../assets/gamedevelopment.avif";
 
 
 
@@ -225,7 +233,7 @@ const HeroSection = () => {
       category: "DEVELOPMENT",
       icon: Smartphone,
       image:
-        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+        mobiledevelopment,
       heading: "Mobile App Development",
       description:
         "We specialize in enhancing mobile experiences across industries, helping businesses deliver value-driven applications that stand out in competitive markets.",
@@ -246,7 +254,7 @@ const HeroSection = () => {
       category: "DEVELOPMENT",
       icon: Globe,
       image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+        websitedevelopment,
       heading: "Website Development",
       description:
         "We build scalable and responsive websites with premium UI/UX and modern technologies.",
@@ -267,7 +275,7 @@ const HeroSection = () => {
       category: "DEVELOPMENT",
       icon: ShoppingBag,
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
+        ecommerce,
       heading: "E-commerce Development",
       description:
         "Launch modern online stores with advanced payment systems and scalable architecture.",
@@ -288,7 +296,7 @@ const HeroSection = () => {
       category: "DEVELOPMENT",
       icon: Bitcoin,
       image:
-        "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=1200&auto=format&fit=crop",
+        blockchaindevelopment,
       heading: "Blockchain Solutions",
       description:
         "Build secure blockchain applications, crypto platforms, and decentralized ecosystems.",
@@ -309,7 +317,7 @@ const HeroSection = () => {
       category: "DEVELOPMENT",
       icon: Gamepad2,
       image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop",
+        gamedevelopment,
       heading: "Game Development",
       description:
         "Create immersive gaming experiences with modern engines and multiplayer systems.",
@@ -330,7 +338,7 @@ const HeroSection = () => {
       category: "SOLUTIONS",
       icon: BrainCircuit,
       image:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+        salesforce,
       heading: "Salesforce Solutions",
       description:
         "Enterprise-grade Salesforce implementations, customizations, and integrations to streamline sales, service, and marketing operations.",
@@ -351,7 +359,7 @@ const HeroSection = () => {
       category: "SOLUTIONS",
       icon: Cpu,
       image:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+        ai,
       heading: "AI & ML Solutions",
       description:
         "AI-powered automation, recommendation systems, intelligent agents, and analytics.",
@@ -372,7 +380,7 @@ const HeroSection = () => {
       category: "SOLUTIONS",
       icon: Cpu,
       image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+        iot,
       heading: "IoT & Embedded Solutions",
       description:
         "Connected devices, automation systems, and smart hardware integrations.",
@@ -836,7 +844,7 @@ const HeroSection = () => {
           </div>
 
           {/* CARDS */}
-            <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 px-6">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 px-6">
 
             {capabilities.map((item, index) => (
               <div
@@ -990,8 +998,8 @@ const HeroSection = () => {
                       transition-all duration-500
                       group-hover:scale-110
                     "
-                    width="40"
-                    height="40"
+                      width="40"
+                      height="40"
                     />
                   </div>
 
@@ -1072,8 +1080,8 @@ const HeroSection = () => {
                       transition-all duration-500
                       group-hover:scale-110
                     "
-                    width="40"
-                    height="40"
+                      width="40"
+                      height="40"
                     />
                   </div>
 
@@ -1100,8 +1108,8 @@ const HeroSection = () => {
     relative
     bg-[#030712]
     text-white
-    h-[500vh]
-    pb-8 md:pb-16 lg:pb-24
+    h-[500vh]   
+    pb-16 md:pb-16 lg:pb-36
   "
       >
 
@@ -1299,19 +1307,19 @@ const HeroSection = () => {
               "
                 >
 
-                    <img
-                      src={processData[activeStep].image}
-                      alt={processData[activeStep].title}
-                      loading="lazy"
-                      width="800"
-                      height="600"
-                      className="
+                  <img
+                    src={processData[activeStep].image}
+                    alt={processData[activeStep].title}
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                    className="
                     w-full max-h-[20vh] sm:max-h-[30vh] md:max-h-[50vh]
                     object-contain
                     transition-all duration-700
                     group-hover:scale-110
                   "
-                    />
+                  />
 
                   <div className="absolute inset-0 bg-black/10" />
                 </div>

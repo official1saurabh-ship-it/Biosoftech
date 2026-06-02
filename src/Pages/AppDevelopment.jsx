@@ -188,9 +188,9 @@ const AppDevelopment = () => {
     ];
 
     const stats = [
-        { img: scalable1, value: "10+", title: "Years of Experience" },
-        { img: scalable2, value: "500+", title: "Successful Projects Delivered" },
-        { img: scalable3, value: "50+", title: "Development Specialists" },
+        { img: scalable1, value: "7+", title: "Years of Experience" },
+        { img: scalable2, value: "30+", title: "Successful Projects Delivered" },
+        { img: scalable3, value: "20+", title: "Development Specialists" },
         { img: scalable4, value: "99%", title: "Client Satisfaction Rate" },
     ];
 
@@ -569,7 +569,7 @@ const AppDevelopment = () => {
             <section className="bg-[#f7f7f7] overflow-hidden py-16 md:py-24">
                 <div className="max-w-[1450px] mx-auto px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                            <div className="flex justify-center items-center min-h-[350px] md:min-h-[520px] order-2 lg:order-1">
+                        <div className="flex justify-center items-center min-h-[350px] md:min-h-[520px] order-2 lg:order-1">
                             <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="800" height="800" className="w-full max-w-[450px] md:max-w-[550px] object-contain drop-shadow-2xl" />
                         </div>
                         <div className="order-1 lg:order-2 text-center lg:text-left">
@@ -613,8 +613,7 @@ const AppDevelopment = () => {
                             </p>
                         </div>
                         <div className="relative flex justify-center mt-12 lg:mt-0">
-                            <img src="/tablet.png" alt="Tablet mockup" loading="lazy" width="520" height="400" className="w-[300px] md:w-[520px] rotate-[-20deg]" />
-                            <img src="/phone.png" alt="Phone mockup" loading="lazy" width="180" height="360" className="absolute w-[100px] md:w-[180px] top-[-10px] left-[30%] md:left-[35%] rotate-[8deg]" />
+
                             <img src={sixthImageAad} alt="App display preview" loading="lazy" width="520" height="760" className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] md:w-[360px] lg:w-[65vh] h-[240px] sm:h-[380px] md:h-[520px] lg:h-[95vh] z-10" />
                         </div>
                     </div>
@@ -682,8 +681,8 @@ const AppDevelopment = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12 lg:mt-0">
                             {stats.map((item, index) => (
-                                <div key={index} className="bg-gray-500 border border-gray-200 rounded-[22px] p-5 sm:p-6 md:p-8 min-h-[180px] sm:min-h-[220px] md:min-h-[270px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left">
-                                    <img src={item.img} alt={item.title} loading="lazy" width="800" height="160" className="w-full h-[100px] sm:h-[140px] md:h-[160px] lg:h-[160px] object-contain" />
+                                <div key={index} className="bg-orange-500 border border-gray-200 rounded-[22px] p-5 sm:p-6 md:p-8 min-h-[100px] sm:min-h-[160px] md:min-h-[200px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left">
+                                    <img src={item.img} alt={item.title} loading="lazy" width="400" height="80" className="w-full h-[100px] sm:h-[70px] md:h-[80px] lg:h-[80px] object-contain" />
                                     <h3 className="mt-4 sm:mt-6 md:mt-8 text-3xl sm:text-4xl md:text-[56px] font-bold text-[#4f1d91]">{item.value}</h3>
                                     <p className="mt-2 sm:mt-3 md:mt-4 text-sm sm:text-base md:text-[18px] font-semibold leading-snug md:leading-[1.5] text-[#171212] max-w-[220px]">{item.title}</p>
                                 </div>
@@ -1082,15 +1081,15 @@ const AppDevelopment = () => {
                     <div className="bg-black text-white flex items-center justify-center py-16 md:py-24">
                         <div className="w-full max-w-[820px] px-8 md:px-12 lg:px-16">
                             <h2 className="text-4xl md:text-6xl lg:text-[72px] leading-tight font-light">
-                                <span className="font-bold">10+ Years</span> of App Development Experience
+                                <span className="font-bold">2+ Years</span> of App Development Experience
                             </h2>
 
                             <ul className="mt-10 md:mt-14 space-y-4 md:space-y-6 text-base md:text-[18px]">
                                 {[
-                                    "50+ Skilled Developers",
-                                    "500+ Projects Delivered",
+                                    "20+ Skilled Developers",
+                                    "30+ Projects Delivered",
                                     "97% Success Ratio",
-                                    "10+ Years of Experience",
+                                    "7+ Years of Experience",
                                     "99% Client Satisfaction",
                                     "End-to-end App Development Support",
                                     "Multiple Hiring Models",
@@ -1173,7 +1172,7 @@ const AppDevelopment = () => {
                     <div className="relative z-10 h-full flex items-center py-12 sm:py-16 md:py-0">
                         <div className="px-4 sm:px-6 md:px-8 lg:px-16 text-center md:text-left w-full">
                             <div className="inline-flex items-center bg-white rounded-full px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-3 text-sm sm:text-base md:text-[22px] font-medium text-[#232323]">
-                                500+ businesses
+                                30+ businesses
                             </div>
 
                             <h2 className="mt-6 sm:mt-8 md:mt-10 text-white text-2xl sm:text-3xl md:text-6xl lg:text-[86px] leading-tight lg:leading-[1.05] font-bold max-w-[1000px] mx-auto md:mx-0">
