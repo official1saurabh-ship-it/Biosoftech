@@ -9,6 +9,7 @@ import {
   Phone,
   Globe,
 } from "lucide-react";
+import contact from "../assets/contactimage.jpg"
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID_ORG = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_ORG;
@@ -142,7 +143,7 @@ const Contact = () => {
           className="relative min-h-[320px] sm:min-h-[400px] md:h-[580px] overflow-hidden"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920')",
+              `url(${contact})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -490,7 +491,7 @@ const Contact = () => {
                 <iframe
                   title="Biosoftech Location"
                   className="absolute inset-0 w-full h-full z-10"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14235.129626734415!2d81.0391113!3d26.8797931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be36e7a0d7deb%3A0x1191d021e952b938!2sBiosoftech%20Software%20Solutions!5e0!3m2!1sen!2sin!4v1700000000000"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=81.0291113%2C26.8697931%2C81.0491113%2C26.8897931&amp;layer=mapnik&amp;marker=26.8797931%2C81.0391113"
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
