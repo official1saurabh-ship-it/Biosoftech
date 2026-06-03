@@ -29,10 +29,10 @@ const slides = [
 ];
 
 const balls = [
-  { size: 120, border: 2, color: "rgba(255,255,255,0.25)", anim: "floatA", duration: 8, delay: 0, x: "10%", y: "15%" },
-  { size: 90, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatB", duration: 11, delay: 1, x: "75%", y: "10%" },
-  { size: 150, border: 2.5, color: "rgba(255,255,255,0.15)", anim: "floatC", duration: 9, delay: 3, x: "85%", y: "70%" },
-  { size: 100, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatD", duration: 12, delay: 2, x: "5%", y: "75%" },
+  { size: 80, border: 2, color: "rgba(255,255,255,0.25)", anim: "floatA", duration: 8, delay: 0, x: "10%", y: "15%" },
+  { size: 60, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatB", duration: 11, delay: 1, x: "75%", y: "10%" },
+  { size: 100, border: 2.5, color: "rgba(255,255,255,0.15)", anim: "floatC", duration: 9, delay: 3, x: "85%", y: "70%" },
+  { size: 70, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatD", duration: 12, delay: 2, x: "5%", y: "75%" },
 ];
 
 export default function HeroRevealSlider() {
@@ -111,7 +111,7 @@ export default function HeroRevealSlider() {
           "
         >
           {/* IMAGE COLUMN */}
-          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[250px] sm:min-h-[320px]">
+          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[180px] sm:min-h-[250px] lg:min-h-[320px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={`img-${index}`}
@@ -144,7 +144,7 @@ export default function HeroRevealSlider() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="min-h-[420px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-36 sm:pt-40 lg:pt-48"
+              className="min-h-[380px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-28 sm:pt-36 lg:pt-48"
             >
               <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
@@ -213,11 +213,11 @@ export default function HeroRevealSlider() {
       `}</style>
 
       {/* CONTROLS */}
-      <div className="absolute right-4 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 lg:gap-8 z-50">
+      <div className="absolute right-1 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-1 sm:gap-4 lg:gap-8 z-50">
         <button
           onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
           aria-label="Previous slide"
-          className="w-11 h-11 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
+          className="w-8 h-8 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xs sm:text-base"
         >
           &larr;
         </button>
@@ -225,7 +225,7 @@ export default function HeroRevealSlider() {
         <button
           onClick={() => setIndex((index + 1) % slides.length)}
           aria-label="Next slide"
-          className="w-11 h-11 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-sm sm:text-base"
+          className="w-8 h-8 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xs sm:text-base"
         >
           &rarr;
         </button>

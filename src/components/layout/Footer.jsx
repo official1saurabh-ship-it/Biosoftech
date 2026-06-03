@@ -43,7 +43,7 @@ const Footer = () => {
     <footer className="bg-gray-50 pt-12 sm:pt-20 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* TOP ROW */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
           {/* Helpful Links */}
           <div>
             <h4 className="text-xl font-bold mb-8 relative inline-block">

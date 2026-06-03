@@ -164,17 +164,22 @@ export default function GrowthSection() {
               bottom-0
               right-0
 
-              translate-x-[15%]
+              translate-x-[5%]
+              sm:translate-x-[15%]
               md:translate-x-[25%]
-              translate-y-[-10%]
+              translate-y-[-5%]
+              sm:translate-y-[-10%]
               md:translate-y-[-5%]
 
-              w-[72px]
-              h-[72px]
+              w-[56px]
+              sm:w-[72px]
               lg:w-[100px]
+              h-[56px]
+              sm:h-[72px]
               lg:h-[100px]
 
-              rounded-[28px]
+              rounded-[20px]
+              sm:rounded-[28px]
 
               bg-black
 
@@ -186,14 +191,9 @@ export default function GrowthSection() {
               "
                         >
                             <ArrowUpRight
-                                size={42}
+                                size={28}
                                 color="white"
-                                className="
-                transition-all
-                duration-500
-                ease-out
-                group-hover:rotate-45
-                "
+                                className="sm:w-[42px] sm:h-[42px] transition-all duration-500 ease-out group-hover:rotate-45"
                             />
                         </Link>
 
@@ -301,7 +301,7 @@ export default function GrowthSection() {
           "
                     >
 
-                        <div className="flex mb-6">
+                        <div className="flex mb-6 flex-wrap">
 
                             {[
                                 "🇺🇸",
@@ -309,12 +309,12 @@ export default function GrowthSection() {
                                 "🇫🇷",
                                 "🇦🇺",
                                 "🇦🇪",
-                            ].map((flag) => (
+                            ].map((flag, idx) => (
                                 <div
                                     key={flag}
-                                    className="
-                  w-12
-                  h-12
+                                    className={`
+                  w-10 sm:w-12
+                  h-10 sm:h-12
 
                   rounded-full
 
@@ -324,10 +324,10 @@ export default function GrowthSection() {
                   items-center
                   justify-center
 
-                  text-[22px]
+                  text-[18px] sm:text-[22px]
 
-                  -ml-2
-                "
+                  ${idx > 0 ? '-ml-2 sm:-ml-2' : ''}
+                `}
                                 >
                                     {flag}
                                 </div>
@@ -368,8 +368,12 @@ export default function GrowthSection() {
                             target="_blank"
                             rel="noreferrer"
                             className="
-              absolute
-              bottom-8
+              relative
+              sm:absolute
+              bottom-0
+              sm:bottom-8
+              mt-6
+              sm:mt-0
 
               border-2
               border-black
@@ -378,6 +382,7 @@ export default function GrowthSection() {
 
               px-6
               py-3
+              inline-block
             "
                         >
                             Our Reviews
@@ -397,15 +402,19 @@ export default function GrowthSection() {
               top-0
               right-0
 
-              translate-x-[10%]
+              translate-x-[5%]
+              sm:translate-x-[10%]
               md:translate-x-[15%]
 
-              w-[66px]
-              h-[66px]
+              w-[50px]
+              sm:w-[66px]
               lg:w-[90px]
+              h-[50px]
+              sm:h-[66px]
               lg:h-[90px]
 
-              rounded-[24px]
+              rounded-[20px]
+              sm:rounded-[24px]
 
               bg-black
 
@@ -417,14 +426,9 @@ export default function GrowthSection() {
               "
                         >
                             <ArrowUpRight
-                                size={40}
+                                size={24}
+                                className="sm:w-[40px] sm:h-[40px] transition-all duration-500 ease-out group-hover:rotate-45"
                                 color="white"
-                                className="
-                transition-all
-                duration-500
-                ease-out
-                group-hover:rotate-45
-                "
                             />
                         </a>
 

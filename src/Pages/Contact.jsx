@@ -151,7 +151,7 @@ const Contact = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-[#02162F]/70" />
 
-          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center pt-20 sm:pt-24 md:pt-28">
+          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center pt-16 sm:pt-24 md:pt-28">
             <h1
               className="
             text-white
@@ -517,9 +517,9 @@ const Contact = () => {
 
       <section className="bg-[#F5F5F5] py-10 md:py-20">
         <div className="mx-auto px-4 sm:px-6 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 max-w-full">
             {/* LEFT */}
-            <div>
+            <div className="min-w-0">
               <h2
                 className="
               text-[28px]
@@ -551,19 +551,20 @@ const Contact = () => {
                 and industry-specific software systems.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 md:mt-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mt-10 md:mt-12">
                 {cards.map((item, index) => (
                   <div
                     key={index}
                     className="
                   bg-[#ECECF6]
-                  px-4
+                  px-3
                   sm:px-6
                   md:px-10
-                  py-8
+                  py-6
+                  sm:py-8
                   md:py-12
                   text-center
-                  min-h-[300px]
+                  min-h-[250px]
                   sm:min-h-[350px]
                   md:min-h-[420px]
                   flex

@@ -71,14 +71,17 @@ export default function TestimonialSection() {
         right-0
         top-1/2
 
-        w-[700px]
-        h-[700px]
+        w-[300px]
+        sm:w-[700px]
+        h-[300px]
+        sm:h-[700px]
 
         rounded-full
 
         bg-red-700/20
 
-        blur-[180px]
+        blur-[80px]
+        sm:blur-[180px]
       "
             />
 

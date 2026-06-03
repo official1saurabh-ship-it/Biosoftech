@@ -95,15 +95,15 @@ const Header = () => {
           style={isScrolled ? { transform: 'scale(0.98)' } : {}}
         >
           {/* Logo Section */}
-          <Link to="/" className="h-full py-1 shrink-0">
-            <div className="h-full bg-white rounded-full px-3 flex items-center shadow-[0_0_20px_rgba(146,85,206,0.3)] relative overflow-hidden group">
+          <Link to="/" className="h-full py-1 shrink-0 max-w-[45%] sm:max-w-none">
+            <div className="h-full bg-white rounded-full px-2 sm:px-3 flex items-center shadow-[0_0_20px_rgba(146,85,206,0.3)] relative overflow-hidden group">
               <div className="absolute inset-0 bg-white/10 opacity-0 " />
-              <img src={biosoftechLogo} alt="Biosoftech" className="h-6 sm:h-7 w-36 sm:w-52 object-contain" />
+              <img src={biosoftechLogo} alt="Biosoftech" className="h-5 sm:h-7 w-28 sm:w-52 object-contain" />
             </div>
           </Link>
 
           {/* Navigation Area with CORRECTED Hover Effect */}
-          <nav className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-8 px-4 h-full">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-3 2xl:gap-5 px-1 xl:px-4 h-full">
             {menuItems.map((item) => (
               <motion.div
                 key={item.name}
@@ -170,28 +170,31 @@ const Header = () => {
           </nav>
 
           {/* Action Area */}
-          <div className="flex items-center gap-2 pr-2 min-w-fit shrink-0">
+          <div className="flex items-center gap-1 sm:gap-2 pr-1 sm:pr-2 min-w-fit shrink-0">
             <Link
               to="/contact"
-              className="hidden xl:flex items-center gap-2 border border-white/10 bg-white px-7 py-2 rounded-full font-bold text-[12px] text-black hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
+              className="hidden lg:flex items-center gap-1 xl:gap-2 border border-white/10 bg-white px-3 xl:px-7 py-1.5 xl:py-2 rounded-full font-bold text-[10px] xl:text-[12px] text-black hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
             >
-              <Calendar className="text-[#0e141d] group-hover:text-white transition-colors" size={14} />
-              <span>Meeting</span>
+              <Calendar className="text-[#0e141d] group-hover:text-white transition-colors" size={12} />
+              <span className="hidden xl:inline">Meeting</span>
+              <span className="xl:hidden">Book</span>
             </Link>
 
             <div
               className="
 flex
 items-center
-gap-2
-pl-2
+gap-1
+sm:gap-2
+pl-1
+sm:pl-2
 ml-auto
 border-l
 border-white/5
 "
             >
-              <a href="tel:+91-9044425858" className="flex items-center gap-3 group/phone">
-                <div className="bg-[#9255CE] w-9 h-9 rounded-full flex items-center justify-center text-white shadow-[0_0_15px_rgba(146,85,206,0.5)] group-hover/phone:scale-110 transition-transform duration-500 ring-4 ring-[#9255CE]/10">
+              <a href="tel:+91-9044425858" className="flex items-center gap-1 sm:gap-3 group/phone">
+                <div className="bg-[#9255CE] w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center text-white shadow-[0_0_15px_rgba(146,85,206,0.5)] group-hover/phone:scale-110 transition-transform duration-500 ring-4 ring-[#9255CE]/10">
                   <Phone size={10} />
                 </div>
                 <div className="hidden lg:flex flex-col">
@@ -207,10 +210,13 @@ border-white/5
  flex
  lg:hidden
 
- w-12
- h-12
+ w-10
+ sm:w-12
+ h-10
+ sm:h-12
 
-min-w-[48px]
+min-w-[40px]
+sm:min-w-[48px]
 
 rounded-full
 
@@ -230,13 +236,13 @@ z-[999]
 "
               >
 
-                <div className="space-y-[5px]">
+                <div className="space-y-[4px] sm:space-y-[5px]">
 
-                  <div className="w-6 h-[2.5px] bg-white rounded-full" />
+                  <div className="w-5 sm:w-6 h-[2px] sm:h-[2.5px] bg-white rounded-full" />
 
-                  <div className="w-6 h-[2.5px] bg-white rounded-full" />
+                  <div className="w-5 sm:w-6 h-[2px] sm:h-[2.5px] bg-white rounded-full" />
 
-                  <div className="w-6 h-[2.5px] bg-white rounded-full" />
+                  <div className="w-5 sm:w-6 h-[2px] sm:h-[2.5px] bg-white rounded-full" />
 
                 </div>
 

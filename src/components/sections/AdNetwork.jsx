@@ -96,7 +96,7 @@ export default function AdNetworkSection() {
             <h2
               className="
               mt-5
-              text-[28px]
+              text-[24px]
               sm:text-[34px]
               md:text-[48px]
               lg:text-[62px]

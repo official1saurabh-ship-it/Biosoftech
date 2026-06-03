@@ -372,7 +372,7 @@ export default function About() {
       {/* Hero Section */}
       <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5]">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden">
+        <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
           <div className="z-10 text-center lg:text-left pt-24 sm:pt-28 md:pt-28">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
@@ -401,28 +401,28 @@ export default function About() {
               <Link to="/contact" className="border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center font-bold hover:border-purple-600 hover:text-purple-600 transition-all text-fluid-base min-h-[44px]">📞 Talk To Us</Link>
             </div>
           </div>
-          <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0">
-            <div className="absolute w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[20px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10 max-w-full" />
-            <img src={aboutHero} alt="Biosoftech Solutions - Software Development Company" fetchPriority="high" width="480" height="600" className="relative z-20 w-[200px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
-            <div className="absolute top-4 right-4 sm:top-8 sm:right-8 md:top-12 md:right-12 z-30">
-              <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-fluid-lg font-bold border">G</div>
+          <div className="relative flex justify-center mt-8 sm:mt-12 lg:mt-0 max-w-full overflow-visible">
+            <div className="absolute w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] md:w-[460px] md:h-[460px] rounded-full bg-[#FFEB3B] top-[30px] sm:top-[30px] md:top-[60px] left-1/2 -translate-x-1/2 z-10 max-w-full" />
+            <img src={aboutHero} alt="Biosoftech Solutions - Software Development Company" fetchPriority="high" width="480" height="600" className="relative z-20 w-[160px] sm:w-[280px] md:w-[480px] drop-shadow-2xl" />
+            <div className="absolute top-2 right-0 sm:top-8 sm:right-8 md:top-12 md:right-12 z-30">
+              <div className="w-6 h-6 sm:w-9 sm:h-9 md:w-11 md:h-11 bg-white rounded-full flex items-center justify-center shadow-lg text-fluid-sm sm:text-fluid-lg font-bold border">G</div>
             </div>
-            <div className="absolute top-16 right-0 sm:top-24 sm:right-0 md:top-32 md:right-[-10px] z-30">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-blue-600 text-fluid-xl font-bold border">f</div>
+            <div className="absolute top-10 right-4 sm:top-24 sm:right-0 md:top-32 md:right-[-10px] z-30">
+              <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-blue-600 text-fluid-sm sm:text-fluid-xl font-bold border">f</div>
             </div>
-            <div className="absolute top-2 right-20 sm:top-4 sm:right-28 md:top-12 md:right-40 z-30">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-500 text-fluid-lg border">♻</div>
+            <div className="absolute top-1 right-14 sm:top-4 sm:right-28 md:top-12 md:right-40 z-30">
+              <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-500 text-fluid-sm sm:text-fluid-lg border">♻</div>
             </div>
-            <div className="absolute bottom-28 left-4 sm:bottom-36 sm:left-8 md:bottom-44 md:left-12 z-30">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-600 text-fluid-xl border">▶</div>
+            <div className="absolute bottom-20 left-0 sm:bottom-36 sm:left-8 md:bottom-44 md:left-12 z-30">
+              <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-red-600 text-fluid-sm sm:text-fluid-xl border">▶</div>
             </div>
-            <div className="absolute left-2 sm:left-4 md:left-10 bottom-8 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-2 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-2 sm:gap-3">
-              <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-fluid-lg">⭐</span></div>
-              <div><h3 className="text-fluid-4xl font-black text-blue-600">7+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
+            <div className="absolute left-0 sm:left-4 md:left-10 bottom-4 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-1.5 sm:p-4 md:p-6 rounded-xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-1 sm:gap-3 max-w-[45%] sm:max-w-none">
+              <div className="bg-blue-100 p-1 sm:p-3 rounded-lg sm:rounded-xl"><span className="text-fluid-xs sm:text-fluid-lg">⭐</span></div>
+              <div><h3 className="text-fluid-xl sm:text-fluid-4xl font-black text-blue-600">7+</h3><p className="text-[8px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
             </div>
-            <div className="absolute right-2 sm:right-4 md:right-10 bottom-8 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-2 sm:p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-2 sm:gap-3">
-              <div className="bg-blue-100 p-2 sm:p-3 rounded-xl"><span className="text-fluid-lg">🌐</span></div>
-              <div><h3 className="text-fluid-4xl font-black text-blue-600">30+</h3><p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
+            <div className="absolute right-0 sm:right-4 md:right-10 bottom-4 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-1.5 sm:p-4 md:p-6 rounded-xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-1 sm:gap-3 max-w-[45%] sm:max-w-none">
+              <div className="bg-blue-100 p-1 sm:p-3 rounded-lg sm:rounded-xl"><span className="text-fluid-xs sm:text-fluid-lg">🌐</span></div>
+              <div><h3 className="text-fluid-xl sm:text-fluid-4xl font-black text-blue-600">30+</h3><p className="text-[8px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
             </div>
           </div>
         </div>
@@ -557,19 +557,19 @@ export default function About() {
               className="relative duration-300"
             >
               {/* Desktop overlapping cards */}
-              <div className="hidden lg:block h-[820px]">
-                <div className="absolute left-[20px] top-[10px] w-[420px] h-[560px] rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-10">
-                  <h3 className="text-white text-[90px] font-black">30+</h3>
-                  <p className="text-white text-[26px] font-bold">Projects Delivered</p>
-                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[240px] h-[240px] rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[90px]">🌐</div>
+              <div className="hidden lg:block h-[820px] relative">
+                <div className="absolute left-[20px] top-[10px] w-[380px] xl:w-[420px] h-[520px] xl:h-[560px] rounded-tr-[100px] xl:rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-8 xl:p-10">
+                  <h3 className="text-white text-[70px] xl:text-[90px] font-black">30+</h3>
+                  <p className="text-white text-[22px] xl:text-[26px] font-bold">Projects Delivered</p>
+                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[200px] xl:w-[240px] h-[200px] xl:h-[240px] rounded-[30px] xl:rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[70px] xl:text-[90px]">🌐</div>
                 </div>
-                <div className="absolute left-[170px] top-[190px] w-[430px] h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-10 z-20">
-                  <h3 className="text-white text-[82px] font-black">50+</h3>
-                  <p className="text-white text-[24px] font-bold">Satisfied Clients</p>
-                  <div className="absolute inset-0 flex items-center justify-center text-[170px] opacity-90">⚡</div>
-                  <div className="absolute right-10 bottom-10 z-30">
-                    <h3 className="text-white text-[76px] font-black">15+</h3>
-                    <p className="text-white text-[22px]">Industries Served</p>
+                <div className="absolute left-[130px] xl:left-[170px] top-[170px] xl:top-[190px] w-[390px] xl:w-[430px] h-[580px] xl:h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-8 xl:p-10 z-20">
+                  <h3 className="text-white text-[66px] xl:text-[82px] font-black">50+</h3>
+                  <p className="text-white text-[20px] xl:text-[24px] font-bold">Satisfied Clients</p>
+                  <div className="absolute inset-0 flex items-center justify-center text-[130px] xl:text-[170px] opacity-90">⚡</div>
+                  <div className="absolute right-8 xl:right-10 bottom-8 xl:bottom-10 z-30">
+                    <h3 className="text-white text-[60px] xl:text-[76px] font-black">15+</h3>
+                    <p className="text-white text-[18px] xl:text-[22px]">Industries Served</p>
                   </div>
                 </div>
               </div>
@@ -795,47 +795,47 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-6">
 
               {/* Large Image */}
-              <div className="relative">
+              <div className="relative mx-auto sm:mx-0 max-w-[340px]">
                 <img
                   src={missionImage}
                   alt="Mission"
-                  className="w-[340px] h-[620px] object-cover rounded-[90px]"
+                  className="w-full max-w-[340px] h-[400px] sm:h-[620px] object-cover rounded-[60px] sm:rounded-[90px]"
                 />
 
                 {/* Retention Rate */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white rounded-t-[70px] px-12 py-8 shadow-lg">
-                  <h3 className="text-6xl font-bold text-[#2F2F39] text-center">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white rounded-t-[40px] sm:rounded-t-[70px] px-6 sm:px-12 py-4 sm:py-8 shadow-lg w-[90%] sm:w-auto">
+                  <h3 className="text-4xl sm:text-6xl font-bold text-[#2F2F39] text-center">
                     91%
                   </h3>
-                  <p className="text-xl text-center mt-2 text-[#2F2F39]">
+                  <p className="text-base sm:text-xl text-center mt-1 sm:mt-2 text-[#2F2F39]">
                     Retention Rate
                   </p>
                 </div>
               </div>
 
               {/* Right Cards */}
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col sm:flex-row md:flex-col gap-4 sm:gap-6">
 
                 {/* Growth Card */}
-                <div className="bg-[#C8E768] rounded-[70px] px-12 py-10 w-[280px]">
-                  <h3 className="text-7xl font-bold text-[#2F2F39]">
+                <div className="bg-[#C8E768] rounded-[40px] sm:rounded-[70px] px-6 sm:px-12 py-6 sm:py-10 w-full sm:w-[280px]">
+                  <h3 className="text-5xl sm:text-7xl font-bold text-[#2F2F39]">
                     85%
                   </h3>
 
-                  <p className="text-2xl text-[#2F2F39] mt-3">
+                  <p className="text-xl sm:text-2xl text-[#2F2F39] mt-2 sm:mt-3">
                     Growth Rate
                   </p>
                 </div>
 
                 {/* Video Card */}
-                <div className="bg-[#2837F3] rounded-[70px] p-6 w-[280px] h-[400px] overflow-hidden">
+                <div className="bg-[#2837F3] rounded-[40px] sm:rounded-[70px] p-4 sm:p-6 w-full sm:w-[280px] h-[250px] sm:h-[400px] overflow-hidden">
 
                   <video
                     autoPlay
                     muted
                     loop
                     playsInline
-                    className="w-full h-full object-cover rounded-[35px]"
+                    className="w-full h-full object-cover rounded-[20px] sm:rounded-[35px]"
                   >
                     <source src={missionVideo} type="video/mp4" />
                   </video>
@@ -853,12 +853,12 @@ export default function About() {
                 <span>Our Mission & Vision</span>
               </div>
 
-              <h2 className="text-5xl lg:text-7xl font-bold text-[#2F2F39] leading-tight">
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[#2F2F39] leading-tight">
                 Smart-Thinking
               </h2>
 
               <h2
-                className="text-5xl lg:text-7xl font-bold leading-tight"
+                className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight"
                 style={{
                   WebkitTextStroke: "2px #2F2F39",
                   color: "transparent",

@@ -114,16 +114,16 @@ sm:max-h-none
 
                         {/* BLUE SHAPE */}
 
-                        <div
-                            className="
+                    <div
+                        className="
               absolute
               left-0
               top-10
 
-            w-[280px]
+            w-[220px]
             sm:w-[400px]
             lg:w-[500px]
-            h-[360px]
+            h-[280px]
             sm:h-[500px]
             lg:h-[620px]
 
@@ -133,19 +133,21 @@ sm:max-h-none
 
               -z-10
             "
-                        />
+                    />
 
-                        {/* GREEN SHAPE */}
+                    {/* GREEN SHAPE */}
 
-                        <div
-                            className="
+                    <div
+                        className="
               absolute
-              left-6
-              top-20
-            w-[260px]
+              left-3
+              sm:left-6
+              top-16
+              sm:top-20
+            w-[200px]
             sm:w-[360px]
             lg:w-[450px]
-            h-[330px]
+            h-[260px]
             sm:h-[460px]
             lg:h-[570px]
 
@@ -155,41 +157,41 @@ sm:max-h-none
 
               -z-10
             "
-                        />
+                    />
 
-                        {/* IMAGE */}
+                    {/* IMAGE */}
 
-                        <div
-                            className="
+                    <div
+                        className="
               overflow-hidden
 
-             w-[280px]
+             w-[220px]
             sm:w-[400px]
             lg:w-[500px]
-            h-[360px]
+            h-[280px]
             sm:h-[500px]
             lg:h-[620px]
 
               rounded-[58%_42%_56%_44%/48%_34%_66%_52%]
             "
-                        >
-                            <img
-                                src={consultationImg}
-                                alt="Biosoftech free software consultation booking form illustration"
-                                width="500"
-                                height="620"
-                                className="
+                    >
+                        <img
+                            src={consultationImg}
+                            alt="Biosoftech free software consultation booking form illustration"
+                            width="500"
+                            height="620"
+                            className="
                 w-full
                 h-full
                 object-cover
               "
-                            />
-                        </div>
+                        />
+                    </div>
 
                         {/* SMALL IMAGE */}
 
-                        <div
-                            className="
+                    <div
+                        className="
               absolute
 
               bottom-4
@@ -198,30 +200,31 @@ sm:max-h-none
 
               overflow-hidden
 
-              w-[150px]
-              h-[130px]
+              w-[100px]
+              h-[80px]
               sm:w-[220px]
               sm:h-[190px]
               lg:w-[260px]
               lg:h-[220px]
 
               rounded-[50%]
-              border-[10px]
+              border-[4px]
+              sm:border-[10px]
               border-white
             "
-                        >
-                            <img
-                                src={consultationImg}
-                                alt="Biosoftech consultation decorative thumbnail for booking"
-                                width="260"
-                                height="220"
-                                className="
+                    >
+                        <img
+                            src={consultationImg}
+                            alt="Biosoftech consultation decorative thumbnail for booking"
+                            width="260"
+                            height="220"
+                            className="
                 w-full
                 h-full
                 object-cover
               "
-                            />
-                        </div>
+                        />
+                    </div>
 
                     </div>
 

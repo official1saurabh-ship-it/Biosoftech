@@ -151,6 +151,9 @@
   --font-spartan: "League Spartan", sans-serif;
 }
 
+@utility text-fluid-xs {
+  font-size: clamp(0.625rem, 1.5vw, 0.75rem);
+}
 @utility text-fluid-sm {
   font-size: clamp(0.75rem, 2vw, 0.875rem);
 }
@@ -183,6 +186,22 @@
   body {
     @apply font-gilroy text-gray-800 bg-white;
     overflow-x: hidden;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  img, video, canvas, svg, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  [class*="grid"]:not(.swiper-wrapper) {
+    max-width: 100%;
   }
 }
 
