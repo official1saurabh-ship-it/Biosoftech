@@ -103,15 +103,17 @@ export default function HeroRevealSlider() {
             lg:grid-cols-2
             items-center
             gap-4
-            lg:gap-16
+            lg:gap-8
+            xl:gap-16
             px-4
             sm:px-6
-            lg:px-16
+            lg:px-8
+            xl:px-16
             2xl:px-24
           "
         >
           {/* IMAGE COLUMN */}
-          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[180px] sm:min-h-[250px] lg:min-h-[320px]">
+          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[180px] sm:min-h-[250px] lg:min-h-[280px] xl:min-h-[320px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={`img-${index}`}
@@ -131,7 +133,7 @@ export default function HeroRevealSlider() {
                   loading="eager"
                   width="650"
                   height="500"
-                  className="w-[65%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[650px] object-contain self-end"
+                  className="w-[65%] sm:w-[60%] md:w-[55%] lg:w-[70%] xl:w-full max-w-[550px] xl:max-w-[650px] object-contain self-end"
                 />
               </motion.div>
             </AnimatePresence>
@@ -144,25 +146,25 @@ export default function HeroRevealSlider() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="min-h-[380px] sm:min-h-[480px] lg:min-h-[60vh] flex flex-col justify-center pt-28 sm:pt-36 lg:pt-48"
+              className="min-h-[380px] sm:min-h-[480px] lg:min-h-[55vh] xl:min-h-[60vh] flex flex-col justify-center pt-28 sm:pt-36 lg:pt-32 xl:pt-48"
             >
               <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h2>
 
-              <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[78px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[56px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
 
-              <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[58px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[42px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-3 xl:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
 
-              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[46px] xl:text-[58px] font-black -mt-0.5 lg:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[34px] xl:text-[58px] font-black -mt-0.5 lg:-mt-2 xl:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
               </h2>
 
-              <p className="mt-4 lg:mt-7 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">
+              <p className="mt-3 lg:mt-4 xl:mt-7 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">
                 {slide.desc}
               </p>
 
