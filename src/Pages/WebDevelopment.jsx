@@ -253,8 +253,8 @@ const WebDevelopment = () => {
                 ogUrl="https://www.biosoftech.com/web-development"
             />
             <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
-                <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
-                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 Build Websites That
@@ -301,7 +301,7 @@ const WebDevelopment = () => {
                 </div>
             </section>
             <section className="bg-[#f8f8f8] py-10 overflow-hidden">
-                <div className="max-w-[1400px] mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-6">
 
                     {/* TOP LABEL */}
                     <div className="flex items-center justify-center gap-4 mb-6">
@@ -721,7 +721,7 @@ const WebDevelopment = () => {
 
 
             <section className="bg-[#f5f5f5] py-8 lg:py-12">
-                <div className="max-w-[1800px] mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-10 items-center">
 
                         {/* Left Image */}
@@ -782,7 +782,7 @@ const WebDevelopment = () => {
                     </h3>
                 </div>
 
-                <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
+                <div className="max-w-7xl mx-auto px-6 lg:px-12">
                     {/* Heading */}
                     <div className="mb-12">
                         <span className="text-[#f29b26] uppercase text-sm tracking-wide">
@@ -925,7 +925,7 @@ const WebDevelopment = () => {
             </section>
 
             <section className="bg-white py-8 md:py-10">
-                <div className="max-w-[1880px] mx-auto px-7">
+                <div className="max-w-7xl mx-auto px-7">
 
                     {/* Heading */}
                     <h2

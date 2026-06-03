@@ -177,7 +177,7 @@ to-[#12003f]/40
         relative
         z-20
 
-        max-w-[1500px]
+        max-w-full
 
         mx-auto
 

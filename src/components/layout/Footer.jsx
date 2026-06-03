@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaTwitter, FaHome, FaEnvelope, FaPhoneAlt, FaWhatsapp, FaTimes } from 'react-icons/fa';
+import biosoftechLogo from "../../assets/download.png";
 
 const socialLinks = [
   { Icon: FaFacebookF, href: 'https://www.facebook.com/biosoftechsoftwaresolutions', label: 'Facebook' },
@@ -125,9 +126,9 @@ const Footer = () => {
           <div className="flex flex-col md:col-span-2 lg:col-span-1">
             <Link
               to="/"
-              className="inline-block text-3xl font-bold text-primary-1 mb-6"
+              className="inline-block mb-6"
             >
-              Biosoftech
+              <img src={biosoftechLogo} alt="Biosoftech" className="h-5 sm:h-6 w-24 sm:w-32 object-contain" />
             </Link>
             <Link
               to="/contact"
@@ -135,10 +136,7 @@ const Footer = () => {
             >
               Get in Touch
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-1/10 text-primary-1 text-sm font-semibold rounded-full w-fit">
-              <span className="w-2 h-2 bg-primary-1 rounded-full" />
-              Trusted Partner
-            </div>
+
           </div>
         </div>
 
@@ -147,9 +145,9 @@ const Footer = () => {
           <div>
             <Link
               to="/"
-              className="inline-block text-3xl font-bold text-primary-1 mb-6"
+              className="inline-block mb-6"
             >
-              Biosoftech
+              <img src={biosoftechLogo} alt="Biosoftech" className="h-5 sm:h-6 w-24 sm:w-32 object-contain" />
             </Link>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Building innovative software solutions that empower businesses to grow, adapt, and succeed in the digital world.

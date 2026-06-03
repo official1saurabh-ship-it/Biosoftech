@@ -188,7 +188,7 @@ const AppDevelopment = () => {
     ];
 
     const stats = [
-        { img: scalable1, value: "7+", title: "Years of Experience" },
+        { img: scalable1, value: "2+", title: "Years of Experience" },
         { img: scalable2, value: "30+", title: "Successful Projects Delivered" },
         { img: scalable3, value: "20+", title: "Development Specialists" },
         { img: scalable4, value: "99%", title: "Client Satisfaction Rate" },
@@ -486,8 +486,8 @@ const AppDevelopment = () => {
             />
             {/* Section 1: Hero */}
             <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
-                <div className="max-w-[1750px] mx-auto px-4 sm:px-6 lg:px-20">
-                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-screen pt-24 sm:pt-28 md:pt-32">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 App Development
@@ -540,7 +540,7 @@ const AppDevelopment = () => {
 
             {/* Section 2: Lift Your Brand */}
             <section className="overflow-hidden py-10 sm:py-12 md:py-20">
-                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center">
                         <div className="text-center lg:text-left">
                             <h2 className="        text-2xl sm:text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] leading-tight md:leading-[1.15] font-semibold text-black max-w-[760px] mx-auto lg:mx-0">
@@ -567,7 +567,7 @@ const AppDevelopment = () => {
 
             {/* Section 3: User-Centric */}
             <section className="bg-[#f7f7f7] overflow-hidden py-16 md:py-24">
-                <div className="max-w-[1450px] mx-auto px-6 lg:px-16">
+                <div className="max-w-7xl mx-auto px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="flex justify-center items-center min-h-[350px] md:min-h-[520px] order-2 lg:order-1">
                             <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="800" height="800" className="w-full max-w-[450px] md:max-w-[550px] object-contain drop-shadow-2xl" />
@@ -591,7 +591,7 @@ const AppDevelopment = () => {
 
             {/* Section 4: Unleash Power */}
             <section id="app-development" className="relative overflow-hidden bg-[#f4f4f4] py-16 md:py-20">
-                <div className="max-w-[1400px] mx-auto px-6 lg:px-16">
+                <div className="max-w-7xl mx-auto px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 items-center gap-12">
                         <div className="max-w-[620px] text-center lg:text-left mx-auto lg:mx-0">
                             <h2 className="text-3xl lg:text-[46px] xl:text-[56px] leading-tight lg:leading-[1.15] font-bold text-black">
@@ -622,7 +622,7 @@ const AppDevelopment = () => {
 
             {/* Section 5: Our Process */}
             <section className="bg-[#fbfbfb] py-12 sm:py-16 md:py-24 overflow-hidden">
-                <div className="max-w-[1450px] mx-auto px-4 sm:px-6">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     <h2 className="text-center text-fluid-4xl font-bold mb-10 sm:mb-16 md:mb-20">
                         Our Process to <span className="text-orange-500">Success</span>
                     </h2>
@@ -661,7 +661,7 @@ const AppDevelopment = () => {
 
             {/* Section 6: Stats */}
             <section className="bg-[#f8f8f8] py-12 sm:py-16 md:py-20">
-                <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
                         <div className="max-w-[760px] text-center lg:text-left">
                             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] leading-tight md:leading-[1.15] font-semibold text-[#171212]">
@@ -695,7 +695,7 @@ const AppDevelopment = () => {
             {/* Section 7: Technology & Frameworks Categories */}
             <section className="relative bg-[#f7f7f7] py-16 md:py-24 overflow-hidden">
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] md:w-[900px] h-[300px] md:h-[500px] bg-white/40 blur-[80px] md:blur-[140px] rounded-full" />
-                <div className="relative max-w-[1450px] mx-auto px-6">
+                <div className="relative max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-[1200px] mx-auto">
                         <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight md:leading-[1.15] text-[#1c1717]">
                             Technology & Frameworks We Use for Android App Development Services
@@ -726,7 +726,7 @@ const AppDevelopment = () => {
 
             {/* Section 8: Steps */}
             <section className="bg-[#f8f8f8] py-16 md:py-20">
-                <div className="max-w-[1500px] mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="text-center lg:text-left">
                             <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight lg:leading-[1.15]">
@@ -779,7 +779,7 @@ const AppDevelopment = () => {
 
             {/* Section 9: Tech Work On Tabs */}
             <section className="bg-[#f8f8f8] py-16 md:py-24">
-                <div className="max-w-[1400px] mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center">
                         <h2 className="text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] font-semibold leading-tight md:leading-[1.15]">
                             App Development<br className="hidden md:block" />Technologies <span className="text-[#34d058]">We Work On</span>
@@ -811,7 +811,7 @@ const AppDevelopment = () => {
             </section>
 
             <section className="bg-[#f6f6f6] py-16 md:py-20">
-                <div className="max-w-[1600px] mx-auto px-4 md:px-0">
+                <div className="max-w-7xl mx-auto px-4 md:px-0">
                     <div className="grid lg:grid-cols-[1.6fr_0.8fr] gap-0">
                         {/* LEFT GRID */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 p-3 sm:p-4 md:p-5">
@@ -959,7 +959,7 @@ const AppDevelopment = () => {
             </section>
 
             <section className="bg-[#f8f8f8] py-16 md:py-24">
-                <div className="max-w-[1450px] mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-6">
                     {/* Heading */}
                     <div className="text-center max-w-[1200px] mx-auto">
                         <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold leading-tight md:leading-[1.15] text-[#1b1515]">
@@ -998,7 +998,7 @@ const AppDevelopment = () => {
             </section>
 
             <section className="bg-[#f8f8f8] py-16 md:py-24">
-                <div className="max-w-[1450px] mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-6">
                     {/* Heading */}
                     <h2 className="text-center text-3xl md:text-5xl lg:text-[62px] font-semibold leading-tight md:leading-[1.15]">
                         One-Stop Solution for a Complete Mobile App
@@ -1047,7 +1047,7 @@ const AppDevelopment = () => {
 
 
             <section className="w-full bg-[#e7e7e7] py-0 md:py-8">
-                <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
 
                     {/* LEFT */}
                     <div className="bg-[#5B5BF2] text-white flex items-center justify-center py-16 md:py-24">
@@ -1089,7 +1089,7 @@ const AppDevelopment = () => {
                                     "20+ Skilled Developers",
                                     "30+ Projects Delivered",
                                     "97% Success Ratio",
-                                    "7+ Years of Experience",
+                                    "2+ Years of Experience",
                                     "99% Client Satisfaction",
                                     "End-to-end App Development Support",
                                     "Multiple Hiring Models",
@@ -1106,7 +1106,7 @@ const AppDevelopment = () => {
             </section>
 
             <section className="w-full bg-[#efefef] py-12 sm:py-16 md:py-24">
-                <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
                     <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] font-bold text-[#181818] leading-tight text-center md:text-left">
                         App Development FAQs
                     </h2>
@@ -1165,7 +1165,7 @@ const AppDevelopment = () => {
             </section>
 
             <section className="w-full bg-[#0d0d0d]">
-                <div className="relative max-w-[1900px] mx-auto min-h-[350px] sm:min-h-[450px] md:h-[560px] overflow-hidden">
+                <div className="relative max-w-7xl mx-auto min-h-[350px] sm:min-h-[450px] md:h-[560px] overflow-hidden">
                     <img src={letsCreateBigStories} alt="Let's create big stories background" loading="lazy" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/45 to-black/20" />
 

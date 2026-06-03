@@ -55,7 +55,7 @@ export default function ServicesSlider() {
     return (
         <section className="bg-[#faf7fd] py-16 lg:py-28 overflow-hidden">
 
-            <div className="max-w-[1650px] mx-auto px-5 sm:px-8 lg:px-10">
+            <div className="max-w-full mx-auto px-5 sm:px-8 lg:px-10">
 
                 {/* Heading */}
 

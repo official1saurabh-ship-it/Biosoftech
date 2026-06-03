@@ -372,7 +372,7 @@ export default function About() {
       {/* Hero Section */}
       <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5]">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="max-w-[1600px] mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
+        <div className="max-w-full mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
           <div className="z-10 text-center lg:text-left pt-24 sm:pt-28 md:pt-28">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
@@ -418,7 +418,7 @@ export default function About() {
             </div>
             <div className="absolute left-0 sm:left-4 md:left-10 bottom-4 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-1.5 sm:p-4 md:p-6 rounded-xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-1 sm:gap-3 max-w-[45%] sm:max-w-none">
               <div className="bg-blue-100 p-1 sm:p-3 rounded-lg sm:rounded-xl"><span className="text-fluid-xs sm:text-fluid-lg">⭐</span></div>
-              <div><h3 className="text-fluid-xl sm:text-fluid-4xl font-black text-blue-600">7+</h3><p className="text-[8px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
+              <div><h3 className="text-fluid-xl sm:text-fluid-4xl font-black text-blue-600">2+</h3><p className="text-[8px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Years of Experience</p></div>
             </div>
             <div className="absolute right-0 sm:right-4 md:right-10 bottom-4 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-1.5 sm:p-4 md:p-6 rounded-xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-1 sm:gap-3 max-w-[45%] sm:max-w-none">
               <div className="bg-blue-100 p-1 sm:p-3 rounded-lg sm:rounded-xl"><span className="text-fluid-xs sm:text-fluid-lg">🌐</span></div>
@@ -486,7 +486,7 @@ export default function About() {
       {/* Services Section */}
       <section className="relative overflow-hidden bg-[#f7f7f7]">
         <div className="absolute inset-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/cartographer.png')]" />
-        <div className="relative max-w-[1220px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
+        <div className="relative max-w-full mx-auto px-4 sm:px-6 py-10 sm:py-14">
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[42px] lg:leading-[54px] xl:text-[50px] xl:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
@@ -512,7 +512,7 @@ export default function About() {
       {/* Conviction Section (Section 3) */}
       <section className="relative overflow-hidden bg-black">
         <div className="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_top,#5b0000,transparent_40%),radial-gradient(circle_at_bottom,#3f0000,transparent_40%)]" />
-        <div className="relative max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <div className="relative max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
           <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-12 lg:gap-24 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[52px] lg:leading-[62px] xl:text-[62px] xl:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
@@ -546,7 +546,7 @@ export default function About() {
 
       {/* Who Are We Section */}
       <section className="relative overflow-hidden bg-[#F7F7F1] min-h-0 lg:min-h-screen py-12 sm:py-16 lg:py-20 pb-20 sm:pb-24 lg:pb-28" ref={containerRef}>
-        <div className="max-w-[1350px] mx-auto px-4 sm:px-6">
+        <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-[620px_1fr] gap-10 sm:gap-12 lg:gap-24 items-center">
 
             {/* LEFT SIDE - Static Cards with slight parallax */}
@@ -664,7 +664,7 @@ export default function About() {
       </section>
 
       <section ref={floatingRef} className="py-12 sm:py-16 md:py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* LEFT IMAGE */}
@@ -788,7 +788,7 @@ export default function About() {
 
 
       <section className="bg-[#f8f8f8] py-16">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-full mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
 
             {/* LEFT SIDE */}
@@ -914,7 +914,7 @@ export default function About() {
 
 
       <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-full mx-auto px-4 sm:px-6">
 
           {/* Heading */}
           <div className="text-center mb-14">
@@ -988,7 +988,7 @@ export default function About() {
 
 
       <section className="bg-[#f8f8f8] py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-full mx-auto px-6">
 
           {/* Heading */}
           <div className="text-center mb-14">
@@ -1070,7 +1070,7 @@ export default function About() {
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[250px] bg-[#f1efff] rounded-t-full opacity-70" />
         <div className="absolute bottom-0 right-0 w-[450px] h-[200px] bg-[#f1efff] rounded-t-full opacity-70" />
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-full mx-auto px-6 relative z-10">
 
           {/* Heading */}
           <div className="text-center mb-24">
@@ -1172,7 +1172,7 @@ export default function About() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 max-w-full mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* LEFT SIDE */}
@@ -1363,7 +1363,7 @@ export default function About() {
       </section>
 
       <section className="bg-[#f5f5f5] py-20">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-full mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-black text-xl mb-2">Blogs</p>
             <h2 className="text-5xl font-light text-black">

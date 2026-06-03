@@ -58,12 +58,12 @@ export default function AboutUs() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#f8f4fc] overflow-hidden min-h-0 lg:min-h-[80vh] py-12 sm:py-16 lg:py-0"
+      className="bg-[#f8f4fc] overflow-hidden pt-12 sm:pt-16 lg:pt-20 pb-2 sm:pb-4 lg:pb-6"
     >
 
-      <div className="max-w-[1650px] mx-auto px-4 sm:px-6 lg:px-6">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-6 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-6 lg:gap-20 items-stretch">
 
           {/* LEFT - hidden on small screens */}
           <motion.div
@@ -71,25 +71,26 @@ export default function AboutUs() {
               y: shouldAnimate ? imageY : 0,
               willChange: shouldAnimate ? "transform" : "auto",
             }}
-            className="relative pr-0 lg:pr-[120px] hidden lg:block"
+            className="relative pr-0 lg:pr-[120px] hidden lg:block h-full"
           >
-            <div className="grid grid-cols-[1fr_220px] xl:grid-cols-[1fr_320px] gap-6 xl:gap-10">
-              <div className="space-y-6">
+            <div className="grid grid-cols-[1fr_220px] xl:grid-cols-[1fr_320px] gap-6 xl:gap-10 h-full">
+              <div className="space-y-6 flex flex-col">
                 <motion.div
                   style={{
                     y: shouldAnimate ? rightY : 0,
                     rotate: shouldAnimate ? teamworkRotate : 0,
+                    backgroundImage: `url(${teamwork})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                   }}
-                  className="relative rounded-[26px] overflow-hidden bg-white h-[220px] xl:h-[300px]"
-                >
-                  <img src={teamwork} alt="Biosoftech team collaborating on a software development project" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover" />
-                </motion.div>
+                  className="relative rounded-[26px] overflow-hidden bg-[#f8f4fc] flex-[3] min-h-0"
+                />
                 <motion.div
                   style={{
                     y: shouldAnimate ? contentY : 0,
                     rotate: shouldAnimate ? r2Rotate : 0,
                   }}
-                  className="relative h-[260px] xl:h-[360px]"
+                  className="relative flex-[2] min-h-0 bg-[#f8f4fc]"
                 >
                   <img src={R2} alt="Biosoftech company statistics and growth metrics illustration" width="400" height="300" className="w-full h-full object-contain" />
                 </motion.div>
@@ -99,9 +100,9 @@ export default function AboutUs() {
                   y: shouldAnimate ? titleY : 0,
                   rotate: shouldAnimate ? innovationRotate : 0,
                 }}
-                className="relative"
+                className="relative flex flex-col"
               >
-                <div className="rounded-[30px] overflow-hidden h-[520px] xl:h-[700px] w-[220px] xl:w-[320px] relative">
+                <div className="rounded-[30px] overflow-hidden flex-1 min-h-[750px] xl:min-h-[950px] w-[220px] xl:w-[320px] relative bg-[#f8f4fc]">
                   <img src={Innovation} alt="Biosoftech innovation and technology concept illustration" width="320" height="700" className="absolute inset-0 w-full h-full object-contain" />
                 </div>
                 <div className="absolute right-[-55px] xl:right-[-90px] top-1/2 -translate-y-1/2">

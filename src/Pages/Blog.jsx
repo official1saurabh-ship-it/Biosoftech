@@ -64,7 +64,7 @@ const Blog = () => {
         "
                 />
 
-                <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 pb-8 sm:pb-12 md:pb-0">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12 md:pb-0">
 
                     <div className="grid lg:grid-cols-2 items-center min-h-0 lg:min-h-[500px] md:min-h-[700px] gap-8 sm:gap-12 lg:gap-0 pt-24 sm:pt-28 md:pt-32">
 
@@ -129,7 +129,7 @@ const Blog = () => {
 
             <section className="bg-[#fafafa] py-10 sm:py-14">
 
-                <div className="max-w-[1220px] mx-auto px-4 sm:px-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-5">
 
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#333] mb-8 sm:mb-10 text-center">
                         Read Latest Articles &amp; Post

@@ -239,7 +239,7 @@ export default function PrivacyPolicy() {
 
       {/* Hero Header */}
       <section className="bg-[#f8faff] py-16 md:py-24 border-b border-gray-100">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-gray-500 mb-4">Last Updated: December 01, 2025</p>
           <h1 className="text-fluid-5xl font-bold text-[#09090F] mb-6">
             Privacy Policy
@@ -255,7 +255,7 @@ export default function PrivacyPolicy() {
 
       {/* Main Content Area */}
       <section className="py-16 md:py-24">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
 
             {/* Sidebar */}

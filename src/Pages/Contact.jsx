@@ -240,7 +240,7 @@ const Contact = () => {
           className="
         relative
         z-20
-        max-w-[1180px]
+        max-w-7xl
         mx-auto
         -mt-[40px]
         sm:-mt-[60px]

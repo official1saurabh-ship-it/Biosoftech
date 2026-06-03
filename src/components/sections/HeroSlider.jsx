@@ -49,7 +49,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-[600px] sm:min-h-[720px] lg:min-h-screen overflow-hidden bg-[#050010] flex items-center">
+    <section className="relative min-h-[650px] sm:min-h-[800px] lg:min-h-screen overflow-hidden bg-[#050010] flex items-center">
 
       {/* BG IMAGE */}
       <div
@@ -95,10 +95,11 @@ export default function HeroRevealSlider() {
       <div className="relative z-30 h-full w-full">
         <div
           className="
-            max-w-[1536px]
+            max-w-full
             mx-auto
             min-h-0
             lg:min-h-[560px] lg:h-full
+            pt-14 sm:pt-24 lg:pt-0
             grid
             lg:grid-cols-2
             items-center
@@ -113,7 +114,7 @@ export default function HeroRevealSlider() {
           "
         >
           {/* IMAGE COLUMN */}
-          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[180px] sm:min-h-[250px] lg:min-h-[280px] xl:min-h-[320px]">
+          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[120px] sm:min-h-[180px] lg:min-h-[200px] xl:min-h-[250px] max-h-[200px] sm:max-h-[280px] lg:max-h-[320px] xl:max-h-[400px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={`img-${index}`}
@@ -124,7 +125,7 @@ export default function HeroRevealSlider() {
                   duration: 0.6,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="flex items-end justify-center w-full h-full"
+                className="flex items-end justify-center w-full h-full max-h-full"
               >
                 <img
                   src={slide.image}
@@ -133,7 +134,7 @@ export default function HeroRevealSlider() {
                   loading="eager"
                   width="650"
                   height="500"
-                  className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-full max-w-[400px] sm:max-w-[500px] lg:max-w-none xl:max-w-[650px] object-contain self-end"
+                  className="w-[70%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[450px] xl:max-w-[550px] object-contain self-end max-h-full"
                 />
               </motion.div>
             </AnimatePresence>

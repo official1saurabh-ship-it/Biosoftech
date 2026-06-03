@@ -74,7 +74,7 @@ export default function AdNetworkSection() {
   return (
     <section className="bg-[#f7f4fb] overflow-hidden">
 
-      <div className="max-w-[1500px] mx-auto px-5 sm:px-8 py-14 lg:py-20">
+      <div className="max-w-full mx-auto px-5 sm:px-8 py-14 lg:py-20">
 
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 mb-14 lg:mb-20">
 
