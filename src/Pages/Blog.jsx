@@ -131,6 +131,10 @@ const Blog = () => {
 
                 <div className="max-w-[1220px] mx-auto px-4 sm:px-5">
 
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#333] mb-8 sm:mb-10 text-center">
+                        Read Latest Articles &amp; Post
+                    </h2>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 lg:gap-x-12 gap-y-6 sm:gap-y-6">
 
                         {blogs.map((blog) => (
@@ -142,6 +146,7 @@ const Blog = () => {
                 border-[#ececec]
                 hover:shadow-[0_0_25px_rgba(255,170,180,.35)]
                 duration-300
+                flex flex-col h-full
               "
                             >
                                 {/* IMAGE */}
@@ -185,7 +190,7 @@ const Blog = () => {
 
                                 {/* CONTENT */}
 
-                                <div className="px-5 pb-6">
+                                <div className="px-5 pb-6 flex flex-col flex-1">
 
                                     <h3
                                         className="
@@ -205,8 +210,9 @@ const Blog = () => {
                                         className="
                     mt-4
                     text-[#555]
-                    leading-[24px] sm:leading-[28px] md:leading-[28px] lg:leading-[42px]
+                    leading-[24px] sm:leading-[28px] md:leading-[28px] lg:leading-[28px]
                     text-[15px]
+                    flex-1
                   "
                                     >
                                         {blog.desc}

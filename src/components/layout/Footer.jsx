@@ -10,56 +10,102 @@ const socialLinks = [
   { Icon: FaTwitter, href: 'https://x.com/biosoftech', label: 'X' },
 ];
 
+const helpfulLinks = [
+  { name: 'About Us', to: '/about' },
+  { name: 'Blog', to: '/blog' },
+  { name: 'Contact Us', to: '/contact' },
+];
+
+const resourceLinks = [
+  { name: 'Career', to: '#' },
+  { name: 'Our Teams', to: '#' },
+  { name: 'Testimonials', to: '#' },
+  { name: 'Faqs', to: '#' },
+];
+
+const serviceLinks = [
+  { name: 'Web Development', to: '/web-development' },
+  { name: 'App Development', to: '/app-development' },
+  { name: 'Cloud Services', to: '/cloud-services' },
+  { name: 'AI Automation', to: '/ai-automation' },
+];
+
+const packageLinks = [
+  { name: 'Enquiry', to: '/contact' },
+  { name: 'Privacy Policy', to: '/privacy-policy' },
+  { name: 'Terms & Conditions', to: '#' },
+];
+
 const Footer = () => {
   const [callPopup, setCallPopup] = useState({ visible: false, number: '' });
 
   return (
     <footer className="bg-gray-50 pt-12 sm:pt-20 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 lg:gap-12 mb-12 sm:mb-16">
-          {/* Company Info */}
-          <div>
-            <Link
-              to="/contact"
-              className="inline-block text-3xl font-bold text-primary-1 mb-8"
-            >
-              Biosoftech
-            </Link>
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              We are a team of 25+ professionals with more than 7 years of experience in delivering custom software development, mobile apps, AI automation, and industry-specific solutions. Don't believe it? See it for yourself!
-            </p>
-            <div className="flex gap-4">
-              {socialLinks.map(({ Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={label}
-                  className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-primary-1 hover:bg-primary-1 hover:text-white transition-all transform hover:-translate-y-1"
-                >
-                  <Icon size={14} />
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Quick Menu */}
+        {/* TOP ROW */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
+          {/* Helpful Links */}
           <div>
             <h4 className="text-xl font-bold mb-8 relative inline-block">
-              Quick Menu
+              Helpful Links
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
             <ul className="space-y-4">
-              {[
-                { name: 'About Us', to: '/about' },
-                { name: 'Blog', to: '/blog' },
-                { name: 'Career', to: '#' },
-                { name: 'Our Teams', to: '#' },
-                { name: 'Testimonials', to: '#' },
-                { name: 'Faqs', to: '#' },
-                { name: 'Contact Us', to: '/contact' },
-              ].map((item) => {
+              {helpfulLinks.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Our Services */}
+          <div>
+            <h4 className="text-xl font-bold mb-8 relative inline-block">
+              Our Services
+              <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
+            </h4>
+            <ul className="space-y-4">
+              {serviceLinks.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Our Packages */}
+          <div>
+            <h4 className="text-xl font-bold mb-8 relative inline-block">
+              Our Packages
+              <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
+            </h4>
+            <ul className="space-y-4">
+              {packageLinks.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="text-xl font-bold mb-8 relative inline-block">
+              Resources
+              <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
+            </h4>
+            <ul className="space-y-4">
+              {resourceLinks.map((item) => {
                 const isExternal = item.to.startsWith('http') || item.to === '#';
                 const Component = isExternal ? 'a' : Link;
                 const props = isExternal ? { href: item.to } : { to: item.to };
@@ -75,40 +121,43 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Useful Links */}
-          <div>
-            <h4 className="text-xl font-bold mb-8 relative inline-block">
-              Useful links
-              <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
-            </h4>
-            <ul className="space-y-4">
-              {[
-                { name: 'Enquiry', to: '/contact' },
-                { name: 'Web Development', to: '/web-development' },
-                { name: 'App Development', to: '/app-development' },
-                { name: 'Cloud Services', to: '/cloud-services' },
-                { name: 'AI Automation', to: '/ai-automation' },
-                { name: 'Privacy Policy', to: '/privacy-policy' },
-                { name: 'Terms & Conditions', to: '#' },
-              ].map((item) => (
-                <li key={item.name}>
-                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Biosoftech Logo + CTA + Badge */}
+          <div className="flex flex-col md:col-span-2 lg:col-span-1">
+            <Link
+              to="/"
+              className="inline-block text-3xl font-bold text-primary-1 mb-6"
+            >
+              Biosoftech
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 bg-primary-1 text-white rounded-lg font-semibold hover:opacity-90 transition-all w-fit mb-4"
+            >
+              Get in Touch
+            </Link>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-1/10 text-primary-1 text-sm font-semibold rounded-full w-fit">
+              <span className="w-2 h-2 bg-primary-1 rounded-full" />
+              Trusted Partner
+            </div>
           </div>
+        </div>
 
-          {/* Contact Us */}
+        {/* MIDDLE ROW */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-12 sm:mb-16 border-t pt-12 sm:pt-16">
           <div>
-            <h4 className="text-xl font-bold mb-8 relative inline-block">
-              Contact Us
-              <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
-            </h4>
-            <ul className="space-y-6">
-              <li className="flex gap-4">
+            <Link
+              to="/"
+              className="inline-block text-3xl font-bold text-primary-1 mb-6"
+            >
+              Biosoftech
+            </Link>
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Building innovative software solutions that empower businesses to grow, adapt, and succeed in the digital world.
+            </p>
+          </div>
+          <div>
+            <div className="space-y-4">
+              <div className="flex gap-4">
                 <div className="text-primary-1 mt-1"><FaHome /></div>
                 <div>
                   <p className="font-bold text-gray-900">Head Office</p>
@@ -121,14 +170,14 @@ const Footer = () => {
                     3rd Floor, Office No-624/20A, Kotwali Rd, Matiyaari, Chinhat, Lucknow, Uttar Pradesh-226028
                   </a>
                 </div>
-              </li>
-              <li className="flex items-center gap-4">
+              </div>
+              <div className="flex items-center gap-4">
                 <div className="text-primary-1"><FaEnvelope /></div>
                 <a href="mailto:info@biosoftech.com" className="text-gray-600 text-sm hover:text-primary-1 transition-colors">
                   info@biosoftech.com
                 </a>
-              </li>
-              <li className="flex items-center gap-4">
+              </div>
+              <div className="flex items-center gap-4">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
                 <button
                   onClick={() => setCallPopup({ visible: true, number: '+91-9044425858' })}
@@ -136,8 +185,8 @@ const Footer = () => {
                 >
                   +91-9044425858
                 </button>
-              </li>
-              <li className="flex items-center gap-4">
+              </div>
+              <div className="flex items-center gap-4">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
                 <button
                   onClick={() => setCallPopup({ visible: true, number: '+916209688930' })}
@@ -145,8 +194,37 @@ const Footer = () => {
                 >
                   +91-6209688930
                 </button>
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* BOTTOM ROW */}
+        <div className="border-t py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <p className="text-gray-500 text-sm text-center sm:text-left">
+            Copyright 2021-26 | Biosoftech Pvt. Ltd. All Right Reserved
+          </p>
+          <div className="flex gap-4">
+            {socialLinks.map(({ Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={label}
+                className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-primary-1 hover:bg-primary-1 hover:text-white transition-all transform hover:-translate-y-1"
+              >
+                <Icon size={14} />
+              </a>
+            ))}
+          </div>
+          <div className="flex gap-6 text-sm">
+            <Link to="/privacy-policy" className="text-gray-500 hover:text-primary-1 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="#" className="text-gray-500 hover:text-primary-1 transition-colors">
+              Terms & Conditions
+            </Link>
           </div>
         </div>
 
@@ -199,10 +277,6 @@ const Footer = () => {
             </div>
           </div>
         )}
-
-        <div className="border-t py-8 text-center text-gray-500 text-sm">
-          <p>Copyright 2021-26 | Biosoftech Pvt. Ltd. All Right Reserved</p>
-        </div>
       </div>
     </footer>
   );

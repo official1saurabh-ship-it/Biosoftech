@@ -1122,12 +1122,10 @@ const HeroSection = () => {
 
         <div
           className="
-    sticky top-20 lg:top-24
-    min-h-screen
+    sticky top-0
+    h-screen
     flex flex-col justify-center
     relative z-10
-    pt-4 sm:pt-8 md:pt-12
-    pb-8 sm:pb-16 md:pb-20 lg:pb-28
   "
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
@@ -1147,7 +1145,7 @@ const HeroSection = () => {
 
                 <div className="hidden sm:block absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <h2 className="text-fluid-5xl font-bold">
+                <h2 className="text-fluid-5xl mt-20 font-bold">
                   Our AI{" "}
                   <span className="text-cyan-400">
                     Development
