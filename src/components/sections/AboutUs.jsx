@@ -83,7 +83,7 @@ export default function AboutUs() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }}
-                  className="relative rounded-[26px] overflow-hidden bg-[#f8f4fc] flex-[3] min-h-0"
+                  className="relative rounded-[26px] overflow-hidden bg-[#f8f4fc] flex-[2] min-h-0 max-h-[calc(50%-3px)]"
                 />
                 <motion.div
                   style={{
@@ -102,7 +102,7 @@ export default function AboutUs() {
                 }}
                 className="relative flex flex-col"
               >
-                <div className="rounded-[30px] overflow-hidden flex-1 min-h-[750px] xl:min-h-[950px] w-[220px] xl:w-[320px] relative bg-[#f8f4fc]">
+                <div className="rounded-[30px] overflow-hidden flex-1 min-h-[750px] xl:min-h-[900px] w-[220px] xl:w-[320px] relative bg-[#f8f4fc]">
                   <img src={Innovation} alt="Biosoftech innovation and technology concept illustration" width="320" height="700" className="absolute inset-0 w-full h-full object-contain" />
                 </div>
                 <div className="absolute right-[-55px] xl:right-[-90px] top-1/2 -translate-y-1/2">
@@ -123,7 +123,7 @@ export default function AboutUs() {
             }}
           >
 
-            <div className="inline-flex bg-[#efe3ff] rounded-full px-5 py-2 text-purple-600 text-sm font-semibold">
+            <div className="inline-flex bg-[#efe3ff] rounded-full px-5 py-2 text-purple-600 text-5xl font-bold">
               ABOUT US
             </div>
 

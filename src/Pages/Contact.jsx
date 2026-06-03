@@ -615,16 +615,23 @@ const Contact = () => {
               className="
             bg-white
             shadow-[0_10px_30px_rgba(0,0,0,.18)]
-            h-fit
+          
           "
             >
-              <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400"
-                width="1400"
-                height="160"
-                className="w-full h-[140px] md:h-[160px] object-cover"
-                alt="building"
-              />
+              <div className="flex justify-center p-4">
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=700"
+                  alt="building"
+                  className="
+      w-[600px]
+      md:w-[400px]
+      h-[80px]
+      md:h-[120px]
+      object-cover
+      rounded-lg
+    "
+                />
+              </div>
 
               <div className="px-5 py-3 md:px-6 md:py-4">
                 <h2

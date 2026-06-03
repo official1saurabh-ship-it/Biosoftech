@@ -58,8 +58,8 @@ export default function TestimonialSection() {
       via-[#020066]
       to-[#09001d]
 
-      py-16
-      lg:py-28
+      py-12
+      lg:py-20
       "
         >
 
@@ -94,12 +94,12 @@ export default function TestimonialSection() {
                     <p
                         className="
             text-white
-            text-[18px]
-
-            mb-10
+            text-5xl
+            font-bold
+            mb-6
           "
                     >
-                        [ Testimonial ]
+                        Testimonial
                     </p>
 
                     <h2
@@ -114,7 +114,7 @@ export default function TestimonialSection() {
 
             font-bold
 
-            mb-8
+            mb-4
           "
                     >
                         What Our Clients Say About Us
@@ -152,14 +152,14 @@ export default function TestimonialSection() {
 
                 <div
                     className="
-          mt-12
-          lg:mt-24
+          mt-8
+          lg:mt-16
 
           grid
           lg:grid-cols-[360px_1fr]
 
           gap-6
-          lg:gap-16
+          lg:gap-10
 
           items-center
         "

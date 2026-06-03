@@ -486,22 +486,22 @@ export default function About() {
       {/* Services Section */}
       <section className="relative overflow-hidden bg-[#f7f7f7]">
         <div className="absolute inset-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/cartographer.png')]" />
-        <div className="relative max-w-full mx-auto px-4 sm:px-6 py-10 sm:py-14">
+        <div className="relative max-w-full mx-auto px-4 sm:px-6 py-8 sm:py-10">
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[42px] lg:leading-[54px] xl:text-[50px] xl:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
-              <p className="mt-4 sm:mt-6 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
-              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
-              <h3 className="mt-5 sm:mt-7 text-2xl sm:text-3xl md:text-[28px] lg:text-[32px] xl:text-[38px] font-black text-[#433d70]">Our Mission</h3>
-              <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
-              <button onClick={() => navigate("/contact")} className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-fluid-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
+              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2025. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
+              <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
+              <h3 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-[28px] lg:text-[32px] xl:text-[38px] font-black text-[#433d70]">Our Mission</h3>
+              <p className="mt-1 sm:mt-2 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
+              <button onClick={() => navigate("/contact")} className="mt-4 sm:mt-5 px-6 sm:px-8 md:px-10 py-3 sm:py-4 border border-[#6b63ff] text-[#433d70] font-semibold hover:bg-[#3B3663] hover:text-white duration-500 text-fluid-base min-h-[44px]">CHECK OUR GLOBAL REACH</button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-5 lg:gap-7">
               {services.map((item) => (
-                <div key={item.title} className="group bg-white rounded-[18px] p-5 sm:p-6 md:p-6 lg:p-8 shadow-[0_18px_40px_rgba(0,0,0,.05)] hover:bg-[#3B3663] hover:-translate-y-2 duration-500">
-                  <div className={`w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full mb-4 sm:mb-6 md:mb-8 transition-all duration-500 group-hover:scale-110 ${item.color}`} />
+                <div key={item.title} className="group bg-white rounded-[18px] p-4 sm:p-5 md:p-5 lg:p-6 shadow-[0_18px_40px_rgba(0,0,0,.05)] hover:bg-[#3B3663] hover:-translate-y-2 duration-500">
+                  <div className={`w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[72px] md:h-[72px] rounded-full mb-3 sm:mb-4 transition-all duration-500 group-hover:scale-110 ${item.color}`} />
                   <h3 className="text-lg sm:text-xl md:text-[24px] leading-[28px] sm:leading-[34px] font-black text-[#2b2d46] group-hover:text-white duration-500">{item.title}</h3>
-                  <p className="mt-3 sm:mt-5 text-[12px] sm:text-[13px] leading-[24px] sm:leading-[28px] font-semibold text-[#404256] group-hover:text-white/90 duration-500">{item.desc}</p>
+                  <p className="mt-2 sm:mt-3 text-[12px] sm:text-[13px] leading-[24px] sm:leading-[28px] font-semibold text-[#404256] group-hover:text-white/90 duration-500">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -517,7 +517,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[52px] lg:leading-[62px] xl:text-[62px] xl:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
               <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[28px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
-                <p>In our 10+ years of experience as a progressive software development company, we have witnessed the digital landscape evolve rapidly.</p>
+                <p>In our 2+ years of experience as a progressive software development company, we have witnessed the digital landscape evolve rapidly.</p>
                 <p>Even as AI automation, cloud integration, and new technologies reshaped industries, we have consistently helped businesses adapt and thrive.</p>
                 <p>We observed changing dynamics and refined our growth strategies to cut through complexity, competition, and digital noise.</p>
                 <p>By implementing timely innovations, we ensured our clients&apos; businesses remain efficient, scalable, and future-ready without compromising stability. That&apos;s sustainability in progress and conviction in action!</p>
@@ -602,7 +602,7 @@ export default function About() {
 
               <motion.p
                 style={{ y: tagY }}
-                className="text-[#af60ff] font-semibold text-fluid-base"
+                className="text-[#af60ff] font-bold text-5xl"
               >
                 ✺ Who Are We?
               </motion.p>
@@ -663,7 +663,7 @@ export default function About() {
         </div>
       </section>
 
-      <section ref={floatingRef} className="py-12 sm:py-16 md:py-24 overflow-hidden">
+      <section ref={floatingRef} className="py-8 sm:py-10 md:py-16 overflow-hidden">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -686,7 +686,7 @@ export default function About() {
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <motion.div
                   style={{ rotate: orbitAngle }}
-                  className="relative w-[700px] h-[700px] hidden sm:block"
+                  className="relative w-[850px] h-[850px] hidden sm:block"
                 >
                   <div className="absolute left-1/2 -ml-8 -top-8 w-16 h-16">
                     <motion.div
@@ -697,7 +697,7 @@ export default function About() {
                     </motion.div>
                   </div>
 
-                  <div className="absolute left-[438px] top-[647px] w-16 h-16">
+                  <div className="absolute left-[532px] top-[786px] w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
                       className="w-full h-full rounded-full flex items-center justify-center"
@@ -706,7 +706,7 @@ export default function About() {
                     </motion.div>
                   </div>
 
-                  <div className="absolute left-[-11px] top-[438px] w-16 h-16">
+                  <div className="absolute left-[-13px] top-[532px] w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
                       className="w-full h-full rounded-full flex items-center justify-center"
@@ -724,7 +724,7 @@ export default function About() {
 
               {/* Subtitle */}
 
-              <div className="inline-flex items-center gap-2 text-orange-500 font-semibold mb-5">
+              <div className="inline-flex items-center gap-2 text-orange-500 font-bold text-5xl mb-5">
                 <BadgeCheck className="w-5 h-5" />
                 What We Do
               </div>
@@ -848,7 +848,7 @@ export default function About() {
             {/* RIGHT SIDE CONTENT */}
             <div>
 
-              <div className="flex items-center gap-2 text-purple-500 font-medium mb-3">
+              <div className="flex items-center gap-2 text-purple-500 font-bold text-5xl mb-3">
                 <span>✦</span>
                 <span>Our Mission & Vision</span>
               </div>
@@ -975,7 +975,7 @@ export default function About() {
                 loading="lazy"
                 width="620"
                 height="500"
-                className="w-full max-w-[620px] object-contain"
+                className="w-full max-w-[620px] max-h-[500px] object-contain"
               />
             </div>
 
@@ -992,7 +992,7 @@ export default function About() {
 
           {/* Heading */}
           <div className="text-center mb-14">
-            <p className="uppercase text-[#3F3D73] font-bold tracking-wide text-sm">
+            <p className="uppercase text-[#3F3D73] font-bold text-5xl">
               WHAT WE DO
             </p>
 
@@ -1073,8 +1073,8 @@ export default function About() {
         <div className="max-w-full mx-auto px-6 relative z-10">
 
           {/* Heading */}
-          <div className="text-center mb-24">
-            <p className="uppercase font-bold text-[#3d3a72] tracking-wide text-sm">
+          <div className="text-center mb-16">
+            <p className="uppercase font-bold text-[#3d3a72] text-5xl">
               OUR GROWTH STORY
             </p>
 
@@ -1092,7 +1092,7 @@ export default function About() {
             {timelineData.map((item, index) => (
               <div
                 key={item.year}
-                className="relative grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-6 sm:mb-10 md:mb-20 lg:mb-28"
+                className="relative grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-4 sm:mb-6 md:mb-12 lg:mb-16"
               >
                 {/* Left Side */}
                 <div
@@ -1203,18 +1203,21 @@ export default function About() {
               </p>
 
               {/* Logos */}
-              <div className="grid grid-cols-3 gap-6 mt-12">
+              <div className="flex flex-wrap gap-4 mt-12">
 
-                <div className="text-center">
-                  <div className="h-20 mx-auto flex items-center justify-center text-white/80 font-bold text-lg">Clutch</div>
+                <div className="flex-1 min-w-[100px] bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center border border-white/20">
+                  <div className="text-white font-bold text-xl">Clutch</div>
+                  <div className="text-yellow-400 text-sm mt-1">★★★★★</div>
                 </div>
 
-                <div className="text-center">
-                  <div className="h-20 mx-auto flex items-center justify-center text-white/80 font-bold text-lg">Upwork</div>
+                <div className="flex-1 min-w-[100px] bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center border border-white/20">
+                  <div className="text-white font-bold text-xl">Upwork</div>
+                  <div className="text-yellow-400 text-sm mt-1">★★★★★</div>
                 </div>
 
-                <div className="text-center">
-                  <div className="h-20 mx-auto flex items-center justify-center text-white/80 font-bold text-lg">Google</div>
+                <div className="flex-1 min-w-[100px] bg-white/10 backdrop-blur rounded-lg px-4 py-3 text-center border border-white/20">
+                  <div className="text-white font-bold text-xl">Google</div>
+                  <div className="text-yellow-400 text-sm mt-1">★★★★★</div>
                 </div>
 
               </div>
@@ -1256,9 +1259,9 @@ export default function About() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="border border-yellow-500 rounded-md p-4 sm:p-6 md:p-8 bg-black/30">
+            <div className="border border-yellow-500 rounded-md p-4 sm:p-6 md:p-8 bg-black/30 h-full flex flex-col">
 
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 flex-1 flex flex-col">
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <input
@@ -1322,7 +1325,7 @@ export default function About() {
                   rows="5"
                   placeholder="Please type atleast 20 characters about your Inquiry"
                   required
-                  className="w-full p-4 bg-white rounded outline-none text-fluid-base"
+                  className="w-full p-4 bg-white rounded outline-none text-fluid-base flex-1"
                 />
 
                 <div className="bg-white rounded p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
@@ -1375,25 +1378,25 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {blogs.map((blog) => (
-              <Link to="/blog" key={blog.title}>
-                <article className="group cursor-pointer">
+              <Link to="/blog" key={blog.title} className="h-full flex">
+                <article className="group cursor-pointer h-full flex flex-col w-full">
                   <div className="relative overflow-hidden rounded-t-2xl">
                     <img
                       src={blog.image}
                       alt={blog.title}
-                      className="w-full h-[300px] object-cover transition duration-500 group-hover:scale-105"
+                      className="w-full h-[200px] object-cover transition duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="bg-white rounded-2xl shadow-md -mt-14 mx-4 relative z-10 p-6 min-h-[420px]">
+                  <div className="bg-white rounded-2xl shadow-md -mt-14 mx-4 relative z-10 p-6 min-h-[0] flex-1 flex flex-col">
                     <div className="absolute -top-8 left-6 bg-[#f4bc28] rounded-md px-5 py-3 text-center leading-none">
                       <p className="text-3xl font-medium">{blog.day}</p>
                       <p className="text-2xl">{blog.month}</p>
                     </div>
-                    <div className="pt-10">
-                      <h3 className="text-[22px] leading-snug font-medium text-black mb-6">
+                    <div className="pt-10 flex-1 flex flex-col">
+                      <h3 className="text-[22px] leading-snug font-medium text-black mb-4">
                         {blog.title}
                       </h3>
-                      <p className="text-gray-700 text-lg leading-9">
+                      <p className="text-gray-700 text-lg leading-7 flex-1">
                         {blog.description}
                       </p>
                     </div>

@@ -14,8 +14,7 @@ const slides = [
     big: "Ideas",
     outline: "Become",
     bottom: "Smart Solutions",
-    desc:
-      "For us, it's not just about building software. We understand your business goals, capture your vision, and deliver technology that makes everyday work simple, efficient, and impactful.",
+    desc: "For us, it's not just about building software. We understand your business goals, capture your vision, and deliver technology that makes everyday work simple, efficient, and impactful.",
   },
   {
     image: slider1,
@@ -23,8 +22,7 @@ const slides = [
     big: "Software",
     outline: "Development",
     bottom: "Company",
-    desc:
-      "We are a leading technology partner delivering innovation and efficiency for more than a decade. Our team specializes in custom software development, mobile apps, and AI-powered solutions — offering everything under one roof.",
+    desc: "We are a leading technology partner delivering innovation and efficiency for more than a decade. Our team specializes in custom software development, mobile apps, and AI-powered solutions — offering everything under one roof.",
   },
 ];
 
@@ -42,21 +40,17 @@ export default function HeroRevealSlider() {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
     }, 6500);
-
     return () => clearInterval(interval);
   }, []);
 
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-[650px] sm:min-h-[800px] lg:min-h-screen overflow-hidden bg-[#050010] flex items-center">
-
+    <section className="relative min-h-screen overflow-hidden bg-[#050010] flex items-center">
       {/* BG IMAGE */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-        }}
+        style={{ backgroundImage: `url(${bgImage})` }}
       />
 
       {/* FLOATING BALLS */}
@@ -72,14 +66,10 @@ export default function HeroRevealSlider() {
             animation: `${b.anim} ${b.duration}s ${b.delay}s ease-in-out infinite alternate`,
           }}
         >
-          {/* Hollow circle */}
           <div
             className="absolute inset-0 rounded-full"
-            style={{
-              border: `${b.border}px solid ${b.color}`,
-            }}
+            style={{ border: `${b.border}px solid ${b.color}` }}
           />
-          {/* Glittering sparkle ring */}
           <div
             className="absolute inset-0 rounded-full"
             style={{
@@ -91,30 +81,19 @@ export default function HeroRevealSlider() {
         </div>
       ))}
 
-      {/* CONTENT */}
-      <div className="relative z-30 h-full w-full">
+      {/* MAIN CONTENT */}
+      <div className="relative z-30 w-full h-full">
         <div
           className="
-            max-w-full
-            mx-auto
-            min-h-0
-            lg:min-h-[560px] lg:h-full
-            pt-14 sm:pt-24 lg:pt-0
-            grid
-            lg:grid-cols-2
+            max-w-full mx-auto min-h-screen
+            grid lg:grid-cols-2
             items-center
-            gap-4
-            lg:gap-6
-            xl:gap-16
-            px-4
-            sm:px-6
-            lg:px-10
-            xl:px-16
-            2xl:px-24
+            gap-6 lg:gap-12 xl:gap-16
+            px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24
           "
         >
           {/* IMAGE COLUMN */}
-          <div className="relative order-2 flex items-end justify-center lg:order-1 h-full z-20 min-h-[120px] sm:min-h-[180px] lg:min-h-[200px] xl:min-h-[250px] max-h-[200px] sm:max-h-[280px] lg:max-h-[320px] xl:max-h-[400px]">
+          <div className="relative order-2 lg:order-1 z-20 flex items-center justify-center h-full py-6 lg:pt-4 lg:translate-y-24">
             <AnimatePresence mode="wait">
               <motion.div
                 key={`img-${index}`}
@@ -125,53 +104,44 @@ export default function HeroRevealSlider() {
                   duration: 0.6,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="flex items-end justify-center w-full h-full max-h-full"
+                className="flex items-center justify-center w-full mt-8 lg:mt-4"
               >
                 <img
                   src={slide.image}
-                  alt="Biosoftech hero slide showcasing software development solutions"
-                  fetchPriority="high"
-                  loading="eager"
-                  width="650"
-                  height="500"
-                  className="w-[70%] sm:w-[60%] md:w-[50%] lg:w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[450px] xl:max-w-[550px] object-contain self-end max-h-full"
+                  alt="Hero"
+                  className="w-auto h-[450px] sm:h-[520px] lg:h-[580px] xl:h-[680px] 2xl:h-[740px] object-contain"
                 />
               </motion.div>
             </AnimatePresence>
           </div>
 
           {/* TEXT COLUMN */}
-          <div className="relative z-30 order-1 text-white lg:order-2 font-outfit min-w-0 h-full flex flex-col justify-center">
+          <div className="relative z-30 order-1 lg:order-2 text-white font-outfit h-full flex flex-col justify-center">
             <motion.div
               key={`txt-${index}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="min-h-[380px] sm:min-h-[480px] lg:min-h-[50vh] flex flex-col justify-center pt-28 sm:pt-36 lg:pt-20 xl:pt-32"
+              className="h-full flex flex-col justify-center pt-20 lg:pt-0"
             >
               <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h2>
-
               <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[42px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
-
               <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[32px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-2 xl:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
-
               <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[26px] xl:text-[58px] font-black -mt-0.5 lg:-mt-1 xl:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
               </h2>
-
-              <p className="mt-2 lg:mt-3 xl:mt-7 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">
+              <p className="mt-4 lg:mt-6 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">
                 {slide.desc}
               </p>
-
               <Link
                 to="/contact"
-                className="inline-flex w-fit self-start mt-4 lg:mt-6 xl:mt-10 px-3 py-3 rounded-full bg-[#9810dc] text-white font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 transition-all duration-500 shadow-lg"
+                className="inline-flex w-fit self-start mt-6 lg:mt-8 px-3 py-3 rounded-full bg-[#9810dc] text-white font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 transition-all duration-500 shadow-lg"
               >
                 Get Started →
               </Link>
@@ -180,31 +150,49 @@ export default function HeroRevealSlider() {
         </div>
       </div>
 
+      {/* SLIDER CONTROLS */}
+      <div className="absolute right-4 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-3 lg:gap-6 z-50">
+        <button
+          onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
+          aria-label="Previous slide"
+          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xl"
+        >
+          ←
+        </button>
+        <button
+          onClick={() => setIndex((index + 1) % slides.length)}
+          aria-label="Next slide"
+          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xl"
+        >
+          →
+        </button>
+      </div>
+
       <style>{`
         @keyframes floatA {
-          0% { transform: translate(0, 0) scale(1); box-shadow: 0 0 4px rgba(255,255,255,0.15); }
-          25% { transform: translate(40px, -60px) scale(1.1); box-shadow: 0 0 20px rgba(255,255,255,0.5); }
-          50% { transform: translate(-30px, 50px) scale(0.9); box-shadow: 0 0 6px rgba(255,255,255,0.2); }
-          75% { transform: translate(50px, 30px) scale(1.05); box-shadow: 0 0 25px rgba(255,255,255,0.6); }
-          100% { transform: translate(-20px, -40px) scale(1); box-shadow: 0 0 8px rgba(255,255,255,0.3); }
+          0% { transform: translate(0, 0) scale(1); }
+          25% { transform: translate(40px, -60px) scale(1.1); }
+          50% { transform: translate(-30px, 50px) scale(0.9); }
+          75% { transform: translate(50px, 30px) scale(1.05); }
+          100% { transform: translate(-20px, -40px) scale(1); }
         }
         @keyframes floatB {
-          0% { transform: translate(0, 0); box-shadow: 0 0 5px rgba(255,255,255,0.1); }
-          33% { transform: translate(-50px, 40px); box-shadow: 0 0 18px rgba(255,255,255,0.5); }
-          66% { transform: translate(35px, -55px); box-shadow: 0 0 8px rgba(255,255,255,0.25); }
-          100% { transform: translate(-25px, 30px); box-shadow: 0 0 22px rgba(255,255,255,0.55); }
+          0% { transform: translate(0, 0); }
+          33% { transform: translate(-50px, 40px); }
+          66% { transform: translate(35px, -55px); }
+          100% { transform: translate(-25px, 30px); }
         }
         @keyframes floatC {
-          0% { transform: translate(0, 0) rotate(0deg); box-shadow: 0 0 6px rgba(255,255,255,0.15); }
-          25% { transform: translate(55px, 25px) rotate(90deg); box-shadow: 0 0 24px rgba(255,255,255,0.5); }
-          50% { transform: translate(-40px, -45px) rotate(180deg); box-shadow: 0 0 10px rgba(255,255,255,0.2); }
-          75% { transform: translate(30px, 50px) rotate(270deg); box-shadow: 0 0 28px rgba(255,255,255,0.6); }
-          100% { transform: translate(-35px, -20px) rotate(360deg); box-shadow: 0 0 12px rgba(255,255,255,0.35); }
+          0% { transform: translate(0, 0) rotate(0deg); }
+          25% { transform: translate(55px, 25px) rotate(90deg); }
+          50% { transform: translate(-40px, -45px) rotate(180deg); }
+          75% { transform: translate(30px, 50px) rotate(270deg); }
+          100% { transform: translate(-35px, -20px) rotate(360deg); }
         }
         @keyframes floatD {
-          0% { transform: translate(0, 0) scale(1); box-shadow: 0 0 4px rgba(255,255,255,0.1); }
-          50% { transform: translate(45px, -50px) scale(0.85); box-shadow: 0 0 20px rgba(255,255,255,0.55); }
-          100% { transform: translate(-40px, 40px) scale(1.15); box-shadow: 0 0 15px rgba(255,255,255,0.4); }
+          0% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(45px, -50px) scale(0.85); }
+          100% { transform: translate(-40px, 40px) scale(1.15); }
         }
         @keyframes sparkle {
           0% { transform: rotate(0deg); opacity: 0.3; }
@@ -214,25 +202,6 @@ export default function HeroRevealSlider() {
           100% { transform: rotate(360deg); opacity: 0.3; }
         }
       `}</style>
-
-      {/* CONTROLS */}
-      <div className="absolute right-1 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 flex flex-col gap-1 sm:gap-4 lg:gap-8 z-50">
-        <button
-          onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
-          aria-label="Previous slide"
-          className="w-8 h-8 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xs sm:text-base"
-        >
-          &larr;
-        </button>
-
-        <button
-          onClick={() => setIndex((index + 1) % slides.length)}
-          aria-label="Next slide"
-          className="w-8 h-8 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xs sm:text-base"
-        >
-          &rarr;
-        </button>
-      </div>
     </section>
   );
 }

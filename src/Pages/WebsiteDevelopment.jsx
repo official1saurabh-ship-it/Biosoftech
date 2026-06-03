@@ -37,7 +37,7 @@ const WebsiteDevelopment = () => {
                 ogUrl="https://www.biosoftech.com/website-development"
             />
             <section className="bg-[#f8f8f8] py-16 sm:py-20 md:py-24">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* Heading */}
                     <div className="text-center max-w-[1000px] mx-auto">

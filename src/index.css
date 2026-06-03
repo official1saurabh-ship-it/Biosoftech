@@ -189,14 +189,14 @@
 
   body {
     @apply font-gilroy text-gray-800 bg-white;
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
     min-height: 100vh;
     -webkit-overflow-scrolling: touch;
   }
 
   #root {
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
     min-height: 100vh;
     display: flex;

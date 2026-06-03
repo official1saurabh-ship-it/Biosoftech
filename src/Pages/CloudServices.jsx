@@ -444,7 +444,7 @@ const CloudServices = () => {
             <StructuredData type="LocalBusiness" />
             {/* HERO SECTION */}
             <section aria-label="Cloud services hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+                <div className="w-full px-4 sm:px-6 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
@@ -622,7 +622,7 @@ const CloudServices = () => {
             {/* WHY CHOOSE SECTION */}
             <section className="relative z-30 min-h-screen overflow-hidden py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
                 <div className="absolute inset-0 bg-white/30" />
-                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-20">
+                <div className="relative z-10 w-full px-6 lg:px-20">
                     <div>
                         <h2 className="text-fluid-4xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
                         <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
@@ -658,10 +658,13 @@ const CloudServices = () => {
             {/* DEVELOPMENT PROCESS SECTION */}
             <section
                 ref={sectionRef}
-                className="bg-[#0a0a0a] relative z-20 h-[500vh] pt-20 sm:pt-24 lg:pt-0"
+                className="bg-[#0a0a0a] relative z-20 pt-20 sm:pt-24 lg:pt-0"
+                style={{
+                    height: `${stages.length * 35}vh`,
+                }}
             >
                 <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-y-auto lg:overflow-hidden pt-4 lg:pt-0 pb-4 lg:pb-0">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 w-full">
+                    <div className="w-full px-4 sm:px-6 lg:px-20 w-full">
 
                         <div className="text-center mb-6 sm:mb-8 mt-14 sm:mt-24 lg:mt-48 lg:mb-12">
                             <h2 className="text-fluid-4xl font-bold text-white">
@@ -752,7 +755,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#EEF3FB] py-12 md:py-20 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="w-full px-6">
                     <div className="grid lg:grid-cols-[1fr_0.8fr] xl:grid-cols-[1fr_700px] gap-10 items-stretch">
 
                         {/* LEFT */}
@@ -860,7 +863,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#020817] text-white py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="w-full px-6">
 
                     {/* Heading */}
                     <h2 className="text-center text-3xl sm:text-4xl md:text-[42px] font-bold mb-20">
@@ -938,7 +941,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#f5f5f5] py-20 overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="w-full px-6 lg:px-12">
 
                     <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-center">
 
@@ -1033,7 +1036,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#f4f4f4] py-14 lg:py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="w-full px-6">
 
                     {/* Heading */}
                     <div className="text-center mb-14">
@@ -1105,7 +1108,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#f3f3f3] py-16 lg:py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="w-full px-6">
 
                     {/* Heading */}
                     <h2 className="text-center text-[42px] lg:text-[52px] font-bold text-[#333] mb-14">
@@ -1212,7 +1215,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-black py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="w-full px-6">
 
                     {/* Heading */}
                     <div className="text-center mb-14">

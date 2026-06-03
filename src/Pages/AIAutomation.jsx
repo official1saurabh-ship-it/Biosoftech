@@ -464,7 +464,7 @@ const HeroSection = () => {
       />
       <StructuredData type="LocalBusiness" />
       <section aria-label="AI automation hero banner" className="w-full min-h-0 lg:min-h-[calc(100vh-80px)] bg-[#f3f1eb] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
+        <div className="w-full px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
 
           {/* Main Grid */}
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
@@ -586,7 +586,7 @@ const HeroSection = () => {
       <section className="relative bg-black text-white">
 
         {/* Background Glow */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-600/30 blur-[180px]" />
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-700/30 blur-[180px]" />
         </div>
@@ -677,7 +677,7 @@ const HeroSection = () => {
 
 
       <section className="bg-[#f3f3f3] py-20">
-        <div className="mx-auto px-6 lg:px-10 max-w-7xl">
+        <div className="px-6 lg:px-10 w-full">
 
           {/* TOP SECTION */}
           <div className="grid lg:grid-cols-2 gap-10 items-start">
@@ -822,7 +822,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="relative z-10 w-full">
 
           {/* TOP CONTENT */}
           <div className="text-center max-w-5xl mx-auto px-6">
@@ -957,7 +957,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="relative z-10 w-full px-6 lg:px-10">
 
           {/* TITLE */}
           <h2 className="text-center text-fluid-5xl font-bold leading-tight">
@@ -1128,7 +1128,7 @@ const HeroSection = () => {
     relative z-10
   "
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
+            <div className="px-4 sm:px-6 lg:px-10 w-full">
 
             {/* TITLE */}
             <div className="text-center">
@@ -1344,7 +1344,7 @@ const HeroSection = () => {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 py-16 sm:py-20 lg:py-24">
+        <div className="relative z-10 w-full px-6 lg:px-10 py-16 sm:py-20 lg:py-24">
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
 
@@ -1407,7 +1407,7 @@ const HeroSection = () => {
       </section>
 
       <section className="relative overflow-hidden bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="w-full px-6">
           <div className="text-center max-w-4xl mx-auto">
             <p className="text-cyan-500 uppercase tracking-[5px] text-sm font-semibold">
               Why AI
