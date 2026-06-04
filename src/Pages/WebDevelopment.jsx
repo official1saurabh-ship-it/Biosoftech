@@ -253,7 +253,7 @@ const WebDevelopment = () => {
                 ogUrl="https://www.biosoftech.com/web-development"
             />
             <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
-                <div className="w-full px-4 sm:px-6 lg:px-20">
+                <div className="w-full px-4 sm:px-6 md:px-16 lg:px-20">
                     <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
