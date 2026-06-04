@@ -467,7 +467,7 @@ const HeroSection = () => {
         <div className="w-full px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
 
           {/* Main Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
 
             {/* Left Content */}
             <div>
@@ -477,7 +477,7 @@ const HeroSection = () => {
                 with Intelligent Automation
               </h1>
 
-              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-fluid-base leading-7 sm:leading-9 max-w-2xl">
+              <p className="mt-4 sm:mt-6 lg:mt-8 text-[#333] text-fluid-base leading-7 sm:leading-9 max-w-full lg:max-w-2xl">
                 At Biosoftech Solutions, we deliver AI automation services that
                 help businesses streamline operations, reduce costs, and unlock
                 new opportunities for growth. Our intelligent solutions combine
@@ -591,13 +591,13 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-700/30 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-12">
 
           {/* MAIN GRID */}
-          <div className="grid lg:grid-cols-[420px_1fr] border border-white/10">
+          <div className="flex flex-col lg:grid lg:grid-cols-[420px_1fr] border border-white/10">
 
             {/* LEFT SIDE STICKY */}
-            <div className="lg:sticky lg:top-0 h-fit border-r border-white/10 p-8 lg:p-12 self-start">
+            <div className="lg:sticky lg:top-0 h-fit lg:border-r border-white/10 p-6 sm:p-8 lg:p-12 self-start">
 
               <h2 className="text-fluid-5xl font-bold leading-tight">
                 AI Strategy
@@ -676,8 +676,8 @@ const HeroSection = () => {
 
 
 
-      <section className="bg-[#f3f3f3] py-20">
-        <div className="px-6 lg:px-10 w-full">
+      <section className="bg-[#f3f3f3] py-16 lg:py-20">
+        <div className="px-4 sm:px-6 lg:px-10 w-full">
 
           {/* TOP SECTION */}
           <div className="grid lg:grid-cols-2 gap-10 items-start">
@@ -825,7 +825,7 @@ const HeroSection = () => {
         <div className="relative z-10 w-full">
 
           {/* TOP CONTENT */}
-          <div className="text-center max-w-5xl mx-auto px-6">
+          <div className="text-center max-w-5xl mx-auto px-4 sm:px-6">
 
             <p className="text-cyan-400 uppercase tracking-[5px] text-sm font-semibold">
               Generative AI & LLM
@@ -844,7 +844,7 @@ const HeroSection = () => {
           </div>
 
           {/* CARDS */}
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 px-6">
+          <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 px-4 sm:px-6">
 
             {capabilities.map((item, index) => (
               <div
@@ -957,7 +957,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 w-full px-6 lg:px-10">
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10">
 
           {/* TITLE */}
           <h2 className="text-center text-fluid-5xl font-bold leading-tight">
@@ -1128,7 +1128,7 @@ const HeroSection = () => {
     relative z-10
   "
         >
-            <div className="px-4 sm:px-6 lg:px-10 w-full">
+            <div className="px-4 sm:px-6 lg:px-10 w-full max-w-full">
 
             {/* TITLE */}
             <div className="text-center">
@@ -1344,7 +1344,7 @@ const HeroSection = () => {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 w-full px-6 lg:px-10 py-16 sm:py-20 lg:py-24">
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-16 sm:py-20 lg:py-24">
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
 
@@ -1406,8 +1406,8 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white py-24">
-        <div className="w-full px-6">
+      <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+        <div className="w-full px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto">
             <p className="text-cyan-500 uppercase tracking-[5px] text-sm font-semibold">
               Why AI
@@ -1421,7 +1421,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {[
               {
                 number: "01",

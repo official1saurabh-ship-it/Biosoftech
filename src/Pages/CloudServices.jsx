@@ -445,14 +445,14 @@ const CloudServices = () => {
             {/* HERO SECTION */}
             <section aria-label="Cloud services hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
                 <div className="w-full px-4 sm:px-6 lg:px-20">
-                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 Best Cloud Services
                                 <br />
                                 Company in India
                             </h1>
-                            <div className="mt-6 sm:mt-8 lg:mt-10 text-fluid-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-fluid-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-full lg:max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we provide strategic cloud services designed to scale with your business, reduce costs, and ensure long-term security. Our expertise helps transform your operations into efficient, future-ready systems that support growth and innovation.
                                 </p>
@@ -463,22 +463,22 @@ const CloudServices = () => {
 
                             <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-fluid-2xl md:text-[52px] font-bold">Google</h3>
-                                    <div className="text-[#f4a300] text-fluid-lg md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-fluid-sm md:text-base">Rated 4.9/5 Stars</p>
+                                    <h3 className="text-fluid-2xl lg:text-[52px] font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-fluid-lg lg:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-fluid-sm lg:text-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-fluid-2xl md:text-[52px] font-bold">Justdial</h3>
-                                    <p className="border-t border-black text-fluid-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                    <h3 className="text-fluid-2xl lg:text-[52px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-fluid-sm lg:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-fluid-2xl md:text-[52px] font-bold">Trustpilot</h3>
-                                    <div className="text-[#f4a300] text-fluid-lg md:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-fluid-sm md:text-base">Rated 4.8/5 Stars</p>
+                                    <h3 className="text-fluid-2xl lg:text-[52px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-fluid-lg lg:text-[34px]">★★★★★</div>
+                                    <p className="font-semibold text-fluid-sm lg:text-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
 
-                            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
+                            <div className="mt-6 sm:mt-10 flex flex-col lg:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                                 <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
@@ -498,7 +498,7 @@ const CloudServices = () => {
             {/* STARTUP CLOUD SECTION */}
             <section className="hidden lg:block relative overflow-hidden bg-[#f8fbff] px-4 py-10 md:py-16">
                 <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white to-transparent" aria-hidden="true"></div>
-                <div className="relative mx-auto max-w-7xl px-6 lg:px-20">
+                <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
                     <div className="text-center mb-12">
                         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">Cloud infrastructure for growing businesses</p>
                         <h2 className="max-w-4xl mx-auto text-fluid-3xl font-semibold leading-tight text-slate-950">
@@ -622,7 +622,7 @@ const CloudServices = () => {
             {/* WHY CHOOSE SECTION */}
             <section className="relative z-30 min-h-screen overflow-hidden py-16 md:py-24 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
                 <div className="absolute inset-0 bg-white/30" />
-                <div className="relative z-10 w-full px-6 lg:px-20">
+                <div className="relative z-10 w-full px-4 sm:px-6 lg:px-20">
                     <div>
                         <h2 className="text-fluid-4xl font-bold leading-tight text-slate-900">Why Choose <span className="text-blue-600">Biosoftech Cloud</span> Services</h2>
                         <div className="w-20 h-1 bg-blue-600 mt-4 rounded-full"></div>
@@ -630,7 +630,7 @@ const CloudServices = () => {
                     <p className="text-fluid-base text-slate-600 leading-relaxed mt-6 mb-6">
                         Biosoftech Solutions offers a developer-friendly cloud platform designed for simplicity, performance, and affordability. Our services provide a streamlined alternative to complex enterprise systems, making them ideal for startups, SaaS platforms, and fast-growing businesses. With powerful infrastructure and easy-to-use tools, we enable teams to deploy applications quickly without unnecessary complexity.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         {[
                             "Simple & Developer-Friendly Platform",
                             "Cost-Effective Cloud Hosting",
@@ -755,7 +755,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#EEF3FB] py-12 md:py-20 overflow-hidden">
-                <div className="w-full px-6">
+                <div className="w-full px-4 sm:px-6">
                     <div className="grid lg:grid-cols-[1fr_0.8fr] xl:grid-cols-[1fr_700px] gap-10 items-stretch">
 
                         {/* LEFT */}
@@ -793,7 +793,7 @@ const CloudServices = () => {
                                         </button>
                                     </div>
                                     <div className="mt-8 border-t border-[#21375E]" />
-                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
                                         {[
                                             ["Low", "Downtime risk"],
                                             ["20–35%", "Cost saving focus"],
@@ -862,8 +862,8 @@ const CloudServices = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#020817] text-white py-20">
-                <div className="w-full px-6">
+            <section className="bg-[#020817] text-white py-16 lg:py-20">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* Heading */}
                     <h2 className="text-center text-3xl sm:text-4xl md:text-[42px] font-bold mb-20">
@@ -940,8 +940,8 @@ const CloudServices = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#f5f5f5] py-20 overflow-hidden">
-                <div className="w-full px-6 lg:px-12">
+            <section className="bg-[#f5f5f5] py-16 lg:py-20 overflow-hidden">
+                <div className="w-full px-4 sm:px-6 lg:px-12">
 
                     <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-center">
 
@@ -1036,7 +1036,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#f4f4f4] py-14 lg:py-20">
-                <div className="w-full px-6">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* Heading */}
                     <div className="text-center mb-14">
@@ -1051,7 +1051,7 @@ const CloudServices = () => {
                     </div>
 
                     {/* Cards */}
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -1108,7 +1108,7 @@ const CloudServices = () => {
                 </div>
             </section>
             <section className="bg-[#f3f3f3] py-16 lg:py-20">
-                <div className="w-full px-6">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* Heading */}
                     <h2 className="text-center text-[42px] lg:text-[52px] font-bold text-[#333] mb-14">
@@ -1214,8 +1214,8 @@ const CloudServices = () => {
 
                 </div>
             </section>
-            <section className="bg-black py-20">
-                <div className="w-full px-6">
+            <section className="bg-black py-16 lg:py-20">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* Heading */}
                     <div className="text-center mb-14">
@@ -1231,7 +1231,7 @@ const CloudServices = () => {
                     </div>
 
                     {/* Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
 
                         {industries.map((item, index) => {
                             const Icon = item.icon;

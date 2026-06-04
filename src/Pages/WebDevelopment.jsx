@@ -254,14 +254,14 @@ const WebDevelopment = () => {
             />
             <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
                 <div className="w-full px-4 sm:px-6 lg:px-20">
-                    <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
-                        <div className="flex flex-col text-center md:text-left">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
+                        <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 Build Websites That
                                 <br />
                                 Drive Growth
                             </h1>
-                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-[900px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-full lg:max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we don&apos;t just create websites &mdash; we build powerful digital platforms that help businesses scale, engage customers, and achieve measurable success.
                                 </p>
@@ -271,21 +271,21 @@ const WebDevelopment = () => {
                             </div>
                             <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Google</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[28px] lg:text-[34px]">★★★★★</div>
                                     <p className="font-semibold text-fluid-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Justdial</h3>
-                                    <p className="border-t border-black text-xs sm:text-sm md:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-xs sm:text-sm md:text-[18px] lg:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[52px] font-bold">Trustpilot</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[34px]">★★★★★</div>
+                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[28px] lg:text-[34px]">★★★★★</div>
                                     <p className="font-semibold text-fluid-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
-                            <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-0 justify-center lg:justify-start">
+                            <div className="mt-6 sm:mt-10 flex flex-col lg:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                                 <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
@@ -301,7 +301,7 @@ const WebDevelopment = () => {
                 </div>
             </section>
             <section className="bg-[#f8f8f8] py-10 overflow-hidden">
-                <div className="w-full px-6">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* TOP LABEL */}
                     <div className="flex items-center justify-center gap-4 mb-6">
@@ -315,17 +315,17 @@ const WebDevelopment = () => {
                     </div>
 
                     {/* HEADING */}
-                    <h2 className="text-center text-[#101126] font-bold leading-tight text-4xl md:text-5xl lg:text-[54px] xl:text-[64px]">
+                    <h2 className="text-center text-[#101126] font-bold leading-tight text-fluid-4xl lg:text-[54px] xl:text-[64px]">
                         Websites That Speak
                         <br />
                         Your Customer&apos;s Language
                     </h2>
 
                     {/* CONTENT */}
-                    <div className="grid lg:grid-cols-[400px_1fr_300px] gap-10 items-center mt-10">
+                    <div className="flex flex-col lg:grid lg:grid-cols-[400px_1fr_300px] gap-10 items-center mt-10">
 
                         {/* LEFT IMAGE */}
-                        <div>
+                        <div className="max-w-[400px] mx-auto">
                             <img
                                 src={wordpressDevelopment}
                                 alt="Multilingual Development"
@@ -339,7 +339,7 @@ const WebDevelopment = () => {
                         {/* CENTER CONTENT */}
                         <div>
 
-                            <p className="text-[#5d6070] text-[18px] leading-8">
+                            <p className="text-[#5d6070] text-fluid-lg leading-8">
                                 At Biosoftech Solutions, we specialize in building websites
                                 that go beyond borders. Our team designs and develops platforms
                                 in multiple languages, ensuring your business connects with
@@ -359,7 +359,7 @@ const WebDevelopment = () => {
                                         Easy
                                     </h3>
 
-                                    <p className="text-[#5f6270] text-[18px] mt-1">
+                                    <p className="text-[#5f6270] text-fluid-lg mt-1">
                                         Seamless integration of multiple languages.
                                     </p>
                                 </div>
@@ -517,14 +517,14 @@ const WebDevelopment = () => {
 
 
 
-            <section className="bg-[#F7F3F3] py-24 overflow-hidden">
-                <div className="w-full px-6">
+            <section className="bg-[#F7F3F3] py-16 lg:py-24 overflow-hidden">
+                <div className="w-full px-4 sm:px-6">
 
                     {/* Badge */}
 
                     <div className="flex justify-center">
                         <div className="px-6 py-2 rounded-full bg-[#F1E6FF]">
-                            <span className="text-[#7A36FF] text-4xl font-bold uppercase tracking-wider">
+                            <span className="text-[#7A36FF] text-fluid-2xl lg:text-4xl font-bold uppercase tracking-wider">
                                 PLAN OF ACTION
                             </span>
                         </div>
@@ -532,17 +532,17 @@ const WebDevelopment = () => {
 
                     {/* Heading */}
 
-                    <h2 className="text-center text-[#080B1D] font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-9xl mt-8">
+                    <h2 className="text-center text-[#080B1D] font-black text-fluid-4xl lg:text-7xl xl:text-9xl mt-8">
                         How We Execute Success
                     </h2>
 
                     {/* Top Row */}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mt-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-20">
 
                         {/* Step 2 */}
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
 
                             <img
                                 src={steps[1].image}
@@ -558,18 +558,18 @@ const WebDevelopment = () => {
                             />
 
                             <div className="text-center">
-                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mb-3 lg:mb-5">
                                     {steps[1].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
                                     {steps[1].desc}
                                 </p>
 
                                 <button
                                     onMouseEnter={() => setActive(2)}
                                     className={`
-                  mt-6 md:mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  mt-6 lg:mt-8 text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 2
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -583,7 +583,7 @@ const WebDevelopment = () => {
 
                         {/* Step 4 */}
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
 
                             <img
                                 src={steps[3].image}
@@ -599,18 +599,18 @@ const WebDevelopment = () => {
                             />
 
                             <div className="text-center">
-                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mb-3 lg:mb-5">
                                     {steps[3].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
                                     {steps[3].desc}
                                 </p>
 
                                 <button
                                     onMouseEnter={() => setActive(4)}
                                     className={`
-                  mt-6 md:mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  mt-6 lg:mt-8 text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 4
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -629,18 +629,18 @@ const WebDevelopment = () => {
 
                     {/* Bottom Row */}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mt-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12">
 
                         {/* Step 1 */}
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
 
                             <div className="text-center">
 
                                 <button
                                     onMouseEnter={() => setActive(1)}
                                     className={`
-                  text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 1
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -650,11 +650,11 @@ const WebDevelopment = () => {
                                     01
                                 </button>
 
-                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 lg:mt-5 mb-3 lg:mb-5">
                                     {steps[0].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
                                     {steps[0].desc}
                                 </p>
                             </div>
@@ -675,14 +675,14 @@ const WebDevelopment = () => {
 
                         {/* Step 3 */}
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
 
                             <div className="text-center">
 
                                 <button
                                     onMouseEnter={() => setActive(3)}
                                     className={`
-                  text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
                   ${active === 3
                                             ? "text-[#A051FF]"
                                             : "text-[#F0D8CE]"
@@ -692,11 +692,11 @@ const WebDevelopment = () => {
                                     03
                                 </button>
 
-                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 md:mt-5 mb-3 md:mb-5">
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 lg:mt-5 mb-3 lg:mb-5">
                                     {steps[2].title}
                                 </h3>
 
-                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 md:leading-10 max-w-md">
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
                                     {steps[2].desc}
                                 </p>
                             </div>
@@ -721,8 +721,8 @@ const WebDevelopment = () => {
 
 
             <section className="bg-[#f5f5f5] py-8 lg:py-12">
-                <div className="w-full px-4">
-                    <div className="grid lg:grid-cols-2 gap-10 items-center">
+                <div className="w-full px-4 sm:px-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
                         {/* Left Image */}
                         <div className="flex justify-center">
@@ -739,7 +739,7 @@ const WebDevelopment = () => {
                         {/* Right Content */}
                         <div className="w-full">
 
-                            <h2 className="text-[#10002b] text-3xl md:text-4xl lg:text-[52px] xl:text-[64px] font-bold leading-tight mb-8">
+                            <h2 className="text-[#10002b] text-fluid-4xl lg:text-[52px] xl:text-[64px] font-bold leading-tight mb-8">
                                 Get Started With Building Your Dream Website
                             </h2>
 
@@ -802,7 +802,7 @@ const WebDevelopment = () => {
                     </div>
 
                     {/* Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
                         {services.map((service, index) => {
                             const Icon = service.icon;
 
@@ -881,7 +881,7 @@ const WebDevelopment = () => {
                             immediate requirements while preparing you for future growth.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-10">
                             {benefits.map((item, index) => (
                                 <div key={index}>
                                     <div className="flex items-center gap-3 mb-3">
@@ -908,7 +908,7 @@ const WebDevelopment = () => {
 
 
             <section className="bg-[#1d2b42] py-16 md:py-20">
-                <div className="w-full px-6 text-center">
+                <div className="w-full px-4 sm:px-6 text-center">
                     <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
                         Ready to Transform Your Business?
                     </h2>
@@ -946,7 +946,7 @@ const WebDevelopment = () => {
                     </h2>
 
                     {/* Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                         {industries.map((item, index) => {
                             const Icon = item.icon;
 
@@ -996,7 +996,7 @@ const WebDevelopment = () => {
 
 
             <section className="w-full bg-[#f6521e] py-16 md:py-20">
-                <div className="w-full px-6 text-center">
+                <div className="w-full px-4 sm:px-6 text-center">
                     {/* Heading */}
                     <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
                         Let&apos;s Build Your Digital Future
@@ -1035,8 +1035,8 @@ const WebDevelopment = () => {
                 </div>
             </section>
 
-            <section className="bg-[#f7f7f7] py-20 lg:py-24">
-                <div className="w-full px-6">
+            <section className="bg-[#f7f7f7] py-16 lg:py-24">
+                <div className="w-full px-4 sm:px-6">
                     {/* Heading */}
                     <div className="text-center max-w-5xl mx-auto">
                         <h2 className="text-[#1d2b42] text-fluid-4xl font-bold leading-tight">

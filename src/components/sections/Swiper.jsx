@@ -8,6 +8,7 @@ import img2 from "../../assets/service-swiper-smo.webp";
 import img3 from "../../assets/service-swiper-seo.webp";
 import img4 from "../../assets/service-swiper-web.webp";
 import img5 from "../../assets/service-swiper-smm.webp";
+import img6 from "../../assets/hospitality_management.webp";
 
 
 
@@ -45,7 +46,7 @@ const services = [
     {
         title: "Hospitality Management",
         description: "Software designed for hotels and restaurants to manage rooms, staff, menus, and customer service effortlessly and reliably.",
-        image: img2,
+        image: img6,
     },
 
 
