@@ -10,6 +10,7 @@ const WhyChooseUs = lazy(() => import('../components/sections/WhyChooseUs'))
 const AdNetwork = lazy(() => import('../components/sections/AdNetwork'))
 const GrowthSection = lazy(() => import('../components/sections/GrowthSection'))
 const ConsultationSection = lazy(() => import('../components/sections/ConsultationSection'))
+const FaqSection = lazy(() => import('../components/sections/FaqSection'))
 const TestimonialSection = lazy(() => import('../components/sections/TestimonialSection'))
 
 const fallback = <div className="min-h-[200px]" />
@@ -33,6 +34,7 @@ const Home = () => {
       <Suspense fallback={fallback}><AdNetwork /></Suspense>
       <Suspense fallback={fallback}><GrowthSection /></Suspense>
       <Suspense fallback={fallback}><ConsultationSection /></Suspense>
+      <Suspense fallback={fallback}><FaqSection /></Suspense>
       <Suspense fallback={fallback}><TestimonialSection /></Suspense>
     </main>
   )

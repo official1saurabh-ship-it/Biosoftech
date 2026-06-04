@@ -34,25 +34,25 @@ export default function PerformanceSection() {
         Book a Free Consultation
       </a>
 
-      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-20 py-12 sm:py-16 lg:py-24">
+      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20">
 
-        <div className="grid lg:grid-cols-2 gap-10 md:gap-6 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-8 lg:gap-16 items-center">
 
           {/* LEFT */}
 
           <div className="text-white">
 
-            <p className="text-[16px] font-semibold mb-5">
+            <p className="text-2xl font-semibold mb-6">
               We Measure Our Performance
             </p>
 
             <h2
               className="
-              text-[28px]
-              sm:text-[34px]
-              md:text-[42px]
-              lg:text-[48px]
-              xl:text-[52px]
+              text-[24px]
+              sm:text-[30px]
+              md:text-[36px]
+              lg:text-[42px]
+              xl:text-[48px]
               leading-[1.05]
               font-black
               max-w-[620px]
@@ -64,9 +64,8 @@ export default function PerformanceSection() {
             <p
               className="
               mt-8
-              text-base
-              sm:text-[20px]
-              leading-[1.8]
+              text-2xl
+              leading-[1.7]
               max-w-[620px]
               opacity-90
             "
@@ -79,34 +78,34 @@ export default function PerformanceSection() {
 
             {/* Stats */}
 
-            <div className="flex gap-8 sm:gap-12 lg:gap-16 mt-10 lg:mt-16 flex-wrap">
+            <div className="flex gap-10 sm:gap-14 lg:gap-20 mt-12 lg:mt-16 flex-wrap">
 
               <div>
-                <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
                   30+
                 </span>
 
-                <p className="text-base sm:text-lg lg:text-[22px]">
+                <p className="text-sm sm:text-base lg:text-[18px] mt-2">
                   Projects Delivered
                 </p>
               </div>
 
               <div>
-                <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
                   50+
                 </span>
 
-                <p className="text-base sm:text-lg lg:text-[22px]">
+                <p className="text-sm sm:text-base lg:text-[18px] mt-2">
                   Clients Served
                 </p>
               </div>
 
               <div>
-                <span className="text-[32px] sm:text-[38px] md:text-[48px] lg:text-[56px] font-black">
+                <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
                   80%
                 </span>
 
-                <p className="text-base sm:text-lg lg:text-[22px]">
+                <p className="text-sm sm:text-base lg:text-[18px] mt-2">
                   Productivity Boost
                 </p>
               </div>
@@ -133,7 +132,7 @@ export default function PerformanceSection() {
               width="650"
               height="400"
               className="
-              w-[650px]
+              w-[550px]
               max-w-full
               object-contain
             "

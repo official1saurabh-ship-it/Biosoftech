@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Calendar, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -10,12 +10,23 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
+      const currentScrollY = window.scrollY;
+      setIsScrolled(currentScrollY > 30);
+
+      if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -86,7 +97,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed left-0 w-full z-50 transition-[top,opacity,transform] duration-700 flex justify-center pointer-events-none ${isScrolled ? 'top-1 sm:top-4' : 'top-1 sm:top-8'}`}>
+      <header className={`fixed left-0 w-full z-50 transition-[top,opacity,transform] duration-700 flex justify-center pointer-events-none ${isScrolled ? 'top-1 sm:top-4' : 'top-1 sm:top-8'} ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

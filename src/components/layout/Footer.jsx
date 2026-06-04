@@ -18,10 +18,10 @@ const helpfulLinks = [
 ];
 
 const resourceLinks = [
-  { name: 'Career', to: '#' },
-  { name: 'Our Teams', to: '#' },
-  { name: 'Testimonials', to: '#' },
-  { name: 'Faqs', to: '#' },
+  { name: 'Career', to: '/career' },
+  { name: 'Our Teams', to: '/teams' },
+  { name: 'Testimonials', to: '/#testimonials' },
+  { name: 'Faqs', to: '/#faq' },
 ];
 
 const serviceLinks = [
@@ -41,17 +41,17 @@ const Footer = () => {
   const [callPopup, setCallPopup] = useState({ visible: false, number: '' });
 
   return (
-    <footer className="bg-gray-50 pt-8 sm:pt-12 overflow-hidden">
+    <footer className="bg-gray-50 pt-6 sm:pt-10 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* TOP ROW */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-4 lg:gap-6 mb-8 sm:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 mb-6 sm:mb-8">
           {/* Helpful Links */}
           <div>
-            <h4 className="text-xl font-bold mb-4 relative inline-block">
+            <h4 className="text-xl font-bold mb-3 relative inline-block">
               Helpful Links
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {helpfulLinks.map((item) => (
                 <li key={item.name}>
                   <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
@@ -65,11 +65,11 @@ const Footer = () => {
 
           {/* Our Services */}
           <div>
-            <h4 className="text-xl font-bold mb-4 relative inline-block">
+            <h4 className="text-xl font-bold mb-3 relative inline-block">
               Our Services
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {serviceLinks.map((item) => (
                 <li key={item.name}>
                   <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
@@ -83,11 +83,11 @@ const Footer = () => {
 
           {/* Our Packages */}
           <div>
-            <h4 className="text-xl font-bold mb-4 relative inline-block">
+            <h4 className="text-xl font-bold mb-3 relative inline-block">
               Our Packages
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {packageLinks.map((item) => (
                 <li key={item.name}>
                   <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
@@ -101,11 +101,11 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="text-xl font-bold mb-4 relative inline-block">
+            <h4 className="text-xl font-bold mb-3 relative inline-block">
               Resources
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary-1 rounded-full" />
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {resourceLinks.map((item) => {
                 const isExternal = item.to.startsWith('http') || item.to === '#';
                 const Component = isExternal ? 'a' : Link;
@@ -132,7 +132,7 @@ const Footer = () => {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary-1 text-white rounded-lg font-semibold hover:opacity-90 transition-all w-fit mb-2"
+              className="inline-flex items-center justify-center px-4 py-2 bg-primary-1 text-white rounded-lg font-semibold hover:opacity-90 transition-all w-fit mb-2 text-sm"
             >
               Get in Touch
             </Link>
@@ -141,21 +141,21 @@ const Footer = () => {
         </div>
 
         {/* MIDDLE ROW */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10 border-t pt-8 sm:pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-7 mb-6 sm:mb-8 pt-6 sm:pt-8">
           <div>
             <Link
               to="/"
-              className="inline-block mb-3"
+              className="inline-block mb-2.5"
             >
               <img src={biosoftechLogo} alt="Biosoftech" className="h-5 sm:h-6 w-24 sm:w-32 object-contain" />
             </Link>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="text-gray-600 mb-3 leading-relaxed">
               Building innovative software solutions that empower businesses to grow, adapt, and succeed in the digital world.
             </p>
           </div>
           <div>
-            <div className="space-y-4">
-              <div className="flex gap-4">
+            <div className="space-y-3">
+              <div className="flex gap-3">
                 <div className="text-primary-1 mt-1"><FaHome /></div>
                 <div>
                   <p className="font-bold text-gray-900">Head Office</p>
@@ -169,13 +169,13 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <div className="text-primary-1"><FaEnvelope /></div>
                 <a href="mailto:info@biosoftech.com" className="text-gray-600 text-sm hover:text-primary-1 transition-colors">
                   info@biosoftech.com
                 </a>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
                 <button
                   onClick={() => setCallPopup({ visible: true, number: '+91-9044425858' })}
@@ -184,7 +184,7 @@ const Footer = () => {
                   +91-9044425858
                 </button>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <div className="text-primary-1"><FaPhoneAlt /></div>
                 <button
                   onClick={() => setCallPopup({ visible: true, number: '+916209688930' })}
@@ -198,7 +198,7 @@ const Footer = () => {
         </div>
 
         {/* BOTTOM ROW */}
-        <div className="border-t py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm text-center sm:text-left">
             Copyright 2021-26 | Biosoftech Pvt. Ltd. All Right Reserved
           </p>

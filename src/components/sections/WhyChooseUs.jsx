@@ -86,8 +86,8 @@ export default function WhyChooseUs() {
 
       bg-[#12003f]
 
-      min-h-screen
-      lg:min-h-screen
+      min-h-[550px]
+      lg:min-h-[700px]
 
       flex
       items-center
@@ -200,13 +200,13 @@ to-[#12003f]/40
           lg:gap-12
           xl:gap-16
 
-          items-center
+          items-stretch
           "
         >
 
           {/* LEFT */}
 
-          <div className="w-full min-w-0 text-center lg:text-left">
+          <div className="w-full min-w-0 text-center lg:text-left self-center">
 
             <span
               className="
@@ -222,7 +222,7 @@ to-[#12003f]/40
               text-[#8e3fff]
 
               font-semibold
-              text-sm
+              text-3xl
               "
             >
               WHY CHOOSE US
@@ -230,7 +230,7 @@ to-[#12003f]/40
 
             <h2
               className="
-             mt-4
+             mt-6
 
               text-white
 
@@ -239,10 +239,9 @@ to-[#12003f]/40
               leading-[1.1]
 
               text-[32px]
-              sm:text-[44px]
-              lg:text-[48px]
-              xl:text-[56px]
-              2xl:text-[64px]
+              sm:text-[40px]
+              lg:text-[44px]
+              xl:text-[52px]
               "
             >
               Your Challenges,
@@ -287,12 +286,11 @@ to-[#12003f]/40
               <button
                 onClick={() => navigate("/contact")}
                 className="
-                h-[54px]
-                sm:h-[64px]
-                lg:h-[72px]
+                h-[48px]
+                sm:h-[60px]
 
-                px-8
-                sm:px-10
+                px-6
+                sm:px-8
 
                 rounded-full
 
@@ -312,14 +310,12 @@ to-[#12003f]/40
                 onClick={() => navigate("/contact")}
                 aria-label="Get Quote"
                 className="
-                -ml-5
+                -ml-4
 
-                w-[54px]
-                h-[54px]
-                sm:w-[64px]
-                sm:h-[64px]
-                lg:w-[72px]
-                lg:h-[72px]
+                w-[48px]
+                h-[48px]
+                sm:w-[60px]
+                sm:h-[60px]
 
                 rounded-full
 
@@ -327,8 +323,7 @@ to-[#12003f]/40
 
                 text-white
 
-                text-[22px]
-                sm:text-[28px]
+                text-lg
                 "
               >
                 ↗
@@ -338,8 +333,6 @@ to-[#12003f]/40
 
           </div>
 
-          {/* CENTER - Hidden on small laptops to save space, or kept on XL */}
-
           <motion.div
             style={{
               y: shouldAnimate ? womanY : 0,
@@ -347,19 +340,17 @@ to-[#12003f]/40
             }}
 
             className="
-relative
-min-w-0
+              relative
+              min-w-0
 
-hidden
-xl:flex
+              hidden
+              xl:flex
 
-justify-center
+              justify-center
 
-items-end
-
-h-[500px]
-xl:h-[600px]
-"
+              items-end
+              self-stretch
+            "
           >
 
             <img
@@ -369,28 +360,30 @@ xl:h-[600px]
               height="600"
 
               className="
-relative
+                relative
 
-z-20
+                z-20
 
-w-full
-max-w-[450px]
+                w-full
+                max-w-[380px]
+                h-[550px]
+                xl:h-[700px]
 
-mt-auto
+                object-contain
 
-object-contain
-
-self-end
-"
+                self-end
+              "
             />
 
           </motion.div>
+
           {/* RIGHT */}
 
           <div
             className="
             w-full
             min-w-0
+            self-center
 
             space-y-6
             lg:space-y-8
@@ -435,7 +428,7 @@ text-white
 font-bold
 
 text-[18px]
-lg:text-[22px]
+lg:text-[20px]
 
 leading-[1.2]
 "
@@ -450,7 +443,7 @@ mt-2
 text-white/85
 
 text-sm
-lg:text-[16px]
+lg:text-[15px]
 
 leading-[1.6]
 "
