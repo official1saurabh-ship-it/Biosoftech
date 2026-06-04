@@ -396,7 +396,7 @@ export default function About() {
               ))}
               <span className="ml-2 sm:ml-3 bg-purple-600 text-white rounded-full px-2 sm:px-3 py-1 text-fluid-sm font-bold shadow-lg">1k+</span>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 mt-6 sm:mt-8 md:mt-10 justify-center lg:justify-start">
+            <div className="flex flex-col lg:flex-row gap-3 sm:gap-4 md:gap-5 mt-6 sm:mt-8 md:mt-10 justify-center lg:justify-start">
               <Link to="/contact" className="bg-[#09090F] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center gap-2 font-bold hover:bg-purple-600 transition-all shadow-xl text-fluid-base min-h-[44px]"><Phone size={16} className="sm:w-[18px] sm:h-[18px]" />Book a Meeting</Link>
               <Link to="/contact" className="border-2 border-gray-200 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl inline-flex items-center justify-center font-bold hover:border-purple-600 hover:text-purple-600 transition-all text-fluid-base min-h-[44px]">📞 Talk To Us</Link>
             </div>
@@ -788,7 +788,7 @@ export default function About() {
 
 
       <section className="bg-[#f8f8f8] py-16">
-        <div className="max-w-full mx-auto px-6">
+        <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
 
             {/* LEFT SIDE */}
@@ -987,8 +987,8 @@ export default function About() {
 
 
 
-      <section className="bg-[#f8f8f8] py-20 overflow-hidden">
-        <div className="max-w-full mx-auto px-6">
+      <section className="bg-[#f8f8f8] py-16 lg:py-20 overflow-hidden">
+        <div className="max-w-full mx-auto px-4 sm:px-6">
 
           {/* Heading */}
           <div className="text-center mb-14">
@@ -1070,7 +1070,7 @@ export default function About() {
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[250px] bg-[#f1efff] rounded-t-full opacity-70" />
         <div className="absolute bottom-0 right-0 w-[450px] h-[200px] bg-[#f1efff] rounded-t-full opacity-70" />
 
-        <div className="max-w-full mx-auto px-6 relative z-10">
+        <div className="max-w-full mx-auto px-4 sm:px-6 relative z-10">
 
           {/* Heading */}
           <div className="text-center mb-16">
@@ -1087,25 +1087,25 @@ export default function About() {
           <div className="relative">
 
             {/* Center Line */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-[#dddaf5] -translate-x-1/2" />
 
             {timelineData.map((item, index) => (
               <div
                 key={item.year}
-                className="relative grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 md:gap-20 items-center mb-4 sm:mb-6 md:mb-12 lg:mb-16"
+                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 lg:gap-20 items-center mb-4 sm:mb-6 lg:mb-12 lg:mb-16"
               >
                 {/* Left Side */}
                 <div
                   className={item.side === "left"
-                    ? "flex justify-start md:justify-end"
-                    : "hidden md:block md:invisible"
+                    ? "flex justify-start lg:justify-end"
+                    : "hidden lg:block lg:invisible"
                   }
                 >
                   <div
-                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4 md:border-r-4"
+                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-l-4 lg:border-r-4"
                     style={{ borderColor: item.color }}
                   >
-                    <div className="md:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
+                    <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-fluid-2xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
@@ -1118,15 +1118,15 @@ export default function About() {
                 {/* Right Side */}
                 <div
                   className={item.side === "right"
-                    ? "flex justify-end md:justify-start"
-                    : "hidden md:block md:invisible"
+                    ? "flex justify-end lg:justify-start"
+                    : "hidden lg:block lg:invisible"
                   }
                 >
                   <div
-                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4 md:border-l-4"
+                    className="w-full max-w-[280px] sm:max-w-[330px] bg-white rounded-2xl p-5 sm:p-8 shadow-sm border-r-4 lg:border-l-4"
                     style={{ borderColor: item.color }}
                   >
-                    <div className="md:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
+                    <div className="lg:hidden text-lg font-bold mb-2" style={{ color: item.color }}>{item.year}</div>
                     <h3 className="font-bold text-fluid-2xl text-[#3d3a72] mb-3">
                       {item.title}
                     </h3>
@@ -1138,7 +1138,7 @@ export default function About() {
 
                 {/* Year */}
                 <div
-                  className="hidden md:block absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
+                  className="hidden lg:block absolute left-1/2 -translate-x-1/2 text-5xl font-bold"
                   style={{
                     color: item.color,
                     top: "50%",
@@ -1150,7 +1150,7 @@ export default function About() {
 
                 {/* Dot */}
                 <div
-                  className="hidden md:block absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
+                  className="hidden lg:block absolute left-1/2 w-5 h-5 rounded-full -translate-x-1/2"
                   style={{
                     backgroundColor: item.color,
                     top: "50%",
@@ -1172,7 +1172,7 @@ export default function About() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 max-w-full mx-auto px-6">
+        <div className="relative z-10 max-w-full mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* LEFT SIDE */}
@@ -1328,7 +1328,7 @@ export default function About() {
                   className="w-full p-4 bg-white rounded outline-none text-fluid-base flex-1"
                 />
 
-                <div className="bg-white rounded p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <div className="bg-white rounded p-4 flex flex-col lg:flex-row items-start lg:items-center gap-3">
                   <label className="text-fluid-base font-medium text-gray-700 whitespace-nowrap">
                     What is {captchaA} + {captchaB}?
                   </label>
@@ -1365,8 +1365,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-[#f5f5f5] py-20">
-        <div className="max-w-full mx-auto px-6">
+      <section className="bg-[#f5f5f5] py-16 lg:py-20">
+        <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <p className="text-black text-xl mb-2">Blogs</p>
             <h2 className="text-5xl font-light text-black">
