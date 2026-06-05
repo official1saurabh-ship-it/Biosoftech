@@ -169,10 +169,10 @@ const AppDevelopment = () => {
         { id: 2, title: "BUSINESS ANALYSIS", desc: "We refer to the pieces as code development guidelines.", img: "/process/analysis.png" },
         { id: 3, title: "DESIGN PROTOTYPE", desc: "We deploy wireframes to find issues before they develop.", img: "/process/design.png" },
         { id: 4, title: "UI DESIGN", desc: "We improve the appearance of elements till you're satisfied.", img: "/process/ui.png" },
-        { id: 5, title: "APP DEVELOPMENT", desc: "Our technique for iterative programming improves with each stage.", img: "/process/dev.png" },
-        { id: 6, title: "BETA RELEASE", desc: "We developed a tiny group of users to test the app.", img: "/process/beta.png" },
-        { id: 7, title: "APP STORE LAUNCH", desc: "The fresh application is available for download.", img: "/process/store.png" },
         { id: 8, title: "POST DELIVERY SUPPORT", desc: "Complete support for post-launch customer satisfaction.", img: "/process/support.png" },
+        { id: 7, title: "APP STORE LAUNCH", desc: "The fresh application is available for download.", img: "/process/store.png" },
+        { id: 6, title: "BETA RELEASE", desc: "We developed a tiny group of users to test the app.", img: "/process/beta.png" },
+        { id: 5, title: "APP DEVELOPMENT", desc: "Our technique for iterative programming improves with each stage.", img: "/process/dev.png" },
     ];
 
     const brandPoints = [
@@ -503,7 +503,7 @@ const AppDevelopment = () => {
                                     and accelerate business growth.
                                 </p>
                                 <p className="mt-4 sm:mt-6 lg:mt-10">
-                                    With <span className="font-bold">500+ projects delivered</span> and <span className="font-bold">10+ years of experience</span>, Biosoftech Solutions is your trusted partner for end-to-end app development.
+                                    With <span className="font-bold">25+ projects delivered</span> and <span className="font-bold">2+ years of experience</span>, Biosoftech Solutions is your trusted partner for end-to-end app development.
                                 </p>
                             </div>
                             <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
@@ -539,7 +539,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 2: Lift Your Brand */}
-            <section className="overflow-hidden py-10 sm:py-12 md:py-20">
+            <section className="overflow-hidden py-10 sm:py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                         <div className="text-center lg:text-left">
@@ -566,7 +566,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 3: User-Centric */}
-            <section className="bg-[#f7f7f7] overflow-hidden py-16 md:py-24">
+            <section className="bg-[#f7f7f7] overflow-hidden py-0">
                 <div className="w-full px-4 sm:px-6 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="flex justify-center items-center min-h-[250px] sm:min-h-[300px] lg:min-h-[520px] order-2 lg:order-1">
@@ -590,7 +590,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 4: Unleash Power */}
-            <section id="app-development" className="relative overflow-hidden bg-[#f4f4f4] py-16 md:py-20">
+            <section id="app-development" className="relative overflow-hidden bg-[#f4f4f4] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
                         <div className="max-w-full lg:max-w-[620px] text-center lg:text-left mx-auto lg:mx-0">
@@ -621,7 +621,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 5: Our Process */}
-            <section className="bg-[#fbfbfb] py-12 sm:py-16 md:py-24 overflow-hidden">
+            <section className="bg-[#fbfbfb] py-10 sm:py-12 md:py-16 overflow-hidden">
                 <div className="w-full px-4 sm:px-6">
                     <h2 className="text-center text-fluid-4xl font-bold mb-10 sm:mb-16 md:mb-20">
                         Our Process to <span className="text-orange-500">Success</span>
@@ -637,20 +637,31 @@ const AppDevelopment = () => {
                                 </div>
                                 <h3 className="font-bold text-xl md:text-[20px] mb-3">{item.title}</h3>
                                 <p className="text-gray-700 text-fluid-base leading-relaxed max-w-[300px]">{item.desc}</p>
-                                {item.id !== 8 && (
-                                    <div className={`hidden lg:block absolute -right-[100px] w-[200px] h-[100px] ${item.id % 2 === 1 ? 'top-[25px]' : 'top-[30px]'}`}>
-                                        <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <defs>
-                                                <marker id={`arrow-${item.id}`} markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
-                                                    <polygon points="0 0, 10 4, 0 8" fill="#f97316" />
-                                                </marker>
-                                            </defs>
-                                            {item.id % 2 === 1 ? (
-                                                <path d="M 0 20 Q 100 100 200 20" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
-                                            ) : (
-                                                <path d="M 0 80 Q 100 0 200 80" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
-                                            )}
-                                        </svg>
+                                {item.id !== 5 && (
+                                    <div className={`hidden lg:block absolute ${item.id === 4 ? '-bottom-[70px] left-1/2 -translate-x-1/2 w-[60px] h-[100px]' : '-right-[100px] w-[200px] h-[100px]'} ${item.id !== 4 ? (item.id % 2 === 1 ? 'top-[45px]' : 'top-[10px]') : ''}`}>
+                                        {item.id === 4 ? (
+                                            <svg width="60" height="100" viewBox="0 0 60 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <marker id={`arrow-${item.id}`} markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+                                                        <polygon points="0 0, 10 4, 0 8" fill="#f97316" />
+                                                    </marker>
+                                                </defs>
+                                                <path d="M 30 0 Q 30 50 30 85" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
+                                            </svg>
+                                        ) : (
+                                            <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <marker id={`arrow-${item.id}`} markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+                                                        <polygon points="0 0, 10 4, 0 8" fill="#f97316" />
+                                                    </marker>
+                                                </defs>
+                                                {item.id % 2 === 1 ? (
+                                                    <path d="M 0 20 Q 100 100 200 20" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
+                                                ) : (
+                                                    <path d="M 0 80 Q 100 0 200 80" stroke="#f97316" strokeWidth="3" strokeDasharray="8 6" fill="none" markerEnd={`url(#arrow-${item.id})`} />
+                                                )}
+                                            </svg>
+                                        )}
                                     </div>
                                 )}
                             </div>
@@ -682,9 +693,9 @@ const AppDevelopment = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-4 sm:mt-6 lg:mt-0 h-full">
                             {stats.map((item, index) => (
                                 <div key={index} className="bg-orange-500 border border-gray-200 rounded-[16px] p-2 sm:p-3 md:p-4 min-h-[40px] sm:min-h-[60px] md:min-h-[80px] hover:shadow-xl transition flex flex-col items-center lg:items-start text-center lg:text-left h-full">
-                                    <img src={item.img} alt={item.title} loading="lazy" width="400" height="80" className="w-full h-[30px] sm:h-[30px] md:h-[40px] object-contain" />
+                                    <img src={item.img} alt={item.title} loading="lazy" width="200" height="200" className="w-auto h-[30px] sm:h-[30px] md:h-[40px] object-contain" />
                                     <h3 className="mt-1 sm:mt-2 md:mt-2 text-lg sm:text-xl md:text-[28px] font-bold text-[#4f1d91]">{item.value}</h3>
-                                    <p className="mt-0 sm:mt-1 md:mt-1 text-[10px] sm:text-[11px] md:text-[13px] font-semibold leading-snug text-[#171212]">{item.title}</p>
+                                    <p className="mt-0 sm:mt-1 md:mt-1 text-3xl font-bold leading-snug text-[#171212]">{item.title}</p>
                                 </div>
                             ))}
                         </div>
@@ -693,7 +704,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 7: Technology & Frameworks Categories */}
-            <section className="relative bg-[#f7f7f7] py-16 md:py-24 overflow-hidden">
+            <section className="relative bg-[#f7f7f7] py-12 md:py-16 overflow-hidden">
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] md:w-[900px] h-[300px] md:h-[500px] bg-white/40 blur-[80px] md:blur-[140px] rounded-full" />
                 <div className="relative w-full px-6">
                     <div className="text-center w-full">
@@ -725,7 +736,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 8: Steps */}
-            <section className="bg-[#f8f8f8] py-16 md:py-20">
+            <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="text-center lg:text-left">
@@ -778,7 +789,7 @@ const AppDevelopment = () => {
             </section>
 
             {/* Section 9: Tech Work On Tabs */}
-            <section className="bg-[#f8f8f8] py-16 md:py-24">
+            <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6">
                     <div className="text-center">
                         <h2 className="text-fluid-4xl lg:text-[52px] xl:text-[64px] font-semibold leading-tight lg:leading-[1.15]">
@@ -810,7 +821,7 @@ const AppDevelopment = () => {
                 </div>
             </section>
 
-            <section className="bg-[#f6f6f6] py-16 md:py-20">
+            <section className="bg-[#f6f6f6] py-12 md:py-16">
                 <div className="w-full px-4 md:px-0">
                     <div className="grid lg:grid-cols-[1.6fr_0.8fr] gap-0">
                         {/* LEFT GRID */}
@@ -928,28 +939,28 @@ const AppDevelopment = () => {
                             </div>
                         </div>
                         {/* RIGHT */}
-                        <div className="bg-[#081126] rounded-[24px] p-8 md:p-10 shadow-2xl text-white flex flex-col justify-center">
-                            <h3 className="text-2xl md:text-[38px] font-bold leading-tight">
+                        <div className="bg-[#081126] rounded-[24px] p-6 md:p-8 shadow-2xl text-white flex flex-col justify-center">
+                            <h3 className="text-xl md:text-[32px] font-bold leading-tight">
                                 What Actually Impacts iOS Cost
                             </h3>
-                            <div className="mt-8 md:mt-10 space-y-6 md:space-y-8">
+                            <div className="mt-4 md:mt-6 space-y-3 md:space-y-4">
                                 {points.map((point, i) => (
-                                    <div key={i} className="flex gap-4 items-start">
-                                        <div className="min-w-[28px] md:min-w-[32px] h-[28px] md:h-[32px] rounded-full bg-[#141E46] border border-[#3B49FF] flex items-center justify-center shrink-0 mt-1">
-                                            <Check size={14} />
+                                    <div key={i} className="flex gap-3 items-start">
+                                        <div className="min-w-[22px] md:min-w-[26px] h-[22px] md:h-[26px] rounded-full bg-[#141E46] border border-[#3B49FF] flex items-center justify-center shrink-0 mt-0.5">
+                                            <Check size={12} />
                                         </div>
-                                        <span className="text-base md:text-[20px] text-[#D7DAE3]">
+                                        <span className="text-sm md:text-[18px] text-[#D7DAE3]">
                                             {point}
                                         </span>
                                     </div>
                                 ))}
                             </div>
-                            <div className="mt-10 pt-8 border-t border-[#202A4C]">
-                                <p className="text-base md:text-[18px] text-[#9DA7C0] leading-relaxed">
+                            <div className="mt-6 pt-5 border-t border-[#202A4C]">
+                                <p className="text-sm md:text-[16px] text-[#9DA7C0] leading-relaxed">
                                     Higher upfront cost, but better monetization
                                     and user value.
                                 </p>
-                                <button onClick={() => navigate("/contact")} className="mt-8 w-full h-14 md:h-[64px] rounded-[14px] bg-white text-[#182033] text-lg md:text-[20px] font-semibold transition hover:scale-[1.02] active:scale-95">
+                                <button onClick={() => navigate("/contact")} className="mt-5 w-full h-12 md:h-[52px] rounded-[14px] bg-white text-[#182033] text-base md:text-[18px] font-semibold transition hover:scale-[1.02] active:scale-95">
                                     Get Your Project Scoped
                                 </button>
                             </div>
@@ -958,7 +969,7 @@ const AppDevelopment = () => {
                 </div>
             </section>
 
-            <section className="bg-[#f8f8f8] py-16 md:py-24">
+            <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-6">
                     {/* Heading */}
                     <div className="text-center w-full">
@@ -997,7 +1008,7 @@ const AppDevelopment = () => {
                 </div>
             </section>
 
-            <section className="bg-[#f8f8f8] py-16 md:py-24">
+            <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-6">
                     {/* Heading */}
                     <h2 className="text-center text-3xl md:text-5xl lg:text-[62px] font-semibold leading-tight md:leading-[1.15]">
@@ -1105,53 +1116,53 @@ const AppDevelopment = () => {
                 </div>
             </section>
 
-            <section className="w-full bg-[#efefef] py-12 sm:py-16 md:py-24">
+            <section className="w-full bg-[#efefef] py-4 sm:py-5 md:py-6">
                 <div className="w-full px-4 sm:px-6 md:px-8">
-                    <h2 className="text-fluid-4xl lg:text-[64px] font-bold text-[#181818] leading-tight text-center lg:text-left">
+                    <h2 className="text-fluid-2xl lg:text-[36px] font-bold text-[#181818] leading-tight text-center lg:text-left">
                         App Development FAQs
                     </h2>
 
-                    <p className="mt-4 sm:mt-6 md:mt-8 max-w-full lg:max-w-[900px] text-fluid-lg leading-relaxed md:leading-[2] text-[#444] text-center lg:text-left mx-auto lg:mx-0">
+                    <p className="mt-1 sm:mt-2 md:mt-3 max-w-full lg:max-w-[900px] text-fluid-sm md:text-fluid-base leading-relaxed text-[#444] text-center lg:text-left mx-auto lg:mx-0">
                         Our skilled Android developers have answered some frequently asked
                         questions about Android development, and we have compiled them into a
                         list for your convenience.
                     </p>
 
-                    <div className="mt-8 sm:mt-12 md:mt-20">
+                    <div className="mt-3 sm:mt-4 md:mt-5">
                         {faqData.map((faq) => (
                             <div key={faq.id} className="border-b border-[#e5e5e5]">
                                 <button
                                     onClick={() => setOpen(open === faq.id ? null : faq.id)}
-                                    className="w-full text-left py-4 sm:py-6 md:py-10 group"
+                                    className="w-full text-left py-1.5 sm:py-2 md:py-3 group"
                                 >
-                                    <div className="flex flex-col md:flex-row gap-3 sm:gap-4 md:gap-10">
-                                        <div className="md:min-w-[90px]">
-                                            <span className="text-2xl sm:text-3xl md:text-[58px] font-bold text-[#181818]">
+                                    <div className="flex flex-col md:flex-row gap-2 sm:gap-3 md:gap-5">
+                                        <div className="md:min-w-[60px]">
+                                            <span className="text-xl sm:text-2xl md:text-[36px] font-bold text-[#181818]">
                                                 {faq.id}
                                             </span>
                                         </div>
 
                                         <div className="flex-1">
-                                            <div className="flex justify-between items-start gap-3 sm:gap-4 md:gap-10">
-                                                <h3 className="text-base sm:text-xl md:text-[28px] leading-tight md:leading-[1.5] font-medium text-[#222]">
+                                            <div className="flex justify-between items-start gap-2 sm:gap-3 md:gap-5">
+                                                <h3 className="text-sm sm:text-base md:text-[20px] leading-tight font-medium text-[#222]">
                                                     {faq.title}
                                                 </h3>
                                                 <div className={`
-                          min-w-[32px] h-[32px] sm:min-w-[40px] sm:h-[40px] md:min-w-[56px] md:h-[56px]
+                          min-w-[24px] h-[24px] sm:min-w-[28px] sm:h-[28px] md:min-w-[36px] md:h-[36px]
                           rounded-full border border-[#666]
                           flex items-center justify-center
                           transition-all duration-300 shrink-0
                           ${open === faq.id ? "rotate-45 bg-black text-white" : ""}
                         `}>
-                                                    <ArrowUpRight size={16} className="sm:w-[20px] sm:h-[20px] md:w-[28px] md:h-[28px]" />
+                                                    <ArrowUpRight size={12} className="sm:w-[14px] sm:h-[14px] md:w-[18px] md:h-[18px]" />
                                                 </div>
                                             </div>
 
                                             <div className={`
                         overflow-hidden transition-all duration-500
-                        ${open === faq.id ? "max-h-[600px] sm:max-h-[400px] mt-4 sm:mt-6 md:mt-8" : "max-h-0"}
+                        ${open === faq.id ? "max-h-[400px] mt-2 sm:mt-3 md:mt-4" : "max-h-0"}
                       `}>
-                                                <p className="text-sm sm:text-base md:text-[18px] leading-relaxed md:leading-[2] text-[#444]">
+                                                <p className="text-xs sm:text-sm md:text-[15px] leading-relaxed text-[#444]">
                                                     {faq.answer}
                                                 </p>
                                             </div>

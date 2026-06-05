@@ -34,7 +34,7 @@ export default function PerformanceSection() {
         Book a Free Consultation
       </a>
 
-      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-20 py-10 sm:py-14 lg:py-20">
+      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-20 py-10 sm:py-12 lg:py-16">
 
         <div className="grid lg:grid-cols-2 gap-10 md:gap-8 lg:gap-16 items-center">
 

@@ -13,7 +13,7 @@ export default function AboutUs() {
 
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-4 lg:gap-12 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-stretch">
 
           {/* LEFT - hidden on small screens */}
           <div className="relative pr-0 lg:pr-[120px] hidden lg:block h-full">
@@ -35,7 +35,7 @@ export default function AboutUs() {
                 <div className="rounded-[30px] overflow-hidden flex-1 min-h-[200px] xl:min-h-[280px] w-[180px] xl:w-[280px] relative bg-[#f8f4fc]">
                   <img src={Innovation} alt="Biosoftech innovation and technology concept illustration" width="320" height="700" className="absolute inset-0 w-full h-full object-contain" />
                 </div>
-                <div className="absolute right-[-55px] xl:right-[-90px] top-1/2 -translate-y-1/2">
+                <div className="absolute right-[-55px] xl:right-[-90px] top-1/2 -translate-y-1/2 overflow-visible">
                   <div className="bg-purple-500 rounded-full h-[200px] xl:h-[260px] w-[60px] xl:w-[80px] text-white flex items-center justify-center">
                     <div className="rotate-90 whitespace-nowrap font-bold text-sm xl:text-lg">
                       2+ Years Of Excellence
@@ -61,7 +61,7 @@ export default function AboutUs() {
               For Digital Growth
             </h2>
 
-            <p className="mt-3 sm:mt-4 text-[#5b5b69] text-sm sm:text-xl lg:text-[22px] xl:text-[28px] leading-relaxed">
+            <p className="mt-3 sm:mt-4 text-[#5b5b69] text-sm sm:text-xl lg:text-[22px] xl:text-[24px] leading-relaxed">
               We are a leading technology partner delivering innovation and
               efficiency for more than a decade. Our team specializes in
               custom software development, mobile apps, and AI-powered

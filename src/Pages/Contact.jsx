@@ -260,13 +260,13 @@ const Contact = () => {
         "
           >
             {/* LEFT */}
-            <div className="p-4 sm:p-6 md:p-10 lg:p-14">
+            <div className="p-4 sm:p-5 md:p-8 lg:p-10">
               <h2
                 className="
-              text-2xl
-              sm:text-[28px]
-              md:text-[34px]
-              lg:text-[48px]
+              text-xl
+              sm:text-[24px]
+              md:text-[28px]
+              lg:text-[36px]
               font-bold
             "
               >
@@ -275,15 +275,14 @@ const Contact = () => {
 
               <p
                 className="
-              mt-3
-              sm:mt-4
-              md:mt-5
+              mt-2
+              sm:mt-3
+              md:mt-4
               text-[#555]
               text-sm
               sm:text-base
-              md:text-lg
-              leading-[1.7]
-              md:leading-[1.9]
+              leading-[1.5]
+              md:leading-[1.6]
               max-w-[650px]
             "
               >
@@ -292,10 +291,10 @@ const Contact = () => {
                 back to you shortly.
               </p>
 
-              <form ref={formRef} onSubmit={handleSubmit} className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-5 md:space-y-6">
-                <div className="grid md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="mt-4 sm:mt-5 md:mt-6 space-y-3 sm:space-y-4">
+                <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-1.5">
+                    <label htmlFor="firstName" className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">
                       First Name <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -308,7 +307,7 @@ const Contact = () => {
                       autoComplete="given-name"
                       required
                       className="
-                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
+                    w-full h-[40px] sm:h-[44px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
@@ -332,7 +331,7 @@ const Contact = () => {
                       autoComplete="family-name"
                       required
                       className="
-                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
+                    w-full h-[40px] sm:h-[44px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
@@ -356,7 +355,7 @@ const Contact = () => {
                       autoComplete="tel"
                       required
                       className="
-                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
+                    w-full h-[40px] sm:h-[44px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
@@ -380,7 +379,7 @@ const Contact = () => {
                       autoComplete="email"
                       required
                       className="
-                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4
+                    w-full h-[40px] sm:h-[44px] px-3 sm:px-4
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
@@ -404,7 +403,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="
-                    w-full h-[48px] sm:h-[52px] px-3 sm:px-4 pr-8 sm:pr-10
+                    w-full h-[40px] sm:h-[44px] px-3 sm:px-4 pr-8 sm:pr-10
                     bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900
@@ -439,7 +438,7 @@ const Contact = () => {
                     placeholder="Message"
                     required
                     className="
-                  w-full px-3 sm:px-4 py-3 sm:py-4
+                  w-full px-3 sm:px-4 py-2 sm:py-3
                   bg-gray-50 border border-gray-300
                     rounded-xl
                     text-gray-900 placeholder-gray-400
@@ -447,7 +446,7 @@ const Contact = () => {
                     focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
                     transition-all duration-200 text-fluid-base
                   "
-                    style={{ minHeight: "120px" }}
+                    style={{ minHeight: "80px" }}
                   />
                 </div>
 
@@ -455,7 +454,7 @@ const Contact = () => {
                   type="submit"
                   disabled={isSubmitting}
                   className="
-                w-full h-[48px] sm:h-[54px]
+                  w-full h-[40px] sm:h-[44px]
                 rounded-xl
                 font-bold text-fluid-base
                 text-white
@@ -485,7 +484,7 @@ const Contact = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[700px] flex flex-col">
+            <div className="relative min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] flex flex-col">
               <div className="relative flex-1 overflow-hidden rounded-xl">
                 <div className="absolute inset-0 bg-gray-200 animate-pulse" />
                 <iframe

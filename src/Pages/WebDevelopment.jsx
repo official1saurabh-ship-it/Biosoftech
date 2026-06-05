@@ -252,49 +252,49 @@ const WebDevelopment = () => {
                 keywords="web development company, website development, custom web applications, e-commerce development, responsive websites, India"
                 ogUrl="https://www.biosoftech.com/web-development"
             />
-            <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
+            <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
                 <div className="w-full px-4 sm:px-6 lg:px-20">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center pt-16 sm:pt-20 md:pt-24">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-fluid-6xl font-bold text-black leading-tight">
+                            <h1 className="text-fluid-5xl lg:text-fluid-6xl font-bold text-black leading-tight">
                                 Build Websites That
                                 <br />
                                 Drive Growth
                             </h1>
-                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-full lg:max-w-[900px]">
+                            <div className="mt-4 sm:mt-6 lg:mt-8 text-sm sm:text-base lg:text-xl leading-relaxed lg:leading-[1.8] text-[#111] max-w-full lg:max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we don&apos;t just create websites &mdash; we build powerful digital platforms that help businesses scale, engage customers, and achieve measurable success.
                                 </p>
-                                <p className="mt-4 sm:mt-6 lg:mt-10">
+                                <p className="mt-3 sm:mt-4 lg:mt-6">
                                     With years of expertise and <span className="font-bold">500+ projects delivered</span>, our team specializes in designing websites that are modern, responsive, and performance-driven. Whether you need a corporate site, an e-commerce store, or a custom industry portal, we ensure your website becomes a true growth engine.
                                 </p>
                             </div>
-                            <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
+                            <div className="mt-4 sm:mt-6 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Google</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[28px] lg:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-fluid-base">Rated 4.9/5 Stars</p>
+                                    <h3 className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-base sm:text-lg md:text-[22px] lg:text-[28px]">★★★★★</div>
+                                    <p className="font-semibold text-sm sm:text-fluid-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Justdial</h3>
-                                    <p className="border-t border-black text-xs sm:text-sm md:text-[18px] lg:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                    <h3 className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-xs sm:text-sm md:text-[16px] lg:text-[18px] font-semibold mt-1.5 pt-1.5">Trusted</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Trustpilot</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[28px] lg:text-[34px]">★★★★★</div>
-                                    <p className="font-semibold text-fluid-base">Rated 4.8/5 Stars</p>
+                                    <h3 className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold">Trustpilot</h3>
+                                    <div className="text-[#f4a300] text-base sm:text-lg md:text-[22px] lg:text-[28px]">★★★★★</div>
+                                    <p className="font-semibold text-sm sm:text-fluid-base">Rated 4.8/5 Stars</p>
                                 </div>
                             </div>
-                            <div className="mt-6 sm:mt-10 flex flex-col lg:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                                <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#e4aa00] transition cursor-pointer min-h-[44px]">
+                            <div className="mt-4 sm:mt-6 flex flex-col lg:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                                <button onClick={() => navigate("/contact")} className="group bg-[#F7B700] px-4 sm:px-5 lg:px-8 h-[44px] sm:h-[50px] lg:h-[58px] text-sm sm:text-base lg:text-lg font-medium flex items-center justify-center gap-2 sm:gap-3 hover:bg-[#e4aa00] transition cursor-pointer min-h-[40px]">
                                     REQUEST PROPOSAL <FiArrowUpRight className="transition group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </button>
-                                <button onClick={() => navigate("/contact")} className="group bg-black text-white px-5 sm:px-6 lg:px-10 h-[54px] sm:h-[60px] lg:h-[74px] text-base sm:text-lg lg:text-[22px] font-medium flex items-center justify-center gap-3 sm:gap-4 hover:bg-[#151515] transition cursor-pointer min-h-[44px]">
+                                <button onClick={() => navigate("/contact")} className="group bg-black text-white px-4 sm:px-5 lg:px-8 h-[44px] sm:h-[50px] lg:h-[58px] text-sm sm:text-base lg:text-lg font-medium flex items-center justify-center gap-2 sm:gap-3 hover:bg-[#151515] transition cursor-pointer min-h-[40px]">
                                     OUR SERVICES <FiArrowRightCircle className="transition group-hover:translate-x-1" />
                                 </button>
                             </div>
                         </div>
-                        <div className="relative mt-8 sm:mt-12 lg:mt-0">
+                        <div className="relative mt-6 sm:mt-8 lg:mt-0">
                             <img src={laptopMockup} alt="Web development laptop mockup showcasing website platform" fetchPriority="high" width="800" height="500" className="relative z-10 w-full" />
                         </div>
                     </div>
@@ -452,19 +452,19 @@ const WebDevelopment = () => {
 
 
 
-            <section className="bg-[#f7f7f7] py-20 overflow-hidden">
+            <section className="bg-[#f7f7f7] py-6 overflow-hidden">
                 <div className="w-full px-6">
 
                     {/* Heading */}
 
-                    <div className="text-center mb-16">
-                        <h2 className="text-black font-bold text-fluid-5xl leading-tight">
+                    <div className="text-center mb-0">
+                        <h2 className="text-black font-bold text-fluid-4xl lg:text-fluid-5xl leading-tight">
                             Our Inspiring Web
                             <br />
                             Development Portfolio
                         </h2>
 
-                        <p className="text-[#666] max-w-3xl mx-auto mt-8 text-lg leading-9">
+                        <p className="text-[#666] max-w-3xl mx-auto mt-2 text-base lg:text-lg leading-7 lg:leading-8">
                             Welcome to our web development showcase.
                             We have crafted 500+ digital dreams into reality.
                             Explore our successful project here.
@@ -473,7 +473,7 @@ const WebDevelopment = () => {
 
                     {/* Slider */}
 
-                    <div className="relative">
+                    <div className="relative pt-0">
 
                         <Swiper
                             modules={[Autoplay, Navigation]}
@@ -499,7 +499,7 @@ const WebDevelopment = () => {
                                             height="800"
                                             className="
                       w-full
-                      max-w-[1200px]
+                      max-w-[1300px]
                       object-contain
                       drop-shadow-[0_20px_40px_rgba(0,0,0,0.18)]
                     "
@@ -517,7 +517,7 @@ const WebDevelopment = () => {
 
 
 
-            <section className="bg-[#F7F3F3] py-16 lg:py-24 overflow-hidden">
+            <section className="bg-[#F7F3F3] py-12 lg:py-16 overflow-hidden">
                 <div className="w-full px-4 sm:px-6">
 
                     {/* Badge */}
@@ -767,7 +767,7 @@ const WebDevelopment = () => {
 
 
 
-            <section className="relative bg-[#f8f8f8] py-20 overflow-hidden">
+            <section className="relative bg-[#f8f8f8] py-16 overflow-hidden">
                 {/* Vertical Text */}
                 <div className="hidden xl:block absolute left-8 top-32 h-full">
                     <h3
@@ -907,7 +907,7 @@ const WebDevelopment = () => {
             </section>
 
 
-            <section className="bg-[#1d2b42] py-16 md:py-20">
+            <section className="bg-[#1d2b42] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6 text-center">
                     <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
                         Ready to Transform Your Business?
@@ -995,7 +995,7 @@ const WebDevelopment = () => {
 
 
 
-            <section className="w-full bg-[#f6521e] py-16 md:py-20">
+            <section className="w-full bg-[#f6521e] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6 text-center">
                     {/* Heading */}
                     <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-[58px] leading-tight">
@@ -1035,7 +1035,7 @@ const WebDevelopment = () => {
                 </div>
             </section>
 
-            <section className="bg-[#f7f7f7] py-16 lg:py-24">
+            <section className="bg-[#f7f7f7] py-12 lg:py-16">
                 <div className="w-full px-4 sm:px-6">
                     {/* Heading */}
                     <div className="text-center max-w-5xl mx-auto">

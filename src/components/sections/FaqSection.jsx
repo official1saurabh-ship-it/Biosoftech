@@ -4,57 +4,63 @@ import { Plus, Minus } from "lucide-react";
 const faqData = [
   {
     id: 1,
-    question: "What services does Biosoftech Solutions offer?",
+    question: "1. What services does Biosoftech Solutions offer?",
     answer:
-      "Biosoftech Solutions provides end-to-end software development services including custom software development, web development, mobile app development (Android & iOS), cloud services (AWS, Azure, GCP), AI & automation solutions, and our specialized Mitra Suite products for billing, restaurants, hotels, schools, and tenant management.",
+      "Biosoftech Solutions provides end-to-end IT services including custom software development, web and mobile app design, cloud solutions, AI automation, and specialized industry products. Our offerings are designed to deliver scalable, secure, and SEO-friendly digital solutions that help businesses grow efficiently.",
   },
   {
     id: 2,
-    question: "Which industries do you serve?",
+    question: "2. Which industries do you serve?",
     answer:
-      "We serve a wide range of industries including healthcare, real estate, hospitality, education, retail, logistics, and finance. Our solutions are tailored to meet the unique requirements of each sector, helping businesses streamline operations and drive digital transformation.",
+      "We serve diverse industries such as healthcare, education, retail, hospitality, finance, and manufacturing. Each solution is tailored to meet industry-specific challenges, ensuring compliance, scalability, and measurable outcomes. Our cross-domain expertise allows us to deliver innovative solutions across multiple business verticals.",
   },
   {
     id: 3,
-    question: "How does your development process work?",
+    question: "3. How does your development process work?",
     answer:
-      "Our development process follows a proven methodology: requirement analysis, planning & architecture, design (UI/UX), development with agile sprints, rigorous QA testing, deployment, and ongoing support. We maintain transparent communication throughout and deliver milestones on schedule.",
+      "Our AI-driven development process follows six structured stages: requirement analysis, data preparation, model development, testing, deployment, and maintenance. This ensures accuracy, scalability, and long-term success. Each stage is transparent, collaborative, and aligned with your business goals for maximum efficiency.",
   },
   {
     id: 4,
-    question: "How much does a typical project cost?",
+    question: "4. How much does a typical project cost?",
     answer:
-      "Project costs vary based on complexity, features, technology stack, and timeline. We offer flexible engagement models — fixed-price for well-defined projects and dedicated team models for ongoing work. Contact us with your requirements for a free, no-obligation estimate.",
+      "Project costs depend on scope, complexity, and technology stack. We offer flexible pricing models including fixed, hourly, and package-based options. Our transparent approach ensures you know exactly what you're paying for, with no hidden charges or unexpected expenses.",
   },
   {
     id: 5,
-    question: "How long does it take to build a software product?",
+    question: "5. How long does it take to build a software product?",
     answer:
-      "Timelines depend on project scope. A simple MVP can be delivered in 4–6 weeks, while larger enterprise solutions may take 3–6 months or more. We provide a detailed timeline after understanding your requirements during the initial consultation.",
+      "Timelines vary by project size and features. A minimum viable product (MVP) can be delivered in 6-12 weeks, while enterprise-level solutions may take longer. We prioritize speed without compromising quality, ensuring timely delivery aligned with your business objectives.",
   },
   {
     id: 6,
-    question: "Do you provide post-launch support and maintenance?",
+    question: "6. Do you provide post-launch support and maintenance?",
     answer:
-      "Yes, we offer comprehensive post-launch support and maintenance services including bug fixes, feature updates, performance monitoring, security patches, and server management. Our 24x7 technical support ensures your applications run smoothly at all times.",
+      "Yes, we provide 24/7 support, updates, and optimization after launch. Our maintenance services include bug fixes, performance monitoring, security patches, and feature enhancements. This ensures your solution evolves with changing business needs and remains reliable long-term.",
   },
   {
     id: 7,
-    question: "Will my project idea remain confidential?",
+    question: "7. Will my project idea remain confidential?",
     answer:
-      "Absolutely. We sign a Non-Disclosure Agreement (NDA) before starting any project to protect your intellectual property. Your idea, code, and business data remain strictly confidential throughout our engagement and beyond.",
+      "Absolutely. We sign non-disclosure agreements (NDAs) and follow strict security protocols to protect your intellectual property. Confidentiality is a priority, and all project details remain secure throughout development, ensuring your ideas are safe from unauthorized access or misuse.",
   },
   {
     id: 8,
-    question: "What technologies and frameworks do you use?",
+    question: "8. What technologies and frameworks do you use?",
     answer:
-      "We work with modern technologies including React, Next.js, Node.js, Python, PHP, Laravel, Flutter, React Native, Swift, Kotlin, AWS, Azure, Google Cloud, Docker, Kubernetes, and various AI/ML frameworks. We select the best tech stack based on your project's specific needs.",
+      "We use modern stacks including React, Angular, Node.js, Python, .NET, Flutter, Kotlin, Salesforce, AWS, Azure, and AI/ML frameworks. Our technology choices are based on scalability, performance, and SEO-friendly architecture to ensure long-term business success.",
   },
   {
     id: 9,
-    question: "How can I get started with Biosoftech Solutions?",
+    question: "9. How can I get started with Biosoftech Solutions?",
     answer:
-      "Getting started is simple — reach out to us via phone at +91-9044425858 or +91-6209688930, email us at info@biosoftech.com, or fill out the contact form on our website. We'll schedule a free consultation to understand your requirements and provide a tailored solution.",
+      "Getting started is simple. Contact us for a consultation, share your requirements, and we'll design a tailored roadmap. From proposal to deployment, our team ensures smooth onboarding, transparent communication, and solutions aligned with your business goals.",
+  },
+  {
+    id: 10,
+    question: "10. Why choose Biosoftech over other IT companies?",
+    answer:
+      "With 2+ years of expertise, 50+ projects delivered, and a client-centric approach, Biosoftech combines innovation, scalability, and security. Our SEO-driven solutions, industry knowledge, and dedicated support make us a trusted partner for businesses seeking digital transformation.",
   },
 ];
 
@@ -69,7 +75,7 @@ const FaqSection = () => {
   const visibleFaqs = showAll ? faqData : faqData.slice(0, 5);
 
   return (
-    <section id="faq" className="bg-white py-16 sm:py-20">
+    <section id="faq" className="bg-white py-12 sm:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4">
           Frequently Asked Questions

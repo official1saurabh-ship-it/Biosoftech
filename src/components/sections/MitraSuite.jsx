@@ -33,7 +33,7 @@ const products = [
 const MitraSuite = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-white overflow-hidden">
+    <section className="py-10 sm:py-12 lg:py-16 bg-white overflow-hidden">
       <div className="max-w-full mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:gap-6 md:gap-8">
           <div className="max-w-2xl">

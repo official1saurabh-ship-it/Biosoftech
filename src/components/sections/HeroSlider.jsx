@@ -85,7 +85,7 @@ export default function HeroRevealSlider() {
       <div className="relative z-30 w-full h-full">
         <div
           className="
-            max-w-full mx-auto min-h-screen
+            max-w-full mx-auto
             grid lg:grid-cols-2
             items-center
             gap-6 lg:gap-12 xl:gap-16
@@ -109,7 +109,7 @@ export default function HeroRevealSlider() {
                 <img
                   src={slide.image}
                   alt="Hero"
-                  className="w-auto h-[450px] sm:h-[520px] lg:h-[580px] xl:h-[680px] 2xl:h-[740px] object-contain"
+                  className="w-auto h-[clamp(280px,45vw,450px)] sm:h-[clamp(320px,40vw,520px)] lg:h-[clamp(380px,35vw,580px)] xl:h-[clamp(450px,30vw,680px)] 2xl:h-[clamp(500px,28vw,740px)] object-contain"
                 />
               </motion.div>
             </AnimatePresence>
@@ -127,13 +127,13 @@ export default function HeroRevealSlider() {
               <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h2>
-              <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[42px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[72px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
-              <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[32px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-2 xl:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[54px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-2 xl:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
-              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[26px] xl:text-[58px] font-black -mt-0.5 lg:-mt-1 xl:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[58px] font-black -mt-0.5 lg:-mt-1 xl:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
                 {slide.bottom}
               </h2>
               <p className="mt-4 lg:mt-6 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">
@@ -141,7 +141,7 @@ export default function HeroRevealSlider() {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex w-fit self-start mt-6 lg:mt-8 px-3 py-3 rounded-full bg-[#9810dc] text-white font-jakarta font-bold uppercase tracking-widest text-[12px] sm:text-[13px] hover:bg-purple-600 transition-all duration-500 shadow-lg"
+                className="inline-flex w-fit self-start mt-6 lg:mt-8 px-5 py-3 rounded-full bg-[#9810dc] text-white font-jakarta font-bold uppercase tracking-widest text-[13px] sm:text-[14px] hover:bg-purple-600 transition-all duration-500 shadow-lg"
               >
                 Get Started →
               </Link>
@@ -155,14 +155,14 @@ export default function HeroRevealSlider() {
         <button
           onClick={() => setIndex((index - 1 + slides.length) % slides.length)}
           aria-label="Previous slide"
-          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xl"
+          className="w-11 h-11 sm:w-14 sm:h-14 lg:w-20 lg:h-20 min-w-[44px] min-h-[44px] rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xl"
         >
           ←
         </button>
         <button
           onClick={() => setIndex((index + 1) % slides.length)}
           aria-label="Next slide"
-          className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xl"
+          className="w-11 h-11 sm:w-14 sm:h-14 lg:w-20 lg:h-20 min-w-[44px] min-h-[44px] rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors flex items-center justify-center text-xl"
         >
           →
         </button>

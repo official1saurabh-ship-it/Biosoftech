@@ -221,12 +221,12 @@ border-white/5
  flex
  lg:hidden
 
- w-10
+ w-11
  sm:w-12
- h-10
+ h-11
  sm:h-12
 
-min-w-[40px]
+min-w-[44px]
 sm:min-w-[48px]
 
 rounded-full

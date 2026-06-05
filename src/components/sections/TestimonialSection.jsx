@@ -243,9 +243,9 @@ export default function TestimonialSection() {
             relative
 
             px-5
-            sm:px-12
-            md:px-6
-            lg:px-10
+            sm:px-8
+            md:px-10
+            lg:px-12
             xl:px-16
             py-8
 
@@ -268,10 +268,12 @@ export default function TestimonialSection() {
 
               z-20
 
-              w-10
-              h-10
+              w-11
+              h-11
               sm:w-12
               sm:h-12
+              min-w-[44px]
+              min-h-[44px]
 
               rounded-full
 
@@ -302,10 +304,12 @@ export default function TestimonialSection() {
 
               z-20
 
-              w-10
-              h-10
+              w-11
+              h-11
               sm:w-12
               sm:h-12
+              min-w-[44px]
+              min-h-[44px]
 
               rounded-full
 
@@ -320,7 +324,6 @@ export default function TestimonialSection() {
                         >
                             <ChevronRight size={20} />
                         </button>
-
 
                         <Swiper
                             modules={[Navigation, Autoplay]}

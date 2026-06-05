@@ -545,38 +545,42 @@ export default function About() {
       </section>
 
       {/* Who Are We Section */}
-      <section className="relative overflow-hidden bg-[#F7F7F1] min-h-0 lg:min-h-screen py-12 sm:py-16 lg:py-20 pb-20 sm:pb-24 lg:pb-28" ref={containerRef}>
+      <section className="relative overflow-hidden bg-[#F7F7F1] py-10 sm:py-12 lg:py-16 pb-12 sm:pb-16 lg:pb-20" ref={containerRef}>
         <div className="max-w-full mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-[620px_1fr] gap-10 sm:gap-12 lg:gap-24 items-center">
+          <div className="grid md:grid-cols-[minmax(380px,620px)_1fr] gap-8 md:gap-10 lg:gap-24 items-center">
 
             {/* LEFT SIDE - Static Cards with slight parallax */}
             <div
               style={{
                 transform: isDesktop ? `translateY(${offset * 0.4}px)` : "none",
               }}
-              className="relative duration-300"
+              className="relative duration-300 w-full"
             >
-              {/* Desktop overlapping cards */}
-              <div className="hidden lg:block h-[820px] relative">
-                <div className="absolute left-[20px] top-[10px] w-[380px] xl:w-[420px] h-[520px] xl:h-[560px] rounded-tr-[100px] xl:rounded-tr-[120px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-8 xl:p-10">
-                  <h3 className="text-white text-[70px] xl:text-[90px] font-black">30+</h3>
-                  <p className="text-white text-[22px] xl:text-[26px] font-bold">Projects Delivered</p>
-                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[200px] xl:w-[240px] h-[200px] xl:h-[240px] rounded-[30px] xl:rounded-[36px] bg-[#C839D8] flex items-center justify-center text-[70px] xl:text-[90px]">🌐</div>
+              {/* Desktop overlapping cards - uses CSS Grid for stable overlap */}
+              <div className="hidden md:grid md:grid-cols-[65%_1fr] md:grid-rows-1 w-full max-w-[620px] mx-auto">
+                {/* Card 1 (30+ Projects) - background layer */}
+                <div className="col-span-2 row-span-1 col-start-1 row-start-1 z-10 w-[clamp(280px,55%,420px)] translate-y-[-15%] md:translate-y-[-13%] lg:translate-y-[-17%] xl:translate-y-[-19%] rounded-tr-[clamp(60px,8vw,120px)] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-6 md:p-8 xl:p-10">
+                  <h3 className="text-white text-[clamp(40px,6vw,90px)] font-black leading-none">30+</h3>
+                  <p className="text-white text-[clamp(14px,2vw,26px)] font-bold mt-1">Projects Delivered</p>
+                  <div className="mt-4 md:mt-6 w-[clamp(100px,18vw,240px)] h-[clamp(100px,18vw,240px)] rounded-[clamp(16px,2.5vw,36px)] bg-[#C839D8] flex items-center justify-center text-[clamp(40px,6vw,90px)] mx-auto">
+                    🌐
+                  </div>
                 </div>
-                <div className="absolute left-[130px] xl:left-[170px] top-[170px] xl:top-[190px] w-[390px] xl:w-[430px] h-[580px] xl:h-[620px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-8 xl:p-10 z-20">
-                  <h3 className="text-white text-[66px] xl:text-[82px] font-black">50+</h3>
-                  <p className="text-white text-[20px] xl:text-[24px] font-bold">Satisfied Clients</p>
-                  <div className="absolute inset-0 flex items-center justify-center text-[130px] xl:text-[170px] opacity-90">⚡</div>
-                  <div className="absolute right-8 xl:right-10 bottom-8 xl:bottom-10 z-30">
-                    <h3 className="text-white text-[60px] xl:text-[76px] font-black">15+</h3>
-                    <p className="text-white text-[18px] xl:text-[22px]">Industries Served</p>
+                {/* Card 2 (50+ Clients / 15+ Industries) - foreground layer */}
+                <div className="col-span-2 row-span-1 col-start-1 row-start-1 z-20 w-[clamp(300px,58%,430px)] translate-x-[60%] md:translate-x-[58%] lg:translate-x-[64%] xl:translate-x-[66%] translate-y-[10%] md:translate-y-[14%] lg:translate-y-[16%] xl:translate-y-[18%] rounded-tr-[clamp(40px,5vw,80px)] bg-gradient-to-br from-[#291043] to-[#5B1896] py-1.5 md:py-2 xl:py-3 px-4 md:px-6 xl:px-8">
+                  <h3 className="text-white text-[clamp(28px,4vw,60px)] font-black leading-[0.9]">50+</h3>
+                  <p className="text-white text-[clamp(11px,1.2vw,18px)] font-bold">Satisfied Clients</p>
+                  <div className="flex items-center justify-center text-[clamp(40px,7vw,100px)] opacity-90 my-0.5">⚡</div>
+                  <div className="text-right">
+                    <h3 className="text-white text-[clamp(24px,3.5vw,52px)] font-black leading-[0.9]">15+</h3>
+                    <p className="text-white text-[clamp(10px,1vw,16px)]">Industries Served</p>
                   </div>
                 </div>
               </div>
 
               {/* Mobile stacked cards */}
-              <div className="lg:hidden space-y-4">
-                <div className="rounded-tr-[60px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-6 sm:p-8">
+              <div className="md:hidden space-y-3">
+                <div className="rounded-tr-[60px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-4 sm:p-6">
                   <h3 className="text-white text-[48px] sm:text-[64px] font-black">30+</h3>
                   <p className="text-white text-fluid-lg font-bold">Projects Delivered</p>
                   <div className="mt-4 w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-[#C839D8] flex items-center justify-center text-fluid-4xl">🌐</div>
@@ -602,14 +606,14 @@ export default function About() {
 
               <motion.p
                 style={{ y: tagY }}
-                className="text-[#af60ff] font-bold text-5xl"
+                className="text-[#af60ff] font-bold text-3xl md:text-4xl lg:text-5xl"
               >
                 ✺ Who Are We?
               </motion.p>
 
               <motion.h2
                 style={{ y: headingY }}
-                className="mt-2 text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] lg:text-[54px] lg:leading-[62px] xl:text-[64px] xl:leading-[72px] font-black"
+                className="mt-1 text-2xl sm:text-3xl md:text-[clamp(28px,3vw,40px)] md:leading-[clamp(34px,3.5vw,48px)] lg:text-[clamp(40px,4.5vw,54px)] lg:leading-[clamp(48px,5vw,62px)] xl:text-[clamp(48px,5vw,64px)] xl:leading-[clamp(56px,5.5vw,72px)] font-black"
               >
                 We Transform<br />
                 <span
@@ -622,14 +626,14 @@ export default function About() {
 
               <motion.p
                 style={{ y: descY }}
-                className="mt-4 sm:mt-6 text-base sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#444]"
+                className="mt-3 sm:mt-4 text-sm sm:text-base md:text-[clamp(14px,1.2vw,18px)] leading-[clamp(22px,2.5vw,32px)] text-[#444]"
               >
                 Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology.                 With 30+ projects delivered, 50+ satisfied clients, and 15+ industries served, we combine innovation with reliability to help organizations thrive in the digital era.
               </motion.p>
 
               <motion.div
                 style={{ y: featuresY }}
-                className="space-y-4 sm:space-y-6 mt-6 sm:mt-10"
+                className="space-y-3 sm:space-y-4 mt-4 sm:mt-6"
               >
                 {[
                   { icon: Globe, title: "Easy", desc: "From project audits to strategy creation, we simplify every step." },
@@ -638,13 +642,13 @@ export default function About() {
                 ].map((item, i) => {
                   const Icon = item.icon;
                   return (
-                    <div key={i} className="flex gap-4 sm:gap-6 items-center">
-                      <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px] shrink-0 rounded-full bg-[#E9E9E9] flex items-center justify-center">
-                        <Icon size={20} className="sm:w-[24px] sm:h-[24px] lg:w-[28px] lg:h-[28px]" />
+                    <div key={i} className="flex gap-3 sm:gap-4 items-center">
+                      <div className="w-[clamp(32px,4vw,40px)] h-[clamp(32px,4vw,40px)] sm:w-[clamp(40px,4vw,50px)] sm:h-[clamp(40px,4vw,50px)] lg:w-[clamp(50px,4.5vw,60px)] lg:h-[clamp(50px,4.5vw,60px)] shrink-0 rounded-full bg-[#E9E9E9] flex items-center justify-center">
+                        <Icon size={18} className="sm:w-[20px] sm:h-[20px] lg:w-[24px] lg:h-[24px]" />
                       </div>
                       <div>
-                        <h3 className="text-2xl sm:text-3xl md:text-[24px] lg:text-[32px] font-black leading-tight">{item.title}</h3>
-                        <p className="text-sm sm:text-[16px] mt-1 text-[#444]">{item.desc}</p>
+                        <h3 className="text-lg sm:text-xl md:text-[clamp(18px,2vw,24px)] lg:text-[clamp(24px,2.5vw,32px)] font-black leading-tight">{item.title}</h3>
+                        <p className="text-xs sm:text-sm md:text-[clamp(12px,1vw,16px)] mt-1 text-[#444]">{item.desc}</p>
                       </div>
                     </div>
                   );
@@ -654,7 +658,7 @@ export default function About() {
               <motion.button
                 onClick={() => navigate("/contact")}
                 style={{ y: buttonY }}
-                className="mt-6 sm:mt-10 rounded-full border border-[#a84dff] px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-3 sm:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-fluid-base min-h-[44px]"
+                className="mt-4 sm:mt-6 rounded-full border border-[#a84dff] px-5 sm:px-6 md:px-7 lg:px-8 py-2 sm:py-3 md:py-3 lg:py-4 flex items-center gap-2 sm:gap-3 lg:gap-4 hover:bg-[#a84dff] hover:text-white duration-500 text-sm sm:text-base lg:text-fluid-base min-h-[40px] md:min-h-[44px]"
               >
                 Contact Now! <ChevronRight size={16} className="sm:w-[20px] sm:h-[20px]" />
               </motion.button>
@@ -787,7 +791,7 @@ export default function About() {
 
 
 
-      <section className="bg-[#f8f8f8] py-16">
+      <section className="bg-[#f8f8f8] py-12">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
 
@@ -913,7 +917,7 @@ export default function About() {
 
 
 
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-white py-10 sm:py-12 lg:py-16">
         <div className="max-w-full mx-auto px-4 sm:px-6">
 
           {/* Heading */}
@@ -987,7 +991,7 @@ export default function About() {
 
 
 
-      <section className="bg-[#f8f8f8] py-16 lg:py-20 overflow-hidden">
+      <section className="bg-[#f8f8f8] py-12 lg:py-16 overflow-hidden">
         <div className="max-w-full mx-auto px-4 sm:px-6">
 
           {/* Heading */}
@@ -1012,7 +1016,7 @@ export default function About() {
                 loading="lazy"
                 width="700"
                 height="500"
-                className="w-full max-w-[700px] object-contain"
+                className="w-full max-w-[700px] max-h-[400px] object-contain"
               />
             </div>
 
@@ -1060,7 +1064,7 @@ export default function About() {
 
 
 
-      <section className="relative overflow-hidden bg-[#f8f7ff] py-24">
+      <section className="relative overflow-hidden bg-[#f8f7ff] py-16">
 
         {/* Decorative Background */}
         <div className="absolute top-0 right-0 w-[450px] h-[450px] rounded-full border border-[#ede9ff] opacity-50" />
@@ -1167,7 +1171,7 @@ export default function About() {
 
 
       <section
-        className="relative py-20 bg-cover bg-center bg-gray-900"
+        className="relative py-16 bg-cover bg-center bg-gray-900"
       >
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
@@ -1365,7 +1369,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-[#f5f5f5] py-16 lg:py-20">
+      <section className="bg-[#f5f5f5] py-12 lg:py-16">
         <div className="max-w-full mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <p className="text-black text-xl mb-2">Blogs</p>

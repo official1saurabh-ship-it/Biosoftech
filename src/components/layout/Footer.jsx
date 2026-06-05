@@ -34,7 +34,7 @@ const serviceLinks = [
 const packageLinks = [
   { name: 'Enquiry', to: '/contact' },
   { name: 'Privacy Policy', to: '/privacy-policy' },
-  { name: 'Terms & Conditions', to: '#' },
+  { name: 'Terms & Conditions', to: '/terms-conditions' },
 ];
 
 const Footer = () => {
@@ -163,7 +163,7 @@ const Footer = () => {
                     href="https://www.google.com/maps/search/?api=1&query=3rd+Floor,+Office+No-624/20A,+Kotwali+Rd,+Matiyaari,+Chinhat,+Lucknow,+Uttar+Pradesh-226028"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-600 text-sm hover:text-primary-1 transition-colors"
+                    className="text-gray-600 text-sm hover:text-primary-1 transition-colors break-words overflow-wrap-anywhere"
                   >
                     3rd Floor, Office No-624/20A, Kotwali Rd, Matiyaari, Chinhat, Lucknow, Uttar Pradesh-226028
                   </a>
@@ -220,7 +220,7 @@ const Footer = () => {
             <Link to="/privacy-policy" className="text-gray-500 hover:text-primary-1 transition-colors">
               Privacy Policy
             </Link>
-            <Link to="#" className="text-gray-500 hover:text-primary-1 transition-colors">
+            <Link to="/terms-conditions" className="text-gray-500 hover:text-primary-1 transition-colors">
               Terms & Conditions
             </Link>
           </div>

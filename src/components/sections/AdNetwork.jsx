@@ -74,11 +74,11 @@ export default function AdNetworkSection() {
   return (
     <section className="bg-[#f7f4fb] overflow-hidden">
 
-      <div className="max-w-full mx-auto px-5 sm:px-8 py-14 lg:py-20">
+      <div className="max-w-full mx-auto px-5 sm:px-8 py-6 lg:py-8">
 
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 mb-14 lg:mb-20">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-6 mb-6 lg:mb-8">
 
-          <div className="max-w-4xl">
+          <div className="max-w-6xl">
 
             <span
               className="
@@ -95,12 +95,12 @@ export default function AdNetworkSection() {
 
             <h2
               className="
-              mt-5
-              text-[24px]
-              sm:text-[34px]
-              md:text-[48px]
-              lg:text-[62px]
-              xl:text-[72px]
+              mt-3
+              text-[22px]
+              sm:text-[28px]
+              md:text-[36px]
+              lg:text-[44px]
+              xl:text-[48px]
               font-black
               leading-[1.08]
               lg:leading-none
@@ -134,10 +134,10 @@ export default function AdNetworkSection() {
     border
     border-purple-400
 
-    px-7
-    sm:px-10
-    py-4
-    sm:py-5
+    px-5
+    sm:px-7
+    py-3
+    sm:py-4
 
     rounded-full
 
@@ -162,10 +162,10 @@ export default function AdNetworkSection() {
 
     bg-[#a657ff]
 
-    w-12
-    h-12
-    sm:w-16
-    sm:h-16
+    w-10
+    h-10
+    sm:w-12
+    sm:h-12
 
     rounded-full
 
@@ -270,9 +270,9 @@ lg:grid-cols-2
 gap-8
 sm:gap-10
 lg:gap-16
-mb-16
-sm:mb-20
-lg:mb-36
+mb-6
+sm:mb-8
+lg:mb-10
 items-center
 overflow-hidden
 
@@ -290,30 +290,30 @@ ${reverse
         <h3
           className="
 text-center
-text-[24px]
-sm:text-[28px]
-md:text-[38px]
-lg:text-[48px]
-xl:text-[54px]
+text-[20px]
+sm:text-[24px]
+md:text-[30px]
+lg:text-[36px]
+xl:text-[40px]
 font-black
-mb-6
-lg:mb-10
+        mb-2
+        lg:mb-4
 "
         >
           {title}
         </h3>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-8">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
 
-          <span className="text-gray-500">
+          <span className="text-gray-500 text-sm sm:text-base">
             {label}
           </span>
 
           <p
             className="
-text-base
-sm:text-lg
-lg:text-[24px]
+text-sm
+sm:text-base
+lg:text-[18px]
 max-w-[650px]
 leading-relaxed
 "
@@ -323,15 +323,15 @@ leading-relaxed
 
         </div>
 
-        <hr className="my-8 lg:my-10" />
+        <hr className="my-4 lg:my-6" />
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-8">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
 
-          <span className="text-gray-500">
+          <span className="text-gray-500 text-sm sm:text-base">
             Features:
           </span>
 
-          <ul className="space-y-5">
+          <ul className="space-y-3">
 
             {features.map((f) => (
               <li
@@ -339,9 +339,9 @@ leading-relaxed
                 className="
 flex
 gap-5
-text-base
-sm:text-lg
-lg:text-[24px]
+text-sm
+sm:text-base
+lg:text-[18px]
 leading-relaxed
 "
               >
@@ -393,8 +393,8 @@ cursor-pointer
 
           className="
 w-full
-max-h-[360px]
-sm:max-h-[460px]
+max-h-[260px]
+sm:max-h-[340px]
 lg:max-h-none
 object-contain
 "
@@ -424,16 +424,16 @@ ${!isDesktop
             to="/contact"
             aria-label="Learn more about this digital solution"
             className="
-w-[120px]
-h-[120px]
-lg:w-[170px]
-lg:h-[170px]
+w-[90px]
+h-[90px]
+lg:w-[120px]
+lg:h-[120px]
 
 rounded-full
 
 bg-[#ff6b2d]
 
-border-[8px]
+border-[6px]
 border-white
 
 text-white
@@ -470,7 +470,7 @@ border-white
             </p>
 
             <ArrowRight
-              size={56}
+              size={36}
             />
 
             <p>

@@ -54,7 +54,7 @@ const services = [
 
 export default function ServicesSlider() {
     return (
-        <section className="bg-[#faf7fd] py-16 lg:py-28 overflow-hidden">
+        <section className="bg-[#faf7fd] py-12 lg:py-20 overflow-hidden">
 
             <div className="max-w-full mx-auto px-5 sm:px-8 lg:px-10">
 

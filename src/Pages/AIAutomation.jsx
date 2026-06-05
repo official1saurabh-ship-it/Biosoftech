@@ -676,37 +676,37 @@ const HeroSection = () => {
 
 
 
-      <section className="bg-[#f3f3f3] py-16 lg:py-20">
+      <section className="bg-[#f3f3f3] py-10 lg:py-14">
         <div className="px-4 sm:px-6 lg:px-10 w-full">
 
           {/* TOP SECTION */}
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
+          <div className="grid lg:grid-cols-2 gap-6 items-start">
 
             {/* LEFT */}
             <div>
-              <h2 className="text-fluid-5xl font-bold leading-tight text-[#111]">
+              <h2 className="text-fluid-4xl lg:text-fluid-5xl font-bold leading-tight text-[#111]">
                 Driving Business Growth
                 <br />
                 Through Smart Digital Solutions
               </h2>
 
-              <div className="w-24 h-[2px] bg-black mt-8" />
+              <div className="w-20 h-[2px] bg-black mt-5" />
             </div>
 
             {/* RIGHT */}
             <div>
-              <p className="text-xl text-[#444] leading-8 lg:leading-10 max-w-2xl">
+              <p className="text-base lg:text-xl text-[#444] leading-7 lg:leading-9 max-w-2xl">
                 Unlock robust software solutions, modernize legacy systems,
                 and leverage next-gen technologies to accelerate your business
                 growth with Biosoftech Solutions.
               </p>
 
-              <button onClick={() => navigate("/contact")} className="mt-10 flex items-center gap-5 group">
-                <div className="w-16 h-16 rounded-full border-2 border-black flex items-center justify-center transition-all duration-300 group-hover:bg-black">
-                  <ArrowUpRight className="group-hover:text-white transition-all duration-300" />
+              <button onClick={() => navigate("/contact")} className="mt-6 flex items-center gap-4 group">
+                <div className="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center transition-all duration-300 group-hover:bg-black">
+                  <ArrowUpRight size={20} className="group-hover:text-white transition-all duration-300" />
                 </div>
 
-                <span className="text-2xl font-medium">
+                <span className="text-xl lg:text-2xl font-medium">
                   Explore Services
                 </span>
               </button>
@@ -714,12 +714,12 @@ const HeroSection = () => {
           </div>
 
           {/* MAIN CONTENT */}
-          <div className="mt-20 bg-[#efefef] p-6 lg:p-10 rounded-[20px]">
+          <div className="mt-10 bg-[#efefef] p-4 lg:p-6 rounded-[16px]">
 
-            <div className="grid lg:grid-cols-[1fr_500px] gap-10">
+            <div className="grid lg:grid-cols-[1fr_500px] gap-6">
 
               {/* LEFT CARDS */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
 
                 {services.map((service, index) => {
                   const Icon = service.icon;
@@ -730,7 +730,7 @@ const HeroSection = () => {
                     <button
                       key={index}
                       onClick={() => setActiveService(service)}
-                      className="relative h-[280px] md:h-[350px] rounded-[24px] overflow-hidden group text-left"
+                      className="relative h-[180px] md:h-[220px] rounded-[16px] overflow-hidden group text-left"
                     >
 
                       {/* IMAGE */}
@@ -743,20 +743,20 @@ const HeroSection = () => {
                       <div className="absolute inset-0 bg-black/45" />
 
                       {/* CONTENT */}
-                      <div className="relative z-10 flex flex-col justify-between h-full p-6">
+                      <div className="relative z-10 flex flex-col justify-between h-full p-4">
 
                         {/* TOP ICON */}
-                        <div className="w-11 h-11 rounded-xl bg-[#377dff] flex items-center justify-center">
-                          <Icon size={20} className="text-white" />
+                        <div className="w-9 h-9 rounded-lg bg-[#377dff] flex items-center justify-center">
+                          <Icon size={16} className="text-white" />
                         </div>
 
                         {/* BOTTOM */}
                         <div>
-                          <h3 className="text-white text-3xl font-bold leading-tight">
+                          <h3 className="text-white text-xl lg:text-2xl font-bold leading-tight">
                             {service.title}
                           </h3>
 
-                          <p className="mt-2 text-white/90 tracking-[2px] text-sm">
+                          <p className="mt-1 text-white/90 tracking-[2px] text-xs">
                             {service.category}
                           </p>
                         </div>
@@ -764,9 +764,9 @@ const HeroSection = () => {
 
                       {/* ACTIVE ARROW */}
                       {isActive && (
-                        <div className="absolute bottom-5 right-5 z-20">
-                          <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
-                            <ArrowUpRight className="text-black" />
+                        <div className="absolute bottom-3 right-3 z-20">
+                          <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                            <ArrowUpRight size={18} className="text-black" />
                           </div>
                         </div>
                       )}
@@ -776,28 +776,28 @@ const HeroSection = () => {
               </div>
 
               {/* RIGHT DETAILS PANEL */}
-              <div className="bg-[#f7f7f7] rounded-[24px] p-8 lg:p-12">
+              <div className="bg-[#f7f7f7] rounded-[16px] p-5 lg:p-8">
 
-                <h3 className="text-4xl md:text-[32px] lg:text-5xl font-bold text-[#111] leading-tight">
+                <h3 className="text-2xl lg:text-[32px] xl:text-4xl font-bold text-[#111] leading-tight">
                   {activeService.heading}
                 </h3>
 
-                <div className="w-16 h-[2px] bg-black mt-8" />
+                <div className="w-12 h-[2px] bg-black mt-4" />
 
-                <p className="mt-10 text-[#444] text-xl leading-8 lg:leading-10">
+                <p className="mt-5 text-[#444] text-base lg:text-lg leading-7 lg:leading-8">
                   {activeService.description}
                 </p>
 
                 {/* TECHNOLOGIES */}
-                <div className="grid grid-cols-2 gap-y-6 gap-x-10 mt-12">
+                <div className="grid grid-cols-2 gap-y-3 gap-x-6 mt-6">
                   {activeService.technologies.map((tech, i) => (
                     <div
                       key={i}
-                      className="flex items-center gap-4"
+                      className="flex items-center gap-3"
                     >
-                      <div className="w-4 h-4 rounded-full border-2 border-gray-300" />
+                      <div className="w-3 h-3 rounded-full border-2 border-gray-300" />
 
-                      <span className="text-xl text-[#222]">
+                      <span className="text-sm lg:text-base text-[#222]">
                         {tech}
                       </span>
                     </div>
@@ -813,13 +813,13 @@ const HeroSection = () => {
 
 
 
-      <section className="relative overflow-hidden bg-[#020617] py-24 text-white">
+      <section className="relative overflow-hidden bg-[#020617] py-10 text-white">
 
         {/* BACKGROUND GLOW */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-700/20 blur-[180px]" />
+          <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-700/20 blur-[140px]" />
 
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
+          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[140px]" />
         </div>
 
         <div className="relative z-10 w-full">
@@ -827,15 +827,15 @@ const HeroSection = () => {
           {/* TOP CONTENT */}
           <div className="text-center max-w-5xl mx-auto px-4 sm:px-6">
 
-            <p className="text-cyan-400 uppercase tracking-[5px] text-sm font-semibold">
+            <p className="text-cyan-400 uppercase tracking-[4px] text-xs sm:text-sm font-semibold">
               Generative AI & LLM
             </p>
 
-            <h2 className="mt-5 text-fluid-5xl font-bold leading-tight">
+            <h2 className="mt-3 text-fluid-4xl lg:text-fluid-5xl font-bold leading-tight">
               Biosoftech Generative AI & LLM Capabilities
             </h2>
 
-            <p className="mt-8 text-xl leading-8 lg:leading-10 text-white/75">
+            <p className="mt-4 text-base lg:text-xl leading-7 lg:leading-9 text-white/75">
               We deliver enterprise-ready generative AI systems — from custom
               LLM applications and RAG pipelines to autonomous agents and
               multimodal AI — all designed with seamless integration into your
@@ -844,7 +844,7 @@ const HeroSection = () => {
           </div>
 
           {/* CARDS */}
-          <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 px-4 sm:px-6">
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-4 sm:px-6">
 
             {capabilities.map((item, index) => (
               <div
@@ -854,8 +854,7 @@ const HeroSection = () => {
                 border border-white/10
                 bg-[#07122B]
                 rounded-[6px]
-                p-8 lg:p-10
-                min-h-[420px] md:min-h-[320px] lg:min-h-[420px]
+                p-5 lg:p-6
                 group
                 transition-all duration-500
                 hover:border-cyan-500/40
@@ -866,7 +865,7 @@ const HeroSection = () => {
                 <div
                   className="
                   absolute bottom-0 left-0
-                  h-[4px] w-0
+                  h-[3px] w-0
                   bg-cyan-400
                   transition-all duration-500
                   group-hover:w-full
@@ -889,13 +888,13 @@ const HeroSection = () => {
                 <div
                   className="
     relative z-10
-    w-16 h-16
-    rounded-xl
+    w-12 h-12
+    rounded-lg
     border border-white/10
     flex items-center justify-center
     text-cyan-400
     font-bold
-    text-3xl
+    text-xl
     bg-[#020817]
 
     transition-all duration-500
@@ -912,8 +911,8 @@ const HeroSection = () => {
                 <h3
                   className="
                   relative z-10
-                  mt-12
-                  text-4xl
+                  mt-5
+                  text-2xl lg:text-3xl
                   font-bold
                   leading-tight
                 "
@@ -925,9 +924,9 @@ const HeroSection = () => {
                 <p
                   className="
                   relative z-10
-                  mt-8
-                  text-xl
-                leading-8 md:leading-8 lg:leading-10
+                  mt-3
+                  text-sm lg:text-base
+                leading-6 lg:leading-7
                 text-white/75
               "
                 >
@@ -947,28 +946,28 @@ const HeroSection = () => {
 
 
 
-      <section className="relative overflow-hidden bg-[#020617] py-24 text-white">
+      <section className="relative overflow-hidden bg-[#020617] py-10 text-white">
 
         {/* BACKGROUND GLOW */}
         <div className="absolute inset-0 overflow-hidden">
 
-          <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-700/10 blur-[180px]" />
+          <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-700/10 blur-[140px]" />
 
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px]" />
+          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[140px]" />
         </div>
 
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10">
 
           {/* TITLE */}
-          <h2 className="text-center text-fluid-5xl font-bold leading-tight">
+          <h2 className="text-center text-fluid-4xl lg:text-fluid-5xl font-bold leading-tight">
             Why Choose Biosoftech for AI Solutions
           </h2>
 
           {/* MAIN GRID */}
-          <div className="mt-20 grid lg:grid-cols-[1fr_420px_1fr] gap-16 items-center">
+          <div className="mt-10 grid lg:grid-cols-[1fr_420px_1fr] gap-8 items-center">
 
             {/* LEFT FEATURES */}
-            <div className="space-y-20">
+            <div className="space-y-8">
 
               {features.slice(0, 2).map((item, index) => (
                 <div
@@ -979,8 +978,8 @@ const HeroSection = () => {
                   {/* IMAGE ICON */}
                   <div
                     className="
-                    w-20 h-20
-                    rounded-2xl
+                    w-14 h-14
+                    rounded-xl
                     border border-cyan-500/20
                     bg-white/5
                     flex items-center justify-center
@@ -993,23 +992,23 @@ const HeroSection = () => {
                       alt={item.title}
                       loading="lazy"
                       className="
-                      w-10 h-10
+                      w-7 h-7
                       object-contain
                       transition-all duration-500
                       group-hover:scale-110
                     "
-                      width="40"
-                      height="40"
+                      width="28"
+                      height="28"
                     />
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="mt-8 text-3xl font-bold">
+                  <h3 className="mt-4 text-xl lg:text-2xl font-bold">
                     {item.title}
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-5 text-white/70 text-xl leading-8 md:leading-8 lg:leading-10">
+                  <p className="mt-3 text-white/70 text-sm lg:text-base leading-7 lg:leading-8">
                     {item.description}
                   </p>
                 </div>
@@ -1023,7 +1022,7 @@ const HeroSection = () => {
               <div
                 className="
                 relative overflow-hidden
-                rounded-[28px]
+                rounded-[20px]
                 border border-white/10
                 group
               "
@@ -1037,7 +1036,7 @@ const HeroSection = () => {
                   width="1920"
                   height="540"
                   className="
-                  w-full h-[280px] md:h-[400px] lg:h-[540px]
+                  w-full h-[200px] md:h-[280px] lg:h-[380px]
                   object-cover
                   transition-transform duration-700
                   group-hover:scale-110
@@ -1050,7 +1049,7 @@ const HeroSection = () => {
             </div>
 
             {/* RIGHT FEATURES */}
-            <div className="space-y-20">
+            <div className="space-y-8">
 
               {features.slice(2, 4).map((item, index) => (
                 <div
@@ -1061,8 +1060,8 @@ const HeroSection = () => {
                   {/* IMAGE ICON */}
                   <div
                     className="
-                    w-20 h-20
-                    rounded-2xl
+                    w-14 h-14
+                    rounded-xl
                     border border-cyan-500/20
                     bg-white/5
                     flex items-center justify-center
@@ -1075,23 +1074,23 @@ const HeroSection = () => {
                       alt={item.title}
                       loading="lazy"
                       className="
-                      w-10 h-10
+                      w-7 h-7
                       object-contain
                       transition-all duration-500
                       group-hover:scale-110
                     "
-                      width="40"
-                      height="40"
+                      width="28"
+                      height="28"
                     />
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="mt-8 text-3xl font-bold">
+                  <h3 className="mt-4 text-xl lg:text-2xl font-bold">
                     {item.title}
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-5 text-white/70 text-xl leading-8 md:leading-8 lg:leading-10">
+                  <p className="mt-3 text-white/70 text-sm lg:text-base leading-7 lg:leading-8">
                     {item.description}
                   </p>
                 </div>
@@ -1145,7 +1144,7 @@ const HeroSection = () => {
 
                 <div className="hidden sm:block absolute -bottom-5 right-0 w-4 h-4 bg-blue-500 rotate-45" />
 
-                <h2 className="text-fluid-5xl mt-20 font-bold">
+                <h2 className="text-fluid-4xl lg:text-fluid-5xl mt-10 lg:mt-16 font-bold">
                   Our AI{" "}
                   <span className="text-cyan-400">
                     Development
@@ -1154,7 +1153,7 @@ const HeroSection = () => {
                 </h2>
               </div>
 
-              <p className="mt-2 sm:mt-6 md:mt-10 max-w-5xl mx-auto text-fluid-lg text-white/60 leading-6 sm:leading-8 md:leading-8 lg:leading-10">
+              <p className="mt-2 sm:mt-4 md:mt-6 max-w-5xl mx-auto text-fluid-base lg:text-fluid-lg text-white/60 leading-6 sm:leading-7 md:leading-8 lg:leading-9">
                 We follow a structured, data-driven approach to transform
                 business ideas into intelligent AI solutions. Each stage
                 ensures accuracy, scalability, and long-term success.
@@ -1162,7 +1161,7 @@ const HeroSection = () => {
             </div>
 
             {/* TIMELINE */}
-            <div className="relative mt-4 sm:mt-12 md:mt-24">
+            <div className="relative mt-4 sm:mt-8 md:mt-14">
 
               {/* LINE */}
               <div className="absolute top-[18px] sm:top-6 md:top-8 left-0 w-full h-[2px] bg-white/10" />
@@ -1333,7 +1332,7 @@ const HeroSection = () => {
 
 
 
-      <section className="relative overflow-hidden min-h-screen sm:min-h-[70vh] flex items-center">
+      <section className="relative overflow-hidden flex items-center">
 
         {/* BACKGROUND IMAGE */}
         <div
@@ -1344,7 +1343,7 @@ const HeroSection = () => {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-16 sm:py-20 lg:py-24">
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
 
@@ -1406,22 +1405,22 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-white py-8 lg:py-12">
         <div className="w-full px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto">
-            <p className="text-cyan-500 uppercase tracking-[5px] text-sm font-semibold">
+            <p className="text-cyan-500 uppercase tracking-[4px] text-xs sm:text-sm font-semibold">
               Why AI
             </p>
-            <h2 className="mt-4 text-fluid-4xl font-bold text-[#111] leading-tight">
+            <h2 className="mt-3 text-fluid-3xl lg:text-fluid-4xl font-bold text-[#111] leading-tight">
               Benefits of AI Development
             </h2>
-            <p className="mt-6 text-fluid-lg text-gray-600 leading-relaxed">
+            <p className="mt-3 text-fluid-base lg:text-fluid-lg text-gray-600 leading-relaxed">
               Unlock transformative advantages that drive measurable business
               outcomes with Biosoftech&apos;s cutting-edge AI solutions.
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="mt-8 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
             {[
               {
                 number: "01",
@@ -1456,15 +1455,15 @@ const HeroSection = () => {
             ].map((item) => (
               <div
                 key={item.number}
-                className="group relative bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+                className="group relative bg-white border border-gray-200 rounded-xl p-5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
               >
-                <div className="w-14 h-14 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-500 font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-white transition-all duration-500">
+                <div className="w-10 h-10 rounded-lg bg-cyan-50 flex items-center justify-center text-cyan-500 font-bold text-lg group-hover:bg-cyan-500 group-hover:text-white transition-all duration-500">
                   {item.number}
                 </div>
-                <h3 className="mt-6 text-2xl font-bold text-[#111]">
+                <h3 className="mt-4 text-lg lg:text-xl font-bold text-[#111]">
                   {item.title}
                 </h3>
-                <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+                <p className="mt-2 text-sm lg:text-base text-gray-600 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

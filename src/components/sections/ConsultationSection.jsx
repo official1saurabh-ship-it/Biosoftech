@@ -93,7 +93,7 @@ export default function ConsultationSection() {
 
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-6 lg:gap-20 items-stretch">
+                <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-stretch">
 
                     {/* LEFT IMAGE - hidden on very small screens */}
 

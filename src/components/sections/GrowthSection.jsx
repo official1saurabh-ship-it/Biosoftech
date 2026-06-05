@@ -6,23 +6,23 @@ const TRUSTPILOT_URL = "https://www.trustpilot.com/review/biosoftech.com";
 
 export default function GrowthSection() {
     return (
-        <section className="bg-[#f5f5f5] min-h-0 lg:min-h-[90vh] overflow-hidden">
+        <section className="bg-[#f5f5f5] overflow-hidden">
 
-            <div className="max-w-full h-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-8">
+            <div className="max-w-full h-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-6">
 
                 {/* Heading */}
 
                 <h2
                     className="
           text-center
-          text-[28px]
-          sm:text-[34px]
-          lg:text-[38px]
-          xl:text-[42px]
+          text-[22px]
+          sm:text-[26px]
+          lg:text-[30px]
+          xl:text-[34px]
           leading-[1.2]
           font-light
           text-black
-          mb-8
+          mb-6
         "
                 >
                     AI-Driven Software Development Company
@@ -32,7 +32,7 @@ export default function GrowthSection() {
 
                 {/* GRID */}
 
-                <div className="grid grid-cols-12 gap-5 lg:h-[calc(100%-120px)]">
+                <div className="grid grid-cols-12 gap-4 lg:gap-5 ">
 
                     {/* LEFT */}
 
@@ -49,8 +49,8 @@ export default function GrowthSection() {
             via-[#ffc600]
             to-[#ffe600]
 
-            p-6
-            lg:p-8
+            p-5
+            lg:p-6
 
             relative
 
@@ -61,13 +61,13 @@ export default function GrowthSection() {
 
                         <h3
                             className="
-              text-[34px]
-              sm:text-[38px]
-              lg:text-[42px]
-              xl:text-[48px]
+              text-[26px]
+              sm:text-[30px]
+              lg:text-[34px]
+              xl:text-[38px]
               font-medium
               leading-[1.05]
-              mb-6
+              mb-4
             "
                         >
                             AI-Driven Software
@@ -77,12 +77,12 @@ export default function GrowthSection() {
 
                         <div
                             className="
-              space-y-6
-              sm:space-y-5
-              text-base
-              lg:text-[18px]
-              leading-[1.8]
-              sm:leading-[1.8]
+              space-y-3
+              sm:space-y-3
+              text-sm
+              lg:text-[15px]
+              leading-[1.6]
+              sm:leading-[1.6]
             "
                         >
                             <p>
@@ -115,24 +115,25 @@ export default function GrowthSection() {
                             className="
               group
 
-              mt-10
-              sm:mt-8
+              mt-6
+              sm:mt-5
 
               inline-flex
               items-center
               gap-2
 
-              px-8
-              sm:px-6
-              py-4
-              sm:py-3
+              px-6
+              sm:px-5
+              py-3
+              sm:py-2
 
               border-2
               border-black
 
               rounded-full
 
-              text-lg
+              text-sm
+              lg:text-base
               font-semibold
 
               hover:bg-black
@@ -143,7 +144,7 @@ export default function GrowthSection() {
                         >
                             Discover More
                             <ArrowUpRight
-                                size={20}
+                                size={18}
                                 className="
                   transition-transform
                   duration-300
@@ -164,22 +165,18 @@ export default function GrowthSection() {
               bottom-0
               right-0
 
-              translate-x-[5%]
-              sm:translate-x-[15%]
-              md:translate-x-[25%]
-              translate-y-[-5%]
-              sm:translate-y-[-10%]
-              md:translate-y-[-5%]
+              -bottom-0
+              -right-0
 
-              w-[56px]
-              sm:w-[72px]
-              lg:w-[100px]
-              h-[56px]
-              sm:h-[72px]
-              lg:h-[100px]
+              w-[44px]
+              sm:w-[56px]
+              lg:w-[72px]
+              h-[44px]
+              sm:h-[56px]
+              lg:h-[72px]
 
-              rounded-[20px]
-              sm:rounded-[28px]
+              rounded-[14px]
+              sm:rounded-[20px]
 
               bg-black
 
@@ -191,9 +188,9 @@ export default function GrowthSection() {
               "
                         >
                             <ArrowUpRight
-                                size={28}
+                                size={20}
                                 color="white"
-                                className="sm:w-[42px] sm:h-[42px] transition-all duration-500 ease-out group-hover:rotate-45"
+                                className="sm:w-[30px] sm:h-[30px] transition-all duration-500 ease-out group-hover:rotate-45"
                             />
                         </Link>
 
@@ -208,7 +205,7 @@ export default function GrowthSection() {
 
             flex
             flex-col
-            gap-5
+            gap-4
 
             h-auto
             lg:h-full
@@ -217,26 +214,25 @@ export default function GrowthSection() {
 
                         <div
                             className="
-              rounded-[28px]
-              lg:rounded-[40px]
+            rounded-[20px]
+              lg:rounded-[28px]
 
               bg-gradient-to-br
               from-[#c7f0ff]
               via-[#ececec]
               to-[#ffd5c8]
 
-              p-6
-              lg:p-8
+              p-4
+              lg:p-5
 
               flex-1
-            "
-                        >
+            ">
 
-                            <h3 className="text-[36px] sm:text-[46px] lg:text-[54px] xl:text-[64px] leading-none">
+                            <h3 className="text-[28px] sm:text-[34px] lg:text-[40px] xl:text-[46px] leading-none">
                                 50+
                             </h3>
 
-                            <p className="mt-4 text-base lg:text-[18px] leading-[1.7]">
+                            <p className="mt-2 text-sm lg:text-[15px] leading-[1.5]">
                                 Over 50 successful implementations across
                                 custom software, AI automation, and enterprise
                                 solutions.
@@ -246,11 +242,11 @@ export default function GrowthSection() {
 
                         <div
                             className="
-              rounded-[28px]
-              lg:rounded-[40px]
+            rounded-[20px]
+              lg:rounded-[28px]
 
-              p-6
-              lg:p-8
+              p-4
+              lg:p-5
 
               text-white
 
@@ -260,14 +256,13 @@ export default function GrowthSection() {
               from-[#ff4b8b]
               via-[#ff7c9b]
               to-[#ffc95d]
-            "
-                        >
+            ">
 
-                            <h3 className="text-[36px] sm:text-[46px] lg:text-[54px] xl:text-[64px] leading-none">
+                            <h3 className="text-[28px] sm:text-[34px] lg:text-[40px] xl:text-[46px] leading-none">
                                 25+
                             </h3>
 
-                            <p className="mt-4 text-base lg:text-[18px] leading-[1.7]">
+                            <p className="mt-2 text-sm lg:text-[15px] leading-[1.5]">
                                 Our clients trust us for consistent results,
                                 transparent processes, and long-term
                                 partnerships built on performance.
@@ -284,24 +279,21 @@ export default function GrowthSection() {
             col-span-12
             lg:col-span-3
 
-            rounded-[28px]
-            lg:rounded-[40px]
+            rounded-[20px]
+            lg:rounded-[28px]
 
             bg-[#dfdfdf]
 
-            p-6
-            lg:p-8
+            p-4
+            lg:p-5
 
             relative
 
-            min-h-[460px]
-            sm:min-h-[300px]
-            md:min-h-[400px]
             lg:h-full
           "
                     >
 
-                        <div className="flex mb-6 flex-wrap">
+                        <div className="flex mb-3 flex-wrap">
 
                             {[
                                 "🇺🇸",
@@ -313,8 +305,8 @@ export default function GrowthSection() {
                                 <div
                                     key={flag}
                                     className={`
-                  w-10 sm:w-12
-                  h-10 sm:h-12
+                  w-8 sm:w-10
+                  h-8 sm:h-10
 
                   rounded-full
 
@@ -324,7 +316,7 @@ export default function GrowthSection() {
                   items-center
                   justify-center
 
-                  text-[18px] sm:text-[22px]
+                  text-[14px] sm:text-[18px]
 
                   ${idx > 0 ? '-ml-2 sm:-ml-2' : ''}
                 `}
@@ -337,12 +329,12 @@ export default function GrowthSection() {
 
                         <h3
                             className="
-              text-[28px]
-              sm:text-[32px]
-              lg:text-[38px]
-              xl:text-[42px]
+              text-[22px]
+              sm:text-[26px]
+              lg:text-[30px]
+              xl:text-[34px]
               leading-[1.1]
-              mb-6
+              mb-3
             "
                         >
                             Trusted
@@ -352,9 +344,9 @@ export default function GrowthSection() {
 
                         <p
                             className="
-              text-base
-              lg:text-[18px]
-              leading-[1.8]
+              text-sm
+              lg:text-[15px]
+              leading-[1.6]
             "
                         >
                             Recognized globally for digital growth, with over a
@@ -371,8 +363,8 @@ export default function GrowthSection() {
               relative
               sm:absolute
               bottom-0
-              sm:bottom-8
-              mt-6
+              sm:bottom-4
+              mt-4
               sm:mt-0
 
               border-2
@@ -380,9 +372,10 @@ export default function GrowthSection() {
 
               rounded-full
 
-              px-6
-              py-3
+              px-5
+              py-2
               inline-block
+              text-sm
             "
                         >
                             Our Reviews
@@ -402,19 +395,18 @@ export default function GrowthSection() {
               top-0
               right-0
 
-              translate-x-[5%]
-              sm:translate-x-[10%]
-              md:translate-x-[15%]
+              -top-0
+              -right-0
 
-              w-[50px]
-              sm:w-[66px]
-              lg:w-[90px]
-              h-[50px]
-              sm:h-[66px]
-              lg:h-[90px]
+              w-[40px]
+              sm:w-[50px]
+              lg:w-[66px]
+              h-[40px]
+              sm:h-[50px]
+              lg:h-[66px]
 
-              rounded-[20px]
-              sm:rounded-[24px]
+              rounded-[14px]
+              sm:rounded-[20px]
 
               bg-black
 
@@ -426,8 +418,8 @@ export default function GrowthSection() {
               "
                         >
                             <ArrowUpRight
-                                size={24}
-                                className="sm:w-[40px] sm:h-[40px] transition-all duration-500 ease-out group-hover:rotate-45"
+                                size={18}
+                                className="sm:w-[28px] sm:h-[28px] transition-all duration-500 ease-out group-hover:rotate-45"
                                 color="white"
                             />
                         </a>
