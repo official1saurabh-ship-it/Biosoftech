@@ -23,7 +23,7 @@ import {
   BadgeCheck,
   ArrowRight,
 } from "lucide-react";
-import about from "../assets/about-hero-illustration.webp";
+import about from "../assets/about-hero-illustration.avif";
 import growthImage from "../assets/about-growth-engine.png";
 import freshIdeasImage from "../assets/about-fresh-ideas.webp";
 import aboutHero from "../assets/about-us-hero-software-solutions.avif";
@@ -695,7 +695,7 @@ export default function About() {
                   <div className="absolute left-1/2 -ml-8 -top-8 w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
-                      className="w-full h-full rounded-full flex items-center justify-center"
+                      className="w-full h-full rounded-2xl flex items-center justify-center"
                     >
                       <Award className="w-8 h-8 text-orange-500" />
                     </motion.div>
@@ -704,7 +704,7 @@ export default function About() {
                   <div className="absolute left-[532px] top-[786px] w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
-                      className="w-full h-full rounded-full flex items-center justify-center"
+                      className="w-full h-full rounded-2xl flex items-center justify-center"
                     >
                       <Rocket className="w-8 h-8 text-blue-500" />
                     </motion.div>
@@ -713,7 +713,7 @@ export default function About() {
                   <div className="absolute left-[-13px] top-[532px] w-16 h-16">
                     <motion.div
                       style={{ rotate: counterOrbitAngle }}
-                      className="w-full h-full rounded-full flex items-center justify-center"
+                      className="w-full h-full rounded-2xl flex items-center justify-center"
                     >
                       <Lightbulb className="w-8 h-8 text-purple-500" />
                     </motion.div>

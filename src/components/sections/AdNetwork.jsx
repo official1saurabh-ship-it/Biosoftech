@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import advertiser from "../../assets/adnetwork-partner.png";
-import publisher from "../../assets/adnetwork-publisher.webp";
+import publisher from "../../assets/adnetwork-publisher.png";
 import affiliate from "../../assets/adnetwork-affiliate.webp";
 
 const WEBSITE_URL = "https://www.biosoftech.com";
@@ -414,9 +414,9 @@ duration-500
 ease-in-out
 
 ${!isDesktop
-    ? "opacity-100 pointer-events-auto"
-    : "opacity-0 group-hover:opacity-100 group-active:opacity-100 pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto"
-}
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 group-hover:opacity-100 group-active:opacity-100 pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto"
+            }
 `}
         >
 

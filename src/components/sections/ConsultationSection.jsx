@@ -88,17 +88,17 @@ export default function ConsultationSection() {
       setIsSubmitting(false);
     }
   };
-    return (
+  return (
     <section className="bg-[#f5f5f5] py-10 sm:py-12 lg:py-16 overflow-hidden">
 
-            <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-stretch">
 
-                    {/* LEFT IMAGE - hidden on very small screens */}
+          {/* LEFT IMAGE - hidden on very small screens */}
 
-                    <div
-                        className="
+          <div
+            className="
 relative
 hidden
 sm:flex
@@ -110,12 +110,12 @@ lg:h-[700px]
 max-h-[520px]
 sm:max-h-none
 "
-                    >
+          >
 
-                        {/* BLUE SHAPE */}
+            {/* BLUE SHAPE */}
 
-                    <div
-                        className="
+            <div
+              className="
               absolute
               left-0
               top-10
@@ -133,12 +133,12 @@ sm:max-h-none
 
               -z-10
             "
-                    />
+            />
 
-                    {/* GREEN SHAPE */}
+            {/* GREEN SHAPE */}
 
-                    <div
-                        className="
+            <div
+              className="
               absolute
               left-3
               sm:left-6
@@ -157,12 +157,12 @@ sm:max-h-none
 
               -z-10
             "
-                    />
+            />
 
-                    {/* IMAGE */}
+            {/* IMAGE */}
 
-                    <div
-                        className="
+            <div
+              className="
               overflow-hidden
 
              w-[220px]
@@ -174,24 +174,24 @@ sm:max-h-none
 
               rounded-[58%_42%_56%_44%/48%_34%_66%_52%]
             "
-                    >
-                        <img
-                            src={consultationImg}
-                            alt="Biosoftech free software consultation booking form illustration"
-                            width="500"
-                            height="620"
-                            className="
+            >
+              <img
+                src={consultationImg}
+                alt="Biosoftech free software consultation booking form illustration"
+                width="500"
+                height="620"
+                className="
                 w-full
                 h-full
                 object-cover
               "
-                        />
-                    </div>
+              />
+            </div>
 
-                        {/* SMALL IMAGE */}
+            {/* SMALL IMAGE */}
 
-                    <div
-                        className="
+            <div
+              className="
               absolute
 
               bottom-4
@@ -212,25 +212,25 @@ sm:max-h-none
               sm:border-[10px]
               border-white
             "
-                    >
-                        <img
-                            src={consultationImg}
-                            alt="Biosoftech consultation decorative thumbnail for booking"
-                            width="260"
-                            height="220"
-                            className="
+            >
+              <img
+                src={consultationImg}
+                alt="Biosoftech consultation decorative thumbnail for booking"
+                width="260"
+                height="220"
+                className="
                 w-full
                 h-full
                 object-cover
               "
-                        />
-                    </div>
+              />
+            </div>
 
-                    </div>
+          </div>
 
-                    {/* RIGHT FORM */}
+          {/* RIGHT FORM */}
 
-                    <div className="
+          <div className="
 flex
 flex-col
 justify-center
@@ -238,12 +238,12 @@ h-auto
 lg:h-[700px]
 ">
 
-                        <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
 
-                            <span className="w-2 h-2 rounded-full bg-blue-600 shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-blue-600 shrink-0" />
 
-                            <h2
-                                className="
+              <h2
+                className="
                 text-2xl
                 sm:text-[30px]
                 lg:text-[36px]
@@ -252,21 +252,21 @@ lg:h-[700px]
                 font-bold
                 text-[#40356b]
               "
-                            >
-                                Book a Free Software Consultation
-                            </h2>
+              >
+                Book a Free Software Consultation
+              </h2>
 
-                        </div>
+            </div>
 
-                        <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
 
-                            <input
-                                name="fullName"
-                                value={formData.fullName}
-                                onChange={handleChange}
-                                placeholder="Enter Your Full Name*"
-                                required
-                                className="
+              <input
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                placeholder="Enter Your Full Name*"
+                required
+                className="
                 w-full
 
                h-[58px]
@@ -282,16 +282,16 @@ lg:h-[700px]
                 bg-white
                 focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
-                            />
-                            
-                            <input
-                                name="phone"
-                                value={formData.phone}
-                                onChange={handleChange}
-                                placeholder="Enter Your Phone Number*"
-                                type="tel"
-                                required
-                                className="
+              />
+
+              <input
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Enter Your Phone Number*"
+                type="tel"
+                required
+                className="
                 w-full
 
                 h-[58px]
@@ -305,16 +305,16 @@ lg:h-[700px]
                 outline-none
                 focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
-                            />
-                            
-                            <input
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                placeholder="Enter Your Email Address*"
-                                type="email"
-                                required
-                                className="
+              />
+
+              <input
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Enter Your Email Address*"
+                type="email"
+                required
+                className="
                 w-full
 
                 h-[58px]
@@ -328,18 +328,18 @@ lg:h-[700px]
                 outline-none
                 focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
-                            />
-                            
-                            <div className="relative">
+              />
 
-                                <label htmlFor="consultation-service" className="sr-only">How Can We Help You?</label>
-                                <select
-                                    id="consultation-service"
-                                    name="service"
-                                    value={formData.service}
-                                    onChange={handleChange}
-                                    required
-                                    className="
+              <div className="relative">
+
+                <label htmlFor="consultation-service" className="sr-only">How Can We Help You?</label>
+                <select
+                  id="consultation-service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  className="
                    w-full
 
                   h-[58px]
@@ -356,63 +356,63 @@ lg:h-[700px]
                   outline-none
                   focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
                 "
-                                >
-                                    <option value="">
-                                        How Can We Help You?*
-                                    </option>
+                >
+                  <option value="">
+                    How Can We Help You?*
+                  </option>
 
-                                    <option value="Develop Custom Software Solutions">
-                                        Develop Custom Software Solutions
-                                    </option>
+                  <option value="Develop Custom Software Solutions">
+                    Develop Custom Software Solutions
+                  </option>
 
-                                    <option value="Build Or Upgrade My Mobile App / Website">
-                                        Build Or Upgrade My Mobile App / Website
-                                    </option>
+                  <option value="Build Or Upgrade My Mobile App / Website">
+                    Build Or Upgrade My Mobile App / Website
+                  </option>
 
-                                    <option value="Integrate AI Automation Into My Workflow">
-                                        Integrate AI Automation Into My Workflow
-                                    </option>
+                  <option value="Integrate AI Automation Into My Workflow">
+                    Integrate AI Automation Into My Workflow
+                  </option>
 
-                                     <option value="Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)">
-                                        Mitra Suite (Billing, Restro, Hotel, Skola, Tentent)
-                                    </option>
+                  <option value="Implement Mitra Suite Products (Billing, Restro, Hotel, Skola, Tentent)">
+                    Mitra Suite (Billing, Restro, Hotel, Skola, Tentent)
+                  </option>
 
-                                    <option value="Healthcare / Real Estate / Hospitality Software Needs">
-                                        Healthcare / Real Estate / Hospitality
-                                    </option>
+                  <option value="Healthcare / Real Estate / Hospitality Software Needs">
+                    Healthcare / Real Estate / Hospitality
+                  </option>
 
-                                    <option value="Cloud Integration & Data Security Services">
-                                        Cloud Integration & Data Security Services
-                                    </option>
+                  <option value="Cloud Integration & Data Security Services">
+                    Cloud Integration & Data Security Services
+                  </option>
 
-                                    <option value="Not Sure - Need Expert Guidance">
-                                        Not Sure - Need Expert Guidance
-                                    </option>
+                  <option value="Not Sure - Need Expert Guidance">
+                    Not Sure - Need Expert Guidance
+                  </option>
 
-                                </select>
+                </select>
 
-                                <ChevronDown
-                                    className="
+                <ChevronDown
+                  className="
                   absolute
                   right-6
                   top-1/2
                   -translate-y-1/2
                   text-gray-500
                 "
-                                />
+                />
 
-                            </div>
+              </div>
 
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleChange}
-                                rows="4"
-                                placeholder="
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows="4"
+                placeholder="
 Share a Brief About Your Business and Requirement So We Can Suggest the Best Solution*
 "
-                                required
-                                className="
+                required
+                className="
                 w-full
 
                 rounded-md
@@ -426,12 +426,12 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
                 outline-none
                 focus:border-[#06b6d4] focus:ring-2 focus:ring-[#06b6d4]/20
               "
-                            />
+              />
 
-                            <button
-                                type="submit"
-                                disabled={isSubmitting}
-                                className="
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="
                 w-full
                 px-10
                 py-5
@@ -445,28 +445,28 @@ Share a Brief About Your Business and Requirement So We Can Suggest the Best Sol
                 rounded-md
                 disabled:opacity-60 disabled:cursor-not-allowed
               "
-                            >
-                                {isSubmitting
-                                    ? "SENDING..."
-                                    : status.type === "success"
-                                      ? "MESSAGE SENT!"
-                                      : "SEND MESSAGE"}
-                            </button>
+              >
+                {isSubmitting
+                  ? "SENDING..."
+                  : status.type === "success"
+                    ? "MESSAGE SENT!"
+                    : "SEND MESSAGE"}
+              </button>
 
-                            {status.message && (
-                              <p className={`text-sm font-medium text-center ${status.type === "success" ? "text-green-600" : "text-red-600"}`}>
-                                {status.message}
-                              </p>
-                            )}
+              {status.message && (
+                <p className={`text-sm font-medium text-center ${status.type === "success" ? "text-green-600" : "text-red-600"}`}>
+                  {status.message}
+                </p>
+              )}
 
-                        </form>
+            </form>
 
-                    </div>
+          </div>
 
-                </div>
+        </div>
 
-            </div>
+      </div>
 
-        </section>
-    );
+    </section>
+  );
 }
