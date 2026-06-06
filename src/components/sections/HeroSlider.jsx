@@ -108,7 +108,7 @@ export default function HeroRevealSlider() {
               >
                 <img
                   src={slide.image}
-                  alt="Hero"
+                  alt="Woman in a khaki suit and white shirt holding a tablet, with text 'Where IDEAS BECOME SMART SOLUTIONS'"
                   className="w-auto h-[clamp(280px,45vw,450px)] sm:h-[clamp(320px,40vw,520px)] lg:h-[clamp(380px,35vw,580px)] xl:h-[clamp(450px,30vw,680px)] 2xl:h-[clamp(500px,28vw,740px)] object-contain"
                 />
               </motion.div>

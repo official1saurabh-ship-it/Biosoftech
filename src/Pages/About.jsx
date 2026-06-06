@@ -168,10 +168,10 @@ export default function About() {
   ];
 
   const stats = [
-    { icon: Star, value: "30", plus: "+", title: "Projects", sub: "Delivered" },
-    { icon: Calendar, value: "7", plus: "+", title: "Years of", sub: "Experience" },
-    { icon: Handshake, value: "50", plus: "+", title: "Satisfied", sub: "Clients" },
-    { icon: Users, value: "50", plus: "+", title: "Skilled Team", sub: "Members" },
+    { icon: Star, value: "15", plus: "+", title: "Verified", sub: "Projects" },
+    { icon: Calendar, value: "2", plus: "+", title: "Years of", sub: "Experience" },
+    { icon: Handshake, value: "30", plus: "+", title: "Happy", sub: "Clients" },
+    { icon: Users, value: "25", plus: "+", title: "Skilled Team", sub: "Members" },
   ];
 
   const services1 = [
@@ -229,7 +229,7 @@ export default function About() {
       color: "#00BFFF",
       title: "Recognition Across Industries",
       description:
-        "Served clients in 35+ industries, completing 500+ projects, and building long-term partnerships across India.",
+        "Served clients in 35+ industries, completing 15+ projects, and building long-term partnerships across India.",
     },
     {
       year: "2025",
@@ -347,12 +347,20 @@ export default function About() {
   return (
     <div className="pt-0">
       <SEO
-        title="About Us – Software Development Company | Biosoftech Solutions"
-        description="Learn about Biosoftech Solutions – 10+ years, 500+ projects, 500+ happy clients. We deliver web, mobile, desktop, cloud, and AI-powered software solutions from Lucknow, India."
-        keywords="about Biosoftech, software company Lucknow, web development company India, mobile app development, cloud services"
+        title="About Us | Biosoftech - Full-Service Software Development Company for Digital Growth"
+        description="Discover Biosoftech, your technical partner with 2+ years of excellence. We are a one-stop destination for custom software, mobile applications, and AI solutions for digital growth. Fast Results, Smart Solutions!"
+        keywords="About Biosoftech, Software Development Company, Digital Growth, 2+ Years Of Excellence, Technical Partner, Custom Software, Mobile Applications, AI Solutions, One-stop Destination"
+        ogTitle="About Us | Biosoftech - Your Technical Partner"
+        ogDescription="Biosoftech is a full-service software development company for digital growth. Achieve your business goals with our custom software, mobile apps, and AI solutions."
+        canonical="https://www.biosoftech.com/about"
         ogUrl="https://www.biosoftech.com/about"
       />
-      <StructuredData type="LocalBusiness" />
+      <StructuredData type="custom" data={{
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Biosoftech",
+        "description": "Biosoftech is a technical partner and full-service software development company for digital growth with 2+ years of excellence."
+      }} />
       <StructuredData type="Breadcrumb" data={[
         { name: "Home", url: "https://www.biosoftech.com" },
         { name: "About", url: "https://www.biosoftech.com/about" },
@@ -379,14 +387,14 @@ export default function About() {
               <span className="inline-block w-1 md:w-2 h-5 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
             </h1>
             <p className="mt-4 sm:mt-6 md:mt-8 text-sm sm:text-base md:text-[16px] lg:text-[18px] leading-relaxed md:leading-[30px] lg:leading-[38px] text-gray-600 max-w-[650px] mx-auto lg:mx-0">
-              Join <span className="font-bold text-gray-900">50+ businesses worldwide</span> who transformed their operations with
+              Join <span className="font-bold text-gray-900">20+ businesses worldwide</span> who transformed their operations with
               <span className="font-bold text-gray-900"> Biosoftech Solutions'</span> best software development and automation services.
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6 md:mt-8 text-xs sm:text-sm md:text-base lg:text-[18px] font-semibold">
               <CheckCircle size={16} className="sm:w-[20px] sm:h-[20px] text-purple-600 shrink-0" />
               <span>Rated</span>
               <span className="text-orange-500">★★★★★</span>
-              <span>by 30+ happy clients</span>
+              <span>by 20+ happy clients</span>
             </div>
             <div className="flex items-center justify-center lg:justify-start mt-6 sm:mt-8">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -422,7 +430,7 @@ export default function About() {
             </div>
             <div className="absolute right-0 sm:right-4 md:right-10 bottom-4 sm:bottom-12 md:bottom-20 bg-white/95 backdrop-blur-md p-1.5 sm:p-4 md:p-6 rounded-xl md:rounded-3xl shadow-2xl z-30 border border-white/50 flex items-center gap-1 sm:gap-3 max-w-[45%] sm:max-w-none">
               <div className="bg-blue-100 p-1 sm:p-3 rounded-lg sm:rounded-xl"><span className="text-fluid-xs sm:text-fluid-lg">🌐</span></div>
-              <div><h3 className="text-fluid-xl sm:text-fluid-4xl font-black text-blue-600">30+</h3><p className="text-[8px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
+              <div><h3 className="text-fluid-xl sm:text-fluid-4xl font-black text-blue-600">15+</h3><p className="text-[8px] sm:text-xs md:text-sm font-bold text-gray-500 uppercase tracking-widest">Projects Delivered</p></div>
             </div>
           </div>
         </div>
@@ -490,7 +498,7 @@ export default function About() {
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[42px] lg:leading-[54px] xl:text-[50px] xl:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
-              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2025. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
+              <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
               <h3 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-[28px] lg:text-[32px] xl:text-[38px] font-black text-[#433d70]">Our Mission</h3>
               <p className="mt-1 sm:mt-2 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px]">To empower businesses worldwide by creating smart, AI-powered software solutions that streamline operations, generate growth, and drive long-term success.</p>
@@ -558,17 +566,17 @@ export default function About() {
             >
               {/* Desktop overlapping cards - uses CSS Grid for stable overlap */}
               <div className="hidden md:grid md:grid-cols-[65%_1fr] md:grid-rows-1 w-full max-w-[620px] mx-auto">
-                {/* Card 1 (30+ Projects) - background layer */}
+                {/* Card 1 (15+ Projects) - background layer */}
                 <div className="col-span-2 row-span-1 col-start-1 row-start-1 z-10 w-[clamp(280px,55%,420px)] translate-y-[-15%] md:translate-y-[-13%] lg:translate-y-[-17%] xl:translate-y-[-19%] rounded-tr-[clamp(60px,8vw,120px)] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-6 md:p-8 xl:p-10">
-                  <h3 className="text-white text-[clamp(40px,6vw,90px)] font-black leading-none">30+</h3>
+                  <h3 className="text-white text-[clamp(40px,6vw,90px)] font-black leading-none">15+</h3>
                   <p className="text-white text-[clamp(14px,2vw,26px)] font-bold mt-1">Projects Delivered</p>
                   <div className="mt-4 md:mt-6 w-[clamp(100px,18vw,240px)] h-[clamp(100px,18vw,240px)] rounded-[clamp(16px,2.5vw,36px)] bg-[#C839D8] flex items-center justify-center text-[clamp(40px,6vw,90px)] mx-auto">
                     🌐
                   </div>
                 </div>
-                {/* Card 2 (50+ Clients / 15+ Industries) - foreground layer */}
+                {/* Card 2 (15+ Clients / 15+ Industries) - foreground layer */}
                 <div className="col-span-2 row-span-1 col-start-1 row-start-1 z-20 w-[clamp(300px,58%,430px)] translate-x-[60%] md:translate-x-[58%] lg:translate-x-[64%] xl:translate-x-[66%] translate-y-[10%] md:translate-y-[14%] lg:translate-y-[16%] xl:translate-y-[18%] rounded-tr-[clamp(40px,5vw,80px)] bg-gradient-to-br from-[#291043] to-[#5B1896] py-1.5 md:py-2 xl:py-3 px-4 md:px-6 xl:px-8">
-                  <h3 className="text-white text-[clamp(28px,4vw,60px)] font-black leading-[0.9]">50+</h3>
+                  <h3 className="text-white text-[clamp(28px,4vw,60px)] font-black leading-[0.9]">15+</h3>
                   <p className="text-white text-[clamp(11px,1.2vw,18px)] font-bold">Satisfied Clients</p>
                   <div className="flex items-center justify-center text-[clamp(40px,7vw,100px)] opacity-90 my-0.5">⚡</div>
                   <div className="text-right">
@@ -581,14 +589,14 @@ export default function About() {
               {/* Mobile stacked cards */}
               <div className="md:hidden space-y-3">
                 <div className="rounded-tr-[60px] bg-gradient-to-b from-[#D32FFF] to-[#FF5B5B] p-4 sm:p-6">
-                  <h3 className="text-white text-[48px] sm:text-[64px] font-black">30+</h3>
+                  <h3 className="text-white text-[48px] sm:text-[64px] font-black">15+</h3>
                   <p className="text-white text-fluid-lg font-bold">Projects Delivered</p>
                   <div className="mt-4 w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-[#C839D8] flex items-center justify-center text-fluid-4xl">🌐</div>
                 </div>
                 <div className="rounded-tr-[60px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-6 sm:p-8">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-white text-[48px] sm:text-[64px] font-black">50+</h3>
+                      <h3 className="text-white text-[48px] sm:text-[64px] font-black">15+</h3>
                       <p className="text-white text-fluid-lg font-bold">Satisfied Clients</p>
                     </div>
                     <div className="text-fluid-6xl opacity-90">⚡</div>
@@ -628,7 +636,7 @@ export default function About() {
                 style={{ y: descY }}
                 className="mt-3 sm:mt-4 text-sm sm:text-base md:text-[clamp(14px,1.2vw,18px)] leading-[clamp(22px,2.5vw,32px)] text-[#444]"
               >
-                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology.                 With 30+ projects delivered, 50+ satisfied clients, and 15+ industries served, we combine innovation with reliability to help organizations thrive in the digital era.
+                Biosoftech Solutions is a global leader in next-generation software development and IT services. We specialize in delivering measurable results through web, mobile, desktop, and cloud solutions, empowering businesses across industries with smart, scalable technology.                 With 15+ projects delivered, 300+ satisfied clients, and 40+ industries served, we combine innovation with reliability to help organizations thrive in the digital era.
               </motion.p>
 
               <motion.div
@@ -758,7 +766,7 @@ export default function About() {
               <div className="mt-10 flex items-center gap-3">
                 <Lightbulb className="w-7 h-7 text-orange-500" />
                 <h3 className="text-2xl font-bold">
-                  We Work Across 15+ Industries
+                  We Work Across 35+ Industries
                 </h3>
               </div>
 
@@ -1231,7 +1239,7 @@ export default function About() {
 
                 <div className="bg-[#FFB800] rounded-xl py-4 text-center">
                   <h3 className="text-white text-fluid-3xl font-bold">
-                    30+
+                    15+
                   </h3>
 
                   <p className="text-white text-fluid-lg">

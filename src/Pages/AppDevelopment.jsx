@@ -189,7 +189,7 @@ const AppDevelopment = () => {
 
     const stats = [
         { img: scalable1, value: "2+", title: "Years of Experience" },
-        { img: scalable2, value: "30+", title: "Successful Projects Delivered" },
+        { img: scalable2, value: "15+", title: "Successful Projects Delivered" },
         { img: scalable3, value: "20+", title: "Development Specialists" },
         { img: scalable4, value: "99%", title: "Client Satisfaction Rate" },
     ];
@@ -480,7 +480,7 @@ const AppDevelopment = () => {
         <>
             <SEO
                 title="App Development Company – iOS & Android App Developers | Biosoftech"
-                description="Biosoftech Solutions builds high-performance iOS, Android, and cross-platform apps. 500+ projects delivered. Expert UI/UX, scalable architecture, and end-to-end app development."
+                description="Biosoftech Solutions builds high-performance iOS, Android, and cross-platform apps. 15+ projects delivered. Expert UI/UX, scalable architecture, and end-to-end app development."
                 keywords="app development company, Android app development, iOS app development, cross-platform apps, mobile app developers Mumbai, Flutter, React Native"
                 ogUrl="https://www.biosoftech.com/app-development"
             />
@@ -799,16 +799,18 @@ const AppDevelopment = () => {
                             Leverage the Technical Expertise of A Top Custom App Development Company to Own Feature-rich Mobile Applications
                         </p>
                     </div>
-                    <div className="mt-12 md:mt-20 flex justify-center flex-wrap gap-2 md:gap-0 border-b">
-                        {Object.keys(techTabsData).map((tab) => (
-                            <button
-                                key={tab}
-                                onClick={() => setActiveTechTab(tab)}
-                                className={`px-4 md:px-10 py-3 md:py-5 text-fluid-base font-medium transition border-b-2 ${activeTechTab === tab ? "border-black" : "border-transparent"}`}
-                            >
-                                {tab}
-                            </button>
-                        ))}
+                    <div className="mt-12 md:mt-20 overflow-x-auto pb-2 scrollbar-hide">
+                        <div className="flex justify-center gap-2 md:gap-0 border-b min-w-max md:min-w-0 mx-auto w-max">
+                            {Object.keys(techTabsData).map((tab) => (
+                                <button
+                                    key={tab}
+                                    onClick={() => setActiveTechTab(tab)}
+                                    className={`px-4 md:px-10 py-3 md:py-5 text-fluid-base font-medium transition border-b-2 whitespace-nowrap min-h-[44px] ${activeTechTab === tab ? "border-black" : "border-transparent"}`}
+                                >
+                                    {tab}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                     <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-8 sm:gap-y-12 md:gap-y-16">
                         {techTabsData[activeTechTab].map((item, i) => (
@@ -973,11 +975,12 @@ const AppDevelopment = () => {
                 <div className="w-full px-6">
                     {/* Heading */}
                     <div className="text-center w-full">
-                        <h2 className="text-3xl md:text-5xl lg:text-[64px] font-bold leading-tight md:leading-[1.15] text-[#1b1515]">
-                            Platforms Our End-To-End Android Apps
-                            Development Services
-                            <br className="hidden md:block" />
-                            Can Target
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] font-bold leading-tight md:leading-[1.15] text-[#1b1515]">
+                            Platforms Our End-To-End
+                            <br />
+                            Android Apps Development
+                            <br />
+                            Services Can Target
                         </h2>
                         <p className="mt-6 md:mt-8 text-fluid-base leading-relaxed md:leading-[2] text-[#404040] w-full">
                             Segregated by mediums but unified by our
@@ -988,16 +991,16 @@ const AppDevelopment = () => {
                         </p>
                     </div>
                     {/* Platform Cards */}
-                    <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
                         {platforms.map((item, index) => (
-                            <div key={index} className="bg-white min-h-[120px] md:min-h-[150px] rounded-xl px-6 md:px-8 py-8 md:py-10 flex items-center gap-5 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-gray-100">
-                                <img src={item.icon} alt={item.title} loading="lazy" width="42" height="42" className="w-10 h-10 md:w-[42px] md:h-[42px] object-contain shrink-0" />
+                            <div key={index} className="bg-white min-h-[100px] md:min-h-[150px] rounded-xl px-4 md:px-8 py-5 md:py-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-5 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-gray-100 text-center sm:text-left">
+                                <img src={item.icon} alt={item.title} loading="lazy" width="42" height="42" className="w-8 h-8 sm:w-10 sm:h-10 md:w-[42px] md:h-[42px] object-contain shrink-0" />
                                 <div>
-                                    <h3 className="text-base md:text-[18px] font-semibold text-[#161c2d]">
+                                    <h3 className="text-sm sm:text-base md:text-[18px] font-semibold text-[#161c2d]">
                                         {item.title}
                                     </h3>
                                     {item.subtitle && (
-                                        <div className="text-base md:text-[18px] font-semibold text-[#161c2d]">
+                                        <div className="text-sm sm:text-base md:text-[18px] font-semibold text-[#161c2d]">
                                             {item.subtitle}
                                         </div>
                                     )}
@@ -1098,7 +1101,7 @@ const AppDevelopment = () => {
                             <ul className="mt-10 md:mt-14 space-y-4 md:space-y-6 text-base md:text-[18px]">
                                 {[
                                     "20+ Skilled Developers",
-                                    "30+ Projects Delivered",
+                                    "15+ Projects Delivered",
                                     "97% Success Ratio",
                                     "2+ Years of Experience",
                                     "99% Client Satisfaction",

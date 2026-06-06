@@ -248,7 +248,7 @@ const WebDevelopment = () => {
         <>
             <SEO
                 title="Web Development Company – Custom Website Development | Biosoftech"
-                description="Biosoftech Solutions builds modern, responsive websites and web applications. Corporate sites, e-commerce stores, and custom portals with 500+ projects delivered."
+                description="Biosoftech Solutions builds modern, responsive websites and web applications. Corporate sites, e-commerce stores, and custom portals with 15+ projects delivered."
                 keywords="web development company, website development, custom web applications, e-commerce development, responsive websites, India"
                 ogUrl="https://www.biosoftech.com/web-development"
             />
@@ -266,7 +266,7 @@ const WebDevelopment = () => {
                                     At Biosoftech Solutions, we don&apos;t just create websites &mdash; we build powerful digital platforms that help businesses scale, engage customers, and achieve measurable success.
                                 </p>
                                 <p className="mt-3 sm:mt-4 lg:mt-6">
-                                    With years of expertise and <span className="font-bold">500+ projects delivered</span>, our team specializes in designing websites that are modern, responsive, and performance-driven. Whether you need a corporate site, an e-commerce store, or a custom industry portal, we ensure your website becomes a true growth engine.
+                                    With years of expertise and <span className="font-bold">15+ projects delivered</span>, our team specializes in designing websites that are modern, responsive, and performance-driven. Whether you need a corporate site, an e-commerce store, or a custom industry portal, we ensure your website becomes a true growth engine.
                                 </p>
                             </div>
                             <div className="mt-4 sm:mt-6 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8">
@@ -466,7 +466,7 @@ const WebDevelopment = () => {
 
                         <p className="text-[#666] max-w-3xl mx-auto mt-2 text-base lg:text-lg leading-7 lg:leading-8">
                             Welcome to our web development showcase.
-                            We have crafted 500+ digital dreams into reality.
+                            We have crafted 15+ digital dreams into reality.
                             Explore our successful project here.
                         </p>
                     </div>
@@ -536,13 +536,53 @@ const WebDevelopment = () => {
                         How We Execute Success
                     </h2>
 
-                    {/* Top Row */}
+                    {/* Steps grid - sequential on mobile, 2x2 on desktop */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12 lg:mt-20">
 
-                        {/* Step 2 */}
+                        {/* Step 01 - desktop: bottom-left (row 2) */}
+                        <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-5 lg:gap-10 lg:order-3">
 
-                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
+                            <img
+                                src={steps[0].image}
+                                alt={steps[0].title}
+                                loading="lazy"
+                                width="224"
+                                height="224"
+                                className={`
+                w-36 h-36 sm:w-56 sm:h-56 object-contain
+                transition-all duration-500
+                ${active === 1 ? "scale-110" : "scale-100"}
+              `}
+                            />
+
+                            <div className="text-center">
+
+                                <button
+                                    onMouseEnter={() => setActive(1)}
+                                    className={`
+                  text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  ${active === 1
+                                            ? "text-[#A051FF]"
+                                            : "text-[#F0D8CE]"
+                                        }
+                `}
+                                >
+                                    01
+                                </button>
+
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 lg:mt-5 mb-3 lg:mb-5">
+                                    {steps[0].title}
+                                </h3>
+
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
+                                    {steps[0].desc}
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 02 - desktop: top-left (row 1) */}
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10 lg:order-1">
 
                             <img
                                 src={steps[1].image}
@@ -581,9 +621,49 @@ const WebDevelopment = () => {
                             </div>
                         </div>
 
-                        {/* Step 4 */}
+                        {/* Step 03 - desktop: bottom-right (row 2) */}
+                        <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-5 lg:gap-10 lg:order-4">
 
-                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
+                            <img
+                                src={steps[2].image}
+                                alt={steps[2].title}
+                                loading="lazy"
+                                width="224"
+                                height="224"
+                                className={`
+                w-36 h-36 sm:w-56 sm:h-56 object-contain
+                transition-all duration-500
+                ${active === 3 ? "scale-110" : "scale-100"}
+              `}
+                            />
+
+                            <div className="text-center">
+
+                                <button
+                                    onMouseEnter={() => setActive(3)}
+                                    className={`
+                  text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
+                  ${active === 3
+                                            ? "text-[#A051FF]"
+                                            : "text-[#F0D8CE]"
+                                        }
+                `}
+                                >
+                                    03
+                                </button>
+
+                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 lg:mt-5 mb-3 lg:mb-5">
+                                    {steps[2].title}
+                                </h3>
+
+                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
+                                    {steps[2].desc}
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 04 - desktop: top-right (row 1) */}
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10 lg:order-2">
 
                             <img
                                 src={steps[3].image}
@@ -620,99 +700,6 @@ const WebDevelopment = () => {
                                     04
                                 </button>
                             </div>
-                        </div>
-                    </div>
-
-                    {/* Divider */}
-
-                    <div className="mt-10 border-t border-[#CFCFCF]" />
-
-                    {/* Bottom Row */}
-
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12">
-
-                        {/* Step 1 */}
-
-                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
-
-                            <div className="text-center">
-
-                                <button
-                                    onMouseEnter={() => setActive(1)}
-                                    className={`
-                  text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
-                  ${active === 1
-                                            ? "text-[#A051FF]"
-                                            : "text-[#F0D8CE]"
-                                        }
-                `}
-                                >
-                                    01
-                                </button>
-
-                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 lg:mt-5 mb-3 lg:mb-5">
-                                    {steps[0].title}
-                                </h3>
-
-                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
-                                    {steps[0].desc}
-                                </p>
-                            </div>
-
-                            <img
-                                src={steps[0].image}
-                                alt={steps[0].title}
-                                loading="lazy"
-                                width="224"
-                                height="224"
-                                className={`
-                w-36 h-36 sm:w-56 sm:h-56 object-contain
-                transition-all duration-500
-                ${active === 1 ? "scale-110" : "scale-100"}
-              `}
-                            />
-                        </div>
-
-                        {/* Step 3 */}
-
-                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
-
-                            <div className="text-center">
-
-                                <button
-                                    onMouseEnter={() => setActive(3)}
-                                    className={`
-                  text-fluid-5xl lg:text-8xl xl:text-9xl font-black transition-all duration-300
-                  ${active === 3
-                                            ? "text-[#A051FF]"
-                                            : "text-[#F0D8CE]"
-                                        }
-                `}
-                                >
-                                    03
-                                </button>
-
-                                <h3 className="text-fluid-3xl font-bold text-[#0D1023] mt-3 lg:mt-5 mb-3 lg:mb-5">
-                                    {steps[2].title}
-                                </h3>
-
-                                <p className="text-[#555B66] text-fluid-lg leading-6 sm:leading-7 lg:leading-10 max-w-md">
-                                    {steps[2].desc}
-                                </p>
-                            </div>
-
-                            <img
-                                src={steps[2].image}
-                                alt={steps[2].title}
-                                loading="lazy"
-                                width="224"
-                                height="224"
-                                className={`
-                w-36 h-36 sm:w-56 sm:h-56 object-contain
-                transition-all duration-500
-                ${active === 3 ? "scale-110" : "scale-100"}
-              `}
-                            />
                         </div>
                     </div>
                 </div>
@@ -1046,7 +1033,7 @@ const WebDevelopment = () => {
                         </h2>
 
                         <p className="mt-8 text-[#5f6c80] text-xl leading-relaxed">
-                            Experience plays a vital role in the web design and development process — and at Biosoftech Solutions, we bring proven expertise with 500+ projects delivered across 35+ industries.
+                            Experience plays a vital role in the web design and development process — and at Biosoftech Solutions, we bring proven expertise with 15+ projects delivered across 35+ industries.
                         </p>
                     </div>
 

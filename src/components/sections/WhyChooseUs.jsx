@@ -355,7 +355,7 @@ to-[#12003f]/40
 
             <img
               src={woman}
-              alt="Biosoftech professional woman illustration representing a valued customer"
+              alt="Woman in a black suit holding a silver notebook, next to a list of advantages like 'Cost-Effective Technology' and '24x7 Technical Support'"
               width="450"
               height="600"
 

@@ -47,7 +47,7 @@ const WebsiteDevelopment = () => {
                         <p className="mt-4 sm:mt-6 md:mt-8 text-[#687387] text-fluid-base leading-relaxed md:leading-9 max-w-[900px] mx-auto">
                             Experience plays a vital role in the web design process
                             — and at Biosoftech Solutions, we bring proven expertise
-                            with 500+ projects delivered across 35+ industries.
+                            with 15+ projects delivered across 35+ industries.
                         </p>
                     </div>
                     <div className="mt-12 sm:mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-x-8 lg:gap-x-12 xl:gap-x-28 gap-y-8 sm:gap-y-12 md:gap-y-20">

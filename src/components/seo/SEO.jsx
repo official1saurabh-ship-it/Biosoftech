@@ -7,15 +7,20 @@ const SEO = ({
   ogImage,
   ogUrl,
   canonical,
+  ogTitle,
+  ogDescription,
 }) => {
-  const siteName = "Biosoftech Solutions";
-  const defaultTitle = "Biosoftech Solutions – Software Development Company";
+  const siteName = "Biosoftech";
+  const defaultTitle = "Biosoftech – Full-Service Software Development Company for Digital Growth";
   const defaultDescription =
-    "Biosoftech Solutions is a leading software development company delivering web, mobile, desktop, cloud, and AI automation solutions since 2015.";
+    "Biosoftech is a full-service software development company for digital growth with 2+ years of excellence. We provide custom software, mobile applications, AI solutions, and digital tools for real estate and hospitality.";
   const defaultKeywords =
-    "software development company, web development, mobile app development, cloud services, AI automation, Lucknow, India";
+    "Biosoftech, Software Development Company, Digital Growth, Custom Software, Mobile Applications, AI Solutions";
   const siteUrl = "https://www.biosoftech.com";
   const defaultOgImage = "/og-image.jpg";
+
+  const finalOgTitle = ogTitle || (title ? `${title} | ${siteName}` : defaultTitle);
+  const finalOgDescription = ogDescription || description || defaultDescription;
 
   return (
     <Helmet>
@@ -25,13 +30,13 @@ const SEO = ({
       <link rel="canonical" href={canonical || ogUrl || siteUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={siteName} />
-      <meta property="og:title" content={title ? `${title} | ${siteName}` : defaultTitle} />
-      <meta property="og:description" content={description || defaultDescription} />
+      <meta property="og:title" content={finalOgTitle} />
+      <meta property="og:description" content={finalOgDescription} />
       <meta property="og:image" content={ogImage || defaultOgImage} />
       <meta property="og:url" content={ogUrl || siteUrl} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title ? `${title} | ${siteName}` : defaultTitle} />
-      <meta name="twitter:description" content={description || defaultDescription} />
+      <meta name="twitter:title" content={finalOgTitle} />
+      <meta name="twitter:description" content={finalOgDescription} />
       <meta name="twitter:image" content={ogImage || defaultOgImage} />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

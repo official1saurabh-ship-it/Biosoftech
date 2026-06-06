@@ -672,23 +672,14 @@ Getting started is simple. Contact us for a consultation, share your requirement
 10. Why choose Biosoftech over other IT companies?
 With 2+ years of expertise, 50+ projects delivered, and a client‑centric approach, Biosoftech combines innovation, scalability, and security. Our SEO‑driven solutions, industry knowledge, and dedicated support make us a trusted partner for businesses seeking digital transformation.
 Technical SEO Elements 
-Technical SEO Matrix for Biosoftech
-Technical SEO Element
-	Content
-	Meta Title
-	Biosoftech | Where IDEAS BECOME SMART SOLUTIONS - Full-Service Software Development Company for Digital Growth
-	Meta Description
-	Biosoftech is a full-service software development company for digital growth with 2+ years of excellence. We provide custom software, mobile applications, AI solutions, and digital tools for real estate and hospitality. Get 24x7 technical support and achieve your business goals. Join our flagship digital solutions network today.
-	Page Keywords
-	Biosoftech, Software Development Company, Digital Growth, Custom Software, Mobile Applications, AI Solutions, Real Estate Tools, Hospitality Management, Best Website Monetization Platform, Affiliate Program, 24x7 Technical Support, Technical Partner, Smart Solutions
-	AND Title
-	Biosoftech | Where IDEAS BECOME SMART SOLUTIONS
-	AND Description
-	Partner with Biosoftech, a full-service software development company for digital growth. We offer custom software, mobile apps, AI solutions, and a global affiliate program for revenue opportunities. Fast results, smart solutions.
-	Canonical Tags
-	<link rel="canonical" href="https://www.biosoftech.com/" />
-	H1–H6 Headings
-	H1: Where IDEAS BECOME SMART SOLUTIONS
+Technical SEO Matrix (Landing page)
+Meta Title- Biosoftech | Where IDEAS BECOME SMART SOLUTIONS - Full-Service Software Development Company for Digital Growth
+Meta Description- Biosoftech is a full-service software development company for digital growth with 2+ years of excellence. We provide custom software, mobile applications, AI solutions, and digital tools for real estate and hospitality. Get 24x7 technical support and achieve your business goals. Join our flagship digital solutions network today.
+Page Keywords- Biosoftech, Software Development Company, Digital Growth, Custom Software, Mobile Applications, AI Solutions, Real Estate Tools, Hospitality Management, Best Website Monetization Platform, Affiliate Program, 24x7 Technical Support, Technical Partner, Smart Solutions
+OG Title- Biosoftech | Where IDEAS BECOME SMART SOLUTIONS
+OG Description- Partner with Biosoftech, a full-service software development company for digital growth. We offer custom software, mobile apps, AI solutions, and a global affiliate program for revenue opportunities. Fast results, smart solutions.
+Canonical Tags- <link rel="canonical" href="https://www.biosoftech.com/" />
+H1–H6 Headings- H1: Where IDEAS BECOME SMART SOLUTIONS
 
 
 H2: Full - Service Software Development Company For Digital Growth
@@ -713,8 +704,7 @@ H3: Biosoftech Affiliate Program
 
 
 H2: Frequently Asked Questions
-	Alt Text for Images
-	Image 1 (Hero): Woman in a khaki suit and white shirt holding a tablet, with text "Where IDEAS BECOME SMART SOLUTIONS".
+Alt Text for Images-        Image 1 (Hero): Woman in a khaki suit and white shirt holding a tablet, with text "Where IDEAS BECOME SMART SOLUTIONS".
 
 
 Image 2 (About Us): Illustration of people and hands connecting puzzle pieces, representing a full-service software development company.
@@ -742,8 +732,7 @@ Image 9 (Form): Form for "Book a Free Software Consultation" with fields for Nam
 
 
 Image 10 (FAQ): "Frequently Asked Questions" section showing an expanded question "What services does Biosoftech Solutions offer?".
-	Schema Markup
-	Organization Schema:
+Schema Markup-  Organization Schema:
 {
 "@context": "https://schema.org",
 "@type": "Organization",
@@ -771,12 +760,12 @@ FAQPage Schema:
 }
 }]
 }
-	Robots.txt
-	User-agent: *
+Robots.txt-
+User-  agent: *
 Allow: /
 Sitemap: https://www.biosoftech.com/sitemap.xml
-	XML Sitemap
-	https://www.biosoftech.com/ (Home)
+XML Sitemap-
+https://www.biosoftech.com/ (Home)
 https://www.biosoftech.com/about
 https://www.biosoftech.com/services
 https://www.biosoftech.com/real-estate-tools
@@ -785,3 +774,100 @@ https://www.biosoftech.com/products
 https://www.biosoftech.com/blog
 https://www.biosoftech.com/affiliate-program
 https://www.biosoftech.com/contact
+
+
+Technical SEO Matrix (About us)
+Meta Title-  About Us | Biosoftech - Full-Service Software Development Company for Digital Growth
+Meta Description- Discover Biosoftech, your technical partner with 2+ years of excellence. We are a one-stop destination for custom software, mobile applications, and AI solutions for digital growth. Fast Results, Smart Solutions!
+Page Keywords- About Biosoftech, Software Development Company, Digital Growth, 2+ Years Of Excellence, Technical Partner, Custom Software, Mobile Applications, AI Solutions, One-stop Destination
+OG Title- About Us | Biosoftech - Your Technical Partner
+OG Description- Biosoftech is a full-service software development company for digital growth. Achieve your business goals with our custom software, mobile apps, and AI solutions.
+Canonical Tags-  <link rel="canonical" href="https://www.biosoftech.com/about" />
+H1–H6 Headings- 
+H1: About Us
+H2: Full - Service Software Development Company For Digital Growth
+H2: 2+ Years Of Excellence
+H3: Fast Results, Smart Solutions!
+H3: Achieve Your Business Goals!
+Alt Text for Images- Illustration of multiple people and hands connecting puzzle pieces, representing Biosoftech as a full-service software development company and technical partner.
+
+
+Schema Markup- AboutPage Schema:
+{
+"@context": "https://schema.org",
+"@type": "AboutPage",
+"name": "About Biosoftech",
+"description": "Biosoftech is a technical partner and full-service software development company for digital growth with 2+ years of excellence."
+}
+
+
+Robots.txt- 
+User-agent: *
+Allow: /
+Sitemap https://www.biosoftech.com/sitemap.xml
+
+
+XML Sitemap-  https://www.biosoftech.com/about
+
+
+Technical SEO Matrix (Contrat us)
+Meta Title-  Contact Us | Biosoftech - Ready to Transform Your Business?
+Meta Description- Get in touch with Biosoftech for customer support, project consultation, or to transform your business. Call us at +91 - 9044425858, email info@biosoftech.com, or visit our headquarters. Fill out our contact form to send us a message.
+Page Keywords- Contact Biosoftech, Get in touch, Customer Support, Project Consultation, Biosoftech Headquarters, Biosoftech Phone Number, Biosoftech Email, Software Development Company Contact
+OG Title- Contact Us | Biosoftech
+OG Description- We will be in touch shortly. Contact Biosoftech for expert digital solutions and consultation. Ready to transform your business? Send us a message or visit our office.
+Canonical Tags-        <link rel="canonical" href="https://www.biosoftech.com/contact" />
+H1–H6 Headings- H1: Contact Us
+
+
+H2: Ready to Transform Your Business?
+
+
+H2: Send us a message
+
+
+H2: Get in touch
+
+
+H3: Customer Support
+
+
+H3: Project Consultation
+
+
+Alt Text for Images- Image 1 (Form & Map): Contact form for "Send us a message" with fields for name, phone, email, and service, next to a map with a "Get Directions" link.
+
+
+Image 2 (Background): High-rise building background image for the Biosoftech Solutions contact information section.
+
+
+Schema Markup-        ContactPage Schema:
+{
+"@context": "https://schema.org",
+"@type": "ContactPage",
+"mainEntity": {
+"@type": "Organization",
+"name": "Biosoftech Solutions",
+"url": "www.biosoftech.com",
+"contactPoint": [
+{
+"@type": "ContactPoint",
+"telephone": "+91-9044425858",
+"contactType": "customer service"
+},
+{
+"@type": "ContactPoint",
+"email": "info@biosoftech.com",
+"contactType": "sales"
+}
+]
+}
+}
+
+
+Robots.txt-        User-agent: *
+Allow: /
+Sitemap: https://www.biosoftech.com/sitemap.xml
+
+
+XML Sitemap-        https://www.biosoftech.com/contact

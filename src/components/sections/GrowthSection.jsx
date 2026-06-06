@@ -98,7 +98,7 @@ export default function GrowthSection() {
                             </p>
 
                             <p>
-                                With 50+ successful projects, 25+
+                                With 15+ successful projects, 25+
                                 satisfied clients, and a proven track record of
                                 innovation, Biosoftech Solutions has established
                                 itself as a trusted digital transformation
@@ -229,11 +229,11 @@ export default function GrowthSection() {
             ">
 
                             <h3 className="text-[28px] sm:text-[34px] lg:text-[40px] xl:text-[46px] leading-none">
-                                50+
+                                15+
                             </h3>
 
                             <p className="mt-2 text-sm lg:text-[15px] leading-[1.5]">
-                                Over 50 successful implementations across
+                                Over 15 successful implementations across
                                 custom software, AI automation, and enterprise
                                 solutions.
                             </p>

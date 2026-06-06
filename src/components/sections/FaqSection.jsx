@@ -60,7 +60,7 @@ const faqData = [
     id: 10,
     question: "10. Why choose Biosoftech over other IT companies?",
     answer:
-      "With 2+ years of expertise, 50+ projects delivered, and a client-centric approach, Biosoftech combines innovation, scalability, and security. Our SEO-driven solutions, industry knowledge, and dedicated support make us a trusted partner for businesses seeking digital transformation.",
+      "With 2+ years of expertise, 15+ projects delivered, and a client-centric approach, Biosoftech combines innovation, scalability, and security. Our SEO-driven solutions, industry knowledge, and dedicated support make us a trusted partner for businesses seeking digital transformation.",
   },
 ];
 

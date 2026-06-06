@@ -437,7 +437,7 @@ const CloudServices = () => {
         <main className="min-h-screen bg-white">
             <SEO
                 title="Cloud Services Company – AWS, Cloud Migration & Managed Services | Biosoftech"
-                description="Biosoftech Solutions provides strategic cloud services including AWS migration, cloud architecture, Kubernetes, and managed cloud infrastructure. 10+ years, 500+ projects."
+                description="Biosoftech Solutions provides strategic cloud services including AWS migration, cloud architecture, Kubernetes, and managed cloud infrastructure. 2+ years, 15+ projects."
                 keywords="cloud services company, AWS migration, cloud architecture, managed cloud services, Kubernetes, cloud consulting, India"
                 ogUrl="https://www.biosoftech.com/cloud-services"
             />
@@ -457,7 +457,7 @@ const CloudServices = () => {
                                     At Biosoftech Solutions, we provide strategic cloud services designed to scale with your business, reduce costs, and ensure long-term security. Our expertise helps transform your operations into efficient, future-ready systems that support growth and innovation.
                                 </p>
                                 <p className="mt-3 sm:mt-4 lg:mt-6">
-                                    With <span className="font-bold">2+ years of experience</span> and <span className="font-bold">30+ projects delivered globally</span>, we are trusted by businesses across <span className="font-bold">15+ industries</span>. Our cloud solutions are built to convert challenges into opportunities, support compliance, and deliver measurable results.
+                                    With <span className="font-bold">2+ years of experience</span> and <span className="font-bold">15+ projects delivered globally</span>, we are trusted by businesses across <span className="font-bold">15+ industries</span>. Our cloud solutions are built to convert challenges into opportunities, support compliance, and deliver measurable results.
                                 </p>
                             </div>
 
@@ -689,33 +689,33 @@ const CloudServices = () => {
                                         {/* Left Content */}
                                         <div className="lg:w-1/2 space-y-3 sm:space-y-4 lg:space-y-8">
                                             <div className="inline-flex items-center gap-3">
-                                                <span className="text-fluid-5xl">{stage.icon}</span>
-                                                <div className="px-4 sm:px-5 py-1 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-fluid-sm font-semibold rounded-full">
+                                                <span className="text-2xl sm:text-fluid-5xl">{stage.icon}</span>
+                                                <div className="px-3 sm:px-5 py-1 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-xs sm:text-fluid-sm font-semibold rounded-full">
                                                     {stage.stage}
                                                 </div>
                                             </div>
 
-                                            <h3 className="text-fluid-4xl font-bold text-white leading-tight">
+                                            <h3 className="text-xl sm:text-fluid-4xl font-bold text-white leading-tight">
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-400 text-fluid-lg leading-relaxed">
+                                            <p className="text-gray-400 text-sm sm:text-fluid-lg leading-relaxed">
                                                 {stage.desc}
                                             </p>
 
                                             <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 sm:pt-4 lg:pt-6">
-                                                <Link to="/contact" className="bg-blue-600 hover:bg-blue-500 px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <Link to="/contact" className="bg-blue-600 hover:bg-blue-500 px-3 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-xs sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[44px]">
                                                     Get a Free Quote
                                                 </Link>
-                                                <Link to="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <Link to="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-xs sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[44px]">
                                                     Free Technical Consultation →
                                                 </Link>
                                             </div>
                                         </div>
 
                                         {/* Right Side */}
-                                        <div className="hidden sm:block lg:w-1/2 rounded-2xl overflow-hidden w-full shrink-0">
-                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover max-h-48 sm:max-h-64 lg:max-h-none" loading="lazy" />
+                                        <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden shrink-0">
+                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover max-h-36 sm:max-h-48 lg:max-h-none rounded-2xl" loading="lazy" />
                                         </div>
                                     </div>
                                 ))}
@@ -725,7 +725,7 @@ const CloudServices = () => {
                             <button
                                 onClick={() => setActiveIndex(prev => Math.max(0, prev - 1))}
                                 disabled={activeIndex === 0}
-                                className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100"
+                                className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100 min-w-[44px] min-h-[44px]"
                                 aria-label="Previous stage"
                             >
                                 <ChevronLeft size={18} className="sm:w-5 sm:h-5" />
@@ -733,7 +733,7 @@ const CloudServices = () => {
                             <button
                                 onClick={() => setActiveIndex(prev => Math.min(stages.length - 1, prev + 1))}
                                 disabled={activeIndex === stages.length - 1}
-                                className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100"
+                                className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100 min-w-[44px] min-h-[44px]"
                                 aria-label="Next stage"
                             >
                                 <ChevronRight size={18} className="sm:w-5 sm:h-5" />

@@ -41,7 +41,7 @@ const Footer = () => {
   const [callPopup, setCallPopup] = useState({ visible: false, number: '' });
 
   return (
-    <footer className="bg-gray-50 pt-6 sm:pt-10 overflow-hidden">
+    <footer className="bg-gray-50 pt-6 sm:pt-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* TOP ROW */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 mb-6 sm:mb-8">
@@ -54,10 +54,10 @@ const Footer = () => {
             <ul className="space-y-1.5">
               {helpfulLinks.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
-                    {item.name}
-                  </Link>
+<Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
+                      {item.name}
+                    </Link>
                 </li>
               ))}
             </ul>
@@ -72,10 +72,10 @@ const Footer = () => {
             <ul className="space-y-1.5">
               {serviceLinks.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
-                    {item.name}
-                  </Link>
+<Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
+                      {item.name}
+                    </Link>
                 </li>
               ))}
             </ul>
@@ -90,10 +90,10 @@ const Footer = () => {
             <ul className="space-y-1.5">
               {packageLinks.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
-                    {item.name}
-                  </Link>
+<Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
+                      {item.name}
+                    </Link>
                 </li>
               ))}
             </ul>
@@ -112,8 +112,8 @@ const Footer = () => {
                 const props = isExternal ? { href: item.to } : { to: item.to };
                 return (
                   <li key={item.name}>
-                    <Component {...props} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group">
-                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all" />
+                    <Component {...props} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
                       {item.name}
                     </Component>
                   </li>

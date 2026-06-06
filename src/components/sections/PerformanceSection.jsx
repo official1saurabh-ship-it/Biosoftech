@@ -83,7 +83,7 @@ export default function PerformanceSection() {
 
               <div>
                 <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
-                  30+
+                  15+
                 </span>
 
                 <p className="text-sm sm:text-base lg:text-[18px] mt-2">
@@ -92,13 +92,13 @@ export default function PerformanceSection() {
               </div>
 
               <div>
-                <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
-                  50+
-                </span>
+                  <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
+                    15+
+                  </span>
 
-                <p className="text-sm sm:text-base lg:text-[18px] mt-2">
-                  Clients Served
-                </p>
+                  <p className="text-sm sm:text-base lg:text-[18px] mt-2">
+                    Clients Served
+                  </p>
               </div>
 
               <div>

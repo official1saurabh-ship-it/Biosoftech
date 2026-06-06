@@ -1,4 +1,5 @@
 import SEO from "../components/seo/SEO";
+import StructuredData from "../components/seo/StructuredData";
 import React, { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -132,12 +133,36 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us – Software Development Company | Biosoftech Solutions"
-        description="Get in touch with Biosoftech Solutions. Call +91-9044425858 or email info@biosoftech.com. Head office in Lucknow, India."
-        keywords="contact Biosoftech, software company Lucknow, software development inquiry, India"
+        title="Contact Us | Biosoftech - Ready to Transform Your Business?"
+        description="Get in touch with Biosoftech for customer support, project consultation, or to transform your business. Call us at +91-9044425858, email info@biosoftech.com, or visit our headquarters. Fill out our contact form to send us a message."
+        keywords="Contact Biosoftech, Get in touch, Customer Support, Project Consultation, Biosoftech Headquarters, Biosoftech Phone Number, Biosoftech Email, Software Development Company Contact"
+        ogTitle="Contact Us | Biosoftech"
+        ogDescription="We will be in touch shortly. Contact Biosoftech for expert digital solutions and consultation. Ready to transform your business? Send us a message or visit our office."
+        canonical="https://www.biosoftech.com/contact"
         ogUrl="https://www.biosoftech.com/contact"
       />
-      <section aria-label="Contact us hero banner" className="relative bg-[#F3F3F3] pb-12 md:pb-28">
+      <StructuredData type="custom" data={{
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "Biosoftech Solutions",
+          "url": "www.biosoftech.com",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-9044425858",
+              "contactType": "customer service"
+            },
+            {
+              "@type": "ContactPoint",
+              "email": "info@biosoftech.com",
+              "contactType": "sales"
+            }
+          ]
+        }
+      }} />
+      <section aria-label="Contact us hero banner" className="relative bg-[#F3F3F3] pb-16 md:pb-44">
         {/* HERO */}
         <div
           className="relative min-h-[320px] sm:min-h-[400px] md:h-[580px] overflow-hidden"
@@ -516,7 +541,7 @@ const Contact = () => {
 
       <section className="bg-[#F5F5F5] py-10 md:py-20">
         <div className="mx-auto px-4 sm:px-6 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 max-w-full">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 max-w-full">
             {/* LEFT */}
             <div className="min-w-0">
               <h2
