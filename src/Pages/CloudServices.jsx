@@ -1,7 +1,7 @@
 import SEO from "../components/seo/SEO";
 import StructuredData from "../components/seo/StructuredData";
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiArrowUpRight, FiArrowRightCircle } from "react-icons/fi";
 import { ArrowRight } from "lucide-react";
 import { RefreshCw } from "lucide-react";
@@ -651,7 +651,7 @@ const CloudServices = () => {
                         <div className="flex-1">
                             <p className="text-fluid-base leading-snug">Secure, reliable, and innovative cloud solutions are the backbone of modern business. Let Biosoftech Solutions build your cloud strategy and help you grow with confidence.</p>
                         </div>
-                        <a href="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-fluid-base shrink-0">Request a Free Consultation</a>
+                        <Link to="/contact" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-2xl whitespace-nowrap transition-all active:scale-95 text-center text-fluid-base shrink-0">Request a Free Consultation</Link>
                     </div>
                 </div>
             </section>
@@ -704,12 +704,12 @@ const CloudServices = () => {
                                             </p>
 
                                             <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 sm:pt-4 lg:pt-6">
-                                                <a href="/contact" className="bg-blue-600 hover:bg-blue-500 px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
+                                                <Link to="/contact" className="bg-blue-600 hover:bg-blue-500 px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Get a Free Quote
-                                                </a>
-                                                <a href="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
+                                                </Link>
+                                                <Link to="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center">
                                                     Free Technical Consultation →
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
 

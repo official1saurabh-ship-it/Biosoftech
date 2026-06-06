@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import performanceImg from "../../assets/home-performance-stats.webp";
 
 export default function PerformanceSection() {
@@ -5,8 +6,8 @@ export default function PerformanceSection() {
     <section className="relative overflow-hidden bg-[#8a42db]">
 
       {/* Vertical CTA */}
-      <a
-        href="/contact"
+      <Link
+        to="/contact"
         className="
         absolute
         right-0
@@ -32,7 +33,7 @@ export default function PerformanceSection() {
         }}
       >
         Book a Free Consultation
-      </a>
+      </Link>
 
       <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-20 py-10 sm:py-12 lg:py-16">
 
