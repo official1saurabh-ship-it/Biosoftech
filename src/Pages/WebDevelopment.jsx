@@ -1,7 +1,7 @@
 import SEO from "../components/seo/SEO";
 import wordpressDevelopment from "../assets/webdev-multilingual-services.webp";
 import laptopMockup from "../assets/shared-laptop-mockup.webp";
-import manImage from "../assets/webdev-consultant.jpg";
+import manImage from "../assets/webdev-consultant.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";

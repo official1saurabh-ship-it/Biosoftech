@@ -54,7 +54,7 @@ const services = [
 
 export default function ServicesSlider() {
     return (
-        <section className="bg-[#faf7fd] py-12 lg:py-20 overflow-hidden">
+        <section className="bg-[#faf7fd] py-8 lg:py-14 overflow-hidden">
 
             <div className="max-w-full mx-auto px-5 sm:px-8 lg:px-10">
 
@@ -70,6 +70,8 @@ export default function ServicesSlider() {
             rounded-full
             bg-[#efe3ff]
             text-[#7d3cff]
+            font-bold
+            text-2xl
           "
                     >
                         OUR SERVICES
@@ -77,12 +79,12 @@ export default function ServicesSlider() {
 
                     <h2
                         className="
-            mt-8
-            text-[34px]
-            sm:text-[42px]
-            md:text-[52px]
-            lg:text-[62px]
-            xl:text-[72px]
+            mt-5
+            text-[28px]
+            sm:text-[36px]
+            md:text-[44px]
+            lg:text-[52px]
+            xl:text-[60px]
             font-black
           "
                     >
@@ -93,12 +95,12 @@ export default function ServicesSlider() {
 
                 {/* Slider */}
 
-                <div className="mt-12 lg:mt-24">
+                <div className="mt-8 lg:mt-14">
 
                     <Swiper
                         modules={[Autoplay]}
                         spaceBetween={30}
-                        className="min-h-[400px] sm:min-h-[520px] lg:min-h-[620px]"
+                        className="min-h-[320px] sm:min-h-[400px] lg:min-h-[480px]"
                         slidesPerView={3}
                         loop
                         speed={1200}
@@ -134,12 +136,12 @@ export default function ServicesSlider() {
 
                     rounded-[24px]
                     lg:rounded-[34px]
-                    p-5
-                    sm:p-8
-                    lg:p-10
-                    min-h-[400px]
-                    sm:min-h-[520px]
-                    lg:h-[620px]
+                    p-4
+                    sm:p-6
+                    lg:p-8
+                    min-h-[320px]
+                    sm:min-h-[400px]
+                    lg:h-[480px]
                     flex
                     flex-col
                     justify-between
@@ -151,7 +153,7 @@ export default function ServicesSlider() {
 
                                     <div>
 
-                                        <h3 className="text-[26px] sm:text-[30px] lg:text-[34px] font-black">
+                                        <h3 className="text-[22px] sm:text-[26px] lg:text-[28px] font-black">
 
                                             {item.title}
 
@@ -159,12 +161,12 @@ export default function ServicesSlider() {
 
                                         <p
                                             className="
-                      mt-8
-                      text-base
-                      sm:text-[18px]
-                      lg:text-[19px]
-                      leading-[1.8]
-                      lg:leading-[2]
+                      mt-4
+                      text-sm
+                      sm:text-[15px]
+                      lg:text-[16px]
+                      leading-[1.6]
+                      lg:leading-[1.7]
                     "
                                         >
                                             {item.description}
@@ -177,7 +179,7 @@ export default function ServicesSlider() {
                                         alt={item.title}
                                         width="800"
                                         height="260"
-                                        className="w-full h-[210px] lg:h-[260px] object-contain"
+                                        className="w-full h-[150px] lg:h-[190px] object-contain"
                                     />
 
                                 </div>
