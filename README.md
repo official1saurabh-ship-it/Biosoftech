@@ -1,16 +1,91 @@
-# React + Vite
+# Biosoftech Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)](https://www.biosoftech.com)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com)
 
-Currently, two official plugins are available:
+> **Where Ideas Become Smart Solutions** — Full-Service Software Development Company for Digital Growth.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Biosoftech Solutions Pvt. Ltd.** is a full-service software development company based in Lucknow, India. This repository contains the official company website — a modern single-page application (SPA) built with React 19, Vite 8, and Tailwind CSS 4.
 
-## React Compiler
+**Website:** [https://www.biosoftech.com](https://www.biosoftech.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Services
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Web Development** — Custom websites, e-commerce, multilingual platforms, portfolio sites
+- **App Development** — Android, iOS, cross-platform mobile apps
+- **Cloud Services** — Azure/AWS architecture, HIPAA-compliant healthcare, banking, EdTech, IoT
+- **AI & Automation** — AI strategy, ML model development, process automation, generative AI
+
+## Product Suite — Mitra Suite
+
+| Product | Description |
+|---------|------------|
+| Billing Mitra | GST-compliant sales & billing |
+| Restro Mitra | Restaurant management (POS, inventory, tables) |
+| Hotel Mitra | Hotel booking & management |
+| Parking Mitra | Parking management |
+| Attendance Mitra | Attendance management |
+| Visitor Mitra | Visitor management |
+| CRM | Customer relationship management |
+| Tenant Mitra | PG/hostel management |
+| Foodie Express | Canteen management |
+| Pytho | Pathology management |
+| Skola Mitra | School management |
+| Payroll Mitra | Payroll management |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Framework** | React 19 |
+| **Build Tool** | Vite 8 |
+| **Routing** | react-router-dom 7 |
+| **Styling** | Tailwind CSS 4, fluid typography (`clamp()`) |
+| **Animation** | Framer Motion 12 |
+| **Icons** | lucide-react, react-icons |
+| **SEO** | react-helmet-async, JSON-LD structured data |
+| **Carousel** | Swiper 12, Embla Carousel 8 |
+| **Forms** | EmailJS, Google reCAPTCHA |
+| **Image Opt.** | sharp (via build scripts) |
+| **Deployment** | Vercel (SPA rewrites), IIS-ready |
+
+## Getting Started
+
+```bash
+npm install
+npm run dev       # Start dev server
+npm run build     # Production build to dist/
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── layout/       # Header, Footer
+│   ├── sections/     # HeroSlider, AboutUs, ServicesSlider, MitraSuite, etc.
+│   ├── ui/           # Button, ScrollToTop, SectionTitle
+│   └── seo/          # SEO (Helmet), StructuredData (JSON-LD)
+├── pages/            # 13 lazy-loaded route pages
+├── assets/           # Images, icons, fonts
+├── App.jsx           # Root component with router
+└── main.jsx          # Entry point
+```
+
+## Contact
+
+- **Phone:** +91-9044425858 / +91-6209688930
+- **Email:** info@biosoftech.com
+- **Office:** 3rd Floor, Office No-624/20A, Kotwali Rd, Matiyaari, Chinhat, Lucknow — 226028
+
+---
+
+Built with ❤️ by Biosoftech Solutions Pvt. Ltd.
