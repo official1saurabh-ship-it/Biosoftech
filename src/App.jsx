@@ -17,6 +17,7 @@ const PrivacyPolicy = lazy(() => import('./Pages/PrivacyPolicy'))
 const Career = lazy(() => import('./Pages/Career'))
 const Teams = lazy(() => import('./Pages/Teams'))
 const TermsConditions = lazy(() => import('./Pages/TermsConditions'))
+const NotFound = lazy(() => import('./Pages/NotFound'))
 
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-[60vh]">
@@ -45,6 +46,7 @@ function App() {
             <Route path="/career" element={<Career />} />
             <Route path="/teams" element={<Teams />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
         <Footer />
