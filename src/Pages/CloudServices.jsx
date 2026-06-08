@@ -670,15 +670,15 @@ const CloudServices = () => {
             {/* DEVELOPMENT PROCESS SECTION */}
             <section
                 ref={sectionRef}
-                className="bg-[#0a0a0a] relative z-20 pt-20 sm:pt-24 lg:pt-0"
+                className="bg-[#0a0a0a] relative z-20 pt-0 sm:pt-24 lg:pt-0"
                 style={{
                     height: `${stages.length * 35}vh`,
                 }}
             >
-                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-hidden pt-4 lg:pt-0 pb-4 lg:pb-0">
+                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-hidden pt-0 lg:pt-0 pb-4 lg:pb-0">
                     <div className="w-full px-4 sm:px-6 lg:px-20 w-full">
 
-                        <div className="text-center mb-6 sm:mb-8 mt-6 sm:mt-24 lg:mt-48 lg:mb-12">
+                        <div className="text-center mb-6 sm:mb-8 mt-0 sm:mt-24 lg:mt-48 lg:mb-12">
                             <h2 className="text-fluid-4xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
