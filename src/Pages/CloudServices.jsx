@@ -632,7 +632,7 @@ const CloudServices = () => {
             </section>
 
             {/* WHY CHOOSE SECTION */}
-            <section className="relative z-30 overflow-hidden py-16 md:py-20 mt-10 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
+            <section className="relative z-30 overflow-hidden py-8 md:py-20 mt-0 md:mt-16 lg:mt-20 bg-cover bg-center bg-[#f0f4f8]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2069&auto=format&fit=crop')" }}>
                 <div className="absolute inset-0 bg-white/30" />
                 <div className="relative z-10 w-full px-4 sm:px-6 lg:px-20">
                     <div>
@@ -675,51 +675,51 @@ const CloudServices = () => {
                     height: `${stages.length * 35}vh`,
                 }}
             >
-                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-hidden pt-0 lg:pt-0 pb-4 lg:pb-0">
-                    <div className="w-full px-4 sm:px-6 lg:px-20 w-full">
+                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-hidden pt-0 lg:pt-0 pb-2 lg:pb-0">
+                    <div className="w-full px-4 sm:px-6 lg:px-20 w-full h-full flex flex-col">
 
-                        <div className="text-center mb-6 sm:mb-8 mt-0 sm:mt-24 lg:mt-48 lg:mb-12">
-                            <h2 className="text-fluid-4xl font-bold text-white">
+                        <div className="text-center mb-2 sm:mb-8 mt-0 sm:mt-24 lg:mt-48 lg:mb-12 shrink-0">
+                            <h2 className="text-fluid-2xl sm:text-fluid-4xl font-bold text-white leading-tight">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
-                            <p className="mt-1 sm:mt-3 lg:mt-4 text-gray-500 text-fluid-base">
+                            <p className="mt-0.5 sm:mt-3 lg:mt-4 text-gray-500 text-fluid-xs sm:text-fluid-base">
                                 We follow a simple, agile, and efficient process to deliver high-quality cloud solutions tailored to your business needs.
                             </p>
                         </div>
 
                         {/* Horizontal Cards Container */}
-                        <div className="relative overflow-hidden group/cards">
+                        <div className="relative overflow-hidden group/cards flex-1 min-h-0">
                             <div
-                                className="flex transition-transform duration-700 ease-out"
+                                className="flex transition-transform duration-700 ease-out h-full"
                                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                             >
                                 {stages.map((stage, index) => (
                                     <div
                                         key={stage.id}
-                                        className="min-w-full w-full bg-[#111] rounded-3xl p-4 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-3 sm:gap-8 lg:gap-12 items-center"
+                                        className="min-w-full w-full bg-[#111] rounded-3xl p-3 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-2 sm:gap-8 lg:gap-12 items-center h-full overflow-y-auto"
                                     >
                                         {/* Left Content */}
-                                        <div className="lg:w-1/2 space-y-2 sm:space-y-4 lg:space-y-8">
-                                            <div className="inline-flex items-center gap-2 sm:gap-3">
-                                                <span className="text-xl sm:text-fluid-5xl">{stage.icon}</span>
-                                                <div className="px-2 sm:px-5 py-0.5 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-[11px] sm:text-fluid-sm font-semibold rounded-full">
+                                        <div className="lg:w-1/2 space-y-1 sm:space-y-4 lg:space-y-8">
+                                            <div className="inline-flex items-center gap-1.5 sm:gap-3">
+                                                <span className="text-lg sm:text-fluid-5xl">{stage.icon}</span>
+                                                <div className="px-1.5 sm:px-5 py-0 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-[10px] sm:text-fluid-sm font-semibold rounded-full">
                                                     {stage.stage}
                                                 </div>
                                             </div>
 
-                                            <h3 className="text-lg sm:text-fluid-4xl font-bold text-white leading-tight">
+                                            <h3 className="text-base sm:text-fluid-4xl font-bold text-white leading-tight">
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-400 text-[13px] sm:text-fluid-lg leading-relaxed line-clamp-4 sm:line-clamp-none">
+                                            <p className="text-gray-400 text-[11px] sm:text-fluid-lg leading-tight line-clamp-3 sm:line-clamp-none">
                                                 {stage.desc}
                                             </p>
 
-                                            <div className="flex flex-wrap gap-2 sm:gap-3 pt-1 sm:pt-4 lg:pt-6">
-                                                <Link to="/contact" className="bg-blue-600 hover:bg-blue-500 px-3 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-xs sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[44px]">
+                                            <div className="flex gap-1.5 sm:gap-3 pt-0 sm:pt-4 lg:pt-6">
+                                                <Link to="/contact" className="bg-blue-600 hover:bg-blue-500 px-2 sm:px-6 lg:px-10 py-1.5 sm:py-3 lg:py-4 rounded-lg sm:rounded-2xl font-semibold text-[10px] sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[36px] sm:min-h-[44px] whitespace-nowrap">
                                                     Get a Free Quote
                                                 </Link>
-                                                <Link to="/contact" className="border border-gray-600 hover:bg-gray-900 px-3 sm:px-5 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-white text-xs sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[44px]">
+                                                <Link to="/contact" className="border border-gray-600 hover:bg-gray-900 px-2 sm:px-5 lg:px-8 py-1.5 sm:py-3 lg:py-4 rounded-lg sm:rounded-2xl font-semibold text-white text-[10px] sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[36px] sm:min-h-[44px] whitespace-nowrap">
                                                     Free Technical Consultation →
                                                 </Link>
                                             </div>
@@ -727,7 +727,7 @@ const CloudServices = () => {
 
                                         {/* Right Side */}
                                         <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden shrink-0">
-                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-28 sm:h-48 lg:h-full object-cover rounded-2xl" loading="lazy" />
+                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-20 sm:h-48 lg:h-full object-cover rounded-2xl" loading="lazy" />
                                         </div>
                                     </div>
                                 ))}
@@ -737,29 +737,29 @@ const CloudServices = () => {
                             <button
                                 onClick={() => setActiveIndex(prev => Math.max(0, prev - 1))}
                                 disabled={activeIndex === 0}
-                                className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100 min-w-[44px] min-h-[44px]"
+                                className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100 min-w-[36px] min-h-[36px]"
                                 aria-label="Previous stage"
                             >
-                                <ChevronLeft size={18} className="sm:w-5 sm:h-5" />
+                                <ChevronLeft size={14} className="sm:w-5 sm:h-5" />
                             </button>
                             <button
                                 onClick={() => setActiveIndex(prev => Math.min(stages.length - 1, prev + 1))}
                                 disabled={activeIndex === stages.length - 1}
-                                className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100 min-w-[44px] min-h-[44px]"
+                                className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 border border-gray-600 flex items-center justify-center text-white hover:bg-black/80 transition-all active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed sm:opacity-0 sm:group-hover/cards:opacity-100 min-w-[36px] min-h-[36px]"
                                 aria-label="Next stage"
                             >
-                                <ChevronRight size={18} className="sm:w-5 sm:h-5" />
+                                <ChevronRight size={14} className="sm:w-5 sm:h-5" />
                             </button>
                         </div>
 
                         {/* Progress Indicator */}
-                        <div className="flex justify-center gap-2 sm:gap-3 mt-4 sm:mt-8 lg:mt-16 pb-2 sm:pb-0">
+                        <div className="flex justify-center gap-1.5 sm:gap-3 mt-1 sm:mt-8 lg:mt-16 pb-1 sm:pb-0 shrink-0">
                             {stages.map((_, i) => (
                                 <button
                                     key={i}
                                     onClick={() => setActiveIndex(i)}
                                     aria-label={`Go to stage ${i + 1}`}
-                                    className={`h-3 sm:h-3 rounded-full transition-all duration-300 cursor-pointer ${i === activeIndex ? 'bg-blue-500 w-8 sm:w-12' : 'bg-gray-700 w-6 sm:w-8'}`}
+                                    className={`h-2 sm:h-3 rounded-full transition-all duration-300 cursor-pointer ${i === activeIndex ? 'bg-blue-500 w-5 sm:w-12' : 'bg-gray-700 w-4 sm:w-8'}`}
                                 />
                             ))}
                         </div>
