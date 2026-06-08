@@ -663,10 +663,10 @@ const CloudServices = () => {
                     height: `${stages.length * 35}vh`,
                 }}
             >
-                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-y-auto lg:overflow-hidden pt-4 lg:pt-0 pb-4 lg:pb-0">
+                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-hidden pt-4 lg:pt-0 pb-4 lg:pb-0">
                     <div className="w-full px-4 sm:px-6 lg:px-20 w-full">
 
-                        <div className="text-center mb-6 sm:mb-8 mt-14 sm:mt-24 lg:mt-48 lg:mb-12">
+                        <div className="text-center mb-6 sm:mb-8 mt-6 sm:mt-24 lg:mt-48 lg:mb-12">
                             <h2 className="text-fluid-4xl font-bold text-white">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
@@ -678,32 +678,32 @@ const CloudServices = () => {
                         {/* Horizontal Cards Container */}
                         <div className="relative overflow-hidden group/cards">
                             <div
-                                className="flex gap-4 sm:gap-8 transition-transform duration-700 ease-out"
+                                className="flex transition-transform duration-700 ease-out"
                                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                             >
                                 {stages.map((stage, index) => (
                                     <div
                                         key={stage.id}
-                                        className="min-w-full bg-[#111] rounded-3xl p-5 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-4 sm:gap-8 lg:gap-12 items-center"
+                                        className="min-w-full w-full bg-[#111] rounded-3xl p-4 sm:p-10 lg:p-16 border border-gray-800 flex flex-col lg:flex-row gap-3 sm:gap-8 lg:gap-12 items-center"
                                     >
                                         {/* Left Content */}
-                                        <div className="lg:w-1/2 space-y-3 sm:space-y-4 lg:space-y-8">
-                                            <div className="inline-flex items-center gap-3">
-                                                <span className="text-2xl sm:text-fluid-5xl">{stage.icon}</span>
-                                                <div className="px-3 sm:px-5 py-1 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-xs sm:text-fluid-sm font-semibold rounded-full">
+                                        <div className="lg:w-1/2 space-y-2 sm:space-y-4 lg:space-y-8">
+                                            <div className="inline-flex items-center gap-2 sm:gap-3">
+                                                <span className="text-xl sm:text-fluid-5xl">{stage.icon}</span>
+                                                <div className="px-2 sm:px-5 py-0.5 sm:py-2 bg-blue-600/10 border border-blue-500/30 text-blue-400 text-[11px] sm:text-fluid-sm font-semibold rounded-full">
                                                     {stage.stage}
                                                 </div>
                                             </div>
 
-                                            <h3 className="text-xl sm:text-fluid-4xl font-bold text-white leading-tight">
+                                            <h3 className="text-lg sm:text-fluid-4xl font-bold text-white leading-tight">
                                                 {stage.title}
                                             </h3>
 
-                                            <p className="text-gray-400 text-sm sm:text-fluid-lg leading-relaxed">
+                                            <p className="text-gray-400 text-[13px] sm:text-fluid-lg leading-relaxed line-clamp-4 sm:line-clamp-none">
                                                 {stage.desc}
                                             </p>
 
-                                            <div className="flex flex-wrap gap-2 sm:gap-3 pt-2 sm:pt-4 lg:pt-6">
+                                            <div className="flex flex-wrap gap-2 sm:gap-3 pt-1 sm:pt-4 lg:pt-6">
                                                 <Link to="/contact" className="bg-blue-600 hover:bg-blue-500 px-3 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-2xl font-semibold text-xs sm:text-fluid-base transition-all active:scale-95 inline-flex items-center justify-center min-h-[44px]">
                                                     Get a Free Quote
                                                 </Link>
@@ -715,7 +715,7 @@ const CloudServices = () => {
 
                                         {/* Right Side */}
                                         <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden shrink-0">
-                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover max-h-36 sm:max-h-48 lg:max-h-none rounded-2xl" loading="lazy" />
+                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover max-h-28 sm:max-h-48 lg:max-h-none rounded-2xl" loading="lazy" />
                                         </div>
                                     </div>
                                 ))}
