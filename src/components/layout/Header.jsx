@@ -11,7 +11,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [visible, setVisible] = useState(true);
+
   const lastScrollY = useRef(0);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -182,14 +184,18 @@ const Header = () => {
 
           {/* Action Area */}
           <div className="flex items-center gap-1 sm:gap-2 pr-1 sm:pr-2 min-w-fit shrink-0">
-            <Link
-              to="/contact"
-              className="hidden lg:flex items-center gap-1 xl:gap-2 border border-white/10 bg-white px-3 xl:px-7 py-1.5 xl:py-2 rounded-full font-bold text-[10px] xl:text-[12px] text-black hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500 group uppercase tracking-widest"
+            {/* <a
+              href="https://api.cal.com/v2/bookings"
+              target="_blank"
+              rel="noreferrer"
+              className="hidden lg:flex items-center gap-1 xl:gap-2 border border-white/10 bg-white px-3 xl:px-5 py-1.5 xl:py-2 rounded-full font-bold text-[10px] xl:text-[12px] text-black uppercase tracking-widest hover:bg-[#9255CE] hover:border-[#9255CE] hover:shadow-[0_0_20px_rgba(146,85,206,0.4)] transition-all duration-500"
             >
-              <Calendar className="text-[#0e141d] group-hover:text-white transition-colors" size={12} />
-              <span className="hidden xl:inline">Meeting</span>
-              <span className="xl:hidden">Book</span>
-            </Link>
+              <Calendar size={12} className="text-[#0e141d]" />
+              <span>Bookings</span>
+              <span className="bg-[#9255CE] text-white text-[8px] xl:text-[10px] px-1.5 py-0.5 rounded-full min-w-[20px] text-center leading-tight">
+                {bookings.length}
+              </span>
+            </a> */}
 
             <div
               className="
@@ -210,7 +216,7 @@ border-white/5
                 </div>
                 <div className="hidden lg:flex flex-col">
                   <span className="text-[7px] text-white/30 font-bold uppercase tracking-[0.2em] leading-none">Connect</span>
-                  <span className="text-[13px] text-white font-black mt-0.5 leading-none tracking-tight">+91-9044425858</span>
+                  <span className="text-[13px] text-white font-black mt-0.5 leading-none tracking-tight">+91-6209688930 </span>
                 </div>
               </a>
 
@@ -363,16 +369,16 @@ z-[999]
               </div>
 
               <div className="p-8 bg-black/40 border-t border-white/5 space-y-6">
-                <Link to="/contact" onClick={() => { setIsMobileMenuOpen(false); setActiveDropdown(null); }} className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)]">
+                {/* <Link to="/contact" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(false); setActiveDropdown(null); }} className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#9255CE] to-[#BE60FF] text-white py-5 rounded-2xl font-black text-sm uppercase tracking-[0.3em] shadow-[0_15px_30px_-5px_rgba(146,85,206,0.4)] touch-manipulation">
                   <Calendar /> Meeting
-                </Link>
+                </Link> */}
                 <a href="tel:+91-9044425858" className="flex items-center gap-5 p-6 bg-white/5 rounded-3xl border border-white/5 group">
                   <div className="bg-[#9255CE] w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg">
                     <Phone />
                   </div>
                   <div>
                     <div className="text-[9px] text-white/30 font-bold uppercase tracking-widest">Global Support</div>
-                    <div className="font-black text-white text-lg tracking-tight">+91-9044425858</div>
+                    <div className="font-black text-white text-lg tracking-tight">+91-6209688930 </div>
                   </div>
                 </a>
               </div>

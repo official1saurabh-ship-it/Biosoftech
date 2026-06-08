@@ -1,46 +1,66 @@
 import SEO from "../components/seo/SEO";
-
+import Dhananjay from "../assets/Dhananjay-Mishra.jpeg";
+import Ajay from "../assets/Ajay-Tyagi.jpeg";
+import Kishan from "../assets/Kishan-Prajapati.jpeg";
+import Atul from "../assets/Atul-Narayan-Pandey.png";
+import Saurabh from "../assets/Saurabh-Kumar-Dubey.png";
+import Amulya from "../assets/Amulya-Singh.png";
+import Karuna from "../assets/Karuna-Nidhan-Tiwari.jpeg";
+import Fardeen from "../assets/Fardeen-Husain.webp";
 const teamMembers = [
   {
-    name: "Amit Sharma",
-    role: "Founder & CEO",
-    desc: "Visionary leader with 15+ years of experience in software development and business strategy.",
+    name: "Dhananjay Mishra",
+    role: "CEO and FOUNDER",
+    image: Dhananjay
   },
   {
-    name: "Priya Verma",
+    name: "Ansh Mishra",
     role: "CTO",
-    desc: "Expert in cloud architecture and full-stack development, driving technical innovation.",
   },
   {
-    name: "Rahul Singh",
-    role: "Lead Full Stack Developer",
-    desc: "Specializes in React, Node.js, and scalable backend systems.",
+    name: "Anuj Kumar",
+    role: "BUSINESS DEVELOPMENT ASSOCIATE",
+
   },
   {
-    name: "Neha Gupta",
-    role: "UI/UX Design Lead",
-    desc: "Crafting intuitive and beautiful user experiences for web and mobile applications.",
+    name: "Ajay Tyagi",
+    role: "MOBILE APP DEVELOPER",
+    image: Ajay
   },
   {
-    name: "Vikram Patel",
-    role: "Mobile App Developer",
-    desc: "Flutter and React Native expert building cross-platform mobile solutions.",
+    name: "Kishan Prajapati",
+    role: "Software Developer",
+    image: Kishan
   },
   {
-    name: "Sneha Mishra",
-    role: "AI/ML Engineer",
-    desc: "Building intelligent automation solutions using NLP, computer vision, and predictive models.",
+    name: "Atul Narayan Pandey",
+    role: "Business Analyst",
+    image: Atul
   },
   {
-    name: "Arjun Yadav",
-    role: "Cloud Engineer",
-    desc: "Managing AWS/Azure infrastructure, CI/CD pipelines, and cloud security.",
+    name: "Saurabh Kumar Dubey",
+    role: "Software Developer",
+    image: Saurabh
   },
   {
-    name: "Kavita Joshi",
-    role: "Business Development Manager",
-    desc: "Driving client partnerships and strategic growth initiatives.",
+    name: "Amulya Singh",
+    role: "Human Resource (HR)",
+    image: Amulya
   },
+  {
+    name: "Karuna Nidhan Tiwari",
+    role: "Accountant",
+    image: Karuna
+  },
+  {
+    name: "Gitanjali Tiwari",
+    role: "Human Resource (HR)",
+  },
+  {
+    name: "Fardeen Husain",
+    role: "Digital Marketing",
+    image: Fardeen
+  }
 ];
 
 const Teams = () => {
@@ -75,9 +95,15 @@ const Teams = () => {
                 key={member.name}
                 className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-primary-1/20 transition-all duration-300 text-center"
               >
-                <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-[#12003f] to-[#2a0a80] flex items-center justify-center text-white text-2xl font-bold mb-4">
-                  {member.name.split(" ").map(n => n[0]).join("")}
-                </div>
+                {member.image ? (
+                  <div className="w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 shrink-0">
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-[#12003f] to-[#2a0a80] flex items-center justify-center text-white text-2xl font-bold mb-4">
+                    {member.name.split(" ").map(n => n[0]).join("")}
+                  </div>
+                )}
                 <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
                 <p className="text-sm text-primary-1 font-semibold mt-1">{member.role}</p>
                 <p className="text-sm text-gray-600 mt-3 leading-relaxed">{member.desc}</p>
@@ -85,6 +111,7 @@ const Teams = () => {
             ))}
           </div>
         </div>
+
       </section>
 
       {/* CTA */}
