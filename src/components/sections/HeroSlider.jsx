@@ -27,10 +27,10 @@ const slides = [
 ];
 
 const balls = [
-  { size: 80, border: 2, color: "rgba(255,255,255,0.25)", anim: "floatA", duration: 8, delay: 0, x: "10%", y: "15%" },
-  { size: 60, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatB", duration: 11, delay: 1, x: "75%", y: "10%" },
-  { size: 100, border: 2.5, color: "rgba(255,255,255,0.15)", anim: "floatC", duration: 9, delay: 3, x: "85%", y: "70%" },
-  { size: 70, border: 1.5, color: "rgba(255,255,255,0.2)", anim: "floatD", duration: 12, delay: 2, x: "5%", y: "75%" },
+  { size: 80, border: 2, color: "rgba(255, 102, 0, 1)", anim: "floatA", duration: 8, delay: 0, x: "10%", y: "15%" },
+  { size: 60, border: 1.5, color: "rgba(255, 102, 0, 1)", anim: "floatB", duration: 11, delay: 1, x: "75%", y: "10%" },
+  { size: 100, border: 2.5, color: "rgba(255, 102, 0, 1)", anim: "floatC", duration: 9, delay: 3, x: "85%", y: "70%" },
+  { size: 70, border: 1.5, color: "rgba(255, 102, 0, 1)", anim: "floatD", duration: 12, delay: 2, x: "5%", y: "75%" },
 ];
 
 export default function HeroRevealSlider() {
