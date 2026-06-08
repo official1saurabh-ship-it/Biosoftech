@@ -436,12 +436,24 @@ const CloudServices = () => {
     return (
         <main className="min-h-screen bg-white">
             <SEO
-                title="Cloud Services Company – AWS, Cloud Migration & Managed Services | Biosoftech"
-                description="Biosoftech Solutions provides strategic cloud services including AWS migration, cloud architecture, Kubernetes, and managed cloud infrastructure. 2+ years, 15+ projects."
-                keywords="cloud services company, AWS migration, cloud architecture, managed cloud services, Kubernetes, cloud consulting, India"
+                title="Cloud Services | Biosoftech - Where IDEAS BECOME SMART SOLUTIONS for Digital Growth"
+                description="Biosoftech provides secure, scalable, and cost-effective cloud services. As a full-service software development company, we deliver smart cloud solutions for real estate, hospitality, and custom software with 24x7 technical support."
+                keywords="Biosoftech Cloud Services, Cloud Computing, Digital Growth, Custom Software, AI Solutions, Real Estate Tools, Hospitality Management, 24x7 Technical Support, Cost-Effective Technology"
+                ogTitle="Cloud Services - Biosoftech"
+                ogDescription="Partner with Biosoftech for your cloud services. We help you achieve your business goals with tailored digital strategies, AI solutions, and smart cloud-based software."
+                canonical="https://www.biosoftech.com/cloud-services"
                 ogUrl="https://www.biosoftech.com/cloud-services"
             />
-            <StructuredData type="LocalBusiness" />
+            <StructuredData type="custom" data={{
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Cloud Services",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Biosoftech"
+                },
+                "description": "Biosoftech provides cloud-based solutions for custom software, AI, real estate tools, and hospitality management, with cost-effective technology and 24x7 technical support."
+            }} />
             {/* HERO SECTION */}
             <section aria-label="Cloud services hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
                 <div className="w-full px-4 sm:px-6 lg:px-20">
@@ -715,7 +727,7 @@ const CloudServices = () => {
 
                                         {/* Right Side */}
                                         <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden shrink-0">
-                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-full object-cover max-h-28 sm:max-h-48 lg:max-h-none rounded-2xl" loading="lazy" />
+                                            <img src={processImages[index]} alt={stage.title} width="600" height="400" className="w-full h-28 sm:h-48 lg:h-full object-cover rounded-2xl" loading="lazy" />
                                         </div>
                                     </div>
                                 ))}

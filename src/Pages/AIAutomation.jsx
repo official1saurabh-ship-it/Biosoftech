@@ -457,12 +457,24 @@ const HeroSection = () => {
   return (
     <>
       <SEO
-        title="AI Automation Services – Intelligent Automation Solutions | Biosoftech"
-        description="Biosoftech Solutions delivers AI automation services including machine learning, NLP, RPA, and generative AI. Transform your business with intelligent automation."
-        keywords="AI automation services, machine learning, NLP, RPA, generative AI, intelligent automation, AI consulting, India"
+        title="AI Solutions | Biosoftech - AI-Driven Software Development Company for Digital Growth"
+        description="Biosoftech is an AI-driven software development company for digital growth. We provide innovative AI solutions and smart software to help you achieve your business goals. With 50+ successful implementations, we are your trusted partner worldwide."
+        keywords="AI Solutions, AI Automation, AI-Driven Software Development, Digital Growth, Biosoftech, Smart Software, AI for Business, Technical Partner"
+        ogTitle="AI Solutions - Biosoftech"
+        ogDescription="Partner with Biosoftech for your digital growth. We are an AI-driven software development company with 50+ successful projects and 25+ client trust. Explore our AI solutions today."
+        canonical="https://www.biosoftech.com/ai-solutions"
         ogUrl="https://www.biosoftech.com/ai-automation"
       />
-      <StructuredData type="LocalBusiness" />
+      <StructuredData type="custom" data={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Solutions",
+        "provider": {
+          "@type": "Organization",
+          "name": "Biosoftech"
+        },
+        "description": "Biosoftech is an AI-driven software development company for digital growth, offering AI solutions and smart software with 50+ successful implementations and 25+ client trust."
+      }} />
       <section aria-label="AI automation hero banner" className="w-full min-h-0 lg:min-h-[calc(100vh-80px)] bg-[#f3f1eb] overflow-hidden">
         <div className="w-full px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
 

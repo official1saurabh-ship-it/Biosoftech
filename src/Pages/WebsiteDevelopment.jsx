@@ -32,8 +32,11 @@ const WebsiteDevelopment = () => {
         <>
             <SEO
                 title="Website Development Services – Responsive Web Design | Biosoftech"
-                description="Get a modern, responsive website built by Biosoftech Solutions. Tailored corporate sites, e-commerce platforms, and multilingual websites."
-                keywords="website development services, responsive web design, corporate website, e-commerce website, multilingual website, Lucknow"
+                description="Get a modern, responsive website built by Biosoftech Solutions. Tailored corporate sites, e-commerce platforms, and multilingual websites for digital growth."
+                keywords="Website Development Services, Responsive Web Design, Corporate Website, E-commerce Website, Multilingual Website, Biosoftech"
+                ogTitle="Website Development Services - Biosoftech"
+                ogDescription="Biosoftech builds modern, responsive websites tailored to your business. Corporate sites, e-commerce platforms, and multilingual websites for digital growth."
+                canonical="https://www.biosoftech.com/website-development"
                 ogUrl="https://www.biosoftech.com/website-development"
             />
             <section className="bg-[#f8f8f8] py-16 sm:py-20 md:py-24">

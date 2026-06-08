@@ -1,4 +1,5 @@
 import SEO from "../components/seo/SEO";
+import StructuredData from "../components/seo/StructuredData";
 import wordpressDevelopment from "../assets/webdev-multilingual-services.webp";
 import laptopMockup from "../assets/shared-laptop-mockup.webp";
 import manImage from "../assets/webdev-consultant.png";
@@ -247,11 +248,24 @@ const WebDevelopment = () => {
     return (
         <>
             <SEO
-                title="Web Development Company – Custom Website Development | Biosoftech"
-                description="Biosoftech Solutions builds modern, responsive websites and web applications. Corporate sites, e-commerce stores, and custom portals with 15+ projects delivered."
-                keywords="web development company, website development, custom web applications, e-commerce development, responsive websites, India"
+                title="Custom Software Development | Biosoftech - Our Range Of Digital Solutions"
+                description="Biosoftech offers custom software development services as part of our range of digital solutions. We specialize in developing mobile apps and tailored software with expert programming to help you achieve your business goals."
+                keywords="Custom Software Development, Mobile Applications, Programming, Digital Solutions, Biosoftech, JS Development, Full-Service Software Development, Tailored Software"
+                ogTitle="Custom Software Development - Biosoftech"
+                ogDescription="Explore Biosoftech's custom software development services. We are a full-service company for digital growth, creating tailored mobile apps and software solutions with advanced programming."
+                canonical="https://www.biosoftech.com/custom-software-development"
                 ogUrl="https://www.biosoftech.com/web-development"
             />
+            <StructuredData type="custom" data={{
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Custom Software Development",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Biosoftech"
+                },
+                "description": "Biosoftech provides custom software development services, including mobile applications and programming, as part of our range of digital solutions."
+            }} />
             <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
                 <div className="w-full px-4 sm:px-6 lg:px-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center pt-16 sm:pt-20 md:pt-24">

@@ -1,4 +1,5 @@
 import SEO from "../components/seo/SEO";
+import StructuredData from "../components/seo/StructuredData";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import laptopMockup from "../assets/shared-laptop-mockup.webp";
@@ -479,11 +480,24 @@ const AppDevelopment = () => {
     return (
         <>
             <SEO
-                title="App Development Company – iOS & Android App Developers | Biosoftech"
-                description="Biosoftech Solutions builds high-performance iOS, Android, and cross-platform apps. 15+ projects delivered. Expert UI/UX, scalable architecture, and end-to-end app development."
-                keywords="app development company, Android app development, iOS app development, cross-platform apps, mobile app developers Mumbai, Flutter, React Native"
+                title="Mobile App Development | Biosoftech - Custom Software Solutions"
+                description="Biosoftech provides expert mobile app development services. As part of our custom software solutions, we specialize in developing mobile apps tailored to your business needs for digital growth."
+                keywords="Mobile App Development, App Development, Custom Software, Mobile Applications, Biosoftech, Digital Solutions, Programming, Software Development Company"
+                ogTitle="App Development - Biosoftech"
+                ogDescription="Discover Biosoftech's app development services. We specialize in developing mobile apps and custom software solutions to help you achieve your business goals."
+                canonical="https://www.biosoftech.com/app-development"
                 ogUrl="https://www.biosoftech.com/app-development"
             />
+            <StructuredData type="custom" data={{
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Mobile App Development",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Biosoftech"
+                },
+                "description": "Biosoftech specializes in developing mobile apps and custom software solutions as part of our range of digital services."
+            }} />
             {/* Section 1: Hero */}
             <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
                 <div className="w-full px-4 sm:px-6 lg:px-20">
