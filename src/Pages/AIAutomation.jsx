@@ -42,7 +42,7 @@ import {
 import {
   HiOutlineCube,
 } from "react-icons/hi";
-import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import aiautomationHero from "../assets/aiautomation-hero.png";
 import aiStrategyConsulting from "../assets/ai-strategy-consulting.webp";
 
 
@@ -475,15 +475,15 @@ const HeroSection = () => {
         },
         "description": "Biosoftech is an AI-driven software development company for digital growth, offering AI solutions and smart software with 50+ successful implementations and 25+ client trust."
       }} />
-      <section aria-label="AI automation hero banner" className="w-full bg-[#f3f1eb] overflow-hidden">
-        <div className="container-site">
+      <section aria-label="AI automation hero banner" className="w-full bg-[#f3f1eb] overflow-hidden min-h-[calc(100vh-80px)] flex items-center">
+        <div className="container-site w-full">
 
           {/* Main Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-12 lg:pb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center py-8 sm:py-12">
 
             {/* Left Content */}
             <div>
-              <h1 className="text-fluid-5xl font-semibold text-black leading-tight">
+              <h1 className="text-4xl font-semibold text-black leading-tight">
                 Transforming Businesses
                 <br />
                 with Intelligent Automation
@@ -583,8 +583,8 @@ const HeroSection = () => {
 
               {/* Laptop Image */}
               <img
-                src={laptopMockup}
-                alt="Laptop mockup showcasing AI automation dashboard"
+                src={aiautomationHero}
+                alt="AI automation"
                 fetchPriority="high"
                 width="800"
                 height="500"
@@ -1354,7 +1354,7 @@ const HeroSection = () => {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 pt-16 sm:pt-20 lg:pt-28 pb-12 sm:pb-16 lg:pb-20">
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
 

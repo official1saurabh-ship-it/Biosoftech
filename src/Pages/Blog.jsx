@@ -51,7 +51,7 @@ const Blog = () => {
                 keywords="software development blog, AI automation, cloud computing, web development, technology insights"
                 ogUrl="https://www.biosoftech.com/blog"
             />
-            <section className="relative overflow-hidden bg-[#f7f7fb]">
+            <section className="relative overflow-hidden bg-[#f7f7fb] min-h-[calc(100vh-80px)] flex items-center">
 
                 {/* background image */}
                 <img
@@ -64,9 +64,9 @@ const Blog = () => {
         "
                 />
 
-                <div className="container-site pb-8 sm:pb-12 md:pb-0">
+                <div className="container-site py-8 sm:py-12 w-full">
 
-                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-0 pt-16 sm:pt-20 md:pt-24">
+                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-0">
 
                         {/* LEFT */}
 

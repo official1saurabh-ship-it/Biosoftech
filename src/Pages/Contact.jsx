@@ -162,10 +162,10 @@ const Contact = () => {
           ]
         }
       }} />
-      <section aria-label="Contact us hero banner" className="relative bg-[#F3F3F3] pb-16 md:pb-44">
+      <section aria-label="Contact us hero banner" className="relative bg-[#F3F3F3] min-h-[calc(100vh-80px)] flex items-center">
         {/* HERO */}
         <div
-          className="relative min-h-[320px] sm:min-h-[400px] md:min-h-[520px] lg:min-h-[480px] overflow-hidden"
+          className="absolute inset-0 overflow-hidden"
           style={{
             backgroundImage:
               `url(${contact})`,
@@ -176,7 +176,7 @@ const Contact = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-[#02162F]/70" />
 
-          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center pt-16 sm:pt-20 md:pt-24">
+          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center py-12 sm:py-16">
             <h1
               className="
             text-white

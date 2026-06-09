@@ -378,9 +378,9 @@ export default function About() {
       </style>
 
       {/* Hero Section */}
-      <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5]">
+      <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5] min-h-[calc(100vh-80px)] flex items-center">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="container-site grid lg:grid-cols-2 gap-section-lg items-center relative pt-16 sm:pt-20 lg:pt-24 pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
+        <div className="container-site grid lg:grid-cols-2 gap-section-lg items-center relative py-8 sm:py-12 overflow-x-hidden max-sm:overflow-x-visible">
           <div className="z-10 text-center lg:text-left">
             <h1 className="text-fluid-h1 font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
@@ -462,21 +462,26 @@ export default function About() {
             font-weight: 500;
           }
         `}</style>
-        <div className="dm-marquee-wrap w-full">
+        <div className="dm-marquee-wrap w-full max-w-[1440px] mx-auto px-4 sm:px-6">
           <div className="dm-marquee-track">
             {(() => {
               const items = [
-                "Best Digital Marketing Company In Lucknow",
-                "Social Media Ads",
-                "Content Strategy",
-                "Brand Identity",
-                "Email Marketing",
-                "SEO Optimization",
-                "WordPress Development",
-                "Video Marketing",
-                "Creative Strategy",
-                "Web Design",
-                "PPC Campaigns",
+                "WEB DEVELOPMENT",
+                "APP DEVELOPMENT",
+                "CLOUD SERVICES",
+                "AI AUTOMATION",
+                "SALES & BILLING",
+                "RESTAURANT MANAGEMENT",
+                "HOTEL MANAGEMENT",
+                "PARKING MANAGEMENT",
+                "ATTENDANCE MANAGEMENT",
+                "VISITOR MANAGEMENT",
+                "CRM PLATFORM",
+                "PG MANAGEMENT",
+                "CANTEEN MANAGEMENT",
+                "PATHOLOGY MANAGEMENT",
+                "SCHOOL MANAGEMENT",
+                "PAYROLL MANAGEMENT",
               ];
               return [...items, ...items].map((text, i) => (
                 <div key={i} className="dm-marquee-item">

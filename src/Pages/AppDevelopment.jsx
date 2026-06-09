@@ -2,7 +2,7 @@ import SEO from "../components/seo/SEO";
 import StructuredData from "../components/seo/StructuredData";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import appdevelopmentHero from "../assets/appdevelopment-hero.png";
 import thirdImageAad from "../assets/app-lift-brand.webp";
 import fourthImageAad from "../assets/app-user-centric.png";
 import sixthImageAad from "../assets/app-unleash-power.webp";
@@ -499,11 +499,11 @@ const AppDevelopment = () => {
                 "description": "Biosoftech specializes in developing mobile apps and custom software solutions as part of our range of digital services."
             }} />
             {/* Section 1: Hero */}
-            <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-16">
-                <div className="container-site">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-16 sm:pt-20 lg:pt-24">
+            <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] min-h-[calc(100vh-80px)] flex items-center">
+                <div className="container-site w-full">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center py-8 sm:py-12">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-fluid-6xl font-bold text-black leading-tight">
+                            <h1 className="text-4xl font-bold text-black leading-tight">
                                 App Development
                                 <br />
                                 That Drives Results
@@ -546,7 +546,7 @@ const AppDevelopment = () => {
                             </div>
                         </div>
                         <div className="relative mt-8 sm:mt-12 lg:mt-0">
-                            <img src={laptopMockup} alt="App development laptop mockup showcasing mobile app platform" fetchPriority="high" width="800" height="500" className="relative z-10 w-full" />
+                            <img src={appdevelopmentHero} alt="App development" fetchPriority="high" width="800" height="500" className="relative z-10 w-full object-contain" />
                         </div>
                     </div>
                 </div>

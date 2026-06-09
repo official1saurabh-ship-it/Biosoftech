@@ -46,7 +46,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-0 overflow-hidden bg-[#050010] flex items-center min-h-[clamp(500px,75vh,800px)]">
+    <section className="relative overflow-hidden bg-[#050010] flex items-center min-h-screen">
       {/* BG IMAGE */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -127,13 +127,13 @@ export default function HeroRevealSlider() {
               <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h2>
-              <h1 className="text-fluid-hero font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-fluid-hero font-black leading-[0.95] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
-              <h2 className="text-fluid-hero font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-2 xl:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-fluid-hero font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] mt-2 lg:mt-3 tracking-[-0.04em] uppercase max-w-full break-words">
                 {slide.outline}
               </h2>
-              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[58px] font-black -mt-0.5 lg:-mt-1 xl:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">
+              <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[58px] font-black mt-1 lg:mt-2 tracking-[-0.04em] leading-[0.95] uppercase max-w-full break-words">
                 {slide.bottom}
               </h2>
               <p className="mt-4 lg:mt-6 max-w-[550px] w-full text-fluid-base font-jakarta font-medium opacity-80 leading-relaxed">

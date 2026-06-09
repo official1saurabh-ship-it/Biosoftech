@@ -82,7 +82,7 @@ const Career = () => {
       />
 
       {/* HERO */}
-      <section className="relative bg-[#12003f] overflow-hidden min-h-[clamp(400px,70vh,700px)]">
+      <section className="relative bg-[#12003f] overflow-hidden min-h-[calc(100vh-80px)]">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src={careerVideo} type="video/mp4" />
         </video>

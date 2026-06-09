@@ -1,7 +1,7 @@
 import SEO from "../components/seo/SEO";
 import StructuredData from "../components/seo/StructuredData";
 import wordpressDevelopment from "../assets/webdev-multilingual-services.webp";
-import laptopMockup from "../assets/shared-laptop-mockup.webp";
+import webdevHero from "../assets/webdev-hero.png";
 import manImage from "../assets/webdev-consultant.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -266,11 +266,11 @@ const WebDevelopment = () => {
                 },
                 "description": "Biosoftech provides custom software development services, including mobile applications and programming, as part of our range of digital solutions."
             }} />
-            <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
-                <div className="container-site">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-16 sm:pt-20 lg:pt-24">
+            <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] min-h-[calc(100vh-80px)] flex items-center">
+                <div className="container-site w-full">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center py-8 sm:py-12">
                         <div className="flex flex-col text-center lg:text-left">
-                            <h1 className="text-fluid-5xl lg:text-fluid-6xl font-bold text-black leading-tight">
+                            <h1 className="text-4xl font-bold text-black leading-tight">
                                 Build Websites That
                                 <br />
                                 Drive Growth
@@ -309,7 +309,7 @@ const WebDevelopment = () => {
                             </div>
                         </div>
                         <div className="relative mt-6 sm:mt-8 lg:mt-0">
-                            <img src={laptopMockup} alt="Web development laptop mockup showcasing website platform" fetchPriority="high" width="800" height="500" className="relative z-10 w-full" />
+                            <img src={webdevHero} alt="Web development" fetchPriority="high" width="800" height="500" className="relative z-10 w-full object-contain" />
                         </div>
                     </div>
                 </div>

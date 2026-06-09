@@ -74,8 +74,8 @@ const Teams = () => {
       />
 
       {/* HERO */}
-      <section className="relative bg-[#12003f] overflow-hidden section-py">
-        <div className="container-site text-center">
+      <section className="relative bg-[#12003f] overflow-hidden min-h-[calc(100vh-80px)] flex items-center">
+        <div className="container-site text-center w-full">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             Meet Our Team
           </h1>
