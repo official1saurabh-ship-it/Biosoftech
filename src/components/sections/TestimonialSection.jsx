@@ -132,7 +132,7 @@ export default function TestimonialSection() {
 
             mx-auto
 
-            leading-[2]
+            leading-relaxed
           "
                     >
                         Businesses across industries trust Biosoftech
@@ -225,9 +225,7 @@ export default function TestimonialSection() {
               block
               mt-6
 
-              text-[36px]
-              lg:text-[44px]
-              xl:text-[52px]
+              text-fluid-h2
               font-medium
             "
                         >

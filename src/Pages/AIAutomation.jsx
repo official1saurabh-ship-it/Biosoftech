@@ -479,7 +479,7 @@ const HeroSection = () => {
         <div className="container-site">
 
           {/* Main Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 lg:pb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-12 lg:pb-16">
 
             {/* Left Content */}
             <div>
@@ -1230,7 +1230,7 @@ const HeroSection = () => {
             </div>
 
             {/* CONTENT */}
-            <div className="mt-4 sm:mt-10 md:mt-20 grid lg:grid-cols-2 gap-4 sm:gap-8 md:gap-16 items-center">
+            <div className="mt-4 sm:mt-8 md:mt-14 grid lg:grid-cols-2 gap-4 sm:gap-8 md:gap-16 items-center">
 
               {/* LEFT */}
               <div>

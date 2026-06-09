@@ -82,7 +82,7 @@ export default function PerformanceSection() {
             <div className="flex gap-10 sm:gap-14 lg:gap-20 mt-12 lg:mt-16 flex-wrap">
 
               <div>
-                <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
+                <span className="text-fluid-2xl font-black">
                   15+
                 </span>
 
@@ -92,7 +92,7 @@ export default function PerformanceSection() {
               </div>
 
               <div>
-                  <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
+                  <span className="text-fluid-2xl font-black">
                     15+
                   </span>
 
@@ -102,7 +102,7 @@ export default function PerformanceSection() {
               </div>
 
               <div>
-                <span className="text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-black">
+                <span className="text-fluid-2xl font-black">
                   80%
                 </span>
 

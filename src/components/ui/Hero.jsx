@@ -26,11 +26,11 @@ const Hero = ({
       <div className="relative z-10">
         <Container className={containerClass}>
           {columns === 2 ? (
-            <div className="grid lg:grid-cols-2 gap-section-lg items-center pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 lg:pb-16">
-              {children}
+            <div className="grid lg:grid-cols-2 gap-section-lg items-center pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-12 lg:pb-16">
+
             </div>
           ) : (
-            <div className="pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 lg:pb-16">
+            <div className="pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-12 lg:pb-16">
               {children}
             </div>
           )}

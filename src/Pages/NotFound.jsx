@@ -27,7 +27,7 @@ const NotFound = () => {
       }} />
 
       <section
-        className="flex-1 flex items-center justify-center bg-white px-4 py-20 md:py-28"
+        className="flex-1 flex items-center justify-center bg-white px-4 py-16 md:py-20"
         aria-label="404 Page Not Found"
       >
         <div className="max-w-[600px] mx-auto text-center">

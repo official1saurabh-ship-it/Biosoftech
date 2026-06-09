@@ -127,10 +127,10 @@ export default function HeroRevealSlider() {
               <h2 className="text-fluid-3xl font-bold opacity-90 mb-2 lg:mb-5">
                 {slide.top}
               </h2>
-              <h1 className="text-[28px] sm:text-[56px] md:text-[64px] lg:text-[72px] xl:text-[96px] 2xl:text-[112px] font-black leading-[0.88] tracking-[-0.04em] uppercase">
+              <h1 className="text-fluid-hero font-black leading-[0.88] tracking-[-0.04em] uppercase">
                 {slide.big}
               </h1>
-              <h2 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[54px] xl:text-[72px] 2xl:text-[84px] font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-2 xl:-mt-5 tracking-[-0.04em] uppercase">
+              <h2 className="text-fluid-hero font-black text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:2px_white] -mt-1 lg:-mt-2 xl:-mt-5 tracking-[-0.04em] uppercase">
                 {slide.outline}
               </h2>
               <h2 className="text-[18px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[58px] font-black -mt-0.5 lg:-mt-1 xl:-mt-3 tracking-[-0.04em] leading-[0.88] uppercase">

@@ -66,7 +66,7 @@ const Blog = () => {
 
                 <div className="container-site pb-8 sm:pb-12 md:pb-0">
 
-                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-0 pt-24 sm:pt-28 md:pt-32">
+                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-0 pt-16 sm:pt-20 md:pt-24">
 
                         {/* LEFT */}
 
@@ -76,7 +76,7 @@ const Blog = () => {
                                 Blogs
                             </h1>
 
-                            <h2 className="mt-4 sm:mt-6 md:mt-8 lg:mt-28 text-fluid-h1 font-black">
+                            <h2 className="mt-4 sm:mt-6 md:mt-8 lg:mt-16 text-fluid-h1 font-black">
                                 Discover,
                                 <br />
                                 Learn, Grow

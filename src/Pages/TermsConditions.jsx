@@ -303,7 +303,7 @@ export default function TermsConditions() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white pt-20 sm:pt-24 md:pt-28">
+    <div className="bg-white pt-20 sm:pt-24">
       <SEO
         title="Terms and Conditions – Biosoftech Solutions"
         description="Read the Terms and Conditions of Biosoftech Solutions governing the use of our website and services."
@@ -311,7 +311,7 @@ export default function TermsConditions() {
         ogUrl="https://www.biosoftech.com/terms-conditions"
       />
 
-      <section className="bg-[#f8faff] py-16 md:py-24 border-b border-gray-100">
+      <section className="bg-[#f8faff] py-12 md:py-16 border-b border-gray-100">
         <div className="container-site text-center">
           <p className="text-sm text-gray-500 mb-4">Effective Date: 05-06-2026</p>
           <h1 className="text-fluid-5xl font-bold text-[#09090F] mb-6">
@@ -323,9 +323,9 @@ export default function TermsConditions() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-16">
         <div className="container-site">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
 
             <aside className="lg:w-1/4 lg:sticky lg:top-32 h-fit space-y-10">
               <div>
@@ -358,7 +358,7 @@ export default function TermsConditions() {
 
             <div className="lg:w-3/4 space-y-20">
               {sections.map((section) => (
-                <div key={section.id} id={section.id} className="scroll-mt-32">
+                <div key={section.id} id={section.id} className="scroll-mt-24">
                   <h2 className="text-fluid-3xl font-bold text-[#3793DB] mb-8">
                     {section.title}
                   </h2>

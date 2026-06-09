@@ -499,16 +499,16 @@ const AppDevelopment = () => {
                 "description": "Biosoftech specializes in developing mobile apps and custom software solutions as part of our range of digital services."
             }} />
             {/* Section 1: Hero */}
-            <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-24">
+            <section aria-label="App development hero banner" className="w-full bg-[#F7F5EF] pb-12 lg:pb-16">
                 <div className="container-site">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-24 sm:pt-28 lg:pt-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-16 sm:pt-20 lg:pt-24">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-6xl font-bold text-black leading-tight">
                                 App Development
                                 <br />
                                 That Drives Results
                             </h1>
-                            <div className="mt-6 sm:mt-8 lg:mt-10 text-base sm:text-lg lg:text-[22px] leading-relaxed lg:leading-[2] text-[#111] max-w-full lg:max-w-[900px]">
+                            <div className="mt-6 sm:mt-8 lg:mt-10 text-fluid-lg leading-relaxed text-[#111] max-w-full lg:max-w-[900px]">
                                 <p>
                                     At Biosoftech Solutions, we build high-performance mobile
                                     applications for iOS, Android, and cross-platform ecosystems.
@@ -522,16 +522,16 @@ const AppDevelopment = () => {
                             </div>
                             <div className="mt-6 sm:mt-10 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8 lg:gap-12">
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Google</h3>
-                                    <div className="text-[#f4a300] text-lg sm:text-xl md:text-[28px] lg:text-[34px]">★★★★★</div>
+                                    <h3 className="text-fluid-2xl font-bold">Google</h3>
+                                    <div className="text-[#f4a300] text-fluid-lg">★★★★★</div>
                                     <p className="font-semibold text-fluid-base">Rated 4.9/5 Stars</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Justdial</h3>
-                                    <p className="border-t border-black text-xs sm:text-sm md:text-[18px] lg:text-[20px] font-semibold mt-2 pt-2">Trusted</p>
+                                    <h3 className="text-fluid-2xl font-bold">Justdial</h3>
+                                    <p className="border-t border-black text-fluid-xs font-semibold mt-2 pt-2">Trusted</p>
                                 </div>
                                 <div className="text-center lg:text-left">
-                                    <h3 className="text-2xl sm:text-3xl md:text-[42px] lg:text-[52px] font-bold">Trustpilot</h3>
+                                    <h3 className="text-fluid-2xl font-bold">Trustpilot</h3>
                                     <div className="text-[#f4a300] text-lg sm:text-xl md:text-[28px] lg:text-[34px]">★★★★★</div>
                                     <p className="font-semibold text-fluid-base">Rated 4.8/5 Stars</p>
                                 </div>
@@ -557,18 +557,18 @@ const AppDevelopment = () => {
                 <div className="w-full px-4 sm:px-6 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-fluid-4xl lg:text-[52px] xl:text-[64px] leading-tight lg:leading-[1.15] font-semibold text-black max-w-full lg:max-w-[760px] mx-auto lg:mx-0">
+                            <h2 className="text-fluid-h1 font-semibold text-black max-w-full lg:max-w-[760px] mx-auto lg:mx-0">
                                 Lift Your Brand with Cutting-Edge<br className="hidden lg:block" />Android Applications
                             </h2>
                             <ul className="mt-6 sm:mt-10 md:mt-14 space-y-4 sm:space-y-6 md:space-y-10 text-left">
                                 {brandPoints.map((item, i) => (
-                                    <li key={i} className="flex gap-3 sm:gap-4 md:gap-5 text-[#525b6a] text-fluid-base leading-relaxed md:leading-[2]">
+                                    <li key={i} className="flex gap-3 sm:gap-4 md:gap-5 text-[#525b6a] text-fluid-base leading-relaxed">
                                         <span className="mt-[6px] sm:mt-[8px] md:mt-[12px] text-black shrink-0">•</span>
                                         <span className="max-w-full lg:max-w-[720px]">{item}</span>
                                     </li>
                                 ))}
                             </ul>
-                            <button onClick={() => navigate("/contact")} className="mt-8 sm:mt-12 md:mt-16 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-fluid-base font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
+                            <button onClick={() => navigate("/contact")} className="mt-8 sm:mt-10 md:mt-12 px-6 sm:px-10 md:px-14 py-3 sm:py-4 md:py-6 rounded-full bg-[#058989] text-white text-fluid-base font-semibold hover:brightness-95 transition shadow-lg min-h-[44px]">
                                 Shape your success story with Biosoftech Solutions today!
                             </button>
                         </div>
@@ -582,17 +582,17 @@ const AppDevelopment = () => {
             {/* Section 3: User-Centric */}
             <section className="bg-[#f7f7f7] overflow-hidden py-0">
                 <div className="w-full px-4 sm:px-6 lg:px-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                         <div className="flex justify-center items-center min-h-[250px] sm:min-h-[300px] lg:min-h-[520px] order-2 lg:order-1">
                             <img src={fourthImageAad} alt="App interface preview" loading="lazy" width="800" height="800" className="w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[550px] object-contain drop-shadow-2xl" />
                         </div>
                         <div className="order-1 lg:order-2 text-center lg:text-left">
-                            <h2 className="text-fluid-4xl lg:text-[50px] xl:text-[60px] leading-tight lg:leading-[1.15] font-semibold text-black max-w-full lg:max-w-[820px] mx-auto lg:mx-0">
+                            <h2 className="text-fluid-h1 font-semibold text-black max-w-full lg:max-w-[820px] mx-auto lg:mx-0">
                                 Crafting User-Centric Android<br className="hidden lg:block" />Experiences through Innovative<br className="hidden lg:block" />Development
                             </h2>
                             <ul className="mt-10 md:mt-14 space-y-8 md:space-y-12 text-left">
                                 {userCentricPoints.map((point, index) => (
-                                    <li key={index} className="flex gap-4 md:gap-5 text-[#50596b] text-fluid-base leading-relaxed md:leading-[2]">
+                                    <li key={index} className="flex gap-4 md:gap-5 text-[#50596b] text-fluid-base leading-relaxed">
                                         <span className="mt-[8px] md:mt-[12px] text-black">•</span>
                                         <span className="max-w-full lg:max-w-[720px]">{point}</span>
                                     </li>
@@ -608,10 +608,10 @@ const AppDevelopment = () => {
                 <div className="w-full px-4 sm:px-6 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
                         <div className="max-w-full lg:max-w-[620px] text-center lg:text-left mx-auto lg:mx-0">
-                            <h2 className="text-fluid-4xl lg:text-[46px] xl:text-[56px] leading-tight lg:leading-[1.15] font-bold text-black">
+                            <h2 className="text-fluid-h1 font-bold text-black">
                                 Unleash the Power of Android App<br className="hidden lg:block" />Development for Business Growth
                             </h2>
-                            <p className="mt-6 md:mt-8 text-[#45526a] text-fluid-lg leading-relaxed md:leading-[2]">
+                            <p className="mt-6 md:mt-8 text-[#45526a] text-fluid-lg leading-relaxed">
                                 Supercharge your business growth with our dynamic Android app
                                 development services. As experienced android app developers in
                                 Mumbai, we understand that your app is more than just code; it is
@@ -628,7 +628,7 @@ const AppDevelopment = () => {
                         </div>
                         <div className="relative flex justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-0 mt-12 lg:mt-0">
 
-                            <img src={sixthImageAad} alt="App display preview" loading="lazy" width="520" height="760" className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] lg:w-[65vh] h-[240px] sm:h-[380px] lg:h-[95vh] z-10" />
+                            <img src={sixthImageAad} alt="App display preview" loading="lazy" width="520" height="760" className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] lg:w-[clamp(260px,35vw,400px)] h-[240px] sm:h-[380px] lg:h-[clamp(380px,50vw,580px)] z-10" />
                         </div>
                     </div>
                 </div>
@@ -637,10 +637,10 @@ const AppDevelopment = () => {
             {/* Section 5: Our Process */}
             <section className="bg-[#fbfbfb] py-10 sm:py-12 md:py-16 overflow-hidden">
                 <div className="w-full px-4 sm:px-6">
-                    <h2 className="text-center text-fluid-4xl font-bold mb-10 sm:mb-16 md:mb-20">
+                        <h2 className="text-center text-fluid-4xl font-bold mb-10 sm:mb-12 md:mb-16">
                         Our Process to <span className="text-orange-500">Success</span>
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-y-16 md:gap-y-28 gap-x-6 sm:gap-x-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-y-14 md:gap-y-20 gap-x-6 sm:gap-x-10">
                         {process.map((item) => (
                             <div key={item.id} className="relative flex flex-col items-center text-center">
                                 <div className="absolute top-[-16px] left-1/2 -translate-x-1/2 lg:left-[25%] lg:translate-x-0 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10">
@@ -689,17 +689,17 @@ const AppDevelopment = () => {
                 <div className="w-full px-4 sm:px-6 lg:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-stretch">
                         <div className="max-w-full lg:max-w-[760px] text-center lg:text-left">
-                            <h2 className="text-fluid-4xl lg:text-[52px] xl:text-[64px] leading-tight lg:leading-[1.15] font-semibold text-[#171212]">
+                            <h2 className="text-fluid-h1 font-semibold text-[#171212]">
                                 Get Scalable Android App<br className="hidden lg:block" />Development Services
                             </h2>
                             <div className="mt-4 sm:mt-5 md:mt-6 space-y-2 sm:space-y-3 md:space-y-4">
-                                <p className="text-[#343434] text-fluid-base leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-fluid-base leading-relaxed">
                                     Got an idea? We help turn it into a real Android app. As a trusted app development company, Biosoftech Solutions builds smart apps to match your business needs.
                                 </p>
-                                <p className="text-[#343434] text-fluid-base leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-fluid-base leading-relaxed">
                                     We've spent years creating Android app development solutions for all kinds of clients; startups, big brands, and everything in between. Our team understands how Android works and we design apps that connect well with your users.
                                 </p>
-                                <p className="text-[#343434] text-fluid-base leading-relaxed md:leading-[2]">
+                                <p className="text-[#343434] text-fluid-base leading-relaxed">
                                     Let's build something that stands out. Reach out to our Android mobile app development company and explore what we can create together.
                                 </p>
                             </div>
@@ -722,14 +722,14 @@ const AppDevelopment = () => {
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] md:w-[900px] h-[300px] md:h-[500px] bg-white/40 blur-[80px] md:blur-[140px] rounded-full" />
                 <div className="relative w-full px-6">
                     <div className="text-center w-full">
-                        <h2 className="text-3xl md:text-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight md:leading-[1.15] text-[#1c1717]">
+                        <h2 className="text-fluid-h1 font-bold text-[#1c1717]">
                             Technology & Frameworks We Use for Android App Development Services
                         </h2>
-                        <p className="mt-6 md:mt-8 text-[#393939] text-fluid-base leading-relaxed md:leading-[2] max-w-[1100px] mx-auto">
+                        <p className="mt-6 md:mt-8 text-[#393939] text-fluid-base leading-relaxed max-w-[1100px] mx-auto">
                             Being an acclaimed Android app development company, we possess comprehensive technology expertise that makes us capable of delivering high-end apps to match the client's business needs.
                         </p>
                     </div>
-                    <div className="mt-12 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {techCategoryData.map((card, index) => (
                             <div key={index} className="bg-white rounded-[24px] overflow-hidden shadow-md border border-gray-200">
                                 <div className="bg-[#4f1d91] px-6 py-4 md:py-5">
@@ -752,12 +752,12 @@ const AppDevelopment = () => {
             {/* Section 8: Steps */}
             <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-fluid-4xl lg:text-[50px] xl:text-[60px] font-bold leading-tight lg:leading-[1.15]">
+                            <h2 className="text-fluid-h1 font-bold">
                                 Steps We Take To Impart Our Android App Development Services
                             </h2>
-                            <p className="mt-6 md:mt-10 text-fluid-base leading-relaxed md:leading-[2] text-gray-600">
+                            <p className="mt-6 md:mt-10 text-fluid-base leading-relaxed text-gray-600">
                                 We follow a structured Android development process while leaving room for improvements and feedback.
                             </p>
                             <div className="mt-8 md:mt-12 flex flex-wrap justify-center lg:justify-start gap-3">
@@ -779,7 +779,7 @@ const AppDevelopment = () => {
                                 </div>
                                 <span className="mt-6 md:mt-8 text-[#4f1d91] font-bold text-center lg:text-left block">STEP {activeStep + 1}</span>
                                 <h3 className="mt-2 md:mt-3 text-2xl md:text-[42px] font-bold text-center lg:text-left">{steps[activeStep].title}</h3>
-                                <p className="mt-4 md:mt-8 text-fluid-base leading-relaxed md:leading-[2] text-gray-600 text-center lg:text-left">{steps[activeStep].desc}</p>
+                                <p className="mt-4 md:mt-8 text-fluid-base leading-relaxed text-gray-600 text-center lg:text-left">{steps[activeStep].desc}</p>
                                 <div className="mt-8 md:mt-12 flex justify-center lg:justify-start gap-4">
                                     <button
                                         onClick={() => setActiveStep((prev) => (prev === 0 ? steps.length - 1 : prev - 1))}
@@ -806,14 +806,14 @@ const AppDevelopment = () => {
             <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-4 sm:px-6">
                     <div className="text-center">
-                        <h2 className="text-fluid-4xl lg:text-[52px] xl:text-[64px] font-semibold leading-tight lg:leading-[1.15]">
+                        <h2 className="text-fluid-h1 font-semibold">
                             App Development<br className="hidden lg:block" />Technologies <span className="text-[#34d058]">We Work On</span>
                         </h2>
-                        <p className="mt-6 md:mt-8 text-[#333] text-fluid-base leading-relaxed md:leading-[2] max-w-[900px] mx-auto">
+                        <p className="mt-6 md:mt-8 text-[#333] text-fluid-base leading-relaxed max-w-[900px] mx-auto">
                             Leverage the Technical Expertise of A Top Custom App Development Company to Own Feature-rich Mobile Applications
                         </p>
                     </div>
-                    <div className="mt-12 md:mt-20 overflow-x-auto pb-2 scrollbar-hide">
+                    <div className="mt-12 md:mt-16 overflow-x-auto pb-2 scrollbar-hide">
                         <div className="flex justify-center gap-2 md:gap-0 border-b min-w-max md:min-w-0 mx-auto w-max">
                             {Object.keys(techTabsData).map((tab) => (
                                 <button
@@ -826,7 +826,7 @@ const AppDevelopment = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-8 sm:gap-y-12 md:gap-y-16">
+                    <div className="mt-12 md:mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-8 sm:gap-y-10 md:gap-y-12">
                         {techTabsData[activeTechTab].map((item, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
                                 <img src={item.icon} alt={item.name} loading="lazy" width="60" height="60" className="w-10 h-10 md:w-[60px] md:h-[60px] object-contain" />
@@ -897,7 +897,7 @@ const AppDevelopment = () => {
                                 {services[active].title}
                             </h2>
                             <div className="w-[50px] md:w-[70px] h-[2px] bg-black mt-6 md:mt-8 mx-auto lg:mx-0" />
-                            <p className="mt-8 md:mt-10 text-fluid-base text-gray-700 leading-relaxed md:leading-[2]">
+                            <p className="mt-8 md:mt-10 text-fluid-base text-gray-700 leading-relaxed">
                                 We specialize in augmenting the mobile experience
                                 for users of different niches, industries,
                                 products and more that can help businesses
@@ -923,10 +923,10 @@ const AppDevelopment = () => {
 
             <section className="w-full bg-[#f5f5f5] py-12 md:py-16">
                 <div className="w-full px-6">
-                    <div className="grid lg:grid-cols-[1fr_450px] xl:grid-cols-[1fr_580px] gap-10 md:gap-12 lg:gap-20">
+                    <div className="grid lg:grid-cols-[1fr_450px] xl:grid-cols-[1fr_580px] gap-10 md:gap-10 lg:gap-16">
                         {/* LEFT */}
                         <div className="text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl lg:text-[56px] font-bold text-[#171717] leading-tight">
+                            <h2 className="text-fluid-h1 font-bold text-[#171717]">
                                 Why iOS Costs More
                             </h2>
                             <p className="mt-6 md:mt-10 text-lg md:text-[20px] leading-relaxed md:leading-[1.8] text-[#667085] max-w-[650px] mx-auto lg:mx-0">
@@ -989,14 +989,14 @@ const AppDevelopment = () => {
                 <div className="w-full px-6">
                     {/* Heading */}
                     <div className="text-center w-full">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[64px] font-bold leading-tight md:leading-[1.15] text-[#1b1515]">
+                        <h2 className="text-fluid-h1 font-bold text-[#1b1515]">
                             Platforms Our End-To-End
                             <br />
                             Android Apps Development
                             <br />
                             Services Can Target
                         </h2>
-                        <p className="mt-6 md:mt-8 text-fluid-base leading-relaxed md:leading-[2] text-[#404040] w-full">
+                        <p className="mt-6 md:mt-8 text-fluid-base leading-relaxed text-[#404040] w-full">
                             Segregated by mediums but unified by our
                             platform-compatible Android Apps.
                             As a reputed Android app development company,
@@ -1005,7 +1005,7 @@ const AppDevelopment = () => {
                         </p>
                     </div>
                     {/* Platform Cards */}
-                    <div className="mt-12 md:mt-20 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+                    <div className="mt-12 md:mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
                         {platforms.map((item, index) => (
                             <div key={index} className="bg-white min-h-[100px] md:min-h-[150px] rounded-xl px-4 md:px-8 py-5 md:py-10 flex flex-col sm:flex-row items-center gap-3 sm:gap-5 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-gray-100 text-center sm:text-left">
                                 <img src={item.icon} alt={item.title} loading="lazy" width="42" height="42" className="w-8 h-8 sm:w-10 sm:h-10 md:w-[42px] md:h-[42px] object-contain shrink-0" />
@@ -1028,15 +1028,15 @@ const AppDevelopment = () => {
             <section className="bg-[#f8f8f8] py-12 md:py-16">
                 <div className="w-full px-6">
                     {/* Heading */}
-                    <h2 className="text-center text-3xl md:text-5xl lg:text-[62px] font-semibold leading-tight md:leading-[1.15]">
+                    <h2 className="text-center text-fluid-h1 font-semibold">
                         One-Stop Solution for a Complete Mobile App
                         Development Company
                     </h2>
                     {/* Content */}
-                    <div className="mt-12 md:mt-20 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div className="mt-12 md:mt-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                         {/* LEFT */}
                         <div className="text-center lg:text-left">
-                            <div className="text-[#3d3d3d] text-fluid-base leading-relaxed md:leading-[2] space-y-6 md:space-y-10 max-w-[760px] mx-auto lg:mx-0">
+                            <div className="text-[#3d3d3d] text-fluid-base leading-relaxed space-y-6 md:space-y-10 max-w-[760px] mx-auto lg:mx-0">
                                 <p>
                                     We work with businesses that want to profit
                                     from digital technology, supporting them in
@@ -1078,11 +1078,11 @@ const AppDevelopment = () => {
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
 
                     {/* LEFT */}
-                    <div className="bg-[#5B5BF2] text-white flex items-center justify-center py-12 md:py-16 lg:py-24">
+                    <div className="bg-[#5B5BF2] text-white flex items-center justify-center py-12 md:py-16">
                         <div className="w-full max-w-full lg:max-w-[820px] px-6 sm:px-8 md:px-12 lg:px-16">
 
                             {/* Heading */}
-                            <h2 className="text-fluid-4xl lg:text-[56px] leading-tight font-bold tracking-[-1px] lg:tracking-[-2px]">
+                            <h2 className="text-fluid-h1 font-bold tracking-[-1px] lg:tracking-[-2px]">
                                 <span className="relative inline-block">
                                     {/* Yellow strip */}
                                     <span className="absolute left-0 bottom-[4px] lg:bottom-[10px] w-full h-[8px] lg:h-[12px] bg-[#FFC928] z-0"></span>
@@ -1092,7 +1092,7 @@ const AppDevelopment = () => {
                             </h2>
 
                             {/* Paragraph */}
-                            <p className="mt-6 md:mt-10 text-fluid-lg leading-relaxed md:leading-[2] text-white/95 font-light">
+                            <p className="mt-6 md:mt-10 text-fluid-lg leading-relaxed text-white/95 font-light">
                                 We are a top app development company delivering innovative
                                 and intuitive solutions to global start-ups to enterprise-level
                                 businesses. Our team of expert developers takes pride in
@@ -1106,9 +1106,9 @@ const AppDevelopment = () => {
                     </div>
 
                     {/* RIGHT */}
-                    <div className="bg-black text-white flex items-center justify-center py-12 md:py-16 lg:py-24">
+                    <div className="bg-black text-white flex items-center justify-center py-12 md:py-16">
                         <div className="w-full max-w-full lg:max-w-[820px] px-6 sm:px-8 md:px-12 lg:px-16">
-                            <h2 className="text-fluid-4xl lg:text-[72px] leading-tight font-light">
+                            <h2 className="text-fluid-h1 font-light">
                                 <span className="font-bold">2+ Years</span> of App Development Experience
                             </h2>
 
@@ -1203,7 +1203,7 @@ const AppDevelopment = () => {
                                 30+ businesses
                             </div>
 
-                            <h2 className="mt-6 sm:mt-8 md:mt-10 text-white text-fluid-4xl lg:text-[86px] leading-tight lg:leading-[1.05] font-bold max-w-full lg:max-w-[1000px] mx-auto lg:mx-0">
+                            <h2 className="mt-6 sm:mt-8 md:mt-10 text-white text-fluid-hero font-bold max-w-full lg:max-w-[1000px] mx-auto lg:mx-0">
                                 Let&apos;s Create Big Stories Together
                             </h2>
 

@@ -380,7 +380,7 @@ export default function About() {
       {/* Hero Section */}
       <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5]">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="container-site grid lg:grid-cols-2 gap-section-lg items-center relative pt-24 sm:pt-28 lg:pt-32 pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
+        <div className="container-site grid lg:grid-cols-2 gap-section-lg items-center relative pt-16 sm:pt-20 lg:pt-24 pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
           <div className="z-10 text-center lg:text-left">
             <h1 className="text-fluid-h1 font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
@@ -495,7 +495,7 @@ export default function About() {
       <section className="relative overflow-hidden bg-[#f7f7f7]">
         <div className="absolute inset-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/cartographer.png')]" />
         <div className="relative container-site section-py-sm">
-          <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-10 lg:gap-16 items-center">
             <div>
               <h2 className="text-fluid-h1 font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
               <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
@@ -521,7 +521,7 @@ export default function About() {
       <section className="relative overflow-hidden bg-black">
         <div className="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_top,#5b0000,transparent_40%),radial-gradient(circle_at_bottom,#3f0000,transparent_40%)]" />
         <div className="relative container-site section-py-sm">
-          <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-12 lg:gap-24 items-center">
+          <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-10 lg:gap-16 items-center">
             <div>
               <h2 className="text-fluid-h1 font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
               <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[28px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
@@ -555,7 +555,7 @@ export default function About() {
       {/* Who Are We Section */}
       <section className="relative overflow-hidden bg-[#F7F7F1] section-py" ref={containerRef}>
         <div className="container-site">
-          <div className="grid md:grid-cols-[minmax(380px,620px)_1fr] gap-8 md:gap-10 lg:gap-24 items-center">
+          <div className="grid md:grid-cols-[minmax(380px,620px)_1fr] gap-8 md:gap-10 lg:gap-16 items-center">
 
             {/* LEFT SIDE - Static Cards with slight parallax */}
             <div
@@ -946,7 +946,7 @@ export default function About() {
             {/* Left Content */}
             <div className="max-w-[620px]">
 
-              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333] mb-8">
+              <p className="text-fluid-base leading-relaxed text-[#333] mb-8">
                 Biosoftech Solutions designs and builds complete software
                 ecosystems for ambitious organizations that want to scale,
                 streamline operations, and gain a competitive edge. With us,
@@ -954,21 +954,21 @@ export default function About() {
                 a clear plan, strong execution, and future-ready technology.
               </p>
 
-              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333] mb-8">
+              <p className="text-fluid-base leading-relaxed text-[#333] mb-8">
                 For years, we've partnered with businesses across India,
                 delivering measurable results through web development, mobile
                 applications, desktop solutions, cloud services, AI automation,
                 and industry-specific management systems.
               </p>
 
-              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333] mb-8">
+              <p className="text-fluid-base leading-relaxed text-[#333] mb-8">
                 We excel at: Web Development, Mobile Applications, Desktop
                 Solutions, Cloud Services, AI Automation, and Industry
                 Management Systems — restaurant, hotel, school, billing,
                 pathology, and staff management software.
               </p>
 
-              <p className="text-[15px] sm:text-[17px] leading-[1.8] sm:leading-[2] text-[#333]">
+              <p className="text-fluid-base leading-relaxed text-[#333]">
                 So, whether you're a startup, a small-to-medium business,
                 a large enterprise, or an entrepreneur with big ambitions,
                 you're already incredible, and we're here to make you even
@@ -1104,7 +1104,7 @@ export default function About() {
             {timelineData.map((item, index) => (
               <div
                 key={item.year}
-                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10 lg:gap-20 items-center mb-4 sm:mb-6 lg:mb-12 lg:mb-16"
+                className="relative grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center mb-4 sm:mb-6 lg:mb-12"
               >
                 {/* Left Side */}
                 <div

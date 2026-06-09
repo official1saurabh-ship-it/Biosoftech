@@ -176,7 +176,7 @@ const Contact = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-[#02162F]/70" />
 
-          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center pt-16 sm:pt-24 md:pt-28">
+          <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 text-center pt-16 sm:pt-20 md:pt-24">
             <h1
               className="
             text-white
@@ -195,7 +195,7 @@ const Contact = () => {
             sm:mt-6
             md:mt-8
             leading-[1.8]
-            md:leading-[2]
+            md:leading-relaxed
             max-w-[850px]
             mx-auto
           "
@@ -212,7 +212,7 @@ const Contact = () => {
             text-fluid-base
             mt-4
             leading-[1.8]
-            md:leading-[2]
+            md:leading-relaxed
             max-w-[850px]
             mx-auto
           "

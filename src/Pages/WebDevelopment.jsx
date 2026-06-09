@@ -268,7 +268,7 @@ const WebDevelopment = () => {
             }} />
             <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
                 <div className="container-site">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-24 sm:pt-28 lg:pt-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-16 sm:pt-20 lg:pt-24">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-5xl lg:text-fluid-6xl font-bold text-black leading-tight">
                                 Build Websites That
@@ -329,7 +329,7 @@ const WebDevelopment = () => {
                     </div>
 
                     {/* HEADING */}
-                    <h2 className="text-center text-[#101126] font-bold leading-tight text-fluid-4xl lg:text-[54px] xl:text-[64px]">
+                    <h2 className="text-center text-[#101126] font-bold text-fluid-h1">
                         Websites That Speak
                         <br />
                         Your Customer&apos;s Language
@@ -552,7 +552,7 @@ const WebDevelopment = () => {
 
                     {/* Steps grid - sequential on mobile, 2x2 on desktop */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12 lg:mt-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-12 lg:mt-16">
 
                         {/* Step 01 - desktop: bottom-left (row 2) */}
                         <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-5 lg:gap-10 lg:order-3">
@@ -740,7 +740,7 @@ const WebDevelopment = () => {
                         {/* Right Content */}
                         <div className="w-full">
 
-                            <h2 className="text-[#10002b] text-fluid-4xl lg:text-[52px] xl:text-[64px] font-bold leading-tight mb-8">
+                            <h2 className="text-[#10002b] text-fluid-h1 font-bold mb-8">
                                 Get Started With Building Your Dream Website
                             </h2>
 
@@ -790,7 +790,7 @@ const WebDevelopment = () => {
                             Custom Application Development Services
                         </span>
 
-                        <h2 className="mt-4 text-3xl md:text-4xl lg:text-[48px] xl:text-[56px] font-semibold leading-tight text-black">
+                        <h2 className="mt-4 text-fluid-h1 font-semibold text-black">
                             Tailored Solutions for Your Unique Business Needs
                         </h2>
 
@@ -1052,7 +1052,7 @@ const WebDevelopment = () => {
                     </div>
 
                     {/* Features Grid */}
-                    <div className="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-x-24 gap-y-20">
+                    <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16">
                         {features.map((item) => (
                             <div key={item.number} className="flex items-start gap-6">
                                 {/* Number Circle */}

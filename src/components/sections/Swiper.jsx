@@ -80,11 +80,7 @@ export default function ServicesSlider() {
                     <h2
                         className="
             mt-5
-            text-[28px]
-            sm:text-[36px]
-            md:text-[44px]
-            lg:text-[52px]
-            xl:text-[60px]
+            text-fluid-h1
             font-black
           "
                     >

@@ -174,7 +174,7 @@ const Career = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-[#12003f] to-[#2a0a80] py-16 sm:py-20 text-center">
+      <section className="bg-gradient-to-r from-[#12003f] to-[#2a0a80] py-12 sm:py-16 text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             Don't See the Right Role?

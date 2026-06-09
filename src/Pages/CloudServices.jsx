@@ -457,7 +457,7 @@ const CloudServices = () => {
             {/* HERO SECTION */}
             <section aria-label="Cloud services hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
                 <div className="container-site">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-24 sm:pt-28 lg:pt-32">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-16 sm:pt-20 lg:pt-24">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-5xl lg:text-fluid-6xl font-bold text-black leading-tight">
                                 Best Cloud Services
@@ -678,7 +678,7 @@ const CloudServices = () => {
                 <div className="sticky top-[80px] min-h-0 h-[clamp(400px,calc(100vh-80px),700px)] flex items-start lg:items-center overflow-hidden pt-0 lg:pt-0 pb-2 lg:pb-0">
                     <div className="container-site w-full h-full flex flex-col">
 
-                        <div className="text-center mb-2 sm:mb-8 mt-0 sm:mt-24 lg:mt-48 lg:mb-12 shrink-0">
+                        <div className="text-center mb-2 sm:mb-8 mt-0 sm:mt-16 lg:mt-24 lg:mb-12 shrink-0">
                             <h2 className="text-fluid-2xl sm:text-fluid-4xl font-bold text-white leading-tight">
                                 Cloud Services <span className="text-blue-500">Development Process</span>
                             </h2>
@@ -952,7 +952,7 @@ const CloudServices = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#f5f5f5] py-16 lg:py-20 overflow-hidden">
+            <section className="bg-[#f5f5f5] py-12 lg:py-16 overflow-hidden">
                 <div className="w-full px-4 sm:px-6 lg:px-12">
 
                     <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-center">
@@ -1118,11 +1118,11 @@ const CloudServices = () => {
 
                 </div>
             </section>
-            <section className="bg-[#f3f3f3] py-16 lg:py-20">
+            <section className="bg-[#f3f3f3] py-12 lg:py-16">
                 <div className="w-full px-4 sm:px-6">
 
                     {/* Heading */}
-                    <h2 className="text-center text-[42px] lg:text-[52px] font-bold text-[#333] mb-14">
+                    <h2 className="text-center text-fluid-h1 font-bold text-[#333] mb-10">
                         Case Studies
                     </h2>
 
