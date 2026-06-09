@@ -143,43 +143,14 @@
   --color-primary-3: #b062fd;
   --color-secondary-1: #f28541;
   --color-secondary-2: #9255CE;
-  
+
   --font-gilroy: "Gilroy", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-outfit: "Outfit", sans-serif;
   --font-spartan: "League Spartan", sans-serif;
-}
 
-@utility text-fluid-xs {
-  font-size: clamp(0.625rem, 1.5vw, 0.75rem);
-}
-@utility text-fluid-sm {
-  font-size: clamp(0.75rem, 2vw, 0.875rem);
-}
-@utility text-fluid-base {
-  font-size: clamp(0.875rem, 2.5vw, 1rem);
-}
-@utility text-fluid-lg {
-  font-size: clamp(1rem, 3vw, 1.125rem);
-}
-@utility text-fluid-xl {
-  font-size: clamp(1.125rem, 3.5vw, 1.375rem);
-}
-@utility text-fluid-2xl {
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
-}
-@utility text-fluid-3xl {
-  font-size: clamp(1.5rem, 5vw, 2.25rem);
-}
-@utility text-fluid-4xl {
-  font-size: clamp(1.75rem, 6vw, 3rem);
-}
-@utility text-fluid-5xl {
-  font-size: clamp(2rem, 7vw, 3.75rem);
-}
-@utility text-fluid-6xl {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  --container-max: 1440px;
 }
 
 @layer base {
@@ -207,6 +178,105 @@
     max-width: 100%;
     height: auto;
   }
+}
+
+@utility text-hero {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  line-height: 0.88;
+}
+
+@utility text-hero-md {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 0.9;
+}
+
+@utility text-hero-sm {
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  line-height: 0.95;
+}
+
+@utility text-display {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+
+@utility text-display-md {
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+}
+
+@utility text-display-sm {
+  font-size: clamp(1.25rem, 2.5vw, 2.25rem);
+}
+
+@utility text-fluid-hero {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  line-height: 0.88;
+}
+
+@utility text-fluid-h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+
+@utility text-fluid-h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  line-height: 1.1;
+}
+
+@utility text-fluid-h3 {
+  font-size: clamp(1.25rem, 2.5vw, 2.25rem);
+  line-height: 1.15;
+}
+
+@utility text-fluid-xl {
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+}
+
+@utility text-fluid-lg {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+}
+
+@utility text-fluid-base {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+}
+
+@utility text-fluid-sm {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
+
+@utility text-fluid-xs {
+  font-size: clamp(0.625rem, 0.8vw, 0.75rem);
+}
+
+@utility container-site {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 3vw, 3rem);
+  padding-right: clamp(1rem, 3vw, 3rem);
+}
+
+@utility section-py {
+  padding-top: clamp(2rem, 5vw, 5rem);
+  padding-bottom: clamp(2rem, 5vw, 5rem);
+}
+
+@utility section-py-sm {
+  padding-top: clamp(1.25rem, 2.5vw, 3rem);
+  padding-bottom: clamp(1.25rem, 2.5vw, 3rem);
+}
+
+@utility section-py-lg {
+  padding-top: clamp(3rem, 6vw, 6rem);
+  padding-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+@utility gap-section {
+  gap: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+@utility gap-section-lg {
+  gap: clamp(1.5rem, 4vw, 4rem);
 }
 
 .stroke-text {

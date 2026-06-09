@@ -64,19 +64,19 @@ const Blog = () => {
         "
                 />
 
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12 md:pb-0">
+                <div className="container-site pb-8 sm:pb-12 md:pb-0">
 
-                    <div className="grid lg:grid-cols-2 items-center min-h-0 lg:min-h-[500px] md:min-h-[700px] gap-8 sm:gap-12 lg:gap-0 pt-24 sm:pt-28 md:pt-32">
+                    <div className="grid lg:grid-cols-2 items-center gap-8 sm:gap-12 lg:gap-0 pt-24 sm:pt-28 md:pt-32">
 
                         {/* LEFT */}
 
                         <div className="z-10 text-center lg:text-left">
 
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px] leading-none font-light">
+                            <h1 className="text-fluid-hero font-light">
                                 Blogs
                             </h1>
 
-                            <h2 className="mt-4 sm:mt-6 md:mt-8 lg:mt-28 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[62px] lg:leading-[72px] font-black">
+                            <h2 className="mt-4 sm:mt-6 md:mt-8 lg:mt-28 text-fluid-h1 font-black">
                                 Discover,
                                 <br />
                                 Learn, Grow
@@ -127,9 +127,9 @@ const Blog = () => {
 
 
 
-            <section className="bg-[#fafafa] py-10 sm:py-14">
+            <section className="bg-[#fafafa] section-py-sm">
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-5">
+                <div className="container-site">
 
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#333] mb-8 sm:mb-10 text-center">
                         Read Latest Articles &amp; Post

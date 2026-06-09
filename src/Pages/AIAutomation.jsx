@@ -475,11 +475,11 @@ const HeroSection = () => {
         },
         "description": "Biosoftech is an AI-driven software development company for digital growth, offering AI solutions and smart software with 50+ successful implementations and 25+ client trust."
       }} />
-      <section aria-label="AI automation hero banner" className="w-full min-h-0 lg:min-h-[calc(100vh-80px)] bg-[#f3f1eb] overflow-hidden">
-        <div className="w-full px-4 sm:px-6 lg:px-12 pb-12 sm:pb-16 lg:pb-32">
+      <section aria-label="AI automation hero banner" className="w-full bg-[#f3f1eb] overflow-hidden">
+        <div className="container-site">
 
           {/* Main Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center min-h-0 lg:min-h-[calc(100vh-80px)] pt-24 sm:pt-28 md:pt-32">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-section-lg items-center pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 lg:pb-16">
 
             {/* Left Content */}
             <div>
@@ -603,7 +603,7 @@ const HeroSection = () => {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-700/30 blur-[180px]" />
         </div>
 
-        <div className="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="container-site relative z-10">
 
           {/* MAIN GRID */}
           <div className="flex flex-col lg:grid lg:grid-cols-[420px_1fr] border border-white/10">
@@ -1119,8 +1119,7 @@ const HeroSection = () => {
     relative
     bg-[#030712]
     text-white
-    h-[500vh]   
-    pb-16 md:pb-16 lg:pb-36
+    h-[350vh]
   "
       >
 
@@ -1134,12 +1133,12 @@ const HeroSection = () => {
         <div
           className="
     sticky top-0
-    h-screen
+    h-[clamp(400px,100vh,750px)]
     flex flex-col justify-center
     relative z-10
   "
         >
-            <div className="px-4 sm:px-6 lg:px-10 w-full max-w-full">
+            <div className="container-site">
 
             {/* TITLE */}
             <div className="text-center">

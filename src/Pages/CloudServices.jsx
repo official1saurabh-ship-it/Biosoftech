@@ -456,8 +456,8 @@ const CloudServices = () => {
             }} />
             {/* HERO SECTION */}
             <section aria-label="Cloud services hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
-                <div className="w-full px-4 sm:px-6 lg:px-20">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center pt-16 sm:pt-20 md:pt-24">
+                <div className="container-site">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-24 sm:pt-28 lg:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-5xl lg:text-fluid-6xl font-bold text-black leading-tight">
                                 Best Cloud Services
@@ -672,11 +672,11 @@ const CloudServices = () => {
                 ref={sectionRef}
                 className="bg-[#0a0a0a] relative z-20 pt-0 sm:pt-24 lg:pt-0"
                 style={{
-                    height: `${stages.length * 35}vh`,
+                    height: `${stages.length * 25}vh`,
                 }}
             >
-                <div className="sticky top-[80px] h-[calc(100vh-80px)] flex items-start lg:items-center overflow-hidden pt-0 lg:pt-0 pb-2 lg:pb-0">
-                    <div className="w-full px-4 sm:px-6 lg:px-20 w-full h-full flex flex-col">
+                <div className="sticky top-[80px] min-h-0 h-[clamp(400px,calc(100vh-80px),700px)] flex items-start lg:items-center overflow-hidden pt-0 lg:pt-0 pb-2 lg:pb-0">
+                    <div className="container-site w-full h-full flex flex-col">
 
                         <div className="text-center mb-2 sm:mb-8 mt-0 sm:mt-24 lg:mt-48 lg:mb-12 shrink-0">
                             <h2 className="text-fluid-2xl sm:text-fluid-4xl font-bold text-white leading-tight">

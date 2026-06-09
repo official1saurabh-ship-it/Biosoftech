@@ -82,21 +82,21 @@ const Career = () => {
       />
 
       {/* HERO */}
-      <section className="relative bg-[#12003f] overflow-hidden min-h-screen">
+      <section className="relative bg-[#12003f] overflow-hidden min-h-[clamp(400px,70vh,700px)]">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src={careerVideo} type="video/mp4" />
         </video>
         <a
           href="#openings"
-          className="absolute top-[90vh] right-[5vw] z-10 px-8 py-3 rounded-full bg-white text-[#12003f] font-semibold hover:bg-gray-100 transition-colors"
+          className="absolute bottom-8 right-[5vw] z-10 px-8 py-3 rounded-full bg-white text-[#12003f] font-semibold hover:bg-gray-100 transition-colors"
         >
           View Open Positions
         </a>
       </section>
 
       {/* WHY JOIN US */}
-      <section className="bg-white py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-white section-py">
+        <div className="container-site">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Why Work at Biosoftech?
           </h2>
@@ -119,8 +119,8 @@ const Career = () => {
       </section>
 
       {/* OPENINGS */}
-      <section id="openings" className="bg-gray-50 py-16 sm:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="openings" className="bg-gray-50 section-py">
+        <div className="container-site">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Current Openings
           </h2>

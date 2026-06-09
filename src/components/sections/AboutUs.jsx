@@ -9,9 +9,9 @@ import Innovation from "../../assets/aboutus-innovation.webp";
 
 export default function AboutUs() {
   return (
-    <section className="bg-[#f8f4fc] overflow-hidden pt-6 sm:pt-8 lg:pt-14 pb-2 sm:pb-4 lg:pb-6">
+    <section className="bg-[#f8f4fc] overflow-hidden section-py-sm">
 
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-6">
+      <div className="container-site">
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-stretch">
 
@@ -53,7 +53,7 @@ export default function AboutUs() {
               ABOUT US
             </div>
 
-            <h2 className="mt-3 sm:mt-4 text-[24px] sm:text-[42px] lg:text-[46px] xl:text-[56px] 2xl:text-[66px] leading-[1.05] font-black text-[#06031b]">
+            <h2 className="mt-3 sm:mt-4 text-fluid-h1 font-black text-[#06031b]">
               Full-Service Software
               <br />
               Development Company

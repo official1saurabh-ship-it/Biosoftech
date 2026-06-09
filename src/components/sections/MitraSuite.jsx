@@ -33,11 +33,11 @@ const products = [
 const MitraSuite = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-10 sm:py-12 lg:py-16 bg-white overflow-hidden">
-      <div className="max-w-full mx-auto px-4 sm:px-6">
+    <section className="section-py bg-white overflow-hidden">
+      <div className="container-site">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:gap-6 md:gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-fluid-5xl font-black text-[#09090F] mb-3 sm:mb-4 md:mb-6 leading-tight">
+            <h2 className="text-fluid-h1 font-black text-[#09090F] mb-3 sm:mb-4 md:mb-6">
               The <span className="text-purple-600">Mitra Suite</span>
             </h2>
             <p className="text-fluid-lg text-gray-600">

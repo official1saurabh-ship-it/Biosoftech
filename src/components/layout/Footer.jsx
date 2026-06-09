@@ -42,7 +42,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-50 pt-6 sm:pt-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-site">
         {/* TOP ROW */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 mb-6 sm:mb-8">
           {/* Helpful Links */}

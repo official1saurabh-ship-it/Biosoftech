@@ -165,7 +165,7 @@ const Contact = () => {
       <section aria-label="Contact us hero banner" className="relative bg-[#F3F3F3] pb-16 md:pb-44">
         {/* HERO */}
         <div
-          className="relative min-h-[320px] sm:min-h-[400px] md:h-[580px] overflow-hidden"
+          className="relative min-h-[320px] sm:min-h-[400px] md:min-h-[520px] lg:min-h-[480px] overflow-hidden"
           style={{
             backgroundImage:
               `url(${contact})`,
@@ -180,12 +180,8 @@ const Contact = () => {
             <h1
               className="
             text-white
-            text-2xl
-            sm:text-[32px]
-            md:text-[42px]
-            lg:text-[64px]
+            text-fluid-h1
             font-bold
-            leading-[1.15]
           "
             >
               Ready to Transform Your Business?
@@ -539,18 +535,14 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="bg-[#F5F5F5] py-10 md:py-20">
-        <div className="mx-auto px-4 sm:px-6 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 max-w-full">
+      <section className="bg-[#F5F5F5] section-py">
+        <div className="container-site">
+          <div className="grid lg:grid-cols-2 gap-section-lg">
             {/* LEFT */}
             <div className="min-w-0">
               <h2
                 className="
-              text-[28px]
-              sm:text-[36px]
-              md:text-[48px]
-              lg:text-[58px]
-              leading-[1.1]
+              text-fluid-h1
               font-bold
               text-black
             "
@@ -560,12 +552,9 @@ const Contact = () => {
 
               <p
                 className="
-              mt-6
-              md:mt-8
-              text-[20px]
-              md:text-[26px]
-              leading-[1.5]
-              md:leading-[1.7]
+              mt-6 md:mt-8
+              text-fluid-lg
+              leading-[1.5] md:leading-[1.7]
               text-[#232323]
               max-w-[820px]
             "
@@ -604,10 +593,8 @@ const Contact = () => {
 
                     <h3
                       className="
-                    text-[18px]
-                    md:text-[22px]
+                    text-fluid-h3
                     font-bold
-                    leading-[1.4]
                   "
                     >
                       {item.title}
@@ -615,13 +602,10 @@ const Contact = () => {
 
                     <p
                       className="
-                    mt-4
-                    md:mt-6
-                    text-[16px]
-                    md:text-[18px]
+                    mt-4 md:mt-6
+                    text-fluid-base
                     text-[#2B2B2B]
-                    leading-[1.6]
-                    md:leading-[1.8]
+                    leading-[1.6] md:leading-[1.8]
                     flex-1
                   "
                     >

@@ -86,7 +86,7 @@ export default function TestimonialSection() {
       "
             />
 
-            <div className="max-w-full mx-auto px-5 sm:px-8 lg:px-12">
+            <div className="container-site">
 
                 {/* TOP */}
 

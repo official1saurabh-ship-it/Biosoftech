@@ -230,19 +230,11 @@ to-[#12003f]/40
 
             <h2
               className="
-             mt-6
-
+              mt-6
               text-white
-
               font-black
-
-              leading-[1.1]
-
-              text-[32px]
-              sm:text-[40px]
-              lg:text-[44px]
-              xl:text-[52px]
-              "
+              text-fluid-h1
+            "
             >
               Your Challenges,
               <br />
@@ -252,13 +244,8 @@ to-[#12003f]/40
             <p
               className="
               mt-6
-
               text-white/80
-
-              text-base
-              sm:text-[18px]
-              lg:text-[20px]
-
+              text-fluid-base
               leading-relaxed
               max-w-[550px]
               mx-auto

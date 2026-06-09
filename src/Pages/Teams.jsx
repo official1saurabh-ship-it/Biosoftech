@@ -74,8 +74,8 @@ const Teams = () => {
       />
 
       {/* HERO */}
-      <section className="relative bg-[#12003f] overflow-hidden py-20 sm:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-[#12003f] overflow-hidden section-py">
+        <div className="container-site text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             Meet Our Team
           </h1>
@@ -87,8 +87,8 @@ const Teams = () => {
       </section>
 
       {/* TEAM GRID */}
-      <section className="bg-white py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-white section-py">
+        <div className="container-site">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {teamMembers.map((member) => (
               <div
@@ -115,8 +115,8 @@ const Teams = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-[#12003f] to-[#2a0a80] py-16 sm:py-20 text-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-[#12003f] to-[#2a0a80] section-py text-center">
+        <div className="container-site">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             Want to Join Our Team?
           </h2>

@@ -380,9 +380,9 @@ export default function About() {
       {/* Hero Section */}
       <section aria-label="About us hero banner" className="relative overflow-hidden bg-[#f5f5f5]">
         <div className="absolute inset-0 opacity-40 md:opacity-70 bg-[linear-gradient(#d8d8d8_2px,transparent_2px),linear-gradient(90deg,#d8d8d8_2px,transparent_2px)] bg-[size:40px_40px] sm:bg-[size:60px_60px] md:bg-[size:120px_120px]" />
-        <div className="max-w-full mx-auto min-h-0 lg:min-h-[calc(100vh-80px)] px-4 sm:px-8 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 lg:gap-24 items-center relative pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
-          <div className="z-10 text-center lg:text-left pt-24 sm:pt-28 md:pt-28">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-[68px] leading-tight md:leading-[85px] font-black max-w-[800px] text-[#09090F]">
+        <div className="container-site grid lg:grid-cols-2 gap-section-lg items-center relative pt-24 sm:pt-28 lg:pt-32 pb-12 md:pb-16 overflow-x-hidden max-sm:overflow-x-visible">
+          <div className="z-10 text-center lg:text-left">
+            <h1 className="text-fluid-h1 font-black max-w-[800px] text-[#09090F]">
               Your <span className="text-orange-500">AI-Powered</span> Software<br />Partner <span className="text-blue-600">{displayText}</span>
               <span className="inline-block w-1 md:w-2 h-5 sm:h-8 md:h-12 bg-blue-600 ml-1 animate-blink align-middle"></span>
             </h1>
@@ -494,10 +494,10 @@ export default function About() {
       {/* Services Section */}
       <section className="relative overflow-hidden bg-[#f7f7f7]">
         <div className="absolute inset-0 opacity-[0.04] bg-[url('https://www.transparenttextures.com/patterns/cartographer.png')]" />
-        <div className="relative max-w-full mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <div className="relative container-site section-py-sm">
           <div className="grid lg:grid-cols-[1fr_560px] gap-8 sm:gap-12 lg:gap-20 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[36px] md:leading-[46px] lg:text-[42px] lg:leading-[54px] xl:text-[50px] xl:leading-[66px] font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
+              <h2 className="text-fluid-h1 font-black text-black">Best Software Development Company for Web, Mobile, Desktop & Cloud Solutions</h2>
               <p className="mt-3 sm:mt-4 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Welcome to Biosoftech Solutions, a trusted software company serving startups, enterprises, and growing brands since 2015. We specialize in web development, mobile apps, desktop applications, and cloud services, offering result-driven solutions to help businesses scale efficiently.</p>
               <p className="mt-2 sm:mt-3 text-[15px] sm:text-[17px] leading-[28px] sm:leading-[36px] text-[#222]">Founded with a vision to simplify technology, Biosoftech Solutions is headquartered in Lucknow, Uttar Pradesh, and has expanded globally with clients across multiple industries. Our expertise lies in building industry-specific products and delivering measurable results.</p>
               <h3 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-[28px] lg:text-[32px] xl:text-[38px] font-black text-[#433d70]">Our Mission</h3>
@@ -520,10 +520,10 @@ export default function About() {
       {/* Conviction Section (Section 3) */}
       <section className="relative overflow-hidden bg-black">
         <div className="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_top,#5b0000,transparent_40%),radial-gradient(circle_at_bottom,#3f0000,transparent_40%)]" />
-        <div className="relative max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <div className="relative container-site section-py-sm">
           <div className="grid lg:grid-cols-[1fr_420px] gap-10 sm:gap-12 lg:gap-24 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-[40px] md:leading-[50px] lg:text-[52px] lg:leading-[62px] xl:text-[62px] xl:leading-[72px] font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
+              <h2 className="text-fluid-h1 font-light text-white"><span className="text-[#f2ab00] font-medium">Biosoftech Solutions&apos;s</span><br />Existence Is Built On<br />Conviction</h2>
               <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8 text-white text-base sm:text-[18px] leading-[28px] sm:leading-[40px] md:leading-[32px] lg:leading-[40px]">
                 <p>In our 2+ years of experience as a progressive software development company, we have witnessed the digital landscape evolve rapidly.</p>
                 <p>Even as AI automation, cloud integration, and new technologies reshaped industries, we have consistently helped businesses adapt and thrive.</p>
@@ -553,8 +553,8 @@ export default function About() {
       </section>
 
       {/* Who Are We Section */}
-      <section className="relative overflow-hidden bg-[#F7F7F1] py-10 sm:py-12 lg:py-16 pb-12 sm:pb-16 lg:pb-20" ref={containerRef}>
-        <div className="max-w-full mx-auto px-4 sm:px-6">
+      <section className="relative overflow-hidden bg-[#F7F7F1] section-py" ref={containerRef}>
+        <div className="container-site">
           <div className="grid md:grid-cols-[minmax(380px,620px)_1fr] gap-8 md:gap-10 lg:gap-24 items-center">
 
             {/* LEFT SIDE - Static Cards with slight parallax */}
@@ -596,13 +596,13 @@ export default function About() {
                 <div className="rounded-tr-[60px] bg-gradient-to-br from-[#291043] to-[#5B1896] p-6 sm:p-8">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-white text-[48px] sm:text-[64px] font-black">15+</h3>
+              <h3 className="text-fluid-h1 font-black text-white">15+</h3>
                       <p className="text-white text-fluid-lg font-bold">Satisfied Clients</p>
                     </div>
                     <div className="text-fluid-6xl opacity-90">⚡</div>
                   </div>
                   <div className="mt-6">
-                    <h3 className="text-white text-[44px] sm:text-[56px] font-black">15+</h3>
+                    <h3 className="text-fluid-h1 font-black text-white">15+</h3>
                     <p className="text-white text-fluid-base font-bold">Industries Served</p>
                   </div>
                 </div>
@@ -675,8 +675,8 @@ export default function About() {
         </div>
       </section>
 
-      <section ref={floatingRef} className="py-8 sm:py-10 md:py-16 overflow-hidden">
-        <div className="max-w-full mx-auto px-4 sm:px-6">
+      <section ref={floatingRef} className="section-py overflow-hidden">
+        <div className="container-site">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             {/* LEFT IMAGE */}
@@ -799,8 +799,8 @@ export default function About() {
 
 
 
-      <section className="bg-[#f8f8f8] py-12">
-        <div className="max-w-full mx-auto px-4 sm:px-6">
+      <section className="bg-[#f8f8f8] section-py">
+        <div className="container-site">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
 
             {/* LEFT SIDE */}
@@ -816,7 +816,7 @@ export default function About() {
 
                 {/* Retention Rate */}
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white rounded-t-[40px] sm:rounded-t-[70px] px-6 sm:px-12 py-4 sm:py-8 shadow-lg w-[90%] sm:w-auto">
-                  <h3 className="text-4xl sm:text-6xl font-bold text-[#2F2F39] text-center">
+                  <h3 className="text-fluid-h1 font-bold text-[#2F2F39] text-center">
                     91%
                   </h3>
                   <p className="text-base sm:text-xl text-center mt-1 sm:mt-2 text-[#2F2F39]">
@@ -830,7 +830,7 @@ export default function About() {
 
                 {/* Growth Card */}
                 <div className="bg-[#C8E768] rounded-[40px] sm:rounded-[70px] px-6 sm:px-12 py-6 sm:py-10 w-full sm:w-[280px]">
-                  <h3 className="text-5xl sm:text-7xl font-bold text-[#2F2F39]">
+                  <h3 className="text-fluid-h1 font-bold text-[#2F2F39]">
                     85%
                   </h3>
 
@@ -865,12 +865,12 @@ export default function About() {
                 <span>Our Mission & Vision</span>
               </div>
 
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[#2F2F39] leading-tight">
+              <h2 className="text-fluid-h1 font-bold text-[#2F2F39]">
                 Smart-Thinking
               </h2>
 
               <h2
-                className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight"
+                className="text-fluid-h1 font-bold"
                 style={{
                   WebkitTextStroke: "2px #2F2F39",
                   color: "transparent",
@@ -925,12 +925,12 @@ export default function About() {
 
 
 
-      <section className="bg-white py-10 sm:py-12 lg:py-16">
-        <div className="max-w-full mx-auto px-4 sm:px-6">
+      <section className="bg-white section-py">
+        <div className="container-site">
 
           {/* Heading */}
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl md:text-[36px] lg:text-[42px] leading-tight font-light text-black">
+            <h2 className="text-fluid-h1 font-light text-black">
               <span className="font-semibold">
                 The Technology Growth Engine
               </span>{" "}
@@ -999,8 +999,8 @@ export default function About() {
 
 
 
-      <section className="bg-[#f8f8f8] py-12 lg:py-16 overflow-hidden">
-        <div className="max-w-full mx-auto px-4 sm:px-6">
+      <section className="bg-[#f8f8f8] section-py overflow-hidden">
+        <div className="container-site">
 
           {/* Heading */}
           <div className="text-center mb-14">
@@ -1082,7 +1082,7 @@ export default function About() {
         <div className="absolute bottom-0 left-1/4 w-[500px] h-[250px] bg-[#f1efff] rounded-t-full opacity-70" />
         <div className="absolute bottom-0 right-0 w-[450px] h-[200px] bg-[#f1efff] rounded-t-full opacity-70" />
 
-        <div className="max-w-full mx-auto px-4 sm:px-6 relative z-10">
+        <div className="container-site relative z-10">
 
           {/* Heading */}
           <div className="text-center mb-16">
@@ -1184,7 +1184,7 @@ export default function About() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 max-w-full mx-auto px-4 sm:px-6">
+        <div className="container-site relative z-10">
           <div className="grid lg:grid-cols-2 gap-8">
 
             {/* LEFT SIDE */}
@@ -1378,7 +1378,7 @@ export default function About() {
       </section>
 
       <section className="bg-[#f5f5f5] py-12 lg:py-16">
-        <div className="max-w-full mx-auto px-4 sm:px-6">
+        <div className="container-site">
           <div className="text-center mb-16">
             <p className="text-black text-xl mb-2">Blogs</p>
             <h2 className="text-5xl font-light text-black">

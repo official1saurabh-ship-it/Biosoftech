@@ -46,7 +46,7 @@ export default function HeroRevealSlider() {
   const slide = slides[index];
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#050010] flex items-center">
+    <section className="relative min-h-0 overflow-hidden bg-[#050010] flex items-center min-h-[clamp(500px,75vh,800px)]">
       {/* BG IMAGE */}
       <div
         className="absolute inset-0 bg-cover bg-center"

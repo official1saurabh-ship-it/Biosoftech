@@ -267,8 +267,8 @@ const WebDevelopment = () => {
                 "description": "Biosoftech provides custom software development services, including mobile applications and programming, as part of our range of digital solutions."
             }} />
             <section aria-label="Web development hero banner" className="w-full bg-[#F7F5EF] pb-8 lg:pb-16">
-                <div className="w-full px-4 sm:px-6 lg:px-20">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center pt-16 sm:pt-20 md:pt-24">
+                <div className="container-site">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-section items-center pt-24 sm:pt-28 lg:pt-32">
                         <div className="flex flex-col text-center lg:text-left">
                             <h1 className="text-fluid-5xl lg:text-fluid-6xl font-bold text-black leading-tight">
                                 Build Websites That

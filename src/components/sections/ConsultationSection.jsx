@@ -89,9 +89,9 @@ export default function ConsultationSection() {
     }
   };
   return (
-    <section className="bg-[#f5f5f5] py-10 sm:py-12 lg:py-16 overflow-hidden">
+    <section className="bg-[#f5f5f5] section-py overflow-hidden">
 
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-site">
 
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-stretch">
 

@@ -18,7 +18,7 @@ const BrandLogos = () => {
 
   return (
     <div className="py-10 bg-gray-50 border-y overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container-site">
           <Swiper
           modules={[Autoplay]}
           spaceBetween={30}

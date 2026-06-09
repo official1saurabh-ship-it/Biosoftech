@@ -312,7 +312,7 @@ export default function TermsConditions() {
       />
 
       <section className="bg-[#f8faff] py-16 md:py-24 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="container-site text-center">
           <p className="text-sm text-gray-500 mb-4">Effective Date: 05-06-2026</p>
           <h1 className="text-fluid-5xl font-bold text-[#09090F] mb-6">
             Terms and Conditions
@@ -324,7 +324,7 @@ export default function TermsConditions() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container-site">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
 
             <aside className="lg:w-1/4 lg:sticky lg:top-32 h-fit space-y-10">
