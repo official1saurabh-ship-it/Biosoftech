@@ -6,7 +6,7 @@ import biosoftechLogo from "../../assets/download.png";
 const socialLinks = [
   { Icon: FaFacebookF, href: 'https://www.facebook.com/biosoftechsoftwaresolutions', label: 'Facebook' },
   { Icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/biosoftechsoftwaresolutions/', label: 'LinkedIn' },
-  { Icon: FaInstagram, href: 'https://www.instagram.com/biosoftechsoftwaresolutions/', label: 'Instagram' },
+  { Icon: FaInstagram, href: 'https://www.instagram.com/biosoftech?igsh=bDVidGd5NmZwc2Z4', label: 'Instagram' },
   { Icon: FaYoutube, href: 'https://youtube.com/@biosoftech?si=ODz3hODFqF5AmkT0', label: 'Biosoftech Website' },
   { Icon: FaTwitter, href: 'https://x.com/biosoftech', label: 'X' },
 ];
@@ -54,10 +54,10 @@ const Footer = () => {
             <ul className="space-y-1.5">
               {helpfulLinks.map((item) => (
                 <li key={item.name}>
-<Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
-                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
-                      {item.name}
-                    </Link>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -72,10 +72,10 @@ const Footer = () => {
             <ul className="space-y-1.5">
               {serviceLinks.map((item) => (
                 <li key={item.name}>
-<Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
-                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
-                      {item.name}
-                    </Link>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -90,10 +90,10 @@ const Footer = () => {
             <ul className="space-y-1.5">
               {packageLinks.map((item) => (
                 <li key={item.name}>
-<Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
-                      <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
-                      {item.name}
-                    </Link>
+                  <Link to={item.to} className="text-gray-600 hover:text-primary-1 transition-colors flex items-center gap-2 group py-1.5 min-h-[44px]">
+                    <span className="w-1 h-1 rounded-full bg-primary-1 group-hover:w-3 transition-all shrink-0" />
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>

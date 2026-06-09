@@ -7,7 +7,7 @@ const localBusinessSchema = {
   image: "https://www.biosoftech.com/og-image.jpg",
   "@id": "https://www.biosoftech.com",
   url: "https://www.biosoftech.com",
-  telephone: "+91-9044425858",
+  telephone: "+91-6209688930",
   email: "info@biosoftech.com",
   address: {
     "@type": "PostalAddress",
@@ -17,7 +17,7 @@ const localBusinessSchema = {
     postalCode: "226028",
     addressCountry: "IN",
   },
-  foundingDate: "2015",
+  foundingDate: "23/07/2025",
   description:
     "Biosoftech Solutions is a leading software development company delivering web, mobile, desktop, cloud, and AI automation solutions.",
   sameAs: [

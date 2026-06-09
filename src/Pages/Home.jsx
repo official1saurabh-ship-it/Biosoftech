@@ -21,10 +21,10 @@ const organizationSchema = {
   "name": "Biosoftech",
   "url": "https://www.biosoftech.com/",
   "description": "Full-Service Software Development Company For Digital Growth",
-  "foundingDate": "2022",
+  "foundingDate": "23/07/2025",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+91-9044425858",
+    "telephone": "+91-6209688930",
     "contactType": "customer service"
   }
 }

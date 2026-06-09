@@ -19,12 +19,12 @@ const SEO = ({
   const siteUrl = "https://www.biosoftech.com";
   const defaultOgImage = "/og-image.jpg";
 
-  const finalOgTitle = ogTitle || (title ? `${title} | ${siteName}` : defaultTitle);
+  const finalOgTitle = ogTitle || title || defaultTitle;
   const finalOgDescription = ogDescription || description || defaultDescription;
 
   return (
     <Helmet>
-      <title>{title ? `${title} | ${siteName}` : defaultTitle}</title>
+      <title>{title || defaultTitle}</title>
       <meta name="description" content={description || defaultDescription} />
       <meta name="keywords" content={keywords || defaultKeywords} />
       <link rel="canonical" href={canonical || ogUrl || siteUrl} />
